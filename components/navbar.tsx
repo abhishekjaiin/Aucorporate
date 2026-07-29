@@ -11,6 +11,7 @@ import {
   MessageCircle,
   Linkedin,
   Mail,
+  Phone,
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -586,6 +587,15 @@ export function Navbar() {
           <span className="absolute inset-0 rounded-full bg-green-400 opacity-40 animate-ping"></span>
 
           <MessageCircle size={18} className="relative z-10" />
+        </a>
+
+        {/* CALL */}
+        <a
+  href="tel:+919999010513"
+  aria-label="Call AU Corporate — Utsav Dogra"
+  className="relative group bg-yellow-500 text-white p-3 rounded-full shadow-lg hover:scale-110 transition"
+>
+          <Phone size={18} className="relative z-10" />
         </a>
 
         {/* LINKEDIN */}

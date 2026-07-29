@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin, Mail, MapPin } from "lucide-react"
+import { Linkedin, Mail, MapPin, Phone } from "lucide-react"
 
 const quickLinks = [
   { label: "Services", href: "/services" },
@@ -125,6 +125,18 @@ export function Footer() {
                   className="text-gray-600 hover:text-yellow-400 text-sm break-all"
                 >
                   partner@theaucorp.com
+                </a>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Phone className="h-5 w-5 text-yellow-400 shrink-0 mt-0.5" />
+
+                <a
+                  href="tel:+919999010513"
+                  aria-label="Call AU Corporate"
+                  className="text-gray-600 hover:text-yellow-400 text-sm"
+                >
+                  +91-9999010513
                 </a>
               </div>
 
