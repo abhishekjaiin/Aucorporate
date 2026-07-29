@@ -267,6 +267,18 @@ export default function HomePage() {
               >
                 UK Companies
               </Link>
+              <Link
+                href="/india-entry-for-singapore-companies"
+                className="px-4 py-2 bg-white/20 hover:bg-white/30 border border-white/30 rounded-lg text-white text-sm font-semibold transition"
+              >
+                Singapore Companies
+              </Link>
+              <Link
+                href="/india-entry-for-australian-companies"
+                className="px-4 py-2 bg-white/20 hover:bg-white/30 border border-white/30 rounded-lg text-white text-sm font-semibold transition"
+              >
+                Australia Companies
+              </Link>
             </div>
           </div>
 
