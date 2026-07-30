@@ -17,6 +17,7 @@ type FormState = {
   phone: string
   service: string
   message: string
+  website: string // honeypot — must stay empty; hidden from real users via CSS
 }
 
 const GOLD = "#FFD700"
@@ -53,6 +54,7 @@ export default function ContactPage() {
     phone: "",
     service: "",
     message: "",
+    website: "",
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -98,6 +100,7 @@ export default function ContactPage() {
         phone: "",
         service: "",
         message: "",
+        website: "",
       })
 
       setTimeout(() => setSubmitSuccess(false), 5000)
@@ -151,6 +154,18 @@ export default function ContactPage() {
 
           {/* FORM */}
           <form onSubmit={handleSubmit} className="space-y-4">
+            {/* Honeypot field — hidden from real users, catches bots that
+                blindly fill every input. Must stay empty on real submissions. */}
+            <input
+              type="text"
+              name="website"
+              value={formData.website}
+              onChange={handleInputChange}
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+              style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }}
+            />
 
             {submitSuccess && (
               <div className="p-3 bg-green-100 text-green-700 rounded-lg border border-green-300">

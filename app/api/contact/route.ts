@@ -1,5 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server'
 
+type ContactSubmission = {
+  name: string
+  email: string
+  company?: string
+  phone?: string
+  service?: string
+  message: string
+  // Honeypot field — real users never see or fill this in. Any value here
+  // means the submission almost certainly came from a bot.
+  website?: string
+}
+
 function escapeHtml(text: string): string {
   const map: Record<string, string> = {
     '&': '&amp;',
@@ -11,7 +23,7 @@ function escapeHtml(text: string): string {
   return text.replace(/[&<>"']/g, (m) => map[m])
 }
 
-function generateEmailHTML(data: any): string {
+function generateEmailHTML(data: ContactSubmission): string {
   return `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
       <h2 style="border-bottom: 3px solid #fbbf24; padding-bottom: 10px; margin-top: 0;">New Contact Form Submission</h2>
@@ -36,7 +48,7 @@ function generateEmailHTML(data: any): string {
   `
 }
 
-async function sendEmailViaResend(data: any): Promise<boolean> {
+async function sendEmailViaResend(data: ContactSubmission): Promise<boolean> {
   const resendApiKey = process.env.RESEND_API_KEY
   if (!resendApiKey) return false
 
@@ -57,20 +69,19 @@ async function sendEmailViaResend(data: any): Promise<boolean> {
     })
 
     if (response.ok) {
-      console.log('[v0] Email sent successfully via Resend')
       return true
     } else {
       const error = await response.text()
-      console.error('[v0] Resend API error:', response.status, error)
+      console.error('Resend API error:', response.status, error)
       return false
     }
   } catch (error) {
-    console.error('[v0] Resend email error:', error)
+    console.error('Resend email error:', error)
     return false
   }
 }
 
-async function sendEmailViaFormspree(data: any): Promise<boolean> {
+async function sendEmailViaFormspree(data: ContactSubmission): Promise<boolean> {
   const formspreeKey = process.env.FORMSPREE_KEY
   if (!formspreeKey) return false
 
@@ -89,14 +100,13 @@ async function sendEmailViaFormspree(data: any): Promise<boolean> {
     })
 
     if (response.ok) {
-      console.log('[v0] Email sent successfully via Formspree')
       return true
     } else {
-      console.error('[v0] Formspree API error:', response.status)
+      console.error('Formspree API error:', response.status)
       return false
     }
   } catch (error) {
-    console.error('[v0] Formspree email error:', error)
+    console.error('Formspree email error:', error)
     return false
   }
 }
@@ -105,10 +115,31 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
+    // Honeypot check: this field is hidden from real users via CSS.
+    // A bot that blindly fills every input will populate it — silently
+    // drop those submissions without giving any signal back to the bot.
+    if (body.website) {
+      return NextResponse.json(
+        {
+          success: true,
+          message: 'Your inquiry has been received. We will respond within 24 hours.',
+        },
+        { status: 200 }
+      )
+    }
+
     // Validate required fields
     if (!body.name || !body.email || !body.message) {
       return NextResponse.json(
         { error: 'Please fill in all required fields (Name, Email, Message)' },
+        { status: 400 }
+      )
+    }
+
+    // Validate field lengths to prevent abuse / oversized payloads
+    if (body.name.length > 200 || body.email.length > 200 || body.message.length > 5000) {
+      return NextResponse.json(
+        { error: 'One or more fields exceed the maximum allowed length.' },
         { status: 400 }
       )
     }
@@ -130,8 +161,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const submissionData = {
-      timestamp: new Date().toISOString(),
+    const submissionData: ContactSubmission = {
       name: body.name,
       email: body.email,
       company: body.company || '',
@@ -140,7 +170,11 @@ export async function POST(request: NextRequest) {
       message: body.message,
     }
 
-    console.log('[v0] New Contact Form Submission:', submissionData)
+    // Log only non-sensitive metadata — never the visitor's PII (name,
+    // email, phone, message) in plaintext server logs.
+    console.log(
+      `Contact form submission received at ${new Date().toISOString()} (message length: ${submissionData.message.length} chars)`
+    )
 
     // Try to send email via available service
     let emailSent = false
@@ -154,11 +188,20 @@ export async function POST(request: NextRequest) {
     }
 
     if (!emailSent) {
-      console.warn('[v0] No email service configured (RESEND_API_KEY or FORMSPREE_KEY missing)')
-      console.warn('[v0] Submission logged but not emailed to contact inbox')
+      // This is a critical failure: the visitor will still be told their
+      // message was received (see below), but nobody at AU Corporate will
+      // actually get it. Logged as an error (not a warning) so it surfaces
+      // in Vercel's function logs / any alerting configured on this route.
+      console.error(
+        'CRITICAL: contact form submission could not be delivered — ' +
+        'neither RESEND_API_KEY nor FORMSPREE_KEY is configured (or both failed). ' +
+        'This lead has been LOST. Verify environment variables in the Vercel project settings.'
+      )
     }
 
-    // Always return success to user
+    // Always return success to the user — do not reveal backend delivery
+    // failures in the response (better UX, and avoids giving spammers a
+    // signal about server configuration).
     return NextResponse.json(
       {
         success: true,
@@ -167,7 +210,7 @@ export async function POST(request: NextRequest) {
       { status: 200 }
     )
   } catch (error) {
-    console.error('[v0] Contact form error:', error)
+    console.error('Contact form error:', error)
     return NextResponse.json(
       { error: 'An error occurred processing your submission. Please try again.' },
       { status: 500 }
