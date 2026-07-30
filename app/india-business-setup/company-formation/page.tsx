@@ -58,6 +58,10 @@ export default function CompanyFormationPage() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-8">Next Steps</h2>
           <div className="grid sm:grid-cols-2 gap-6">
+            <Link href="/doing-business-in-india/incorporation" className="p-6 border rounded-lg hover:shadow-md transition">
+              <h3 className="font-semibold mb-2">Incorporation Services</h3>
+              <p className="text-sm text-gray-600">Full-service support: registration, FDI compliance, GST, and more</p>
+            </Link>
             <Link href="/india-business-setup/regulatory-compliance" className="p-6 border rounded-lg hover:shadow-md transition">
               <h3 className="font-semibold mb-2">Regulatory Compliance</h3>
               <p className="text-sm text-gray-600">Statutory requirements and ongoing compliance</p>

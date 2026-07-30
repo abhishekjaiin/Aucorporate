@@ -63,6 +63,15 @@ export default function Page() {
         ))}
       </div>
 
+      <div className="mt-12 p-6 border border-gray-200 rounded-xl bg-gray-50">
+        <p className="text-gray-700">
+          Deciding between entity types first?{" "}
+          <a href="/india-business-setup/company-formation" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            See our guide to entity types in India →
+          </a>
+        </p>
+      </div>
+
     </div>
   )
 }
