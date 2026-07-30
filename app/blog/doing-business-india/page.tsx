@@ -10,7 +10,7 @@ export default function BlogPage() {
         Understanding the regulatory, tax, and compliance landscape before entering India
       </p>
 
-      <img
+      <img decoding="async"
         src="https://images.unsplash.com/photo-1589802829985-817e51171b92"
         alt="India business skyline"
         className="rounded-2xl mb-8 w-full"
@@ -28,7 +28,7 @@ export default function BlogPage() {
         Choosing the Right Entry Structure
       </h2>
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
         alt="Business meeting"
         className="rounded-2xl mb-6 w-full"
@@ -59,7 +59,7 @@ export default function BlogPage() {
         Understanding the Regulatory Framework
       </h2>
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
         alt="Regulatory paperwork"
         className="rounded-2xl mb-6 w-full"
@@ -81,7 +81,7 @@ export default function BlogPage() {
         Navigating the Tax Landscape
       </h2>
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
         alt="Tax and finance"
         className="rounded-2xl mb-6 w-full"
@@ -108,7 +108,7 @@ export default function BlogPage() {
         Managing Compliance Effectively
       </h2>
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
         alt="Compliance and audit"
         className="rounded-2xl mb-6 w-full"
@@ -135,7 +135,7 @@ export default function BlogPage() {
         Planning Capital Flow and Repatriation
       </h2>
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6"
         alt="Finance flow"
         className="rounded-2xl mb-6 w-full"

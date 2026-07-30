@@ -15,7 +15,7 @@ export default function BlogPage() {
         Mailbox Companies & DTAA Benefits in India | Tiger Global Supreme Court Ruling 2026
       </h1>
 
-      <img
+      <img decoding="async"
         src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
         alt="Supreme Court India"
         className="rounded-2xl mb-8 w-full"
@@ -37,7 +37,7 @@ export default function BlogPage() {
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">Case Background</h2>
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
         alt="Legal framework"
         className="rounded-2xl mb-6 w-full"
@@ -57,7 +57,7 @@ export default function BlogPage() {
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">Key Legal Issues</h2>
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
         alt="Tax discussion"
         className="rounded-2xl mb-6 w-full"
@@ -79,7 +79,7 @@ export default function BlogPage() {
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">Judicial Evolution</h2>
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
         alt="Court analysis"
         className="rounded-2xl mb-6 w-full"
@@ -113,7 +113,7 @@ export default function BlogPage() {
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">Key Implications of the Ruling</h2>
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
         alt="Compliance"
         className="rounded-2xl mb-6 w-full"

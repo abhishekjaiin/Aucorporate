@@ -15,7 +15,7 @@ export default function BlogPage() {
         Wholly Owned Subsidiary in India: Incorporation Process & Compliance
       </h1>
 
-      <img
+      <img decoding="async"
         src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
         alt="Business setup India"
         className="rounded-2xl mb-8 w-full"
@@ -33,7 +33,7 @@ export default function BlogPage() {
 
       <hr className="my-8" />
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
         alt="Incorporation process"
         className="rounded-2xl mb-8 w-full"
@@ -81,7 +81,7 @@ export default function BlogPage() {
 
       <hr className="my-8" />
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
         alt="Corporate structure"
         className="rounded-2xl mb-8 w-full"
@@ -109,7 +109,7 @@ export default function BlogPage() {
 
       <hr className="my-8" />
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
         alt="Compliance India"
         className="rounded-2xl mb-8 w-full"
@@ -143,7 +143,7 @@ export default function BlogPage() {
 
       <hr className="my-8" />
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1521791136064-7986c2920216"
         alt="Business challenges"
         className="rounded-2xl mb-8 w-full"
@@ -177,7 +177,7 @@ export default function BlogPage() {
 
       <hr className="my-8" />
 
-      <img
+      <img loading="lazy" decoding="async"
         src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
         alt="Consulting services"
         className="rounded-2xl mb-8 w-full"

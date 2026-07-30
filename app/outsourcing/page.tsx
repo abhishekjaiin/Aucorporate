@@ -149,6 +149,7 @@ export default function OutsourcingPage() {
             animate={{ scale: 1 }}
             transition={{ duration: 6 }}
             src="https://cdn.corenexis.com/files/c/6433487720.jpg"
+            alt="Accounting and finance outsourcing services team at work"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/60" /> 
@@ -379,7 +380,7 @@ export default function OutsourcingPage() {
                 transition={{ delay: i * 0.1 }}
                 className="p-4 bg-gray-50 border rounded-xl flex items-center justify-center hover:shadow-md transition"
               >
-                <img
+                <img decoding="async"
                   src={s.logo}
                   alt={s.name}
                   className="h-10 object-contain grayscale hover:grayscale-0 transition"

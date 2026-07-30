@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Our Services | AU Corporate — India Entry, Tax, Compliance & Advisory",
+    absolute: "Our Services | India Entry, Tax & Advisory | AU Corp",
   },
   description:
     "Explore AU Corporate's full service range: India entry, GCC advisory, taxation, accounting, HR outsourcing, risk management, and Virtual CFO services.",
@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/services",
   },
   openGraph: {
-    title: "Our Services | AU Corporate — India Entry, Tax, Compliance & Advisory",
+    title: "Our Services | India Entry, Tax & Advisory | AU Corp",
     description:
       "Explore AU Corporate's full service range: India entry, GCC advisory, taxation, accounting, HR outsourcing, risk management, and Virtual CFO services.",
     url: "https://www.theaucorp.com/services",
   },
   twitter: {
-    title: "Our Services | AU Corporate — India Entry, Tax, Compliance & Advisory",
+    title: "Our Services | India Entry, Tax & Advisory | AU Corp",
     description:
       "Explore AU Corporate's full service range: India entry, GCC advisory, taxation, accounting, HR outsourcing, risk management, and Virtual CFO services.",
   },

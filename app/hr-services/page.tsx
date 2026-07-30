@@ -108,6 +108,7 @@ export default function HRServicesPage() {
             animate={{ scale: 1 }}
             transition={{ duration: 6 }}
             src="https://cdn.corenexis.com/files/c/8589382720.jpg"
+            alt="HR outsourcing and payroll services team at work"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/60" />
@@ -167,6 +168,8 @@ export default function HRServicesPage() {
             <motion.div variants={imageLeft} whileHover={{ scale: 1.05 }}>
               <img
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+                alt="Recruiter reviewing candidate profiles for permanent placement"
+                loading="lazy"
                 className="rounded-2xl shadow-lg"
               />
             </motion.div>
@@ -220,6 +223,8 @@ export default function HRServicesPage() {
             <motion.div variants={imageRight} whileHover={{ scale: 1.05 }}>
               <img
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                alt="Team collaborating on project staffing and talent sourcing"
+                loading="lazy"
                 className="rounded-2xl shadow-lg"
               />
             </motion.div>
@@ -235,6 +240,8 @@ export default function HRServicesPage() {
             <motion.div variants={imageLeft} whileHover={{ scale: 1.05 }}>
               <img
                 src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+                alt="Payroll and HR outsourcing services documentation and processing"
+                loading="lazy"
                 className="rounded-2xl shadow-lg"
               />
             </motion.div>

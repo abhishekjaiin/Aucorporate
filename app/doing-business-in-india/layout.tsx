@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Doing Business in India | A Complete Guide for Foreign Companies",
+    absolute: "Doing Business in India | Guide for Foreign Companies",
   },
   description:
     "A practical guide to entering and operating in India — market entry routes, incorporation, compliance, and post-setup requirements.",
@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/doing-business-in-india",
   },
   openGraph: {
-    title: "Doing Business in India | A Complete Guide for Foreign Companies",
+    title: "Doing Business in India | Guide for Foreign Companies",
     description:
       "A practical guide to entering and operating in India — market entry routes, incorporation, compliance, and post-setup requirements.",
     url: "https://www.theaucorp.com/doing-business-in-india",
   },
   twitter: {
-    title: "Doing Business in India | A Complete Guide for Foreign Companies",
+    title: "Doing Business in India | Guide for Foreign Companies",
     description:
       "A practical guide to entering and operating in India — market entry routes, incorporation, compliance, and post-setup requirements.",
   },

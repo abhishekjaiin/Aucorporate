@@ -57,7 +57,7 @@ export default function ArbitrationServicesPage() {
       {/* ================= HERO ================= */}
       <section className="relative py-24 min-h-[80vh] flex items-center">
         <div className="absolute inset-0">
-          <img
+          <img decoding="async"
             src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
             alt="Professional arbitration and legal dispute resolution services"
             className="w-full h-full object-cover"
@@ -141,7 +141,7 @@ export default function ArbitrationServicesPage() {
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
           >
-            <img
+            <img loading="lazy" decoding="async"
               src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
               alt="Dispute resolution and negotiation process"
               className="rounded-2xl shadow-lg"
@@ -223,7 +223,7 @@ export default function ArbitrationServicesPage() {
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
           >
-            <img
+            <img loading="lazy" decoding="async"
               src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
               alt="Legal consultation and court proceedings"
               className="rounded-2xl shadow-lg"
