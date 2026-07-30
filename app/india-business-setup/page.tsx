@@ -11,7 +11,7 @@ export default function IndiaBusinessSetupHub() {
       step: 1,
       title: 'Why India?',
       description: 'Understand India&apos;s economic potential and market opportunities',
-      href: '/india-business-setup/why-india',
+      href: '/doing-business-in-india/why-india',
       icon: Globe,
     },
     {
@@ -73,7 +73,7 @@ export default function IndiaBusinessSetupHub() {
               </p>
               <div className="flex gap-4">
                 <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
-                  <Link href="/india-business-setup/why-india">
+                  <Link href="/doing-business-in-india/why-india">
                     Get Started <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
                 </Button>

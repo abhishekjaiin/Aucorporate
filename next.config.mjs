@@ -93,6 +93,22 @@ const nextConfig = {
 
         permanent: true,
       },
+
+      // Content consolidation: these topics existed as near-duplicates in
+      // both the /doing-business-in-india/ and /india-business-setup/
+      // clusters, competing against each other in search instead of
+      // reinforcing one ranking signal. Redirecting to the more developed
+      // version of each (301, so any existing link equity carries over).
+      {
+        source: "/india-business-setup/why-india",
+        destination: "/doing-business-in-india/why-india",
+        permanent: true,
+      },
+      {
+        source: "/india-business-setup/post-incorporation",
+        destination: "/doing-business-in-india/post-incorporation",
+        permanent: true,
+      },
     ]
   },
 

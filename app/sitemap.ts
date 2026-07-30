@@ -50,12 +50,10 @@ const pages: Page[] = [
   { path: "/doing-business-in-india/post-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
 
   // India Business Setup Cluster
-  { path: "/india-business-setup/why-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/india-business-setup/fdi-channels", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/india-business-setup/company-formation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/india-business-setup/regulatory-compliance", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/india-business-setup/banking-taxation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/india-business-setup/post-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/india-business-setup/timeline-resources", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
 
   // Regional India Entry Clusters

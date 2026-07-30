@@ -24,7 +24,7 @@ export default function BankingTaxationPage() {
             Establish your financial infrastructure in India. From opening business bank accounts to understanding GST and corporate tax obligations, we guide you through the financial setup.
           </p>
           <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
-            <Link href="/india-business-setup/post-incorporation">
+            <Link href="/doing-business-in-india/post-incorporation">
               Next: Post-Incorporation <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
           </Button>
@@ -49,7 +49,7 @@ export default function BankingTaxationPage() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-8">Continue Your Setup</h2>
           <div className="grid sm:grid-cols-2 gap-6">
-            <Link href="/india-business-setup/post-incorporation" className="p-6 border rounded-lg hover:shadow-md transition">
+            <Link href="/doing-business-in-india/post-incorporation" className="p-6 border rounded-lg hover:shadow-md transition">
               <h3 className="font-semibold mb-2">Post-Incorporation</h3>
               <p className="text-sm text-gray-600">Ongoing compliance and operational requirements</p>
             </Link>
