@@ -10,7 +10,6 @@ export default function FemaComplianceUKCompanyPage() {
       subtitle="The recurring RBI and FEMA filings a UK parent's Indian subsidiary needs to stay compliant after incorporation."
       region="UK"
     >
-      <h1 className="sr-only">FEMA Compliance for UK Company India Subsidiary</h1>
 
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">

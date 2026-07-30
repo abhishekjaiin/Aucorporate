@@ -10,7 +10,6 @@ export default function TransferPricingUSIndiaPage() {
       subtitle="How Section 482 on the US side and India's transfer pricing rules interact once your subsidiary starts transacting with its US parent."
       region="US"
     >
-      <h1 className="sr-only">Transfer Pricing US India Subsidiary</h1>
 
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">

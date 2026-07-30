@@ -10,7 +10,6 @@ export default function IndiaUKDTAAPage() {
       subtitle="How the India-UK Double Taxation Avoidance Agreement reduces withholding tax on dividends, interest, and royalties for your Indian subsidiary."
       region="UK"
     >
-      <h1 className="sr-only">India UK DTAA Withholding Tax Rates</h1>
 
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">

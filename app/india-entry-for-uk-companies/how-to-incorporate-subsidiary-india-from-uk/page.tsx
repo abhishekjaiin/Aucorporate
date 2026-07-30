@@ -10,7 +10,6 @@ export default function HowToIncorporateFromUKPage() {
       subtitle="The step-by-step process, including the apostille and notarization requirements specific to UK-originated documents."
       region="UK"
     >
-      <h1 className="sr-only">How to Incorporate a Subsidiary in India from the UK</h1>
 
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">

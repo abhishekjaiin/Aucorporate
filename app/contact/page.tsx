@@ -179,13 +179,14 @@ export default function ContactPage() {
               </div>
             )}
 
-            <Input name="name" placeholder="Full Name *" value={formData.name} onChange={handleInputChange} required />
-            <Input name="email" placeholder="Email *" type="email" value={formData.email} onChange={handleInputChange} required />
-            <Input name="company" placeholder="Company Name" value={formData.company} onChange={handleInputChange} />
-            <Input name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleInputChange} />
+            <Input name="name" placeholder="Full Name *" aria-label="Full Name" value={formData.name} onChange={handleInputChange} required />
+            <Input name="email" placeholder="Email *" aria-label="Email" type="email" value={formData.email} onChange={handleInputChange} required />
+            <Input name="company" placeholder="Company Name" aria-label="Company Name" value={formData.company} onChange={handleInputChange} />
+            <Input name="phone" placeholder="Phone Number" aria-label="Phone Number" value={formData.phone} onChange={handleInputChange} />
 
             <select
               name="service"
+              aria-label="Select a Service"
               value={formData.service}
               onChange={handleInputChange}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
@@ -201,7 +202,7 @@ export default function ContactPage() {
               <option value="Other">Other</option>
             </select>
 
-            <Textarea name="message" placeholder="Your Message *" value={formData.message} onChange={handleInputChange} required />
+            <Textarea name="message" placeholder="Your Message *" aria-label="Your Message" value={formData.message} onChange={handleInputChange} required />
 
             <Button type="submit" className="w-full bg-yellow-400 text-black hover:bg-yellow-500" disabled={isSubmitting}>
               <Send className="mr-2 h-4 w-4" />

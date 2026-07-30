@@ -11,7 +11,6 @@ export default function USSubsidiaryVsBranchPage() {
       region="US"
     >
       {/* H1 + INTRO */}
-      <h1 className="sr-only">US Subsidiary vs Branch Office in India</h1>
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">
           When a US company decides to operate in India, one of the first critical decisions is choosing between a subsidiary and a branch office structure. Each has distinct implications for taxation, liability, compliance, and operational flexibility. This guide walks through the key differences tailored to US GAAP accounting and US tax reporting requirements like Form 5471.

@@ -10,7 +10,6 @@ export default function UKSubsidiaryVsBranchPage() {
       subtitle="Structural differences and UK tax implications when choosing how your UK company enters the Indian market."
       region="UK"
     >
-      <h1 className="sr-only">UK Subsidiary vs Branch Office in India</h1>
 
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">

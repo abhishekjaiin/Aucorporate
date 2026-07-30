@@ -11,7 +11,6 @@ export default function CostTimelineUSPage() {
       subtitle="What actually drives the cost and timeline of an India entry — and why a single flat number rarely fits."
       region="US"
     >
-      <h1 className="sr-only">Cost and Timeline to Incorporate a Company in India from the US</h1>
 
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">
