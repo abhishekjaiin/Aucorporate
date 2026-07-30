@@ -38,6 +38,8 @@ const pages: Page[] = [
   { path: "/about", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/contact", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/career", priority: 0.75, changeFrequency: "monthly", lastModified: "2026-05-04" },
+  { path: "/privacy", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-07-30" },
+  { path: "/terms", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-07-30" },
 
   // Doing Business in India Hub + cluster
   { path: "/doing-business-in-india", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-05-04" },

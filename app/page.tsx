@@ -287,7 +287,7 @@ export default function HomePage() {
             aria-label="Explore India Opportunity"
             className="bg-yellow-400 text-black hover:scale-105 transition"
           >
-            <Link href="/why-india">
+            <Link href="/doing-business-in-india/why-india">
               Explore India Opportunity
             </Link>
           </Button>

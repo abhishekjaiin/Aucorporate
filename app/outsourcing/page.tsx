@@ -175,7 +175,7 @@ export default function OutsourcingPage() {
               </Button>
 
               <Button asChild className="bg-gold text-black">
-                <Link href="/why-india">Why India</Link>
+                <Link href="/doing-business-in-india/why-india">Why India</Link>
               </Button>
             </div>
           </motion.div>
