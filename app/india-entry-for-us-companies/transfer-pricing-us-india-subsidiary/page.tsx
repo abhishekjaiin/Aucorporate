@@ -39,6 +39,13 @@ export default function TransferPricingUSIndiaPage() {
         </div>
       </div>
 
+      <div className="mb-12 p-6 bg-blue-50 border-l-4 border-blue-400 rounded">
+        <h3 className="font-bold text-lg mb-2">Regulatory update: Form 3CEB is being renumbered to Form 48</h3>
+        <p className="text-gray-700">
+          Under the draft Income-tax Rules, 2026 (issued for public consultation by the CBDT under the new Income-tax Act, 2025), Form 3CEB is proposed to be replaced by Form 48 — a more data-rich, structured filing intended to apply from Tax Year 2026-27 onwards. This is still a draft proposal, not yet finalized law, and Form 3CEB remains the operative filing for the current cycle (due October 31, 2026). We&apos;re tracking the CBDT&apos;s final notification and will apply whichever form number is current at the time of your filing.
+        </p>
+      </div>
+
       <div className="mb-12 p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded">
         <h3 className="font-bold text-lg mb-2">The practical risk</h3>
         <p className="text-gray-700">
@@ -49,6 +56,9 @@ export default function TransferPricingUSIndiaPage() {
       <div className="mb-12 p-6 bg-gray-50 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Related Reading</h3>
         <div className="flex flex-col gap-2">
+          <Link href="/blog/india-safe-harbour-rules-2026" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+            India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained →
+          </Link>
           <Link href="/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             FEMA Compliance for US Companies →
           </Link>

@@ -91,6 +91,7 @@ const pages: Page[] = [
   { path: "/blog/mail-box-dtaa-benefits", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/blog/tax-loan-waiver-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/blog/wholly-owned-subsidiary", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
+  { path: "/blog/india-safe-harbour-rules-2026", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-07-30" },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

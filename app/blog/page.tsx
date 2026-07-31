@@ -6,6 +6,11 @@ import { ArrowRight } from "lucide-react"
 
 const blogs = [
   {
+    title: "India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained",
+    desc: "Union Budget 2026 consolidated IT, ITeS, KPO and contract R&D into a single Safe Harbour category at 15.5% margin, with the eligibility threshold raised from Rs 300 crore to Rs 2,000 crore. What it means for your GCC.",
+    slug: "india-safe-harbour-rules-2026",
+  },
+  {
     title: "Construction Arbitration in India: From Winning Claims to Enforcing Awards",
     desc: "Understand regulatory, tax, and compliance landscape before entering India.",
     slug: "construction-arbitration-in-india",
