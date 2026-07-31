@@ -73,6 +73,9 @@ const pages: Page[] = [
 
   { path: "/india-entry-for-singapore-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-07-29" },
   { path: "/india-entry-for-australian-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-07-29" },
+  { path: "/india-entry-for-german-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-07-30" },
+  { path: "/india-entry-for-japan-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-07-30" },
+  { path: "/india-entry-for-china-companies", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-07-30" },
 
   // Service Pages
   { path: "/services/risk-management", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },

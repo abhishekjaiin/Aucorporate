@@ -279,6 +279,24 @@ export default function HomePage() {
               >
                 Australia Companies
               </Link>
+              <Link
+                href="/india-entry-for-german-companies"
+                className="px-4 py-2 bg-white/20 hover:bg-white/30 border border-white/30 rounded-lg text-white text-sm font-semibold transition"
+              >
+                Germany Companies
+              </Link>
+              <Link
+                href="/india-entry-for-japan-companies"
+                className="px-4 py-2 bg-white/20 hover:bg-white/30 border border-white/30 rounded-lg text-white text-sm font-semibold transition"
+              >
+                Japan Companies
+              </Link>
+              <Link
+                href="/india-entry-for-china-companies"
+                className="px-4 py-2 bg-white/20 hover:bg-white/30 border border-white/30 rounded-lg text-white text-sm font-semibold transition"
+              >
+                China Companies
+              </Link>
             </div>
           </div>
 
