@@ -444,6 +444,96 @@ export default function WhyIndiaPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-8">
+            {[
+              {
+                q: "Why do foreign companies set up business in India?",
+                a: "India combines a large and growing consumer market, a young and skilled English-speaking workforce, and an increasingly liberalized FDI regime — most sectors now permit up to 100% foreign investment under the automatic route, with no prior government approval required.",
+              },
+              {
+                q: "Which entity type is best for a foreign company entering India?",
+                a: "A wholly-owned Private Limited subsidiary is the most common choice for foreign companies planning genuine operations in India — it offers full commercial flexibility, limited liability, and access to the automatic FDI route in most sectors. Branch and liaison offices suit narrower, representative-only use cases and require specific RBI approval.",
+              },
+              {
+                q: "How long does it take to set up a company in India as a foreign entity?",
+                a: "Core incorporation (DSC, DIN, name reservation through Certificate of Incorporation) typically moves faster than most foreign parent companies expect — the real pacing factor is usually document authentication on the foreign parent's side (notarization and apostille), not the Indian filing itself.",
+              },
+              {
+                q: "Can a foreign company own property in India?",
+                a: "A wholly-owned Indian subsidiary, once incorporated, can own property in India like any other Indian company. Branch, liaison, and project offices can only do so with specific RBI approval, and liaison offices in particular face significant restrictions on any form of commercial activity.",
+              },
+              {
+                q: "Does a foreign company need an Indian director?",
+                a: "Yes — under the Companies Act, 2013, every Indian company, including a wholly-owned foreign subsidiary, must have at least one director who is both an Indian citizen and an Indian resident (defined as having stayed in India for more than 182 days in the previous financial year).",
+              },
+            ].map((item) => (
+              <div key={item.q} className="border-b border-gray-200 pb-6">
+                <h3 className="text-lg font-bold mb-2">{item.q}</h3>
+                <p className="text-gray-600">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Why do foreign companies set up business in India?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "India combines a large and growing consumer market, a young and skilled English-speaking workforce, and an increasingly liberalized FDI regime — most sectors now permit up to 100% foreign investment under the automatic route, with no prior government approval required.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Which entity type is best for a foreign company entering India?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "A wholly-owned Private Limited subsidiary is the most common choice for foreign companies planning genuine operations in India — it offers full commercial flexibility, limited liability, and access to the automatic FDI route in most sectors. Branch and liaison offices suit narrower, representative-only use cases and require specific RBI approval.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How long does it take to set up a company in India as a foreign entity?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Core incorporation (DSC, DIN, name reservation through Certificate of Incorporation) typically moves faster than most foreign parent companies expect — the real pacing factor is usually document authentication on the foreign parent's side (notarization and apostille), not the Indian filing itself.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can a foreign company own property in India?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "A wholly-owned Indian subsidiary, once incorporated, can own property in India like any other Indian company. Branch, liaison, and project offices can only do so with specific RBI approval, and liaison offices in particular face significant restrictions on any form of commercial activity.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Does a foreign company need an Indian director?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes — under the Companies Act, 2013, every Indian company, including a wholly-owned foreign subsidiary, must have at least one director who is both an Indian citizen and an Indian resident (defined as having stayed in India for more than 182 days in the previous financial year).",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* CTA */}
       <section className="bg-[#081a42] text-white py-24 text-center">
         <h2 className="text-3xl font-bold mb-4">
