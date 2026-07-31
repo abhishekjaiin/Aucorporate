@@ -109,6 +109,16 @@ const nextConfig = {
         destination: "/doing-business-in-india/post-incorporation",
         permanent: true,
       },
+      // Folder was renamed from /blog/construction-arbitration-in-India (capital I)
+      // to lowercase, matching every other blog slug's convention. This was
+      // actively broken — the blog index linked to lowercase while the page's
+      // own canonical declared the capital-I version, so anything crawled or
+      // bookmarked with the old casing gets redirected rather than 404ing.
+      {
+        source: "/blog/construction-arbitration-in-India",
+        destination: "/blog/construction-arbitration-in-india",
+        permanent: true,
+      },
     ]
   },
 
