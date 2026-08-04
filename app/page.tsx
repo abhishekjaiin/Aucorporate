@@ -124,7 +124,7 @@ export default function HomePage() {
             AU Corporate — Growing Together
           </p>
 
-          <h1 className="text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+          <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-snug max-w-4xl mx-auto">
             One-Stop Solution for Foreign Companies to Establish a Subsidiary in India
           </h1>
 
