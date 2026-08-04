@@ -20,12 +20,12 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "AU Corporate | India Entry & Business Services",
+      "One-Stop Solution for Foreign Companies in India | AU Corp",
     template: "%s | AU Corporate",
   },
 
   description:
-    "AU Corporate provides India Entry, GCC Advisory, Business Setup, Accounting, Payroll, Tax, Transfer Pricing, Virtual CFO, HR Outsourcing, and Compliance services for global businesses and multinational enterprises.",
+    "A one-stop solution for foreign companies establishing a subsidiary in India — market entry, incorporation, FEMA compliance, tax, and Virtual CFO services.",
 
   alternates: {
     canonical: "https://www.theaucorp.com",
@@ -84,10 +84,10 @@ export const metadata: Metadata = {
     siteName: "AU Corporate",
 
     title:
-      "AU Corporate | India Entry & Business Services",
+      "One-Stop Solution for Foreign Companies in India | AU Corp",
 
     description:
-      "Helping foreign companies establish and expand in India through transfer pricing, FEMA, GST, accounting, payroll and regulatory compliance services.",
+      "A one-stop solution for foreign companies establishing a subsidiary in India — market entry, incorporation, FEMA compliance, tax, and Virtual CFO services.",
 
     images: [
       {
@@ -103,10 +103,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "AU Corporate | India Entry & Business Services",
+      "One-Stop Solution for Foreign Companies in India | AU Corp",
 
     description:
-      "Helping foreign companies establish and expand in India through transfer pricing, FEMA, GST, accounting, payroll and regulatory compliance services.",
+      "A one-stop solution for foreign companies establishing a subsidiary in India — market entry, incorporation, FEMA compliance, tax, and Virtual CFO services.",
 
     images: ["https://www.theaucorp.com/og-image.png"],
   },

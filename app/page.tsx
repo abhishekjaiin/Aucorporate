@@ -120,13 +120,13 @@ export default function HomePage() {
 
         <div className="relative z-10 text-center px-3 sm:px-4 max-w-5xl">
 
-          <h1 className="text-3xl xs:text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-yellow-400 mb-1 leading-tight">
-            AU Corporate
-          </h1>
-
-          <p className="text-white/80 mb-6 sm:mb-8 text-base xs:text-lg sm:text-2xl md:text-3xl font-bold leading-relaxed">
-            Growing Together
+          <p className="text-yellow-400 mb-3 sm:mb-4 text-sm xs:text-base sm:text-lg md:text-xl font-bold tracking-wide uppercase">
+            AU Corporate — Growing Together
           </p>
+
+          <h1 className="text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+            One-Stop Solution for Foreign Companies to Establish a Subsidiary in India
+          </h1>
 
           <p className="text-white/70 mb-6 sm:mb-8 text-xs xs:text-sm sm:text-base md:text-lg px-1">
             India Entry | GCC Advisory | Business Setup | Accounting | Payroll | Tax | Transfer Pricing | Virtual CFO | HR Outsourcing | Compliance
