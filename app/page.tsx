@@ -3,8 +3,9 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { motion, useInView, animate } from "framer-motion"
+import { useInView, animate } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
+import GlobeHero from "@/components/GlobeHero"
 
 import {
   Calculator,
@@ -94,29 +95,11 @@ export default function HomePage() {
     <div className="min-h-screen overflow-x-hidden">
 
       {/* ================= HERO ================= */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24 bg-[#081A42]">
 
-        <motion.div
-          animate={{
-            scale: [1.1, 1.15, 1.1],
-            x: ["-2%", "2%", "-2%"],
-            y: ["-2%", "2%", "-2%"],
-          }}
-          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute inset-0"
-        >
-          <Image
-            src="https://cdn.imageurlgenerator.com/uploads/d3d75a3f-28c7-4fa4-9ba4-6aa76dd8d091.webp"
-            alt="AU Corporate Hero"
-            fill
-            priority
-            sizes="100vw"
-            quality={75}
-            className="object-cover"
-          />
-        </motion.div>
+        <GlobeHero />
 
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/55" />
 
         <div className="relative z-10 text-center px-3 sm:px-4 max-w-5xl">
 
