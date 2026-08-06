@@ -99,15 +99,15 @@ export default function HomePage() {
 
         <GlobeHero />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-[#081A42]/80 via-black/40 to-[#081A42]/85" />
+        <div className="absolute inset-0 bg-black/25" />
 
         <div className="relative z-10 text-center px-3 sm:px-4 max-w-5xl">
 
-          <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-snug max-w-4xl mx-auto">
+          <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-snug max-w-4xl mx-auto [text-shadow:0_2px_12px_rgba(0,0,0,0.6)]">
             One-Stop Solution for Foreign Companies to Establish a Subsidiary in India
           </h1>
 
-          <p className="text-white/70 mb-6 sm:mb-8 text-xs xs:text-sm sm:text-base md:text-lg px-1">
+          <p className="text-white/70 mb-6 sm:mb-8 text-xs xs:text-sm sm:text-base md:text-lg px-1 [text-shadow:0_1px_8px_rgba(0,0,0,0.6)]">
             India Entry | GCC Advisory | Business Setup | Accounting | Payroll | Tax | Transfer Pricing | Virtual CFO | HR Outsourcing | Compliance
           </p>
 
