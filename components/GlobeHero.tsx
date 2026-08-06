@@ -17,7 +17,7 @@ const CITIES = [
 
 // Simplified world-coastline dot field (lon,lat pairs) used to render the
 // globe's "land" texture. Purely decorative — no AU Corporate-specific data.
-const LAND_STEP = 4 // sparser sampling than the original for perf inside a React re-render loop
+const LAND_STEP = 5 // sparser sampling for a lighter, faster-rendering hero background
 function buildLandGrid(): number[] {
   const pts: number[] = []
   // Cheap approximation: scatter points weighted toward known landmass bands.
@@ -31,7 +31,7 @@ function buildLandGrid(): number[] {
   bands.forEach(([lonMin, lonMax, latMin, latMax]) => {
     for (let lon = lonMin; lon <= lonMax; lon += LAND_STEP) {
       for (let lat = latMin; lat <= latMax; lat += LAND_STEP) {
-        if (Math.random() > 0.55) pts.push(lon, lat)
+        if (Math.random() > 0.65) pts.push(lon, lat)
       }
     }
   })
@@ -54,11 +54,13 @@ export default function GlobeHero() {
       DPR = Math.min(window.devicePixelRatio || 1, 2)
       W = canvas!.clientWidth
       H = canvas!.clientHeight
+      if (W === 0 || H === 0) return // container not laid out yet — wait for ResizeObserver
       canvas!.width = W * DPR
       canvas!.height = H * DPR
       ctx!.setTransform(DPR, 0, 0, DPR, 0, 0)
     }
-    window.addEventListener("resize", resize)
+    const resizeObserver = new ResizeObserver(() => resize())
+    resizeObserver.observe(canvas)
     resize()
 
     let mouseY = 0,
@@ -114,11 +116,15 @@ export default function GlobeHero() {
     let rot = 0
     let t0 = performance.now()
     let rafId = 0
+    const prefersReducedMotion =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    const rotSpeed = prefersReducedMotion ? 0.008 : 0.08
 
     function draw(now: number) {
       const dt = (now - t0) / 1000
       t0 = now
-      rot += dt * 0.08
+      rot += dt * rotSpeed
       tiltX += (targetTiltX - tiltX) * 0.06
       TILT = -18 * DEG + tiltX
 
@@ -263,7 +269,7 @@ export default function GlobeHero() {
 
     return () => {
       cancelAnimationFrame(rafId)
-      window.removeEventListener("resize", resize)
+      resizeObserver.disconnect()
       window.removeEventListener("mousemove", onMouseMove)
     }
   }, [])

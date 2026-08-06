@@ -99,13 +99,9 @@ export default function HomePage() {
 
         <GlobeHero />
 
-        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#081A42]/80 via-black/40 to-[#081A42]/85" />
 
         <div className="relative z-10 text-center px-3 sm:px-4 max-w-5xl">
-
-          <p className="text-yellow-400 mb-3 sm:mb-4 text-sm xs:text-base sm:text-lg md:text-xl font-bold tracking-wide uppercase">
-            AU Corporate — Growing Together
-          </p>
 
           <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-snug max-w-4xl mx-auto">
             One-Stop Solution for Foreign Companies to Establish a Subsidiary in India
