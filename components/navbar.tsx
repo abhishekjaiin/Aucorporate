@@ -35,16 +35,6 @@ export function Navbar() {
     { label: "Career", href: "/career" },
   ]
 
-  const countryEntries = [
-    { flag: "🇺🇸", label: "US Companies", href: "/india-entry-for-us-companies" },
-    { flag: "🇬🇧", label: "UK Companies", href: "/india-entry-for-uk-companies" },
-    { flag: "🇸🇬", label: "Singapore Companies", href: "/india-entry-for-singapore-companies" },
-    { flag: "🇦🇺", label: "Australian Companies", href: "/india-entry-for-australian-companies" },
-    { flag: "🇩🇪", label: "German Companies", href: "/india-entry-for-german-companies" },
-    { flag: "🇯🇵", label: "Japanese Companies", href: "/india-entry-for-japan-companies" },
-    { flag: "🇨🇳", label: "Chinese Companies", href: "/india-entry-for-china-companies" },
-  ]
-
   const mainServices = [
     { label: "Risk Management Services", key: "risk" },
     {
@@ -121,48 +111,6 @@ export function Navbar() {
 
           {/* DESKTOP MENU */}
           <div className="hidden lg:flex items-center gap-2">
-
-            {/* INDIA ENTRY BY COUNTRY */}
-            <div
-              className="relative group"
-              onMouseLeave={() => {
-                setActiveMenu(null)
-                setActiveSubMenu(null)
-              }}
-              onMouseEnter={() => {
-                setActiveMenu("country")
-                setActiveSubMenu(null)
-              }}
-            >
-              <button
-                className="px-3 py-2 text-sm text-gray-700 hover:text-black flex items-center gap-1 transition"
-              >
-                India Entry
-                <ChevronDown className="w-4 h-4" />
-              </button>
-
-              {activeMenu === "country" && (
-                <div className="absolute top-full left-0 mt-0 w-[440px] bg-white border shadow-2xl rounded-2xl overflow-hidden z-50">
-                  <div className="px-5 py-3 border-b bg-gray-50">
-                    <h3 className="text-sm font-semibold text-[#081a42]">
-                      Find guidance for your country
-                    </h3>
-                  </div>
-                  <div className="grid grid-cols-2 gap-1 p-3">
-                    {countryEntries.map((c) => (
-                      <Link
-                        key={c.label}
-                        href={c.href}
-                        className="flex items-center gap-2 px-3 py-2.5 text-sm rounded-lg hover:bg-gray-50 transition"
-                      >
-                        <span className="text-lg">{c.flag}</span>
-                        <span>{c.label}</span>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
 
             {/* SERVICES */}
             <div
@@ -408,42 +356,6 @@ export function Navbar() {
         {/* MOBILE MENU */}
         {isOpen && (
           <div className="lg:hidden absolute left-0 top-16 w-full bg-white border-t shadow-lg px-5 py-6">
-
-            {/* INDIA ENTRY BY COUNTRY */}
-            <div className="mb-4">
-
-              <button
-                onClick={() =>
-                  setMobileMenu(
-                    mobileMenu === "country"
-                      ? null
-                      : "country"
-                  )
-                }
-                className="w-full flex justify-between items-center text-base font-semibold py-2"
-              >
-                India Entry
-
-                <span>
-                  {mobileMenu === "country" ? "−" : "+"}
-                </span>
-              </button>
-
-              {mobileMenu === "country" && (
-                <div className="mt-3 grid grid-cols-2 gap-1 text-sm text-gray-700">
-                  {countryEntries.map((c) => (
-                    <Link
-                      key={c.label}
-                      href={c.href}
-                      className="flex items-center gap-2 py-2"
-                    >
-                      <span className="text-lg">{c.flag}</span>
-                      <span>{c.label}</span>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
 
             {/* SERVICES */}
             <div className="mb-4">
