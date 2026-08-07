@@ -1,24 +1,10 @@
 "use client"
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import Script from "next/script"
 import {
   Mail,
   MapPin,
-  Send
 } from "lucide-react"
-
-type FormState = {
-  name: string
-  email: string
-  company: string
-  phone: string
-  service: string
-  message: string
-  website: string // honeypot — must stay empty; hidden from real users via CSS
-}
 
 const GOLD = "#FFD700"
 
@@ -32,85 +18,21 @@ const contactInfo = [
   },
   {
     icon: MapPin,
-title: "Visit Us",
-description: "Our main office",
-value: "New Delhi",
+    title: "Visit Us",
+    description: "Our main office",
+    value: "New Delhi",
   },
 ]
 
 const offices = [
   {
     region: "India (HQ)",
-city: "New Delhi",
-address: "New Delhi",
+    city: "New Delhi",
+    address: "New Delhi",
   },
-] 
+]
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState<FormState>({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    service: "",
-    message: "",
-    website: "",
-  })
-
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitSuccess, setSubmitSuccess] = useState(false)
-  const [submitError, setSubmitError] = useState("")
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    setSubmitError("")
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      })
-
-      const data = await response.json()
-
-      if (!response.ok) {
-        setSubmitError(data.error || "Failed to send message. Please try again.")
-        setIsSubmitting(false)
-        return
-      }
-
-      setIsSubmitting(false)
-      setSubmitSuccess(true)
-
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        phone: "",
-        service: "",
-        message: "",
-        website: "",
-      })
-
-      setTimeout(() => setSubmitSuccess(false), 5000)
-    } catch (error) {
-      console.error("[v0] Form submission error:", error)
-      setSubmitError("An error occurred. Please try again later.")
-      setIsSubmitting(false)
-    }
-  }
-
   return (
     <div className="min-h-screen pt-20">
 
@@ -153,63 +75,18 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
 
           {/* FORM */}
-          <form onSubmit={handleSubmit} className="space-y-4">
-            {/* Honeypot field — hidden from real users, catches bots that
-                blindly fill every input. Must stay empty on real submissions. */}
-            <input
-              type="text"
-              name="website"
-              value={formData.website}
-              onChange={handleInputChange}
-              tabIndex={-1}
-              autoComplete="off"
-              aria-hidden="true"
-              style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }}
+          <div>
+            <Script
+              src="https://js-na2.hsforms.net/forms/embed/246295501.js"
+              strategy="afterInteractive"
             />
-
-            {submitSuccess && (
-              <div className="p-3 bg-green-100 text-green-700 rounded-lg border border-green-300">
-                <strong>Success!</strong> Your inquiry has been sent. We will respond within 24 hours.
-              </div>
-            )}
-
-            {submitError && (
-              <div className="p-3 bg-red-100 text-red-700 rounded-lg border border-red-300">
-                <strong>Error:</strong> {submitError}
-              </div>
-            )}
-
-            <Input name="name" placeholder="Full Name *" aria-label="Full Name" value={formData.name} onChange={handleInputChange} required />
-            <Input name="email" placeholder="Email *" aria-label="Email" type="email" value={formData.email} onChange={handleInputChange} required />
-            <Input name="company" placeholder="Company Name" aria-label="Company Name" value={formData.company} onChange={handleInputChange} />
-            <Input name="phone" placeholder="Phone Number" aria-label="Phone Number" value={formData.phone} onChange={handleInputChange} />
-
-            <select
-              name="service"
-              aria-label="Select a Service"
-              value={formData.service}
-              onChange={handleInputChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
-            >
-              <option value="">Select a Service (Optional)</option>
-              <option value="India Entry">India Entry Services</option>
-              <option value="Business Setup">Business Setup</option>
-              <option value="Tax Advisory">Tax Advisory</option>
-              <option value="Accounting">Accounting Services</option>
-              <option value="Payroll">Payroll Services</option>
-              <option value="HR Outsourcing">HR Outsourcing</option>
-              <option value="Compliance">Compliance Services</option>
-              <option value="Other">Other</option>
-            </select>
-
-            <Textarea name="message" placeholder="Your Message *" aria-label="Your Message" value={formData.message} onChange={handleInputChange} required />
-
-            <Button type="submit" className="w-full bg-yellow-400 text-black hover:bg-yellow-500" disabled={isSubmitting}>
-              <Send className="mr-2 h-4 w-4" />
-              {isSubmitting ? "Sending..." : "Send Message"}
-            </Button>
-
-          </form>
+            <div
+              className="hs-form-frame"
+              data-region="na2"
+              data-form-id="6c02b223-c3cf-44d9-9f56-358a9c3488ae"
+              data-portal-id="246295501"
+            />
+          </div>
 
           {/* OFFICES */}
           <div>
