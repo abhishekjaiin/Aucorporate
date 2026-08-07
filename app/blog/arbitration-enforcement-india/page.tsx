@@ -9,7 +9,7 @@ export default function BlogPage() {
       {/* HERO IMAGE */}
       <div className="mt-4 relative w-full aspect-[16/9] overflow-hidden rounded-2xl">
         <Image
-          src="https://cdn.corenexis.com/files/c/6482191720.webp"
+          src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
           alt="Arbitration Enforcement India"
           fill
           priority
@@ -129,7 +129,7 @@ export default function BlogPage() {
       {/* IMAGE */}
       <div className="mt-8 relative w-full aspect-[16/9] overflow-hidden rounded-xl">
         <Image
-          src="https://cdn.corenexis.com/files/c/6121698720.jpg"
+          src="https://images.unsplash.com/photo-1581091012184-7c7f8e84f3b5"
           alt="Court Judgment"
           fill
           unoptimized

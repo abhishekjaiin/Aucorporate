@@ -107,7 +107,7 @@ export default function HRServicesPage() {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 6 }}
-            src="https://cdn.corenexis.com/files/c/8589382720.jpg"
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
             alt="HR outsourcing and payroll services team at work"
             className="w-full h-full object-cover"
           />

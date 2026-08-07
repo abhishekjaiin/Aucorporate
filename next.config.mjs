@@ -8,10 +8,6 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.corenexis.com",
-      },
-      {
-        protocol: "https",
         hostname: "user8396.na.imgto.link",
       },
       {

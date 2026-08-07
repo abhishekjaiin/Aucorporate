@@ -21,7 +21,7 @@ export default function EntryProcessPage() {
       <section className="relative h-[85vh] flex items-center justify-center text-center text-white">
 
         <Image
-          src="https://cdn.corenexis.com/files/c/7719595720.jpg"
+          src="https://images.unsplash.com/photo-1581091012184-7c7f8e84f3b5"
           alt="India Business Entry"
           fill
           className="object-cover"

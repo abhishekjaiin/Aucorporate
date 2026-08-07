@@ -21,7 +21,7 @@ export default function WhyIndiaPage() {
       <section className="relative h-[85vh] flex items-center justify-center text-center text-white">
 
         <Image
-          src="https://cdn.corenexis.com/files/c/7719595720.jpg"
+          src="https://images.unsplash.com/photo-1581091012184-7c7f8e84f3b5"
           alt="India Growth"
           fill
           className="object-cover"
@@ -291,37 +291,37 @@ export default function WhyIndiaPage() {
             {[
               {
                 title: "Pharmaceuticals & Life Sciences",
-                image: "https://cdn.corenexis.com/files/c/8581953720.jpg",
+                image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
                 desc: "Global leader in generics, vaccines and contract manufacturing.",
                 stat: "20% global supply share",
               },
               {
                 title: "IT Services & SaaS",
-                image: "https://cdn.corenexis.com/files/c/4374972720.jpg",
+                image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
                 desc: "India dominates global IT outsourcing and digital services delivery.",
                 stat: "$350B+ industry",
               },
               {
                 title: "Automobile & EV",
-                image: "https://cdn.corenexis.com/files/c/3863859720.jpg",
+                image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
                 desc: "Rapid EV adoption and manufacturing ecosystem expansion.",
                 stat: "4th largest auto market",
               },
               {
                 title: "Renewable Energy",
-                image: "https://cdn.corenexis.com/files/c/6554291720.jpg",
+                image: "https://images.unsplash.com/photo-1524492449090-1b4b0d8b4c0b",
                 desc: "Massive solar, wind and green hydrogen expansion pipeline.",
                 stat: "500+ GW target",
               },
               {
                 title: "Infrastructure & Construction",
-                image: "https://cdn.corenexis.com/files/c/7788446720.jpg",
+                image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85",
                 desc: "Smart cities, highways, logistics and real estate boom.",
                 stat: "$1T+ pipeline",
               },
               {
                 title: "Financial Services & Fintech",
-                image: "https://cdn.corenexis.com/files/c/4785839720.jpg",
+                image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07",
                 desc: "UPI-driven digital economy transforming financial systems.",
                 stat: "1B+ monthly transactions",
               },

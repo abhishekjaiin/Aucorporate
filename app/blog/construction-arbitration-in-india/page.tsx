@@ -8,7 +8,7 @@ export default function BlogPage() {
 
       <div className="mt-4">
         <Image
-          src="https://cdn.corenexis.com/files/c/2863224720.jpg"
+          src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
           alt="Construction Arbitration India"
           width={1200}
           height={675}

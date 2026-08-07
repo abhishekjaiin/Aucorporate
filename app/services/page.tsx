@@ -124,7 +124,7 @@ export default function ServicesPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img decoding="async"
-            src="https://cdn.corenexis.com/files/c/1255642720.png"
+            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
             alt="Services Background"
             className="w-full h-full object-cover"
           />

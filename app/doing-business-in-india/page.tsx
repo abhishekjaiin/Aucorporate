@@ -110,7 +110,7 @@ export default function WhyIndiaPage() {
             {[
               {
                 title: "Pharmaceuticals",
-                image: "https://cdn.corenexis.com/files/c/4291696720.jpg",
+                image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
                 points: [
                   "20% global generic medicine supply",
                   "USD 130 Bn market by 2030",
@@ -118,7 +118,7 @@ export default function WhyIndiaPage() {
               },
               {
                 title: "IT - BPM",
-                image: "https://cdn.corenexis.com/files/c/3221391720.jpg",
+                image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
                 points: [
                   "8% contribution to GDP",
                   "USD 350 Bn expected size",
@@ -126,7 +126,7 @@ export default function WhyIndiaPage() {
               },
               {
                 title: "Automobile / EV",
-                image: "https://cdn.corenexis.com/files/c/9266523720.jpg",
+                image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
                 points: [
                   "4th largest automotive market",
                   "Growing EV ecosystem",
@@ -134,7 +134,7 @@ export default function WhyIndiaPage() {
               },
               {
                 title: "Construction",
-                image: "https://cdn.corenexis.com/files/c/3438374720.jpg",
+                image: "https://images.unsplash.com/photo-1524492449090-1b4b0d8b4c0b",
                 points: [
                   "USD 1Tn market by 2025",
                   "Major GDP contributor",
@@ -142,7 +142,7 @@ export default function WhyIndiaPage() {
               },
               {
                 title: "Renewable Energy",
-                image: "https://cdn.corenexis.com/files/c/3934283720.jpg",
+                image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85",
                 points: [
                   "1000+ GW potential",
                   "Strong policy push",
@@ -150,7 +150,7 @@ export default function WhyIndiaPage() {
               },
               {
                 title: "Healthcare",
-                image: "https://cdn.corenexis.com/files/c/7454887720.jpg",
+                image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07",
                 points: [
                   "Fastest growing sector",
                   "USD 372 Bn opportunity",

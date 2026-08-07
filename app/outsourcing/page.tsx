@@ -110,30 +110,12 @@ const industries = [
 ]
 
 const software = [
-  {
-    name: "QuickBooks",
-    logo: "https://cdn.corenexis.com/files/c/6948898720.png",
-  },
-  {
-    name: "Xero",
-    logo: "https://cdn.corenexis.com/files/c/4477229720.png",
-  },
-  {
-    name: "Zoho Books",
-    logo: "https://cdn.corenexis.com/files/c/1937144720.jpg",
-  },
-  {
-    name: "SAP",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg",
-  },
-  {
-    name: "Oracle NetSuite",
-    logo: "https://cdn.corenexis.com/files/c/9951218720.png",
-  },
-  {
-    name: "Tally",
-    logo: "https://cdn.corenexis.com/files/c/7416121720.png",
-  },
+  { name: "QuickBooks" },
+  { name: "Xero" },
+  { name: "Zoho Books" },
+  { name: "SAP" },
+  { name: "Oracle NetSuite" },
+  { name: "Tally" },
 ]
 
 export default function OutsourcingPage() {
@@ -148,7 +130,7 @@ export default function OutsourcingPage() {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 6 }}
-            src="https://cdn.corenexis.com/files/c/6433487720.jpg"
+            src="https://images.unsplash.com/photo-1524492449090-1b4b0d8b4c0b"
             alt="Accounting and finance outsourcing services team at work"
             className="w-full h-full object-cover"
           />
@@ -380,11 +362,9 @@ export default function OutsourcingPage() {
                 transition={{ delay: i * 0.1 }}
                 className="p-4 bg-gray-50 border rounded-xl flex items-center justify-center hover:shadow-md transition"
               >
-                <img decoding="async"
-                  src={s.logo}
-                  alt={s.name}
-                  className="h-10 object-contain grayscale hover:grayscale-0 transition"
-                />
+                <span className="font-semibold text-gray-700 text-sm sm:text-base text-center">
+                  {s.name}
+                </span>
               </motion.div>
             ))}
 

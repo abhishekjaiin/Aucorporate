@@ -175,7 +175,7 @@ export default function HomePage() {
       <section className="relative py-24 text-white overflow-hidden">
 
         <Image
-          src="https://cdn.corenexis.com/files/c/5753696720.jpg"
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978"
           alt="Doing Business in India"
           fill
           loading="lazy"
