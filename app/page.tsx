@@ -171,6 +171,59 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ================= HOW IT WORKS ================= */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+
+          <h2 className="text-3xl font-bold text-center mb-4">
+            How It Works
+          </h2>
+
+          <p className="text-gray-500 text-center max-w-2xl mx-auto mb-14">
+            From first conversation to fully operational in India — our process removes uncertainty at every stage.
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            {[
+              {
+                step: "01",
+                title: "Discovery Call",
+                description: "We understand your business, target market, and timeline to map the right entry structure and services.",
+              },
+              {
+                step: "02",
+                title: "Scoping & Proposal",
+                description: "A clear scope, timeline, and fee structure for your engagement — no surprises, no hidden dependencies.",
+              },
+              {
+                step: "03",
+                title: "Execution",
+                description: "We handle incorporation, FEMA compliance, registrations, and setup — end to end.",
+              },
+              {
+                step: "04",
+                title: "Ongoing Support",
+                description: "We stay engaged — accounting, tax, payroll, and compliance cycles, so your entity stays in good standing.",
+              },
+            ].map((item) => (
+              <div key={item.step} className="relative">
+                <div className="text-4xl font-bold text-yellow-400 mb-3">
+                  {item.step}
+                </div>
+                <h3 className="font-semibold text-lg mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-500">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+
+          </div>
+        </div>
+      </section>
+
       {/* ================= INDIA SECTION ================= */}
       <section className="relative py-24 text-white overflow-hidden">
 
