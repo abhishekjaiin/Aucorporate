@@ -80,12 +80,35 @@ export default function ContactPage() {
               src="https://js-na2.hsforms.net/forms/embed/246295501.js"
               strategy="afterInteractive"
             />
-            <div
-              className="hs-form-frame"
-              data-region="na2"
-              data-form-id="6c02b223-c3cf-44d9-9f56-358a9c3488ae"
-              data-portal-id="246295501"
-            />
+            {/*
+              HubSpot renders this into a cross-origin iframe, so page CSS
+              can't reach its internal "Powered by HubSpot" footer directly.
+              Standard workaround: overflow:hidden on the wrapper + a
+              negative margin-bottom on the iframe itself, which pulls the
+              wrapper's auto height up short of the iframe's full rendered
+              height, clipping the last ~46px (the branding footer) outside
+              the visible area. Fragile by nature: if HubSpot changes the
+              footer height, or form content grows taller (validation
+              errors, more fields), this may clip too little or too much.
+              The reliable fix is removing branding at the HubSpot account
+              level (Starter plan+), not this CSS hack.
+            */}
+            <div className="hubspot-form-crop">
+              <div
+                className="hs-form-frame"
+                data-region="na2"
+                data-form-id="6c02b223-c3cf-44d9-9f56-358a9c3488ae"
+                data-portal-id="246295501"
+              />
+            </div>
+            <style jsx>{`
+              .hubspot-form-crop {
+                overflow: hidden;
+              }
+              .hubspot-form-crop :global(iframe) {
+                margin-bottom: -46px;
+              }
+            `}</style>
           </div>
 
           {/* OFFICES */}
