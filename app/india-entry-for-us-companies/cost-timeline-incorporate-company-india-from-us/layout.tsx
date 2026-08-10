@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Cost & Timeline: India Setup from the US | AU Corp",
+    absolute: "Cost & Timeline: India Setup from the US | AU Corporate",
   },
   description:
     "What drives the cost and timeline of incorporating an Indian subsidiary for a US parent company.",
@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us",
   },
   openGraph: {
-    title: "Cost & Timeline: India Setup from the US | AU Corp",
+    title: "Cost & Timeline: India Setup from the US | AU Corporate",
     description:
       "What drives the cost and timeline of incorporating an Indian subsidiary for a US parent company.",
     url: "https://www.theaucorp.com/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us",
   },
   twitter: {
-    title: "Cost & Timeline: India Setup from the US | AU Corp",
+    title: "Cost & Timeline: India Setup from the US | AU Corporate",
     description:
       "What drives the cost and timeline of incorporating an Indian subsidiary for a US parent company.",
   },

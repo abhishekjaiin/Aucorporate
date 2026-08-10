@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "One-Stop Solution for Foreign Companies in India | AU Corp",
+      "One-Stop Solution for Foreign Companies | AU Corporate",
     template: "%s | AU Corporate",
   },
 
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     siteName: "AU Corporate",
 
     title:
-      "One-Stop Solution for Foreign Companies in India | AU Corp",
+      "One-Stop Solution for Foreign Companies | AU Corporate",
 
     description:
       "A one-stop solution for foreign companies establishing a subsidiary in India — market entry, incorporation, FEMA compliance, tax, and Virtual CFO services.",
@@ -103,7 +103,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "One-Stop Solution for Foreign Companies in India | AU Corp",
+      "One-Stop Solution for Foreign Companies | AU Corporate",
 
     description:
       "A one-stop solution for foreign companies establishing a subsidiary in India — market entry, incorporation, FEMA compliance, tax, and Virtual CFO services.",
