@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next"
-import { Inter } from "next/font/google"
+import { Inter, Manrope } from "next/font/google"
 import Script from "next/script"
 
 import { Navbar } from "@/components/navbar"
@@ -10,6 +10,12 @@ import "./globals.css"
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+})
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
   display: "swap",
 })
 
@@ -386,7 +392,7 @@ export default function RootLayout({
     </head>
 
     <body
-      className={`${inter.variable} font-sans antialiased m-0 p-0 overflow-x-hidden`}
+      className={`${inter.variable} ${manrope.variable} font-sans antialiased m-0 p-0 overflow-x-hidden`}
     >
       {/* NAVBAR */}
       <div className="relative z-60">
