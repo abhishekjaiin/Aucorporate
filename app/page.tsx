@@ -22,9 +22,9 @@ import {
 } from "lucide-react"
 
 /* NAVY / GOLD DESIGN SYSTEM — matches registercompanyinindia.com */
-const NAVY = "#071A33"
-const ROYAL_BLUE = "#155EEF"
-const GOLD = "#D6A84F"
+const NAVY = "#081A42"
+const ROYAL_BLUE = "#facc15"
+const GOLD = "#facc15"
 
 /* SERVICES */
 const services = [
@@ -317,9 +317,9 @@ export default function HomePage() {
       </section>
 
       {/* ================= TRUST STRIP ================= */}
-      <section className="py-10 border-b" style={{ backgroundColor: "#F4F8FC" }}>
+      <section className="py-10 border-b bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <p className="text-center text-sm font-semibold mb-6" style={{ color: "#667085" }}>
+          <p className="text-center text-sm font-semibold mb-6 text-gray-500">
             HELPING BUSINESSES NAVIGATE INDIA WITH CONFIDENCE
           </p>
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-3 text-sm font-semibold" style={{ color: NAVY }}>
@@ -348,7 +348,7 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center items-stretch gap-4">
             {lifecycle.map((l, i) => (
               <div key={l.title} className="flex items-center gap-4">
-                <div className="w-32 p-4 rounded-xl border" style={{ borderColor: "#e5e7eb" }}>
+                <div className="w-32 p-4 rounded-xl border border-gray-200">
                   <div className="font-bold mb-1" style={{ color: ROYAL_BLUE, fontFamily: "var(--font-heading)" }}>{l.title}</div>
                   <div className="text-xs text-gray-500">{l.description}</div>
                 </div>
@@ -362,7 +362,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= CORE SERVICES ================= */}
-      <section className="py-20" style={{ backgroundColor: "#F4F8FC" }}>
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
 
           <h2 className="text-3xl font-bold text-center mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
@@ -421,7 +421,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= WHY AU CORPORATE ================= */}
-      <section className="py-20" style={{ backgroundColor: "#F4F8FC" }}>
+      <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
             Why Businesses Choose AU Corporate
@@ -571,7 +571,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= BLOG CTA ================= */}
-      <section className="py-20 text-center" style={{ backgroundColor: "#F4F8FC" }}>
+      <section className="py-20 text-center bg-gray-50">
         <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
           India Business Insights
         </h2>
