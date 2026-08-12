@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useInView, animate } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
-import GlobeHero from "@/components/GlobeHero"
+import AuroraBackground from "@/components/AuroraBackground"
 
 import {
   Calculator,
@@ -261,8 +261,8 @@ export default function HomePage() {
         className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24"
         style={{ backgroundColor: NAVY }}
       >
-        <GlobeHero />
-        <div className="absolute inset-0 bg-black/25" />
+        <AuroraBackground />
+        <div className="absolute inset-0 bg-black/10" />
 
         <div className="relative z-10 text-center px-3 sm:px-4 max-w-5xl">
 
@@ -322,12 +322,23 @@ export default function HomePage() {
           <p className="text-center text-sm font-semibold mb-6 text-gray-500">
             HELPING BUSINESSES NAVIGATE INDIA WITH CONFIDENCE
           </p>
-          <div className="flex flex-wrap justify-center gap-x-10 gap-y-3 text-sm font-semibold" style={{ color: NAVY }}>
-            <span>India Market Entry</span>
-            <span>Corporate Compliance</span>
-            <span>Tax &amp; Accounting</span>
-            <span>HR &amp; Payroll</span>
-            <span>International Advisory</span>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { icon: Building2, label: "India Market Entry" },
+              { icon: ShieldCheck, label: "Corporate Compliance" },
+              { icon: Calculator, label: "Tax & Accounting" },
+              { icon: Users, label: "HR & Payroll" },
+              { icon: Globe2, label: "International Advisory" },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="flex items-center gap-2 px-4 py-2 bg-white border rounded-full text-sm font-semibold shadow-sm"
+                style={{ color: NAVY }}
+              >
+                <item.icon size={16} className="text-yellow-500" />
+                {item.label}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -378,9 +389,11 @@ export default function HomePage() {
                 key={service.title}
                 href={service.href}
                 aria-label={service.title}
-                className="p-6 bg-white border rounded-xl hover:shadow-lg transition"
+                className="p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <service.icon className="mb-4" style={{ color: GOLD }} />
+                <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
+                  <service.icon size={20} style={{ color: GOLD }} />
+                </div>
                 <h3 className="font-semibold" style={{ fontFamily: "var(--font-heading)" }}>
                   {service.title}
                 </h3>
@@ -405,7 +418,7 @@ export default function HomePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {structures.map((s) => (
-              <div key={s.title} className="p-6 border rounded-xl">
+              <div key={s.title} className="p-6 border rounded-xl hover:shadow-lg hover:border-yellow-300 transition-all duration-300">
                 <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>{s.title}</h3>
                 <p className="text-sm text-gray-500">{s.description}</p>
               </div>
@@ -429,8 +442,10 @@ export default function HomePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {pillars.map((p) => (
-              <div key={p.title} className="p-6 bg-white border rounded-xl">
-                <p.icon className="mb-4" style={{ color: ROYAL_BLUE }} />
+              <div key={p.title} className="p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
+                  <p.icon size={20} style={{ color: ROYAL_BLUE }} />
+                </div>
                 <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>{p.title}</h3>
                 <p className="text-sm text-gray-500">{p.description}</p>
               </div>
@@ -449,10 +464,14 @@ export default function HomePage() {
             From first conversation to fully operational in India — our process removes uncertainty at every stage.
           </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="relative grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div className="hidden lg:block absolute top-6 left-[10%] right-[10%] h-px bg-gray-200" aria-hidden="true" />
             {process.map((item) => (
-              <div key={item.step}>
-                <div className="text-4xl font-bold mb-3" style={{ color: GOLD, fontFamily: "var(--font-heading)" }}>
+              <div key={item.step} className="relative">
+                <div
+                  className="relative z-10 w-12 h-12 rounded-full flex items-center justify-center font-bold mb-4 bg-white border-2"
+                  style={{ color: NAVY, borderColor: GOLD, fontFamily: "var(--font-heading)" }}
+                >
                   {item.step}
                 </div>
                 <h3 className="font-semibold text-lg mb-2" style={{ fontFamily: "var(--font-heading)" }}>
