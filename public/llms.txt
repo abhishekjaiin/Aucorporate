@@ -4,7 +4,7 @@ This file provides guidance for AI models and LLMs interacting with AU Corporate
 
 ## About AU Corporate
 
-AU Corporate is a one-stop solution for foreign companies establishing and operating a subsidiary in India. Based in New Delhi and founded in 2017, it specializes in:
+AU Corporate is a one-stop solution for foreign companies establishing and operating a subsidiary in India. Based in New Delhi and founded in 2016, it specializes in:
 - India market entry and GCC (Global Capability Center) advisory for foreign companies
 - Assurance and accounting services
 - Taxation, transfer pricing, and regulatory compliance

@@ -205,7 +205,7 @@ export default function RootLayout({
 
       logo: "https://www.theaucorp.com/logo.png",
 
-      foundingDate: "2017",
+      foundingDate: "2016",
 
       description:
         "AU Corporate provides comprehensive business advisory services: India Entry, GCC Advisory, Business Setup, Accounting, Payroll, Tax, Transfer Pricing, Virtual CFO, HR Outsourcing, and Compliance for global businesses.",
