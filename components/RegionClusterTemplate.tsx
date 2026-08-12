@@ -123,7 +123,7 @@ export function RegionClusterTemplate({
             <Button
               asChild
               variant="outline"
-              className="border-white text-white hover:bg-white/10 text-base py-3"
+              className="border-white text-white hover:bg-white/10 bg-transparent text-base py-3"
             >
               <a
                 href={`https://wa.me/919999010513?text=Hi%20AU%20Corporate,%20I%20would%20like%20to%20discuss%20India%20entry%20for%20my%20${region}%20business.`}
