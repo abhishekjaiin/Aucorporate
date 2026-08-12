@@ -26,12 +26,12 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "One-Stop Solution for Foreign Companies | AU Corporate",
-    template: "%s | AU Corporate",
+      "AU Corporate | India Entry, Tax & Business Advisory",
+    template: "AU Corporate | %s",
   },
 
   description:
-    "A one-stop solution for foreign companies establishing a subsidiary in India — market entry, incorporation, FEMA compliance, tax, and Virtual CFO services.",
+    "AU Corporate is a one-stop solution for foreign companies establishing a subsidiary in India — market entry, tax, accounting, and Virtual CFO services.",
 
   alternates: {
     canonical: "https://www.theaucorp.com",
@@ -90,10 +90,10 @@ export const metadata: Metadata = {
     siteName: "AU Corporate",
 
     title:
-      "One-Stop Solution for Foreign Companies | AU Corporate",
+      "AU Corporate | India Entry, Tax & Business Advisory",
 
     description:
-      "A one-stop solution for foreign companies establishing a subsidiary in India — market entry, incorporation, FEMA compliance, tax, and Virtual CFO services.",
+      "AU Corporate is a one-stop solution for foreign companies establishing a subsidiary in India — market entry, tax, accounting, and Virtual CFO services.",
 
     images: [
       {
@@ -109,10 +109,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "One-Stop Solution for Foreign Companies | AU Corporate",
+      "AU Corporate | India Entry, Tax & Business Advisory",
 
     description:
-      "A one-stop solution for foreign companies establishing a subsidiary in India — market entry, incorporation, FEMA compliance, tax, and Virtual CFO services.",
+      "AU Corporate is a one-stop solution for foreign companies establishing a subsidiary in India — market entry, tax, accounting, and Virtual CFO services.",
 
     images: ["https://www.theaucorp.com/og-image.png"],
   },
@@ -241,7 +241,8 @@ export default function RootLayout({
       },
 
       sameAs: [
-        "https://www.linkedin.com/company/au-corporate",
+        "https://www.linkedin.com/company/a-u-corporate/",
+        "https://www.instagram.com/aucorporate/",
       ],
     }),
   }}
