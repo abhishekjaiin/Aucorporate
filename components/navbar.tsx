@@ -9,9 +9,6 @@ import {
   ChevronRight,
   ChevronDown,
   MessageCircle,
-  Linkedin,
-  Mail,
-  Phone,
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -573,71 +570,16 @@ export function Navbar() {
 
       </nav>
 
-      {/* FLOATING SIDEBAR */}
-      <div className="fixed right-4 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-60">
-
-        {/* WHATSAPP */}
-        <a
-  href="https://wa.me/919999010513"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Chat with AU Corporate on WhatsApp"
-  className="relative group bg-green-500 text-white p-3 rounded-full shadow-lg hover:scale-110 transition"
->
-          <span className="absolute inset-0 rounded-full bg-green-400 opacity-40 animate-ping"></span>
-
-          <MessageCircle size={18} className="relative z-10" />
-        </a>
-
-        {/* CALL */}
-        <a
-  href="tel:+919999010513"
-  aria-label="Call AU Corporate — Utsav Dogra"
-  className="relative group bg-yellow-500 text-white p-3 rounded-full shadow-lg hover:scale-110 transition"
->
-          <Phone size={18} className="relative z-10" />
-        </a>
-
-        {/* LINKEDIN */}
-        <a
-  href="https://www.linkedin.com/company/a-u-corporate/?viewAsMember=true"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Visit AU Corporate LinkedIn Page"
-  className="relative group bg-blue-600 text-white p-3 rounded-full shadow-lg hover:scale-110 transition"
->
-  <span className="absolute inset-0 rounded-full bg-blue-400 opacity-40 animate-ping"></span>
-
-  <Linkedin size={18} className="relative z-10" />
-</a>
-
-        {/* INSTAGRAM */}
-        <a
-  href="https://www.instagram.com/aucorporate/"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Visit AU Corporate Instagram Page"
-  className="relative group bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 text-white p-3 rounded-full shadow-lg hover:scale-110 transition"
->
-  <span className="absolute inset-0 rounded-full bg-red-400 opacity-40 animate-ping"></span>
-
-  <svg className="relative z-10 w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
-  </svg>
-</a>
-
-        {/* EMAIL */}
-        <a
-  href="mailto:partner@theaucorp.com"
-  aria-label="Send Email to AU Corporate"
-  className="relative group bg-red-500 text-white p-3 rounded-full shadow-lg hover:scale-110 transition"
->
-          <span className="absolute inset-0 rounded-full bg-red-400 opacity-40 animate-ping"></span>
-
-          <Mail size={18} className="relative z-10" />
-        </a>
-
-      </div>
+      {/* WHATSAPP — floating, bottom-right */}
+      <a
+        href="https://wa.me/919999010513"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with AU Corporate on WhatsApp"
+        className="fixed right-5 bottom-5 z-[60] flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-105 transition-transform"
+      >
+        <MessageCircle size={26} />
+      </a>
     </header>
   )
 }
