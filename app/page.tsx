@@ -95,6 +95,38 @@ const structures = [
   },
 ]
 
+/* INDUSTRIES — broad support framing, not claiming deep specialist certification */
+const industries = [
+  "Manufacturing",
+  "Technology & GCCs",
+  "Logistics & Supply Chain",
+  "Consumer & Retail",
+  "Professional Services",
+  "Startups & E-Commerce",
+]
+
+/* FEATURED INSIGHTS — real published posts, no fabricated articles */
+const featuredInsights = [
+  {
+    title: "India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained",
+    category: "Transfer Pricing",
+    excerpt: "Union Budget 2026 consolidated IT, ITeS, KPO and contract R&D into a single Safe Harbour category at 15.5% margin, with the threshold raised from Rs 300 crore to Rs 2,000 crore.",
+    slug: "india-safe-harbour-rules-2026",
+  },
+  {
+    title: "FDI in India: Green Channel vs Brown Channel",
+    category: "India Entry",
+    excerpt: "The regulatory framework behind FDI in India — automatic vs government route, and what Green Channel vs Brown Channel approval actually means for your entry.",
+    slug: "fdi-green-vs-brown-channel",
+  },
+  {
+    title: "Wholly Owned Subsidiary in India: Incorporation Process & Compliance",
+    category: "Business Setup",
+    excerpt: "Step-by-step incorporation process for a wholly owned subsidiary in India, including FEMA compliance and RBI reporting requirements.",
+    slug: "wholly-owned-subsidiary",
+  },
+]
+
 /* WHY AU CORPORATE — 6 PILLARS */
 const pillars = [
   {
@@ -434,6 +466,55 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ================= INDUSTRIES ================= */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+            Empowering Businesses Across Industries
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+            Our services support businesses across a range of sectors operating in India.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {industries.map((ind) => (
+              <span
+                key={ind}
+                className="px-5 py-2.5 bg-white border rounded-full text-sm font-semibold"
+                style={{ color: NAVY }}
+              >
+                {ind}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= ABOUT TEASER ================= */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+              Growing Together. Building Value.
+            </h2>
+            <p className="text-gray-600 mb-4">
+              AU Corporate is a multidisciplinary consultancy firm based in New Delhi, with a diversified team of Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, Lawyers, Industry Specialists, Ex-Bankers, and MBAs.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Established in 2016, we provide innovative solutions to complex business challenges and act as a catalyst for the growth of our clients across India and globally.
+            </p>
+            <Button asChild style={{ backgroundColor: GOLD }} className="text-black">
+              <Link href="/about">Know More About Us</Link>
+            </Button>
+          </div>
+          <div className="p-8 rounded-2xl" style={{ backgroundColor: NAVY }}>
+            <p className="text-yellow-400 text-sm font-semibold mb-3 tracking-wide uppercase">Our Approach</p>
+            <p className="text-white/90 text-lg leading-relaxed" style={{ fontFamily: "var(--font-heading)" }}>
+              One Partner. Multiple Business Needs. AU Corporate brings market entry, accounting, tax, compliance, and advisory together — so you don&apos;t have to coordinate five different providers.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ================= WHY AU CORPORATE ================= */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
@@ -590,19 +671,45 @@ export default function HomePage() {
         />
       </section>
 
-      {/* ================= BLOG CTA ================= */}
-      <section className="py-20 text-center bg-gray-50">
-        <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
-          India Business Insights
-        </h2>
+      {/* ================= INSIGHTS ================= */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+            Stay Informed. Stay Ahead.
+          </h2>
+          <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">
+            Taxation, compliance, and market-entry insights from our team.
+          </p>
 
-        <p className="text-gray-500 mb-6">
-          Stay updated with taxation, compliance, and market-entry insights.
-        </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            {featuredInsights.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="p-6 bg-white border rounded-xl hover:shadow-lg transition-all duration-300 flex flex-col"
+              >
+                <span className="text-xs font-semibold uppercase tracking-wide mb-3" style={{ color: GOLD }}>
+                  {post.category}
+                </span>
+                <h3 className="font-semibold mb-2 flex-1" style={{ fontFamily: "var(--font-heading)" }}>
+                  {post.title}
+                </h3>
+                <p className="text-sm text-gray-500 mb-4">
+                  {post.excerpt}
+                </p>
+                <span className="text-sm font-semibold" style={{ color: NAVY }}>
+                  Read More →
+                </span>
+              </Link>
+            ))}
+          </div>
 
-        <Button asChild aria-label="Explore Blog" style={{ backgroundColor: GOLD }} className="text-black">
-          <Link href="/blog">Explore Blog</Link>
-        </Button>
+          <div className="text-center">
+            <Button asChild aria-label="View All Insights" style={{ backgroundColor: GOLD }} className="text-black">
+              <Link href="/blog">View All Insights</Link>
+            </Button>
+          </div>
+        </div>
       </section>
 
       {/* ================= RELATED RESOURCES ================= */}
