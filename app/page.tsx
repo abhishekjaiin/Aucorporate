@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { useInView, animate } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
@@ -639,6 +640,36 @@ export default function HomePage() {
               </p>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* ================= INQUIRY FORM ================= */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-2xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+            Tell Us What You Need Help With
+          </h2>
+          <p className="text-gray-600 text-center mb-10">
+            Share a few details and our team will get back to you within 24 hours.
+          </p>
+
+          <Script
+            src="https://js-na2.hsforms.net/forms/embed/246295501.js"
+            strategy="afterInteractive"
+          />
+          {/*
+            Same HubSpot form already used on /contact — reused here so
+            homepage visitors don't have to navigate away to send an
+            inquiry. Cross-origin iframe embed; see /contact/page.tsx
+            for notes on the branding-crop CSS workaround if that's
+            ever revisited here too.
+          */}
+          <div
+            className="hs-form-frame"
+            data-region="na2"
+            data-form-id="6c02b223-c3cf-44d9-9f56-358a9c3488ae"
+            data-portal-id="246295501"
+          />
         </div>
       </section>
 
