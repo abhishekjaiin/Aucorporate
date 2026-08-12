@@ -5,7 +5,7 @@ import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { useInView, animate } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
-import AuroraBackground from "@/components/AuroraBackground"
+import Image from "next/image"
 
 import {
   Calculator,
@@ -294,8 +294,15 @@ export default function HomePage() {
         className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24"
         style={{ backgroundColor: NAVY }}
       >
-        <AuroraBackground />
-        <div className="absolute inset-0 bg-black/10" />
+        <Image
+          src="https://images.unsplash.com/photo-1710582308582-55cc0c461c4e?fm=jpg&q=80&w=2400&auto=format&fit=crop"
+          alt="Mumbai business district skyline"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#081A42] via-[#081A42]/85 to-[#081A42]/60" />
 
         <div className="relative z-10 text-center px-3 sm:px-4 max-w-5xl">
 
