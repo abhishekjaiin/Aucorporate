@@ -13,15 +13,15 @@ export default function AuroraBackground() {
       {/* Base navy */}
       <div className="absolute inset-0 bg-[#081A42]" />
 
-      {/* Drifting gradient orbs */}
-      <div className="absolute -top-1/4 -left-1/4 w-[70vw] h-[70vw] rounded-full opacity-40 blur-3xl animate-aurora-1"
-        style={{ background: "radial-gradient(circle, rgba(250,204,21,0.35) 0%, rgba(250,204,21,0) 70%)" }}
+      {/* Drifting gradient orbs — positioned within the visible viewport, not off-screen */}
+      <div className="absolute top-[-5%] left-[5%] w-[55vw] h-[55vw] rounded-full opacity-60 blur-2xl animate-aurora-1"
+        style={{ background: "radial-gradient(circle, rgba(250,204,21,0.55) 0%, rgba(250,204,21,0) 70%)" }}
       />
-      <div className="absolute -bottom-1/4 -right-1/4 w-[60vw] h-[60vw] rounded-full opacity-30 blur-3xl animate-aurora-2"
-        style={{ background: "radial-gradient(circle, rgba(59,130,246,0.35) 0%, rgba(59,130,246,0) 70%)" }}
+      <div className="absolute bottom-[-10%] right-[0%] w-[50vw] h-[50vw] rounded-full opacity-50 blur-2xl animate-aurora-2"
+        style={{ background: "radial-gradient(circle, rgba(59,130,246,0.55) 0%, rgba(59,130,246,0) 70%)" }}
       />
-      <div className="absolute top-1/3 right-1/4 w-[45vw] h-[45vw] rounded-full opacity-25 blur-3xl animate-aurora-3"
-        style={{ background: "radial-gradient(circle, rgba(250,204,21,0.25) 0%, rgba(250,204,21,0) 70%)" }}
+      <div className="absolute top-[20%] right-[10%] w-[35vw] h-[35vw] rounded-full opacity-45 blur-2xl animate-aurora-3"
+        style={{ background: "radial-gradient(circle, rgba(250,204,21,0.45) 0%, rgba(250,204,21,0) 70%)" }}
       />
 
       {/* Subtle dot grid texture */}
