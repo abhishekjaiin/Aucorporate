@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { useInView, animate } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
+import HeroCarousel from "@/components/HeroCarousel"
 
 import {
   Calculator,
@@ -306,39 +307,11 @@ export default function HomePage() {
 
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
 
-          <h1
-            className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-5 sm:mb-6 leading-[1.15] tracking-tight [text-shadow:0_2px_16px_rgba(0,0,0,0.7)]"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            Build Your Business in India With Confidence
-          </h1>
-
-          <p className="text-white/85 mb-5 sm:mb-6 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">
-            From entering the Indian market to managing your day-to-day operations, AU Corporate provides end-to-end corporate, tax, accounting, compliance, and advisory solutions for businesses in India and around the world.
-          </p>
+          <HeroCarousel />
 
           <p className="mb-9 sm:mb-10 text-xs sm:text-sm font-medium tracking-wide" style={{ color: GOLD }}>
             India Market Entry &nbsp;•&nbsp; Corporate Advisory &nbsp;•&nbsp; Tax &nbsp;•&nbsp; Accounting &nbsp;•&nbsp; Compliance &nbsp;•&nbsp; HR &amp; Payroll
           </p>
-
-          <div className="flex flex-col xs:flex-row gap-3 justify-center items-center">
-            <Button
-              asChild
-              aria-label="Talk to an Expert"
-              className="text-black text-sm sm:text-base font-semibold px-7 py-2.5 sm:py-3 w-full xs:w-auto"
-              style={{ backgroundColor: GOLD }}
-            >
-              <Link href="/contact">Talk to an Expert</Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              aria-label="Explore Our Services"
-              className="text-white border-white/50 hover:bg-white/10 text-sm sm:text-base font-semibold px-7 py-2.5 sm:py-3 w-full xs:w-auto bg-transparent"
-            >
-              <Link href="/services">Explore Our Services</Link>
-            </Button>
-          </div>
 
           {/* STATS */}
           <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4">

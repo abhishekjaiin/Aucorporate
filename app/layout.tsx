@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "AU Corporate is a one-stop solution for foreign companies establishing a subsidiary in India — market entry, tax, accounting, and Virtual CFO services.",
+    "AU Corporate helps foreign companies register, stay tax and FEMA compliant, and outsource accounting and payroll in India — end to end.",
 
   alternates: {
     canonical: "https://www.theaucorp.com",
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
       "AU Corporate | India Entry, Tax & Business Advisory",
 
     description:
-      "AU Corporate is a one-stop solution for foreign companies establishing a subsidiary in India — market entry, tax, accounting, and Virtual CFO services.",
+      "AU Corporate helps foreign companies register, stay tax and FEMA compliant, and outsource accounting and payroll in India — end to end.",
 
     images: [
       {
@@ -112,7 +112,7 @@ export const metadata: Metadata = {
       "AU Corporate | India Entry, Tax & Business Advisory",
 
     description:
-      "AU Corporate is a one-stop solution for foreign companies establishing a subsidiary in India — market entry, tax, accounting, and Virtual CFO services.",
+      "AU Corporate helps foreign companies register, stay tax and FEMA compliant, and outsource accounting and payroll in India — end to end.",
 
     images: ["https://www.theaucorp.com/og-image.png"],
   },
