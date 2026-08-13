@@ -6,7 +6,7 @@ import {
   MapPin,
 } from "lucide-react"
 
-const GOLD = "#FFD700"
+const GOLD = "#facc15"
 
 const contactInfo = [
   {

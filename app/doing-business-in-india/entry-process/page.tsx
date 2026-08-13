@@ -223,7 +223,7 @@ export default function EntryProcessPage() {
           >
             <h2 className="text-3xl font-bold">
               How{" "}
-              <span className="text-[#FFD700]">AU Corporate</span>{" "}
+              <span className="text-[#facc15]">AU Corporate</span>{" "}
               Mitigates Entry Risks
             </h2>
 
@@ -297,13 +297,13 @@ export default function EntryProcessPage() {
               >
 
                 {/* GOLD ACCENT BAR */}
-                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#FFD700]" />
+                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#facc15]" />
 
                 {/* HOVER GLOW EFFECT */}
-                <div className="absolute inset-0 opacity-0 hover:opacity-10 bg-[#FFD700] transition" />
+                <div className="absolute inset-0 opacity-0 hover:opacity-10 bg-[#facc15] transition" />
 
                 <h3 className="font-semibold mb-2 flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#FFD700]" />
+                  <span className="w-2 h-2 rounded-full bg-[#facc15]" />
                   {item.title}
                 </h3>
 
