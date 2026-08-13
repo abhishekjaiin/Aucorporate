@@ -1,9 +1,6 @@
-'use client'
-
 import Link from 'next/link'
-import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Users, TrendingUp, Globe, Award } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 interface RegionClusterTemplateProps {
   title: string

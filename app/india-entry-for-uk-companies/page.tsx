@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 import { ArrowRight } from 'lucide-react'

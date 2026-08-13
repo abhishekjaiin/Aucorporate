@@ -1,5 +1,3 @@
-"use client"
-
 const services = [
   {
     title: "Evaluate business feasibility and market entry strategy",
