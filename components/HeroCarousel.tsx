@@ -32,23 +32,35 @@ const ROTATION_MS = 7000
 export default function HeroCarousel() {
   const [active, setActive] = useState(0)
   const [paused, setPaused] = useState(false)
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const goTo = (index: number) => {
     setActive((index + heroSlides.length) % heroSlides.length)
   }
 
   useEffect(() => {
-    if (paused) return
+    if (paused || typeof document === "undefined" || document.hidden) return
 
-    timerRef.current = setInterval(() => {
+    timerRef.current = setTimeout(() => {
       setActive((current) => (current + 1) % heroSlides.length)
     }, ROTATION_MS)
 
     return () => {
-      if (timerRef.current) clearInterval(timerRef.current)
+      if (timerRef.current) clearTimeout(timerRef.current)
     }
-  }, [paused])
+  }, [active, paused])
+
+  useEffect(() => {
+    const handleVisibility = () => {
+      if (document.hidden && timerRef.current) {
+        clearTimeout(timerRef.current)
+        timerRef.current = null
+      }
+    }
+
+    document.addEventListener("visibilitychange", handleVisibility)
+    return () => document.removeEventListener("visibilitychange", handleVisibility)
+  }, [])
 
   const slide = heroSlides[active]
 
@@ -65,8 +77,7 @@ export default function HeroCarousel() {
       aria-roledescription="carousel"
       aria-label="AU Corporate services"
     >
-      <div className="transition-opacity duration-200">
-        {/* Exactly one h1 exists in the DOM at all times. */}
+      <div>
         <h1
           className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-5 sm:mb-6 leading-[1.15] tracking-tight [text-shadow:0_2px_16px_rgba(0,0,0,0.7)] min-h-[3.5em] sm:min-h-[2.5em] flex items-center justify-center"
           style={{ fontFamily: "var(--font-heading)" }}
@@ -106,7 +117,7 @@ export default function HeroCarousel() {
             aria-selected={i === active}
             aria-label={`Show slide ${i + 1}: ${s.h1}`}
             onClick={() => goTo(i)}
-            className="h-1.5 rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-400"
+            className="h-1.5 rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-400"
             style={{
               width: i === active ? "28px" : "8px",
               backgroundColor: i === active ? GOLD : "rgba(255,255,255,0.35)",
