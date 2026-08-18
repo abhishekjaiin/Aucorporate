@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import {
@@ -122,21 +123,20 @@ export default function ServicesPage() {
       <div className="max-w-7xl mx-auto px-4">
         <Breadcrumb items={[{ label: "Services" }]} />
       </div>
+
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
-
-        {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img decoding="async"
-            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
-            alt="Services Background"
-            className="w-full h-full object-cover"
+          <Image
+            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80"
+            alt="Business services and professional advisory"
+            fill
+            sizes="100vw"
+            className="object-cover"
           />
-          {/* Overlay for readability */}
           <div className="absolute inset-0 bg-white/80" />
         </div>
 
-        {/* Content */}
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-gold text-sm font-semibold uppercase tracking-wider">
@@ -153,7 +153,6 @@ export default function ServicesPage() {
             </p>
           </div>
         </div>
-
       </section>
 
       {/* Services Grid */}
