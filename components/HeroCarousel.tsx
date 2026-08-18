@@ -38,24 +38,16 @@ export default function HeroCarousel() {
   }
 
   useEffect(() => {
-    if (paused || typeof document === "undefined" || document.hidden) return
+    if (paused) return
 
     const timer = window.setInterval(() => {
-      setActive((current) => (current + 1) % heroSlides.length)
+      if (!document.hidden) {
+        setActive((current) => (current + 1) % heroSlides.length)
+      }
     }, ROTATION_MS)
 
     return () => window.clearInterval(timer)
   }, [paused])
-
-  useEffect(() => {
-    const handleVisibility = () => {
-      if (document.hidden) return
-      setActive((current) => current)
-    }
-
-    document.addEventListener("visibilitychange", handleVisibility)
-    return () => document.removeEventListener("visibilitychange", handleVisibility)
-  }, [])
 
   const slide = heroSlides[active]
 
