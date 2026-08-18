@@ -1,8 +1,10 @@
 import Image from "next/image"
+import { Breadcrumb } from "@/components/Breadcrumb"
 
 export default function BlogPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+      <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Construction Arbitration" }]} />
 
       <div className="mt-4">
         <Image

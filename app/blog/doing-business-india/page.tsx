@@ -1,6 +1,10 @@
+import { Breadcrumb } from "@/components/Breadcrumb"
+
 export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
+
+      <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Doing Business in India" }]} />
       
       <h1 className="text-4xl font-bold mb-4">
         Doing Business in India: Key Considerations

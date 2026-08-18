@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Breadcrumb } from "@/components/Breadcrumb"
 
 export const metadata: Metadata = {
   title:
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
+
+      <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Tax on Loan Waivers" }]} />
 
       {/* TITLE */}
       <h1 className="text-4xl font-bold mb-6">

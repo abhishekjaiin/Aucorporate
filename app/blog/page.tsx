@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
+import { Breadcrumb } from "@/components/Breadcrumb"
 
 const blogs = [
   {
@@ -51,6 +52,7 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
+        <Breadcrumb items={[{ label: "Blog" }]} />
 
         {/* Heading */}
         <motion.div

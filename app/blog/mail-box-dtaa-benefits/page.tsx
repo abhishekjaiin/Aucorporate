@@ -1,3 +1,5 @@
+import { Breadcrumb } from "@/components/Breadcrumb"
+
 export const metadata = {
   title:
     "DTAA & Mailbox Companies in India | Tiger Global Supreme Court 2026",
@@ -10,6 +12,8 @@ export const metadata = {
 export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
+
+      <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Mailbox Companies & DTAA" }]} />
 
       <h1 className="text-4xl font-bold mb-6">
         Mailbox Companies & DTAA Benefits in India | Tiger Global Supreme Court Ruling 2026

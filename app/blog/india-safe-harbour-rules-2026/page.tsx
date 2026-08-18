@@ -1,3 +1,5 @@
+import { Breadcrumb } from "@/components/Breadcrumb"
+
 export const metadata = {
   title: "India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained",
   description:
@@ -10,6 +12,8 @@ export const metadata = {
 export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
+
+      <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Safe Harbour Rules 2026" }]} />
 
       <h1 className="text-4xl font-bold mb-6">
         India's 2026 Safe Harbour Rules: What the New 15.5% IT Margin Means for Your GCC

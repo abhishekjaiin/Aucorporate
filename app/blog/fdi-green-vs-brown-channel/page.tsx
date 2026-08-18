@@ -1,3 +1,5 @@
+import { Breadcrumb } from "@/components/Breadcrumb"
+
 export const metadata = {
   title: "FDI in India: Green Channel vs Brown Channel | AU Corporate",
   description:
@@ -9,6 +11,8 @@ export const metadata = {
 export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
+
+      <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "FDI Green vs Brown Channel" }]} />
 
       <h1 className="text-4xl font-bold mb-6">
         FDI in India: Green Channel vs Brown Channel Explained
