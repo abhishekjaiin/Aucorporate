@@ -1,19 +1,12 @@
 import Link from 'next/link'
+import { Breadcrumb } from '@/components/Breadcrumb'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
 export default function BankingTaxationPage() {
   return (
     <main className="min-h-screen bg-white">
-      <nav className="bg-gray-50 border-b">
-        <div className="max-w-7xl mx-auto px-4 py-3 text-sm">
-          <Link href="/" className="text-blue-600 hover:underline">Home</Link>
-          {' > '}
-          <Link href="/india-business-setup" className="text-blue-600 hover:underline">India Setup</Link>
-          {' > '}
-          <span className="text-gray-600">Banking & Taxation</span>
-        </div>
-      </nav>
+      <Breadcrumb items={[{ label: "India Business Setup", href: "/india-business-setup" }, { label: "Banking & Taxation" }]} />
 
       <section className="py-20 bg-linear-to-r from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4">

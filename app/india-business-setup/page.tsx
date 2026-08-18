@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
+import { Breadcrumb } from '@/components/Breadcrumb'
 import { ArrowRight, CheckCircle, Globe, Zap } from 'lucide-react'
 
 export default function IndiaBusinessSetupHub() {
@@ -58,6 +59,9 @@ export default function IndiaBusinessSetupHub() {
 
   return (
     <main className="min-h-screen bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        <Breadcrumb items={[{ label: "India Business Setup" }]} />
+      </div>
       {/* HERO SECTION */}
       <section className="relative py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4">

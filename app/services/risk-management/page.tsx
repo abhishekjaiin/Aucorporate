@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useRef } from "react"
 import Image from "next/image"
+import { Breadcrumb } from "@/components/Breadcrumb"
 
 export default function RiskManagementPage() {
   const ermRef = useRef<HTMLDivElement>(null)
@@ -88,6 +89,8 @@ export default function RiskManagementPage() {
     <div className="min-h-screen pt-24 px-6 bg-gray-50">
 
       <div className="max-w-7xl mx-auto">
+
+        <Breadcrumb items={[{ label: "Services", href: "/services" }, { label: "Risk Management" }]} />
 
         {/* TITLE */}
         <motion.h1

@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { Breadcrumb } from "@/components/Breadcrumb"
 import { useRef } from "react"
 
 export default function Page() {
@@ -168,6 +169,7 @@ export default function Page() {
   return (
     <div className="min-h-screen pt-24 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
+        <Breadcrumb items={[{ label: "Services", href: "/services" }, { label: "Taxation & Regulatory" }]} />
 
         {/* TITLE */}
         <motion.h1

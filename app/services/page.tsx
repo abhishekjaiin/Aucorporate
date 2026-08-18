@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { Breadcrumb } from '@/components/Breadcrumb'
 import {
   Shield,
   Calculator,
@@ -118,6 +119,9 @@ const industries = [
 export default function ServicesPage() {
   return (
     <div className="min-h-screen pt-20">
+      <div className="max-w-7xl mx-auto px-4">
+        <Breadcrumb items={[{ label: "Services" }]} />
+      </div>
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
 
