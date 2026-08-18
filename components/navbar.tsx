@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X, ChevronDown, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
@@ -63,12 +63,16 @@ const countryLinks = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [activeMenu, setActiveMenu] = useState<string | null>(null)
+  const [activeServiceSubmenu, setActiveServiceSubmenu] = useState("risk")
   const [mobileMenu, setMobileMenu] = useState<string | null>(null)
 
   const closeMobile = () => {
     setIsOpen(false)
     setMobileMenu(null)
   }
+
+  const serviceSubmenu = activeServiceSubmenu === "tax" ? taxSubServices : riskSubServices
+  const serviceSubmenuTitle = activeServiceSubmenu === "tax" ? "Tax & Regulatory" : "Risk Management"
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b bg-white">
@@ -83,24 +87,75 @@ export function Navbar() {
           </Link>
 
           <div className="hidden items-center gap-1 lg:flex">
-            <div className="relative" onMouseEnter={() => setActiveMenu("services")} onMouseLeave={() => setActiveMenu(null)}>
-              <button type="button" onClick={() => setActiveMenu(activeMenu === "services" ? null : "services")} className="flex items-center gap-1 px-3 py-2 text-sm text-gray-700 hover:text-black" aria-haspopup="true" aria-expanded={activeMenu === "services"}>
+            <div
+              className="relative"
+              onMouseEnter={() => setActiveMenu("services")}
+              onMouseLeave={() => setActiveMenu(null)}
+            >
+              <button
+                type="button"
+                onClick={() => setActiveMenu(activeMenu === "services" ? null : "services")}
+                className="flex items-center gap-1 px-3 py-2 text-sm text-gray-700 hover:text-black"
+                aria-haspopup="true"
+                aria-expanded={activeMenu === "services"}
+              >
                 Services <ChevronDown className="h-4 w-4" aria-hidden="true" />
               </button>
+
               {activeMenu === "services" && (
-                <div className="absolute left-0 top-full z-50 w-[560px] pt-2">
-                  <div className="flex overflow-hidden rounded-2xl border bg-white shadow-2xl">
-                    <div className="w-1/2 border-r bg-gray-50 py-2">
-                      {mainServices.map((service) => (
-                        <div key={service.label} className="px-5 py-3 text-sm hover:bg-white">
-                          {service.href ? <Link href={service.href}>{service.label}</Link> : <span>{service.label}</span>}
-                        </div>
-                      ))}
+                <div className="absolute left-0 top-full z-50 w-[720px] pt-2">
+                  <div className="flex overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl">
+                    <div className="w-[46%] border-r bg-gray-50 py-3">
+                      <p className="px-5 pb-2 text-xs font-semibold uppercase tracking-wider text-gray-400">Our Services</p>
+                      {mainServices.map((service) => {
+                        const hasSubmenu = service.key === "risk" || service.key === "tax"
+                        const isActive = service.key === activeServiceSubmenu
+
+                        if (hasSubmenu) {
+                          return (
+                            <button
+                              key={service.label}
+                              type="button"
+                              onMouseEnter={() => setActiveServiceSubmenu(service.key!)}
+                              onFocus={() => setActiveServiceSubmenu(service.key!)}
+                              onClick={() => setActiveServiceSubmenu(service.key!)}
+                              className={`flex w-full items-center justify-between px-5 py-3 text-left text-sm transition-colors ${isActive ? "bg-white font-medium text-[#081a42]" : "text-gray-700 hover:bg-white"}`}
+                              aria-expanded={isActive}
+                            >
+                              <span>{service.label}</span>
+                              <ChevronRight className={`h-4 w-4 ${isActive ? "text-gold" : "text-gray-400"}`} aria-hidden="true" />
+                            </button>
+                          )
+                        }
+
+                        return (
+                          <Link
+                            key={service.label}
+                            href={service.href!}
+                            className="flex items-center justify-between px-5 py-3 text-sm text-gray-700 transition-colors hover:bg-white hover:text-[#081a42]"
+                            onFocus={() => setActiveServiceSubmenu("risk")}
+                          >
+                            <span>{service.label}</span>
+                            <ChevronRight className="h-4 w-4 text-gray-300" aria-hidden="true" />
+                          </Link>
+                        )
+                      })}
                     </div>
-                    <div className="w-1/2 p-5">
-                      <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">Explore services</p>
-                      <div className="space-y-3">
-                        {[...riskSubServices, ...taxSubServices].map((item) => <Link key={item.label} href={item.href} className="block text-sm text-gray-700 hover:text-black">{item.label}</Link>)}
+
+                    <div className="flex-1 p-6">
+                      <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-gold">Explore</p>
+                      <h3 className="mb-4 text-lg font-semibold text-[#081a42]">{serviceSubmenuTitle}</h3>
+                      <div className="space-y-1">
+                        {serviceSubmenu.map((item) => (
+                          <Link
+                            key={item.label}
+                            href={item.href}
+                            className="group flex items-center justify-between rounded-lg px-3 py-3 text-sm text-gray-700 transition-colors hover:bg-gray-50 hover:text-gold"
+                          >
+                            <span>{item.label}</span>
+                            <ChevronRight className="h-4 w-4 text-gray-300 transition-transform group-hover:translate-x-1 group-hover:text-gold" aria-hidden="true" />
+                          </Link>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -144,7 +199,14 @@ export function Navbar() {
         {isOpen && (
           <div id="mobile-navigation" className="absolute left-0 top-16 max-h-[calc(100dvh-4rem)] w-full overflow-y-auto border-t bg-white px-5 py-6 shadow-lg sm:top-20 sm:max-h-[calc(100dvh-5rem)]">
             <MobileGroup label="Services" open={mobileMenu === "services"} onToggle={() => setMobileMenu(mobileMenu === "services" ? null : "services")}>
-              {[...mainServices.filter((x) => x.href), ...riskSubServices, ...taxSubServices].map((item) => <Link key={item.label} href={item.href!} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
+              <p className="pb-2 pt-1 text-xs font-semibold uppercase tracking-wider text-gray-400">Risk Management</p>
+              {riskSubServices.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
+              <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Accounting & Assurance</p>
+              <Link href="/services/accounting-assurance" onClick={closeMobile} className="block py-2 text-sm">Accounting & Assurance</Link>
+              <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Tax & Regulatory</p>
+              {taxSubServices.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
+              <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Transaction Advisory</p>
+              <Link href="/services/transaction-advisory" onClick={closeMobile} className="block py-2 text-sm">Transaction Advisory Services</Link>
             </MobileGroup>
             <MobileGroup label="Doing Business in India" open={mobileMenu === "india"} onToggle={() => setMobileMenu(mobileMenu === "india" ? null : "india")}>
               <p className="pb-2 pt-1 text-xs font-semibold uppercase tracking-wider text-gray-400">India Entry</p>
