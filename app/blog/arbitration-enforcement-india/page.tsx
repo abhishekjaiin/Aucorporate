@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { RelatedResources } from "@/components/RelatedResources"
 
 export default function BlogPage() {
   return (
@@ -227,6 +228,14 @@ export default function BlogPage() {
           AU Corporate assists with end-to-end dispute resolution and enforcement strategy.
         </p>
       </div>
+
+    
+      <RelatedResources
+        links={[
+          { label: "Arbitration Services", href: "/arbitration-services", description: "Professional dispute resolution for commercial disputes." },
+          { label: "Construction Arbitration in India", href: "/blog/construction-arbitration-in-india", description: "Sector-specific arbitration considerations." },
+        ]}
+      />
 
     </main>
   )

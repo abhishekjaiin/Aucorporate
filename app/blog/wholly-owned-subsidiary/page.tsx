@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { RelatedResources } from "@/components/RelatedResources"
 
 export const metadata = {
   title:
@@ -231,6 +232,14 @@ export default function BlogPage() {
           </a>
         </p>
       </div>
+
+    
+      <RelatedResources
+        links={[
+          { label: "Company Formation in India", href: "/india-business-setup/company-formation", description: "Entity types and the incorporation process." },
+          { label: "Company Incorporation", href: "/doing-business-in-india/incorporation", description: "Step-by-step incorporation guidance." },
+        ]}
+      />
 
     </main>
   );

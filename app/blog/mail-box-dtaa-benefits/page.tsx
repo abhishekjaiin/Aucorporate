@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { RelatedResources } from "@/components/RelatedResources"
 
 export const metadata = {
   title:
@@ -184,6 +185,14 @@ export default function BlogPage() {
           </a>
         </p>
       </div>
+
+    
+      <RelatedResources
+        links={[
+          { label: "Taxation & Regulatory Services", href: "/services/taxation-regulatory", description: "Corporate tax, GST, and regulatory support." },
+          { label: "India-UK DTAA & Withholding Tax", href: "/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax", description: "DTAA rates and treaty benefits explained." },
+        ]}
+      />
 
     </main>
   );

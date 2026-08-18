@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { RelatedResources } from "@/components/RelatedResources"
 
 export default function BlogPage() {
   return (
@@ -207,6 +208,14 @@ export default function BlogPage() {
 
       <p className="mb-1">📩 partner@theaucorp.com</p>
       <p className="mb-6">🌐 AU CORPORATE</p>
+
+    
+      <RelatedResources
+        links={[
+          { label: "Doing Business in India", href: "/doing-business-in-india", description: "The complete guide to entering the Indian market." },
+          { label: "India Business Setup", href: "/india-business-setup", description: "Entity selection, incorporation, and registration." },
+        ]}
+      />
 
     </main>
   );

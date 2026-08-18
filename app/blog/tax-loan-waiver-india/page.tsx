@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { RelatedResources } from "@/components/RelatedResources"
 
 export const metadata: Metadata = {
   title:
@@ -153,6 +154,14 @@ export default function Page() {
           View LinkedIn Profile
         </a>
       </div>
+
+    
+      <RelatedResources
+        links={[
+          { label: "Taxation & Regulatory Services", href: "/services/taxation-regulatory", description: "Corporate tax, GST, and regulatory support." },
+          { label: "Banking & Taxation in India", href: "/india-business-setup/banking-taxation", description: "What foreign entities need to know." },
+        ]}
+      />
 
     </main>
   );

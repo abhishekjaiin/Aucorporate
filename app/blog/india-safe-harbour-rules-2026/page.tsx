@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { RelatedResources } from "@/components/RelatedResources"
 
 export const metadata = {
   title: "India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained",
@@ -93,6 +94,14 @@ export default function BlogPage() {
       <p className="mb-6">
         India's 2026 Safe Harbour reform is the most significant change to the regime since it was introduced — a genuine attempt to make the safe harbour route actually competitive with direct negotiation, rather than a rarely-used fallback. For GCCs and IT services subsidiaries of foreign parent companies, it's worth a fresh look even if safe harbour wasn't worth pursuing under the old rules.
       </p>
+
+    
+      <RelatedResources
+        links={[
+          { label: "Taxation & Regulatory Services", href: "/services/taxation-regulatory", description: "Corporate tax, GST, and regulatory support." },
+          { label: "Transfer Pricing for US-India Subsidiaries", href: "/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary", description: "How transfer pricing applies to your structure." },
+        ]}
+      />
 
     </main>
   );

@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { RelatedResources } from "@/components/RelatedResources"
 
 export const metadata = {
   title: "FDI in India: Green Channel vs Brown Channel | AU Corporate",
@@ -225,6 +226,14 @@ export default function BlogPage() {
           </a>
         </p>
       </div>
+
+    
+      <RelatedResources
+        links={[
+          { label: "FDI Channels in India", href: "/india-business-setup/fdi-channels", description: "Automatic vs government route, explained in detail." },
+          { label: "Why India for Market Entry", href: "/doing-business-in-india/why-india", description: "The full case for entering the Indian market." },
+        ]}
+      />
 
     </main>
   );
