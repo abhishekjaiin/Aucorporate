@@ -8,7 +8,6 @@
 ========================= */
 
 :root {
-  /* Brand Colors */
   --gold: #facc15;
   --gold-light: #fde047;
   --gold-dark: #ca8a04;
@@ -19,7 +18,6 @@
   --gray-dark: #111827;
   --gray-light: #E5E7EB;
 
-  /* Base Theme */
   --background: #ffffff;
   --foreground: #111827;
 
@@ -51,10 +49,6 @@
   --radius: 0.5rem;
 }
 
-/* =========================
-   TAILWIND THEME MAPPING
-========================= */
-
 @theme inline {
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-heading: 'Manrope', system-ui, sans-serif;
@@ -62,28 +56,20 @@
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
-
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
-
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
-
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
@@ -93,49 +79,46 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  /* Custom AU Colors */
   --color-gold: var(--gold);
   --color-gold-light: var(--gold-light);
   --color-gold-dark: var(--gold-dark);
-
   --color-blue: var(--blue);
   --color-blue-light: var(--blue-light);
 }
-
-/* =========================
-   BASE STYLES
-========================= */
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
 
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
   body {
     @apply bg-background text-foreground;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--gold-dark);
+    outline-offset: 3px;
   }
 }
-
-/* =========================
-   GLOBAL UTILITIES
-========================= */
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* =========================
-   ANIMATIONS (NEW - IMPORTANT)
-========================= */
 
 @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(24px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -146,25 +129,25 @@ html {
   animation: fadeUp 0.9s ease-out both;
 }
 
-.delay-100 {
-  animation-delay: 100ms;
-}
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-500 { animation-delay: 500ms; }
 
-.delay-200 {
-  animation-delay: 200ms;
-}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 
-.delay-300 {
-  animation-delay: 300ms;
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
-
-.delay-500 {
-  animation-delay: 500ms;
-}
-
-/* =========================
-   SCROLLBAR (PREMIUM LOOK)
-========================= */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -182,10 +165,6 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
-
-/* =========================
-   SELECTION COLOR
-========================= */
 
 ::selection {
   background: var(--gold);
