@@ -83,12 +83,12 @@ export function Navbar() {
           </Link>
 
           <div className="hidden items-center gap-1 lg:flex">
-            <div className="relative" onMouseLeave={() => setActiveMenu(null)}>
+            <div className="relative" onMouseEnter={() => setActiveMenu("services")} onMouseLeave={() => setActiveMenu(null)}>
               <button type="button" onClick={() => setActiveMenu(activeMenu === "services" ? null : "services")} className="flex items-center gap-1 px-3 py-2 text-sm text-gray-700 hover:text-black" aria-haspopup="true" aria-expanded={activeMenu === "services"}>
                 Services <ChevronDown className="h-4 w-4" aria-hidden="true" />
               </button>
               {activeMenu === "services" && (
-                <div className="absolute left-0 top-full flex w-[560px] overflow-hidden rounded-2xl border bg-white shadow-2xl">
+                <div className="absolute left-0 top-full z-50 flex w-[560px] overflow-hidden rounded-2xl border bg-white shadow-2xl">
                   <div className="w-1/2 border-r bg-gray-50 py-2">
                     {mainServices.map((service) => (
                       <div key={service.label} className="px-5 py-3 text-sm hover:bg-white">
@@ -106,12 +106,12 @@ export function Navbar() {
               )}
             </div>
 
-            <div className="relative" onMouseLeave={() => setActiveMenu(null)}>
+            <div className="relative" onMouseEnter={() => setActiveMenu("india")} onMouseLeave={() => setActiveMenu(null)}>
               <button type="button" onClick={() => setActiveMenu(activeMenu === "india" ? null : "india")} className="flex items-center gap-1 px-3 py-2 text-sm text-gray-700 hover:text-black" aria-haspopup="true" aria-expanded={activeMenu === "india"}>
                 Doing Business in India <ChevronDown className="h-4 w-4" aria-hidden="true" />
               </button>
               {activeMenu === "india" && (
-                <div className="absolute left-0 top-full grid w-[760px] grid-cols-3 gap-0 overflow-hidden rounded-2xl border bg-white p-5 shadow-2xl">
+                <div className="absolute left-0 top-full z-50 grid w-[760px] grid-cols-3 gap-0 overflow-hidden rounded-2xl border bg-white p-5 shadow-2xl">
                   <div className="border-r pr-5">
                     <h3 className="mb-3 text-sm font-semibold text-[#081a42]">India Entry</h3>
                     {indiaLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
