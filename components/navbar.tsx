@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, ChevronRight, ChevronDown } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
@@ -88,18 +88,20 @@ export function Navbar() {
                 Services <ChevronDown className="h-4 w-4" aria-hidden="true" />
               </button>
               {activeMenu === "services" && (
-                <div className="absolute left-0 top-full z-50 flex w-[560px] overflow-hidden rounded-2xl border bg-white shadow-2xl">
-                  <div className="w-1/2 border-r bg-gray-50 py-2">
-                    {mainServices.map((service) => (
-                      <div key={service.label} className="px-5 py-3 text-sm hover:bg-white">
-                        {service.href ? <Link href={service.href}>{service.label}</Link> : <span>{service.label}</span>}
+                <div className="absolute left-0 top-full z-50 w-[560px] pt-2">
+                  <div className="flex overflow-hidden rounded-2xl border bg-white shadow-2xl">
+                    <div className="w-1/2 border-r bg-gray-50 py-2">
+                      {mainServices.map((service) => (
+                        <div key={service.label} className="px-5 py-3 text-sm hover:bg-white">
+                          {service.href ? <Link href={service.href}>{service.label}</Link> : <span>{service.label}</span>}
+                        </div>
+                      ))}
+                    </div>
+                    <div className="w-1/2 p-5">
+                      <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">Explore services</p>
+                      <div className="space-y-3">
+                        {[...riskSubServices, ...taxSubServices].map((item) => <Link key={item.label} href={item.href} className="block text-sm text-gray-700 hover:text-black">{item.label}</Link>)}
                       </div>
-                    ))}
-                  </div>
-                  <div className="w-1/2 p-5">
-                    <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">Explore services</p>
-                    <div className="space-y-3">
-                      {[...riskSubServices, ...taxSubServices].map((item) => <Link key={item.label} href={item.href} className="block text-sm text-gray-700 hover:text-black">{item.label}</Link>)}
                     </div>
                   </div>
                 </div>
@@ -111,18 +113,20 @@ export function Navbar() {
                 Doing Business in India <ChevronDown className="h-4 w-4" aria-hidden="true" />
               </button>
               {activeMenu === "india" && (
-                <div className="absolute left-0 top-full z-50 grid w-[760px] grid-cols-3 gap-0 overflow-hidden rounded-2xl border bg-white p-5 shadow-2xl">
-                  <div className="border-r pr-5">
-                    <h3 className="mb-3 text-sm font-semibold text-[#081a42]">India Entry</h3>
-                    {indiaLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
-                  </div>
-                  <div className="border-r px-5">
-                    <h3 className="mb-3 text-sm font-semibold text-[#081a42]">Business Setup</h3>
-                    {indiaSetupLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
-                  </div>
-                  <div className="pl-5">
-                    <h3 className="mb-3 text-sm font-semibold text-[#081a42]">By Country</h3>
-                    <div className="grid grid-cols-2 gap-x-4">{countryLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}</div>
+                <div className="absolute left-0 top-full z-50 w-[760px] pt-2">
+                  <div className="grid grid-cols-3 gap-0 overflow-hidden rounded-2xl border bg-white p-5 shadow-2xl">
+                    <div className="border-r pr-5">
+                      <h3 className="mb-3 text-sm font-semibold text-[#081a42]">India Entry</h3>
+                      {indiaLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
+                    </div>
+                    <div className="border-r px-5">
+                      <h3 className="mb-3 text-sm font-semibold text-[#081a42]">Business Setup</h3>
+                      {indiaSetupLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
+                    </div>
+                    <div className="pl-5">
+                      <h3 className="mb-3 text-sm font-semibold text-[#081a42]">By Country</h3>
+                      <div className="grid grid-cols-2 gap-x-4">{countryLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}</div>
+                    </div>
                   </div>
                 </div>
               )}
