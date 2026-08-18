@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { Breadcrumb } from "@/components/Breadcrumb"
 import { TrendingUp, Globe, Users, Shield, Landmark, Cpu, Briefcase, BarChart3 } from "lucide-react"
 import Image from "next/image"
 
@@ -16,6 +17,7 @@ const fadeUp = {
 export default function WhyIndiaPage() {
   return (
     <div className="bg-white">
+      <div className="max-w-7xl mx-auto px-4"><Breadcrumb items={[{ label: "Doing Business in India", href: "/doing-business-in-india" }, { label: "Why India" }]} /></div>
 
       {/* HERO */}
       <section className="relative h-[85vh] flex items-center justify-center text-center text-white">

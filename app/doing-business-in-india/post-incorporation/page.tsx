@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { Breadcrumb } from "@/components/Breadcrumb"
 
 const sections = [
   {
@@ -154,6 +155,7 @@ const sections = [
 export default function PostIncorporationPage() {
   return (
     <div className="min-h-screen bg-white">
+      <div className="max-w-7xl mx-auto px-4"><Breadcrumb items={[{ label: "Doing Business in India", href: "/doing-business-in-india" }, { label: "Post-Incorporation" }]} /></div>
 
       {/* HERO */}
       <section className="bg-[#081a42] text-white py-20 text-center">

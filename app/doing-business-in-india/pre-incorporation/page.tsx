@@ -1,3 +1,5 @@
+import { Breadcrumb } from "@/components/Breadcrumb"
+
 const services = [
   {
     title: "Evaluate business feasibility and market entry strategy",
@@ -32,6 +34,7 @@ const services = [
 export default function Page() {
   return (
     <div className="min-h-screen bg-white py-20 px-6 max-w-5xl mx-auto">
+      <Breadcrumb items={[{ label: "Doing Business in India", href: "/doing-business-in-india" }, { label: "Pre-Incorporation" }]} />
 
       <h1 className="text-4xl font-bold text-[#081a42] mb-6">
         Pre-Incorporation Advisory

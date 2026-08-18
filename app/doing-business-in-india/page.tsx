@@ -1,12 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { Breadcrumb } from "@/components/Breadcrumb"
 import { Globe, Users, TrendingUp, Landmark, Cpu, Briefcase } from "lucide-react"
 import Image from "next/image"
 
 export default function WhyIndiaPage() {
   return (
     <div className="bg-white">
+      <div className="max-w-7xl mx-auto px-4"><Breadcrumb items={[{ label: "Doing Business in India" }]} /></div>
 
       {/* HERO */}
       <section className="bg-[#081a42] text-white py-24 text-center">
