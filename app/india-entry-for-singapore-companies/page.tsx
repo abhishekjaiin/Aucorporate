@@ -7,6 +7,9 @@ export default function IndiaEntryForSingaporeCompanies() {
       title="India Entry for Singapore Companies"
       subtitle="AU Corporate helps Singapore-based companies establish and scale their Indian operations, with expertise in India-Singapore DTAA planning, FEMA compliance, and GCC setup."
       region="Singapore"
+      breadcrumbItems={[
+              { label: "India Entry for Singapore Companies" },
+            ]}
     >
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">
@@ -57,20 +60,6 @@ export default function IndiaEntryForSingaporeCompanies() {
           </Link>
         </div>
       </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
-              { '@type': 'ListItem', position: 2, name: 'India Entry for Singapore Companies', item: 'https://www.theaucorp.com/india-entry-for-singapore-companies' },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

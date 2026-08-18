@@ -36,6 +36,9 @@ export default function IndiaEntryForUSCompanies() {
       title="India Entry for US Companies"
       subtitle="AU Corporate helps US companies establish, scale, and optimize their Indian operations with expertise in GAAP to Ind AS reconciliation, transfer pricing, and Section 482 compliance."
       region="US"
+      breadcrumbItems={[
+              { label: "India Entry for US Companies" },
+            ]}
     >
       {/* INTRO & OVERVIEW */}
       <div className="mb-12">
@@ -99,29 +102,6 @@ export default function IndiaEntryForUSCompanies() {
       </div>
 
       {/* BREADCRUMB JSON-LD SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                name: 'Home',
-                item: 'https://www.theaucorp.com',
-              },
-              {
-                '@type': 'ListItem',
-                position: 2,
-                name: 'India Entry for US Companies',
-                item: 'https://www.theaucorp.com/india-entry-for-us-companies',
-              },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

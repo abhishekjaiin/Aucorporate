@@ -7,6 +7,10 @@ export default function FemaComplianceUSCompanyPage() {
       title="FEMA Compliance for US Companies in India"
       subtitle="The recurring RBI and FEMA filings a US parent's Indian subsidiary needs to stay compliant after incorporation."
       region="US"
+      breadcrumbItems={[
+              { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
+              { label: "FEMA Compliance for US Companies in India" },
+            ]}
     >
 
       <div className="mb-12">
@@ -60,21 +64,6 @@ export default function FemaComplianceUSCompanyPage() {
           </Link>
         </div>
       </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
-              { '@type': 'ListItem', position: 2, name: 'India Entry for US Companies', item: 'https://www.theaucorp.com/india-entry-for-us-companies' },
-              { '@type': 'ListItem', position: 3, name: 'FEMA Compliance for US Companies', item: 'https://www.theaucorp.com/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary' },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

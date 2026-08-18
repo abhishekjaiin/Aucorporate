@@ -7,6 +7,10 @@ export default function TransferPricingUSIndiaPage() {
       title="Transfer Pricing & Section 482 for US-India Subsidiaries"
       subtitle="How Section 482 on the US side and India's transfer pricing rules interact once your subsidiary starts transacting with its US parent."
       region="US"
+      breadcrumbItems={[
+              { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
+              { label: "Transfer Pricing & Section 482 for US-India Subsidiaries" },
+            ]}
     >
 
       <div className="mb-12">
@@ -68,21 +72,6 @@ export default function TransferPricingUSIndiaPage() {
           </Link>
         </div>
       </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
-              { '@type': 'ListItem', position: 2, name: 'India Entry for US Companies', item: 'https://www.theaucorp.com/india-entry-for-us-companies' },
-              { '@type': 'ListItem', position: 3, name: 'Transfer Pricing & Section 482', item: 'https://www.theaucorp.com/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary' },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

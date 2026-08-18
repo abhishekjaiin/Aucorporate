@@ -7,6 +7,10 @@ export default function IndiaUKDTAAPage() {
       title="India-UK DTAA & Withholding Tax Rates"
       subtitle="How the India-UK Double Taxation Avoidance Agreement reduces withholding tax on dividends, interest, and royalties for your Indian subsidiary."
       region="UK"
+      breadcrumbItems={[
+              { label: "India Entry for UK Companies", href: "/india-entry-for-uk-companies" },
+              { label: "India-UK DTAA & Withholding Tax Rates" },
+            ]}
     >
 
       <div className="mb-12">
@@ -86,21 +90,6 @@ export default function IndiaUKDTAAPage() {
           </Link>
         </div>
       </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
-              { '@type': 'ListItem', position: 2, name: 'India Entry for UK Companies', item: 'https://www.theaucorp.com/india-entry-for-uk-companies' },
-              { '@type': 'ListItem', position: 3, name: 'India-UK DTAA & Withholding Rates', item: 'https://www.theaucorp.com/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax' },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

@@ -7,6 +7,10 @@ export default function USSubsidiaryVsBranchPage() {
       title="US Subsidiary vs Branch Office in India"
       subtitle="Understanding entity structure options and their tax, liability, and compliance implications for US parent companies."
       region="US"
+      breadcrumbItems={[
+              { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
+              { label: "US Subsidiary vs Branch Office in India" },
+            ]}
     >
       {/* H1 + INTRO */}
       <div className="mb-12">
@@ -119,35 +123,6 @@ export default function USSubsidiaryVsBranchPage() {
       </div>
 
       {/* BREADCRUMB */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                name: 'Home',
-                item: 'https://www.theaucorp.com',
-              },
-              {
-                '@type': 'ListItem',
-                position: 2,
-                name: 'India Entry for US Companies',
-                item: 'https://www.theaucorp.com/india-entry-for-us-companies',
-              },
-              {
-                '@type': 'ListItem',
-                position: 3,
-                name: 'US Subsidiary vs Branch Office',
-                item: 'https://www.theaucorp.com/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india',
-              },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

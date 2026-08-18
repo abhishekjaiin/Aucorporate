@@ -7,6 +7,10 @@ export default function UKSubsidiaryVsBranchPage() {
       title="UK Subsidiary vs Branch Office in India"
       subtitle="Structural differences and UK tax implications when choosing how your UK company enters the Indian market."
       region="UK"
+      breadcrumbItems={[
+              { label: "India Entry for UK Companies", href: "/india-entry-for-uk-companies" },
+              { label: "UK Subsidiary vs Branch Office in India" },
+            ]}
     >
 
       <div className="mb-12">
@@ -75,21 +79,6 @@ export default function UKSubsidiaryVsBranchPage() {
           </Link>
         </div>
       </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
-              { '@type': 'ListItem', position: 2, name: 'India Entry for UK Companies', item: 'https://www.theaucorp.com/india-entry-for-uk-companies' },
-              { '@type': 'ListItem', position: 3, name: 'UK Subsidiary vs Branch Office', item: 'https://www.theaucorp.com/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india' },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

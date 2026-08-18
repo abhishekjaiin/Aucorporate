@@ -36,6 +36,9 @@ export default function IndiaEntryForUKCompanies() {
       title="India Entry for UK Companies"
       subtitle="AU Corporate specializes in helping UK companies establish and optimize their Indian operations, with expertise in India-UK DTAA planning, UK-specific compliance, and efficient structure design."
       region="UK"
+      breadcrumbItems={[
+              { label: "India Entry for UK Companies" },
+            ]}
     >
       {/* INTRO & OVERVIEW */}
       <div className="mb-12">
@@ -99,29 +102,6 @@ export default function IndiaEntryForUKCompanies() {
       </div>
 
       {/* BREADCRUMB */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                name: 'Home',
-                item: 'https://www.theaucorp.com',
-              },
-              {
-                '@type': 'ListItem',
-                position: 2,
-                name: 'India Entry for UK Companies',
-                item: 'https://www.theaucorp.com/india-entry-for-uk-companies',
-              },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

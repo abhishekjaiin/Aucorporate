@@ -7,6 +7,9 @@ export default function IndiaEntryForJapanCompanies() {
       title="India Entry for Japanese Companies"
       subtitle="AU Corporate helps Japanese companies establish and scale their Indian operations, with expertise in India-Japan DTAA planning, FEMA compliance, and manufacturing-sector entry structuring."
       region="Japan"
+      breadcrumbItems={[
+              { label: "India Entry for Japanese Companies" },
+            ]}
     >
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">
@@ -58,20 +61,6 @@ export default function IndiaEntryForJapanCompanies() {
           </Link>
         </div>
       </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
-              { '@type': 'ListItem', position: 2, name: 'India Entry for Japanese Companies', item: 'https://www.theaucorp.com/india-entry-for-japan-companies' },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

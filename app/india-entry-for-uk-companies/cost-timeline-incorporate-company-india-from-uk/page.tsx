@@ -8,6 +8,10 @@ export default function CostTimelineUKPage() {
       title="Cost & Timeline: Incorporating a Company in India from the UK"
       subtitle="What actually drives the cost and timeline of an India entry — and why a single flat number rarely fits."
       region="UK"
+      breadcrumbItems={[
+              { label: "India Entry for UK Companies", href: "/india-entry-for-uk-companies" },
+              { label: "Cost & Timeline: Incorporating a Company in India from the UK" },
+            ]}
     >
 
       <div className="mb-12">
@@ -69,21 +73,6 @@ export default function CostTimelineUKPage() {
           </Link>
         </div>
       </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
-              { '@type': 'ListItem', position: 2, name: 'India Entry for UK Companies', item: 'https://www.theaucorp.com/india-entry-for-uk-companies' },
-              { '@type': 'ListItem', position: 3, name: 'Cost & Timeline', item: 'https://www.theaucorp.com/india-entry-for-uk-companies/cost-timeline-incorporate-company-india-from-uk' },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

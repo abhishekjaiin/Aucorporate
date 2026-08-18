@@ -7,6 +7,10 @@ export default function HowToIncorporateFromUKPage() {
       title="How to Incorporate a Subsidiary in India from the UK"
       subtitle="The step-by-step process, including the apostille and notarization requirements specific to UK-originated documents."
       region="UK"
+      breadcrumbItems={[
+              { label: "India Entry for UK Companies", href: "/india-entry-for-uk-companies" },
+              { label: "How to Incorporate a Subsidiary in India from the UK" },
+            ]}
     >
 
       <div className="mb-12">
@@ -73,21 +77,6 @@ export default function HowToIncorporateFromUKPage() {
           </Link>
         </div>
       </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
-              { '@type': 'ListItem', position: 2, name: 'India Entry for UK Companies', item: 'https://www.theaucorp.com/india-entry-for-uk-companies' },
-              { '@type': 'ListItem', position: 3, name: 'How to Incorporate a Subsidiary', item: 'https://www.theaucorp.com/india-entry-for-uk-companies/how-to-incorporate-subsidiary-india-from-uk' },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

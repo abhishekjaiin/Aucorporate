@@ -7,6 +7,9 @@ export default function IndiaEntryForGermanyCompanies() {
       title="India Entry for German Companies"
       subtitle="AU Corporate helps German companies establish and scale their Indian operations, drawing on direct experience managing outsourcing and Virtual CFO services for Indian subsidiaries of German corporate groups."
       region="Germany"
+      breadcrumbItems={[
+              { label: "India Entry for German Companies" },
+            ]}
     >
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">
@@ -58,20 +61,6 @@ export default function IndiaEntryForGermanyCompanies() {
           </Link>
         </div>
       </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
-              { '@type': 'ListItem', position: 2, name: 'India Entry for German Companies', item: 'https://www.theaucorp.com/india-entry-for-german-companies' },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

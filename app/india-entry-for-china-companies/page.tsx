@@ -7,6 +7,9 @@ export default function IndiaEntryForChinaCompanies() {
       title="India Entry for Chinese Companies"
       subtitle="AU Corporate helps Chinese and China-linked companies navigate India's Press Note 3 approval framework, structure compliant FDI, and manage the beneficial ownership documentation that determines which route applies."
       region="China"
+      breadcrumbItems={[
+              { label: "India Entry for Chinese Companies" },
+            ]}
     >
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">
@@ -59,20 +62,6 @@ export default function IndiaEntryForChinaCompanies() {
       <div className="mb-4 text-sm text-gray-500">
         Regulatory information current as of the March 2026 Press Note 3 amendment. FDI policy in this area continues to evolve — confirm the current framework with our team before relying on this for a specific transaction.
       </div>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
-              { '@type': 'ListItem', position: 2, name: 'India Entry for Chinese Companies', item: 'https://www.theaucorp.com/india-entry-for-china-companies' },
-            ],
-          }),
-        }}
-      />
     </RegionClusterTemplate>
   )
 }

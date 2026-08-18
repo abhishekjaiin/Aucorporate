@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
+import { Breadcrumb, type BreadcrumbItem } from '@/components/Breadcrumb'
 
 interface RegionClusterTemplateProps {
   title: string
   subtitle: string
   children: React.ReactNode
   region: string
+  breadcrumbItems: BreadcrumbItem[]
 }
 
 export function RegionClusterTemplate({
@@ -14,6 +16,7 @@ export function RegionClusterTemplate({
   subtitle,
   children,
   region,
+  breadcrumbItems,
 }: RegionClusterTemplateProps) {
   // Reusable stats (same across all pages)
   const stats = [
@@ -34,6 +37,13 @@ export function RegionClusterTemplate({
 
   return (
     <>
+      {/* BREADCRUMB — light strip above the dark hero */}
+      <div className="bg-white border-b">
+        <div className="max-w-7xl mx-auto px-4">
+          <Breadcrumb items={breadcrumbItems} />
+        </div>
+      </div>
+
       {/* HERO SECTION */}
       <section className="py-16 sm:py-24 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
         <div className="max-w-7xl mx-auto px-4">
