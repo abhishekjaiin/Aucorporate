@@ -26,6 +26,7 @@ export default function EntryProcessPage() {
           src="https://images.unsplash.com/photo-1581091012184-7c7f8e84f3b5"
           alt="India Business Entry"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />

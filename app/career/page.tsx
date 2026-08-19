@@ -107,6 +107,7 @@ export default function CareerPage() {
           src="https://images.unsplash.com/photo-1581091012184-7c7f8e84f3b5"
           alt="Build Your Career at AU Corporate"
           fill
+          sizes="100vw"
           priority
           className="object-cover"
         />

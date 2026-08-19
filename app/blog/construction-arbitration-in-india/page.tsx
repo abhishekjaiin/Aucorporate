@@ -14,7 +14,6 @@ export default function BlogPage() {
           width={1200}
           height={675}
           priority
-          unoptimized
           className="rounded-2xl object-cover w-full h-auto"
         />
       </div>
@@ -57,7 +56,6 @@ export default function BlogPage() {
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
           alt="Arbitration Discussion"
           fill
-          unoptimized
           sizes="100vw"
           className="object-cover"
         />
@@ -89,7 +87,6 @@ export default function BlogPage() {
           src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1600&q=80"
           alt="Construction Site"
           fill
-          unoptimized
           sizes="100vw"
           className="object-cover"
         />
@@ -120,7 +117,6 @@ export default function BlogPage() {
           src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80"
           alt="Court Enforcement"
           fill
-          unoptimized
           sizes="100vw"
           className="object-cover"
         />

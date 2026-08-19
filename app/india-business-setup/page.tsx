@@ -89,6 +89,7 @@ export default function IndiaBusinessSetupHub() {
                 src="/images/india-business-setup.png"
                 alt="India business setup and company formation process"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover rounded-lg"
                 priority
               />

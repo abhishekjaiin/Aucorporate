@@ -26,6 +26,7 @@ export default function WhyIndiaPage() {
           src="https://images.unsplash.com/photo-1581091012184-7c7f8e84f3b5"
           alt="India Growth"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />
@@ -343,6 +344,7 @@ export default function WhyIndiaPage() {
                     src={sector.image}
                     alt={sector.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
 

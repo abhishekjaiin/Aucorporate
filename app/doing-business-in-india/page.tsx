@@ -166,6 +166,7 @@ export default function WhyIndiaPage() {
                     src={sector.image}
                     alt={sector.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
                   />
                 </div>
