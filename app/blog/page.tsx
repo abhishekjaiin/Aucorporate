@@ -80,7 +80,7 @@ export default function BlogPage() {
               whileHover={{ y: -6 }}
               className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all"
             >
-              <h3 className="font-semibold mb-2">{blog.title}</h3>
+              <h2 className="font-semibold mb-2">{blog.title}</h2>
               <p className="text-sm text-gray-500 mb-4">{blog.desc}</p>
 
               <Link

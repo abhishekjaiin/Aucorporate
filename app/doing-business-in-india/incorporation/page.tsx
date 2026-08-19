@@ -54,9 +54,9 @@ export default function Page() {
             key={item.title}
             className="p-6 border rounded-xl shadow-sm hover:shadow-md transition"
           >
-            <h3 className="font-semibold text-lg text-[#081a42] mb-2">
+            <h2 className="font-semibold text-lg text-[#081a42] mb-2">
               {item.title}
-            </h3>
+            </h2>
             <p className="text-sm text-gray-600 leading-relaxed">
               {item.desc}
             </p>

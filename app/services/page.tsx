@@ -125,7 +125,7 @@ export default function ServicesPage() {
                     <service.icon className="h-8 w-8 text-gold" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-gold transition-colors duration-300">{service.title}</h3>
+                    <h2 className="text-xl font-semibold text-foreground mb-3 group-hover:text-gold transition-colors duration-300">{service.title}</h2>
                     <p className="text-muted-foreground text-sm leading-relaxed mb-6">{service.description}</p>
                     <ul className="space-y-2 mb-6">
                       {service.features.map((feature) => (

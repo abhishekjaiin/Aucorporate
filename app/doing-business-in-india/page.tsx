@@ -59,7 +59,7 @@ export default function WhyIndiaPage() {
           ].map((item) => (
             <div key={item.title} className="p-6 border rounded-xl hover:shadow-lg transition">
               <div className="text-[#081a42] mb-4">{item.icon}</div>
-              <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+              <h2 className="font-semibold text-lg mb-2">{item.title}</h2>
               <p className="text-sm text-gray-600">{item.desc}</p>
             </div>
           ))}
@@ -205,21 +205,21 @@ export default function WhyIndiaPage() {
 
           <div className="space-y-4">
             <div className="p-4 border rounded-lg">
-              <h4 className="font-semibold">Skilled Workforce</h4>
+              <h3 className="font-semibold">Skilled Workforce</h3>
               <p className="text-sm text-gray-600">
                 Large pool of qualified professionals across industries.
               </p>
             </div>
 
             <div className="p-4 border rounded-lg">
-              <h4 className="font-semibold">Ease of Doing Business</h4>
+              <h3 className="font-semibold">Ease of Doing Business</h3>
               <p className="text-sm text-gray-600">
                 Continuous regulatory improvements and digitisation.
               </p>
             </div>
 
             <div className="p-4 border rounded-lg">
-              <h4 className="font-semibold">FDI Friendly Policies</h4>
+              <h3 className="font-semibold">FDI Friendly Policies</h3>
               <p className="text-sm text-gray-600">
                 Liberalised foreign investment norms across sectors.
               </p>
