@@ -1,0 +1,4 @@
+---
+description: Produce a complete, human-approvable content brief (Stages 1-6, through Content Architecture) for a topic, stopping at Checkpoint 2. Usage: /content-brief <topic>
+---
+Slugify "$ARGUMENTS" into `<topic-slug>`. Run Stages 1-6 of the pipeline in order (`seo-researcher` → `keyword-intent-analyst` → `competitor-reverse-engineer` → `content-gap-analyst` → `au-corporate-strategist` → `content-architect`), creating any missing prior-stage files as you go and reusing ones that already exist for this topic-slug. Pause for **Checkpoint 1** (Research + Keyword Strategy) after Stage 5 per the rules in `.claude/commands/seo-page.md`, then run Stage 6 and present the full `06-content-architecture.md` blueprint as the deliverable. Do not invoke the writer. This command is for producing a brief a human can approve independently of running the full end-to-end pipeline — use `/seo-page` for the full run including drafting.
