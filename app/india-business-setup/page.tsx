@@ -148,7 +148,7 @@ export default function IndiaBusinessSetupHub() {
               },
               {
                 title: 'Proven Track Record',
-                description: '500+ successful setups across 45 countries and all major industries',
+                description: 'A track record of successful India setups across industries and geographies',
               },
               {
                 title: 'Regulatory Excellence',
@@ -156,12 +156,12 @@ export default function IndiaBusinessSetupHub() {
               },
               {
                 title: 'Cost Optimization',
-                description: 'Save 30-40% on setup costs through our streamlined processes',
+                description: 'Streamlined processes that help you avoid the unnecessary costs and delays of a fragmented approach',
                 href: '/doing-business-in-india/entry-process',
               },
               {
                 title: 'Timeline Certainty',
-                description: 'Predictable timelines: 8-12 weeks for full operationalization',
+                description: 'Clear, realistic timelines agreed upfront, so there are no surprises along the way',
               },
               {
                 title: 'Post-Setup Support',
