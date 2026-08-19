@@ -109,6 +109,34 @@ export default function USSubsidiaryVsBranchPage() {
         </div>
       </div>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Can I convert a branch to a subsidiary later?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, though the process requires Board approval, RBI permission, and restructuring of assets. Timelines depend on RBI processing volume and how complete your documentation is at submission — we scope this precisely once we understand your specific structure.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What are the transfer pricing implications for each structure?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Subsidiaries are separate entities and must follow Section 482 transfer pricing rules. Branches are not separate, so different pricing applies. For subsidiaries, related-party transaction amounts feed directly into Schedule M of Form 5471, so your transfer pricing documentation and your US information return need to tie out to the same numbers.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* RELATED SUB-PAGES */}
       <div className="mb-12 p-6 bg-gray-50 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Continue Your India Entry Journey</h3>
