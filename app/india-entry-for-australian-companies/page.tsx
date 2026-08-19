@@ -13,7 +13,7 @@ export default function IndiaEntryForAustralianCompanies() {
     >
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">
-          India and Australia have deepened trade and investment ties through the India-Australia Economic Cooperation and Trade Agreement (ECTA), making India an increasingly common expansion destination for Australian companies. We help you choose the right entity structure and stay compliant from incorporation through ongoing operations.
+          India and Australia have deepened trade and investment ties through the India-Australia Economic Cooperation and Trade Agreement (ECTA), in force since December 2022, with both governments agreeing to accelerate negotiations on a broader Comprehensive Economic Cooperation Agreement (CECA) — eleven rounds in — at their July 2026 Annual Summit, alongside a proposed Bilateral Investment Treaty. That momentum is making India an increasingly common expansion destination for Australian companies. We help you choose the right entity structure and stay compliant from incorporation through ongoing operations.
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
           Our regulatory compliance work is led by Rimpi Jain, Company Secretary, who handles the FEMA and RBI filings foreign-owned subsidiaries need to stay compliant after incorporation.
@@ -31,7 +31,7 @@ export default function IndiaEntryForAustralianCompanies() {
           </div>
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">India-Australia DTAA</h3>
-            <p className="text-gray-600 text-sm">Reduces withholding tax on dividends, interest, and royalties repatriated to Australia, subject to a valid Tax Residency Certificate and Form 10F being in place before repatriation.</p>
+            <p className="text-gray-600 text-sm">Unlike several of India's other major treaties, this one isn't a flat rate: 15% withholding on dividends, interest, and fees for technical services, and a split royalty rate — 10% on equipment-related royalties, 15% on others. Since Finance Act 2023 cut India's domestic royalty/FTS withholding rate to 10%, that domestic rate now often applies instead of the treaty rate, which changes the repatriation-planning math compared to treaties with a lower flat rate.</p>
           </div>
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">FEMA & RBI Filings</h3>
