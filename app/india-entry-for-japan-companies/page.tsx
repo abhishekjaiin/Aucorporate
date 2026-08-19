@@ -13,10 +13,22 @@ export default function IndiaEntryForJapanCompanies() {
     >
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">
-          Japan is consistently one of India's largest sources of FDI, particularly in automotive, electronics, and industrial manufacturing — sectors where Japanese companies often combine a wholly-owned subsidiary with joint-venture partnerships depending on the specific line of business. Our team helps you evaluate the JV-vs-wholly-owned-subsidiary decision, navigate the India-Japan DTAA, and manage the FEMA compliance obligations that follow incorporation.
+          Japan is India's fifth-largest source of FDI, with cumulative investment since 2000 exceeding $43 billion and Japanese FDI outflows to India now surpassing those to China for several consecutive years — concentrated in automotive, electronics, and industrial manufacturing, sectors where Japanese companies often combine a wholly-owned subsidiary with joint-venture partnerships depending on the specific line of business. Our team helps you evaluate the JV-vs-wholly-owned-subsidiary decision, navigate the India-Japan DTAA, and manage the FEMA compliance obligations that follow incorporation.
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
           Our regulatory compliance work is led by Rimpi Jain, Company Secretary, who handles the FEMA and RBI filings foreign-owned subsidiaries need — including the documentation Japanese entities require to access DTAA benefits on dividend and royalty repatriation.
+        </p>
+      </div>
+
+      <div className="mb-12 p-6 bg-gray-50 rounded-lg border border-gray-200">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+          Japan Plus: A Dedicated Government Desk for Japanese Investors
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Japanese companies entering India have access to a facilitation channel most other foreign investors don't: <strong>Japan Plus</strong>, a joint team operated by India's Department for Promotion of Industry and Internal Trade (DPIIT) and Japan's Ministry of Economy, Trade and Industry (METI). Operationalized in 2014 and based out of Vigyan Bhawan, New Delhi, Japan Plus exists specifically to fast-track Japanese FDI proposals, resolve regulatory bottlenecks, and liaise with state governments on Japanese investors' behalf.
+        </p>
+        <p className="text-gray-700">
+          This momentum has continued to build: during the two governments' August 2025 talks, India and Japan agreed a target of JPY 10 trillion in private Japanese investment into India over the next decade, spanning AI, semiconductors, critical minerals, mobility, clean energy, and healthcare — alongside the more traditional automotive and electronics manufacturing base that over 1,400 Japanese companies already operate in India today. We help clients understand how to engage Japan Plus alongside their own incorporation and compliance work, rather than navigating India's regulatory process without that channel.
         </p>
       </div>
 
