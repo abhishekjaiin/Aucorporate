@@ -52,6 +52,8 @@
 }
 
 @theme inline {
+  --breakpoint-xs: 30rem;
+
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-heading: 'Manrope', system-ui, sans-serif;
   --font-mono: monospace;
