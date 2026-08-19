@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
+import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 
 export const metadata = {
   title: "India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained",
@@ -15,6 +16,14 @@ export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
 
+      <BlogPostingSchema
+        headline="India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained"
+        description="Union Budget 2026 consolidated IT, ITeS, KPO and contract R&D into a single Safe Harbour category at 15.5% margin, with the eligibility threshold raised from Rs 300 crore to Rs 2,000 crore. Here's what it means for your GCC or subsidiary."
+        url="https://www.theaucorp.com/blog/india-safe-harbour-rules-2026"
+        image="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        datePublished="2026-07-30"
+        dateModified="2026-07-30"
+      />
       <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Safe Harbour Rules 2026" }]} />
 
       <h1 className="text-4xl font-bold mb-6">

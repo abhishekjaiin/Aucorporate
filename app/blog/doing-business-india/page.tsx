@@ -1,11 +1,20 @@
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
+import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 
 export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
 
+      <BlogPostingSchema
+        headline="Doing Business in India: Key Considerations"
+        description="Practical insights on doing business in India for foreign companies evaluating market entry."
+        url="https://www.theaucorp.com/blog/doing-business-india"
+        image="https://images.unsplash.com/photo-1589802829985-817e51171b92?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        datePublished="2026-05-04"
+        dateModified="2026-05-04"
+      />
       <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Doing Business in India" }]} />
       
       <h1 className="text-4xl font-bold mb-4">

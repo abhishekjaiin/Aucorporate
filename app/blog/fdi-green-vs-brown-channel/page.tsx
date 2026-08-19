@@ -1,11 +1,20 @@
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
+import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 
 export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
 
+      <BlogPostingSchema
+        headline="FDI in India: Green Channel vs Brown Channel"
+        description="FDI in India explained: the regulatory framework, automatic vs. government route, and how Green Channel and Brown Channel approvals differ."
+        url="https://www.theaucorp.com/blog/fdi-green-vs-brown-channel"
+        image="https://images.unsplash.com/photo-1524492449090-1b4b0d8b4c0b?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        datePublished="2026-05-04"
+        dateModified="2026-05-04"
+      />
       <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "FDI Green vs Brown Channel" }]} />
 
       <h1 className="text-4xl font-bold mb-6">

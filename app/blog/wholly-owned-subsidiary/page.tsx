@@ -1,11 +1,20 @@
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
+import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 
 export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
 
+      <BlogPostingSchema
+        headline="Wholly Owned Subsidiary in India | Setup & Compliance Guide"
+        description="Step-by-step guide for foreign companies setting up a wholly owned subsidiary in India — incorporation process, FEMA compliance, and regulatory requirements."
+        url="https://www.theaucorp.com/blog/wholly-owned-subsidiary"
+        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        datePublished="2026-05-04"
+        dateModified="2026-05-04"
+      />
       <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Wholly Owned Subsidiary" }]} />
 
       <h1 className="text-4xl font-bold mb-6">
