@@ -5,7 +5,7 @@ import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { useInView, animate } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
-import Image from "next/image"
+import { HeroBackground } from "@/components/HeroBackground"
 import HeroCarousel from "@/components/HeroCarousel"
 
 import {
@@ -295,15 +295,8 @@ export default function HomePage() {
         className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24"
         style={{ backgroundColor: NAVY }}
       >
-        <Image
-          src="https://images.unsplash.com/photo-1710582308582-55cc0c461c4e?fm=jpg&q=80&w=2400&auto=format&fit=crop"
-          alt="Mumbai business district skyline"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#081A42] via-[#081A42]/85 to-[#081A42]/60" />
+        <HeroBackground />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#081A42] via-[#081A42]/60 to-transparent" />
 
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
 

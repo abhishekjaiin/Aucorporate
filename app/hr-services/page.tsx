@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { HeroBackground } from "@/components/HeroBackground"
 import { Button } from "@/components/ui/button"
 import { motion, useInView, animate } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
@@ -98,22 +99,8 @@ export default function HRServicesPage() {
     <div className="min-h-screen pt-20">
       <section className="relative py-24 min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <motion.div
-            initial={{ scale: 1.1 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 6 }}
-            className="absolute inset-0"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=80"
-              alt="HR outsourcing and payroll services team at work"
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover"
-            />
-          </motion.div>
-          <div className="absolute inset-0 bg-black/60" />
+          <HeroBackground />
+          <div className="absolute inset-0 bg-black/20" />
         </div>
 
         <motion.div

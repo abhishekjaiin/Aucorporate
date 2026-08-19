@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import { HeroBackgroundLight } from '@/components/HeroBackgroundLight'
 import { Button } from '@/components/ui/button'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { InquiryForm } from '@/components/InquiryForm'
@@ -79,15 +79,7 @@ export default function ServicesPage() {
 
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80"
-            alt="Business services and professional advisory"
-            fill
-            sizes="100vw"
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-white/80" />
+          <HeroBackgroundLight />
         </div>
 
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_420px] lg:px-8">

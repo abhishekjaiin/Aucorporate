@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import Image from 'next/image'
+import { HeroBackground } from '@/components/HeroBackground'
 import {
   MapPin,
   Clock,
@@ -102,18 +102,11 @@ export default function CareerPage() {
       {/* HERO SECTION WITH BACKGROUND IMAGE */}
       <section className="relative py-28 overflow-hidden">
 
-        {/* Background Image */}
-        <Image
-          src="https://images.unsplash.com/photo-1581091012184-7c7f8e84f3b5"
-          alt="Build Your Career at AU Corporate"
-          fill
-          sizes="100vw"
-          priority
-          className="object-cover"
-        />
+        {/* Background */}
+        <HeroBackground />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/20" />
 
         {/* Content */}
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
