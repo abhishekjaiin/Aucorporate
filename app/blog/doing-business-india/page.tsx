@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
 
@@ -15,10 +16,13 @@ export default function BlogPage() {
         Understanding the regulatory, tax, and compliance landscape before entering India
       </p>
 
-      <img decoding="async"
-        src="https://images.unsplash.com/photo-1589802829985-817e51171b92"
+      <Image
+        src="https://images.unsplash.com/photo-1589802829985-817e51171b92?fm=jpg&q=80&w=1600&auto=format&fit=crop"
         alt="India business skyline"
-        className="rounded-2xl mb-8 w-full"
+        width={1200}
+        height={630}
+        priority
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <p className="mb-6">

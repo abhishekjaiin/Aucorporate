@@ -173,6 +173,8 @@ export default function OutsourcingPage() {
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
+
+            viewport={{ once: true }}
             className="text-3xl font-bold mb-12"
           >
             Why Choose AU Corporate
@@ -198,6 +200,8 @@ export default function OutsourcingPage() {
                 key={item.title}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
+
+                viewport={{ once: true }}
                 transition={{ delay: i * 0.2 }}
                 className="p-6 border rounded-xl"
               >
@@ -219,6 +223,8 @@ export default function OutsourcingPage() {
               key={b.title}
               initial="hidden"
               whileInView="show"
+
+              viewport={{ once: true }}
               variants={fadeUp}
               transition={{ delay: i * 0.1 }}
               className="p-6 bg-white border rounded-xl text-center"
@@ -250,6 +256,8 @@ export default function OutsourcingPage() {
                 key={step}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
+
+                viewport={{ once: true }}
                 transition={{ delay: i * 0.2 }}
               >
                 <div className="text-gold font-bold text-lg mb-2">
@@ -278,6 +286,8 @@ export default function OutsourcingPage() {
                 key={s.title}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
+
+                viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
                 className="p-8 border rounded-xl bg-secondary"
               >
@@ -310,6 +320,8 @@ export default function OutsourcingPage() {
     <motion.h2
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
+
+      viewport={{ once: true }}
       className="text-3xl font-bold mb-12"
     >
       Our Delivery Model
@@ -326,6 +338,8 @@ export default function OutsourcingPage() {
           key={step}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
+
+          viewport={{ once: true }}
           transition={{ delay: i * 0.2 }}
           className="p-8 bg-white border rounded-xl"
         >
@@ -359,6 +373,8 @@ export default function OutsourcingPage() {
                 key={s.name}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
+
+                viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
                 className="p-4 bg-gray-50 border rounded-xl flex items-center justify-center hover:shadow-md transition"
               >
@@ -401,6 +417,8 @@ export default function OutsourcingPage() {
     <motion.h2
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
+
+      viewport={{ once: true }}
       className="text-3xl font-bold mb-12"
     >
       Proven Results
@@ -417,6 +435,8 @@ export default function OutsourcingPage() {
           key={item.label}
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
+
+          viewport={{ once: true }}
           transition={{ delay: i * 0.2 }}
           className="p-8 border rounded-xl"
         >

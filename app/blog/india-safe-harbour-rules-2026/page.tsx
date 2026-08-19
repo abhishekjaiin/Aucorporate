@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
 
@@ -20,11 +21,13 @@ export default function BlogPage() {
         India's 2026 Safe Harbour Rules: What the New 15.5% IT Margin Means for Your GCC
       </h1>
 
-      <img
-        decoding="async"
-        src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c"
+      <Image
+        src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?fm=jpg&q=80&w=1600&auto=format&fit=crop"
         alt="Transfer pricing documents and financial charts"
-        className="rounded-2xl mb-8 w-full"
+        width={1200}
+        height={630}
+        priority
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <p className="mb-6">

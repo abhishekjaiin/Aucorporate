@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
 
@@ -20,10 +21,13 @@ export default function Page() {
         Tax Treatment of Loan Waiver in India: Supreme Court Resolves Capital vs Revenue Controversy
       </h1>
 
-      <img decoding="async"
-        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+      <Image
+        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?fm=jpg&q=80&w=1600&auto=format&fit=crop"
         alt="Legal Finance Concept"
-        className="rounded-2xl mb-8 w-full"
+        width={1200}
+        height={630}
+        priority
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       {/* META DESCRIPTION (UNCHANGED) */}

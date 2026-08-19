@@ -78,7 +78,8 @@ export default function AboutHero() {
       <section className="py-12 sm:py-24 bg-gray-50">
         <div className="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 items-center">
 
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible">
+          <motion.div variants={fadeUp} initial="hidden" whileInView="visible"
+ viewport={{ once: true }}>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
               Who We Are
             </h2>
@@ -92,7 +93,8 @@ export default function AboutHero() {
             </p>
           </motion.div>
 
-          <motion.div variants={fadeIn} initial="hidden" whileInView="visible">
+          <motion.div variants={fadeIn} initial="hidden" whileInView="visible"
+ viewport={{ once: true }}>
             <Image
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
               alt="Team work"
@@ -131,6 +133,8 @@ export default function AboutHero() {
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
+
+              viewport={{ once: true }}
               className="p-5 sm:p-8 border rounded-xl hover:shadow-xl bg-white"
             >
               <item.icon className="text-gold mb-3" />
@@ -171,6 +175,8 @@ export default function AboutHero() {
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
+
+              viewport={{ once: true }}
               className="p-4 sm:p-6 bg-white rounded-xl border text-center hover:shadow-lg"
             >
               <item.icon className="text-gold mx-auto mb-2 sm:mb-3" />

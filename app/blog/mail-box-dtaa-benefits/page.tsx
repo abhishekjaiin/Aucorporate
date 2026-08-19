@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
 
@@ -20,10 +21,13 @@ export default function BlogPage() {
         Mailbox Companies & DTAA Benefits in India | Tiger Global Supreme Court Ruling 2026
       </h1>
 
-      <img decoding="async"
-        src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
+      <Image
+        src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?fm=jpg&q=80&w=1600&auto=format&fit=crop"
         alt="Supreme Court India"
-        className="rounded-2xl mb-8 w-full"
+        width={1200}
+        height={630}
+        priority
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <p className="mb-6">

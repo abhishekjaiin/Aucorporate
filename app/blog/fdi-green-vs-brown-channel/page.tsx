@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
 
@@ -19,10 +20,13 @@ export default function BlogPage() {
         FDI in India: Green Channel vs Brown Channel Explained
       </h1>
 
-      <img decoding="async"
-        src="https://images.unsplash.com/photo-1524492449090-1b4b0d8b4c0b"
+      <Image
+        src="https://images.unsplash.com/photo-1524492449090-1b4b0d8b4c0b?fm=jpg&q=80&w=1600&auto=format&fit=crop"
         alt="FDI India"
-        className="rounded-2xl mb-8 w-full"
+        width={1200}
+        height={630}
+        priority
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <p className="mb-6">

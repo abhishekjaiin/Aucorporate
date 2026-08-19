@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
@@ -57,10 +58,13 @@ export default function ArbitrationServicesPage() {
       {/* ================= HERO ================= */}
       <section className="relative py-24 min-h-[80vh] flex items-center">
         <div className="absolute inset-0">
-          <img decoding="async"
-            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
+          <Image
+            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?fm=jpg&q=80&w=2400&auto=format&fit=crop"
             alt="Professional arbitration and legal dispute resolution services"
-            className="w-full h-full object-cover"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-black/60" />
         </div>
@@ -107,6 +111,8 @@ export default function ArbitrationServicesPage() {
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
+
+            viewport={{ once: true }}
             className="text-gray-700 leading-relaxed mb-6"
           >
             Disputes involving contracts, accounts, valuations, delayed payments, partnerships, commercial transactions, and financial claims often require clear financial analysis and structured presentation of facts.
@@ -115,6 +121,8 @@ export default function ArbitrationServicesPage() {
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
+
+            viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-gray-700 leading-relaxed mb-6"
           >
@@ -124,6 +132,8 @@ export default function ArbitrationServicesPage() {
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
+
+            viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             className="text-gray-700 leading-relaxed"
           >
@@ -140,6 +150,8 @@ export default function ArbitrationServicesPage() {
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
+
+            viewport={{ once: true }}
           >
             <img loading="lazy" decoding="async"
               src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
@@ -151,6 +163,8 @@ export default function ArbitrationServicesPage() {
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
+
+            viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold mb-4">
               1. Arbitration Claim Preparation
@@ -190,6 +204,8 @@ export default function ArbitrationServicesPage() {
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
+
+            viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold mb-4">
               2. Arbitration Expert Witness Services
@@ -222,6 +238,8 @@ export default function ArbitrationServicesPage() {
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
+
+            viewport={{ once: true }}
           >
             <img loading="lazy" decoding="async"
               src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"

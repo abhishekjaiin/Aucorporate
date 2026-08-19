@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import {
@@ -127,10 +128,13 @@ export default function ServicesPage() {
 
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img decoding="async"
-            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+          <Image
+            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?fm=jpg&q=80&w=2400&auto=format&fit=crop"
             alt="Services Background"
-            className="w-full h-full object-cover"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
           />
           {/* Overlay for readability */}
           <div className="absolute inset-0 bg-white/80" />

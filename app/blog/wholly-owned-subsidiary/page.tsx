@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
 
@@ -20,10 +21,13 @@ export default function BlogPage() {
         Wholly Owned Subsidiary in India: Incorporation Process & Compliance
       </h1>
 
-      <img decoding="async"
-        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+      <Image
+        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?fm=jpg&q=80&w=1600&auto=format&fit=crop"
         alt="Business setup India"
-        className="rounded-2xl mb-8 w-full"
+        width={1200}
+        height={630}
+        priority
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">Introduction</h2>
