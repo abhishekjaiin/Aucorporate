@@ -1,14 +1,6 @@
-import { Metadata } from "next";
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
-
-export const metadata: Metadata = {
-  title:
-    "Tax Treatment of Loan Waiver in India | Supreme Court Ruling",
-  description:
-    "Explore the evolving judicial position on taxability of loan waiver in India through landmark rulings including T.V. Sundaram Iyengar, Solid Containers, Mahindra & Mahindra (HC & SC), and Ramaniyam Homes. Understand how the Supreme Court finally settled the law on Sections 28(iv) and 41(1) of the Income Tax Act, 1961.",
-};
 
 export default function Page() {
   return (

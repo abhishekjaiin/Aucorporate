@@ -2,15 +2,6 @@ import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
 
-export const metadata = {
-  title:
-    "Wholly Owned Subsidiary in India | Setup & Compliance Guide",
-  description:
-    "Step-by-step guide for foreign companies to set up a wholly owned subsidiary in India, including incorporation process, FEMA compliance, and regulatory requirements.",
-  keywords:
-    "wholly owned subsidiary India, company incorporation India, SPICe+ process, FEMA compliance India, FDI India subsidiary, MOA AOA India",
-};
-
 export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">

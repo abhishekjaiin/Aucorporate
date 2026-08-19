@@ -2,15 +2,6 @@ import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
 
-export const metadata = {
-  title:
-    "DTAA & Mailbox Companies in India | Tiger Global Supreme Court 2026",
-  description:
-    "Supreme Court of India in the Tiger Global case reshapes DTAA interpretation, denying treaty benefits to mailbox companies lacking substance. Learn implications for foreign investors and GAAR framework.",
-  keywords:
-    "DTAA India, Tiger Global case 2026, mailbox companies India, GAAR India, treaty benefits India, tax residency certificate India, international tax India",
-};
-
 export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">

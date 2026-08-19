@@ -2,14 +2,6 @@ import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
 
-export const metadata = {
-  title: "FDI in India: Green Channel vs Brown Channel | AU Corporate",
-  description:
-    "Explore FDI in India, including regulatory framework, automatic vs government route, and Green Channel vs Brown Channel approvals. Expert insights by AU Corporate.",
-  keywords:
-    "FDI in India, Green Channel CCI India, Brown Channel approval India, FEMA compliance India, foreign investment India, India entry strategy",
-};
-
 export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
