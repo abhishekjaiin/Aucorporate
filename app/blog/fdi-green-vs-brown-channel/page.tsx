@@ -41,10 +41,13 @@ export default function BlogPage() {
         FDI in India: Regulatory Framework and Key Laws
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+      <Image
+        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
         alt="Regulations"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-6">
@@ -67,10 +70,13 @@ export default function BlogPage() {
         FDI Entry Routes in India: Automatic vs Government Route
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
+      <Image
+        src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80"
         alt="Investment routes"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-6">
@@ -93,10 +99,13 @@ export default function BlogPage() {
         Green Channel Approval in India: Fast-Track FDI Clearance
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1581091012184-7c7f8e84f3b5"
+      <Image
+        src="https://images.unsplash.com/photo-1581091012184-7c7f8e84f3b5?auto=format&fit=crop&w=1200&q=80"
         alt="Fast approval"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-4">
@@ -127,10 +136,13 @@ export default function BlogPage() {
         Brown Channel Approval in India: Detailed Regulatory Review
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+      <Image
+        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
         alt="Detailed review"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-6">
@@ -153,10 +165,13 @@ export default function BlogPage() {
         FDI Compliance in India: Key Regulatory Requirements
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+      <Image
+        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
         alt="Compliance"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-6">

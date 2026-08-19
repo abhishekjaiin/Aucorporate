@@ -42,10 +42,13 @@ export default function BlogPage() {
 
       <hr className="my-8" />
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
+      <Image
+        src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80"
         alt="Incorporation process"
-        className="rounded-2xl mb-8 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -90,10 +93,13 @@ export default function BlogPage() {
 
       <hr className="my-8" />
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+      <Image
+        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
         alt="Corporate structure"
-        className="rounded-2xl mb-8 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -118,10 +124,13 @@ export default function BlogPage() {
 
       <hr className="my-8" />
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+      <Image
+        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
         alt="Compliance India"
-        className="rounded-2xl mb-8 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -152,10 +161,13 @@ export default function BlogPage() {
 
       <hr className="my-8" />
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1521791136064-7986c2920216"
+      <Image
+        src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80"
         alt="Business challenges"
-        className="rounded-2xl mb-8 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -186,10 +198,13 @@ export default function BlogPage() {
 
       <hr className="my-8" />
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
+      <Image
+        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
         alt="Consulting services"
-        className="rounded-2xl mb-8 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">

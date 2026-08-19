@@ -46,10 +46,13 @@ export default function Page() {
         Over time, courts have delivered divergent interpretations, especially on the interplay between Section 28(iv) (business benefits) and Section 41(1) (remission of trading liability). This led to prolonged uncertainty until the Supreme Court finally settled the position in CIT v. Mahindra & Mahindra Ltd. (2018).
       </p>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
+      <Image
+        src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80"
         alt="Supreme Court India"
-        className="rounded-2xl mb-8 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       {/* EARLY JUDICIAL APPROACH */}
@@ -57,10 +60,13 @@ export default function Page() {
         Early Judicial Approach: Expanding Scope of Income
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1521790366324-2073b3e8f7e1"
+      <Image
+        src="https://images.unsplash.com/photo-1521790366324-2073b3e8f7e1?auto=format&fit=crop&w=1200&q=80"
         alt="Finance Law Concept"
-        className="rounded-2xl mb-8 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <p className="mb-6">
@@ -80,10 +86,13 @@ export default function Page() {
         Development of Divergent Judicial Views
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+      <Image
+        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
         alt="Tax Documents"
-        className="rounded-2xl mb-8 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <p className="mb-6">
@@ -117,10 +126,13 @@ export default function Page() {
         Supreme Court Settlement: CIT v. Mahindra & Mahindra Ltd. (2018)
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1505664194779-8beaceb93744"
+      <Image
+        src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1200&q=80"
         alt="Court Judgment"
-        className="rounded-2xl mb-8 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-8 w-full h-auto"
       />
 
       <p className="mb-6">

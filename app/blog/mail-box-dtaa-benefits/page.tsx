@@ -46,10 +46,13 @@ export default function BlogPage() {
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">Case Background</h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+      <Image
+        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
         alt="Legal framework"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-6">
@@ -66,10 +69,13 @@ export default function BlogPage() {
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">Key Legal Issues</h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
+      <Image
+        src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80"
         alt="Tax discussion"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-4">
@@ -88,10 +94,13 @@ export default function BlogPage() {
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">Judicial Evolution</h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+      <Image
+        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
         alt="Court analysis"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-4"><strong>Authority for Advance Rulings (2020)</strong></p>
@@ -122,10 +131,13 @@ export default function BlogPage() {
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">Key Implications of the Ruling</h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+      <Image
+        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
         alt="Compliance"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-4"><strong>1. Tax Exposure for Offshore Structures</strong></p>

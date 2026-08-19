@@ -37,10 +37,13 @@ export default function BlogPage() {
         Choosing the Right Entry Structure
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+      <Image
+        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
         alt="Business meeting"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-6">
@@ -68,10 +71,13 @@ export default function BlogPage() {
         Understanding the Regulatory Framework
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
+      <Image
+        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
         alt="Regulatory paperwork"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-6">
@@ -90,10 +96,13 @@ export default function BlogPage() {
         Navigating the Tax Landscape
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+      <Image
+        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
         alt="Tax and finance"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-4">
@@ -117,10 +126,13 @@ export default function BlogPage() {
         Managing Compliance Effectively
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+      <Image
+        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
         alt="Compliance and audit"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-4">
@@ -144,10 +156,13 @@ export default function BlogPage() {
         Planning Capital Flow and Repatriation
       </h2>
 
-      <img loading="lazy" decoding="async"
-        src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6"
+      <Image
+        src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=1200&q=80"
         alt="Finance flow"
-        className="rounded-2xl mb-6 w-full"
+        width={1000}
+        height={560}
+        loading="lazy"
+        className="rounded-2xl mb-6 w-full h-auto"
       />
 
       <p className="mb-6">

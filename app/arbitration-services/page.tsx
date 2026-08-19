@@ -153,10 +153,13 @@ export default function ArbitrationServicesPage() {
 
             viewport={{ once: true }}
           >
-            <img loading="lazy" decoding="async"
-              src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
+            <Image
+              src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=800&q=80"
               alt="Dispute resolution and negotiation process"
-              className="rounded-2xl shadow-lg"
+              width={600}
+              height={450}
+              loading="lazy"
+              className="rounded-2xl shadow-lg w-full h-auto"
             />
           </motion.div>
 
@@ -241,10 +244,13 @@ export default function ArbitrationServicesPage() {
 
             viewport={{ once: true }}
           >
-            <img loading="lazy" decoding="async"
-              src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+            <Image
+              src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80"
               alt="Legal consultation and court proceedings"
-              className="rounded-2xl shadow-lg"
+              width={600}
+              height={450}
+              loading="lazy"
+              className="rounded-2xl shadow-lg w-full h-auto"
             />
           </motion.div>
 
