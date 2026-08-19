@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   },
   description:
     "Comparing entity types for India business setup — Private Limited, LLP, branch, and liaison office — and how to form each.",
+  keywords: ["company formation in India", "company registration in India", "foreign company registration India", "private limited company registration India", "subsidiary company registration India", "FDI company registration India", "India company incorporation"],
   alternates: {
     canonical: "https://www.theaucorp.com/india-business-setup/company-formation",
   },

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
@@ -31,38 +31,53 @@ const ROTATION_MS = 7000
 
 export default function HeroCarousel() {
   const [active, setActive] = useState(0)
-  const [fade, setFade] = useState(true)
+  const [paused, setPaused] = useState(false)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
-  const goTo = useCallback((index: number) => {
-    setFade(false)
-    setTimeout(() => {
-      setActive(index)
-      setFade(true)
-    }, 200)
-  }, [])
+  const goTo = (index: number) => {
+    setActive((index + heroSlides.length) % heroSlides.length)
+  }
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      goTo((active + 1) % heroSlides.length)
+    if (paused || typeof document === "undefined" || document.hidden) return
+
+    timerRef.current = setTimeout(() => {
+      setActive((current) => (current + 1) % heroSlides.length)
     }, ROTATION_MS)
-    return () => clearInterval(timer)
-  }, [active, goTo])
+
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current)
+    }
+  }, [active, paused])
+
+  useEffect(() => {
+    const handleVisibility = () => {
+      if (document.hidden && timerRef.current) {
+        clearTimeout(timerRef.current)
+        timerRef.current = null
+      }
+    }
+
+    document.addEventListener("visibilitychange", handleVisibility)
+    return () => document.removeEventListener("visibilitychange", handleVisibility)
+  }, [])
 
   const slide = heroSlides[active]
 
   return (
-    <>
-      <div
-        className={`transition-opacity duration-200 ${fade ? "opacity-100" : "opacity-0"}`}
-      >
-        {/*
-          Exactly one <h1> exists in the DOM at all times — only its text
-          content changes as the slide rotates. This is deliberate: three
-          separate <h1> tags (even if only one were visible) would be
-          incorrect heading structure. Matches how VJM Global's own hero
-          is actually built (h1 for the first slide, h2/h3 for the rest),
-          just implemented as true rotation instead of stacked sections.
-        */}
+    <div
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocus={() => setPaused(true)}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+          setPaused(false)
+        }
+      }}
+      aria-roledescription="carousel"
+      aria-label="AU Corporate services"
+    >
+      <div>
         <h1
           className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-5 sm:mb-6 leading-[1.15] tracking-tight [text-shadow:0_2px_16px_rgba(0,0,0,0.7)] min-h-[3.5em] sm:min-h-[2.5em] flex items-center justify-center"
           style={{ fontFamily: "var(--font-heading)" }}
@@ -94,7 +109,6 @@ export default function HeroCarousel() {
         </div>
       </div>
 
-      {/* Slide indicators */}
       <div className="flex gap-2 justify-center mb-3" role="tablist" aria-label="Hero slide selector">
         {heroSlides.map((s, i) => (
           <button
@@ -103,7 +117,7 @@ export default function HeroCarousel() {
             aria-selected={i === active}
             aria-label={`Show slide ${i + 1}: ${s.h1}`}
             onClick={() => goTo(i)}
-            className="h-1.5 rounded-full transition-all duration-300"
+            className="h-1.5 rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-400"
             style={{
               width: i === active ? "28px" : "8px",
               backgroundColor: i === active ? GOLD : "rgba(255,255,255,0.35)",
@@ -111,6 +125,6 @@ export default function HeroCarousel() {
           />
         ))}
       </div>
-    </>
+    </div>
   )
 }
