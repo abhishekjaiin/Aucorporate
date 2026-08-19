@@ -45,7 +45,7 @@ export default function IndiaBusinessSetupHub() {
       step: 6,
       title: 'Post-Incorporation',
       description: 'Ongoing compliance and operational requirements',
-      href: '/india-business-setup/post-incorporation',
+      href: '/doing-business-in-india/post-incorporation',
       icon: CheckCircle,
     },
     {
