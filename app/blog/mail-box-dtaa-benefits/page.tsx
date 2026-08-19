@@ -1,20 +1,20 @@
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
-
-export const metadata = {
-  title:
-    "DTAA & Mailbox Companies in India | Tiger Global Supreme Court 2026",
-  description:
-    "Supreme Court of India in the Tiger Global case reshapes DTAA interpretation, denying treaty benefits to mailbox companies lacking substance. Learn implications for foreign investors and GAAR framework.",
-  keywords:
-    "DTAA India, Tiger Global case 2026, mailbox companies India, GAAR India, treaty benefits India, tax residency certificate India, international tax India",
-};
+import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 
 export default function BlogPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
 
+      <BlogPostingSchema
+        headline="DTAA & Mailbox Companies in India | Tiger Global Supreme Court 2026"
+        description="The Tiger Global Supreme Court ruling reshapes DTAA treaty benefits for mailbox companies lacking real substance — what it means for foreign investors and GAAR."
+        url="https://www.theaucorp.com/blog/mail-box-dtaa-benefits"
+        image="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        datePublished="2026-05-04"
+        dateModified="2026-05-04"
+      />
       <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Mailbox Companies & DTAA" }]} />
 
       <h1 className="text-4xl font-bold mb-6">

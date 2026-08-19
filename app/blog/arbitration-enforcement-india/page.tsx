@@ -1,10 +1,19 @@
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
+import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 
 export default function BlogPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+      <BlogPostingSchema
+        headline="Arbitration Enforcement in India"
+        description="How arbitration awards are enforced in India, and what foreign companies should know about the enforcement process."
+        url="https://www.theaucorp.com/blog/arbitration-enforcement-india"
+        image="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
+        datePublished="2026-05-04"
+        dateModified="2026-05-04"
+      />
       <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Arbitration Enforcement" }]} />
 
       {/* HERO IMAGE */}

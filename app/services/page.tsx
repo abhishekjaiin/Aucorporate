@@ -17,12 +17,6 @@ import {
   Lock,
   Cpu
 } from 'lucide-react'
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Business Services: India Entry, Tax, Accounting & Compliance | AU Corporate',
-  description: 'Comprehensive business solutions including consulting, taxation, accounting, arbitration, HR, and outsourcing services.',
-}
 
 const services = [
   {

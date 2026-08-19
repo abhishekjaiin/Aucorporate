@@ -1,10 +1,19 @@
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
+import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 
 export default function BlogPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+      <BlogPostingSchema
+        headline="Construction Arbitration in India"
+        description="Key considerations in construction sector arbitration disputes in India and how they're typically resolved."
+        url="https://www.theaucorp.com/blog/construction-arbitration-in-india"
+        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+        datePublished="2026-05-04"
+        dateModified="2026-05-04"
+      />
       <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Construction Arbitration" }]} />
 
       <div className="mt-4">

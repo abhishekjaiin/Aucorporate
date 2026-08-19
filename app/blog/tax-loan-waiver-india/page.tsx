@@ -1,19 +1,20 @@
-import { Metadata } from "next";
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
-
-export const metadata: Metadata = {
-  title:
-    "Tax Treatment of Loan Waiver in India | Supreme Court Ruling",
-  description:
-    "Explore the evolving judicial position on taxability of loan waiver in India through landmark rulings including T.V. Sundaram Iyengar, Solid Containers, Mahindra & Mahindra (HC & SC), and Ramaniyam Homes. Understand how the Supreme Court finally settled the law on Sections 28(iv) and 41(1) of the Income Tax Act, 1961.",
-};
+import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
 
+      <BlogPostingSchema
+        headline="Tax Treatment of Loan Waiver in India | Supreme Court Ruling"
+        description="How Indian courts settled the tax treatment of loan waivers — from T.V. Sundaram Iyengar to the Supreme Court's final word on Sections 28(iv) and 41(1)."
+        url="https://www.theaucorp.com/blog/tax-loan-waiver-india"
+        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        datePublished="2026-05-04"
+        dateModified="2026-05-04"
+      />
       <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Tax on Loan Waivers" }]} />
 
       {/* TITLE */}

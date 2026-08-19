@@ -20,10 +20,10 @@ export function RegionClusterTemplate({
 }: RegionClusterTemplateProps) {
   // Reusable stats (same across all pages)
   const stats = [
-    { value: '500+', label: 'Clients Served' },
-    { value: '30+', label: 'Collective Professional Experience' },
+    { value: '30+', label: 'Years Collective Experience' },
     { value: '10+', label: 'Countries Served' },
-    { value: '98%', label: 'Client Retention' },
+    { value: 'End-to-End', label: 'India Entry & Compliance Support' },
+    { value: 'New Delhi', label: 'Based, Serving Global Clients' },
   ]
 
   // Reusable process flow (same across all pages)

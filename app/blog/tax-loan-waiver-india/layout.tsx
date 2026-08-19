@@ -2,23 +2,23 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Tax Implications of Loan Waivers in India | AU Corporate",
+    absolute: "Tax Treatment of Loan Waiver in India | Supreme Court Ruling",
   },
   description:
-    "How loan waivers are treated under Indian tax law and the implications for both lender and borrower entities.",
+    "How Indian courts settled the tax treatment of loan waivers — from T.V. Sundaram Iyengar to the Supreme Court's final word on Sections 28(iv) and 41(1).",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/tax-loan-waiver-india",
   },
   openGraph: {
-    title: "Tax Implications of Loan Waivers in India | AU Corporate",
+    title: "Tax Treatment of Loan Waiver in India | Supreme Court Ruling",
     description:
-      "How loan waivers are treated under Indian tax law and the implications for both lender and borrower entities.",
+      "How Indian courts settled the tax treatment of loan waivers — from T.V. Sundaram Iyengar to the Supreme Court's final word on Sections 28(iv) and 41(1).",
     url: "https://www.theaucorp.com/blog/tax-loan-waiver-india",
   },
   twitter: {
-    title: "Tax Implications of Loan Waivers in India | AU Corporate",
+    title: "Tax Treatment of Loan Waiver in India | Supreme Court Ruling",
     description:
-      "How loan waivers are treated under Indian tax law and the implications for both lender and borrower entities.",
+      "How Indian courts settled the tax treatment of loan waivers — from T.V. Sundaram Iyengar to the Supreme Court's final word on Sections 28(iv) and 41(1).",
   },
 }
 

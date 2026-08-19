@@ -2,23 +2,23 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Mailbox Companies & DTAA Benefits | AU Corporate Blog",
+    absolute: "DTAA & Mailbox Companies in India | Tiger Global Supreme Court 2026",
   },
   description:
-    "How Indian tax authorities scrutinize mailbox/shell entities claiming DTAA benefits, and what substance requirements apply.",
+    "The Tiger Global Supreme Court ruling reshapes DTAA treaty benefits for mailbox companies lacking real substance — what it means for foreign investors and GAAR.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/mail-box-dtaa-benefits",
   },
   openGraph: {
-    title: "Mailbox Companies & DTAA Benefits | AU Corporate Blog",
+    title: "DTAA & Mailbox Companies in India | Tiger Global Supreme Court 2026",
     description:
-      "How Indian tax authorities scrutinize mailbox/shell entities claiming DTAA benefits, and what substance requirements apply.",
+      "The Tiger Global Supreme Court ruling reshapes DTAA treaty benefits for mailbox companies lacking real substance — what it means for foreign investors and GAAR.",
     url: "https://www.theaucorp.com/blog/mail-box-dtaa-benefits",
   },
   twitter: {
-    title: "Mailbox Companies & DTAA Benefits | AU Corporate Blog",
+    title: "DTAA & Mailbox Companies in India | Tiger Global Supreme Court 2026",
     description:
-      "How Indian tax authorities scrutinize mailbox/shell entities claiming DTAA benefits, and what substance requirements apply.",
+      "The Tiger Global Supreme Court ruling reshapes DTAA treaty benefits for mailbox companies lacking real substance — what it means for foreign investors and GAAR.",
   },
 }
 
