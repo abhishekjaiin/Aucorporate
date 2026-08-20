@@ -43,7 +43,7 @@ export default function AboutHero() {
             </h1>
 
             <p className="text-gray-500 text-sm sm:text-base mb-4">
-              AU Corporate is an esteemed multidisciplinary consultancy firm based in New Delhi with a diversified team of Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, Lawyers, Industry Specialists, Ex-Bankers, and MBAs.
+              AU Corporate is an esteemed multidisciplinary consultancy firm based in New Delhi and Gurugram with a diversified team of Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, Lawyers, Industry Specialists, Ex-Bankers, and MBAs.
             </p>
 
             <p className="text-gray-500 text-sm sm:text-base mb-6">

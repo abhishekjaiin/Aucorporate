@@ -30,6 +30,11 @@ const offices = [
     city: "New Delhi",
     address: "New Delhi",
   },
+  {
+    region: "India",
+    city: "Gurugram",
+    address: "Gurugram",
+  },
 ]
 
 export default function ContactPage() {

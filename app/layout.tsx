@@ -293,12 +293,20 @@ export default function RootLayout({
 
       email: "partner@theaucorp.com",
 
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "New Delhi",
-        addressRegion: "Delhi",
-        addressCountry: "IN",
-      },
+      address: [
+        {
+          "@type": "PostalAddress",
+          addressLocality: "New Delhi",
+          addressRegion: "Delhi",
+          addressCountry: "IN",
+        },
+        {
+          "@type": "PostalAddress",
+          addressLocality: "Gurugram",
+          addressRegion: "Haryana",
+          addressCountry: "IN",
+        },
+      ],
 
       areaServed: [
         "India",

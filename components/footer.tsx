@@ -144,7 +144,7 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-yellow-400 shrink-0 mt-0.5" />
 
                 <span className="text-gray-600 text-sm">
-                  New Delhi, India
+                  New Delhi & Gurugram, India
                 </span>
               </div>
 
