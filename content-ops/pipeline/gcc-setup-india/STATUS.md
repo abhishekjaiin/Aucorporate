@@ -22,4 +22,4 @@
 | 10 | eeat-trust-reviewer | 10-eeat-review.md | done — Pass, 2 minor fixes applied | 2026-08-20 |
 | 11 | final-seo-qc | 11-final-qa.md | done — 8.7/10, Approved for publish | 2026-08-20 |
 
-**Pipeline complete.** Page is publish-ready pending human sign-off on 7 hedged regulatory figures (see 11-final-qa.md) and NOT yet implemented as a live Next.js page.
+**Pipeline complete and deployed.** Live at https://www.theaucorp.com/gcc-setup-india as of 2026-08-20. Internal linking updated on 7 country pages + safe-harbour blog post + sitemap.ts. Still pending: human sign-off on 7 hedged regulatory figures (see 11-final-qa.md) before any future revision adds them as hard numbers.
