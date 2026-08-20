@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
@@ -92,7 +93,7 @@ export default function BlogPage() {
       </h2>
 
       <p className="mb-6">
-        If your Indian subsidiary or GCC has intercompany service transactions with a foreign parent — software development, ITeS, KPO, or contract R&D — this is worth evaluating before your next transfer pricing filing cycle, not after. Safe harbour eligibility is assessed against your actual operating profit margin, so the decision to opt in needs to happen with enough lead time to structure intercompany pricing accordingly, ideally from the start of the tax year.
+        If your Indian subsidiary or GCC has intercompany service transactions with a foreign parent — software development, ITeS, KPO, or contract R&D — this is worth evaluating before your next transfer pricing filing cycle, not after. Safe harbour eligibility is assessed against your actual operating profit margin, so the decision to opt in needs to happen with enough lead time to structure intercompany pricing accordingly, ideally from the start of the tax year. If you&apos;re setting up a GCC from scratch, our <Link href="/gcc-setup-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">complete GCC setup guide</Link> covers entity structure and compliance alongside this tax question.
       </p>
 
       <p className="mb-6">

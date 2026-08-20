@@ -50,7 +50,7 @@ export default function IndiaEntryForSingaporeCompanies() {
           </div>
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">GCC Setup</h3>
-            <p className="text-gray-600 text-sm">Singapore is a common staging base for companies setting up a Global Capability Center in India — we support the entity, tax, and operational setup end to end.</p>
+            <p className="text-gray-600 text-sm">Singapore is a common staging base for companies setting up a Global Capability Center in India — we support the entity, tax, and operational setup end to end. See our <Link href="/gcc-setup-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">complete GCC setup guide</Link>.</p>
           </div>
         </div>
       </div>

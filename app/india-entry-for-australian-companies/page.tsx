@@ -39,7 +39,7 @@ export default function IndiaEntryForAustralianCompanies() {
           </div>
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">GCC Setup</h3>
-            <p className="text-gray-600 text-sm">We support Australian companies setting up a Global Capability Center in India end to end — entity, tax, payroll, and operational setup.</p>
+            <p className="text-gray-600 text-sm">We support Australian companies setting up a Global Capability Center in India end to end — entity, tax, payroll, and operational setup. See our <Link href="/gcc-setup-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">complete GCC setup guide</Link>.</p>
           </div>
         </div>
       </div>

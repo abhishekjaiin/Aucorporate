@@ -98,6 +98,12 @@ export default function IndiaEntryForUSCompanies() {
           >
             Accounting Outsourcing →
           </Link>
+          <Link
+            href="/gcc-setup-india"
+            className="text-sm text-yellow-600 hover:text-yellow-700 font-semibold"
+          >
+            GCC Setup in India →
+          </Link>
         </div>
       </div>
 

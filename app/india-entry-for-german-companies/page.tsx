@@ -59,6 +59,9 @@ export default function IndiaEntryForGermanyCompanies() {
           <Link href="/services/taxation-regulatory" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             Taxation & Regulatory Services →
           </Link>
+          <Link href="/gcc-setup-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+            GCC Setup in India →
+          </Link>
         </div>
       </div>
     </RegionClusterTemplate>

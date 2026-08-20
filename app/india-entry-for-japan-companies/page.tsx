@@ -71,6 +71,9 @@ export default function IndiaEntryForJapanCompanies() {
           <Link href="/services/transaction-advisory" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             Transaction & Business Advisory Services →
           </Link>
+          <Link href="/gcc-setup-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+            GCC Setup in India →
+          </Link>
         </div>
       </div>
     </RegionClusterTemplate>
