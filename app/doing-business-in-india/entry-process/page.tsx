@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { TrendingUp, Globe, Users, Shield, Landmark, Cpu, Briefcase, BarChart3 } from "lucide-react"
@@ -324,9 +325,9 @@ export default function EntryProcessPage() {
           Build a compliant and scalable business structure in India with expert guidance.
         </p>
 
-        <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg">
+        <Link href="/contact" className="inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg">
           Talk to Experts
-        </button>
+        </Link>
       </section>
 
     </div>

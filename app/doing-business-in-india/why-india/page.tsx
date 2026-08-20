@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
@@ -543,9 +544,12 @@ export default function WhyIndiaPage() {
           compliance, and clarity.
         </p>
 
-        <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg hover:scale-105 transition">
+        <Link
+          href="/contact"
+          className="inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg hover:scale-105 transition"
+        >
           Schedule Consultation
-        </button>
+        </Link>
       </section>
 
     </div>

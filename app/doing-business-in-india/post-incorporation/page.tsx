@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { Breadcrumb } from "@/components/Breadcrumb"
 
@@ -219,9 +220,9 @@ export default function PostIncorporationPage() {
         <p className="text-gray-600 mb-6">
           We manage your compliance so you can focus on growing your business in India.
         </p>
-        <button className="bg-[#081a42] text-white px-6 py-3 rounded-lg">
+        <Link href="/contact" className="inline-block bg-[#081a42] text-white px-6 py-3 rounded-lg">
           Talk to Experts
-        </button>
+        </Link>
       </section>
 
     </div>
