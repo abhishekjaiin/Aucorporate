@@ -52,18 +52,27 @@ export default function ContactPage() {
 
           {contactInfo.map((info, index) => {
             const Icon = info.icon
+            const content = (
+              <>
+                <Icon className="h-6 w-6 mb-3" style={{ color: GOLD }} />
+                <h2 className="font-semibold">{info.title}</h2>
+                <p className="text-sm text-gray-500">{info.description}</p>
+                <p className="text-sm font-medium mt-2">{info.value}</p>
+              </>
+            )
 
-            return (
+            return info.href ? (
               <a
                 key={index}
                 href={info.href}
                 className="p-6 bg-white border rounded-xl hover:shadow-md transition block"
               >
-                <Icon className="h-6 w-6 mb-3" style={{ color: GOLD }} />
-                <h2 className="font-semibold">{info.title}</h2>
-                <p className="text-sm text-gray-500">{info.description}</p>
-                <p className="text-sm font-medium mt-2">{info.value}</p>
+                {content}
               </a>
+            ) : (
+              <div key={index} className="p-6 bg-white border rounded-xl">
+                {content}
+              </div>
             )
           })}
 
