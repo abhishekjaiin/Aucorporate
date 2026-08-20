@@ -15,7 +15,7 @@ export default function TransferPricingUSIndiaPage() {
 
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">
-          Any transaction between your US parent and its Indian subsidiary — management fees, cost allocations, intercompany services, royalty for IP use — is a related-party transaction on both sides of the border. The IRS reviews it under Section 482 of the Internal Revenue Code; Indian tax authorities review the same transaction under India&apos;s own transfer pricing rules (Sections 92-92F of the Income Tax Act). Both require the pricing to reflect an arm&apos;s-length standard, but the documentation and filing mechanics differ.
+          Any transaction between your US parent and its Indian subsidiary — management fees, cost allocations, intercompany services, royalty for IP use — is a related-party transaction on both sides of the border. The IRS reviews it under Section 482 of the Internal Revenue Code; Indian tax authorities review the same transaction under India&apos;s own transfer pricing rules — historically Sections 92-92F of the Income Tax Act, 1961, restructured as Sections 161-173 under the Income-tax Act, 2025, which came into effect April 1, 2026. Both require the pricing to reflect an arm&apos;s-length standard, but the documentation and filing mechanics differ.
         </p>
       </div>
 
@@ -51,7 +51,7 @@ export default function TransferPricingUSIndiaPage() {
       <div className="mb-12 p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded">
         <h3 className="font-bold text-lg mb-2">The practical risk</h3>
         <p className="text-gray-700">
-          The most common issue we see isn&apos;t aggressive pricing — it&apos;s inconsistency: the number reported to Indian tax authorities under Section 92 doesn&apos;t match what shows up on Schedule M of the US parent&apos;s Form 5471. That mismatch is one of the easiest things for either tax authority to flag. Keeping both filings reconciled to the same underlying figures is the single highest-value thing a joint US-India advisory relationship does for a subsidiary structure.
+          The most common issue we see isn&apos;t aggressive pricing — it&apos;s inconsistency: the number reported to Indian tax authorities under India&apos;s transfer pricing rules doesn&apos;t match what shows up on Schedule M of the US parent&apos;s Form 5471. That mismatch is one of the easiest things for either tax authority to flag. Keeping both filings reconciled to the same underlying figures is the single highest-value thing a joint US-India advisory relationship does for a subsidiary structure.
         </p>
       </div>
 

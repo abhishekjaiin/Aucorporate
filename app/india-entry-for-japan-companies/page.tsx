@@ -47,7 +47,7 @@ export default function IndiaEntryForJapanCompanies() {
           </div>
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">Transfer Pricing on Intercompany Flows</h3>
-            <p className="text-gray-600 text-sm">Intercompany loans, management fees, and royalty/IP licensing arrangements between a Japanese parent and Indian subsidiary must be arm's-length documented under Section 92 — particularly relevant given how common hybrid equity-plus-debt funding structures are for Japanese manufacturing entrants.</p>
+            <p className="text-gray-600 text-sm">Intercompany loans, management fees, and royalty/IP licensing arrangements between a Japanese parent and Indian subsidiary must be arm's-length documented under India's transfer pricing rules (historically Section 92 of the Income Tax Act, 1961, restructured as Section 161 under the Income-tax Act, 2025, effective April 2026) — particularly relevant given how common hybrid equity-plus-debt funding structures are for Japanese manufacturing entrants.</p>
           </div>
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">FEMA & RBI Filings</h3>
