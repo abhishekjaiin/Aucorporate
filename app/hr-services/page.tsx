@@ -15,7 +15,7 @@ const stats = [
   { value: 5000, suffix: "+", label: "Employees Managed" },
   { value: 200, suffix: "+", label: "Clients Served" },
   { value: 99.9, suffix: "%", label: "Payroll Accuracy" },
-  { value: 15, suffix: "+", label: "Years Experience" },
+  { value: 10, suffix: "+", label: "Years Experience" },
 ]
 
 const fadeUp = {
