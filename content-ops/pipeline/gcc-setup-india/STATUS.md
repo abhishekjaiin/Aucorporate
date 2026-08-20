@@ -8,12 +8,12 @@
 
 | Stage | Agent | Output file | Status | Timestamp |
 |---|---|---|---|---|
-| 1 | seo-researcher | 01-serp-research.md | pending | |
-| 2 | keyword-intent-analyst | 02-keyword-intent-map.md | pending | |
-| 3 | competitor-reverse-engineer | 03-competitor-analysis.md | pending | |
-| 4 | content-gap-analyst | 04-content-gap.md | pending | |
-| 5 | au-corporate-strategist | 05-au-positioning.md | pending | |
-| **Checkpoint 1** | — | — | pending | |
+| 1 | seo-researcher | 01-serp-research.md | done | 2026-08-20 |
+| 2 | keyword-intent-analyst | 02-keyword-intent-map.md | done | 2026-08-20 |
+| 3 | competitor-reverse-engineer | 03-competitor-analysis.md | done | 2026-08-20 |
+| 4 | content-gap-analyst | 04-content-gap.md | done | 2026-08-20 |
+| 5 | au-corporate-strategist | 05-au-positioning.md | done | 2026-08-20 |
+| **Checkpoint 1** | — | — | awaiting user approval | 2026-08-20 |
 | 6 | content-architect | 06-content-architecture.md | pending | |
 | **Checkpoint 2** | — | — | pending | |
 | 7 | expert-content-writer | 07-draft.md | pending | |
