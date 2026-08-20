@@ -3,7 +3,7 @@ import { Breadcrumb } from "@/components/Breadcrumb"
 const services = [
   {
     title: "Company Incorporation & Legal Registration",
-    desc: "End-to-end incorporation support in India including entity structuring, name approval, documentation, and registration with regulatory authorities for seamless setup.",
+    desc: "End-to-end incorporation support in India — entity structuring, name approval, documentation, and registration with regulatory authorities.",
   },
   {
     title: "FDI & Regulatory Compliance",
@@ -45,7 +45,7 @@ export default function Page() {
       </h1>
 
       <p className="mb-10 text-gray-700">
-        We handle the entire setup process so you can focus on your business. From incorporation to compliance, we ensure a seamless and fully compliant entry into India.
+        We handle the entire setup process so you can focus on your business — from incorporation through to compliance, so your entry into India is fully compliant from day one.
       </p>
 
       <div className="grid md:grid-cols-2 gap-6">

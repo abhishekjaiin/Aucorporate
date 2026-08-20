@@ -12,7 +12,7 @@ export default function RegulatoryCompliancePage() {
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">Regulatory Compliance Framework</h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl">
-            Navigate the complex regulatory landscape with our comprehensive compliance guide. From labor laws to environmental regulations, stay compliant with Indian requirements.
+            A practical guide to India's regulatory compliance requirements — from labor laws to environmental regulations.
           </p>
           <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
             <Link href="/india-business-setup/banking-taxation">

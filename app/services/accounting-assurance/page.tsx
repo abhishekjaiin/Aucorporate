@@ -29,7 +29,7 @@ export default function Page() {
       },
       {
         title: "IFRS & IND-AS Implementation",
-        desc: "Assisting in seamless transition and compliance with international and Indian accounting standards.",
+        desc: "Assisting with the transition to IFRS and Ind-AS, and staying compliant with both once you're there.",
       },
       {
         title: "Monthly Payroll Management",

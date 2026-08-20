@@ -192,7 +192,7 @@ export default function BlogPage() {
       </h2>
 
       <p className="mb-6">
-        Entering India requires a combination of regulatory clarity and execution capability. AU Corporate acts as a strategic partner to global businesses, enabling seamless and compliant market entry.
+        Entering India requires a combination of regulatory clarity and execution capability. AU Corporate works alongside global businesses through that process, from regulatory clarity through to compliant market entry.
       </p>
 
       <p className="mb-6">

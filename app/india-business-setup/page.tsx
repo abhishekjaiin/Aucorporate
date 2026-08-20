@@ -71,7 +71,7 @@ export default function IndiaBusinessSetupHub() {
                 Complete India Business Setup Guide
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Master the seven-step process to establish your business in India. From understanding market opportunities to post-incorporation compliance, we guide you through every stage.
+                Setting up in India means working through market entry, incorporation, compliance, and banking — usually in that order. This guide walks through each stage, with links to the detail you need at each one.
               </p>
               <div className="flex gap-4">
                 <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
@@ -101,9 +101,9 @@ export default function IndiaBusinessSetupHub() {
       {/* SEVEN-STEP FRAMEWORK */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">Your Seven-Step Mastery Program</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">The Path to Setting Up in India</h2>
           <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
-            Each step builds on the previous, creating a comprehensive roadmap from decision to operational excellence.
+            Each stage builds on the last — start wherever you are today.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

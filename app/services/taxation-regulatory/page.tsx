@@ -60,7 +60,7 @@ export default function Page() {
       items: [
         {
           title: "GST Registration",
-          desc: "Assisting businesses with seamless GST registration processes.",
+          desc: "Assisting businesses with GST registration, start to finish.",
         },
         {
           title: "GST Compliance",

@@ -197,7 +197,7 @@ export default function AboutHero() {
         </h2>
 
         <p className="text-gray-500 mb-8 max-w-xl mx-auto text-sm sm:text-base">
-          Partner with AU Corporate for seamless advisory, compliance, and execution support.
+          Talk to AU Corporate about advisory, compliance, and execution support for your India operations.
         </p>
 
         <Link href="/contact">

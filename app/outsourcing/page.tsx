@@ -183,7 +183,7 @@ export default function OutsourcingPage() {
               },
               {
                 title: "Global Delivery",
-                desc: "Seamless execution across multiple geographies.",
+                desc: "Consistent execution across time zones and geographies.",
               },
               {
                 title: "Technology Driven",
@@ -357,7 +357,7 @@ export default function OutsourcingPage() {
           </h2>
 
           <p className="text-muted-foreground max-w-2xl mx-auto mb-12">
-            We work with leading global accounting and tax platforms for seamless compliance and reporting.
+            We work with the accounting and tax platforms your finance team already uses, so compliance and reporting stay in sync.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">

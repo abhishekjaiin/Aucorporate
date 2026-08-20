@@ -443,7 +443,7 @@ export default function HomePage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
-            Empowering Businesses Across Industries
+            Industries We Work With
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-10">
             Our services support businesses across a range of sectors operating in India.
@@ -565,7 +565,7 @@ export default function HomePage() {
                 India Business Setup
               </h3>
               <p className="text-white/70 text-sm">
-                End-to-end assistance for company formation, regulatory approvals, and seamless setup in India.
+                End-to-end assistance for company formation, regulatory approvals, and setup in India.
               </p>
             </div>
 

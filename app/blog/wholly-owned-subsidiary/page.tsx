@@ -216,7 +216,7 @@ export default function BlogPage() {
       </p>
 
       <p className="mb-6">
-        We also facilitate appointment of resident directors, registered office setup, and ensure seamless regulatory onboarding. Post incorporation, we assist with GST registration, RBI and FEMA compliance, transfer pricing advisory, and ongoing statutory filings.
+        We also help appoint resident directors, set up the registered office, and handle the regulatory onboarding that follows. Post incorporation, we assist with GST registration, RBI and FEMA compliance, transfer pricing advisory, and ongoing statutory filings.
       </p>
 
       <p className="mb-6">
@@ -224,7 +224,7 @@ export default function BlogPage() {
       </p>
 
       <p className="mb-4">
-        👉 Partner with AU Corporate for seamless India entry and end-to-end incorporation support.
+        Talk to AU Corporate about incorporation support for your India entry.
       </p>
 
       <p className="mb-6">

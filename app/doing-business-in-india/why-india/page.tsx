@@ -535,7 +535,7 @@ export default function WhyIndiaPage() {
       {/* CTA */}
       <section className="bg-[#081a42] text-white py-24 text-center">
         <h2 className="text-3xl font-bold mb-4">
-          Unlock India’s Growth Potential with AU Corporate
+          Ready to Explore India's Opportunity?
         </h2>
 
         <p className="text-white/80 max-w-2xl mx-auto mb-6">

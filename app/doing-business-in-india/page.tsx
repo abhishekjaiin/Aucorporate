@@ -142,7 +142,7 @@ export default function DoingBusinessInIndiaPage() {
         </h2>
         <p className="max-w-2xl mx-auto text-white/80 mb-6">
           AU Corporate provides end-to-end advisory and compliance support for
-          seamless entry and growth in India.
+          entry and growth in India.
         </p>
 
         <Link
