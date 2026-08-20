@@ -202,11 +202,11 @@ const lifecycle = [
 
 /* STATS — real, already-established figures */
 const stats = [
-  { value: 500, suffix: "+", label: "Clients Served" },
-  { value: 30, suffix: "+", label: "Collective Professional Experience" },
+  { text: "End-to-End", label: "India Entry & Compliance Support" },
+  { value: 30, suffix: "+", label: "Years Collective Experience" },
   { value: 10, suffix: "+", label: "Countries Served" },
-  { value: 98, suffix: "%", label: "Client Retention" },
-]
+  { text: "New Delhi", label: "Based, Serving Global Clients" },
+] as const
 
 /* FAQ */
 const faqs = [
@@ -311,7 +311,7 @@ export default function HomePage() {
             {stats.map((stat) => (
               <div key={stat.label}>
                 <div className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: GOLD, fontFamily: "var(--font-heading)" }}>
-                  <CountUp value={stat.value} suffix={stat.suffix} />
+                  {"value" in stat ? <CountUp value={stat.value} suffix={stat.suffix} /> : stat.text}
                 </div>
                 <div className="text-white/70 text-xs sm:text-sm">
                   {stat.label}
