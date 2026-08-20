@@ -1,10 +1,4 @@
-"use client"
-
-import { useState } from 'react'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
+import { InquiryForm } from '@/components/InquiryForm'
 import { HeroBackground } from '@/components/HeroBackground'
 import {
   MapPin,
@@ -13,9 +7,7 @@ import {
   Heart,
   TrendingUp,
   Globe,
-  Award,
   CheckCircle2,
-  Send
 } from 'lucide-react'
 
 const jobListings = [
@@ -69,33 +61,6 @@ const benefits = [
 ]
 
 export default function CareerPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    position: '',
-    message: '',
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitSuccess, setSubmitSuccess] = useState(false)
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prev => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    await new Promise(resolve => setTimeout(resolve, 1500))
-
-    setIsSubmitting(false)
-    setSubmitSuccess(true)
-    setFormData({ name: '', email: '', position: '', message: '' })
-
-    setTimeout(() => setSubmitSuccess(false), 5000)
-  }
-
   return (
     <div className="min-h-screen pt-20">
 
@@ -129,12 +94,52 @@ export default function CareerPage() {
         </div>
       </section>
 
+      {/* OPEN POSITIONS */}
+      <section className="py-24 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Open Positions
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Don&apos;t see a role that fits? Send us your resume via the form below and we&apos;ll reach out if something opens up.
+            </p>
+          </div>
+
+          <div className="space-y-4 max-w-3xl mx-auto">
+            {jobListings.map((job) => (
+              <div
+                key={job.id}
+                className="p-6 rounded-xl border hover:shadow-lg transition"
+              >
+                <div className="flex flex-wrap items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
+                    <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                      <span className="flex items-center gap-1.5">
+                        <MapPin className="h-4 w-4 text-gold" /> {job.location}
+                      </span>
+                      <span className="flex items-center gap-1.5">
+                        <Clock className="h-4 w-4 text-gold" /> {job.type}
+                      </span>
+                      <span>{job.department}</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+                  {job.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CULTURE SECTION */}
       <section className="py-24 bg-secondary/50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-gold text-sm font-semibold uppercase tracking-wider"></span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Why Work With Us
             </h2>
           </div>
@@ -154,9 +159,9 @@ export default function CareerPage() {
         </div>
       </section>
 
-      {/* BENEFITS SECTION */}
+      {/* BENEFITS + APPLICATION FORM */}
       <section className="py-24 bg-white">
-        <div className="mx-auto max-w-7xl px-4 grid lg:grid-cols-2 gap-16 items-center">
+        <div className="mx-auto max-w-7xl px-4 grid lg:grid-cols-2 gap-16 items-start">
 
           <div>
             <h2 className="text-3xl font-bold mb-6">
@@ -173,24 +178,14 @@ export default function CareerPage() {
             </div>
           </div>
 
+          <InquiryForm
+            eyebrow="Apply Now"
+            title="Tell Us About Yourself"
+            description="Share your resume and the role you're interested in, and our team will get back to you."
+            checklist={['Article Trainee — Articleship program', 'Open to other roles? Mention it in your message', 'We review every application']}
+            footerNote={<>Mention the position you&apos;re applying for in your message.</>}
+          />
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-24 text-center">
-        <h2 className="text-3xl font-bold mb-4">
-          Have Questions?
-        </h2>
-
-        <p className="text-muted-foreground mb-8">
-          Reach out to explore career opportunities at AU Corporate.
-        </p>
-
-        <Button asChild className="bg-gold text-black">
-          <a href="mailto:partner@theaucorp.com">
-            Contact us
-          </a>
-        </Button>
       </section>
 
     </div>
