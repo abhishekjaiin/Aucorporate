@@ -22,13 +22,25 @@ export function HubSpotLeadForm({ title = "Planning to Set Up Your Business in I
         </div>
         <div className="relative min-h-[620px] bg-white p-2 sm:p-4">
           {!loaded && <div className="absolute inset-0 z-10 flex items-center justify-center bg-white text-sm text-gray-500" aria-hidden="true">Loading inquiry form…</div>}
-          <iframe
-            src={HUBSPOT_FORM_URL}
-            title="AU Corporate business inquiry form"
-            loading="lazy"
-            className="h-[610px] w-full border-0"
-            onLoad={() => setLoaded(true)}
-          />
+          {/*
+            Same crop technique already used on /contact and the homepage:
+            overflow-hidden on the wrapper + a negative margin-bottom on the
+            iframe clips the trailing "Powered by HubSpot" strip outside the
+            visible area (the branding lives inside the cross-origin iframe
+            document, so it can't be targeted directly). Fragile by nature —
+            see /contact/page.tsx for the full caveat. The reliable fix is
+            removing branding at the HubSpot account level (Starter plan+).
+          */}
+          <div className="h-[610px] w-full overflow-hidden">
+            <iframe
+              src={HUBSPOT_FORM_URL}
+              title="AU Corporate business inquiry form"
+              loading="lazy"
+              className="w-full border-0"
+              style={{ height: 610, marginBottom: -46 }}
+              onLoad={() => setLoaded(true)}
+            />
+          </div>
         </div>
       </div>
     </section>

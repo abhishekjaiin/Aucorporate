@@ -26,13 +26,29 @@ export function InquiryForm({
         ))}
       </div>
 
-      <iframe
-        src={HUBSPOT_FORM_URL}
-        title="AU Corporate inquiry form"
-        className="min-h-[620px] w-full border-0"
-        loading="lazy"
-        referrerPolicy="strict-origin-when-cross-origin"
-      />
+      {/*
+        HubSpot's "Powered by HubSpot" attribution renders inside the
+        iframe's own (cross-origin) document, so page CSS can't reach it
+        directly. Same crop technique already used on /contact and the
+        homepage: overflow-hidden on the wrapper + a negative margin-bottom
+        on the iframe pulls the wrapper's visible area up short of the
+        iframe's full rendered height, clipping the trailing branding strip
+        outside the visible area. Fragile by nature: if HubSpot changes the
+        footer height, or form content grows taller (validation errors,
+        more fields), this may clip too little or too much. The reliable
+        fix is removing branding at the HubSpot account level (Starter
+        plan+), not this CSS hack.
+      */}
+      <div className="min-h-[620px] w-full overflow-hidden">
+        <iframe
+          src={HUBSPOT_FORM_URL}
+          title="AU Corporate inquiry form"
+          className="min-h-[620px] w-full border-0"
+          style={{ marginBottom: -46 }}
+          loading="lazy"
+          referrerPolicy="strict-origin-when-cross-origin"
+        />
+      </div>
 
       <p className="mt-3 flex items-center justify-center gap-1 text-center text-xs text-muted-foreground">
         Tell us what you need <ArrowRight className="h-3 w-3" /> we&apos;ll help you plan the next step.
