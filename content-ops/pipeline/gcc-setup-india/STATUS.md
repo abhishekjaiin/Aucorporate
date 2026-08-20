@@ -15,7 +15,7 @@
 | 5 | au-corporate-strategist | 05-au-positioning.md | done | 2026-08-20 |
 | **Checkpoint 1** | — | — | awaiting user approval | 2026-08-20 |
 | 6 | content-architect | 06-content-architecture.md | done | 2026-08-20 |
-| **Checkpoint 2** | — | — | awaiting user approval | 2026-08-20 |
+| **Checkpoint 2** | — | — | approved | 2026-08-20 |
 | 7 | expert-content-writer | 07-draft.md | pending | |
 | 8 | seo-editor | 08-seo-edit.md | pending | |
 | 9 | fact-authority-checker | 09-fact-check.md | pending | |
