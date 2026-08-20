@@ -1,0 +1,36 @@
+# Refresh: Regulatory Compliance (India Business Setup) — 2026-08
+
+## Trigger
+Scheduled review of a "seed entry" page (topics.csv marks this URL "published" from before the content-ops pipeline existed, owner_notes: "Existing live page — seed entry"). On inspection, the page was found to be a near-empty stub — ~69 words of real content, with all 6 compliance-area cards sharing the identical placeholder sentence "Critical compliance requirements and filing deadlines." This is not a stale-content refresh; the page targeting the keyword "India regulatory compliance" was never actually written. Two sibling pages in the same cluster (/india-business-setup/company-formation, /india-business-setup/fdi-channels) demonstrate real depth is achievable at this URL structure, and the newly published /gcc-setup-india pillar establishes the site's current hedging pattern for regulatory figures.
+
+## Current Page vs. Current SERP
+SERP for "India regulatory compliance" and adjacent foreign-company-compliance queries is dominated by checklist-style guides (Treelife, Jordensky, FinPracto, Tecnova, and similar) that consistently organize the topic around: company law/MCA, FEMA/RBI, income tax, GST, labour law, data protection, and sector-specific licensing — largely the same six-plus-tax framework this page already names via its card headings. None of the reviewed competitor pages had incorporated the two biggest regulatory developments of the last 12 months (the four Labour Codes taking effect, and the DPDP Rules 2025 notification) with real specificity — most still describe labour law and data protection in vague, pre-change terms. That gap was the clearest opportunity: the page's existing card taxonomy is fine and matches search intent; what was missing was substance.
+
+## Current Page vs. Search Console Data
+No Search Console data or content-ops/performance entry exists for this specific URL (checked content-ops/performance/ and content-ops/pipeline/ — no prior history for this slug). Given the page had almost no real content to rank on, GSC performance would not be a meaningful signal either way; the trigger for this refresh is the stub-content finding itself, not a ranking or impressions signal.
+
+## New Authoritative Information Found
+- **Labour Codes**: The four consolidated Labour Codes (Code on Wages 2019, Industrial Relations Code 2020, Code on Social Security 2020, Occupational Safety Health and Working Conditions Code 2020) came into effect 21 November 2025, replacing 29 central labour statutes. Central rules were notified in mid-2026; state-level rules are still rolling out unevenly by state. This is a genuine, material change the old placeholder card gave zero information about.
+- **DPDP Act, 2023**: The DPDP Rules, 2025 were notified 13 November 2025, establishing the Data Protection Board of India and beginning phased operationalisation of the Act. Substantive obligations (consent mechanics, cross-border transfer conditions, Significant Data Fiduciary designation, data localisation) are still coming into force in stages — described in the new content as an active rollout rather than a fixed, settled regime, consistent with what's verifiable today.
+- **Companies Act, 2013 corporate governance basics** (resident director requirement under Section 149(3), AOC-4/MGT-7 annual filings, RoC/MCA as administering authority) — verified against standard, stable Companies Act mechanics; no renumbering risk since this is not an Income Tax Act citation.
+- **FEMA/RBI filings** (FC-GPR, FC-TRS, Annual FLA Return) — consistent with the mechanics already verified and published on /gcc-setup-india; reused the same filing names without restating specific deadline day-counts, which remain hedged there pending human sign-off.
+- **Environmental compliance** (Consent to Establish/Consent to Operate under Water Act 1974 and Air Act 1981 via State Pollution Control Boards; Environmental Clearance under EIA Notification 2006 via MoEFCC) — verified against current environmental-law guidance; framed explicitly as triggered by industrial/manufacturing activity rather than by incorporation, which matters for AU Corporate's actual client profile (subsidiaries, GCCs, service entities more often than factories).
+- **IP administration** (CGPDTM under DPIIT for trademarks/patents/designs, Copyright Act 1957 automatic protection, Madrid Protocol/PCT routes for foreign-held marks and patents) — verified against current IP-office structure.
+- Confirmed no Income Tax Act, 2025 section citations were introduced anywhere on this page (the six cards don't touch direct tax), so the 1961-to-2025 renumbering risk flagged in the brief doesn't apply here.
+
+## Changes Made
+| Section | Change type | Reason |
+|---|---|---|
+| Hero paragraph | Update | Replaced generic one-line intro with two paragraphs naming all six actual compliance areas and framing them as independent regimes with distinct triggers/authorities/rhythms — sets real expectations instead of vague copy. |
+| 6 compliance-area cards (Corporate Governance, Labor & Employment, Environmental, FEMA, DPDP, IP) | Rewrite (content only, not layout) | Replaced the single identical placeholder sentence in all 6 cards with 3-4 substantive sentences each, covering what triggers the obligation, who administers it, and roughly how often it recurs — turning the section from a stub into real reference content. |
+| "Key Compliance Areas" section intro | Add | Added a framing sentence clarifying that not all six regimes apply to every entity (e.g., environmental compliance mostly doesn't apply to a services-only entity; IP is opt-in, not automatic). |
+| Page structure (hero/grid/Next Steps layout, card design, links) | Not changed | Preserved per instructions — this was a content-filling job, not a redesign. |
+
+## Search Intent Assessment
+Unchanged. The query is informational/comparison-shopping for a compliance overview; the existing card taxonomy already matched what competitor guides structure around. What had drifted was execution, not intent — the page just never delivered on the intent it was built to serve.
+
+## Not Changed (and why)
+- Page layout, hero button destination, "Next Steps" links, breadcrumb — all still correct and functional; no reason to touch.
+- No specific rupee thresholds, exact filing-deadline day-counts, or Companies Act size-threshold numbers were added as hard figures (e.g., audit committee/independent director triggers, PF/ESI headcount thresholds, FC-GPR/FC-TRS filing windows) — these are described qualitatively ("once headcount crosses the applicable thresholds," "within the prescribed window") pending the same human/professional verification already flagged as outstanding for equivalent figures on /gcc-setup-india, rather than inventing numbers for this refresh.
+- No named individuals, partners, or associates were added anywhere on the page, consistent with current site policy.
+- Did not add a full FAQ/schema block or additional page sections (cost, timeline, comparison tables) seen on /gcc-setup-india — that would be a redesign beyond the scope of "fill in the six cards," and is a reasonable candidate for a future dedicated content project if this page's performance data later justifies it.
