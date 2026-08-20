@@ -16,8 +16,10 @@
 | **Checkpoint 1** | — | — | awaiting user approval | 2026-08-20 |
 | 6 | content-architect | 06-content-architecture.md | done | 2026-08-20 |
 | **Checkpoint 2** | — | — | approved | 2026-08-20 |
-| 7 | expert-content-writer | 07-draft.md | pending | |
-| 8 | seo-editor | 08-seo-edit.md | pending | |
-| 9 | fact-authority-checker | 09-fact-check.md | pending | |
-| 10 | eeat-trust-reviewer | 10-eeat-review.md | pending | |
-| 11 | final-seo-qc | 11-final-qa.md | pending | |
+| 7 | expert-content-writer | 07-draft.md | done | 2026-08-20 |
+| 8 | seo-editor | 08-seo-edit.md | done | 2026-08-20 |
+| 9 | fact-authority-checker | 09-fact-check.md | done — 2 MUST FIX found and fixed | 2026-08-20 |
+| 10 | eeat-trust-reviewer | 10-eeat-review.md | done — Pass, 2 minor fixes applied | 2026-08-20 |
+| 11 | final-seo-qc | 11-final-qa.md | done — 8.7/10, Approved for publish | 2026-08-20 |
+
+**Pipeline complete.** Page is publish-ready pending human sign-off on 7 hedged regulatory figures (see 11-final-qa.md) and NOT yet implemented as a live Next.js page.
