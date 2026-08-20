@@ -166,6 +166,7 @@ export default function Page() {
         <a
           href="https://www.linkedin.com/in/somya-tiwari-ca-finalist/"
           target="_blank"
+          rel="noopener noreferrer"
           className="text-blue-600 hover:underline"
         >
           View LinkedIn Profile
