@@ -117,12 +117,16 @@ export default function HeroCarousel() {
             aria-selected={i === active}
             aria-label={`Show slide ${i + 1}: ${s.h1}`}
             onClick={() => goTo(i)}
-            className="h-1.5 rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-400"
-            style={{
-              width: i === active ? "28px" : "8px",
-              backgroundColor: i === active ? GOLD : "rgba(255,255,255,0.35)",
-            }}
-          />
+            className="flex min-h-6 min-w-6 items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-400"
+          >
+            <span
+              className="block h-1.5 rounded-full"
+              style={{
+                width: i === active ? "28px" : "8px",
+                backgroundColor: i === active ? GOLD : "rgba(255,255,255,0.35)",
+              }}
+            />
+          </button>
         ))}
       </div>
     </div>

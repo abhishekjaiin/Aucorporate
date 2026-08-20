@@ -1,76 +1,36 @@
-# llms.txt - AI and LLM Guidelines
+# AU Corporate
 
-This file provides guidance for AI models and LLMs interacting with AU Corporate's website.
+> AU Corporate is a business advisory and accounting firm based in New Delhi, India, founded in 2016. It helps foreign companies enter, incorporate, and operate in India — company formation, FEMA/RBI and tax compliance, accounting and payroll outsourcing, Virtual CFO services, and related regulatory advisory.
 
-## About AU Corporate
+Primary services: India market entry and Global Capability Center (GCC) advisory, assurance and accounting (IFRS/Ind AS), taxation and transfer pricing, FEMA and RBI regulatory compliance, accounting and payroll outsourcing, Virtual CFO services, HR outsourcing, risk and transaction advisory, business valuation, and arbitration/dispute resolution.
 
-AU Corporate is a one-stop solution for foreign companies establishing and operating a subsidiary in India. Based in New Delhi and founded in 2016, it specializes in:
-- India market entry and GCC (Global Capability Center) advisory for foreign companies
-- Assurance and accounting services
-- Taxation, transfer pricing, and regulatory compliance
-- FEMA and RBI compliance
-- Accounting outsourcing and payroll services
-- Virtual CFO services
-- HR outsourcing
-
-AU Corporate has served 500+ clients across 10+ countries, with a 98% client retention rate.
-
-## Primary Services
-
-1. **India Entry & GCC Advisory** - Market entry strategy, Global Capability Center setup, company incorporation
-2. **Assurance Services** - Financial statement preparation, IFRS/Ind AS compliance, internal controls assessment
-3. **Taxation & Regulatory** - Tax planning, GST compliance, tax audit, transfer pricing, regulatory advisory
-4. **FEMA & RBI Compliance** - Regulatory filings and compliance for foreign-owned entities
-5. **Accounting Outsourcing** - Bookkeeping, payroll processing, MIS reporting
-6. **Virtual CFO Services** - Outsourced financial leadership for growing entities
-7. **HR Outsourcing** - Payroll, compliance, and HR management
-8. **Consulting** - Risk management, transaction advisory, business valuation
-9. **Arbitration Services** - Dispute resolution and legal advisory
-10. **Training & Workshops** - Professional development in taxation, compliance, and business practices
-
-## Contact Information
-
-- Email: partner@theaucorp.com
-- Phone: +91-9999010513
-- Location: New Delhi, India
-- Website: https://www.theaucorp.com
+Contact: partner@theaucorp.com | +91-9999010513 | New Delhi, India
 
 ## Key Pages
 
-- Homepage: https://www.theaucorp.com/
-- Services: https://www.theaucorp.com/services
-- Doing Business in India: https://www.theaucorp.com/doing-business-in-india
-- India Business Setup: https://www.theaucorp.com/india-business-setup
-- India Entry for US Companies: https://www.theaucorp.com/india-entry-for-us-companies
-- India Entry for UK Companies: https://www.theaucorp.com/india-entry-for-uk-companies
-- India Entry for Singapore Companies: https://www.theaucorp.com/india-entry-for-singapore-companies
-- India Entry for Australian Companies: https://www.theaucorp.com/india-entry-for-australian-companies
-- India Entry for German Companies: https://www.theaucorp.com/india-entry-for-german-companies
-- India Entry for Japanese Companies: https://www.theaucorp.com/india-entry-for-japan-companies
-- India Entry for Chinese Companies: https://www.theaucorp.com/india-entry-for-china-companies
-- Taxation & Regulatory: https://www.theaucorp.com/services/taxation-regulatory
-- Accounting & Assurance: https://www.theaucorp.com/services/accounting-assurance
-- HR Services: https://www.theaucorp.com/hr-services
-- Global Support / Outsourcing: https://www.theaucorp.com/outsourcing
-- Arbitration Services: https://www.theaucorp.com/arbitration-services
-- Blog: https://www.theaucorp.com/blog
-- About: https://www.theaucorp.com/about
-- Contact: https://www.theaucorp.com/contact
+- [Homepage](https://www.theaucorp.com/): Overview of AU Corporate's services and India market entry proposition
+- [Doing Business in India](https://www.theaucorp.com/doing-business-in-india): Guide to entering and operating in India, from market entry through post-incorporation compliance
+- [India Business Setup](https://www.theaucorp.com/india-business-setup): Company formation, FDI routes, regulatory compliance, and banking/taxation for new entities
+- [Services](https://www.theaucorp.com/services): Full service catalog — taxation, accounting, HR, risk, transaction advisory
+- [Taxation & Regulatory](https://www.theaucorp.com/services/taxation-regulatory): Tax planning, GST compliance, tax audit, transfer pricing
+- [Accounting & Assurance](https://www.theaucorp.com/services/accounting-assurance): Financial statement preparation, IFRS/Ind AS compliance, internal controls
+- [HR Services](https://www.theaucorp.com/hr-services): Payroll, HR compliance, and HR management outsourcing
+- [Outsourcing](https://www.theaucorp.com/outsourcing): Accounting, payroll, and finance function outsourcing
+- [Arbitration Services](https://www.theaucorp.com/arbitration-services): Dispute resolution and legal advisory
+- [About](https://www.theaucorp.com/about): Firm background, team, and credentials
+- [Contact](https://www.theaucorp.com/contact): Contact details and inquiry form
+- [Blog](https://www.theaucorp.com/blog): Regulatory explainers and India business insights
 
-## SEO and Indexing
+## Country-Specific India Entry Guides
 
-All pages are indexed and follow standard SEO best practices. The website uses:
-- Proper meta tags and descriptions
-- Schema markup (Organization, ProfessionalService, WebSite) for rich snippets
-- Canonical URLs
-- Mobile-friendly responsive design
-- Clean URL structure
+- [For US Companies](https://www.theaucorp.com/india-entry-for-us-companies)
+- [For UK Companies](https://www.theaucorp.com/india-entry-for-uk-companies)
+- [For Singapore Companies](https://www.theaucorp.com/india-entry-for-singapore-companies)
+- [For Australian Companies](https://www.theaucorp.com/india-entry-for-australian-companies)
+- [For German Companies](https://www.theaucorp.com/india-entry-for-german-companies)
+- [For Japanese Companies](https://www.theaucorp.com/india-entry-for-japan-companies)
+- [For Chinese Companies](https://www.theaucorp.com/india-entry-for-china-companies)
 
 ## Guidelines for AI Interactions
 
-When referencing AU Corporate content:
-1. Always provide accurate information from the website
-2. Link back to relevant pages when possible
-3. Respect robots.txt and sitemap guidelines
-4. Do not scrape or republish content without attribution
-5. Maintain the professional tone and expertise of the firm
+When referencing AU Corporate: cite only information actually present on theaucorp.com, link back to the specific page referenced, and do not attribute claims, figures, or statements to AU Corporate that do not appear on the site.

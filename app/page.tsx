@@ -25,7 +25,7 @@ import {
 
 /* NAVY / GOLD DESIGN SYSTEM — matches registercompanyinindia.com */
 const NAVY = "#081A42"
-const ROYAL_BLUE = "#facc15"
+const ROYAL_BLUE = "#1e3a8a"
 const GOLD = "#facc15"
 
 /* SERVICES */
@@ -394,7 +394,6 @@ export default function HomePage() {
               <Link
                 key={service.title}
                 href={service.href}
-                aria-label={service.title}
                 className="p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
@@ -661,7 +660,7 @@ export default function HomePage() {
                 href={`/blog/${post.slug}`}
                 className="p-6 bg-white border rounded-xl hover:shadow-lg transition-all duration-300 flex flex-col"
               >
-                <span className="text-xs font-semibold uppercase tracking-wide mb-3" style={{ color: GOLD }}>
+                <span className="text-xs font-semibold uppercase tracking-wide mb-3" style={{ color: "#a16207" }}>
                   {post.category}
                 </span>
                 <h3 className="font-semibold mb-2 flex-1" style={{ fontFamily: "var(--font-heading)" }}>

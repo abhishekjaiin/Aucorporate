@@ -27,7 +27,7 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
 
             <Link href="/" className="flex flex-col mb-4">
-              <span className="text-xl sm:text-2xl font-bold tracking-wide text-yellow-400">
+              <span className="text-xl sm:text-2xl font-bold tracking-wide text-yellow-700">
                 AU Corporate
               </span>
 
@@ -70,7 +70,7 @@ export function Footer() {
 
           {/* QUICK LINKS */}
           <div>
-            <h3 className="text-yellow-400 font-semibold mb-4 text-sm sm:text-base">
+            <h3 className="text-yellow-700 font-semibold mb-4 text-sm sm:text-base">
               Quick Links
             </h3>
 
@@ -90,7 +90,7 @@ export function Footer() {
 
           {/* COMPANY */}
           <div>
-            <h3 className="text-yellow-400 font-semibold mb-4 text-sm sm:text-base">
+            <h3 className="text-yellow-700 font-semibold mb-4 text-sm sm:text-base">
               Company
             </h3>
 
@@ -110,7 +110,7 @@ export function Footer() {
 
           {/* CONTACT */}
           <div>
-            <h3 className="text-yellow-400 font-semibold mb-4 text-sm sm:text-base">
+            <h3 className="text-yellow-700 font-semibold mb-4 text-sm sm:text-base">
               Contact
             </h3>
 
@@ -121,7 +121,7 @@ export function Footer() {
 
                 <a
                   href="mailto:partner@theaucorp.com"
-                  aria-label="Send Email to AU Corporate"
+                  aria-label="Email AU Corporate at partner@theaucorp.com"
                   className="text-gray-600 hover:text-yellow-400 text-sm break-all"
                 >
                   partner@theaucorp.com
@@ -133,7 +133,7 @@ export function Footer() {
 
                 <a
                   href="tel:+919999010513"
-                  aria-label="Call AU Corporate"
+                  aria-label="Call AU Corporate at +91-9999010513"
                   className="text-gray-600 hover:text-yellow-400 text-sm"
                 >
                   +91-9999010513
