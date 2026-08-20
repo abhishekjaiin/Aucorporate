@@ -11,9 +11,9 @@ URL: /gcc-setup-india
 
 # GCC Setup in India: A Complete Guide to Entity Structure, Compliance, and Costs
 
-A Global Capability Center is one of the more consequential entities a foreign parent company will ever set up in India — not because the incorporation itself is unusually complex, but because of what follows it. A GCC typically grows headcount faster than a standard subsidiary, moves money across borders more frequently through intercompany service charges, and stays under continuous scrutiny from RBI, the tax department, and its own board back home. Getting the entity structure and the compliance mechanics right at the outset saves a great deal of cleanup later.
+A Global Capability Center (GCC) is one of the more consequential entities a foreign parent company will ever set up in India — not because the incorporation itself is unusually complex, but because of what follows it. A GCC typically grows headcount faster than a standard subsidiary, moves money across borders more frequently through intercompany service charges, and stays under continuous scrutiny from RBI, the tax department, and its own board back home. Getting the entity structure and the compliance mechanics right at the outset saves a great deal of cleanup later.
 
-This guide walks through the decisions in the order a CFO or corporate-development lead actually has to make them: whether a GCC is the right model at all, which entity structure to use, how incorporation and FDI reporting actually work, what the ongoing FEMA/RBI and tax obligations look like once the entity is live, and what a realistic cost and timeline picture looks like. Where a topic already has its own dedicated, deeper treatment on this site — safe harbour rules, general incorporation mechanics, region-specific DTAA detail — this guide summarizes the GCC-relevant point and links out rather than repeating it.
+This guide walks through the decisions in the order a CFO or corporate-development lead actually has to make them: whether a GCC is the right model at all, which entity structure to use, how incorporation and FDI reporting actually work, what the ongoing FEMA/RBI and tax obligations look like once the entity is live, and what a realistic cost and timeline picture looks like. Where a topic already has its own dedicated, deeper treatment on this site — safe harbour rules, general incorporation mechanics, region-specific DTAA detail — this guide summarizes the GCC-relevant point and links out rather than repeating it. If you're still evaluating India broadly rather than a GCC specifically, our [market entry process](/doing-business-in-india/entry-process) guide covers that earlier-stage decision.
 
 ## What Is a GCC (Global Capability Center)?
 
@@ -41,7 +41,7 @@ An EOR is not, however, a substitute for a GCC at any meaningful scale. Cost per
 
 India remains the largest GCC destination globally by a wide margin. According to NASSCOM and Zinnov's most recent joint research, the country's GCC base has grown past 2,100 centers, generating well over $70 billion in annual revenue and employing more than 2.4 million professionals — figures that have moved up meaningfully even from the FY2024 baseline most competitor content still cites. The center of gravity has also shifted: what were once largely IT-services delivery hubs are increasingly R&D, product engineering, and enterprise-function centers with genuine decision-making authority devolved from the parent.
 
-These figures are NASSCOM and Zinnov's data, not AU Corporate's — cited here because they set useful context for a company weighing the decision, not because AU Corporate tracks GCC market statistics independently.
+These figures are NASSCOM and Zinnov's data, not AU Corporate's — cited here because they set useful context for a company weighing the decision, not because AU Corporate tracks GCC market statistics independently. For the broader case behind India's growth as a destination, beyond GCCs specifically, see our guide on [why companies are choosing India](/doing-business-in-india/why-india).
 
 ## Is a GCC the Right Model for Your Company?
 
@@ -49,7 +49,7 @@ Not every company that could benefit from an India presence needs a GCC specific
 
 ### Building the Internal Business Case
 
-The internal sign-off conversation for a GCC is rarely just a cost-savings pitch anymore — boards and CFOs increasingly ask for a case built on talent access (India's depth in engineering, data science, and finance talent at scale), operating leverage (a captive team can flex faster than repeated vendor renegotiation), and strategic control (IP and process ownership stay with the parent). The strongest internal business cases pair a realistic multi-year cost model against the vendor/BPO alternative with a candid statement of the risks — ramp-up time, management bandwidth needed from day one, and the fact that a GCC is a multi-year commitment, not a project you can fully unwind in a quarter if priorities shift. Building that case is a strategic and financial exercise your own leadership and finance team are best placed to lead; where AU Corporate's regulatory compliance and Virtual CFO practices add value is translating the eventual decision into an entity structure and compliance plan that doesn't box you in later.
+The internal sign-off conversation for a GCC is rarely just a cost-savings pitch anymore — boards and CFOs increasingly ask for a case built on talent access (India's depth in engineering, data science, and finance talent at scale), operating leverage (a captive team can flex faster than repeated vendor renegotiation), and strategic control (IP and process ownership stay with the parent). The strongest internal business cases pair a realistic multi-year cost model against the vendor/BPO alternative with a candid statement of the risks — ramp-up time, management bandwidth needed from day one, and the fact that a GCC is a multi-year commitment, not a project you can fully unwind in a quarter if priorities shift. Building that case is a strategic and financial exercise your own leadership and finance team are best placed to lead; where AU Corporate's regulatory compliance and Virtual CFO practices add value is translating the eventual decision into an entity structure and compliance plan that doesn't box you in later. Our [feasibility and pre-incorporation planning](/doing-business-in-india/pre-incorporation) guide is a useful companion resource at this earlier stage.
 
 ### Is It Worth Hiring a Consulting Firm to Set Up a GCC in India?
 
@@ -83,7 +83,7 @@ Most guidance on this topic stops at naming the options above. In practice, the 
 
 Sector-specific FDI conditions can change which route is realistically available to you (see the FDI section below), so treat this table as a starting framework to bring into a conversation with counsel or an advisor, not a final answer — the right call also depends on your parent company's risk appetite and how much operational control your leadership wants from day one.
 
-*If you'd like a compliance calendar and entity recommendation specific to your headcount plan and sector, AU Corporate's regulatory compliance practice can walk through this with you directly — see the contact section at the end of this guide.*
+*If you'd like a compliance calendar and entity recommendation specific to your headcount plan and sector, [talk to AU Corporate's regulatory compliance practice](/contact) directly.*
 
 ## The FDI Route: Automatic vs. Government Approval
 
@@ -93,7 +93,7 @@ Most GCC-relevant sectors — IT and ITES, R&D and engineering services, shared 
 
 ### Incorporation Mechanics (SPICe+, MCA)
 
-Incorporation itself follows the same path as any other Private Limited company in India: name reservation, filing the integrated SPICe+ form with the Ministry of Corporate Affairs (which bundles incorporation, PAN, TAN, and several other registrations into a single filing), obtaining a Certificate of Incorporation, and opening a bank account to receive the initial FDI inflow. Our [SPICe+ incorporation process](/india-business-setup/company-formation) and [company incorporation and legal registration](/doing-business-in-india/incorporation) content covers this mechanically in full; nothing about the SPICe+ process itself differs for a GCC versus any other foreign-owned subsidiary — what differs is what happens immediately after, on the FEMA/RBI reporting side, given how quickly a GCC typically moves from incorporation to first FDI inflow to first hires.
+Incorporation itself follows the same path as any other Private Limited company in India: name reservation, filing the integrated SPICe+ form with the Ministry of Corporate Affairs (which bundles incorporation, PAN, TAN, and several other registrations into a single filing), obtaining a Certificate of Incorporation, and opening a bank account to receive the initial FDI inflow (our [banking and tax setup](/india-business-setup/banking-taxation) guide covers this step in more detail). Our [SPICe+ incorporation process](/india-business-setup/company-formation) and [company incorporation and legal registration](/doing-business-in-india/incorporation) content covers this mechanically in full; nothing about the SPICe+ process itself differs for a GCC versus any other foreign-owned subsidiary — what differs is what happens immediately after, on the FEMA/RBI reporting side, given how quickly a GCC typically moves from incorporation to first FDI inflow to first hires.
 
 ### Choosing a Location
 
@@ -107,7 +107,7 @@ This is a genuinely different structuring path, not a variant of the standard ro
 
 ## FEMA & RBI Compliance for a GCC
 
-This is where most competitor guides on this topic stop at naming FEMA and RBI as the governing framework, without walking through what actually gets filed and when. For a GCC receiving foreign investment — which is every GCC, by definition — three filings matter most.
+This is where most competitor guides on this topic stop at naming FEMA (the Foreign Exchange Management Act, 1999) and RBI as the governing framework, without walking through what actually gets filed and when. For a GCC receiving foreign investment — which is every GCC, by definition — three filings matter most.
 
 ### FDI Reporting on Incorporation — Form FC-GPR
 
@@ -148,7 +148,7 @@ Where a GCC makes payments to its parent (management fees, royalties for shared 
 Nearly every competitor guide on this topic treats compliance as something that happens once, at setup. In practice, a GCC's compliance obligations are a running calendar for the life of the entity, and the volume of it tends to surprise first-time founders more than any individual filing's complexity does. A representative first-year calendar for a newly incorporated GCC looks roughly like this:
 
 - **Within days of FDI inflow and share allotment:** File Form FC-GPR with RBI reporting the foreign investment.
-- **Within the first month or two:** Complete statutory registrations — GST (if applicable at inception), Professional Tax, Shops & Establishment registration, and Provident Fund/ESI registration once headcount crosses the applicable thresholds.
+- **Within the first month or two:** Complete statutory registrations — GST (if applicable at inception), Professional Tax, Shops & Establishment registration, and Provident Fund/ESI (Employees' State Insurance) registration once headcount crosses the applicable thresholds.
 - **Ongoing, monthly:** GST return filings (if registered), TDS deposits and returns on salary and vendor payments, PF and ESI contributions and returns once those registrations are active, payroll compliance generally.
 - **Ongoing, quarterly:** Advance tax payments, TDS return filings, board meeting cadence under the Companies Act.
 - **Annually:** The FLA return to RBI (regardless of activity level during the year), statutory audit of financial statements, annual ROC filings (annual return and financial statements with the Registrar of Companies), Annual General Meeting, income tax return filing, and transfer pricing documentation/Form 3CEB if the entity has international related-party transactions above the applicable threshold — which, for a captive GCC billing its parent, it almost certainly does.
@@ -156,7 +156,7 @@ Nearly every competitor guide on this topic treats compliance as something that 
 
 This calendar is deliberately the GCC-relevant version — a larger, faster headcount ramp than a typical subsidiary, and the transfer-pricing/safe-harbour dimension layered on top of the standard filings — rather than the general case, which our [post-incorporation compliance obligations](/doing-business-in-india/post-incorporation) guide covers for any foreign-owned Indian entity. Payroll-specific compliance (PF, ESI, professional tax, labour-law registrations at scale) is covered in more depth in our [payroll and HR compliance](/hr-services) resources, and ongoing statutory audit and assurance work is covered under [statutory audit and assurance](/services/accounting-assurance).
 
-*Most of the missed-deadline problems we see aren't from any single filing being hard — they're from nobody owning the calendar as a whole once the excitement of incorporation wears off. If it would help to have a compliance calendar built out against your specific entity structure and headcount plan, that's a conversation worth having with our regulatory compliance practice directly.*
+*Most of the missed-deadline problems we see aren't from any single filing being hard — they're from nobody owning the calendar as a whole once the excitement of incorporation wears off. If it would help to have a compliance calendar built out against your specific entity structure and headcount plan, [that's a conversation worth having with our regulatory compliance practice](/contact).*
 
 ## What Does a GCC Cost in India? (Overview)
 
@@ -177,7 +177,7 @@ Timeline is best understood in two distinct phases, which is a distinction a lot
 
 **Full operational readiness** — office fit-out or lease finalization, IT and security infrastructure, initial hiring, statutory registrations completing (GST, PF/ESI), and the entity actually functioning as an operating GCC — takes considerably longer and depends heavily on city, function, and headcount ramp ambitions.
 
-We're deliberately not putting a single number on either phase here, since realistic ranges depend on specifics (sector, city, headcount target, whether an EOR bridge is used) that vary too much to generalize responsibly — a dedicated timeline guide with phase-by-phase ranges is planned as a follow-up resource. If you're working against a specific launch date, that's a conversation worth having directly rather than working off a generic range.
+We're deliberately not putting a single number on either phase here, since realistic ranges depend on specifics (sector, city, headcount target, whether an EOR bridge is used) that vary too much to generalize responsibly — a dedicated timeline guide with phase-by-phase ranges is planned as a follow-up resource. In the meantime, our [general incorporation timeline and budgeting](/india-business-setup/timeline-resources) guide covers the non-GCC-specific baseline these phases build on. If you're working against a specific launch date, that's a conversation worth having directly rather than working off a generic range.
 
 ## Building and Operating Your GCC Team
 
@@ -187,42 +187,40 @@ Once the entity is operational, the recurring operational needs are largely fina
 
 ## FAQ
 
-**What is a Global Capability Center (GCC)?**
+### What is a Global Capability Center (GCC)?
 A GCC is a captive unit that a foreign company sets up in India — legally an Indian entity, typically a Private Limited subsidiary — to deliver services, R&D, or operational capability directly to itself, under its own control and ownership, rather than through a third-party vendor.
 
-**What's the difference between a GCC and a BPO?**
+### What's the difference between a GCC and a BPO?
 A BPO is a third-party vendor relationship serving multiple clients under a service agreement. A GCC is owned and controlled by the foreign parent it serves, exists to deliver capability back to that single parent, and typically carries a much larger headcount ambition and deeper IP/process ownership than a vendor engagement would.
 
-**Can a foreign company set up a GCC in India directly?**
+### Can a foreign company set up a GCC in India directly?
 Yes. Most GCC-relevant activities — IT/ITES, R&D, engineering, shared services — qualify for the FDI automatic route, meaning a foreign company can hold up to 100% ownership of the Indian entity without needing prior government approval, subject to standard post-facto RBI reporting once the entity is incorporated and funded. Certain sectors carry different conditions, so it's worth confirming your specific activity's FDI status before assuming automatic-route access.
 
-**Is a GCC different from a subsidiary?**
+### Is a GCC different from a subsidiary?
 Every GCC is legally a subsidiary (or branch, or JV); the "GCC" label describes the purpose and operating model — a captive delivery/capability center for the parent — rather than a distinct legal entity type. What differs from a typical subsidiary is scale of intent, headcount ramp, and how intercompany pricing and governance are structured.
 
-**Which entity structure is best for a GCC in India?**
+### Which entity structure is best for a GCC in India?
 For most companies, a Private Limited wholly owned subsidiary is the default and most straightforward structure. Branch office, BOT/JV, and EOR-first each fit specific situations — high initial headcount ambition with limited India operating experience may favor a BOT model; a narrow, defined-purpose presence may fit a branch office; testing the waters before committing may favor an EOR-first bridge. The right answer depends on headcount plans, IP sensitivity, sector FDI conditions, timeline pressure, and how much control you want from day one — see the decision framework above.
 
-**What is the FEMA/RBI approval and reporting process for a GCC in India?**
+### What is the FEMA/RBI approval and reporting process for a GCC in India?
 Most GCC-relevant FDI qualifies for the automatic route, so there's no prior approval step — the obligation is reporting after the fact. Form FC-GPR reports the initial share allotment to RBI, Form FC-TRS reports any subsequent share transfer between resident and non-resident parties, and the Annual FLA Return is a mandatory yearly filing for as long as the entity carries foreign investment on its books, regardless of whether any transaction happened that year.
 
-**How long does it take to set up a GCC in India?**
+### How long does it take to set up a GCC in India?
 Legal entity registration (incorporation through initial FDI reporting) is the faster phase; full operational readiness (infrastructure, hiring, all statutory registrations active) takes meaningfully longer and depends on city, sector, and headcount ambitions. We cover this at a phase-level overview above; a detailed phase-by-phase timeline guide is planned as a follow-up resource.
 
-**What does it cost to set up a GCC in India?**
+### What does it cost to set up a GCC in India?
 Costs break into incorporation/legal setup, infrastructure and real estate, technology, and HR/talent — with HR/talent typically the largest ongoing category by far. We cover the category breakdown at an overview level above; a detailed cost guide with a worked example is planned as a follow-up resource.
 
-**Which are the best cities for a GCC in India?**
+### Which are the best cities for a GCC in India?
 Bengaluru, Hyderabad, Pune, Chennai, the NCR/Gurgaon region, and Mumbai remain the established hubs, each with different sector strengths, alongside a growing set of Tier-2 cities (Coimbatore, Kochi, Jaipur, Ahmedabad) being evaluated for cost and talent-retention reasons. City selection is best handled as its own workstream alongside real estate and workforce advisors, in parallel with the legal/compliance planning this guide focuses on.
 
-**Is it worth hiring a consulting firm to set up a GCC in India?**
+### Is it worth hiring a consulting firm to set up a GCC in India?
 It depends on what kind of firm you mean. A build-operate-transfer or managed-GCC provider is a different commercial relationship than legal/tax/compliance advisory — worth understanding the distinction before comparing options. For most first-time entrants, advisory support on incorporation, FEMA/RBI compliance, and tax structuring is worth engaging, given how unforgiving the FEMA reporting timelines are and how expensive it is to unwind an entity-structure mistake later. Companies with existing India experience may reasonably handle more of this internally.
 
-**Do I need a GIFT City / IFSC entity for my GCC?**
+### Do I need a GIFT City / IFSC entity for my GCC?
 No — GIFT City/IFSC is a distinct structuring option relevant primarily to financial services, fintech, and other IFSC-eligible activities, with its own regulator (IFSCA) and tax treatment. It isn't the default path for a standard GCC, but it's worth evaluating early and specifically if your business activity is IFSC-eligible.
 
-## CTA
-
-### Talk to AU Corporate's Regulatory Compliance Practice
+## Talk to AU Corporate's Regulatory Compliance Practice
 
 If you're planning a GCC in India — whether you're still building the internal business case or already have a launch date in mind — AU Corporate's regulatory compliance, transfer pricing, and outsourcing/Virtual CFO practices can walk through entity structure, FEMA/RBI filing obligations, and the compliance calendar specific to your headcount and sector. [Get in touch](/contact) to start that conversation.
 
