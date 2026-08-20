@@ -46,7 +46,7 @@ export default function IndiaEntryForUKCompanies() {
           UK companies entering India can use the India-UK Double Taxation Avoidance Agreement (DTAA) to reduce tax leakage and optimize withholding rates. Our specialized team understands UK tax residency rules, apostille documentation requirements, and the unique compliance obligations for UK-controlled Indian subsidiaries.
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
-          Our regulatory compliance work is led by Rimpi Jain, Company Secretary, who handles FEMA and RBI filings for our foreign-owned subsidiary clients — including the DTAA documentation UK entities need to claim treaty rates.
+          Our regulatory compliance practice handles FEMA and RBI filings for our foreign-owned subsidiary clients — including the DTAA documentation UK entities need to claim treaty rates.
         </p>
       </div>
 

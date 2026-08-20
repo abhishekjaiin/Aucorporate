@@ -16,7 +16,7 @@ export default function IndiaEntryForJapanCompanies() {
           Japan is India's fifth-largest source of FDI, with cumulative investment since 2000 exceeding $43 billion and Japanese FDI outflows to India now surpassing those to China for several consecutive years — concentrated in automotive, electronics, and industrial manufacturing, sectors where Japanese companies often combine a wholly-owned subsidiary with joint-venture partnerships depending on the specific line of business. Our team helps you evaluate the JV-vs-wholly-owned-subsidiary decision, navigate the India-Japan DTAA, and manage the FEMA compliance obligations that follow incorporation.
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
-          Our regulatory compliance work is led by Rimpi Jain, Company Secretary, who handles the FEMA and RBI filings foreign-owned subsidiaries need — including the documentation Japanese entities require to access DTAA benefits on dividend and royalty repatriation.
+          Our regulatory compliance practice handles the FEMA and RBI filings foreign-owned subsidiaries need — including the documentation Japanese entities require to access DTAA benefits on dividend and royalty repatriation.
         </p>
       </div>
 

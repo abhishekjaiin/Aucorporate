@@ -16,7 +16,7 @@ export default function IndiaEntryForAustralianCompanies() {
           India and Australia have deepened trade and investment ties through the India-Australia Economic Cooperation and Trade Agreement (ECTA), in force since December 2022, with both governments agreeing to accelerate negotiations on a broader Comprehensive Economic Cooperation Agreement (CECA) — eleven rounds in — at their July 2026 Annual Summit, alongside a proposed Bilateral Investment Treaty. That momentum is making India an increasingly common expansion destination for Australian companies. We help you choose the right entity structure and stay compliant from incorporation through ongoing operations.
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
-          Our regulatory compliance work is led by Rimpi Jain, Company Secretary, who handles the FEMA and RBI filings foreign-owned subsidiaries need to stay compliant after incorporation.
+          Our regulatory compliance practice handles the FEMA and RBI filings foreign-owned subsidiaries need to stay compliant after incorporation.
         </p>
       </div>
 

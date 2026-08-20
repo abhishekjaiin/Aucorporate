@@ -16,7 +16,7 @@ export default function IndiaEntryForChinaCompanies() {
           FDI from China into India is governed by a materially different framework than most other countries — Press Note 3 (2020) requires prior government approval for investment from any entity where the beneficial owner is situated in, or a citizen of, a country sharing a land border with India, China included. This is not a formality: understanding exactly which route your specific investment falls under is the single most important early decision for a China-linked India entry.
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
-          Our team includes Utsav Dogra, FCA, with direct experience managing outsourcing and Virtual CFO engagements for Indian subsidiaries of Chinese corporate groups — and Rimpi Jain, Company Secretary, who handles the FEMA and RBI approval filings this specific route requires.
+          Our team has direct experience managing outsourcing and Virtual CFO engagements for Indian subsidiaries of Chinese corporate groups, and handles the FEMA and RBI approval filings this specific route requires.
         </p>
       </div>
 

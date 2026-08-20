@@ -16,7 +16,7 @@ export default function IndiaEntryForGermanyCompanies() {
           Germany is one of India's largest European trading and investment partners, and German manufacturing, automotive, and engineering companies have been setting up Indian subsidiaries for decades — often as a combination of a manufacturing/services base and an export hub. Our team helps you navigate entity selection, the India-Germany DTAA, and the FEMA compliance obligations that follow incorporation.
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
-          Our outsourcing and Virtual CFO practice is led by Utsav Dogra, FCA, who has directly managed outsourcing and Virtual CFO engagements for Indian subsidiaries of German corporate groups — giving German clients a partner who already understands how German parent-company reporting expectations map onto Indian statutory requirements.
+          Our outsourcing and Virtual CFO practice has directly managed engagements for Indian subsidiaries of German corporate groups — giving German clients a team that already understands how German parent-company reporting expectations map onto Indian statutory requirements.
         </p>
       </div>
 

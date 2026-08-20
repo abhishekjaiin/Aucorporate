@@ -16,7 +16,7 @@ export default function IndiaEntryForSingaporeCompanies() {
           Singapore has been India's single largest source of FDI for seven consecutive years, with cumulative investment since 2000 approaching $195 billion — ahead of every other country, including the US. Many Singapore-headquartered companies, including regional holding structures for global groups, use it as the base for their India entry, in large part because of the country's role as a global financial hub and gateway for private equity and venture capital into India. Our team helps you navigate entity selection, the India-Singapore DTAA, and the FEMA compliance obligations that follow incorporation.
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
-          Our regulatory compliance work is led by Rimpi Jain, Company Secretary, who handles the FEMA and RBI filings foreign-owned subsidiaries need — including the documentation Singapore entities require to access DTAA benefits.
+          Our regulatory compliance practice handles the FEMA and RBI filings foreign-owned subsidiaries need — including the documentation Singapore entities require to access DTAA benefits.
         </p>
       </div>
 

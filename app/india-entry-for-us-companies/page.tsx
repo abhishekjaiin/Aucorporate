@@ -46,7 +46,7 @@ export default function IndiaEntryForUSCompanies() {
           Expanding into India presents significant opportunities for US companies, but requires careful navigation of regulatory, tax, and compliance frameworks. Our team specializes in guiding US corporations through every stage of India entry—from entity selection and incorporation to ongoing FEMA compliance and transfer pricing management.
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
-          Our team includes Gulshan Grover, CA and US CPA, giving US clients a direct line to someone who understands both Indian statutory requirements and US GAAP/reporting expectations from the other side of the desk.
+          Our team includes CA and US CPA-qualified professionals, giving US clients a direct line to expertise in both Indian statutory requirements and US GAAP/reporting expectations from the other side of the desk.
         </p>
       </div>
 
