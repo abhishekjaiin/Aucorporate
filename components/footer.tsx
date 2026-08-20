@@ -27,7 +27,7 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
 
             <Link href="/" className="flex flex-col mb-4">
-              <span className="text-xl sm:text-2xl font-bold tracking-wide text-yellow-700">
+              <span className="text-xl sm:text-2xl font-bold tracking-wide text-yellow-400">
                 AU Corporate
               </span>
 
@@ -70,7 +70,7 @@ export function Footer() {
 
           {/* QUICK LINKS */}
           <div>
-            <h3 className="text-yellow-700 font-semibold mb-4 text-sm sm:text-base">
+            <h3 className="text-yellow-400 font-semibold mb-4 text-sm sm:text-base">
               Quick Links
             </h3>
 
@@ -90,7 +90,7 @@ export function Footer() {
 
           {/* COMPANY */}
           <div>
-            <h3 className="text-yellow-700 font-semibold mb-4 text-sm sm:text-base">
+            <h3 className="text-yellow-400 font-semibold mb-4 text-sm sm:text-base">
               Company
             </h3>
 
@@ -110,7 +110,7 @@ export function Footer() {
 
           {/* CONTACT */}
           <div>
-            <h3 className="text-yellow-700 font-semibold mb-4 text-sm sm:text-base">
+            <h3 className="text-yellow-400 font-semibold mb-4 text-sm sm:text-base">
               Contact
             </h3>
 

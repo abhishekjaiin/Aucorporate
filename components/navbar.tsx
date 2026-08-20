@@ -81,7 +81,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-2">
             <Image src="https://user8396.na.imgto.link/public/20260417/au.avif" alt="" width={42} height={42} priority sizes="42px" />
             <div className="flex flex-col leading-tight">
-              <span className="text-lg font-bold text-[#a16207] sm:text-2xl">AU Corporate</span>
+              <span className="text-lg font-bold text-gold sm:text-2xl">AU Corporate</span>
               <span className="text-[9px] uppercase tracking-[0.2em] text-[#081a42] sm:text-[10px]">Growing Together</span>
             </div>
           </Link>

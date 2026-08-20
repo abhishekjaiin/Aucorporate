@@ -660,7 +660,7 @@ export default function HomePage() {
                 href={`/blog/${post.slug}`}
                 className="p-6 bg-white border rounded-xl hover:shadow-lg transition-all duration-300 flex flex-col"
               >
-                <span className="text-xs font-semibold uppercase tracking-wide mb-3" style={{ color: "#a16207" }}>
+                <span className="text-xs font-semibold uppercase tracking-wide mb-3" style={{ color: GOLD }}>
                   {post.category}
                 </span>
                 <h3 className="font-semibold mb-2 flex-1" style={{ fontFamily: "var(--font-heading)" }}>
