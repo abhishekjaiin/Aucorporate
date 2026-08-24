@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { Button } from '@/components/ui/button'
-import { HubSpotLeadForm } from '@/components/HubSpotLeadForm'
+import { LeadForm } from '@/components/LeadForm'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
 const gccVsComparisons = [
@@ -402,7 +402,7 @@ export default function GCCSetupIndiaPage() {
       {/* LEAD FORM */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <HubSpotLeadForm title="Planning a GCC in India?" description="Tell us about your entity structure and headcount plans, and our regulatory compliance team will get in touch." />
+          <LeadForm title="Planning a GCC in India?" description="Tell us about your entity structure and headcount plans, and our regulatory compliance team will get in touch." />
         </div>
       </section>
 

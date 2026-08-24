@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { Button } from '@/components/ui/button'
-import { HubSpotLeadForm } from '@/components/HubSpotLeadForm'
+import { LeadForm } from '@/components/LeadForm'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
 const entityTypes = [
@@ -38,7 +38,7 @@ export default function CompanyFormationPage() {
 
       <section className="bg-white py-20"><div className="mx-auto max-w-7xl px-4"><h2 className="text-3xl font-bold text-gray-900 md:text-4xl">Foreign Company Registration and FDI Considerations</h2><p className="mt-4 max-w-4xl leading-relaxed text-gray-600">Where a foreign company or overseas shareholder invests in an Indian entity, the structure should be assessed against the applicable FDI policy, sector-specific conditions and reporting requirements. The incorporation documentation may also require foreign corporate documents and resolutions. The MCA&apos;s SPICe+ instructions specifically address cases where a proposed company has a foreign company or overseas body corporate as a subscriber.</p><div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{['Entity and ownership structure', 'FDI route and sector conditions', 'Foreign shareholder documentation', 'FEMA/RBI and post-incorporation compliance'].map((item) => <div key={item} className="rounded-xl border p-5"><CheckCircle2 className="mb-3 h-5 w-5 text-yellow-600" /><p className="text-sm font-medium text-gray-800">{item}</p></div>)}</div></div></section>
 
-      <section className="bg-gray-50 py-16"><div className="mx-auto max-w-7xl px-4"><HubSpotLeadForm title="Planning to Set Up Your Business in India?" description="Tell us about your company formation requirements and our India business team will get in touch." /></div></section>
+      <section className="bg-gray-50 py-16"><div className="mx-auto max-w-7xl px-4"><LeadForm title="Planning to Set Up Your Business in India?" description="Tell us about your company formation requirements and our India business team will get in touch." /></div></section>
 
       <section className="border-t bg-white py-16"><div className="mx-auto max-w-7xl px-4"><h2 className="mb-8 text-2xl font-bold">Next Steps</h2><div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"><Link href="/doing-business-in-india/incorporation" className="rounded-lg border p-6 transition hover:shadow-md"><h3 className="mb-2 font-semibold">Incorporation Services</h3><p className="text-sm text-gray-600">Full-service support: registration, FDI compliance, GST, and more</p></Link><Link href="/india-business-setup/regulatory-compliance" className="rounded-lg border p-6 transition hover:shadow-md"><h3 className="mb-2 font-semibold">Regulatory Compliance</h3><p className="text-sm text-gray-600">Statutory requirements and ongoing compliance</p></Link><Link href="/contact" className="rounded-lg border p-6 transition hover:shadow-md"><h3 className="mb-2 font-semibold">Schedule Consultation</h3><p className="text-sm text-gray-600">Get expert assistance with company formation</p></Link></div></div></section>
     </main>

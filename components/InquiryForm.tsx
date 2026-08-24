@@ -1,10 +1,5 @@
-"use client"
-
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
-import Script from 'next/script'
-
-const HUBSPOT_PORTAL_ID = '246295501'
-const HUBSPOT_FORM_ID = '6c02b223-c3cf-44d9-9f56-358a9c3488ae'
+import { Web3Form } from './Web3Form'
 
 const DEFAULT_CHECKLIST = ['India company setup & incorporation', 'Foreign subsidiary / WOS', 'FDI, FEMA & RBI support', 'Tax, compliance & ongoing support']
 
@@ -42,36 +37,7 @@ export function InquiryForm({
         ))}
       </div>
 
-      <Script
-        src={`https://js-na2.hsforms.net/forms/embed/${HUBSPOT_PORTAL_ID}.js`}
-        strategy="afterInteractive"
-      />
-      {/*
-        HubSpot's "Powered by HubSpot" attribution renders inside the
-        iframe's own (cross-origin) document, so page CSS can't reach it
-        directly. Same crop technique already used on /contact: overflow-
-        hidden on the wrapper + a negative margin-bottom on the iframe
-        pulls the wrapper's visible area up short of the iframe's full
-        rendered height, clipping the trailing branding strip outside the
-        visible area. Fragile by nature: if HubSpot changes the footer
-        height, or form content grows taller (validation errors, more
-        fields), this may clip too little or too much. The reliable fix
-        is removing branding at the HubSpot account level (Starter
-        plan+), not this CSS hack.
-      */}
-      <div className="hubspot-form-crop min-h-[620px] w-full overflow-hidden">
-        <div
-          className="hs-form-frame"
-          data-region="na2"
-          data-form-id={HUBSPOT_FORM_ID}
-          data-portal-id={HUBSPOT_PORTAL_ID}
-        />
-      </div>
-      <style jsx>{`
-        .hubspot-form-crop :global(iframe) {
-          margin-bottom: -46px;
-        }
-      `}</style>
+      <Web3Form />
 
       <p className="mt-3 flex items-center justify-center gap-1 text-center text-xs text-muted-foreground">
         {footerNote}

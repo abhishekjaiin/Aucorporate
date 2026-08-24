@@ -2,11 +2,11 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { useInView, animate } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import HeroCarousel, { heroSlides } from "@/components/HeroCarousel"
+import { Web3Form } from "@/components/Web3Form"
 
 import {
   Calculator,
@@ -749,23 +749,7 @@ export default function HomePage() {
             Share a few details and our team will get back to you within 24 hours.
           </p>
 
-          <Script
-            src="https://js-na2.hsforms.net/forms/embed/246295501.js"
-            strategy="afterInteractive"
-          />
-          {/*
-            Same HubSpot form already used on /contact — reused here so
-            homepage visitors don't have to navigate away to send an
-            inquiry. Cross-origin iframe embed; see /contact/page.tsx
-            for notes on the branding-crop CSS workaround if that's
-            ever revisited here too.
-          */}
-          <div
-            className="hs-form-frame"
-            data-region="na2"
-            data-form-id="6c02b223-c3cf-44d9-9f56-358a9c3488ae"
-            data-portal-id="246295501"
-          />
+          <Web3Form />
         </div>
       </section>
 

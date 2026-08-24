@@ -154,13 +154,6 @@ export default function RootLayout({
           content="default"
         />
 
-        {/* Warm up the connection to HubSpot's form-embed script domain so
-            the inquiry forms (InquiryForm / HubSpotLeadForm / /contact)
-            have less latency to eat into once the script loads -- DNS + TLS
-            handshake happen ahead of time instead of when the script tag
-            actually fires. */}
-        <link rel="preconnect" href="https://js-na2.hsforms.net" />
-        <link rel="dns-prefetch" href="https://js-na2.hsforms.net" />
 
         {/* GOOGLE ANALYTICS */}
         <Script
