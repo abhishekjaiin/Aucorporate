@@ -48,24 +48,26 @@ export function Web3Form() {
     <form onSubmit={handleSubmit} className="space-y-4">
       <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
 
-      <div>
-        <label htmlFor="name" className="mb-1 block text-sm font-medium text-gray-700">Name*</label>
-        <input id="name" type="text" name="name" required className={inputClass} />
-      </div>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div>
+          <label htmlFor="name" className="mb-1 block text-sm font-medium text-gray-700">Name*</label>
+          <input id="name" type="text" name="name" required className={inputClass} />
+        </div>
 
-      <div>
-        <label htmlFor="email" className="mb-1 block text-sm font-medium text-gray-700">Email*</label>
-        <input id="email" type="email" name="email" required className={inputClass} />
-      </div>
+        <div>
+          <label htmlFor="email" className="mb-1 block text-sm font-medium text-gray-700">Email*</label>
+          <input id="email" type="email" name="email" required className={inputClass} />
+        </div>
 
-      <div>
-        <label htmlFor="phone" className="mb-1 block text-sm font-medium text-gray-700">Phone</label>
-        <input id="phone" type="tel" name="phone" className={inputClass} />
-      </div>
+        <div>
+          <label htmlFor="phone" className="mb-1 block text-sm font-medium text-gray-700">Phone</label>
+          <input id="phone" type="tel" name="phone" className={inputClass} />
+        </div>
 
-      <div>
-        <label htmlFor="company" className="mb-1 block text-sm font-medium text-gray-700">Company</label>
-        <input id="company" type="text" name="company" className={inputClass} />
+        <div>
+          <label htmlFor="company" className="mb-1 block text-sm font-medium text-gray-700">Company</label>
+          <input id="company" type="text" name="company" className={inputClass} />
+        </div>
       </div>
 
       <div>
