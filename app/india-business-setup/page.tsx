@@ -8,7 +8,7 @@ export default function IndiaBusinessSetupHub() {
     {
       step: 1,
       title: 'Why India?',
-      description: 'Understand India&apos;s economic potential and market opportunities',
+      description: "Understand India's economic potential and market opportunities",
       href: '/doing-business-in-india/why-india',
       icon: Globe,
     },
