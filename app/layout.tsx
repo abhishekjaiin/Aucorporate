@@ -154,6 +154,13 @@ export default function RootLayout({
           content="default"
         />
 
+        {/* Warm up the connection to the HubSpot inquiry form's domain so
+            the iframe (InquiryForm / HubSpotLeadForm) has less latency to
+            eat into once it starts loading -- DNS + TLS handshake happen
+            ahead of time instead of when the iframe request fires. */}
+        <link rel="preconnect" href="https://42mytp.share-na2.hsforms.com" />
+        <link rel="dns-prefetch" href="https://42mytp.share-na2.hsforms.com" />
+
         {/* GOOGLE ANALYTICS */}
         <Script
           async
