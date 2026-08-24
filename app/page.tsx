@@ -323,11 +323,14 @@ export default function HomePage() {
           {/* STATS */}
           <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4">
             {stats.map((stat) => (
-              <div key={stat.label}>
-                <div className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: GOLD, fontFamily: "var(--font-heading)" }}>
+              <div key={stat.label} className="flex flex-col items-center">
+                <div
+                  className="flex items-center justify-center min-h-[1.75rem] sm:min-h-[2rem] md:min-h-[2.25rem] text-xl sm:text-2xl md:text-3xl font-bold"
+                  style={{ color: GOLD, fontFamily: "var(--font-heading)" }}
+                >
                   {"value" in stat ? <CountUp value={stat.value} suffix={stat.suffix} /> : stat.text}
                 </div>
-                <div className="text-white/70 text-xs sm:text-sm">
+                <div className="min-h-[2rem] sm:min-h-[2.5rem] text-white/70 text-xs sm:text-sm">
                   {stat.label}
                 </div>
               </div>
