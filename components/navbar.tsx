@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -61,6 +62,7 @@ const countryLinks = [
 ]
 
 export function Navbar() {
+  const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
   const [activeMenu, setActiveMenu] = useState<string | null>(null)
   const [activeServiceSubmenu, setActiveServiceSubmenu] = useState("risk")
@@ -71,6 +73,12 @@ export function Navbar() {
     setMobileMenu(null)
   }
 
+  const handleLogoClick = () => {
+    if (pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+  }
+
   const serviceSubmenu = activeServiceSubmenu === "tax" ? taxSubServices : riskSubServices
   const serviceSubmenuTitle = activeServiceSubmenu === "tax" ? "Tax & Regulatory" : "Risk Management"
 
@@ -78,7 +86,7 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b bg-white">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Primary navigation">
         <div className="flex h-16 items-center justify-between sm:h-20">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2" onClick={handleLogoClick}>
             <Image src="/logo.png" alt="AU Corporate" width={42} height={42} priority sizes="42px" />
             <div className="flex flex-col leading-tight">
               <span className="text-lg font-bold text-gold sm:text-2xl">AU Corporate</span>
