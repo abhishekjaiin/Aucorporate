@@ -79,11 +79,6 @@ const nextConfig = {
         destination: "/doing-business-in-india/post-incorporation",
         permanent: true,
       },
-      {
-        source: "/blog/construction-arbitration-in-India",
-        destination: "/blog/construction-arbitration-in-india",
-        permanent: true,
-      },
     ]
   },
 
