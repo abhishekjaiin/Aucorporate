@@ -1,12 +1,11 @@
 "use client"
 
-import { useState } from "react"
+import Script from "next/script"
 
-const HUBSPOT_FORM_URL = "https://42mytp.share-na2.hsforms.com/2bAKyI8PPRNmfVjWKnDSIrg"
+const HUBSPOT_PORTAL_ID = "246295501"
+const HUBSPOT_FORM_ID = "6c02b223-c3cf-44d9-9f56-358a9c3488ae"
 
 export function HubSpotLeadForm({ title = "Planning to Set Up Your Business in India?", description = "Tell us about your requirements and our India business team will get in touch." }: { title?: string; description?: string }) {
-  const [loaded, setLoaded] = useState(false)
-
   return (
     <section className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm" aria-labelledby="lead-form-title">
       <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
@@ -21,26 +20,32 @@ export function HubSpotLeadForm({ title = "Planning to Set Up Your Business in I
           </ul>
         </div>
         <div className="relative min-h-[620px] bg-white p-2 sm:p-4">
-          {!loaded && <div className="absolute inset-0 z-10 flex items-center justify-center bg-white text-sm text-gray-500" aria-hidden="true">Loading inquiry form…</div>}
+          <Script
+            src={`https://js-na2.hsforms.net/forms/embed/${HUBSPOT_PORTAL_ID}.js`}
+            strategy="afterInteractive"
+          />
           {/*
-            Same crop technique already used on /contact and the homepage:
-            overflow-hidden on the wrapper + a negative margin-bottom on the
-            iframe clips the trailing "Powered by HubSpot" strip outside the
-            visible area (the branding lives inside the cross-origin iframe
-            document, so it can't be targeted directly). Fragile by nature —
-            see /contact/page.tsx for the full caveat. The reliable fix is
+            Same crop technique already used on /contact: overflow-hidden on
+            the wrapper + a negative margin-bottom on the iframe clips the
+            trailing "Powered by HubSpot" strip outside the visible area
+            (the branding lives inside the cross-origin iframe document, so
+            it can't be targeted directly). Fragile by nature — see
+            /contact/page.tsx for the full caveat. The reliable fix is
             removing branding at the HubSpot account level (Starter plan+).
           */}
-          <div className="h-[610px] w-full overflow-hidden">
-            <iframe
-              src={HUBSPOT_FORM_URL}
-              title="AU Corporate business inquiry form"
-              loading="lazy"
-              className="w-full border-0"
-              style={{ height: 610, marginBottom: -46 }}
-              onLoad={() => setLoaded(true)}
+          <div className="hubspot-form-crop h-[610px] w-full overflow-hidden">
+            <div
+              className="hs-form-frame"
+              data-region="na2"
+              data-form-id={HUBSPOT_FORM_ID}
+              data-portal-id={HUBSPOT_PORTAL_ID}
             />
           </div>
+          <style jsx>{`
+            .hubspot-form-crop :global(iframe) {
+              margin-bottom: -46px;
+            }
+          `}</style>
         </div>
       </div>
     </section>
