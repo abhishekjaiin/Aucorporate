@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { ArrowRight, CheckCircle, Globe, Zap } from 'lucide-react'
@@ -65,34 +64,22 @@ export default function IndiaBusinessSetupHub() {
       {/* HERO SECTION */}
       <section className="relative py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl font-bold text-gray-900 mb-6">
-                Complete India Business Setup Guide
-              </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Setting up in India means working through market entry, incorporation, compliance, and banking — usually in that order. This guide walks through each stage, with links to the detail you need at each one.
-              </p>
-              <div className="flex gap-4">
-                <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
-                  <Link href="/doing-business-in-india/why-india">
-                    Get Started <ArrowRight className="ml-2 w-4 h-4" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline">
-                  <Link href="/contact">Schedule Consultation</Link>
-                </Button>
-              </div>
-            </div>
-            <div className="relative h-96">
-              <Image
-                src="/images/india-business-setup.png"
-                alt="India business setup and company formation process"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover rounded-lg"
-                priority
-              />
+          <div className="max-w-3xl">
+            <h1 className="text-5xl font-bold text-gray-900 mb-6">
+              Complete India Business Setup Guide
+            </h1>
+            <p className="text-xl text-gray-600 mb-8">
+              Setting up in India means working through market entry, incorporation, compliance, and banking — usually in that order. This guide walks through each stage, with links to the detail you need at each one.
+            </p>
+            <div className="flex gap-4">
+              <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
+                <Link href="/doing-business-in-india/why-india">
+                  Get Started <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link href="/contact">Schedule Consultation</Link>
+              </Button>
             </div>
           </div>
         </div>

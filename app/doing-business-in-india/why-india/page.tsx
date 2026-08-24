@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { TrendingUp, Globe, Users, Shield, Landmark, Cpu, Briefcase, BarChart3 } from "lucide-react"
+import { HeroBackground } from "@/components/HeroBackground"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -23,16 +24,9 @@ export default function WhyIndiaPage() {
       {/* HERO */}
       <section className="relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden">
 
-        <Image
-          src="/images/why-india-advantages.png"
-          alt="Mumbai skyline with business professionals, representing India's economic growth"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
+        <HeroBackground />
 
-        <div className="absolute inset-0 bg-[#081a42]/70" />
+        <div className="absolute inset-0 bg-[#081a42]/20" />
 
         <motion.div
           initial="hidden"

@@ -1,11 +1,11 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { useInView, animate } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
-import { HeroBackground } from "@/components/HeroBackground"
 import HeroCarousel from "@/components/HeroCarousel"
 
 import {
@@ -295,7 +295,15 @@ export default function HomePage() {
         className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24"
         style={{ backgroundColor: NAVY }}
       >
-        <HeroBackground />
+        <Image
+          src="/images/pexels-pierre-blache-651604-9280877.jpg"
+          alt="View looking up at glass skyscrapers with an airplane overhead, representing global business reach"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0" style={{ backgroundColor: NAVY, opacity: 0.72 }} />
         <div className="absolute inset-0 bg-gradient-to-t from-[#081A42] via-[#081A42]/60 to-transparent" />
 
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">

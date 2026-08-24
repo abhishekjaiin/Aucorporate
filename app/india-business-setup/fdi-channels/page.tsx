@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { Breadcrumb } from '@/components/Breadcrumb'
-import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, CheckCircle, AlertCircle } from 'lucide-react'
 
@@ -28,23 +27,7 @@ export default function FDIChannelsPage() {
       {/* OVERVIEW */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
-            <div>
-              <h2 className="text-4xl font-bold mb-6">FDI Framework Overview</h2>
-              <p className="text-gray-600 leading-relaxed">
-                Foreign direct investment into India flows through one of two channels — the automatic route, where funds move directly through an authorised bank into the entity with post-facto RBI reporting, or the government approval route for restricted sectors. Choosing correctly at the outset determines your entire compliance timeline.
-              </p>
-            </div>
-            <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg bg-white border">
-              <Image
-                src="/images/fdi-investment-channels.png"
-                alt="Diagram of foreign direct investment flow through the automatic and green channel routes to RBI"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain p-4"
-              />
-            </div>
-          </div>
+          <h2 className="text-4xl font-bold mb-12">FDI Framework Overview</h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Automatic Route */}
