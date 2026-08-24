@@ -9,7 +9,7 @@ export default function BlogPage() {
       <BlogPostingSchema
         headline="Construction Arbitration in India"
         description="Key considerations in construction sector arbitration disputes in India and how they're typically resolved."
-        url="https://www.theaucorp.com/blog/construction-arbitration-in-india"
+        url="https://www.theaucorp.com/blog/construction-arbitration-india"
         image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
         datePublished="2026-05-04"
         dateModified="2026-05-04"

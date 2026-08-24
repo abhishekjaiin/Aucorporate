@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Key considerations in construction sector arbitration disputes in India and how they're typically resolved.",
   alternates: {
-    canonical: "https://www.theaucorp.com/blog/construction-arbitration-in-india",
+    canonical: "https://www.theaucorp.com/blog/construction-arbitration-india",
   },
   openGraph: {
     title: "Construction Arbitration in India | AU Corporate Blog",
     description:
       "Key considerations in construction sector arbitration disputes in India and how they're typically resolved.",
-    url: "https://www.theaucorp.com/blog/construction-arbitration-in-india",
+    url: "https://www.theaucorp.com/blog/construction-arbitration-india",
   },
   twitter: {
     title: "Construction Arbitration in India | AU Corporate Blog",

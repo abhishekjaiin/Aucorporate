@@ -242,7 +242,7 @@ export default function BlogPage() {
       <RelatedResources
         links={[
           { label: "Arbitration Services", href: "/arbitration-services", description: "Professional dispute resolution for commercial disputes." },
-          { label: "Construction Arbitration in India", href: "/blog/construction-arbitration-in-india", description: "Sector-specific arbitration considerations." },
+          { label: "Construction Arbitration in India", href: "/blog/construction-arbitration-india", description: "Sector-specific arbitration considerations." },
         ]}
       />
 

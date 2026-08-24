@@ -88,7 +88,7 @@ const pages: Page[] = [
   // Blog Hub + Articles
   { path: "/blog", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-05-04" },
   { path: "/blog/arbitration-enforcement-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/blog/construction-arbitration-in-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-04" },
+  { path: "/blog/construction-arbitration-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-08-24" },
   { path: "/blog/doing-business-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/blog/fdi-green-vs-brown-channel", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/blog/mail-box-dtaa-benefits", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-04" },
