@@ -8,7 +8,7 @@ const GOLD = "#facc15"
 
 export const heroSlides = [
   {
-    h1: "Foreign Company Registration in India",
+    h1: "Company Registration in India",
     copy: "From entity selection to incorporation, FEMA compliance, and banking — we manage your India market entry end-to-end, so you're operating in weeks, not months.",
     primaryCta: { label: "Start Your India Entry", href: "/contact" },
     secondaryCta: { label: "See Entity Options", href: "/india-business-setup" },

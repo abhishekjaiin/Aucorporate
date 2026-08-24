@@ -313,7 +313,7 @@ export default function WhyIndiaPage() {
               },
               {
                 title: "Renewable Energy",
-                image: "https://images.unsplash.com/photo-1524492449090-1b4b0d8b4c0b",
+                image: "https://images.unsplash.com/photo-1509391366360-2e959784a276",
                 desc: "Massive solar, wind and green hydrogen expansion pipeline.",
                 stat: "500+ GW target",
               },
