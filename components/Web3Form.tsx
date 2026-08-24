@@ -49,17 +49,32 @@ export function Web3Form() {
       <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
 
       <div>
-        <label htmlFor="name" className="mb-1 block text-sm font-medium text-gray-700">Name</label>
+        <label htmlFor="name" className="mb-1 block text-sm font-medium text-gray-700">Name*</label>
         <input id="name" type="text" name="name" required className={inputClass} />
       </div>
 
       <div>
-        <label htmlFor="email" className="mb-1 block text-sm font-medium text-gray-700">Email</label>
+        <label htmlFor="email" className="mb-1 block text-sm font-medium text-gray-700">Email*</label>
         <input id="email" type="email" name="email" required className={inputClass} />
       </div>
 
       <div>
-        <label htmlFor="message" className="mb-1 block text-sm font-medium text-gray-700">Message</label>
+        <label htmlFor="phone" className="mb-1 block text-sm font-medium text-gray-700">Phone</label>
+        <input id="phone" type="tel" name="phone" className={inputClass} />
+      </div>
+
+      <div>
+        <label htmlFor="company" className="mb-1 block text-sm font-medium text-gray-700">Company</label>
+        <input id="company" type="text" name="company" className={inputClass} />
+      </div>
+
+      <div>
+        <label htmlFor="country" className="mb-1 block text-sm font-medium text-gray-700">Country</label>
+        <input id="country" type="text" name="country" placeholder="e.g. Australia, Japan, USA" className={inputClass} />
+      </div>
+
+      <div>
+        <label htmlFor="message" className="mb-1 block text-sm font-medium text-gray-700">Message*</label>
         <textarea id="message" name="message" required rows={5} className={inputClass} />
       </div>
 
