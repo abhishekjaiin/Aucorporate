@@ -3,7 +3,6 @@
 import Link from "next/link"
 import Image from "next/image"
 import Script from "next/script"
-import { HeroBackground } from "@/components/HeroBackground"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
@@ -59,8 +58,15 @@ export default function ArbitrationServicesPage() {
       {/* ================= HERO ================= */}
       <section className="relative py-24 min-h-[80vh] flex items-center">
         <div className="absolute inset-0">
-          <HeroBackground />
-          <div className="absolute inset-0 bg-black/20" />
+          <Image
+            src="/images/pexels-amar-20624924.jpg"
+            alt="Vintage world map, representing cross-border arbitration and dispute resolution"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-[#081a42]/70" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-white">

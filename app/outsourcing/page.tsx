@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link'
-import { HeroBackground } from '@/components/HeroBackground'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { motion } from "framer-motion"
 
@@ -127,8 +127,15 @@ export default function OutsourcingPage() {
       <section className="relative py-24 min-h-[80vh] flex items-center overflow-hidden">
 
         <div className="absolute inset-0">
-          <HeroBackground />
-          <div className="absolute inset-0 bg-black/20" />
+          <Image
+            src="/images/pexels-pixabay-164606.jpg"
+            alt="Singapore skyline at dusk with business professionals walking, representing global outsourcing support"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-[#081a42]/70" />
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-white">

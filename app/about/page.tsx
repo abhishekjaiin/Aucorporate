@@ -63,8 +63,8 @@ export default function AboutHero() {
             animate={{ opacity: 1, scale: 1 }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1556761175-b413da4baf72"
-              alt="About AU Corporate"
+              src="/images/pexels-amar-20624924.jpg"
+              alt="Vintage world map, representing AU Corporate's global reach"
               width={600}
               height={400}
               className="rounded-2xl shadow-lg w-full h-auto"
