@@ -12,24 +12,30 @@ export const heroSlides = [
     copy: "From entity selection to incorporation, FEMA compliance, and banking — we manage your India market entry end-to-end, so you're operating in weeks, not months.",
     primaryCta: { label: "Start Your India Entry", href: "/contact" },
     secondaryCta: { label: "See Entity Options", href: "/india-business-setup" },
+    image: "/images/pexels-pierre-blache-651604-9280877.jpg",
+    imageAlt: "View looking up at glass skyscrapers with an airplane overhead, representing global business reach",
   },
   {
     h1: "Corporate Tax, GST & FEMA Compliance for Companies in India",
     copy: "Transfer pricing, GST, and regulatory filings — we keep foreign-owned entities compliant with India's requirements year-round, not just at setup.",
     primaryCta: { label: "Talk to a Tax Advisor", href: "/contact" },
     secondaryCta: { label: "Explore Tax Services", href: "/services/taxation-regulatory" },
+    image: "/images/pexels-amar-20624924.jpg",
+    imageAlt: "Vintage world map, representing cross-border tax and regulatory compliance",
   },
   {
     h1: "Accounting, Payroll & Virtual CFO Outsourcing in India",
     copy: "Bookkeeping, payroll, and Virtual CFO support — run your India operations without building an in-house finance team from scratch.",
     primaryCta: { label: "Explore Outsourcing Services", href: "/outsourcing" },
     secondaryCta: { label: "Book a Consultation", href: "/contact" },
+    image: "/images/pexels-pixabay-164606.jpg",
+    imageAlt: "Singapore skyline at dusk with business professionals walking, representing global operations",
   },
 ]
 
 const ROTATION_MS = 7000
 
-export default function HeroCarousel() {
+export default function HeroCarousel({ onActiveChange }: { onActiveChange?: (index: number) => void }) {
   const [active, setActive] = useState(0)
   const [paused, setPaused] = useState(false)
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -37,6 +43,10 @@ export default function HeroCarousel() {
   const goTo = (index: number) => {
     setActive((index + heroSlides.length) % heroSlides.length)
   }
+
+  useEffect(() => {
+    onActiveChange?.(active)
+  }, [active, onActiveChange])
 
   useEffect(() => {
     if (paused || typeof document === "undefined" || document.hidden) return

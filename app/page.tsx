@@ -6,7 +6,7 @@ import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { useInView, animate } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
-import HeroCarousel from "@/components/HeroCarousel"
+import HeroCarousel, { heroSlides } from "@/components/HeroCarousel"
 
 import {
   Calculator,
@@ -287,6 +287,8 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function HomePage() {
+  const [activeSlide, setActiveSlide] = useState(0)
+
   return (
     <div className="min-h-screen overflow-x-hidden">
 
@@ -295,20 +297,24 @@ export default function HomePage() {
         className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24"
         style={{ backgroundColor: NAVY }}
       >
-        <Image
-          src="/images/pexels-pierre-blache-651604-9280877.jpg"
-          alt="View looking up at glass skyscrapers with an airplane overhead, representing global business reach"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
+        {heroSlides.map((slide, i) => (
+          <Image
+            key={slide.image}
+            src={slide.image}
+            alt={slide.imageAlt}
+            fill
+            priority={i === 0}
+            sizes="100vw"
+            className="object-cover transition-opacity duration-1000 ease-in-out"
+            style={{ opacity: activeSlide === i ? 1 : 0 }}
+          />
+        ))}
         <div className="absolute inset-0" style={{ backgroundColor: NAVY, opacity: 0.72 }} />
         <div className="absolute inset-0 bg-gradient-to-t from-[#081A42] via-[#081A42]/60 to-transparent" />
 
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
 
-          <HeroCarousel />
+          <HeroCarousel onActiveChange={setActiveSlide} />
 
           <p className="mb-9 sm:mb-10 text-xs sm:text-sm font-medium tracking-wide" style={{ color: GOLD }}>
             India Market Entry &nbsp;•&nbsp; Corporate Advisory &nbsp;•&nbsp; Tax &nbsp;•&nbsp; Accounting &nbsp;•&nbsp; Compliance &nbsp;•&nbsp; HR &amp; Payroll
