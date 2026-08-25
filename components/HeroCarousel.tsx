@@ -88,34 +88,79 @@ export default function HeroCarousel({ onActiveChange }: { onActiveChange?: (ind
       aria-label="AU Corporate services"
     >
       <div>
-        <h1
-          className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-5 sm:mb-6 leading-[1.15] tracking-tight [text-shadow:0_2px_16px_rgba(0,0,0,0.7)] min-h-[3.5em] sm:min-h-[2.5em] flex items-center justify-center"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
-          {slide.h1}
-        </h1>
-
-        <p className="text-white/85 mb-9 sm:mb-10 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto [text-shadow:0_1px_8px_rgba(0,0,0,0.7)] min-h-[3em]">
-          {slide.copy}
-        </p>
-
-        <div className="flex flex-col xs:flex-row gap-3 justify-center items-center mb-6">
-          <Button
-            asChild
-            aria-label={slide.primaryCta.label}
-            className="text-black text-sm sm:text-base font-semibold px-7 py-2.5 sm:py-3 w-full xs:w-auto"
-            style={{ backgroundColor: GOLD }}
+        {/*
+          Each piece (h1, paragraph, button row) gets its own ghost-stacked
+          grid: invisible copies of all 3 slides' text co-located in the same
+          grid cell so that piece's box height locks to the tallest variant.
+          Locking each piece independently -- not just the block as a whole --
+          is what actually stops the shift: with only the outer block locked,
+          the active slide's real (shorter/taller) h1 still pushed the
+          paragraph and buttons up/down inside it. Plain ghost divs, not real
+          headings/links, so screen readers and crawlers only ever see the
+          one active h1/paragraph/buttons.
+        */}
+        <div className="grid items-center mb-5 sm:mb-6">
+          <div aria-hidden="true" className="invisible pointer-events-none grid col-start-1 row-start-1">
+            {heroSlides.map((s) => (
+              <div
+                key={s.h1}
+                className="col-start-1 row-start-1 text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.15] tracking-tight"
+              >
+                {s.h1}
+              </div>
+            ))}
+          </div>
+          <h1
+            className="col-start-1 row-start-1 text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.15] tracking-tight [text-shadow:0_2px_16px_rgba(0,0,0,0.7)]"
+            style={{ fontFamily: "var(--font-heading)" }}
           >
-            <Link href={slide.primaryCta.href}>{slide.primaryCta.label}</Link>
-          </Button>
-          <Button
-            asChild
-            variant="outline"
-            aria-label={slide.secondaryCta.label}
-            className="text-white border-white/50 hover:bg-white/10 text-sm sm:text-base font-semibold px-7 py-2.5 sm:py-3 w-full xs:w-auto bg-transparent"
-          >
-            <Link href={slide.secondaryCta.href}>{slide.secondaryCta.label}</Link>
-          </Button>
+            {slide.h1}
+          </h1>
+        </div>
+
+        <div className="grid items-center mb-9 sm:mb-10">
+          <div aria-hidden="true" className="invisible pointer-events-none grid col-start-1 row-start-1">
+            {heroSlides.map((s) => (
+              <div
+                key={s.h1}
+                className="col-start-1 row-start-1 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto"
+              >
+                {s.copy}
+              </div>
+            ))}
+          </div>
+          <p className="col-start-1 row-start-1 text-white/85 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">
+            {slide.copy}
+          </p>
+        </div>
+
+        <div className="grid items-center mb-6">
+          <div aria-hidden="true" className="invisible pointer-events-none grid col-start-1 row-start-1">
+            {heroSlides.map((s) => (
+              <div key={s.h1} className="col-start-1 row-start-1 flex flex-col xs:flex-row gap-3 justify-center items-center">
+                <div className="text-sm sm:text-base font-semibold px-7 py-2.5 sm:py-3">{s.primaryCta.label}</div>
+                <div className="text-sm sm:text-base font-semibold px-7 py-2.5 sm:py-3">{s.secondaryCta.label}</div>
+              </div>
+            ))}
+          </div>
+          <div className="col-start-1 row-start-1 flex flex-col xs:flex-row gap-3 justify-center items-center">
+            <Button
+              asChild
+              aria-label={slide.primaryCta.label}
+              className="text-black text-sm sm:text-base font-semibold px-7 py-2.5 sm:py-3 w-full xs:w-auto"
+              style={{ backgroundColor: GOLD }}
+            >
+              <Link href={slide.primaryCta.href}>{slide.primaryCta.label}</Link>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              aria-label={slide.secondaryCta.label}
+              className="text-white border-white/50 hover:bg-white/10 text-sm sm:text-base font-semibold px-7 py-2.5 sm:py-3 w-full xs:w-auto bg-transparent"
+            >
+              <Link href={slide.secondaryCta.href}>{slide.secondaryCta.label}</Link>
+            </Button>
+          </div>
         </div>
       </div>
 
