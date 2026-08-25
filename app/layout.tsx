@@ -155,15 +155,16 @@ export default function RootLayout({
         />
 
 
-        {/* GOOGLE ANALYTICS */}
+        {/* GOOGLE ANALYTICS — lazyOnload: not needed for initial interactivity, so it
+            shouldn't compete with hydration for main-thread time (Total Blocking Time) */}
         <Script
-          async
           src="https://www.googletagmanager.com/gtag/js?id=G-V2EZ4HBLZS"
+          strategy="lazyOnload"
         />
 
         <Script
           id="google-analytics"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         >
           {`
             window.dataLayer = window.dataLayer || [];
@@ -176,10 +177,10 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* BING CLARITY TRACKING */}
+        {/* BING CLARITY TRACKING — lazyOnload for the same reason */}
         <Script
           id="clarity-tracking"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         >
           {`
             (function(c,l,a,r,i,t,y){
