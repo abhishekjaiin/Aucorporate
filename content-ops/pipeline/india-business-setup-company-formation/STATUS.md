@@ -18,8 +18,8 @@
 | **Checkpoint 2** | — | — | APPROVED | 2026-08-25 |
 | 7 | expert-content-writer | 07-draft.md | done | 2026-08-25 |
 | 8 | seo-editor | 08-seo-edit.md | done | 2026-08-25 |
-| 9 | fact-authority-checker | 09-fact-check.md | in-progress | 2026-08-25 |
-| 10 | eeat-trust-reviewer | 10-eeat-review.md | pending | |
+| 9 | fact-authority-checker | 09-fact-check.md | done (needs human sign-off before publish) | 2026-08-25 |
+| 10 | eeat-trust-reviewer | 10-eeat-review.md | in-progress | 2026-08-25 |
 | 11 | final-seo-qc | 11-final-qa.md | pending | |
 
 ## Approvals
