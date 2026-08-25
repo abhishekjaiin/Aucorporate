@@ -20,7 +20,7 @@
 | 8 | seo-editor | 08-seo-edit.md | done | 2026-08-25 |
 | 9 | fact-authority-checker | 09-fact-check.md | done (needs human sign-off before publish) | 2026-08-25 |
 | 10 | eeat-trust-reviewer | 10-eeat-review.md | done (procedural hold — see notes) | 2026-08-25 |
-| 11 | final-seo-qc | 11-final-qa.md | in-progress | 2026-08-25 |
+| 11 | final-seo-qc | 11-final-qa.md | in-progress (dispatched) | 2026-08-25 |
 
 ## Approvals
 - Checkpoint 1: APPROVED by user, 2026-08-25 ("ok")
