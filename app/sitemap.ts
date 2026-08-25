@@ -68,7 +68,7 @@ const pages: Page[] = [
   { path: "/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
 
   { path: "/india-entry-for-uk-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-07-29" },
-  { path: "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-07-29" },
+  { path: "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-25" },
   { path: "/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
   { path: "/india-entry-for-uk-companies/how-to-incorporate-subsidiary-india-from-uk", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
   { path: "/india-entry-for-uk-companies/fema-compliance-uk-company-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
