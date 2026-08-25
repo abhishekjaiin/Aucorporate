@@ -81,6 +81,12 @@ export default function IndiaEntryForUKCompanies() {
         </h3>
         <div className="flex flex-wrap gap-3">
           <Link
+            href="/india-business-setup/company-formation"
+            className="text-sm text-yellow-600 hover:text-yellow-700 font-semibold"
+          >
+            Full company registration process in India →
+          </Link>
+          <Link
             href="/services/taxation-regulatory"
             className="text-sm text-yellow-600 hover:text-yellow-700 font-semibold"
           >

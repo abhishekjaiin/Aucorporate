@@ -28,8 +28,13 @@
 - Checkpoint 2: APPROVED by user, 2026-08-25 ("sure go ahead")
 
 ## Final Status
-**Pipeline complete. Page is drafted and QA-approved (would score 9+/10 with both Must-Fix items resolved — resolved 2026-08-25).**
+**Pipeline complete AND implemented as a live page. Deployed 2026-08-25.**
 
-Remaining before this can go live as production code (not part of this content pipeline):
-1. A qualified CS/CA/tax professional at AU Corporate should confirm the three items still flagged in `09-fact-check.md` against primary sources (mca.gov.in / rbi.org.in / indiacode.nic.in were unreachable this session): Section 149(3) financial-year wording, the FC-GPR 30-day window's current RBI Master Direction, and the DTAA/Income Tax Act 2025 section mapping. The draft currently states these with honest, calibrated hedges rather than false certainty — safe to publish as-is, but sharper once confirmed.
-2. This pipeline produces approved page **content**, not a live Next.js page. Turning `07-draft.md` into `app/india-business-setup/company-formation/page.tsx` + `layout.tsx` is a separate, explicit implementation step not yet taken.
+- `app/india-business-setup/company-formation/page.tsx` and `layout.tsx` rebuilt from the approved, QA'd `07-draft.md` (both Must-Fix items already resolved before implementation).
+- Internal-linking gap closed: all 7 country pages (Australia, US, UK, Singapore, Germany, Japan, China) now link to this page — previously only German did.
+- `app/sitemap.ts` updated: priority raised to 0.95, changeFrequency to weekly, lastModified 2026-08-25.
+- Verified via `pnpm build` (clean) and Playwright (200 status, correct title/H1, 13 H2s, all internal links present, FAQ accordion functional, FAQPage JSON-LD present, LeadForm renders).
+- Pushed to `main` — auto-deploys via Vercel.
+
+Still outstanding (not a publish blocker — stated with honest hedges, not false certainty):
+A qualified CS/CA/tax professional at AU Corporate should eventually confirm the three items in `09-fact-check.md` against primary sources (mca.gov.in / rbi.org.in / indiacode.nic.in were unreachable this session): Section 149(3) financial-year wording, the FC-GPR 30-day window's current RBI Master Direction, and the DTAA/Income Tax Act 2025 section mapping.

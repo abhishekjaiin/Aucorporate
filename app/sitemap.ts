@@ -54,7 +54,7 @@ const pages: Page[] = [
 
   // India Business Setup Cluster
   { path: "/india-business-setup/fdi-channels", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/india-business-setup/company-formation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
+  { path: "/india-business-setup/company-formation", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-25" },
   { path: "/india-business-setup/regulatory-compliance", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-20" },
   { path: "/india-business-setup/banking-taxation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-20" },
   { path: "/india-business-setup/timeline-resources", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },

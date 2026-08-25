@@ -62,6 +62,9 @@ export default function IndiaEntryForJapanCompanies() {
           <Link href="/blog/india-safe-harbour-rules-2026" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained →
           </Link>
+          <Link href="/india-business-setup/company-formation" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+            Full company registration process in India →
+          </Link>
           <Link href="/india-business-setup/fdi-channels" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             FDI Channels & Investment Routes in India →
           </Link>
