@@ -14,8 +14,8 @@
 | 4 | content-gap-analyst | 04-content-gap.md | done | 2026-08-25 |
 | 5 | au-corporate-strategist | 05-au-positioning.md | done | 2026-08-25 |
 | **Checkpoint 1** | — | — | APPROVED | 2026-08-25 |
-| 6 | content-architect | 06-content-architecture.md | in-progress | 2026-08-25 |
-| **Checkpoint 2** | — | — | pending | |
+| 6 | content-architect | 06-content-architecture.md | done | 2026-08-25 |
+| **Checkpoint 2** | — | — | awaiting user | 2026-08-25 |
 | 7 | expert-content-writer | 07-draft.md | pending | |
 | 8 | seo-editor | 08-seo-edit.md | pending | |
 | 9 | fact-authority-checker | 09-fact-check.md | pending | |
