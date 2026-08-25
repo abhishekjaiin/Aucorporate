@@ -2,23 +2,23 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "India Entry for Australian Companies | AU Corporate",
+    absolute: "India Entry for Australian Companies | ECTA & Subsidiary Guide",
   },
   description:
-    "How Australian companies enter and set up business operations in India, including entity structuring and compliance essentials.",
+    "How Australian companies enter India under the ECTA framework — entity structuring, the India-Australia DTAA's split royalty rates, and FEMA/RBI compliance for Indian subsidiaries.",
   alternates: {
     canonical: "https://www.theaucorp.com/india-entry-for-australian-companies",
   },
   openGraph: {
-    title: "India Entry for Australian Companies | AU Corporate",
+    title: "India Entry for Australian Companies | ECTA & Subsidiary Guide",
     description:
-      "How Australian companies enter and set up business operations in India, including entity structuring and compliance essentials.",
+      "How Australian companies enter India under the ECTA framework — entity structuring, the India-Australia DTAA's split royalty rates, and FEMA/RBI compliance for Indian subsidiaries.",
     url: "https://www.theaucorp.com/india-entry-for-australian-companies",
   },
   twitter: {
-    title: "India Entry for Australian Companies | AU Corporate",
+    title: "India Entry for Australian Companies | ECTA & Subsidiary Guide",
     description:
-      "How Australian companies enter and set up business operations in India, including entity structuring and compliance essentials.",
+      "How Australian companies enter India under the ECTA framework — entity structuring, the India-Australia DTAA's split royalty rates, and FEMA/RBI compliance for Indian subsidiaries.",
   },
 }
 

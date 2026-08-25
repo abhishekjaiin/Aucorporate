@@ -2,23 +2,23 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "India Entry for German Companies | AU Corporate",
+    absolute: "India Entry for German Companies | DTAA & Subsidiary Setup Guide",
   },
   description:
-    "How German companies enter and set up business operations in India — DTAA planning, FEMA compliance, and entity structuring for German subsidiaries.",
+    "How German manufacturing and engineering companies set up an Indian subsidiary — the India-Germany DTAA's flat 10% rate, entity structuring, and FEMA compliance.",
   alternates: {
     canonical: "https://www.theaucorp.com/india-entry-for-german-companies",
   },
   openGraph: {
-    title: "India Entry for German Companies | AU Corporate",
+    title: "India Entry for German Companies | DTAA & Subsidiary Setup Guide",
     description:
-      "How German companies enter and set up business operations in India — DTAA planning, FEMA compliance, and entity structuring for German subsidiaries.",
+      "How German manufacturing and engineering companies set up an Indian subsidiary — the India-Germany DTAA's flat 10% rate, entity structuring, and FEMA compliance.",
     url: "https://www.theaucorp.com/india-entry-for-german-companies",
   },
   twitter: {
-    title: "India Entry for German Companies | AU Corporate",
+    title: "India Entry for German Companies | DTAA & Subsidiary Setup Guide",
     description:
-      "How German companies enter and set up business operations in India — DTAA planning, FEMA compliance, and entity structuring for German subsidiaries.",
+      "How German manufacturing and engineering companies set up an Indian subsidiary — the India-Germany DTAA's flat 10% rate, entity structuring, and FEMA compliance.",
   },
 }
 

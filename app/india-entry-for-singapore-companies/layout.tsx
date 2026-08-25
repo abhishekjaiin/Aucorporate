@@ -5,20 +5,20 @@ export const metadata: Metadata = {
     absolute: "India Entry for Singapore Companies | Subsidiary Setup Guide",
   },
   description:
-    "How Singapore companies enter and set up business operations in India, including entity structuring and compliance essentials.",
+    "How Singapore-based companies — India's largest FDI source for seven straight years — structure their India entry, including DTAA benefits, the Limitation of Benefits substance test, and FEMA compliance.",
   alternates: {
     canonical: "https://www.theaucorp.com/india-entry-for-singapore-companies",
   },
   openGraph: {
     title: "India Entry for Singapore Companies | Subsidiary Setup Guide",
     description:
-      "How Singapore companies enter and set up business operations in India, including entity structuring and compliance essentials.",
+      "How Singapore-based companies — India's largest FDI source for seven straight years — structure their India entry, including DTAA benefits, the Limitation of Benefits substance test, and FEMA compliance.",
     url: "https://www.theaucorp.com/india-entry-for-singapore-companies",
   },
   twitter: {
     title: "India Entry for Singapore Companies | Subsidiary Setup Guide",
     description:
-      "How Singapore companies enter and set up business operations in India, including entity structuring and compliance essentials.",
+      "How Singapore-based companies — India's largest FDI source for seven straight years — structure their India entry, including DTAA benefits, the Limitation of Benefits substance test, and FEMA compliance.",
   },
 }
 
