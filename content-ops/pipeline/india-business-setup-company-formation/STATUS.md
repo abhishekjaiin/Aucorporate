@@ -13,8 +13,8 @@
 | 3 | competitor-reverse-engineer | 03-competitor-analysis.md | done | 2026-08-25 |
 | 4 | content-gap-analyst | 04-content-gap.md | done | 2026-08-25 |
 | 5 | au-corporate-strategist | 05-au-positioning.md | done | 2026-08-25 |
-| **Checkpoint 1** | — | — | awaiting user | 2026-08-25 |
-| 6 | content-architect | 06-content-architecture.md | pending | |
+| **Checkpoint 1** | — | — | APPROVED | 2026-08-25 |
+| 6 | content-architect | 06-content-architecture.md | in-progress | 2026-08-25 |
 | **Checkpoint 2** | — | — | pending | |
 | 7 | expert-content-writer | 07-draft.md | pending | |
 | 8 | seo-editor | 08-seo-edit.md | pending | |
@@ -23,5 +23,5 @@
 | 11 | final-seo-qc | 11-final-qa.md | pending | |
 
 ## Approvals
-- Checkpoint 1: not yet reached — pending user review (major structural finding from Stage 5 needs a decision before Stage 6)
+- Checkpoint 1: APPROVED by user, 2026-08-25 ("ok")
 - Checkpoint 2: not yet reached
