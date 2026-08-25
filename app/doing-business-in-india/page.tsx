@@ -1,9 +1,7 @@
-"use client"
-
 import Link from "next/link"
 import Image from "next/image"
-import { motion } from "framer-motion"
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { Reveal } from "@/components/Reveal"
 import {
   Lightbulb,
   ClipboardList,
@@ -78,18 +76,14 @@ export default function DoingBusinessInIndiaPage() {
           />
           <div className="absolute inset-0 bg-[#081a42]/80" />
         </div>
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="relative z-10 text-white"
-        >
+        <Reveal className="relative z-10 text-white">
           <h1 className="text-5xl font-bold">Doing Business in India</h1>
           <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
             A practical, step-by-step guide for foreign companies entering India —
             from deciding whether India is the right market, through incorporation,
             to staying compliant afterwards.
           </p>
-        </motion.div>
+        </Reveal>
       </section>
 
       {/* QUICK STATS */}

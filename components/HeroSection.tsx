@@ -1,9 +1,9 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 import Image from "next/image"
-import { useInView, animate } from "framer-motion"
 import HeroCarousel, { heroSlides } from "@/components/HeroCarousel"
+import { CountUp } from "@/components/CountUp"
 
 const NAVY = "#081A42"
 const GOLD = "#facc15"
@@ -15,31 +15,6 @@ const stats = [
   { value: 10, suffix: "+", label: "Countries Served" },
   { text: "New Delhi", label: "Based, Serving Global Clients" },
 ] as const
-
-function CountUp({ value, suffix = "" }: { value: number; suffix?: string }) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
-  const [display, setDisplay] = useState(value)
-
-  useEffect(() => {
-    if (isInView) {
-      const controls = animate(0, value, {
-        duration: 2,
-        onUpdate(latest) {
-          setDisplay(Math.floor(latest))
-        },
-      })
-      return () => controls.stop()
-    }
-  }, [isInView, value])
-
-  return (
-    <span ref={ref}>
-      {display}
-      {suffix}
-    </span>
-  )
-}
 
 export default function HeroSection() {
   const [activeSlide, setActiveSlide] = useState(0)

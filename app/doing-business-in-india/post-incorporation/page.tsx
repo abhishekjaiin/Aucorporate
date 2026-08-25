@@ -1,8 +1,6 @@
-"use client"
-
 import Link from "next/link"
-import { motion } from "framer-motion"
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { Reveal } from "@/components/Reveal"
 
 const sections = [
   {
@@ -160,7 +158,7 @@ export default function PostIncorporationPage() {
 
       {/* HERO */}
       <section className="bg-[#081a42] text-white py-20 text-center">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <Reveal>
           <h1 className="text-4xl font-bold mb-4">
             Post-Incorporation Services
           </h1>
@@ -170,7 +168,7 @@ export default function PostIncorporationPage() {
             AU Corporate provides comprehensive post-incorporation support to
             ensure smooth operations, risk mitigation, and sustainable growth.
           </p>
-        </motion.div>
+        </Reveal>
       </section>
 
       {/* SECTIONS */}

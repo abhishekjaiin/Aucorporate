@@ -1,23 +1,12 @@
-"use client"
-
-import { motion } from "framer-motion"
-import { useRef } from "react"
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { Reveal } from "@/components/Reveal"
 
 export default function RiskManagementPage() {
-  const ermRef = useRef<HTMLDivElement>(null)
-  const forensicRef = useRef<HTMLDivElement>(null)
-  const auditRef = useRef<HTMLDivElement>(null)
-
-  const scrollTo = (ref: React.RefObject<HTMLDivElement | null>) => {
-    ref.current?.scrollIntoView({ behavior: "smooth" })
-  }
-
   const sections = [
     {
       title: "Risk Management Services",
-      ref: ermRef,
+      id: "erm",
       items: [
         {
           title: "Enterprise Risk Management (ERM)",
@@ -40,7 +29,7 @@ export default function RiskManagementPage() {
 
     {
       title: "Forensic Services",
-      ref: forensicRef,
+      id: "forensic",
       items: [
         {
           title: "Fraud Investigation",
@@ -63,7 +52,7 @@ export default function RiskManagementPage() {
 
     {
       title: "Special Audit & Review",
-      ref: auditRef,
+      id: "audit",
       items: [
         {
           title: "Internal Audit",
@@ -93,44 +82,30 @@ export default function RiskManagementPage() {
         <Breadcrumb items={[{ label: "Services", href: "/services" }, { label: "Risk Management" }]} />
 
         {/* TITLE */}
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold text-[#081a42] mb-6"
-        >
+        <h1 className="text-4xl font-bold text-[#081a42] mb-6">
           Risk Management Services
-        </motion.h1>
+        </h1>
 
         {/* DESCRIPTION */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="text-gray-600 max-w-3xl mb-10"
-        >
+        <p className="text-gray-600 max-w-3xl mb-10">
           We help organizations identify, assess, and mitigate risks through structured frameworks, forensic insights, and audit-driven assurance.
-        </motion.p>
+        </p>
 
         {/* NAV BUTTONS */}
         <div className="flex gap-4 mb-12 flex-wrap">
           {sections.map((sec) => (
-            <button
+            <a
               key={sec.title}
-              onClick={() => scrollTo(sec.ref)}
+              href={`#${sec.id}`}
               className="px-5 py-2 border rounded-full text-sm font-medium bg-white hover:bg-yellow-400 hover:text-black transition shadow-sm"
             >
               {sec.title}
-            </button>
+            </a>
           ))}
         </div>
 
         {/* OPTIONAL HERO IMAGE (like Tax page feel) */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="mb-16 rounded-2xl overflow-hidden shadow-lg"
-        >
+        <div className="mb-16 rounded-2xl overflow-hidden shadow-lg">
           <Image
             src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
             alt="Risk Management"
@@ -138,31 +113,21 @@ export default function RiskManagementPage() {
             height={500}
             className="w-full h-[300px] object-cover"
           />
-        </motion.div>
+        </div>
 
         {/* SECTIONS */}
         {sections.map((section, i) => (
-          <motion.div
-            key={section.title}
-            ref={section.ref}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.1 }}
-            viewport={{ once: true }}
-            className="mb-20"
-          >
-
-            <h2 className="text-2xl font-semibold mb-8 text-[#081a42]">
+          <Reveal key={section.title} delay={i * 0.1} className="mb-20">
+            <h2 id={section.id} className="text-2xl font-semibold mb-8 text-[#081a42] scroll-mt-24">
               {section.title}
             </h2>
 
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
               {section.items.map((item) => (
-                <motion.div
+                <div
                   key={item.title}
-                  whileHover={{ y: -5 }}
-                  className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col"
+                  className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full flex flex-col"
                 >
                   <h3 className="font-semibold text-lg mb-3 text-[#081a42] leading-snug">
                     {item.title}
@@ -171,12 +136,12 @@ export default function RiskManagementPage() {
                   <p className="text-sm text-gray-600 leading-relaxed">
                     {item.desc}
                   </p>
-                </motion.div>
+                </div>
               ))}
 
             </div>
 
-          </motion.div>
+          </Reveal>
         ))}
 
       </div>

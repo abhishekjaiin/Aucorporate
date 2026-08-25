@@ -1,19 +1,7 @@
-"use client"
-
 import Link from "next/link"
-import { motion } from "framer-motion"
 import { Breadcrumb } from "@/components/Breadcrumb"
-import { TrendingUp, Globe, Users, Shield, Landmark, Cpu, Briefcase, BarChart3 } from "lucide-react"
+import { Reveal } from "@/components/Reveal"
 import { HeroBackground } from "@/components/HeroBackground"
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i = 1) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.1, duration: 0.6 },
-  }),
-}
 
 export default function EntryProcessPage() {
   return (
@@ -27,12 +15,7 @@ export default function EntryProcessPage() {
 
         <div className="absolute inset-0 bg-[#081a42]/25" />
 
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeUp}
-          className="relative z-10 max-w-4xl px-6"
-        >
+        <Reveal className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl font-bold">
             India Entry Process & Business Structures
           </h1>
@@ -41,19 +24,14 @@ export default function EntryProcessPage() {
             A structured roadmap for global companies entering India — covering market evaluation,
             regulatory approvals, entity setup, taxation, and operational launch strategy.
           </p>
-        </motion.div>
+        </Reveal>
       </section>
 
       {/* STRATEGIC CONTEXT (FROM WHY INDIA INSIGHT BUT REPOSITIONED) */}
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-14"
-          >
+          <Reveal className="text-center mb-14">
             <h2 className="text-3xl font-bold">
               Why India is a Strategic Entry Market
             </h2>
@@ -62,7 +40,7 @@ export default function EntryProcessPage() {
               India’s economic transformation, digital infrastructure, and supply chain integration
               make it a key destination for global expansion strategies.
             </p>
-          </motion.div>
+          </Reveal>
 
           <div className="grid md:grid-cols-2 gap-10">
 
@@ -119,12 +97,9 @@ export default function EntryProcessPage() {
               "Operational Launch",
               "Ongoing Compliance & Reporting"
             ].map((step, i) => (
-              <motion.div
+              <Reveal
                 key={step}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                delay={(i % 7) * 0.1}
                 className={`relative flex md:items-center mb-14 ${i % 2 === 0 ? "md:justify-start" : "md:justify-end"}`}
               >
 
@@ -139,7 +114,7 @@ export default function EntryProcessPage() {
                   </p>
                 </div>
 
-              </motion.div>
+              </Reveal>
             ))}
 
           </div>
@@ -211,13 +186,7 @@ export default function EntryProcessPage() {
         <div className="max-w-6xl mx-auto px-6">
 
           {/* HEADER */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-14"
-          >
+          <Reveal className="text-center mb-14">
             <h2 className="text-3xl font-bold">
               How{" "}
               <span className="text-[#facc15]">AU Corporate</span>{" "}
@@ -228,23 +197,10 @@ export default function EntryProcessPage() {
               We transform regulatory complexity into a structured, compliant and predictable
               India entry journey for global businesses.
             </p>
-          </motion.div>
+          </Reveal>
 
           {/* GRID */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={{
-              hidden: {},
-              visible: {
-                transition: {
-                  staggerChildren: 0.12
-                }
-              }
-            }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {[
               {
@@ -272,25 +228,10 @@ export default function EntryProcessPage() {
                 desc: "Beyond compliance — supporting expansion, scaling and investment strategy.",
               },
             ].map((item, i) => (
-              <motion.div
+              <Reveal
                 key={item.title}
-                variants={{
-                  hidden: { opacity: 0, y: 40, scale: 0.95 },
-                  visible: {
-                    opacity: 1,
-                    y: 0,
-                    scale: 1,
-                    transition: {
-                      duration: 0.5,
-                      ease: "easeOut"
-                    }
-                  }
-                }}
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0px 10px 30px rgba(212, 175, 55, 0.25)"
-                }}
-                className="p-6 border rounded-xl bg-white cursor-pointer relative overflow-hidden"
+                delay={(i % 6) * 0.12}
+                className="p-6 border rounded-xl bg-white cursor-pointer relative overflow-hidden hover:scale-[1.02] transition-transform duration-300"
               >
 
                 {/* GOLD ACCENT BAR */}
@@ -308,10 +249,10 @@ export default function EntryProcessPage() {
                   {item.desc}
                 </p>
 
-              </motion.div>
+              </Reveal>
             ))}
 
-          </motion.div>
+          </div>
 
         </div>
       </section>

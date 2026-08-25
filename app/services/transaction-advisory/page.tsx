@@ -1,19 +1,10 @@
-"use client"
-
-import { motion } from "framer-motion"
 import { Breadcrumb } from "@/components/Breadcrumb"
-import { useRef } from "react"
+import { Reveal } from "@/components/Reveal"
 
 export default function Page() {
-  const mainRef = useRef<HTMLDivElement>(null)
-
-  const scrollTo = (ref: React.RefObject<HTMLDivElement | null>) => {
-    ref.current?.scrollIntoView({ behavior: "smooth" })
-  }
-
   const section = {
     title: "Transaction Advisory Services",
-    ref: mainRef,
+    id: "services",
     items: [
       {
         title: "Due Diligence Services",
@@ -56,53 +47,37 @@ export default function Page() {
         <Breadcrumb items={[{ label: "Services", href: "/services" }, { label: "Transaction Advisory" }]} />
 
         {/* TITLE */}
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold text-[#081a42] mb-6"
-        >
+        <h1 className="text-4xl font-bold text-[#081a42] mb-6">
           Transaction Advisory Services
-        </motion.h1>
+        </h1>
 
         {/* DESCRIPTION */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="text-gray-600 max-w-3xl mb-10"
-        >
+        <p className="text-gray-600 max-w-3xl mb-10">
           Our transaction advisory services support businesses through complex financial decisions including mergers, fundraising, restructuring, and capital market transactions.
-        </motion.p>
+        </p>
 
         {/* CLICK NAV */}
         <div className="flex gap-4 mb-12 flex-wrap">
-          <button
-            onClick={() => scrollTo(mainRef)}
+          <a
+            href={`#${section.id}`}
             className="px-5 py-2 border rounded-full text-sm font-medium bg-white hover:bg-yellow-400 hover:text-black transition shadow-sm"
           >
             Our Services
-          </button>
+          </a>
         </div>
 
         {/* SECTION */}
-        <motion.div
-          ref={mainRef}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-20"
-        >
-          <h2 className="text-2xl font-semibold mb-8 text-[#081a42]">
+        <Reveal className="mb-20">
+          <h2 id={section.id} className="text-2xl font-semibold mb-8 text-[#081a42] scroll-mt-24">
             Our Services
           </h2>
 
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {section.items.map((item) => (
-              <motion.div
+              <div
                 key={item.title}
-                whileHover={{ y: -5 }}
-                className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col"
+                className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full flex flex-col"
               >
                 <h3 className="font-semibold text-lg mb-3 text-[#081a42] leading-snug">
                   {item.title}
@@ -111,11 +86,11 @@ export default function Page() {
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {item.desc}
                 </p>
-              </motion.div>
+              </div>
             ))}
 
           </div>
-        </motion.div>
+        </Reveal>
 
       </div>
     </div>

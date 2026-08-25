@@ -1,19 +1,8 @@
-"use client"
-
 import Link from "next/link"
-import { motion } from "framer-motion"
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { Reveal } from "@/components/Reveal"
 import { TrendingUp, Globe, Users, Shield, Landmark, Cpu, Briefcase, BarChart3 } from "lucide-react"
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i = 1) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.1, duration: 0.6 },
-  }),
-}
 
 export default function WhyIndiaPage() {
   return (
@@ -34,12 +23,7 @@ export default function WhyIndiaPage() {
 
         <div className="absolute inset-0 bg-[#081a42]/70" />
 
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeUp}
-          className="relative z-10 max-w-4xl px-6"
-        >
+        <Reveal className="relative z-10 max-w-4xl px-6">
           <h1 className="text-5xl font-bold">
             Why India?
           </h1>
@@ -48,18 +32,13 @@ export default function WhyIndiaPage() {
             India is transitioning from an emerging market to a global economic anchor —
             driven by scale, reforms, digital transformation, and manufacturing expansion.
           </p>
-        </motion.div>
+        </Reveal>
       </section>
       {/* WHY INDIA - DEEP INSIGHT SECTION */}
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-14"
-          >
+          <Reveal className="text-center mb-14">
             <h2 className="text-3xl font-bold">
               Why India is Becoming a Global Business Growth Engine
             </h2>
@@ -69,17 +48,12 @@ export default function WhyIndiaPage() {
               structural pillar in global supply chains, digital transformation,
               and long-term capital deployment strategies.
             </p>
-          </motion.div>
+          </Reveal>
 
           <div className="grid md:grid-cols-2 gap-10">
 
             {/* LEFT CONTENT */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
+            <Reveal className="space-y-6">
 
               <div className="p-6 border rounded-xl hover:shadow-md transition">
                 <h3 className="font-semibold text-lg mb-2">
@@ -114,15 +88,10 @@ export default function WhyIndiaPage() {
                 </p>
               </div>
 
-            </motion.div>
+            </Reveal>
 
             {/* RIGHT CONTENT */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
+            <Reveal delay={0.1} className="space-y-6">
 
               <div className="p-6 border rounded-xl hover:shadow-md transition">
                 <h3 className="font-semibold text-lg mb-2">
@@ -157,7 +126,7 @@ export default function WhyIndiaPage() {
                 </p>
               </div>
 
-            </motion.div>
+            </Reveal>
 
           </div>
         </div>
@@ -192,18 +161,14 @@ export default function WhyIndiaPage() {
                 desc: "UPI, fintech, AI adoption, and SaaS ecosystems are reshaping business models.",
               },
             ].map((item, i) => (
-              <motion.div
+              <Reveal
                 key={item.title}
-                custom={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={fadeUp}
+                delay={i * 0.1}
                 className="p-6 border rounded-xl hover:shadow-lg transition"
               >
                 <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600">{item.desc}</p>
-              </motion.div>
+              </Reveal>
             ))}
 
           </div>
@@ -252,19 +217,15 @@ export default function WhyIndiaPage() {
                 desc: "FTAs with UAE, UK, ASEAN improving trade access.",
               },
             ].map((item, i) => (
-              <motion.div
+              <Reveal
                 key={item.title}
-                custom={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={fadeUp}
+                delay={(i % 6) * 0.06}
                 className="p-6 bg-white border rounded-xl hover:shadow-lg transition"
               >
                 <div className="text-[#081a42] mb-3">{item.icon}</div>
                 <h3 className="font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600">{item.desc}</p>
-              </motion.div>
+              </Reveal>
             ))}
 
           </div>
@@ -274,12 +235,7 @@ export default function WhyIndiaPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-14"
-          >
+          <Reveal className="text-center mb-14">
             <h2 className="text-3xl font-bold">
               High-Growth Sector Opportunities in India
             </h2>
@@ -288,7 +244,7 @@ export default function WhyIndiaPage() {
               India offers diversified investment opportunities across sectors driven by
               policy support, digital transformation, and global supply chain realignment.
             </p>
-          </motion.div>
+          </Reveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
@@ -330,12 +286,9 @@ export default function WhyIndiaPage() {
                 stat: "1B+ monthly transactions",
               },
             ].map((sector, i) => (
-              <motion.div
+              <Reveal
                 key={sector.title}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
+                delay={(i % 6) * 0.08}
                 className="group bg-white border rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300"
               >
 
@@ -374,7 +327,7 @@ export default function WhyIndiaPage() {
 
                 </div>
 
-              </motion.div>
+              </Reveal>
             ))}
 
           </div>
@@ -433,16 +386,13 @@ export default function WhyIndiaPage() {
               "Accounting, Payroll & Compliance Management",
               "Ongoing Strategic Business Advisory",
             ].map((item, i) => (
-              <motion.div
+              <Reveal
                 key={item}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
+                delay={(i % 6) * 0.05}
                 className="p-5 bg-white border rounded-lg hover:shadow-md transition"
               >
                 <p className="text-sm text-gray-700">✔ {item}</p>
-              </motion.div>
+              </Reveal>
             ))}
 
           </div>

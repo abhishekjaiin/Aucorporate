@@ -1,10 +1,8 @@
-"use client"
-
 import Link from "next/link"
 import Image from "next/image"
 import Script from "next/script"
 import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
+import { Reveal } from "@/components/Reveal"
 
 import {
   ArrowRight,
@@ -71,35 +69,25 @@ export default function ArbitrationServicesPage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-white">
 
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-5xl font-bold mb-4"
-          >
-            Arbitration Services
-          </motion.h1>
+          <Reveal>
+            <h1 className="text-5xl font-bold mb-4">
+              Arbitration Services
+            </h1>
+          </Reveal>
 
-          <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-white/80 max-w-2xl"
-          >
-            Structured financial expertise to support claims, disputes, and arbitration proceedings with clarity and precision.
-          </motion.p>
+          <Reveal delay={0.2}>
+            <p className="text-white/80 max-w-2xl">
+              Structured financial expertise to support claims, disputes, and arbitration proceedings with clarity and precision.
+            </p>
+          </Reveal>
 
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="mt-6"
-          >
+          <Reveal delay={0.4} className="mt-6">
             <Button asChild className="bg-yellow-400 text-black">
               <Link href="/contact">
                 Request Consultation <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-          </motion.div>
+          </Reveal>
 
         </div>
       </section>
@@ -108,37 +96,23 @@ export default function ArbitrationServicesPage() {
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
 
-          <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
+          <Reveal>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Disputes involving contracts, accounts, valuations, delayed payments, partnerships, commercial transactions, and financial claims often require clear financial analysis and structured presentation of facts.
+            </p>
+          </Reveal>
 
-            viewport={{ once: true }}
-            className="text-gray-700 leading-relaxed mb-6"
-          >
-            Disputes involving contracts, accounts, valuations, delayed payments, partnerships, commercial transactions, and financial claims often require clear financial analysis and structured presentation of facts.
-          </motion.p>
+          <Reveal delay={0.1}>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Our Arbitration Services are designed to support businesses, professionals, and legal teams with accurate financial expertise during arbitration proceedings.
+            </p>
+          </Reveal>
 
-          <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-gray-700 leading-relaxed mb-6"
-          >
-            Our Arbitration Services are designed to support businesses, professionals, and legal teams with accurate financial expertise during arbitration proceedings.
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-gray-700 leading-relaxed"
-          >
-            We provide independent, professional, and well-documented assistance to help clients present claims, defend positions, and strengthen their case with credible financial evidence.
-          </motion.p>
+          <Reveal delay={0.2}>
+            <p className="text-gray-700 leading-relaxed">
+              We provide independent, professional, and well-documented assistance to help clients present claims, defend positions, and strengthen their case with credible financial evidence.
+            </p>
+          </Reveal>
 
         </div>
       </section>
@@ -147,12 +121,7 @@ export default function ArbitrationServicesPage() {
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
 
-          <motion.div
-            initial={{ opacity: 0, x: -60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-
-            viewport={{ once: true }}
-          >
+          <Reveal>
             <Image
               src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=800&q=80"
               alt="Dispute resolution and negotiation process"
@@ -161,14 +130,9 @@ export default function ArbitrationServicesPage() {
               loading="lazy"
               className="rounded-2xl shadow-lg w-full h-auto"
             />
-          </motion.div>
+          </Reveal>
 
-          <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-
-            viewport={{ once: true }}
-          >
+          <Reveal delay={0.1}>
             <h2 className="text-3xl font-bold mb-4">
               1. Arbitration Claim Preparation
             </h2>
@@ -195,7 +159,7 @@ export default function ArbitrationServicesPage() {
               ))}
             </ul>
 
-          </motion.div>
+          </Reveal>
 
         </div>
       </section>
@@ -204,12 +168,7 @@ export default function ArbitrationServicesPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
 
-          <motion.div
-            initial={{ opacity: 0, x: -60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-
-            viewport={{ once: true }}
-          >
+          <Reveal>
             <h2 className="text-3xl font-bold mb-4">
               2. Arbitration Expert Witness Services
             </h2>
@@ -236,14 +195,9 @@ export default function ArbitrationServicesPage() {
               ))}
             </ul>
 
-          </motion.div>
+          </Reveal>
 
-          <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-
-            viewport={{ once: true }}
-          >
+          <Reveal delay={0.1}>
             <Image
               src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80"
               alt="Legal consultation and court proceedings"
@@ -252,7 +206,7 @@ export default function ArbitrationServicesPage() {
               loading="lazy"
               className="rounded-2xl shadow-lg w-full h-auto"
             />
-          </motion.div>
+          </Reveal>
 
         </div>
       </section>

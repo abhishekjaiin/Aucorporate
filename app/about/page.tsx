@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -12,17 +10,7 @@ import {
   Building,
   Globe,
 } from "lucide-react"
-import { motion } from "framer-motion"
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-}
-
-const fadeIn = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.8 } },
-}
+import { Reveal } from "@/components/Reveal"
 
 export default function AboutHero() {
   return (
@@ -32,7 +20,7 @@ export default function AboutHero() {
       <section className="py-12 sm:py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 items-center">
 
-          <motion.div initial="hidden" animate="visible" variants={fadeUp}>
+          <Reveal>
 
             <span className="text-black text-xs sm:text-sm font-semibold uppercase tracking-wider">
               About Us
@@ -56,12 +44,9 @@ export default function AboutHero() {
               </Button>
             </Link>
 
-          </motion.div>
+          </Reveal>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-          >
+          <Reveal delay={0.15}>
             <Image
               src="/images/pexels-amar-20624924.jpg"
               alt="Vintage world map, representing AU Corporate's global reach"
@@ -69,7 +54,7 @@ export default function AboutHero() {
               height={400}
               className="rounded-2xl shadow-lg w-full h-auto"
             />
-          </motion.div>
+          </Reveal>
 
         </div>
       </section>
@@ -78,8 +63,7 @@ export default function AboutHero() {
       <section className="py-12 sm:py-24 bg-gray-50">
         <div className="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 items-center">
 
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible"
- viewport={{ once: true }}>
+          <Reveal>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
               Who We Are
             </h2>
@@ -91,10 +75,9 @@ export default function AboutHero() {
             <p className="text-gray-500 text-sm sm:text-base">
               With deep domain expertise and a client-first approach, we serve as a strategic partner for businesses looking to establish, operate, and scale in India.
             </p>
-          </motion.div>
+          </Reveal>
 
-          <motion.div variants={fadeIn} initial="hidden" whileInView="visible"
- viewport={{ once: true }}>
+          <Reveal delay={0.15}>
             <Image
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
               alt="Team work"
@@ -102,7 +85,7 @@ export default function AboutHero() {
               height={350}
               className="rounded-xl shadow w-full h-auto"
             />
-          </motion.div>
+          </Reveal>
 
         </div>
       </section>
@@ -128,13 +111,9 @@ export default function AboutHero() {
               text: "Integrity, independence, confidentiality, and expert-driven execution define our approach."
             }
           ].map((item, i) => (
-            <motion.div
+            <Reveal
               key={i}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="visible"
-
-              viewport={{ once: true }}
+              delay={i * 0.1}
               className="p-5 sm:p-8 border rounded-xl hover:shadow-xl bg-white"
             >
               <item.icon className="text-gold mb-3" />
@@ -144,7 +123,7 @@ export default function AboutHero() {
               <p className="text-gray-500 text-sm">
                 {item.text}
               </p>
-            </motion.div>
+            </Reveal>
           ))}
 
         </div>
@@ -170,20 +149,16 @@ export default function AboutHero() {
             { icon: Users, title: "HR Outsourcing" },
             { icon: Award, title: "Compliance" },
           ].map((item, i) => (
-            <motion.div
+            <Reveal
               key={i}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="visible"
-
-              viewport={{ once: true }}
+              delay={(i % 5) * 0.06}
               className="p-4 sm:p-6 bg-white rounded-xl border text-center hover:shadow-lg"
             >
               <item.icon className="text-gold mx-auto mb-2 sm:mb-3" />
               <p className="font-medium text-sm sm:text-base">
                 {item.title}
               </p>
-            </motion.div>
+            </Reveal>
           ))}
 
         </div>

@@ -1,9 +1,7 @@
-"use client"
-
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { motion } from "framer-motion"
+import { Reveal } from '@/components/Reveal'
 
 import {
   ArrowRight,
@@ -18,11 +16,6 @@ import {
   Zap,
   BarChart3
 } from 'lucide-react'
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 50 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7 } }
-}
 
 const services = [
   {
@@ -139,7 +132,7 @@ export default function OutsourcingPage() {
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-white">
-          <motion.div initial="hidden" animate="show" variants={fadeUp}>
+          <Reveal>
             <span className="text-gold text-sm font-semibold uppercase">
               Business Process
             </span>
@@ -161,7 +154,7 @@ export default function OutsourcingPage() {
                 <Link href="/doing-business-in-india/why-india">Why India</Link>
               </Button>
             </div>
-          </motion.div>
+          </Reveal>
         </div>
 
       </section> {/* ✅ HERO CLOSED HERE */}
@@ -171,15 +164,11 @@ export default function OutsourcingPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
 
-          <motion.h2
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-
-            viewport={{ once: true }}
-            className="text-3xl font-bold mb-12"
-          >
-            Why Choose AU Corporate
-          </motion.h2>
+          <Reveal>
+            <h2 className="text-3xl font-bold mb-12">
+              Why Choose AU Corporate
+            </h2>
+          </Reveal>
 
           <div className="grid md:grid-cols-3 gap-8">
 
@@ -197,18 +186,14 @@ export default function OutsourcingPage() {
                 desc: "Automation-first approach using modern tools.",
               },
             ].map((item, i) => (
-              <motion.div
+              <Reveal
                 key={item.title}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.2 }}
+                delay={i * 0.2}
                 className="p-6 border rounded-xl"
               >
                 <h3 className="font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>
-              </motion.div>
+              </Reveal>
             ))}
 
           </div>
@@ -220,21 +205,16 @@ export default function OutsourcingPage() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
 
           {benefits.map((b, i) => (
-            <motion.div
+            <Reveal
               key={b.title}
-              initial="hidden"
-              whileInView="show"
-
-              viewport={{ once: true }}
-              variants={fadeUp}
-              transition={{ delay: i * 0.1 }}
+              delay={i * 0.1}
               className="p-6 bg-white border rounded-xl text-center"
             >
               <b.icon className="text-gold mx-auto mb-3" />
               <div className="text-2xl font-bold text-gold">{b.value}</div>
               <div>{b.title}</div>
               <p className="text-xs text-muted-foreground">{b.description}</p>
-            </motion.div>
+            </Reveal>
           ))}
 
         </div>
@@ -253,19 +233,12 @@ export default function OutsourcingPage() {
               "Execute & Manage",
               "Optimize Continuously"
             ].map((step, i) => (
-              <motion.div
-                key={step}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.2 }}
-              >
+              <Reveal key={step} delay={i * 0.2}>
                 <div className="text-gold font-bold text-lg mb-2">
                   0{i + 1}
                 </div>
                 <p>{step}</p>
-              </motion.div>
+              </Reveal>
             ))}
           </div>
 
@@ -283,13 +256,9 @@ export default function OutsourcingPage() {
           <div className="grid md:grid-cols-2 gap-8">
 
             {services.map((s, i) => (
-              <motion.div
+              <Reveal
                 key={s.title}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                delay={i * 0.1}
                 className="p-8 border rounded-xl bg-secondary"
               >
                 <s.icon className="text-gold mb-4" />
@@ -308,7 +277,7 @@ export default function OutsourcingPage() {
                     </li>
                   ))}
                 </ul>
-              </motion.div>
+              </Reveal>
             ))}
 
           </div>
@@ -318,15 +287,11 @@ export default function OutsourcingPage() {
 <section className="py-24 bg-secondary/50">
   <div className="max-w-7xl mx-auto px-4 text-center">
 
-    <motion.h2
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-
-      viewport={{ once: true }}
-      className="text-3xl font-bold mb-12"
-    >
-      Our Delivery Model
-    </motion.h2>
+    <Reveal>
+      <h2 className="text-3xl font-bold mb-12">
+        Our Delivery Model
+      </h2>
+    </Reveal>
 
     <div className="grid md:grid-cols-3 gap-8">
 
@@ -335,20 +300,16 @@ export default function OutsourcingPage() {
         "Execution & Processing",
         "Monitoring & Optimization",
       ].map((step, i) => (
-        <motion.div
+        <Reveal
           key={step}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-
-          viewport={{ once: true }}
-          transition={{ delay: i * 0.2 }}
+          delay={i * 0.2}
           className="p-8 bg-white border rounded-xl"
         >
           <div className="text-gold font-bold text-xl mb-2">
             0{i + 1}
           </div>
           <p>{step}</p>
-        </motion.div>
+        </Reveal>
       ))}
 
     </div>
@@ -370,19 +331,15 @@ export default function OutsourcingPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
 
             {software.map((s, i) => (
-              <motion.div
+              <Reveal
                 key={s.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                delay={(i % 6) * 0.08}
                 className="p-4 bg-gray-50 border rounded-xl flex items-center justify-center hover:shadow-md transition"
               >
                 <span className="font-semibold text-gray-700 text-sm sm:text-base text-center">
                   {s.name}
                 </span>
-              </motion.div>
+              </Reveal>
             ))}
 
           </div>
@@ -415,15 +372,11 @@ export default function OutsourcingPage() {
 <section className="py-24 bg-white">
   <div className="max-w-7xl mx-auto px-4 text-center">
 
-    <motion.h2
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-
-      viewport={{ once: true }}
-      className="text-3xl font-bold mb-12"
-    >
-      Proven Results
-    </motion.h2>
+    <Reveal>
+      <h2 className="text-3xl font-bold mb-12">
+        Proven Results
+      </h2>
+    </Reveal>
 
     <div className="grid md:grid-cols-3 gap-8">
 
@@ -432,20 +385,16 @@ export default function OutsourcingPage() {
         { value: "3x", label: "Efficiency Increase" },
         { value: "99%", label: "Accuracy" },
       ].map((item, i) => (
-        <motion.div
+        <Reveal
           key={item.label}
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-
-          viewport={{ once: true }}
-          transition={{ delay: i * 0.2 }}
+          delay={i * 0.2}
           className="p-8 border rounded-xl"
         >
           <div className="text-3xl font-bold text-gold mb-2">
             {item.value}
           </div>
           <p>{item.label}</p>
-        </motion.div>
+        </Reveal>
       ))}
 
     </div>

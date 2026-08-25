@@ -1,5 +1,3 @@
-"use client"
-
 import { Web3Form } from "@/components/Web3Form"
 import {
   Mail,

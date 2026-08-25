@@ -1,9 +1,7 @@
-"use client"
-
 import Link from "next/link"
-import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { Reveal } from "@/components/Reveal"
 
 const blogs = [
   {
@@ -55,30 +53,21 @@ export default function BlogPage() {
         <Breadcrumb items={[{ label: "Blog" }]} />
 
         {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <Reveal className="text-center mb-16">
           <h1 className="text-4xl font-bold">Our Blog</h1>
           <p className="text-gray-500 mt-2">
             Insights on taxation, compliance, and global business
           </p>
-        </motion.div>
+        </Reveal>
 
         {/* Blog Grid */}
         <div className="grid md:grid-cols-3 gap-6">
 
           {blogs.map((blog, i) => (
-            <motion.div
+            <Reveal
               key={blog.slug}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              whileHover={{ y: -6 }}
-              className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all"
+              delay={(i % 6) * 0.1}
+              className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all"
             >
               <h2 className="font-semibold mb-2">{blog.title}</h2>
               <p className="text-sm text-gray-500 mb-4">{blog.desc}</p>
@@ -88,14 +77,11 @@ export default function BlogPage() {
                 className="text-yellow-500 text-sm flex items-center gap-1 group"
               >
                 Read More
-                <motion.span
-                  whileHover={{ x: 4 }}
-                  className="inline-flex"
-                >
+                <span className="inline-flex transition-transform duration-200 group-hover:translate-x-1">
                   <ArrowRight className="h-4 w-4" />
-                </motion.span>
+                </span>
               </Link>
-            </motion.div>
+            </Reveal>
           ))}
 
         </div>
