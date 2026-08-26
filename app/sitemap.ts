@@ -60,7 +60,7 @@ const pages: Page[] = [
   { path: "/india-business-setup/timeline-resources", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
 
   // Regional India Entry Clusters
-  { path: "/india-entry-for-us-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-07-29" },
+  { path: "/india-entry-for-us-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-26" },
   { path: "/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
   { path: "/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
