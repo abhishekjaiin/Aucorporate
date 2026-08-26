@@ -27,7 +27,7 @@ export default function IndiaEntryForAustralianCompanies() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">Entity Structure</h3>
-            <p className="text-gray-600 text-sm">Most Australian companies enter via a wholly-owned Private Limited subsidiary under the automatic FDI route for most sectors.</p>
+            <p className="text-gray-600 text-sm">Most Australian companies enter via a wholly-owned Private Limited subsidiary under the automatic FDI route for most sectors. See our <Link href="/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">subsidiary vs. branch office comparison</Link> for the full tradeoffs, including Australia&apos;s CFC attribution rules.</p>
           </div>
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">India-Australia DTAA</h3>
