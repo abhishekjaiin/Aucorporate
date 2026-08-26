@@ -4,6 +4,7 @@ import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
 import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 import { Web3Form } from "@/components/Web3Form"
+import { ReadingProgressBar } from "@/components/ReadingProgressBar"
 
 const JAPAN_RED = "#BC002D"
 const NAVY = "#081a42"
@@ -12,9 +13,43 @@ const GOLD = "#facc15"
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <h2 className="flex items-center gap-3 text-2xl font-semibold mt-12 mb-4" style={{ color: NAVY }}>
-      <span aria-hidden="true" className="inline-block h-6 w-1.5 rounded-full" style={{ backgroundColor: JAPAN_RED }} />
+      <span aria-hidden="true" className="inline-block h-6 w-1.5 rounded-full bg-gradient-to-b from-[#BC002D] to-[#facc15]" />
       {children}
     </h2>
+  )
+}
+
+/** Small traditional-seal ("hanko") badge — used as a recurring visual motif. */
+function Hanko({ label, size = 40 }: { label: string; size?: number }) {
+  return (
+    <span
+      aria-hidden="true"
+      className="inline-flex shrink-0 items-center justify-center rounded-md font-bold text-white shadow-sm"
+      style={{
+        width: size,
+        height: size,
+        fontSize: size * 0.4,
+        background: `linear-gradient(135deg, ${JAPAN_RED}, #8f0021)`,
+        border: "1.5px solid rgba(255,255,255,0.5)",
+        writingMode: "vertical-rl",
+        letterSpacing: "-1px",
+      }}
+    >
+      {label}
+    </span>
+  )
+}
+
+/** Faint oversized kanji used as a background watermark behind a block. */
+function KanjiWatermark({ char, className = "" }: { char: string; className?: string }) {
+  return (
+    <span
+      aria-hidden="true"
+      className={`pointer-events-none absolute select-none font-bold ${className}`}
+      style={{ color: JAPAN_RED, opacity: 0.06, fontSize: "9rem", lineHeight: 1 }}
+    >
+      {char}
+    </span>
   )
 }
 
@@ -30,6 +65,7 @@ export const metadata = {
 export default function BlogPost() {
   return (
     <main className="text-gray-800 leading-7">
+      <ReadingProgressBar />
       <BlogPostingSchema
         headline="India Opens Another Door for Japanese High-Tech Investment: What the Proposed BIS Exemption Means for Japanese Companies"
         description="India is developing a framework to exempt high-tech manufacturers from mandatory BIS certification for imported equipment and components — announced by Commerce Minister Piyush Goyal in Tokyo on 25 August 2026."
@@ -90,6 +126,25 @@ export default function BlogPost() {
           <line x1="72" y1="22" x2="72" y2="85" />
           <line x1="50" y1="30" x2="50" y2="55" />
         </svg>
+        {/* faint seigaiha wave texture, full hero */}
+        <svg aria-hidden="true" className="absolute inset-0 h-full w-full opacity-[0.05]" preserveAspectRatio="xMidYMid slice">
+          <pattern id="seigaiha-hero" width="44" height="22" patternUnits="userSpaceOnUse">
+            <path d="M0,22 A22,22 0 0 1 44,22" fill="none" stroke="white" strokeWidth="1.5" />
+            <path d="M-22,22 A22,22 0 0 1 22,22" fill="none" stroke="white" strokeWidth="1.5" />
+            <path d="M22,22 A22,22 0 0 1 66,22" fill="none" stroke="white" strokeWidth="1.5" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#seigaiha-hero)" />
+        </svg>
+        {/* small sakura cluster, upper-left */}
+        <svg aria-hidden="true" className="absolute left-1/3 top-8 h-10 w-10 opacity-20 hidden md:block" viewBox="0 0 100 100" fill="none">
+          <g fill={GOLD}>
+            <ellipse cx="50" cy="30" rx="10" ry="16" />
+            <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(72 50 30)" />
+            <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(144 50 30)" />
+            <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(216 50 30)" />
+            <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(288 50 30)" />
+          </g>
+        </svg>
 
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <span
@@ -106,7 +161,8 @@ export default function BlogPost() {
             What the proposed BIS certification exemption means for Japanese semiconductor, electronics, and AI companies evaluating India.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4 text-sm text-white/60">
+          <div className="mt-8 flex flex-wrap items-center gap-3 text-sm text-white/60">
+            <Hanko label="特報" size={34} />
             <span>Published 26 August 2026</span>
             <span className="h-1 w-1 rounded-full bg-white/30" />
             <span>India Entry &middot; Japan Desk</span>
@@ -148,13 +204,20 @@ export default function BlogPost() {
           </p>
 
           <div
-            className="my-8 rounded-lg border-l-4 bg-gray-50 p-6"
+            className="relative my-8 overflow-hidden rounded-lg border-l-4 bg-gray-50 p-6"
             style={{ borderColor: JAPAN_RED }}
           >
-            <h3 className="font-bold text-lg mb-3 flex items-center gap-2" style={{ color: NAVY }}>
+            <svg aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.05]">
+              <pattern id="seigaiha-quickref" width="36" height="18" patternUnits="userSpaceOnUse">
+                <path d={`M0,18 A18,18 0 0 1 36,18`} fill="none" stroke={JAPAN_RED} strokeWidth="1.5" />
+                <path d={`M-18,18 A18,18 0 0 1 18,18`} fill="none" stroke={JAPAN_RED} strokeWidth="1.5" />
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#seigaiha-quickref)" />
+            </svg>
+            <h3 className="relative font-bold text-lg mb-3 flex items-center gap-2" style={{ color: NAVY }}>
               <Sparkles size={18} style={{ color: JAPAN_RED }} /> Quick Reference: The BIS Announcement
             </h3>
-            <ul className="space-y-2 text-sm text-gray-700">
+            <ul className="relative space-y-2 text-sm text-gray-700">
               <li>&bull; <strong>Announced:</strong> 25 August 2026, Tokyo, by Commerce &amp; Industry Minister Piyush Goyal</li>
               <li>&bull; <strong>What it covers:</strong> BIS certification exemptions for equipment and components imported by high-tech manufacturers</li>
               <li>&bull; <strong>Possible exemption levels:</strong> Company, industry, product, or project</li>
@@ -181,9 +244,10 @@ export default function BlogPost() {
           </p>
 
           <blockquote
-            className="relative my-8 rounded-r-lg py-4 pl-6 pr-4"
+            className="relative my-8 overflow-hidden rounded-r-lg py-4 pl-6 pr-4"
             style={{ borderLeft: `4px solid ${JAPAN_RED}`, backgroundColor: "#fff8f8" }}
           >
+            <KanjiWatermark char="縁" className="-right-4 -top-8" />
             <Quote aria-hidden="true" size={28} className="absolute -top-2 left-4 opacity-20" style={{ color: JAPAN_RED }} />
             <p className="font-medium relative" style={{ color: NAVY }}>
               The relationship is therefore moving beyond the traditional &ldquo;Japanese manufacturing in India&rdquo; model, toward: Japanese technology + Japanese capital + Indian talent + Indian market + Indian manufacturing capabilities.
@@ -195,7 +259,16 @@ export default function BlogPost() {
             India&apos;s opportunity for Japanese companies is no longer limited to establishing a conventional manufacturing plant. Several new opportunities are emerging simultaneously.
           </p>
 
-          <div className="grid sm:grid-cols-2 gap-5 my-8">
+          <div className="relative grid sm:grid-cols-2 gap-5 my-8">
+            <svg aria-hidden="true" className="pointer-events-none absolute -right-6 -top-10 h-28 w-28 opacity-[0.06] hidden lg:block" viewBox="0 0 100 100" fill="none">
+              <g fill={JAPAN_RED}>
+                <ellipse cx="50" cy="30" rx="10" ry="16" />
+                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(72 50 30)" />
+                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(144 50 30)" />
+                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(216 50 30)" />
+                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(288 50 30)" />
+              </g>
+            </svg>
             <div className="relative p-5 pt-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-gray-300 transition-all">
               <span className="absolute -top-3 -left-2 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white" style={{ backgroundColor: JAPAN_RED }}>01</span>
               <Cpu className="mb-3" size={22} style={{ color: JAPAN_RED }} />
@@ -279,9 +352,23 @@ export default function BlogPost() {
             The India&ndash;Japan relationship has already created successful businesses, manufacturing facilities, and technology partnerships across multiple sectors. The next chapter could be considerably broader — from semiconductors and AI to precision manufacturing, robotics, electronics, engineering, and R&amp;D. For Japanese businesses considering India, the question is no longer simply whether India presents an opportunity. It is: how can that opportunity be structured, established, and operated successfully?
           </p>
 
-          <p className="mb-8 text-sm text-gray-500 italic">
+          <p className="mb-6 text-sm text-gray-500 italic">
             Ready to talk it through? Use the enquiry form alongside this article, or explore the related resources below.
           </p>
+
+          <div aria-hidden="true" className="flex items-center justify-center gap-3 my-8">
+            <span className="h-px flex-1 max-w-16" style={{ background: `linear-gradient(to right, transparent, ${JAPAN_RED})` }} />
+            <svg className="h-4 w-4" viewBox="0 0 100 100" fill="none">
+              <g fill={JAPAN_RED}>
+                <ellipse cx="50" cy="30" rx="10" ry="16" />
+                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(72 50 30)" />
+                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(144 50 30)" />
+                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(216 50 30)" />
+                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(288 50 30)" />
+              </g>
+            </svg>
+            <span className="h-px flex-1 max-w-16" style={{ background: `linear-gradient(to left, transparent, ${JAPAN_RED})` }} />
+          </div>
 
           <RelatedResources
             links={[
@@ -295,20 +382,23 @@ export default function BlogPost() {
 
         {/* ================= STICKY SHORT ENQUIRY SIDEBAR ================= */}
         <aside className="lg:sticky lg:top-24 h-fit">
-          <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-lg">
-            <div className="mb-3 flex items-center gap-2">
-              <span aria-hidden="true" className="h-2 w-2 rounded-full" style={{ backgroundColor: JAPAN_RED }} />
+          <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-5 shadow-lg">
+            <div className="absolute right-0 top-0 h-16 w-16 opacity-[0.06]" style={{ background: `radial-gradient(circle at 100% 0%, ${JAPAN_RED} 0%, ${JAPAN_RED} 55%, transparent 60%)` }} aria-hidden="true" />
+            <div className="relative mb-3 flex items-center gap-2">
+              <Hanko label="相談" size={28} />
               <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: NAVY }}>
                 Japan Desk Enquiry
               </span>
             </div>
-            <h3 className="text-base font-bold mb-1" style={{ color: NAVY }}>
+            <h3 className="relative text-base font-bold mb-1" style={{ color: NAVY }}>
               Planning Your India Entry?
             </h3>
-            <p className="text-xs text-gray-500 mb-4">
+            <p className="relative text-xs text-gray-500 mb-4">
               Share a few details — our Japan desk responds within 24 hours.
             </p>
-            <Web3Form />
+            <div className="relative">
+              <Web3Form />
+            </div>
           </div>
         </aside>
       </div>
