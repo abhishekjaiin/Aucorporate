@@ -4,7 +4,7 @@ import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 export default function IndiaEntryForSingaporeCompanies() {
   return (
     <RegionClusterTemplate
-      title="India Entry for Singapore Companies"
+      title="Doing Business in India: The Complete Guide for Singapore Companies"
       subtitle="AU Corporate helps Singapore-based companies establish and scale their Indian operations, with expertise in India-Singapore DTAA planning, FEMA compliance, and GCC setup."
       region="Singapore"
       breadcrumbItems={[
@@ -53,6 +53,19 @@ export default function IndiaEntryForSingaporeCompanies() {
             <p className="text-gray-600 text-sm">Singapore is a common staging base for companies setting up a Global Capability Center in India — we support the entity, tax, and operational setup end to end. See our <Link href="/gcc-setup-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">complete GCC setup guide</Link>.</p>
           </div>
         </div>
+      </div>
+
+      <div className="mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">The Complete Incorporation Process</h2>
+        <p className="text-gray-700 mb-4">
+          Incorporation follows the standard Companies Act, 2013 process: Digital Signature Certificate and Director Identification Number for the proposed directors, name reservation, the integrated SPICe+ filing (which covers PAN, TAN, GSTIN, and EPFO/ESIC in one pass), and the Certificate of Incorporation. Since Singapore is a Hague Apostille Convention member, the Singapore parent&apos;s certificate of incorporation and board resolution need apostille certification rather than consular legalisation — generally faster than the legalisation route non-Hague-Convention jurisdictions face, though it&apos;s still the step most likely to pace the overall timeline rather than the Indian filing itself.
+        </p>
+        <p className="text-gray-700">
+          Automatic Route investments typically clear in 4-6 weeks; Government Route investments run 8-12 weeks. For the full step-by-step process, documents checklist, and reconciled cost/timeline breakdown, see our{' '}
+          <Link href="/india-business-setup/company-formation" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            complete company registration guide
+          </Link>.
+        </p>
       </div>
 
       <div className="mb-12 p-6 bg-gray-50 rounded-lg">

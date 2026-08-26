@@ -4,7 +4,7 @@ import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 export default function IndiaEntryForChinaCompanies() {
   return (
     <RegionClusterTemplate
-      title="India Entry for Chinese Companies"
+      title="Doing Business in India: The Complete Guide for Chinese Companies"
       subtitle="AU Corporate helps Chinese and China-linked companies navigate India's Press Note 3 approval framework, structure compliant FDI, and manage the beneficial ownership documentation that determines which route applies."
       region="China"
       breadcrumbItems={[
@@ -42,6 +42,19 @@ export default function IndiaEntryForChinaCompanies() {
             <p className="text-gray-600 text-sm">Press Note 3 looks through the full ownership chain, not just the direct investor — a global fund or holding company with Chinese beneficial ownership above the threshold can trigger approval requirements even if the investing entity itself isn't Chinese. This mapping exercise needs to happen before you file, not after.</p>
           </div>
         </div>
+      </div>
+
+      <div className="mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">The Complete Incorporation Process</h2>
+        <p className="text-gray-700 mb-4">
+          For a China-linked entry, Press Note 3 approval is a gate that sits ahead of the standard incorporation process, not something that runs alongside it — the beneficial-ownership mapping and government approval need to clear before the entity-level filing sequence starts, since incorporation documents typically need to reference an approved investment. Once past that gate, incorporation follows the same Companies Act, 2013 process as any entity: Digital Signature Certificate and Director Identification Number for the proposed directors, name reservation, the integrated SPICe+ filing, and the Certificate of Incorporation.
+        </p>
+        <p className="text-gray-700">
+          Because the approval step is the real pacing factor here, the standard 4-6/8-12 week Automatic vs. Government Route timelines don&apos;t directly apply — plan around the Press Note 3 approval timeline first, with entity incorporation itself typically adding a further few weeks once approval is in hand. For the general step-by-step incorporation process, documents checklist, and cost breakdown once approval clears, see our{' '}
+          <Link href="/india-business-setup/company-formation" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            complete company registration guide
+          </Link>.
+        </p>
       </div>
 
       <div className="mb-12 p-6 bg-gray-50 rounded-lg">

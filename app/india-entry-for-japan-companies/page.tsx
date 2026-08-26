@@ -4,7 +4,7 @@ import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 export default function IndiaEntryForJapanCompanies() {
   return (
     <RegionClusterTemplate
-      title="India Entry for Japanese Companies"
+      title="Doing Business in India: The Complete Guide for Japanese Companies"
       subtitle="AU Corporate helps Japanese companies establish and scale their Indian operations, with expertise in India-Japan DTAA planning, FEMA compliance, and manufacturing-sector entry structuring."
       region="Japan"
       breadcrumbItems={[
@@ -54,6 +54,19 @@ export default function IndiaEntryForJapanCompanies() {
             <p className="text-gray-600 text-sm">Form FC-GPR on share allotment, Form FC-TRS on any transfer, and the annual FLA return — the same core filings that apply to any foreign-owned Indian subsidiary, JV or wholly-owned.</p>
           </div>
         </div>
+      </div>
+
+      <div className="mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">The Complete Incorporation Process</h2>
+        <p className="text-gray-700 mb-4">
+          Whether structured as a wholly-owned subsidiary or a JV, incorporation follows the standard Companies Act, 2013 process: Digital Signature Certificate and Director Identification Number for the proposed directors, name reservation, the integrated SPICe+ filing, and the Certificate of Incorporation. Japan acceded to the Hague Apostille Convention in 2023, so Japanese parent-company documents now need apostille certification rather than the consular legalisation the process previously required — a meaningfully faster authentication step than before, though still typically the pacing factor over the Indian filing itself. A JV structure adds shareholders&apos; agreement negotiation with the local partner as a parallel workstream that can extend the pre-incorporation timeline beyond a straightforward wholly-owned entry.
+        </p>
+        <p className="text-gray-700">
+          Automatic Route investments typically clear in 4-6 weeks; Government Route investments run 8-12 weeks. For the full step-by-step process, documents checklist, and reconciled cost/timeline breakdown, see our{' '}
+          <Link href="/india-business-setup/company-formation" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            complete company registration guide
+          </Link>.
+        </p>
       </div>
 
       <div className="mb-12 p-6 bg-gray-50 rounded-lg">

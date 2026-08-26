@@ -4,7 +4,7 @@ import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 export default function IndiaEntryForGermanyCompanies() {
   return (
     <RegionClusterTemplate
-      title="India Entry for German Companies"
+      title="Doing Business in India: The Complete Guide for German Companies"
       subtitle="AU Corporate helps German companies establish and scale their Indian operations, drawing on direct experience managing outsourcing and Virtual CFO services for Indian subsidiaries of German corporate groups."
       region="Germany"
       breadcrumbItems={[
@@ -42,6 +42,19 @@ export default function IndiaEntryForGermanyCompanies() {
             <p className="text-gray-600 text-sm">AGM by September 30, AOC-4 and MGT-7 filings in the following weeks, Form 3CEB (transfer pricing) and the income tax return due by October/November — a compliance rhythm German finance teams need mapped against their own reporting calendar.</p>
           </div>
         </div>
+      </div>
+
+      <div className="mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">The Complete Incorporation Process</h2>
+        <p className="text-gray-700 mb-4">
+          Incorporation follows the standard Companies Act, 2013 process: Digital Signature Certificate and Director Identification Number for the proposed directors, name reservation, the integrated SPICe+ filing (PAN, TAN, GSTIN, and EPFO/ESIC in one pass), and the Certificate of Incorporation. As a Hague Apostille Convention member, Germany&apos;s parent-company documents — certificate of incorporation, board resolution, power of attorney — need apostille certification rather than consular legalisation; this authentication step, run through German notary and authentication authorities, is typically what paces the overall timeline more than the Indian filing itself.
+        </p>
+        <p className="text-gray-700">
+          Automatic Route investments typically clear in 4-6 weeks; Government Route investments run 8-12 weeks. For the full step-by-step process, documents checklist, and reconciled cost/timeline breakdown, see our{' '}
+          <Link href="/india-business-setup/company-formation" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            complete company registration guide
+          </Link>.
+        </p>
       </div>
 
       <div className="mb-12 p-6 bg-gray-50 rounded-lg">
