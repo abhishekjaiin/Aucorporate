@@ -87,7 +87,8 @@ const pages: Page[] = [
   { path: "/services/training-workshops", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-05-04" },
 
   // Blog Hub + Articles
-  { path: "/blog", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-05-04" },
+  { path: "/blog", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-08-26" },
+  { path: "/blog/india-japan-bis-exemption-high-tech-investment", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
   { path: "/blog/arbitration-enforcement-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/blog/construction-arbitration-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-08-24" },
   { path: "/blog/doing-business-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-05-04" },

@@ -5,6 +5,11 @@ import { Reveal } from "@/components/Reveal"
 
 const blogs = [
   {
+    title: "India Opens Another Door for Japanese High-Tech Investment",
+    desc: "Commerce Minister Piyush Goyal's proposed BIS certification exemption for high-tech manufacturers, announced in Tokyo on 25 August 2026 — and what it signals for Japanese semiconductor, electronics, and AI companies evaluating India.",
+    slug: "india-japan-bis-exemption-high-tech-investment",
+  },
+  {
     title: "India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained",
     desc: "Union Budget 2026 consolidated IT, ITeS, KPO and contract R&D into a single Safe Harbour category at 15.5% margin, with the eligibility threshold raised from Rs 300 crore to Rs 2,000 crore. What it means for your GCC.",
     slug: "india-safe-harbour-rules-2026",
