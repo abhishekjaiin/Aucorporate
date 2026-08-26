@@ -10,11 +10,12 @@ const JAPAN_RED = "#BC002D"
 const NAVY = "#081a42"
 const GOLD = "#facc15"
 
-function SectionHeading({ children }: { children: React.ReactNode }) {
+function SectionHeading({ children, icon }: { children: React.ReactNode; icon?: React.ReactNode }) {
   return (
     <h2 className="flex items-center gap-3 text-2xl font-semibold mt-12 mb-4" style={{ color: NAVY }}>
       <span aria-hidden="true" className="inline-block h-6 w-1.5 rounded-full bg-gradient-to-b from-[#BC002D] to-[#facc15]" />
       {children}
+      {icon}
     </h2>
   )
 }
@@ -50,6 +51,73 @@ function KanjiWatermark({ char, className = "" }: { char: string; className?: st
     >
       {char}
     </span>
+  )
+}
+
+/** Small crossed India/Japan flag pair — a recurring "partnership" motif. */
+function CrossedFlags({ size = 22 }: { size?: number }) {
+  return (
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 48 48" fill="none">
+      <g transform="rotate(-18 20 24)">
+        <rect x="10" y="12" width="20" height="13" rx="1" fill="#FF9933" />
+        <rect x="10" y="16.3" width="20" height="4.3" fill="#F5F5F5" />
+        <rect x="10" y="20.7" width="20" height="4.3" fill="#128807" />
+        <circle cx="20" cy="18.5" r="1.6" fill="none" stroke="#000088" strokeWidth="0.5" />
+        <rect x="9" y="12" width="1.5" height="26" fill="#8a8a8a" />
+      </g>
+      <g transform="rotate(18 34 24)">
+        <rect x="24" y="12" width="20" height="13" rx="1" fill="#F5F5F5" />
+        <circle cx="34" cy="18.5" r="4" fill="#BC002D" />
+        <rect x="23" y="12" width="1.5" height="26" fill="#8a8a8a" />
+      </g>
+    </svg>
+  )
+}
+
+/** Mount Fuji silhouette with a snow cap, used as a hero skyline element. */
+function MountFuji({ className = "" }: { className?: string }) {
+  return (
+    <svg aria-hidden="true" className={className} viewBox="0 0 300 100" fill="none" preserveAspectRatio="xMidYMax slice">
+      <path d="M0,100 L95,15 L120,38 L150,8 L180,38 L205,15 L300,100 Z" fill="white" />
+      <path d="M150,8 L163,21 L157,24 L150,17 L143,24 L137,21 Z" fill="white" opacity="0.6" />
+    </svg>
+  )
+}
+
+/** Simple pagoda silhouette, paired with the torii for a fuller skyline. */
+function Pagoda({ className = "" }: { className?: string }) {
+  return (
+    <svg aria-hidden="true" className={className} viewBox="0 0 60 90" fill="none" stroke="white" strokeWidth="2.5">
+      <line x1="30" y1="8" x2="30" y2="0" />
+      <polygon points="30,8 6,20 54,20" />
+      <rect x="14" y="20" width="32" height="14" />
+      <polygon points="30,26 4,40 56,40" />
+      <rect x="11" y="40" width="38" height="16" />
+      <polygon points="30,48 0,64 60,64" />
+      <rect x="8" y="64" width="44" height="20" />
+      <line x1="8" y1="88" x2="52" y2="88" />
+    </svg>
+  )
+}
+
+/** Richer, multi-tone sakura branch (pink/rose) — closer to the brand reference image. */
+function SakuraBranch({ className = "" }: { className?: string }) {
+  const petals = (cx: number, cy: number, scale: number, color: string) => (
+    <g transform={`translate(${cx} ${cy}) scale(${scale})`}>
+      {[0, 72, 144, 216, 288].map((deg) => (
+        <ellipse key={deg} cx="0" cy="-11" rx="7" ry="11" transform={`rotate(${deg})`} fill={color} />
+      ))}
+      <circle r="3" fill="#fde68a" />
+    </g>
+  )
+  return (
+    <svg aria-hidden="true" className={className} viewBox="0 0 140 140" fill="none">
+      <path d="M130,10 C100,25 70,55 50,90 C40,108 32,120 20,130" stroke="#f9a8c9" strokeWidth="2" fill="none" opacity="0.5" />
+      {petals(112, 22, 1, "#f472b6")}
+      {petals(80, 48, 0.7, "#fb7ba8")}
+      {petals(56, 78, 0.85, "#f472b6")}
+      {petals(30, 110, 0.6, "#fda4c0")}
+    </svg>
   )
 }
 
@@ -108,7 +176,11 @@ export default function BlogPost() {
             background: `repeating-conic-gradient(from 0deg at 82% 22%, white 0deg 2deg, transparent 2deg 12deg)`,
           }}
         />
-        {/* sakura petal accents */}
+        {/* Mount Fuji skyline, spanning the base of the hero */}
+        <MountFuji className="absolute bottom-6 left-0 h-24 w-full opacity-[0.07]" />
+        {/* pagoda + torii skyline, right side */}
+        <Pagoda className="absolute right-44 bottom-6 h-14 w-auto opacity-15 hidden md:block" />
+        {/* sakura petal accents — gold (brand) + rose (reference-image) tones */}
         <svg aria-hidden="true" className="absolute left-6 bottom-10 h-24 w-24 opacity-20 sm:left-16" viewBox="0 0 100 100" fill="none">
           <g fill={GOLD}>
             <ellipse cx="50" cy="30" rx="10" ry="16" />
@@ -118,6 +190,7 @@ export default function BlogPost() {
             <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(288 50 30)" />
           </g>
         </svg>
+        <SakuraBranch className="absolute -right-4 -top-4 h-40 w-40 opacity-40 hidden sm:block" />
         {/* torii gate silhouette */}
         <svg aria-hidden="true" className="absolute right-8 bottom-6 h-20 w-20 opacity-15 hidden sm:block" viewBox="0 0 100 100" fill="none" stroke="white" strokeWidth="3">
           <line x1="10" y1="30" x2="90" y2="30" />
@@ -151,7 +224,7 @@ export default function BlogPost() {
             className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white"
             style={{ backgroundColor: "rgba(255,255,255,0.1)", border: `1px solid ${JAPAN_RED}` }}
           >
-            <span style={{ color: JAPAN_RED }}>●</span> India &ndash; Japan Business Relations
+            <CrossedFlags size={18} /> India &ndash; Japan Business Relations
           </span>
 
           <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight max-w-3xl">
@@ -235,7 +308,7 @@ export default function BlogPost() {
             The proposed framework seeks to address this by creating a mechanism through which qualifying high-tech companies may receive exemptions for equipment and components brought into India for manufacturing. The Government has indicated the objective is to ensure timely availability of products, goods, and services required by high-tech companies establishing manufacturing operations in India — particularly relevant to Japanese businesses given Japan&apos;s considerable expertise in precisely the sectors India is trying to develop.
           </p>
 
-          <SectionHeading>India and Japan: A Technology Partnership Entering a New Phase</SectionHeading>
+          <SectionHeading icon={<CrossedFlags size={20} />}>India and Japan: A Technology Partnership Entering a New Phase</SectionHeading>
           <p className="mb-6">
             India and Japan already have a deep economic relationship. Japanese companies have played an important role in India&apos;s automotive, electronics, infrastructure, financial services, engineering, and manufacturing sectors. Japan is among India&apos;s major sources of foreign direct investment, with cumulative Japanese FDI in India reaching approximately US$48.14 billion through March 2026.
           </p>
@@ -258,6 +331,23 @@ export default function BlogPost() {
           <p className="mb-6">
             India&apos;s opportunity for Japanese companies is no longer limited to establishing a conventional manufacturing plant. Several new opportunities are emerging simultaneously.
           </p>
+
+          {/* At a glance — icon strip */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 my-8 rounded-xl p-5" style={{ backgroundColor: "#fffbeb", border: "1px solid #fde68a" }}>
+            {[
+              { icon: Factory, label: "Manufacturing & Supply-Chain Base" },
+              { icon: Cpu, label: "Semiconductor & Electronics Ecosystem" },
+              { icon: Sparkles, label: "AI & Technology Development" },
+              { icon: Handshake, label: "R&D, GCC & Engineering Hub" },
+            ].map(({ icon: Icon, label }) => (
+              <div key={label} className="flex flex-col items-center text-center gap-2">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full" style={{ backgroundColor: GOLD }}>
+                  <Icon size={20} className="text-[#081a42]" />
+                </span>
+                <span className="text-xs font-semibold" style={{ color: NAVY }}>{label}</span>
+              </div>
+            ))}
+          </div>
 
           <div className="relative grid sm:grid-cols-2 gap-5 my-8">
             <svg aria-hidden="true" className="pointer-events-none absolute -right-6 -top-10 h-28 w-28 opacity-[0.06] hidden lg:block" viewBox="0 0 100 100" fill="none">
@@ -323,13 +413,23 @@ export default function BlogPost() {
           <p className="mb-6">
             Our objective is to help international businesses convert an India investment opportunity into a properly structured and operational business. For Japanese enterprises, we support the India journey across multiple stages:
           </p>
-          <ul className="space-y-2 text-sm text-gray-700 mb-6 list-disc list-inside">
-            <li><strong>India entry strategy</strong> — evaluating entity structures, FDI/FEMA considerations, and location decisions</li>
-            <li><strong>Tax and regulatory advisory</strong> — corporate tax, transfer pricing, GST, withholding tax, and FEMA compliance</li>
-            <li><strong>Business establishment</strong> — incorporation, accounting systems, finance-function setup, and payroll compliance</li>
-            <li><strong>Manufacturing and investment projects</strong> — tax incentives, SEZ, Export Oriented Unit (EoU), and MOOWR frameworks depending on the business model</li>
-            <li><strong>Ongoing operations</strong> — tax and GST compliance, transfer pricing, accounting, audit support, and regulatory compliance</li>
-          </ul>
+          <div
+            className="relative overflow-hidden rounded-xl p-6 my-2"
+            style={{ background: `linear-gradient(135deg, ${NAVY} 0%, #0d2a5c 100%)` }}
+          >
+            <Handshake aria-hidden="true" size={80} className="absolute -right-4 -bottom-4 opacity-10 text-white" />
+            <div className="relative flex items-center gap-2 mb-4">
+              <Handshake size={18} style={{ color: GOLD }} />
+              <span className="text-xs font-bold uppercase tracking-wider" style={{ color: GOLD }}>How AU Corporate Can Help</span>
+            </div>
+            <ul className="relative space-y-2 text-sm text-white/85 mb-0 list-disc list-inside">
+              <li><strong className="text-white">India entry strategy</strong> — evaluating entity structures, FDI/FEMA considerations, and location decisions</li>
+              <li><strong className="text-white">Tax and regulatory advisory</strong> — corporate tax, transfer pricing, GST, withholding tax, and FEMA compliance</li>
+              <li><strong className="text-white">Business establishment</strong> — incorporation, accounting systems, finance-function setup, and payroll compliance</li>
+              <li><strong className="text-white">Manufacturing and investment projects</strong> — tax incentives, SEZ, Export Oriented Unit (EoU), and MOOWR frameworks depending on the business model</li>
+              <li><strong className="text-white">Ongoing operations</strong> — tax and GST compliance, transfer pricing, accounting, audit support, and regulatory compliance</li>
+            </ul>
+          </div>
 
           <SectionHeading>The Opportunity Is Bigger Than the BIS Exemption</SectionHeading>
           <p className="mb-6">
