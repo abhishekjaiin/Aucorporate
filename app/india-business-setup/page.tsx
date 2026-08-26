@@ -156,10 +156,10 @@ export default function IndiaBusinessSetupHub() {
                 description: 'Ongoing compliance, annual audits, and quarterly reviews included',
               },
             ].map((benefit, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg">
+              <Link key={index} href={benefit.href || '/contact#inquiry-form'} className="block bg-white p-6 rounded-lg hover:shadow-lg transition">
                 <h3 className="font-semibold text-lg text-gray-900 mb-3">{benefit.title}</h3>
                 <p className="text-gray-600">{benefit.description}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -90,14 +90,14 @@ export function RegionClusterTemplate({
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {processSteps.map((step, index) => (
               <div key={step} className="relative">
-                <div className="bg-white border-2 border-yellow-400 rounded-lg p-4 text-center h-full flex flex-col justify-center">
+                <Link href="/contact#inquiry-form" className="block bg-white border-2 border-yellow-400 rounded-lg p-4 text-center h-full flex flex-col justify-center hover:shadow-lg hover:bg-yellow-50 transition">
                   <div className="text-3xl font-bold text-yellow-500 mb-2">
                     {index + 1}
                   </div>
                   <p className="text-sm font-semibold text-gray-700">
                     {step}
                   </p>
-                </div>
+                </Link>
                 {index < processSteps.length - 1 && (
                   <div className="hidden lg:flex absolute -right-2 top-1/2 transform -translate-y-1/2 z-10">
                     <ArrowRight className="w-6 h-6 text-yellow-400" />

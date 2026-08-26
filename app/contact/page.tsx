@@ -1,4 +1,4 @@
-import { Web3Form } from "@/components/Web3Form"
+import { InquiryForm } from "@/components/InquiryForm"
 import {
   Mail,
   MapPin,
@@ -87,8 +87,8 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
 
           {/* FORM */}
-          <div>
-            <Web3Form />
+          <div id="inquiry-form" className="scroll-mt-24">
+            <InquiryForm />
           </div>
 
           {/* OFFICES */}

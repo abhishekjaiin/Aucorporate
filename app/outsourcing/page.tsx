@@ -186,14 +186,15 @@ export default function OutsourcingPage() {
                 desc: "Automation-first approach using modern tools.",
               },
             ].map((item, i) => (
-              <Reveal
-                key={item.title}
-                delay={i * 0.2}
-                className="p-6 border rounded-xl"
-              >
-                <h3 className="font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
-              </Reveal>
+              <Link key={item.title} href="/contact#inquiry-form" className="block">
+                <Reveal
+                  delay={i * 0.2}
+                  className="p-6 border rounded-xl hover:shadow-lg hover:border-gold/50 transition"
+                >
+                  <h3 className="font-semibold mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+                </Reveal>
+              </Link>
             ))}
 
           </div>
@@ -205,16 +206,17 @@ export default function OutsourcingPage() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
 
           {benefits.map((b, i) => (
-            <Reveal
-              key={b.title}
-              delay={i * 0.1}
-              className="p-6 bg-white border rounded-xl text-center"
-            >
-              <b.icon className="text-gold mx-auto mb-3" />
-              <div className="text-2xl font-bold text-gold">{b.value}</div>
-              <div>{b.title}</div>
-              <p className="text-xs text-muted-foreground">{b.description}</p>
-            </Reveal>
+            <Link key={b.title} href="/contact#inquiry-form" className="block">
+              <Reveal
+                delay={i * 0.1}
+                className="p-6 bg-white border rounded-xl text-center hover:shadow-lg hover:border-gold/50 transition"
+              >
+                <b.icon className="text-gold mx-auto mb-3" />
+                <div className="text-2xl font-bold text-gold">{b.value}</div>
+                <div>{b.title}</div>
+                <p className="text-xs text-muted-foreground">{b.description}</p>
+              </Reveal>
+            </Link>
           ))}
 
         </div>
@@ -256,28 +258,29 @@ export default function OutsourcingPage() {
           <div className="grid md:grid-cols-2 gap-8">
 
             {services.map((s, i) => (
-              <Reveal
-                key={s.title}
-                delay={i * 0.1}
-                className="p-8 border rounded-xl bg-secondary"
-              >
-                <s.icon className="text-gold mb-4" />
+              <Link key={s.title} href="/contact#inquiry-form" className="block">
+                <Reveal
+                  delay={i * 0.1}
+                  className="p-8 border rounded-xl bg-secondary hover:shadow-lg hover:border-gold/50 transition"
+                >
+                  <s.icon className="text-gold mb-4" />
 
-                <h3 className="text-xl font-semibold">{s.title}</h3>
+                  <h3 className="text-xl font-semibold">{s.title}</h3>
 
-                <p className="text-sm text-muted-foreground mb-4">
-                  {s.description}
-                </p>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {s.description}
+                  </p>
 
-                <ul className="space-y-2 text-sm">
-                  {s.features.map(f => (
-                    <li key={f} className="flex gap-2">
-                      <CheckCircle2 className="text-gold w-4 h-4 mt-1" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-              </Reveal>
+                  <ul className="space-y-2 text-sm">
+                    {s.features.map(f => (
+                      <li key={f} className="flex gap-2">
+                        <CheckCircle2 className="text-gold w-4 h-4 mt-1" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                </Reveal>
+              </Link>
             ))}
 
           </div>
@@ -300,16 +303,17 @@ export default function OutsourcingPage() {
         "Execution & Processing",
         "Monitoring & Optimization",
       ].map((step, i) => (
-        <Reveal
-          key={step}
-          delay={i * 0.2}
-          className="p-8 bg-white border rounded-xl"
-        >
-          <div className="text-gold font-bold text-xl mb-2">
-            0{i + 1}
-          </div>
-          <p>{step}</p>
-        </Reveal>
+        <Link key={step} href="/contact#inquiry-form" className="block">
+          <Reveal
+            delay={i * 0.2}
+            className="p-8 bg-white border rounded-xl hover:shadow-lg hover:border-gold/50 transition"
+          >
+            <div className="text-gold font-bold text-xl mb-2">
+              0{i + 1}
+            </div>
+            <p>{step}</p>
+          </Reveal>
+        </Link>
       ))}
 
     </div>
@@ -331,15 +335,16 @@ export default function OutsourcingPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
 
             {software.map((s, i) => (
-              <Reveal
-                key={s.name}
-                delay={(i % 6) * 0.08}
-                className="p-4 bg-gray-50 border rounded-xl flex items-center justify-center hover:shadow-md transition"
-              >
-                <span className="font-semibold text-gray-700 text-sm sm:text-base text-center">
-                  {s.name}
-                </span>
-              </Reveal>
+              <Link key={s.name} href="/contact#inquiry-form" className="block">
+                <Reveal
+                  delay={(i % 6) * 0.08}
+                  className="p-4 bg-gray-50 border rounded-xl flex items-center justify-center hover:shadow-md hover:border-gold/50 transition"
+                >
+                  <span className="font-semibold text-gray-700 text-sm sm:text-base text-center">
+                    {s.name}
+                  </span>
+                </Reveal>
+              </Link>
             ))}
 
           </div>
@@ -358,10 +363,10 @@ export default function OutsourcingPage() {
           <div className="grid md:grid-cols-5 gap-4 text-center">
 
             {industries.map(i => (
-              <div key={i} className="p-4 bg-white border rounded-lg">
+              <Link key={i} href="/contact#inquiry-form" className="block p-4 bg-white border rounded-lg hover:shadow-md hover:border-gold/50 transition">
                 <Globe className="mx-auto text-gold mb-2" />
                 {i}
-              </div>
+              </Link>
             ))}
 
           </div>
@@ -385,16 +390,17 @@ export default function OutsourcingPage() {
         { value: "3x", label: "Efficiency Increase" },
         { value: "99%", label: "Accuracy" },
       ].map((item, i) => (
-        <Reveal
-          key={item.label}
-          delay={i * 0.2}
-          className="p-8 border rounded-xl"
-        >
-          <div className="text-3xl font-bold text-gold mb-2">
-            {item.value}
-          </div>
-          <p>{item.label}</p>
-        </Reveal>
+        <Link key={item.label} href="/contact#inquiry-form" className="block">
+          <Reveal
+            delay={i * 0.2}
+            className="p-8 border rounded-xl hover:shadow-lg hover:border-gold/50 transition"
+          >
+            <div className="text-3xl font-bold text-gold mb-2">
+              {item.value}
+            </div>
+            <p>{item.label}</p>
+          </Reveal>
+        </Link>
       ))}
 
     </div>

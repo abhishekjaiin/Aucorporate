@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { InquiryForm } from '@/components/InquiryForm'
 import { HeroBackground } from '@/components/HeroBackground'
 import {
@@ -108,9 +109,10 @@ export default function CareerPage() {
 
           <div className="space-y-4 max-w-3xl mx-auto">
             {jobListings.map((job) => (
-              <div
+              <Link
                 key={job.id}
-                className="p-6 rounded-xl border hover:shadow-lg transition"
+                href="#inquiry-form"
+                className="block p-6 rounded-xl border hover:shadow-lg hover:border-gold/50 transition"
               >
                 <div className="flex flex-wrap items-start justify-between gap-4">
                   <div>
@@ -129,7 +131,7 @@ export default function CareerPage() {
                 <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
                   {job.description}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -146,14 +148,15 @@ export default function CareerPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {cultureValues.map((value) => (
-              <div
+              <Link
                 key={value.title}
-                className="p-6 rounded-xl bg-white border hover:shadow-lg text-center"
+                href="#inquiry-form"
+                className="block p-6 rounded-xl bg-white border hover:shadow-lg hover:border-gold/50 text-center transition"
               >
                 <value.icon className="h-7 w-7 text-gold mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">{value.title}</h3>
                 <p className="text-sm text-muted-foreground">{value.description}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -178,13 +181,15 @@ export default function CareerPage() {
             </div>
           </div>
 
-          <InquiryForm
-            eyebrow="Apply Now"
-            title="Tell Us About Yourself"
-            description="Share your resume and the role you're interested in, and our team will get back to you."
-            checklist={['Article Trainee — Articleship program', 'Open to other roles? Mention it in your message', 'We review every application']}
-            footerNote={<>Mention the position you&apos;re applying for in your message.</>}
-          />
+          <div id="inquiry-form" className="scroll-mt-24">
+            <InquiryForm
+              eyebrow="Apply Now"
+              title="Tell Us About Yourself"
+              description="Share your resume and the role you're interested in, and our team will get back to you."
+              checklist={['Article Trainee — Articleship program', 'Open to other roles? Mention it in your message', 'We review every application']}
+              footerNote={<>Mention the position you&apos;re applying for in your message.</>}
+            />
+          </div>
         </div>
       </section>
 

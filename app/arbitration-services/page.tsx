@@ -260,9 +260,9 @@ export default function ArbitrationServicesPage() {
               "MSMEs",
               "Growing Businesses",
             ].map((item) => (
-              <div key={item} className="p-4 border rounded-lg">
+              <Link key={item} href="/contact#inquiry-form" className="block p-4 border rounded-lg hover:shadow-md hover:border-yellow-400 transition">
                 {item}
-              </div>
+              </Link>
             ))}
 
           </div>
@@ -296,10 +296,10 @@ export default function ArbitrationServicesPage() {
           a: "Yes. We assist clients in assessing financial losses, lost profits, damages and claim calculations using documented financial evidence.",
         },
       ].map((faq) => (
-        <div key={faq.q} className="border rounded-xl p-6">
+        <Link key={faq.q} href="/contact#inquiry-form" className="block border rounded-xl p-6 hover:shadow-lg hover:border-yellow-400 transition">
           <h3 className="font-semibold text-lg mb-2">{faq.q}</h3>
           <p className="text-gray-600">{faq.a}</p>
-        </div>
+        </Link>
       ))}
     </div>
   </div>

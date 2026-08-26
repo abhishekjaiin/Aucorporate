@@ -111,19 +111,20 @@ export default function AboutHero() {
               text: "Integrity, independence, confidentiality, and expert-driven execution define our approach."
             }
           ].map((item, i) => (
-            <Reveal
-              key={i}
-              delay={i * 0.1}
-              className="p-5 sm:p-8 border rounded-xl hover:shadow-xl bg-white"
-            >
-              <item.icon className="text-gold mb-3" />
-              <h3 className="font-bold text-base sm:text-lg mb-2">
-                {item.title}
-              </h3>
-              <p className="text-gray-500 text-sm">
-                {item.text}
-              </p>
-            </Reveal>
+            <Link key={i} href="/contact#inquiry-form" className="block">
+              <Reveal
+                delay={i * 0.1}
+                className="p-5 sm:p-8 border rounded-xl hover:shadow-xl hover:border-gold/50 bg-white transition"
+              >
+                <item.icon className="text-gold mb-3" />
+                <h3 className="font-bold text-base sm:text-lg mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-500 text-sm">
+                  {item.text}
+                </p>
+              </Reveal>
+            </Link>
           ))}
 
         </div>
@@ -138,27 +139,28 @@ export default function AboutHero() {
         <div className="mx-auto max-w-7xl px-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-6">
 
           {[
-            { icon: Building, title: "India Entry" },
-            { icon: Globe, title: "GCC Advisory" },
-            { icon: Building, title: "Business Setup" },
-            { icon: Users, title: "Accounting" },
-            { icon: Users, title: "Payroll" },
-            { icon: Award, title: "Tax" },
-            { icon: Award, title: "Transfer Pricing" },
-            { icon: Award, title: "Virtual CFO" },
-            { icon: Users, title: "HR Outsourcing" },
-            { icon: Award, title: "Compliance" },
+            { icon: Building, title: "India Entry", href: "/doing-business-in-india" },
+            { icon: Globe, title: "GCC Advisory", href: "/gcc-setup-india" },
+            { icon: Building, title: "Business Setup", href: "/india-business-setup" },
+            { icon: Users, title: "Accounting", href: "/services/accounting-assurance" },
+            { icon: Users, title: "Payroll", href: "/hr-services" },
+            { icon: Award, title: "Tax", href: "/services/taxation-regulatory" },
+            { icon: Award, title: "Transfer Pricing", href: "/services/taxation-regulatory" },
+            { icon: Award, title: "Virtual CFO", href: "/outsourcing" },
+            { icon: Users, title: "HR Outsourcing", href: "/hr-services" },
+            { icon: Award, title: "Compliance", href: "/india-business-setup/regulatory-compliance" },
           ].map((item, i) => (
-            <Reveal
-              key={i}
-              delay={(i % 5) * 0.06}
-              className="p-4 sm:p-6 bg-white rounded-xl border text-center hover:shadow-lg"
-            >
-              <item.icon className="text-gold mx-auto mb-2 sm:mb-3" />
-              <p className="font-medium text-sm sm:text-base">
-                {item.title}
-              </p>
-            </Reveal>
+            <Link key={i} href={item.href} className="block">
+              <Reveal
+                delay={(i % 5) * 0.06}
+                className="p-4 sm:p-6 bg-white rounded-xl border text-center hover:shadow-lg hover:border-gold/50 transition"
+              >
+                <item.icon className="text-gold mx-auto mb-2 sm:mb-3" />
+                <p className="font-medium text-sm sm:text-base">
+                  {item.title}
+                </p>
+              </Reveal>
+            </Link>
           ))}
 
         </div>

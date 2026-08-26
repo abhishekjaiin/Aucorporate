@@ -94,10 +94,12 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <InquiryForm
-            title="Discuss Your Business Requirement"
-            description="Tell us what support you need and our team will help you identify the right service and next step."
-          />
+          <div id="inquiry-form" className="scroll-mt-24">
+            <InquiryForm
+              title="Discuss Your Business Requirement"
+              description="Tell us what support you need and our team will help you identify the right service and next step."
+            />
+          </div>
         </div>
       </section>
 
@@ -141,12 +143,12 @@ export default function ServicesPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {industries.map((industry) => (
-              <div key={industry.name} className="p-6 rounded-xl bg-secondary border border-border text-center hover:border-gold/50 transition-all duration-300">
+              <Link key={industry.name} href="#inquiry-form" className="block p-6 rounded-xl bg-secondary border border-border text-center hover:border-gold/50 hover:shadow-lg transition-all duration-300">
                 <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mx-auto mb-4">
                   <industry.icon className="h-7 w-7 text-gold" />
                 </div>
                 <h3 className="font-medium text-foreground">{industry.name}</h3>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

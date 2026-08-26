@@ -188,10 +188,10 @@ export default function GCCSetupIndiaPage() {
           <h3 className="text-xl font-semibold text-gray-900 mb-6">Your Options</h3>
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {entityOptions.map((item) => (
-              <div key={item.title} className="bg-white p-6 rounded-xl border">
+              <Link key={item.title} href="#inquiry-form" className="block bg-white p-6 rounded-xl border hover:shadow-lg hover:border-gold/50 transition">
                 <h4 className="font-bold text-gray-900 mb-2">{item.title}</h4>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
-              </div>
+              </Link>
             ))}
           </div>
 
@@ -276,10 +276,10 @@ export default function GCCSetupIndiaPage() {
           </p>
           <div className="space-y-6 mb-8">
             {femaFilings.map((item) => (
-              <div key={item.title} className="p-6 border border-gray-200 rounded-lg bg-secondary/30">
+              <Link key={item.title} href="#inquiry-form" className="block p-6 border border-gray-200 rounded-lg bg-secondary/30 hover:shadow-lg hover:border-gold/50 transition">
                 <h3 className="font-bold text-lg mb-2">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{item.body}</p>
-              </div>
+              </Link>
             ))}
           </div>
           <p className="text-gray-600 leading-relaxed">
@@ -327,10 +327,10 @@ export default function GCCSetupIndiaPage() {
           </p>
           <div className="space-y-3 mb-8">
             {complianceCalendar.map((row) => (
-              <div key={row.when} className="flex flex-col sm:flex-row gap-2 sm:gap-6 p-4 border rounded-lg">
+              <Link key={row.when} href="#inquiry-form" className="flex flex-col sm:flex-row gap-2 sm:gap-6 p-4 border rounded-lg hover:shadow-md hover:border-gold/50 transition">
                 <div className="font-bold text-gold min-w-[220px] text-sm">{row.when}</div>
                 <div className="text-gray-600 text-sm leading-relaxed">{row.items}</div>
-              </div>
+              </Link>
             ))}
           </div>
           <p className="text-gray-600 leading-relaxed mb-6">
@@ -351,10 +351,10 @@ export default function GCCSetupIndiaPage() {
           </p>
           <div className="grid sm:grid-cols-2 gap-4 mb-6">
             {costCategories.map((item) => (
-              <div key={item.title} className="bg-white p-5 rounded-lg border">
+              <Link key={item.title} href="#inquiry-form" className="block bg-white p-5 rounded-lg border hover:shadow-lg hover:border-gold/50 transition">
                 <h3 className="font-bold text-gray-900 mb-2 text-sm">{item.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{item.body}</p>
-              </div>
+              </Link>
             ))}
           </div>
           <p className="text-gray-600 leading-relaxed">
@@ -371,14 +371,14 @@ export default function GCCSetupIndiaPage() {
             Timeline is best understood in two distinct phases, which is a distinction a lot of &ldquo;a few months&rdquo; competitor claims gloss over.
           </p>
           <div className="grid sm:grid-cols-2 gap-4 mb-6">
-            <div className="p-5 border rounded-lg bg-secondary/30">
+            <Link href="#inquiry-form" className="block p-5 border rounded-lg bg-secondary/30 hover:shadow-lg hover:border-gold/50 transition">
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Legal entity registration</h3>
               <p className="text-gray-600 text-sm leading-relaxed">From name reservation through incorporation, initial FDI inflow, and FC-GPR filing — the faster phase, largely a function of document readiness and how quickly the parent can complete its own KYC and remittance steps.</p>
-            </div>
-            <div className="p-5 border rounded-lg bg-secondary/30">
+            </Link>
+            <Link href="#inquiry-form" className="block p-5 border rounded-lg bg-secondary/30 hover:shadow-lg hover:border-gold/50 transition">
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Full operational readiness</h3>
               <p className="text-gray-600 text-sm leading-relaxed">Office fit-out, IT and security infrastructure, initial hiring, statutory registrations completing — takes considerably longer and depends heavily on city, function, and headcount ramp ambitions.</p>
-            </div>
+            </Link>
           </div>
           <p className="text-gray-600 leading-relaxed">
             We&apos;re deliberately not putting a single number on either phase here, since realistic ranges depend on specifics that vary too much to generalize responsibly — a dedicated timeline guide with phase-by-phase ranges is planned as a follow-up resource. In the meantime, our <Link href="/india-business-setup/timeline-resources" className="text-gold font-semibold hover:underline">general incorporation timeline and budgeting</Link> guide covers the non-GCC-specific baseline these phases build on.
@@ -400,7 +400,7 @@ export default function GCCSetupIndiaPage() {
       </section>
 
       {/* LEAD FORM */}
-      <section className="py-16 bg-white">
+      <section id="inquiry-form" className="py-16 bg-white scroll-mt-24">
         <div className="max-w-5xl mx-auto px-4">
           <LeadForm title="Planning a GCC in India?" description="Tell us about your entity structure and headcount plans, and our regulatory compliance team will get in touch." />
         </div>

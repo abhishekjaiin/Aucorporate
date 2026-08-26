@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import HeroSection from "@/components/HeroSection"
 import { FaqAccordion } from "@/components/FaqAccordion"
-import { Web3Form } from "@/components/Web3Form"
+import { InquiryForm } from "@/components/InquiryForm"
 
 import {
   Calculator,
@@ -282,10 +282,10 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center items-stretch gap-4">
             {lifecycle.map((l, i) => (
               <div key={l.title} className="flex items-center gap-4">
-                <div className="w-32 p-4 rounded-xl border border-gray-200">
+                <Link href="#inquiry-form" className="w-32 p-4 rounded-xl border border-gray-200 block hover:shadow-md hover:border-yellow-300 transition">
                   <div className="font-bold mb-1" style={{ color: ROYAL_BLUE, fontFamily: "var(--font-heading)" }}>{l.title}</div>
                   <div className="text-xs text-gray-500">{l.description}</div>
-                </div>
+                </Link>
                 {i < lifecycle.length - 1 && (
                   <ArrowRight className="hidden sm:block shrink-0" size={18} style={{ color: GOLD }} />
                 )}
@@ -340,10 +340,10 @@ export default function HomePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {structures.map((s) => (
-              <div key={s.title} className="p-6 border rounded-xl hover:shadow-lg hover:border-yellow-300 transition-all duration-300">
+              <Link key={s.title} href="#inquiry-form" className="block p-6 border rounded-xl hover:shadow-lg hover:border-yellow-300 transition-all duration-300">
                 <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>{s.title}</h3>
                 <p className="text-sm text-gray-500">{s.description}</p>
-              </div>
+              </Link>
             ))}
           </div>
 
@@ -413,13 +413,13 @@ export default function HomePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {pillars.map((p) => (
-              <div key={p.title} className="p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <Link key={p.title} href="#inquiry-form" className="block p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
                   <p.icon size={20} style={{ color: ROYAL_BLUE }} />
                 </div>
                 <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>{p.title}</h3>
                 <p className="text-sm text-gray-500">{p.description}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -476,23 +476,23 @@ export default function HomePage() {
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-10 text-left">
-            <div className="p-6 bg-white/10 border border-white/20 rounded-xl backdrop-blur-md">
+            <Link href="/india-business-setup" className="block p-6 bg-white/10 border border-white/20 rounded-xl backdrop-blur-md hover:bg-white/20 transition">
               <h3 className="font-semibold mb-2" style={{ color: GOLD, fontFamily: "var(--font-heading)" }}>
                 India Business Setup
               </h3>
               <p className="text-white/70 text-sm">
                 End-to-end assistance for company formation, regulatory approvals, and setup in India.
               </p>
-            </div>
+            </Link>
 
-            <div className="p-6 bg-white/10 border border-white/20 rounded-xl backdrop-blur-md">
+            <Link href="/doing-business-in-india" className="block p-6 bg-white/10 border border-white/20 rounded-xl backdrop-blur-md hover:bg-white/20 transition">
               <h3 className="font-semibold mb-2" style={{ color: GOLD, fontFamily: "var(--font-heading)" }}>
                 Market Entry
               </h3>
               <p className="text-white/70 text-sm">
                 Strategic advisory for entering Indian markets, ensuring compliance, tax efficiency, and sustainable growth.
               </p>
-            </div>
+            </Link>
           </div>
 
           <div className="mb-10">
@@ -636,16 +636,12 @@ export default function HomePage() {
       </section>
 
       {/* ================= INQUIRY FORM ================= */}
-      <section className="py-20 bg-gray-50">
+      <section id="inquiry-form" className="py-20 bg-gray-50 scroll-mt-24">
         <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
-            Tell Us What You Need Help With
-          </h2>
-          <p className="text-gray-600 text-center mb-10">
-            Share a few details and our team will get back to you within 24 hours.
-          </p>
-
-          <Web3Form />
+          <InquiryForm
+            title="Tell Us What You Need Help With"
+            description="Share a few details and our team will get back to you within 24 hours."
+          />
         </div>
       </section>
 
