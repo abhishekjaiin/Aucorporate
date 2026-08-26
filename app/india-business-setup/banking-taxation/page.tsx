@@ -74,8 +74,8 @@ export default function BankingTaxationPage() {
           <h2 className="text-2xl font-bold mb-8">Continue Your Setup</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <Link href="/doing-business-in-india/post-incorporation" className="p-6 border rounded-lg hover:shadow-md transition">
-              <h3 className="font-semibold mb-2">Post-Incorporation</h3>
-              <p className="text-sm text-gray-600">Ongoing compliance and operational requirements</p>
+              <h3 className="font-semibold mb-2">Life After Incorporation</h3>
+              <p className="text-sm text-gray-600">Strategic priorities as you scale — finance function, governance, and second-year mistakes</p>
             </Link>
             <Link href="/contact" className="p-6 border rounded-lg hover:shadow-md transition">
               <h3 className="font-semibold mb-2">Financial Consultation</h3>

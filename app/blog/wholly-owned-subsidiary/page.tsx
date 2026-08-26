@@ -255,8 +255,8 @@ export default function BlogPage() {
     
       <RelatedResources
         links={[
-          { label: "Company Formation in India", href: "/india-business-setup/company-formation", description: "Entity types and the incorporation process." },
-          { label: "Company Incorporation", href: "/doing-business-in-india/incorporation", description: "Step-by-step incorporation guidance." },
+          { label: "Complete Company Registration Guide", href: "/india-business-setup/company-formation", description: "Entity types, the SPICe+ process, documents, and realistic timelines." },
+          { label: "Should You Incorporate Now?", href: "/doing-business-in-india/incorporation", description: "A strategic decision guide — timing, and incorporation vs. other routes to market." },
         ]}
       />
 

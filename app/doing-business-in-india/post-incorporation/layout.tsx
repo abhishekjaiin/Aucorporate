@@ -2,23 +2,23 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Post-Incorporation Compliance in India | AU Corporate",
+    absolute: "Life After Incorporation: Strategic Priorities as You Scale in India",
   },
   description:
-    "Ongoing compliance obligations after incorporating in India — accounting, tax filings, FEMA returns, and statutory requirements.",
+    "The strategic decisions that follow incorporating in India — building vs. outsourcing your finance function, governance as you scale, and common second-year mistakes.",
   alternates: {
     canonical: "https://www.theaucorp.com/doing-business-in-india/post-incorporation",
   },
   openGraph: {
-    title: "Post-Incorporation Compliance in India | AU Corporate",
+    title: "Life After Incorporation: Strategic Priorities as You Scale in India",
     description:
-      "Ongoing compliance obligations after incorporating in India — accounting, tax filings, FEMA returns, and statutory requirements.",
+      "The strategic decisions that follow incorporating in India — building vs. outsourcing your finance function, governance as you scale, and common second-year mistakes.",
     url: "https://www.theaucorp.com/doing-business-in-india/post-incorporation",
   },
   twitter: {
-    title: "Post-Incorporation Compliance in India | AU Corporate",
+    title: "Life After Incorporation: Strategic Priorities as You Scale in India",
     description:
-      "Ongoing compliance obligations after incorporating in India — accounting, tax filings, FEMA returns, and statutory requirements.",
+      "The strategic decisions that follow incorporating in India — building vs. outsourcing your finance function, governance as you scale, and common second-year mistakes.",
   },
 }
 

@@ -42,8 +42,8 @@ export default function IndiaBusinessSetupHub() {
     },
     {
       step: 6,
-      title: 'Post-Incorporation',
-      description: 'Ongoing compliance and operational requirements',
+      title: 'Life After Incorporation',
+      description: 'Strategic priorities as you scale — finance function, governance, second-year mistakes',
       href: '/doing-business-in-india/post-incorporation',
       icon: CheckCircle,
     },

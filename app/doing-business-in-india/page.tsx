@@ -28,24 +28,24 @@ const cluster = [
   },
   {
     step: "03",
-    title: "Market Entry Process",
+    title: "Market Entry Strategy",
     href: "/doing-business-in-india/entry-process",
     icon: Route,
-    desc: "A step-by-step walkthrough of the India market entry process, from entity selection through incorporation and initial compliance.",
+    desc: "How to think through the India market entry decision — timeline expectations, risk factors, and the strategic tradeoffs between entity types before you commit.",
   },
   {
     step: "04",
-    title: "Company Incorporation",
+    title: "Should You Incorporate Now?",
     href: "/doing-business-in-india/incorporation",
     icon: Building2,
-    desc: "How company incorporation works in India under the Companies Act, 2013 — documentation, filings, and typical timelines.",
+    desc: "The business case for incorporating in India versus other routes to market — when it makes sense, common timing mistakes, and what changes once you're committed.",
   },
   {
     step: "05",
-    title: "Post-Incorporation Compliance",
+    title: "Life After Incorporation",
     href: "/doing-business-in-india/post-incorporation",
     icon: ShieldCheck,
-    desc: "Ongoing compliance obligations after incorporating in India — accounting, tax filings, FEMA returns, and statutory requirements.",
+    desc: "The strategic decisions that follow incorporation — building vs. outsourcing your finance function, governance as you scale, and common second-year mistakes.",
   },
 ]
 
@@ -79,9 +79,17 @@ export default function DoingBusinessInIndiaPage() {
         <Reveal className="relative z-10 text-white">
           <h1 className="text-5xl font-bold">Doing Business in India</h1>
           <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
-            A practical, step-by-step guide for foreign companies entering India —
-            from deciding whether India is the right market, through incorporation,
-            to staying compliant afterwards.
+            The strategic side of India entry — whether India is the right market for you,
+            which route to market fits your business, and how your priorities should
+            shift as you move from pre-incorporation planning through to running an
+            established India operation.
+          </p>
+          <p className="mt-4 text-sm text-white/60 max-w-2xl mx-auto">
+            Already decided to incorporate and just need the procedural walkthrough — entity types, the SPICe+ filing, documents, timelines? See our{" "}
+            <Link href="/india-business-setup/company-formation" className="underline hover:text-white">
+              complete company registration guide
+            </Link>{" "}
+            instead.
           </p>
         </Reveal>
       </section>

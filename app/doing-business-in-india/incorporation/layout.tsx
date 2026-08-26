@@ -2,23 +2,23 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Company Incorporation in India | Process & Requirements",
+    absolute: "Should You Incorporate in India Now? A Strategic Decision Guide",
   },
   description:
-    "How company incorporation works in India under the Companies Act, 2013 — documentation, filings, and typical timelines.",
+    "When incorporating in India actually makes sense versus other routes to market, the timing mistakes to avoid, and what changes once you commit.",
   alternates: {
     canonical: "https://www.theaucorp.com/doing-business-in-india/incorporation",
   },
   openGraph: {
-    title: "Company Incorporation in India | Process & Requirements",
+    title: "Should You Incorporate in India Now? A Strategic Decision Guide",
     description:
-      "How company incorporation works in India under the Companies Act, 2013 — documentation, filings, and typical timelines.",
+      "When incorporating in India actually makes sense versus other routes to market, the timing mistakes to avoid, and what changes once you commit.",
     url: "https://www.theaucorp.com/doing-business-in-india/incorporation",
   },
   twitter: {
-    title: "Company Incorporation in India | Process & Requirements",
+    title: "Should You Incorporate in India Now? A Strategic Decision Guide",
     description:
-      "How company incorporation works in India under the Companies Act, 2013 — documentation, filings, and typical timelines.",
+      "When incorporating in India actually makes sense versus other routes to market, the timing mistakes to avoid, and what changes once you commit.",
   },
 }
 
