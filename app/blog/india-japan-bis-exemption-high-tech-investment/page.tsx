@@ -74,12 +74,12 @@ function CrossedFlags({ size = 22 }: { size?: number }) {
   )
 }
 
-/** Mount Fuji silhouette with a snow cap, used as a hero skyline element. */
-function MountFuji({ className = "" }: { className?: string }) {
+/** Mount Fuji silhouette with a snow cap, used as a hero/body skyline element. */
+function MountFuji({ className = "", color = "white" }: { className?: string; color?: string }) {
   return (
     <svg aria-hidden="true" className={className} viewBox="0 0 300 100" fill="none" preserveAspectRatio="xMidYMax slice">
-      <path d="M0,100 L95,15 L120,38 L150,8 L180,38 L205,15 L300,100 Z" fill="white" />
-      <path d="M150,8 L163,21 L157,24 L150,17 L143,24 L137,21 Z" fill="white" opacity="0.6" />
+      <path d="M0,100 L95,15 L120,38 L150,8 L180,38 L205,15 L300,100 Z" fill={color} />
+      <path d="M150,8 L163,21 L157,24 L150,17 L143,24 L137,21 Z" fill={color} opacity="0.6" />
     </svg>
   )
 }
@@ -97,6 +97,32 @@ function Pagoda({ className = "" }: { className?: string }) {
       <rect x="8" y="64" width="44" height="20" />
       <line x1="8" y1="88" x2="52" y2="88" />
     </svg>
+  )
+}
+
+/** Small five-petal sakura mark, reused inline as a divider ornament. */
+function SakuraMark({ size = 16, color = JAPAN_RED }: { size?: number; color?: string }) {
+  return (
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 100 100" fill="none">
+      <g fill={color}>
+        <ellipse cx="50" cy="30" rx="10" ry="16" />
+        <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(72 50 30)" />
+        <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(144 50 30)" />
+        <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(216 50 30)" />
+        <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(288 50 30)" />
+      </g>
+    </svg>
+  )
+}
+
+/** Slim sakura-and-rule divider, used between sections through the body. */
+function SectionDivider() {
+  return (
+    <div aria-hidden="true" className="flex items-center justify-center gap-3 my-10">
+      <span className="h-px flex-1 max-w-20" style={{ background: `linear-gradient(to right, transparent, ${JAPAN_RED}40)` }} />
+      <SakuraMark size={14} />
+      <span className="h-px flex-1 max-w-20" style={{ background: `linear-gradient(to left, transparent, ${JAPAN_RED}40)` }} />
+    </div>
   )
 }
 
@@ -258,7 +284,18 @@ export default function BlogPost() {
       </section>
 
       {/* ================= BODY (article + sticky short enquiry sidebar) ================= */}
-      <div className="max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-[1fr_320px] gap-10 items-start">
+      <div className="relative">
+        {/* faint seigaiha texture running behind the entire article, not just isolated boxes */}
+        <svg aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.025]" preserveAspectRatio="xMidYMin slice">
+          <pattern id="seigaiha-body" width="52" height="26" patternUnits="userSpaceOnUse">
+            <path d="M0,26 A26,26 0 0 1 52,26" fill="none" stroke={JAPAN_RED} strokeWidth="1.5" />
+            <path d="M-26,26 A26,26 0 0 1 26,26" fill="none" stroke={JAPAN_RED} strokeWidth="1.5" />
+            <path d="M26,26 A26,26 0 0 1 78,26" fill="none" stroke={JAPAN_RED} strokeWidth="1.5" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#seigaiha-body)" />
+        </svg>
+
+      <div className="relative max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-[1fr_320px] gap-10 items-start">
         <article>
           <p className="mb-6 text-lg text-gray-700">
             India is sending another strong signal to global technology and manufacturing companies: the country wants investment, technology, and advanced manufacturing — and is increasingly willing to reduce regulatory friction to attract it.
@@ -307,6 +344,8 @@ export default function BlogPost() {
           <p className="mb-6">
             The proposed framework seeks to address this by creating a mechanism through which qualifying high-tech companies may receive exemptions for equipment and components brought into India for manufacturing. The Government has indicated the objective is to ensure timely availability of products, goods, and services required by high-tech companies establishing manufacturing operations in India — particularly relevant to Japanese businesses given Japan&apos;s considerable expertise in precisely the sectors India is trying to develop.
           </p>
+
+          <SectionDivider />
 
           <SectionHeading icon={<CrossedFlags size={20} />}>India and Japan: A Technology Partnership Entering a New Phase</SectionHeading>
           <p className="mb-6">
@@ -397,7 +436,7 @@ export default function BlogPost() {
           <p className="mb-4">
             For a Japanese company considering India, the critical questions often begin after the investment decision:
           </p>
-          <ul className="space-y-2 text-sm text-gray-700 mb-6 list-disc list-inside">
+          <ul className="space-y-2 text-sm text-gray-700 mb-6 list-disc list-inside marker:text-[#BC002D]">
             <li>Which entity should be established — subsidiary, branch, joint venture, or another structure?</li>
             <li>What are the FEMA and FDI implications?</li>
             <li>Where should the operation be located, and what central and state-level incentives are available?</li>
@@ -408,6 +447,8 @@ export default function BlogPost() {
           <p className="mb-6">
             These questions can materially affect the cost, efficiency, and risk profile of an India investment — which is why <Link href="/india-entry-for-japan-companies" className="font-semibold hover:underline" style={{ color: JAPAN_RED }}>getting the entry strategy right for Japanese companies</Link> matters as much as the opportunity itself.
           </p>
+
+          <SectionDivider />
 
           <SectionHeading>How AU Corporate Can Support Japanese Businesses Entering India</SectionHeading>
           <p className="mb-6">
@@ -432,12 +473,15 @@ export default function BlogPost() {
           </div>
 
           <SectionHeading>The Opportunity Is Bigger Than the BIS Exemption</SectionHeading>
-          <p className="mb-6">
-            It would be easy to view the latest announcement simply as a change in certification requirements. We believe it represents something more important: India is increasingly moving towards an investor-responsive regulatory environment for strategic industries. The Government is actively engaging with Japanese businesses, identifying practical barriers, and looking for mechanisms to address them — while investing heavily in semiconductor manufacturing, electronics, AI, digital infrastructure, and advanced technology.
-          </p>
-          <p className="mb-6">
-            Japan brings globally recognised capabilities in precision manufacturing, engineering, robotics, electronics, materials, and industrial technology. India brings scale, talent, a large domestic market, and an expanding technology and manufacturing ecosystem. The opportunity lies at the intersection of these strengths.
-          </p>
+          <div className="relative overflow-hidden">
+            <MountFuji color={JAPAN_RED} className="pointer-events-none absolute -bottom-4 left-0 h-20 w-full opacity-[0.05] hidden sm:block" />
+            <p className="relative mb-6">
+              It would be easy to view the latest announcement simply as a change in certification requirements. We believe it represents something more important: India is increasingly moving towards an investor-responsive regulatory environment for strategic industries. The Government is actively engaging with Japanese businesses, identifying practical barriers, and looking for mechanisms to address them — while investing heavily in semiconductor manufacturing, electronics, AI, digital infrastructure, and advanced technology.
+            </p>
+            <p className="relative mb-6">
+              Japan brings globally recognised capabilities in precision manufacturing, engineering, robotics, electronics, materials, and industrial technology. India brings scale, talent, a large domestic market, and an expanding technology and manufacturing ecosystem. The opportunity lies at the intersection of these strengths.
+            </p>
+          </div>
 
           <SectionHeading>What Japanese Companies Should Consider Now</SectionHeading>
           <p className="mb-6">
@@ -446,6 +490,8 @@ export default function BlogPost() {
           <p className="mb-6">
             The proposed BIS framework is still under development, and businesses should continue to assess the specific certification requirements applicable to their products and equipment until the final framework and exemptions are formally notified. But the policy direction is clear: India wants Japanese technology and Japanese businesses to participate in the country&apos;s next phase of industrial development.
           </p>
+
+          <SectionDivider />
 
           <SectionHeading>Conclusion: Building the Next Chapter Together</SectionHeading>
           <p className="mb-6">
@@ -456,19 +502,7 @@ export default function BlogPost() {
             Ready to talk it through? Use the enquiry form alongside this article, or explore the related resources below.
           </p>
 
-          <div aria-hidden="true" className="flex items-center justify-center gap-3 my-8">
-            <span className="h-px flex-1 max-w-16" style={{ background: `linear-gradient(to right, transparent, ${JAPAN_RED})` }} />
-            <svg className="h-4 w-4" viewBox="0 0 100 100" fill="none">
-              <g fill={JAPAN_RED}>
-                <ellipse cx="50" cy="30" rx="10" ry="16" />
-                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(72 50 30)" />
-                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(144 50 30)" />
-                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(216 50 30)" />
-                <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(288 50 30)" />
-              </g>
-            </svg>
-            <span className="h-px flex-1 max-w-16" style={{ background: `linear-gradient(to left, transparent, ${JAPAN_RED})` }} />
-          </div>
+          <SectionDivider />
 
           <RelatedResources
             links={[
@@ -484,6 +518,7 @@ export default function BlogPost() {
         <aside className="lg:sticky lg:top-24 h-fit">
           <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-5 shadow-lg">
             <div className="absolute right-0 top-0 h-16 w-16 opacity-[0.06]" style={{ background: `radial-gradient(circle at 100% 0%, ${JAPAN_RED} 0%, ${JAPAN_RED} 55%, transparent 60%)` }} aria-hidden="true" />
+            <SakuraBranch className="pointer-events-none absolute -bottom-6 -left-6 h-20 w-20 opacity-[0.08]" />
             <div className="relative mb-3 flex items-center gap-2">
               <Hanko label="相談" size={28} />
               <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: NAVY }}>
@@ -501,6 +536,7 @@ export default function BlogPost() {
             </div>
           </div>
         </aside>
+      </div>
       </div>
     </main>
   )
