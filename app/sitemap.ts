@@ -21,23 +21,23 @@ type Page = {
 
 const pages: Page[] = [
   // Homepage - Highest Priority
-  { path: "/", priority: 1.0, changeFrequency: "daily", lastModified: "2026-07-27" },
+  { path: "/", priority: 1.0, changeFrequency: "daily", lastModified: "2026-08-26" },
 
   // Core Service Hub
-  { path: "/services", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-05-04" },
+  { path: "/services", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-26" },
 
   // 10 Service Pillars
-  { path: "/india-business-setup", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-05-04" },
+  { path: "/india-business-setup", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-26" },
   { path: "/services/accounting-assurance", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-05-04" },
   { path: "/hr-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-05-04" },
   { path: "/services/taxation-regulatory", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-05-04" },
-  { path: "/outsourcing", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-05-04" },
-  { path: "/arbitration-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-05-04" },
+  { path: "/outsourcing", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-08-26" },
+  { path: "/arbitration-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-08-26" },
 
   // Main Pages
-  { path: "/about", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/contact", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/career", priority: 0.75, changeFrequency: "monthly", lastModified: "2026-05-04" },
+  { path: "/about", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/contact", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/career", priority: 0.75, changeFrequency: "monthly", lastModified: "2026-08-26" },
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-07-30" },
   { path: "/terms", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-07-30" },
 
@@ -50,7 +50,7 @@ const pages: Page[] = [
   { path: "/doing-business-in-india/post-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-25" },
 
   // GCC Setup
-  { path: "/gcc-setup-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-20" },
+  { path: "/gcc-setup-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-26" },
 
   // India Business Setup Cluster
   { path: "/india-business-setup/fdi-channels", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
@@ -61,18 +61,18 @@ const pages: Page[] = [
 
   // Regional India Entry Clusters
   { path: "/india-entry-for-us-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-26" },
-  { path: "/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
-  { path: "/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
-  { path: "/india-entry-for-us-companies/how-to-incorporate-subsidiary-india-from-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
-  { path: "/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
+  { path: "/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/india-entry-for-us-companies/how-to-incorporate-subsidiary-india-from-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
 
   { path: "/india-entry-for-uk-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-26" },
-  { path: "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-25" },
-  { path: "/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
-  { path: "/india-entry-for-uk-companies/how-to-incorporate-subsidiary-india-from-uk", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
-  { path: "/india-entry-for-uk-companies/fema-compliance-uk-company-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
-  { path: "/india-entry-for-uk-companies/cost-timeline-incorporate-company-india-from-uk", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-07-29" },
+  { path: "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/india-entry-for-uk-companies/how-to-incorporate-subsidiary-india-from-uk", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/india-entry-for-uk-companies/fema-compliance-uk-company-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/india-entry-for-uk-companies/cost-timeline-incorporate-company-india-from-uk", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
 
   { path: "/india-entry-for-singapore-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-08-26" },
   { path: "/india-entry-for-australian-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-08-26" },
