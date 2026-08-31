@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
+import { EntitySelectorTool } from '@/components/EntitySelectorTool'
 
 export default function IndiaEntryForAustralianCompanies() {
   return (
@@ -59,6 +60,10 @@ export default function IndiaEntryForAustralianCompanies() {
           </Link>{' '}
           for entity-choice tradeoffs specific to Australian parents.
         </p>
+      </div>
+
+      <div className="mb-12">
+        <EntitySelectorTool />
       </div>
 
       <div className="mb-12 p-6 bg-gray-50 rounded-lg">

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
+import { EntitySelectorTool } from '@/components/EntitySelectorTool'
 import { ArrowRight } from 'lucide-react'
 
 export default function IndiaEntryForUKCompanies() {
@@ -63,6 +64,10 @@ export default function IndiaEntryForUKCompanies() {
           </Link>{' '}
           for the complete tax and timeline breakdown.
         </p>
+      </div>
+
+      <div className="mb-12">
+        <EntitySelectorTool />
       </div>
 
       {/* INCORPORATION PROCESS */}

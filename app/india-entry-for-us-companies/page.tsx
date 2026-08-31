@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
+import { EntitySelectorTool } from '@/components/EntitySelectorTool'
 import { ArrowRight } from 'lucide-react'
 
 export default function IndiaEntryForUSCompanies() {
@@ -63,6 +64,10 @@ export default function IndiaEntryForUSCompanies() {
           </Link>{' '}
           for the side-by-side breakdown.
         </p>
+      </div>
+
+      <div className="mb-12">
+        <EntitySelectorTool />
       </div>
 
       {/* INCORPORATION PROCESS */}
