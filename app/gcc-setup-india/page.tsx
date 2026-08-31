@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { Button } from '@/components/ui/button'
 import { LeadForm } from '@/components/LeadForm'
+import { TabbedComparison } from '@/components/TabbedComparison'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
 const gccVsComparisons = [
@@ -132,16 +133,7 @@ export default function GCCSetupIndiaPage() {
           <p className="text-gray-600 leading-relaxed mb-10">
             That single distinction — captive versus vendor — is what separates a GCC from almost every other India-entry structure a foreign company might consider, and it&apos;s worth being precise about it before going further.
           </p>
-          <div className="space-y-8">
-            {gccVsComparisons.map((item) => (
-              <div key={item.title}>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
-                {item.body.split('\n\n').map((para, i) => (
-                  <p key={i} className="text-gray-600 leading-relaxed mb-3">{para}</p>
-                ))}
-              </div>
-            ))}
-          </div>
+          <TabbedComparison tabs={gccVsComparisons} />
         </div>
       </section>
 
