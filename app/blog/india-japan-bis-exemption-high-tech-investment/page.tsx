@@ -324,9 +324,9 @@ export default function BlogPost() {
               </pattern>
               <rect width="100%" height="100%" fill="url(#seigaiha-quickref)" />
             </svg>
-            <h3 className="relative font-bold text-lg mb-3 flex items-center gap-2" style={{ color: NAVY }}>
+            <h2 className="relative font-bold text-lg mb-3 flex items-center gap-2" style={{ color: NAVY }}>
               <Sparkles size={18} style={{ color: JAPAN_RED }} /> Quick Reference: The BIS Announcement
-            </h3>
+            </h2>
             <ul className="relative space-y-2 text-sm text-gray-700">
               <li>&bull; <strong>Announced:</strong> 25 August 2026, Tokyo, by Commerce &amp; Industry Minister Piyush Goyal</li>
               <li>&bull; <strong>What it covers:</strong> BIS certification exemptions for equipment and components imported by high-tech manufacturers</li>

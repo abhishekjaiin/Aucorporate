@@ -117,7 +117,8 @@ export default function RiskManagementPage() {
 
         {/* SECTIONS */}
         {sections.map((section, i) => (
-          <Reveal key={section.title} delay={i * 0.1} className="mb-20">
+          <section key={section.title} aria-labelledby={section.id}>
+          <Reveal delay={i * 0.1} className="mb-20">
             <h2 id={section.id} className="text-2xl font-semibold mb-8 text-[#081a42] scroll-mt-24">
               {section.title}
             </h2>
@@ -142,6 +143,7 @@ export default function RiskManagementPage() {
             </div>
 
           </Reveal>
+          </section>
         ))}
 
       </div>

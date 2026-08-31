@@ -44,7 +44,8 @@ export default function BlogPage() {
         For over a decade, India's Safe Harbour Rules for transfer pricing existed but went largely unused. Margins set as high as 20-24% of operating costs made the safe harbour a worse deal than simply negotiating with a Transfer Pricing Officer directly — so most multinational IT services companies and Global Capability Centres (GCCs) skipped it entirely. Union Budget 2026 changed that calculation completely.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
+      <section aria-labelledby="shr-what-changed">
+      <h2 id="shr-what-changed" className="text-2xl font-semibold mt-10 mb-4">
         What Actually Changed
       </h2>
 
@@ -56,7 +57,10 @@ export default function BlogPage() {
         To put that in context: margins under the old regime ranged from 17% to 24% depending on which of the four categories your GCC's activities fell into, with plenty of genuine ambiguity about classification. A 15.5% flat rate is meaningfully lower than almost every prior bracket, and it removes the classification dispute entirely.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
+      </section>
+
+      <section aria-labelledby="shr-threshold">
+      <h2 id="shr-threshold" className="text-2xl font-semibold mt-10 mb-4">
         The Eligibility Threshold Jumped Too
       </h2>
 
@@ -75,8 +79,10 @@ export default function BlogPage() {
           <li>• <strong>New category:</strong> Data centre services rendered to foreign associated enterprises now have a dedicated 15% margin on cost</li>
         </ul>
       </div>
+      </section>
 
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
+      <section aria-labelledby="shr-why-matters">
+      <h2 id="shr-why-matters" className="text-2xl font-semibold mt-10 mb-4">
         Why This Matters More Than It Looks
       </h2>
 
@@ -88,7 +94,10 @@ export default function BlogPage() {
         There's also a faster path for companies that don't fit safe harbour cleanly: Budget 2026 introduced a fast-track unilateral Advance Pricing Agreement (APA) mechanism specifically for IT services, targeting conclusion within two years — a meaningful improvement over historical APA timelines.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
+      </section>
+
+      <section aria-labelledby="shr-what-to-do">
+      <h2 id="shr-what-to-do" className="text-2xl font-semibold mt-10 mb-4">
         What Foreign Parent Companies Should Do Now
       </h2>
 
@@ -100,15 +109,18 @@ export default function BlogPage() {
         👉 Speak with AU Corporate to assess whether your India entity qualifies for the new safe harbour margin, and what it would mean for your specific structure.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-10 mb-4">
+      </section>
+
+      <section aria-labelledby="shr-conclusion">
+      <h2 id="shr-conclusion" className="text-2xl font-semibold mt-10 mb-4">
         Conclusion
       </h2>
 
       <p className="mb-6">
         India's 2026 Safe Harbour reform is the most significant change to the regime since it was introduced — a genuine attempt to make the safe harbour route actually competitive with direct negotiation, rather than a rarely-used fallback. For GCCs and IT services subsidiaries of foreign parent companies, it's worth a fresh look even if safe harbour wasn't worth pursuing under the old rules.
       </p>
+      </section>
 
-    
       <RelatedResources
         links={[
           { label: "Taxation & Regulatory Services", href: "/services/taxation-regulatory", description: "Corporate tax, GST, and regulatory support." },

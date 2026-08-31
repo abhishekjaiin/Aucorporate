@@ -54,6 +54,7 @@ export default function Page() {
         </div>
 
         {/* SECTION */}
+        <section aria-labelledby="services">
         <Reveal className="mb-20">
           <h2 id="services" className="text-2xl font-semibold mb-8 text-[#081a42] scroll-mt-24">
             Our Services
@@ -79,6 +80,7 @@ export default function Page() {
 
           </div>
         </Reveal>
+        </section>
 
       </div>
     </div>

@@ -53,7 +53,7 @@ export default function Page() {
 
       <div className="grid gap-6">
         {planningAreas.map((s) => (
-          <div
+          <section
             key={s.title}
             className="p-6 border rounded-xl shadow-sm hover:shadow-md transition"
           >
@@ -69,7 +69,7 @@ export default function Page() {
               )}
               {s.tail}
             </p>
-          </div>
+          </section>
         ))}
       </div>
 

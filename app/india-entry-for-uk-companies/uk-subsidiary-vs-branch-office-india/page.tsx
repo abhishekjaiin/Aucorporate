@@ -19,6 +19,7 @@ export default function UKSubsidiaryVsBranchPage() {
         </p>
       </div>
 
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6">Subsidiary vs Branch Office: Full Comparison</h2>
       <div className="overflow-x-auto mb-12">
         <table className="w-full border-collapse border border-gray-300">
           <thead>

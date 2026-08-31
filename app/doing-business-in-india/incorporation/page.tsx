@@ -52,28 +52,32 @@ export default function Page() {
         covers entity types, the SPICe+ filing, documents, and realistic timelines in full.
       </p>
 
-      <h2 className="text-2xl font-bold text-[#081a42] mt-12 mb-4">Incorporation vs. Other Routes to Market</h2>
-      <p className="mb-8 text-gray-700 leading-relaxed">
-        Incorporation isn&apos;t the only way to have a presence in India, and it isn&apos;t always the right starting point. Here&apos;s how it compares to the other routes companies actually use:
-      </p>
-      <div className="grid gap-6 mb-12">
-        {routesToMarket.map((r) => (
-          <div key={r.title} className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-            <h3 className="font-semibold text-lg text-[#081a42] mb-2">{r.title}</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">{r.desc}</p>
-          </div>
-        ))}
-      </div>
+      <section aria-labelledby="routes-to-market">
+        <h2 id="routes-to-market" className="text-2xl font-bold text-[#081a42] mt-12 mb-4">Incorporation vs. Other Routes to Market</h2>
+        <p className="mb-8 text-gray-700 leading-relaxed">
+          Incorporation isn&apos;t the only way to have a presence in India, and it isn&apos;t always the right starting point. Here&apos;s how it compares to the other routes companies actually use:
+        </p>
+        <div className="grid gap-6 mb-12">
+          {routesToMarket.map((r) => (
+            <div key={r.title} className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
+              <h3 className="font-semibold text-lg text-[#081a42] mb-2">{r.title}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">{r.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <h2 className="text-2xl font-bold text-[#081a42] mt-12 mb-4">Common Timing Mistakes</h2>
-      <div className="grid gap-6 mb-12">
-        {timingMistakes.map((m) => (
-          <div key={m.title} className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-            <h3 className="font-semibold text-lg text-[#081a42] mb-2">{m.title}</h3>
-            <p className="text-sm text-gray-600 leading-relaxed">{m.desc}</p>
-          </div>
-        ))}
-      </div>
+      <section aria-labelledby="timing-mistakes">
+        <h2 id="timing-mistakes" className="text-2xl font-bold text-[#081a42] mt-12 mb-4">Common Timing Mistakes</h2>
+        <div className="grid gap-6 mb-12">
+          {timingMistakes.map((m) => (
+            <div key={m.title} className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
+              <h3 className="font-semibold text-lg text-[#081a42] mb-2">{m.title}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">{m.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <div className="mt-12 p-6 border border-gray-200 rounded-xl bg-gray-50">
         <p className="text-gray-700">

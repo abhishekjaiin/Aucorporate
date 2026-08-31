@@ -67,6 +67,7 @@ export default function Page() {
         </div>
 
         {/* SECTION */}
+        <section aria-labelledby={section.id}>
         <Reveal className="mb-20">
           <h2 id={section.id} className="text-2xl font-semibold mb-8 text-[#081a42] scroll-mt-24">
             Our Services
@@ -91,6 +92,7 @@ export default function Page() {
 
           </div>
         </Reveal>
+        </section>
 
       </div>
     </div>
