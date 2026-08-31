@@ -3,7 +3,9 @@ import { Breadcrumb } from '@/components/Breadcrumb'
 import { Button } from '@/components/ui/button'
 import { LeadForm } from '@/components/LeadForm'
 import { FaqAccordion } from '@/components/FaqAccordion'
-import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { EntitySelectorTool } from '@/components/EntitySelectorTool'
+import { DocumentChecklist } from '@/components/DocumentChecklist'
+import { ArrowRight, Clock, FileCheck2, Layers, Timer } from 'lucide-react'
 
 const entityTypes = [
   { name: 'Private Limited Company', desc: 'The default vehicle for most foreign investment — a separate legal entity with limited liability, minimum two shareholders, and full operating flexibility.' },
@@ -100,6 +102,21 @@ export default function CompanyFormationPage() {
           <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
             <Link href="/india-business-setup/regulatory-compliance">Next: Regulatory Compliance <ArrowRight className="ml-2 h-4 w-4" /></Link>
           </Button>
+
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {[
+              { icon: Timer, value: '4-6 weeks', label: 'Automatic Route' },
+              { icon: Clock, value: '8-12 weeks', label: 'Government Route' },
+              { icon: Layers, value: '8', label: 'Entity Types Covered' },
+              { icon: FileCheck2, value: '1', label: 'Single SPICe+ Filing' },
+            ].map((stat) => (
+              <div key={stat.label} className="rounded-xl border border-gray-200 bg-white/70 p-4 text-center backdrop-blur-sm">
+                <stat.icon className="mx-auto mb-2 h-5 w-5 text-yellow-600" />
+                <div className="text-lg font-bold text-[#081a42]">{stat.value}</div>
+                <div className="text-xs text-gray-500">{stat.label}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -134,6 +151,10 @@ export default function CompanyFormationPage() {
             <p className="text-sm leading-relaxed text-gray-600">
               For most foreign companies searching for how to register a company in India, &ldquo;India subsidiary&rdquo; and &ldquo;company registration&rdquo; are effectively the same question — a WOS structured as a Private Limited Company is the default vehicle because it gives the parent full ownership and control, a separate legal identity that limits liability, and no restriction on the activities it can carry out (unlike a Branch or Liaison Office). One practical timing point worth planning around: India&apos;s financial year ends on 31 March, and parent companies often want a new subsidiary operational, banked and ready to invoice before that date to avoid a part-year set of statutory filings in its first year — which is a large part of why search interest in &ldquo;India subsidiary&rdquo; tends to spike in the weeks leading up to the fiscal year-end rather than being evenly spread through the year. For the full step-by-step incorporation walkthrough, including MOA/AOA drafting and the specific post-incorporation filings a WOS needs, see our <Link href="/blog/wholly-owned-subsidiary" className="text-yellow-700 font-semibold hover:underline">complete wholly owned subsidiary guide</Link>.
             </p>
+          </div>
+
+          <div className="mt-10">
+            <EntitySelectorTool />
           </div>
         </div>
       </section>
@@ -181,19 +202,9 @@ export default function CompanyFormationPage() {
           <p className="leading-relaxed text-gray-600 mb-6">
             For a foreign-owned entity, the document set falls into two groups. From the Indian side, you&apos;ll need proof of the registered office (a lease/ownership document and a recent utility bill) and identity/address proof for any resident director or shareholder (PAN, Aadhaar, and a recent address document). From the foreign parent&apos;s side, the requirements are more specific than &ldquo;get everything notarised&rdquo; — India distinguishes between notarisation and apostille, and getting this wrong is one of the most common causes of delay:
           </p>
-          <ul className="space-y-3 mb-6">
-            {[
-              'Apostille, not just notarisation, is required for documents executed in a country that is party to the Hague Apostille Convention — this covers most jurisdictions foreign investors come from (Australia, the US, the UK, Singapore, most of the EU).',
-              'Consular/embassy legalisation is the fallback route for documents from a non-Hague-Convention country, and generally takes longer.',
-              'A foreign director’s passport copy and overseas address proof both typically need this apostille (or embassy legalisation) treatment before Indian authorities will accept them.',
-              'The foreign parent’s certificate of incorporation, board resolution authorising the Indian subsidiary, and MOA/AOA (or local equivalent) also usually need to be apostilled/legalised and, in some cases, translated.',
-            ].map((item) => (
-              <li key={item} className="flex gap-3 text-gray-700">
-                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-yellow-600" />
-                <span className="text-sm leading-relaxed">{item}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="mb-6">
+            <DocumentChecklist />
+          </div>
           <p className="leading-relaxed text-gray-600">
             Building in the lead time for apostille or embassy legalisation — which runs through the foreign director&apos;s home-country authorities, not an Indian one — is one of the most reliable ways to avoid the incorporation timeline slipping.
           </p>
@@ -225,10 +236,11 @@ export default function CompanyFormationPage() {
         <div className="mx-auto max-w-7xl px-4">
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">What Happens After Incorporation: The Compliance Roadmap</h2>
           <p className="max-w-4xl leading-relaxed text-gray-600 mb-10">Incorporation is the start of the compliance relationship, not the end of it. In sequence:</p>
-          <div className="space-y-4">
+          <div className="relative space-y-4">
+            <div aria-hidden="true" className="absolute left-[35px] top-9 bottom-9 hidden w-px bg-yellow-200 sm:block" />
             {complianceRoadmap.map((step, index) => (
-              <div key={step.title} className="flex gap-5 rounded-xl border bg-white p-6">
-                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-yellow-100 font-bold text-yellow-700">{index + 1}</div>
+              <div key={step.title} className="relative flex gap-5 rounded-xl border bg-white p-6">
+                <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-yellow-100 font-bold text-yellow-700">{index + 1}</div>
                 <div>
                   <h3 className="font-bold text-base mb-1 text-[#081a42]">{step.title}</h3>
                   <p className="text-sm leading-relaxed text-gray-600">{step.desc}</p>
