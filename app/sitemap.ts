@@ -28,9 +28,9 @@ const pages: Page[] = [
 
   // 10 Service Pillars
   { path: "/india-business-setup", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-26" },
-  { path: "/services/accounting-assurance", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-05-04" },
+  { path: "/services/accounting-assurance", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-08-31" },
   { path: "/hr-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-05-04" },
-  { path: "/services/taxation-regulatory", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-05-04" },
+  { path: "/services/taxation-regulatory", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
   { path: "/outsourcing", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-08-26" },
   { path: "/arbitration-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-08-26" },
 
@@ -44,9 +44,9 @@ const pages: Page[] = [
   // Doing Business in India Hub + cluster
   { path: "/doing-business-in-india", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-25" },
   { path: "/doing-business-in-india/why-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/doing-business-in-india/pre-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/doing-business-in-india/pre-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
   { path: "/doing-business-in-india/entry-process", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/doing-business-in-india/incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-25" },
+  { path: "/doing-business-in-india/incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
   { path: "/doing-business-in-india/post-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-25" },
 
   // GCC Setup
@@ -68,7 +68,7 @@ const pages: Page[] = [
   { path: "/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
 
   { path: "/india-entry-for-uk-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
-  { path: "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
   { path: "/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
   { path: "/india-entry-for-uk-companies/how-to-incorporate-subsidiary-india-from-uk", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
   { path: "/india-entry-for-uk-companies/fema-compliance-uk-company-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
@@ -82,21 +82,21 @@ const pages: Page[] = [
   { path: "/india-entry-for-china-companies", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-08-31" },
 
   // Service Pages
-  { path: "/services/risk-management", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/services/transaction-advisory", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/services/training-workshops", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-05-04" },
+  { path: "/services/risk-management", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/services/transaction-advisory", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/services/training-workshops", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-31" },
 
   // Blog Hub + Articles
   { path: "/blog", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-08-26" },
-  { path: "/blog/india-japan-bis-exemption-high-tech-investment", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/blog/india-japan-bis-exemption-high-tech-investment", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-31" },
   { path: "/blog/arbitration-enforcement-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/blog/construction-arbitration-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-08-24" },
-  { path: "/blog/doing-business-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/blog/fdi-green-vs-brown-channel", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/blog/mail-box-dtaa-benefits", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/blog/tax-loan-waiver-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/blog/wholly-owned-subsidiary", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/blog/india-safe-harbour-rules-2026", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-07-30" },
+  { path: "/blog/doing-business-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/blog/fdi-green-vs-brown-channel", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/blog/mail-box-dtaa-benefits", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/blog/tax-loan-waiver-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/blog/wholly-owned-subsidiary", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/blog/india-safe-harbour-rules-2026", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
