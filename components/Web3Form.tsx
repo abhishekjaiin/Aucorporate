@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { CheckCircle2 } from "lucide-react"
+import { getStoredAttribution } from "@/lib/attribution"
 
 const WEB3FORMS_ACCESS_KEY = "7f7b220d-2540-451d-88ba-6b6f878ec151"
 
@@ -16,11 +17,15 @@ export function Web3Form() {
     setStatus("submitting")
 
     const form = event.currentTarget
+    const formData = new FormData(form)
+    for (const [key, value] of Object.entries(getStoredAttribution())) {
+      if (value) formData.set(key, value)
+    }
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { Accept: "application/json" },
-        body: new FormData(form),
+        body: formData,
       })
       const result = await res.json()
       if (result.success) {

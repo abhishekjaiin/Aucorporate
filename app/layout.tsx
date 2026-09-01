@@ -4,6 +4,7 @@ import Script from "next/script"
 
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { FloatingInquiryCTA } from "@/components/FloatingInquiryCTA"
 
 import "./globals.css"
 
@@ -418,6 +419,11 @@ export default function RootLayout({
 
         <Footer />
       </div>
+
+      {/* SITEWIDE LEAD-GENERATION CTA — floating "Talk to an Expert" trigger (desktop)
+          and sticky bar (mobile) that open the enquiry form in a modal on every page,
+          not just the handful of pages that already embed it inline. */}
+      <FloatingInquiryCTA />
 
       {/* APOLLO TRACKER */}
             <Script
