@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { InlineInquiryCTA } from "@/components/InlineInquiryCTA"
 
 const planningAreas = [
   {
@@ -69,6 +70,7 @@ export default function Page() {
               )}
               {s.tail}
             </p>
+            {!s.link && <InlineInquiryCTA />}
           </section>
         ))}
       </div>

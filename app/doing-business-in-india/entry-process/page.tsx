@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { Reveal } from "@/components/Reveal"
+import { ClickableReveal } from "@/components/ClickableReveal"
 import { HeroBackground } from "@/components/HeroBackground"
 
 export default function EntryProcessPage() {
@@ -228,7 +229,7 @@ export default function EntryProcessPage() {
                 desc: "Beyond compliance — supporting expansion, scaling and investment strategy.",
               },
             ].map((item, i) => (
-              <Reveal
+              <ClickableReveal
                 key={item.title}
                 delay={(i % 6) * 0.12}
                 className="p-6 border rounded-xl bg-white cursor-pointer relative overflow-hidden hover:scale-[1.02] transition-transform duration-300"
@@ -249,7 +250,11 @@ export default function EntryProcessPage() {
                   {item.desc}
                 </p>
 
-              </Reveal>
+                <p className="mt-3 text-xs font-semibold text-gold-dark relative">
+                  Talk to an expert →
+                </p>
+
+              </ClickableReveal>
             ))}
 
           </div>

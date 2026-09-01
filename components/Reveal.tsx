@@ -7,11 +7,13 @@ export function Reveal({
   className,
   delay = 0,
   y = 24,
+  onClick,
 }: {
   children: React.ReactNode
   className?: string
   delay?: number
   y?: number
+  onClick?: () => void
 }) {
   const ref = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState(false)
@@ -41,6 +43,19 @@ export function Reveal({
         transform: visible ? "translateY(0)" : `translateY(${y}px)`,
         transition: `opacity 0.6s ease-out ${delay}s, transform 0.6s ease-out ${delay}s`,
       }}
+      onClick={onClick}
+      role={onClick ? "button" : undefined}
+      tabIndex={onClick ? 0 : undefined}
+      onKeyDown={
+        onClick
+          ? (e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault()
+                onClick()
+              }
+            }
+          : undefined
+      }
     >
       {children}
     </div>

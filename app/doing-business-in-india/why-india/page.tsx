@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { Reveal } from "@/components/Reveal"
+import { ClickableReveal } from "@/components/ClickableReveal"
 import { TrendingUp, Globe, Users, Shield, Landmark, Cpu, Briefcase, BarChart3 } from "lucide-react"
 
 export default function WhyIndiaPage() {
@@ -286,10 +287,10 @@ export default function WhyIndiaPage() {
                 stat: "1B+ monthly transactions",
               },
             ].map((sector, i) => (
-              <Reveal
+              <ClickableReveal
                 key={sector.title}
                 delay={(i % 6) * 0.08}
-                className="group bg-white border rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300"
+                className="group bg-white border rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer"
               >
 
                 {/* IMAGE */}
@@ -321,13 +322,13 @@ export default function WhyIndiaPage() {
                     {sector.desc}
                   </p>
 
-                  <div className="mt-4 text-sm text-yellow-600 font-medium opacity-0 group-hover:opacity-100 transition">
-                    Explore opportunity →
+                  <div className="mt-4 text-sm text-yellow-600 font-medium">
+                    Talk to an expert →
                   </div>
 
                 </div>
 
-              </Reveal>
+              </ClickableReveal>
             ))}
 
           </div>
@@ -386,13 +387,14 @@ export default function WhyIndiaPage() {
               "Accounting, Payroll & Compliance Management",
               "Ongoing Strategic Business Advisory",
             ].map((item, i) => (
-              <Reveal
+              <ClickableReveal
                 key={item}
                 delay={(i % 6) * 0.05}
-                className="p-5 bg-white border rounded-lg hover:shadow-md transition"
+                className="p-5 bg-white border rounded-lg hover:shadow-md transition cursor-pointer"
               >
                 <p className="text-sm text-gray-700">✔ {item}</p>
-              </Reveal>
+                <p className="mt-2 text-xs font-semibold text-gold-dark">Talk to an expert →</p>
+              </ClickableReveal>
             ))}
 
           </div>

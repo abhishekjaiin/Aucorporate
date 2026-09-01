@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
 const complianceAreas = [
   {
@@ -60,10 +61,7 @@ export default function RegulatoryCompliancePage() {
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {complianceAreas.map((item) => (
-              <div key={item.title} className="p-6 border rounded-lg">
-                <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{item.body}</p>
-              </div>
+              <ClickableInfoCard key={item.title} title={item.title} desc={item.body} />
             ))}
           </div>
         </div>
