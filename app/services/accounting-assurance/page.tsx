@@ -1,5 +1,6 @@
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { Reveal } from "@/components/Reveal"
+import { ClickableInfoCard } from "@/components/ClickableInfoCard"
 
 export default function Page() {
   const section = {
@@ -67,18 +68,7 @@ export default function Page() {
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {section.items.map((item) => (
-              <div
-                key={item.title}
-                className="p-6 bg-white border rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full flex flex-col"
-              >
-                <h3 className="font-semibold text-lg mb-3 text-[#081a42] leading-snug">
-                  {item.title}
-                </h3>
-
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
+              <ClickableInfoCard key={item.title} title={item.title} desc={item.desc} />
             ))}
 
           </div>

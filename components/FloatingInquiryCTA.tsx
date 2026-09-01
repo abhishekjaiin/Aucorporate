@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { MessageSquareText, X } from "lucide-react"
 import { Web3Form } from "@/components/Web3Form"
 import { captureAttribution } from "@/lib/attribution"
+import { OPEN_INQUIRY_MODAL_EVENT } from "@/lib/inquiry-modal"
 
 export function FloatingInquiryCTA() {
   const [open, setOpen] = useState(false)
@@ -11,6 +12,12 @@ export function FloatingInquiryCTA() {
 
   useEffect(() => {
     captureAttribution()
+  }, [])
+
+  useEffect(() => {
+    const onOpen = () => setOpen(true)
+    window.addEventListener(OPEN_INQUIRY_MODAL_EVENT, onOpen)
+    return () => window.removeEventListener(OPEN_INQUIRY_MODAL_EVENT, onOpen)
   }, [])
 
   useEffect(() => {
