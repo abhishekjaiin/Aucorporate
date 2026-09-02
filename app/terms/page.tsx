@@ -46,6 +46,9 @@ export default function TermsOfServicePage() {
             <p className="text-gray-700">
               All content on this Website — including text, graphics, logos, and design — is the property of AU Corporate or its licensors and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from this content without our written permission.
             </p>
+            <p className="text-gray-700 mt-3">
+              &ldquo;AU Corporate&reg;&rdquo; is a registered trademark. Use of this name, or any confusingly similar name, by any other person or entity in connection with business advisory, incorporation, taxation, or related services is not authorized by us.
+            </p>
           </section>
 
           <section>

@@ -28,7 +28,7 @@ export function Footer() {
 
             <Link href="/" className="flex flex-col mb-4">
               <span className="text-xl sm:text-2xl font-bold tracking-wide text-yellow-400">
-                AU Corporate
+                AU Corporate<span className="align-super text-xs">&reg;</span>
               </span>
 
               <span className="text-[10px] sm:text-[11px] text-[#081a42] tracking-[0.25em] uppercase font-medium">
@@ -159,7 +159,7 @@ export function Footer() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
 
             <p className="text-gray-500 text-xs sm:text-sm">
-              © {new Date().getFullYear()} AU Corporate. All rights reserved.
+              © {new Date().getFullYear()} AU Corporate&reg;. All rights reserved.
             </p>
 
             <div className="flex flex-wrap justify-center sm:justify-end gap-4 sm:gap-6">
