@@ -204,8 +204,6 @@ export default function RootLayout({
 
       name: "AU Corporate",
 
-      alternateName: "AU Corp",
-
       url: "https://www.theaucorp.com",
 
       logo: "https://www.theaucorp.com/logo.png",
@@ -265,8 +263,6 @@ export default function RootLayout({
 
       name: "AU Corporate",
 
-      alternateName: "AU Corp",
-
       url: "https://www.theaucorp.com",
 
       inLanguage: "en-IN",
@@ -274,7 +270,6 @@ export default function RootLayout({
       publisher: {
         "@type": "Organization",
         name: "AU Corporate",
-        alternateName: "AU Corp",
         url: "https://www.theaucorp.com",
       },
     }),
@@ -292,8 +287,6 @@ export default function RootLayout({
       "@type": "ProfessionalService",
 
       name: "AU Corporate",
-
-      alternateName: "AU Corp",
 
       image: "https://www.theaucorp.com/logo.png",
 
