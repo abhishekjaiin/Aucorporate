@@ -156,6 +156,20 @@ export default function RootLayout({
         />
 
 
+        {/* GOOGLE TAG MANAGER — afterInteractive (not lazyOnload like the scripts below):
+            GTM is a container that can fire other tags (conversion pixels, remarketing),
+            so it needs to be available sooner than analytics-only scripts. Matches the
+            strategy Next.js's own next/third-parties GoogleTagManager component defaults to. */}
+        <Script id="gtm-container" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-N23Z4X6Z');
+          `}
+        </Script>
+
         {/* GOOGLE ANALYTICS — lazyOnload: not needed for initial interactivity, so it
             shouldn't compete with hydration for main-thread time (Total Blocking Time) */}
         <Script
@@ -406,6 +420,17 @@ export default function RootLayout({
     <body
       className={`${inter.variable} ${manrope.variable} font-sans antialiased m-0 p-0 overflow-x-hidden`}
     >
+      {/* GOOGLE TAG MANAGER (noscript) — must be immediately after the opening <body>
+          tag per Google's own installation requirement, for the no-JS fallback to work. */}
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-N23Z4X6Z"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        />
+      </noscript>
+
       {/* NAVBAR */}
       <div className="relative z-60">
         <Navbar />
