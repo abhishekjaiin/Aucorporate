@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
 export default function FemaComplianceUKCompanyPage() {
   return (
@@ -22,24 +23,9 @@ export default function FemaComplianceUKCompanyPage() {
       <div className="mb-12">
         <h2 className="text-2xl font-bold mb-6">Core Filings for a UK-Owned Subsidiary</h2>
         <div className="space-y-6">
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Form FC-GPR</h3>
-            <p className="text-gray-600">
-              Filed with the RBI within 30 days of allotting shares to the UK parent against inward FDI — the filing that formally records the investment in the subsidiary&apos;s capital structure.
-            </p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Form FC-TRS</h3>
-            <p className="text-gray-600">
-              Required for any share transfer between a resident and non-resident — relevant if the UK parent later restructures ownership or brings in a co-investor.
-            </p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Annual FLA Return</h3>
-            <p className="text-gray-600">
-              Filed annually with the RBI by every entity that has received FDI, regardless of whether any transaction occurred that year. Not transaction-triggered, which is exactly why it&apos;s the filing most foreign-owned subsidiaries miss.
-            </p>
-          </div>
+          <ClickableInfoCard title="Form FC-GPR" desc="Filed with the RBI within 30 days of allotting shares to the UK parent against inward FDI — the filing that formally records the investment in the subsidiary's capital structure." />
+          <ClickableInfoCard title="Form FC-TRS" desc="Required for any share transfer between a resident and non-resident — relevant if the UK parent later restructures ownership or brings in a co-investor." />
+          <ClickableInfoCard title="Annual FLA Return" desc="Filed annually with the RBI by every entity that has received FDI, regardless of whether any transaction occurred that year. Not transaction-triggered, which is exactly why it's the filing most foreign-owned subsidiaries miss." />
         </div>
       </div>
 

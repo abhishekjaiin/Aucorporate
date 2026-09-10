@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { Reveal } from "@/components/Reveal"
 import { ClickableReveal } from "@/components/ClickableReveal"
+import { ClickableInfoCard } from "@/components/ClickableInfoCard"
 import { TrendingUp, Globe, Users, Shield, Landmark, Cpu, Briefcase, BarChart3 } from "lucide-react"
 
 export default function WhyIndiaPage() {
@@ -161,15 +162,8 @@ export default function WhyIndiaPage() {
                 title: "Digital First Economy",
                 desc: "UPI, fintech, AI adoption, and SaaS ecosystems are reshaping business models.",
               },
-            ].map((item, i) => (
-              <Reveal
-                key={item.title}
-                delay={i * 0.1}
-                className="p-6 border rounded-xl hover:shadow-lg transition"
-              >
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600">{item.desc}</p>
-              </Reveal>
+            ].map((item) => (
+              <ClickableInfoCard key={item.title} title={item.title} desc={item.desc} />
             ))}
 
           </div>
@@ -218,15 +212,16 @@ export default function WhyIndiaPage() {
                 desc: "FTAs with UAE, UK, ASEAN improving trade access.",
               },
             ].map((item, i) => (
-              <Reveal
+              <ClickableReveal
                 key={item.title}
                 delay={(i % 6) * 0.06}
-                className="p-6 bg-white border rounded-xl hover:shadow-lg transition"
+                className="p-6 bg-white border rounded-xl hover:shadow-lg transition cursor-pointer"
               >
                 <div className="text-[#081a42] mb-3">{item.icon}</div>
                 <h3 className="font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600">{item.desc}</p>
-              </Reveal>
+                <p className="mt-3 text-xs font-semibold text-yellow-600">Talk to an expert &rarr;</p>
+              </ClickableReveal>
             ))}
 
           </div>

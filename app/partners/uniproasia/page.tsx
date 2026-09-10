@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { Reveal } from "@/components/Reveal"
 import { ClickableInfoCard } from "@/components/ClickableInfoCard"
+import { ClickableReveal } from "@/components/ClickableReveal"
 import { InquiryButton } from "@/components/InquiryButton"
 import { RelatedResources } from "@/components/RelatedResources"
 import { Button } from "@/components/ui/button"
@@ -352,13 +353,14 @@ export default function UniproAsiaPartnerPage() {
           </Reveal>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {techFeatures.map((f, i) => (
-              <Reveal key={f.title} delay={i * 0.1} className="p-6 bg-white border rounded-xl text-center">
+              <ClickableReveal key={f.title} delay={i * 0.1} className="p-6 bg-white border rounded-xl text-center cursor-pointer">
                 <div className="w-12 h-12 mx-auto rounded-lg bg-yellow-50 flex items-center justify-center mb-4">
                   <f.icon className="text-[#081a42]" size={22} />
                 </div>
                 <h3 className="font-semibold mb-2 text-[#081a42]">{f.title}</h3>
                 <p className="text-sm text-gray-600">{f.desc}</p>
-              </Reveal>
+                <p className="mt-3 text-xs font-semibold text-yellow-600">Talk to an expert &rarr;</p>
+              </ClickableReveal>
             ))}
           </div>
         </div>

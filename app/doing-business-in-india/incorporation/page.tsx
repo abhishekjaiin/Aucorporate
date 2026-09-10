@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { ClickableInfoCard } from "@/components/ClickableInfoCard"
 
 const routesToMarket = [
   {
@@ -59,10 +60,7 @@ export default function Page() {
         </p>
         <div className="grid gap-6 mb-12">
           {routesToMarket.map((r) => (
-            <div key={r.title} className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="font-semibold text-lg text-[#081a42] mb-2">{r.title}</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">{r.desc}</p>
-            </div>
+            <ClickableInfoCard key={r.title} title={r.title} desc={r.desc} />
           ))}
         </div>
       </section>
@@ -71,10 +69,7 @@ export default function Page() {
         <h2 id="timing-mistakes" className="text-2xl font-bold text-[#081a42] mt-12 mb-4">Common Timing Mistakes</h2>
         <div className="grid gap-6 mb-12">
           {timingMistakes.map((m) => (
-            <div key={m.title} className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="font-semibold text-lg text-[#081a42] mb-2">{m.title}</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">{m.desc}</p>
-            </div>
+            <ClickableInfoCard key={m.title} title={m.title} desc={m.desc} />
           ))}
         </div>
       </section>

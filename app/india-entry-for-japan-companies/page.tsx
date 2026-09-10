@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 import { EntitySelectorTool } from '@/components/EntitySelectorTool'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
 export default function IndiaEntryForJapanCompanies() {
   return (
@@ -38,22 +39,10 @@ export default function IndiaEntryForJapanCompanies() {
           What Japanese Companies Need to Know
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">JV vs Wholly-Owned Subsidiary</h3>
-            <p className="text-gray-600 text-sm">Manufacturing-heavy Japanese entrants often weigh a joint venture (local partner access, faster market entry) against a wholly-owned subsidiary (full control, cleaner IP protection) — the right call depends on sector, distribution needs, and risk appetite.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">India-Japan DTAA</h3>
-            <p className="text-gray-600 text-sm">A flat 10% withholding rate applies across dividends, interest, and royalties/fees for technical services — well below India's 20% domestic withholding rate on non-resident dividends, subject to a valid Tax Residency Certificate.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Transfer Pricing on Intercompany Flows</h3>
-            <p className="text-gray-600 text-sm">Intercompany loans, management fees, and royalty/IP licensing arrangements between a Japanese parent and Indian subsidiary must be arm's-length documented under India's transfer pricing rules (historically Section 92 of the Income Tax Act, 1961, restructured as Section 161 under the Income-tax Act, 2025, effective April 2026) — particularly relevant given how common hybrid equity-plus-debt funding structures are for Japanese manufacturing entrants.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">FEMA & RBI Filings</h3>
-            <p className="text-gray-600 text-sm">Form FC-GPR on share allotment, Form FC-TRS on any transfer, and the annual FLA return — the same core filings that apply to any foreign-owned Indian subsidiary, JV or wholly-owned.</p>
-          </div>
+          <ClickableInfoCard title="JV vs Wholly-Owned Subsidiary" desc="Manufacturing-heavy Japanese entrants often weigh a joint venture (local partner access, faster market entry) against a wholly-owned subsidiary (full control, cleaner IP protection) — the right call depends on sector, distribution needs, and risk appetite." />
+          <ClickableInfoCard title="India-Japan DTAA" desc="A flat 10% withholding rate applies across dividends, interest, and royalties/fees for technical services — well below India's 20% domestic withholding rate on non-resident dividends, subject to a valid Tax Residency Certificate." />
+          <ClickableInfoCard title="Transfer Pricing on Intercompany Flows" desc="Intercompany loans, management fees, and royalty/IP licensing arrangements between a Japanese parent and Indian subsidiary must be arm's-length documented under India's transfer pricing rules (historically Section 92 of the Income Tax Act, 1961, restructured as Section 161 under the Income-tax Act, 2025, effective April 2026) — particularly relevant given how common hybrid equity-plus-debt funding structures are for Japanese manufacturing entrants." />
+          <ClickableInfoCard title="FEMA & RBI Filings" desc="Form FC-GPR on share allotment, Form FC-TRS on any transfer, and the annual FLA return — the same core filings that apply to any foreign-owned Indian subsidiary, JV or wholly-owned." />
         </div>
       </div>
 

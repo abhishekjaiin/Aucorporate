@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
 export default function CostTimelineUSPage() {
   return (
@@ -23,22 +24,10 @@ export default function CostTimelineUSPage() {
       <div className="mb-12">
         <h2 className="text-2xl font-bold mb-6">What Actually Drives Cost</h2>
         <div className="grid sm:grid-cols-2 gap-6">
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold mb-2">Entity structure</h3>
-            <p className="text-gray-600 text-sm">A wholly-owned subsidiary (Private Limited) has different registration, audit, and ongoing compliance costs than a branch or liaison office.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold mb-2">Sector & FDI route</h3>
-            <p className="text-gray-600 text-sm">Automatic-route sectors move faster and cheaper than sectors requiring government approval.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold mb-2">Number of directors & apostille documents</h3>
-            <p className="text-gray-600 text-sm">Each US-based director needing apostilled documents adds both cost and — usually the bigger factor — time, since it depends on US notary/Secretary of State processing.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold mb-2">Ongoing scope</h3>
-            <p className="text-gray-600 text-sm">Whether you need us for incorporation only, or incorporation plus ongoing accounting, payroll, tax, and FEMA compliance, changes the engagement significantly.</p>
-          </div>
+          <ClickableInfoCard title="Entity structure" desc="A wholly-owned subsidiary (Private Limited) has different registration, audit, and ongoing compliance costs than a branch or liaison office." />
+          <ClickableInfoCard title="Sector & FDI route" desc="Automatic-route sectors move faster and cheaper than sectors requiring government approval." />
+          <ClickableInfoCard title="Number of directors & apostille documents" desc="Each US-based director needing apostilled documents adds both cost and — usually the bigger factor — time, since it depends on US notary/Secretary of State processing." />
+          <ClickableInfoCard title="Ongoing scope" desc="Whether you need us for incorporation only, or incorporation plus ongoing accounting, payroll, tax, and FEMA compliance, changes the engagement significantly." />
         </div>
       </div>
 

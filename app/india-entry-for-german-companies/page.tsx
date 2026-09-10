@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 import { EntitySelectorTool } from '@/components/EntitySelectorTool'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
 export default function IndiaEntryForGermanyCompanies() {
   return (
@@ -26,22 +27,10 @@ export default function IndiaEntryForGermanyCompanies() {
           What German Companies Need to Know
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Entity Structure</h3>
-            <p className="text-gray-600 text-sm">Most German companies enter via a wholly-owned Private Limited subsidiary (GmbH-equivalent), giving full commercial flexibility under the automatic FDI route for most manufacturing and services sectors.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">India-Germany DTAA</h3>
-            <p className="text-gray-600 text-sm">One of the cleanest treaty structures in India's network — a flat 10% withholding rate applies uniformly across dividends, interest, royalties, and fees for technical services, simplifying TDS calculations for German parent-subsidiary groups.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">FEMA & RBI Filings</h3>
-            <p className="text-gray-600 text-sm">Form FC-GPR on share allotment, Form FC-TRS on any transfer, and the annual FLA return — the same core filings that apply to any foreign-owned Indian subsidiary.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Annual Compliance Calendar</h3>
-            <p className="text-gray-600 text-sm">AGM by September 30, AOC-4 and MGT-7 filings in the following weeks, Form 3CEB (transfer pricing) and the income tax return due by October/November — a compliance rhythm German finance teams need mapped against their own reporting calendar.</p>
-          </div>
+          <ClickableInfoCard title="Entity Structure" desc="Most German companies enter via a wholly-owned Private Limited subsidiary (GmbH-equivalent), giving full commercial flexibility under the automatic FDI route for most manufacturing and services sectors." />
+          <ClickableInfoCard title="India-Germany DTAA" desc="One of the cleanest treaty structures in India's network — a flat 10% withholding rate applies uniformly across dividends, interest, royalties, and fees for technical services, simplifying TDS calculations for German parent-subsidiary groups." />
+          <ClickableInfoCard title="FEMA & RBI Filings" desc="Form FC-GPR on share allotment, Form FC-TRS on any transfer, and the annual FLA return — the same core filings that apply to any foreign-owned Indian subsidiary." />
+          <ClickableInfoCard title="Annual Compliance Calendar" desc="AGM by September 30, AOC-4 and MGT-7 filings in the following weeks, Form 3CEB (transfer pricing) and the income tax return due by October/November — a compliance rhythm German finance teams need mapped against their own reporting calendar." />
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Breadcrumb } from "@/components/Breadcrumb"
+import { ClickableInfoCard } from "@/components/ClickableInfoCard"
 
 const financeFunction = [
   {
@@ -62,10 +63,7 @@ export default function PostIncorporationPage() {
           <p className="text-gray-600 mb-8">There's no fixed rule here — it's a scale decision that should track headcount, transaction volume, and regulatory complexity, not a default made at incorporation and never revisited.</p>
           <div className="grid gap-6">
             {financeFunction.map((f) => (
-              <div key={f.title} className="border rounded-xl p-6 hover:shadow-md transition">
-                <h3 className="font-semibold mb-2 text-[#081a42]">{f.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{f.desc}</p>
-              </div>
+              <ClickableInfoCard key={f.title} title={f.title} desc={f.desc} />
             ))}
           </div>
         </div>
@@ -78,10 +76,7 @@ export default function PostIncorporationPage() {
           <p className="text-gray-600 mb-8">The mistakes that show up after the first year tend to be about momentum and drift, not a single bad decision.</p>
           <div className="grid gap-6">
             {secondYearMistakes.map((m) => (
-              <div key={m.title} className="border rounded-xl p-6 bg-white hover:shadow-md transition">
-                <h3 className="font-semibold mb-2 text-[#081a42]">{m.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{m.desc}</p>
-              </div>
+              <ClickableInfoCard key={m.title} title={m.title} desc={m.desc} />
             ))}
           </div>
         </div>

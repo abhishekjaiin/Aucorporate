@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
 export default function HowToIncorporateFromUKPage() {
   return (
@@ -48,10 +49,7 @@ export default function HowToIncorporateFromUKPage() {
               detail: 'Open the Indian entity\'s bank account, remit initial capital from the UK parent, and file Form FC-GPR with the RBI within 30 days of share allotment.',
             },
           ].map((item) => (
-            <div key={item.step} className="p-6 border border-gray-200 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">{item.step}</h3>
-              <p className="text-gray-600">{item.detail}</p>
-            </div>
+            <ClickableInfoCard key={item.step} title={item.step} desc={item.detail} />
           ))}
         </div>
       </div>

@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, CheckCircle, AlertCircle } from 'lucide-react'
+import { ClickableReveal } from '@/components/ClickableReveal'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
 export default function FDIChannelsPage() {
   return (
@@ -31,7 +33,7 @@ export default function FDIChannelsPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Automatic Route */}
-            <div className="border-2 border-green-200 rounded-lg p-8 bg-green-50">
+            <ClickableReveal className="border-2 border-green-200 rounded-lg p-8 bg-green-50 cursor-pointer">
               <div className="flex items-center gap-3 mb-4">
                 <CheckCircle className="w-8 h-8 text-green-600" />
                 <h3 className="text-2xl font-bold text-green-900">Automatic Route</h3>
@@ -55,10 +57,10 @@ export default function FDIChannelsPage() {
                 </li>
               </ul>
               <p className="text-green-800 font-semibold text-sm bg-white p-3 rounded">Most foreign investors use the Automatic Route due to faster processing and reduced bureaucracy.</p>
-            </div>
+            </ClickableReveal>
 
             {/* Government Approval */}
-            <div className="border-2 border-blue-200 rounded-lg p-8 bg-blue-50">
+            <ClickableReveal className="border-2 border-blue-200 rounded-lg p-8 bg-blue-50 cursor-pointer">
               <div className="flex items-center gap-3 mb-4">
                 <AlertCircle className="w-8 h-8 text-blue-600" />
                 <h3 className="text-2xl font-bold text-blue-900">Government Approval Route</h3>
@@ -82,7 +84,7 @@ export default function FDIChannelsPage() {
                 </li>
               </ul>
               <p className="text-blue-800 font-semibold text-sm bg-white p-3 rounded">Required for multi-brand retail, insurance, atomic energy, and other sensitive sectors.</p>
-            </div>
+            </ClickableReveal>
           </div>
         </div>
       </section>
@@ -93,7 +95,7 @@ export default function FDIChannelsPage() {
           <h2 className="text-4xl font-bold mb-12">Automatic Route - Key Details</h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white p-6 rounded-lg border">
+            <ClickableReveal className="bg-white p-6 rounded-lg border cursor-pointer">
               <h3 className="font-bold text-lg mb-4 text-yellow-600">Eligible Sectors</h3>
               <ul className="text-sm text-gray-700 space-y-2">
                 <li>• Manufacturing & processing</li>
@@ -103,9 +105,9 @@ export default function FDIChannelsPage() {
                 <li>• Infrastructure development</li>
                 <li>• Most service sectors</li>
               </ul>
-            </div>
+            </ClickableReveal>
 
-            <div className="bg-white p-6 rounded-lg border">
+            <ClickableReveal className="bg-white p-6 rounded-lg border cursor-pointer">
               <h3 className="font-bold text-lg mb-4 text-yellow-600">Restricted Sectors</h3>
               <ul className="text-sm text-gray-700 space-y-2">
                 <li>• Multi-brand retail trading</li>
@@ -115,9 +117,9 @@ export default function FDIChannelsPage() {
                 <li>• Broadcasting</li>
                 <li>• Civil aviation</li>
               </ul>
-            </div>
+            </ClickableReveal>
 
-            <div className="bg-white p-6 rounded-lg border">
+            <ClickableReveal className="bg-white p-6 rounded-lg border cursor-pointer">
               <h3 className="font-bold text-lg mb-4 text-yellow-600">Documentation</h3>
               <ul className="text-sm text-gray-700 space-y-2">
                 <li>• Incorporation certificate</li>
@@ -127,7 +129,7 @@ export default function FDIChannelsPage() {
                 <li>• RBI compliance filing</li>
                 <li>• Bank account proof</li>
               </ul>
-            </div>
+            </ClickableReveal>
           </div>
         </div>
       </section>
@@ -165,7 +167,7 @@ export default function FDIChannelsPage() {
                 description: 'Post-approval FEMA filings and RBI notification (1-2 weeks)',
               },
             ].map((item) => (
-              <div key={item.step} className="flex gap-6 p-6 border rounded-lg bg-gradient-to-r from-gray-50 to-white">
+              <ClickableReveal key={item.step} className="flex gap-6 p-6 border rounded-lg bg-gradient-to-r from-gray-50 to-white cursor-pointer">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center w-12 h-12 rounded-full bg-yellow-100 text-yellow-600 font-bold text-lg">
                     {item.step}
@@ -175,7 +177,7 @@ export default function FDIChannelsPage() {
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.description}</p>
                 </div>
-              </div>
+              </ClickableReveal>
             ))}
           </div>
         </div>
@@ -194,11 +196,8 @@ export default function FDIChannelsPage() {
               { sector: 'Real Estate', rule: 'NRIs allowed; Foreign investor limits apply; Minimum investment required' },
               { sector: 'Banking', rule: 'Requires RBI approval; Automatic FDI up to 5% (now 20% with approval)' },
               { sector: 'E-commerce', rule: 'Marketplace model allowed (automatic); Inventory model restricted' },
-            ].map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg border">
-                <h3 className="font-bold text-lg text-gray-900 mb-3">{item.sector}</h3>
-                <p className="text-gray-600 text-sm">{item.rule}</p>
-              </div>
+            ].map((item) => (
+              <ClickableInfoCard key={item.sector} title={item.sector} desc={item.rule} />
             ))}
           </div>
         </div>

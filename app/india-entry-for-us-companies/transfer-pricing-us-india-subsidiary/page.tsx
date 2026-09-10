@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
+import { ClickableReveal } from '@/components/ClickableReveal'
 
 export default function TransferPricingUSIndiaPage() {
   return (
@@ -22,22 +23,22 @@ export default function TransferPricingUSIndiaPage() {
       <div className="mb-12">
         <h2 className="text-2xl font-bold mb-6">What This Means in Practice</h2>
         <div className="grid sm:grid-cols-2 gap-6">
-          <div className="p-6 border-2 border-gray-200 rounded-lg">
+          <ClickableReveal className="p-6 border-2 border-gray-200 rounded-lg cursor-pointer">
             <h3 className="font-bold text-lg mb-3">On the Indian side</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>• Form 3CEB (transfer pricing audit report) is required if related-party transactions cross the prescribed threshold</li>
               <li>• Contemporaneous documentation must justify the pricing method used</li>
               <li>• Safe Harbour Rules may apply for certain categories (e.g. IT/ITeS services), offering pre-agreed margins that reduce scrutiny</li>
             </ul>
-          </div>
-          <div className="p-6 border-2 border-gray-200 rounded-lg">
+          </ClickableReveal>
+          <ClickableReveal className="p-6 border-2 border-gray-200 rounded-lg cursor-pointer">
             <h3 className="font-bold text-lg mb-3">On the US side</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>• Section 482 allows the IRS to reallocate income/deductions between related entities if pricing isn&apos;t arm&apos;s-length</li>
               <li>• Related-party transaction values reported on Schedule M of Form 5471 must tie out to your transfer pricing documentation</li>
               <li>• Subpart F/NCTI inclusion rules can be affected by how intercompany pricing is structured</li>
             </ul>
-          </div>
+          </ClickableReveal>
         </div>
       </div>
 

@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/Reveal"
+import { ClickableReveal } from "@/components/ClickableReveal"
 import { CountUp } from "@/components/CountUp"
 
 import {
@@ -143,12 +144,13 @@ export default function HRServicesPage() {
 
       <section className="py-16 bg-yellow-50 text-center grid grid-cols-2 md:grid-cols-4 gap-8">
         {stats.map((s) => (
-          <div key={s.label}>
+          <ClickableReveal key={s.label} className="cursor-pointer">
             <div className="text-3xl font-bold">
               <CountUp value={s.value} suffix={s.suffix} decimals={s.decimals} />
             </div>
             <p>{s.label}</p>
-          </div>
+            <p className="mt-2 text-xs font-semibold text-yellow-600">Talk to an expert &rarr;</p>
+          </ClickableReveal>
         ))}
       </section>
 

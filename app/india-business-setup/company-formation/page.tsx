@@ -5,6 +5,7 @@ import { LeadForm } from '@/components/LeadForm'
 import { FaqAccordion } from '@/components/FaqAccordion'
 import { EntitySelectorTool } from '@/components/EntitySelectorTool'
 import { DocumentChecklist } from '@/components/DocumentChecklist'
+import { ClickableReveal } from '@/components/ClickableReveal'
 import { ArrowRight, Clock, FileCheck2, Layers, Timer } from 'lucide-react'
 
 const entityTypes = [
@@ -110,11 +111,11 @@ export default function CompanyFormationPage() {
               { icon: Layers, value: '8', label: 'Entity Types Covered' },
               { icon: FileCheck2, value: '1', label: 'Single SPICe+ Filing' },
             ].map((stat) => (
-              <div key={stat.label} className="rounded-xl border border-gray-200 bg-white/70 p-4 text-center backdrop-blur-sm">
+              <ClickableReveal key={stat.label} className="rounded-xl border border-gray-200 bg-white/70 p-4 text-center backdrop-blur-sm cursor-pointer">
                 <stat.icon className="mx-auto mb-2 h-5 w-5 text-yellow-600" />
                 <div className="text-lg font-bold text-[#081a42]">{stat.value}</div>
                 <div className="text-xs text-gray-500">{stat.label}</div>
-              </div>
+              </ClickableReveal>
             ))}
           </div>
         </div>
@@ -178,11 +179,12 @@ export default function CompanyFormationPage() {
           </p>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {incorporationSteps.map((step, index) => (
-              <div key={step.title} className="rounded-xl border bg-white p-6">
+              <ClickableReveal key={step.title} className="rounded-xl border bg-white p-6 cursor-pointer">
                 <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-full bg-yellow-100 font-bold text-yellow-700">{index + 1}</div>
                 <h3 className="font-bold text-base mb-2 text-[#081a42]">{step.title}</h3>
                 <p className="text-sm leading-relaxed text-gray-600">{step.desc}</p>
-              </div>
+                <p className="mt-3 text-xs font-semibold text-yellow-600">Talk to an expert &rarr;</p>
+              </ClickableReveal>
             ))}
           </div>
 
@@ -239,13 +241,14 @@ export default function CompanyFormationPage() {
           <div className="relative space-y-4">
             <div aria-hidden="true" className="absolute left-[35px] top-9 bottom-9 hidden w-px bg-yellow-200 sm:block" />
             {complianceRoadmap.map((step, index) => (
-              <div key={step.title} className="relative flex gap-5 rounded-xl border bg-white p-6">
+              <ClickableReveal key={step.title} className="relative flex gap-5 rounded-xl border bg-white p-6 cursor-pointer">
                 <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-yellow-100 font-bold text-yellow-700">{index + 1}</div>
                 <div>
                   <h3 className="font-bold text-base mb-1 text-[#081a42]">{step.title}</h3>
                   <p className="text-sm leading-relaxed text-gray-600">{step.desc}</p>
+                  <p className="mt-2 text-xs font-semibold text-yellow-600">Talk to an expert &rarr;</p>
                 </div>
-              </div>
+              </ClickableReveal>
             ))}
           </div>
           <p className="mt-8 max-w-4xl leading-relaxed text-gray-600">

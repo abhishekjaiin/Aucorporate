@@ -3,6 +3,7 @@ import Image from "next/image"
 import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/Reveal"
+import { ClickableReveal } from "@/components/ClickableReveal"
 
 import {
   ArrowRight,
@@ -229,10 +230,13 @@ export default function ArbitrationServicesPage() {
               "Confidential handling",
               "Timely execution",
             ].map((point) => (
-              <div key={point} className="flex gap-3">
-                <Shield className="text-yellow-500 mt-1" />
-                <p>{point}</p>
-              </div>
+              <ClickableReveal key={point} className="flex gap-3 cursor-pointer">
+                <Shield className="text-yellow-500 mt-1 shrink-0" />
+                <div>
+                  <p>{point}</p>
+                  <p className="mt-1 text-xs font-semibold text-yellow-600">Talk to an expert &rarr;</p>
+                </div>
+              </ClickableReveal>
             ))}
 
           </div>

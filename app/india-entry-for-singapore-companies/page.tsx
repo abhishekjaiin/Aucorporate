@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 import { EntitySelectorTool } from '@/components/EntitySelectorTool'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
+import { InlineInquiryCTA } from '@/components/InlineInquiryCTA'
 
 export default function IndiaEntryForSingaporeCompanies() {
   return (
@@ -26,32 +28,22 @@ export default function IndiaEntryForSingaporeCompanies() {
           What Singapore Companies Need to Know
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Entity Structure</h3>
-            <p className="text-gray-600 text-sm">Most Singapore companies enter via a wholly-owned Private Limited subsidiary, giving full commercial flexibility under the automatic FDI route for most sectors.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">India-Singapore DTAA Rates</h3>
-            <p className="text-gray-600 text-sm">10% withholding on dividends where the recipient holds at least 25% of the paying company's shares (15% otherwise), 10% on interest from banks/financial institutions (15% otherwise), and a flat 10% on royalties and fees for technical services.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Capital Gains &amp; Grandfathering</h3>
-            <p className="text-gray-600 text-sm">Gains on Indian shares acquired after 1 April 2017 are taxable in India under the treaty; shares acquired before that date remain grandfathered under the older capital-gains exemption. Acquisition timing matters for any Singapore holding structure.</p>
-          </div>
+          <ClickableInfoCard title="Entity Structure" desc="Most Singapore companies enter via a wholly-owned Private Limited subsidiary, giving full commercial flexibility under the automatic FDI route for most sectors." />
+          <ClickableInfoCard title="India-Singapore DTAA Rates" desc="10% withholding on dividends where the recipient holds at least 25% of the paying company's shares (15% otherwise), 10% on interest from banks/financial institutions (15% otherwise), and a flat 10% on royalties and fees for technical services." />
+          <ClickableInfoCard title="Capital Gains & Grandfathering" desc="Gains on Indian shares acquired after 1 April 2017 are taxable in India under the treaty; shares acquired before that date remain grandfathered under the older capital-gains exemption. Acquisition timing matters for any Singapore holding structure." />
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">Limitation of Benefits (LOB)</h3>
             <p className="text-gray-600 text-sm">Treaty benefits are denied to entities without genuine economic substance. Your Singapore entity needs to satisfy at least one test: listed on a recognised exchange, under 50% of gross income paid to non-residents with at least 50% beneficial ownership held in India or Singapore, or an active trade or business beyond investment holding — the same substance question at the center of{" "}
               <Link href="/blog/mail-box-dtaa-benefits" className="text-yellow-600 hover:text-yellow-700 font-semibold">
                 the Tiger Global mailbox-company ruling
               </Link>.</p>
+            <InlineInquiryCTA />
           </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">FEMA &amp; RBI Filings</h3>
-            <p className="text-gray-600 text-sm">Form FC-GPR on share allotment, Form FC-TRS on any transfer, and the annual FLA return — the same core filings that apply to any foreign-owned Indian subsidiary.</p>
-          </div>
+          <ClickableInfoCard title="FEMA & RBI Filings" desc="Form FC-GPR on share allotment, Form FC-TRS on any transfer, and the annual FLA return — the same core filings that apply to any foreign-owned Indian subsidiary." />
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">GCC Setup</h3>
             <p className="text-gray-600 text-sm">Singapore is a common staging base for companies setting up a Global Capability Center in India — we support the entity, tax, and operational setup end to end. See our <Link href="/gcc-setup-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">complete GCC setup guide</Link>.</p>
+            <InlineInquiryCTA />
           </div>
         </div>
       </div>

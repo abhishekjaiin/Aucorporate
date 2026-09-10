@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { Reveal } from "@/components/Reveal"
 import { ClickableReveal } from "@/components/ClickableReveal"
+import { ClickableInfoCard } from "@/components/ClickableInfoCard"
 import { HeroBackground } from "@/components/HeroBackground"
 
 export default function EntryProcessPage() {
@@ -138,10 +139,7 @@ export default function EntryProcessPage() {
               { title: "Joint Venture", desc: "Strategic partnership with Indian entity." },
               { title: "Branch Office", desc: "Foreign company presence under RBI approval." },
             ].map((item) => (
-              <div key={item.title} className="p-6 border rounded-xl hover:shadow-lg transition">
-                <h3 className="font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600">{item.desc}</p>
-              </div>
+              <ClickableInfoCard key={item.title} title={item.title} desc={item.desc} />
             ))}
 
           </div>
@@ -158,26 +156,9 @@ export default function EntryProcessPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
 
-            <div className="p-6 bg-white border rounded-xl">
-              <h3 className="font-semibold mb-2">Regulatory Complexity</h3>
-              <p className="text-sm text-gray-600">
-                Multiple approvals under FEMA, RBI and tax laws.
-              </p>
-            </div>
-
-            <div className="p-6 bg-white border rounded-xl">
-              <h3 className="font-semibold mb-2">Tax Exposure</h3>
-              <p className="text-sm text-gray-600">
-                Improper structuring may lead to double taxation.
-              </p>
-            </div>
-
-            <div className="p-6 bg-white border rounded-xl">
-              <h3 className="font-semibold mb-2">Compliance Burden</h3>
-              <p className="text-sm text-gray-600">
-                Ongoing reporting and audit obligations.
-              </p>
-            </div>
+            <ClickableInfoCard title="Regulatory Complexity" desc="Multiple approvals under FEMA, RBI and tax laws." />
+            <ClickableInfoCard title="Tax Exposure" desc="Improper structuring may lead to double taxation." />
+            <ClickableInfoCard title="Compliance Burden" desc="Ongoing reporting and audit obligations." />
 
           </div>
         </div>

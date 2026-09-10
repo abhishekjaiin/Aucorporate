@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import { Breadcrumb, type BreadcrumbItem } from '@/components/Breadcrumb'
+import { ClickableReveal } from '@/components/ClickableReveal'
 
 interface RegionClusterTemplateProps {
   title: string
@@ -68,14 +69,15 @@ export function RegionClusterTemplate({
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat) => (
-              <div key={stat.label} className="text-center">
+              <ClickableReveal key={stat.label} className="text-center cursor-pointer">
                 <div className="text-2xl sm:text-3xl font-bold text-yellow-500 mb-2">
                   {stat.value}
                 </div>
                 <p className="text-sm sm:text-base text-gray-600">
                   {stat.label}
                 </p>
-              </div>
+                <p className="mt-2 text-xs font-semibold text-yellow-600">Talk to an expert &rarr;</p>
+              </ClickableReveal>
             ))}
           </div>
         </div>

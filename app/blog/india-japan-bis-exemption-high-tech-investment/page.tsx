@@ -5,6 +5,7 @@ import { RelatedResources } from "@/components/RelatedResources"
 import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 import { Web3Form } from "@/components/Web3Form"
 import { ReadingProgressBar } from "@/components/ReadingProgressBar"
+import { ClickableReveal } from "@/components/ClickableReveal"
 
 const JAPAN_RED = "#BC002D"
 const NAVY = "#081a42"
@@ -398,38 +399,42 @@ export default function BlogPost() {
                 <ellipse cx="50" cy="30" rx="10" ry="16" transform="rotate(288 50 30)" />
               </g>
             </svg>
-            <div className="relative p-5 pt-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-gray-300 transition-all">
+            <ClickableReveal className="relative p-5 pt-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-gray-300 transition-all cursor-pointer">
               <span className="absolute -top-3 -left-2 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white" style={{ backgroundColor: JAPAN_RED }}>01</span>
               <Cpu className="mb-3" size={22} style={{ color: JAPAN_RED }} />
               <h3 className="font-bold mb-2">Semiconductor Ecosystem</h3>
               <p className="text-sm text-gray-600">
                 India is building an integrated semiconductor ecosystem spanning design, fabrication, assembly, testing, equipment, and materials. Japanese companies can participate as equipment manufacturers, materials and chemicals suppliers, precision engineering partners, or R&amp;D collaborators — building on the existing Tokyo Electron&ndash;Tata Electronics strategic partnership.
               </p>
-            </div>
-            <div className="relative p-5 pt-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-gray-300 transition-all">
+              <p className="mt-3 text-xs font-semibold" style={{ color: JAPAN_RED }}>Talk to an expert &rarr;</p>
+            </ClickableReveal>
+            <ClickableReveal className="relative p-5 pt-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-gray-300 transition-all cursor-pointer">
               <span className="absolute -top-3 -left-2 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white" style={{ backgroundColor: JAPAN_RED }}>02</span>
               <Factory className="mb-3" size={22} style={{ color: JAPAN_RED }} />
               <h3 className="font-bold mb-2">Electronics &amp; Precision Manufacturing</h3>
               <p className="text-sm text-gray-600">
                 India&apos;s expanding electronics market and domestic manufacturing push create openings for Japanese expertise in precision engineering, automation, robotics, industrial machinery, sensors, and factory automation systems.
               </p>
-            </div>
-            <div className="relative p-5 pt-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-gray-300 transition-all">
+              <p className="mt-3 text-xs font-semibold" style={{ color: JAPAN_RED }}>Talk to an expert &rarr;</p>
+            </ClickableReveal>
+            <ClickableReveal className="relative p-5 pt-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-gray-300 transition-all cursor-pointer">
               <span className="absolute -top-3 -left-2 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white" style={{ backgroundColor: JAPAN_RED }}>03</span>
               <Sparkles className="mb-3" size={22} style={{ color: JAPAN_RED }} />
               <h3 className="font-bold mb-2">Artificial Intelligence &amp; Technology</h3>
               <p className="text-sm text-gray-600">
                 India is emerging as a major AI and technology market. Japanese technology companies can treat India not only as a customer market but as a base for AI research, software development, product engineering, and Global Capability Centres.
               </p>
-            </div>
-            <div className="relative p-5 pt-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-gray-300 transition-all">
+              <p className="mt-3 text-xs font-semibold" style={{ color: JAPAN_RED }}>Talk to an expert &rarr;</p>
+            </ClickableReveal>
+            <ClickableReveal className="relative p-5 pt-6 rounded-lg border border-gray-200 hover:shadow-lg hover:border-gray-300 transition-all cursor-pointer">
               <span className="absolute -top-3 -left-2 flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white" style={{ backgroundColor: JAPAN_RED }}>04</span>
               <Handshake className="mb-3" size={22} style={{ color: JAPAN_RED }} />
               <h3 className="font-bold mb-2">R&amp;D, GCCs &amp; Supply-Chain Diversification</h3>
               <p className="text-sm text-gray-600">
                 A Japanese enterprise doesn&apos;t need to begin with a large manufacturing investment — a Global Capability Centre covering research, engineering, and product development can be a flexible first step, while India also serves as a China+1 sourcing and manufacturing location for Asian and global markets.
               </p>
-            </div>
+              <p className="mt-3 text-xs font-semibold" style={{ color: JAPAN_RED }}>Talk to an expert &rarr;</p>
+            </ClickableReveal>
           </div>
 
           <SectionHeading>But Entering India Requires More Than Identifying an Opportunity</SectionHeading>

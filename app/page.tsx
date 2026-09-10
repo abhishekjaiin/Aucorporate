@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import HeroSection from "@/components/HeroSection"
 import { FaqAccordion } from "@/components/FaqAccordion"
 import { InquiryForm } from "@/components/InquiryForm"
+import { ClickableReveal } from "@/components/ClickableReveal"
 
 import {
   Calculator,
@@ -438,7 +439,7 @@ export default function HomePage() {
           <div className="relative grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
             <div className="hidden lg:block absolute top-6 left-[10%] right-[10%] h-px bg-gray-200" aria-hidden="true" />
             {process.map((item) => (
-              <div key={item.step} className="relative">
+              <ClickableReveal key={item.step} className="relative cursor-pointer">
                 <div
                   className="relative z-10 w-12 h-12 rounded-full flex items-center justify-center font-bold mb-4 bg-white border-2"
                   style={{ color: NAVY, borderColor: GOLD, fontFamily: "var(--font-heading)" }}
@@ -451,7 +452,8 @@ export default function HomePage() {
                 <p className="text-sm text-gray-500">
                   {item.description}
                 </p>
-              </div>
+                <p className="mt-2 text-xs font-semibold" style={{ color: GOLD }}>Talk to an expert &rarr;</p>
+              </ClickableReveal>
             ))}
           </div>
 

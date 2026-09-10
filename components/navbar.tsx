@@ -178,19 +178,25 @@ export function Navbar() {
               </button>
               {activeMenu === "india" && (
                 <div className="absolute left-0 top-full z-50 w-[760px] pt-2">
-                  <div className="grid grid-cols-3 gap-0 overflow-hidden rounded-2xl border bg-white p-5 shadow-2xl">
-                    <div className="border-r pr-5">
-                      <h3 className="mb-3 text-sm font-semibold text-[#081a42]">India Entry</h3>
-                      {indiaLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
+                  <div className="overflow-hidden rounded-2xl border bg-white shadow-2xl">
+                    <div className="grid grid-cols-3 gap-0 p-5">
+                      <div className="border-r pr-5">
+                        <h3 className="mb-3 text-sm font-semibold text-[#081a42]">India Entry</h3>
+                        {indiaLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
+                      </div>
+                      <div className="border-r px-5">
+                        <h3 className="mb-3 text-sm font-semibold text-[#081a42]">Business Setup</h3>
+                        {indiaSetupLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
+                      </div>
+                      <div className="pl-5">
+                        <h3 className="mb-3 text-sm font-semibold text-[#081a42]">By Country</h3>
+                        <div className="grid grid-cols-2 gap-x-4">{countryLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}</div>
+                      </div>
                     </div>
-                    <div className="border-r px-5">
-                      <h3 className="mb-3 text-sm font-semibold text-[#081a42]">Business Setup</h3>
-                      {indiaSetupLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
-                    </div>
-                    <div className="pl-5">
-                      <h3 className="mb-3 text-sm font-semibold text-[#081a42]">By Country</h3>
-                      <div className="grid grid-cols-2 gap-x-4">{countryLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}</div>
-                    </div>
+                    <Link href="/partners/uniproasia" className="flex items-center justify-between border-t bg-gray-50 px-5 py-3 text-sm text-gray-700 hover:bg-white hover:text-gold">
+                      <span><span className="font-semibold text-[#081a42]">Beyond India:</span> Hong Kong / Singapore / China Company Incorporation</span>
+                      <ChevronRight className="h-4 w-4 text-gray-300" aria-hidden="true" />
+                    </Link>
                   </div>
                 </div>
               )}
@@ -224,6 +230,8 @@ export function Navbar() {
               {indiaSetupLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
               <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">By Country</p>
               {countryLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
+              <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Beyond India</p>
+              <Link href="/partners/uniproasia" onClick={closeMobile} className="block py-2 text-sm">Hong Kong / Singapore / China Company Incorporation</Link>
             </MobileGroup>
             <div className="space-y-3 border-t pt-4">{navLinks.map((link) => <Link key={link.label} href={link.href} onClick={closeMobile} className="block py-1 text-sm">{link.label}</Link>)}</div>
             <Button asChild className="mt-6 w-full"><Link href="/contact" onClick={closeMobile}>Get Started</Link></Button>

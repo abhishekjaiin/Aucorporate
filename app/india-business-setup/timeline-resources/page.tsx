@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { Button } from '@/components/ui/button'
+import { ClickableReveal } from '@/components/ClickableReveal'
 
 export default function TimelineResourcesPage() {
   return (
@@ -30,10 +31,10 @@ export default function TimelineResourcesPage() {
               { week: 'Week 6-8', activity: 'Compliance Setup & Training' },
               { week: 'Week 8-12', activity: 'Final Operationalization' },
             ].map((item, i) => (
-              <div key={i} className="flex gap-6 p-6 border rounded-lg bg-gradient-to-r from-yellow-50 to-white">
+              <ClickableReveal key={i} className="flex gap-6 p-6 border rounded-lg bg-gradient-to-r from-yellow-50 to-white cursor-pointer">
                 <div className="font-bold text-yellow-600 min-w-fit">{item.week}</div>
                 <div className="text-gray-700">{item.activity}</div>
-              </div>
+              </ClickableReveal>
             ))}
           </div>
         </div>
@@ -51,10 +52,10 @@ export default function TimelineResourcesPage() {
               { item: 'Compliance Setup', cost: '₹15,000-25,000' },
               { item: 'Professional Fees', cost: '₹20,000-50,000' },
             ].map((item, i) => (
-              <div key={i} className="bg-white p-6 rounded-lg border">
+              <ClickableReveal key={i} className="bg-white p-6 rounded-lg border cursor-pointer">
                 <h3 className="font-bold text-gray-900 mb-2">{item.item}</h3>
                 <p className="text-2xl font-bold text-yellow-600">{item.cost}</p>
-              </div>
+              </ClickableReveal>
             ))}
           </div>
         </div>

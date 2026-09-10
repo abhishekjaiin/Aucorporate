@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
 export default function IndiaUKDTAAPage() {
   return (
@@ -54,18 +55,9 @@ export default function IndiaUKDTAAPage() {
       <div className="mb-12">
         <h2 className="text-2xl font-bold mb-6">What You Need to Actually Claim These Rates</h2>
         <div className="space-y-4">
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Tax Residency Certificate (TRC)</h3>
-            <p className="text-gray-600">Mandatory to access treaty rates. Without a valid TRC from HMRC, the Indian payer must apply domestic withholding rates instead — meaning up to double the tax on dividends and interest.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Form 10F</h3>
-            <p className="text-gray-600">A self-declaration filed alongside the TRC confirming beneficial ownership and treaty eligibility details not captured on the TRC itself.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">No Permanent Establishment Declaration (if applicable)</h3>
-            <p className="text-gray-600">Relevant where the UK parent wants to confirm it isn&apos;t creating a taxable presence in India beyond the subsidiary itself.</p>
-          </div>
+          <ClickableInfoCard title="Tax Residency Certificate (TRC)" desc="Mandatory to access treaty rates. Without a valid TRC from HMRC, the Indian payer must apply domestic withholding rates instead — meaning up to double the tax on dividends and interest." />
+          <ClickableInfoCard title="Form 10F" desc="A self-declaration filed alongside the TRC confirming beneficial ownership and treaty eligibility details not captured on the TRC itself." />
+          <ClickableInfoCard title="No Permanent Establishment Declaration (if applicable)" desc="Relevant where the UK parent wants to confirm it isn't creating a taxable presence in India beyond the subsidiary itself." />
         </div>
       </div>
 

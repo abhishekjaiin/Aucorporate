@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Reveal } from '@/components/Reveal'
+import { ClickableReveal } from '@/components/ClickableReveal'
 
 import {
   ArrowRight,
@@ -235,12 +236,13 @@ export default function OutsourcingPage() {
               "Execute & Manage",
               "Optimize Continuously"
             ].map((step, i) => (
-              <Reveal key={step} delay={i * 0.2}>
+              <ClickableReveal key={step} delay={i * 0.2} className="cursor-pointer">
                 <div className="text-gold font-bold text-lg mb-2">
                   0{i + 1}
                 </div>
                 <p>{step}</p>
-              </Reveal>
+                <p className="mt-2 text-xs font-semibold text-gold">Talk to an expert &rarr;</p>
+              </ClickableReveal>
             ))}
           </div>
 

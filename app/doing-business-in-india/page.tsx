@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { Reveal } from "@/components/Reveal"
+import { ClickableReveal } from "@/components/ClickableReveal"
 import {
   Lightbulb,
   ClipboardList,
@@ -98,10 +99,11 @@ export default function DoingBusinessInIndiaPage() {
       <section className="bg-gray-50 py-14">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 text-center gap-8">
           {quickStats.map((stat) => (
-            <div key={stat.label}>
+            <ClickableReveal key={stat.label} className="cursor-pointer">
               <h2 className="text-3xl font-bold text-[#081a42]">{stat.value}</h2>
               <p className="text-sm text-gray-600">{stat.label}</p>
-            </div>
+              <p className="mt-2 text-xs font-semibold text-yellow-600">Talk to an expert &rarr;</p>
+            </ClickableReveal>
           ))}
         </div>
       </section>

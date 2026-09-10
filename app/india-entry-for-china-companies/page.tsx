@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 import { EntitySelectorTool } from '@/components/EntitySelectorTool'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
 export default function IndiaEntryForChinaCompanies() {
   return (
@@ -26,22 +27,10 @@ export default function IndiaEntryForChinaCompanies() {
           What Changed in 2026 — And What Didn't
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">The March 2026 Amendment</h3>
-            <p className="text-gray-600 text-sm">India's Union Cabinet approved amendments to Press Note 3 on March 10, 2026 (notified as Press Note 2, 2026 series, effective May 1, 2026). Global entities with up to 10% non-controlling Chinese beneficial ownership can now use the automatic route, subject to sectoral caps — a narrow but real opening after six years of blanket approval requirements.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">What Still Needs Approval</h3>
-            <p className="text-gray-600 text-sm">Direct investment from entities incorporated in China or Hong Kong, and any investment involving control or majority ownership, still requires prior government approval regardless of stake size — the 2026 amendment did not remove this.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">60-Day Fast Track</h3>
-            <p className="text-gray-600 text-sm">A defined list of priority manufacturing sectors — including capital goods, electronic components, and polysilicon/ingot-wafer manufacturing — qualifies for a 60-day approval timeline, provided majority ownership and control remain with Indian residents.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Beneficial Ownership Mapping</h3>
-            <p className="text-gray-600 text-sm">Press Note 3 looks through the full ownership chain, not just the direct investor — a global fund or holding company with Chinese beneficial ownership above the threshold can trigger approval requirements even if the investing entity itself isn't Chinese. This mapping exercise needs to happen before you file, not after.</p>
-          </div>
+          <ClickableInfoCard title="The March 2026 Amendment" desc="India's Union Cabinet approved amendments to Press Note 3 on March 10, 2026 (notified as Press Note 2, 2026 series, effective May 1, 2026). Global entities with up to 10% non-controlling Chinese beneficial ownership can now use the automatic route, subject to sectoral caps — a narrow but real opening after six years of blanket approval requirements." />
+          <ClickableInfoCard title="What Still Needs Approval" desc="Direct investment from entities incorporated in China or Hong Kong, and any investment involving control or majority ownership, still requires prior government approval regardless of stake size — the 2026 amendment did not remove this." />
+          <ClickableInfoCard title="60-Day Fast Track" desc="A defined list of priority manufacturing sectors — including capital goods, electronic components, and polysilicon/ingot-wafer manufacturing — qualifies for a 60-day approval timeline, provided majority ownership and control remain with Indian residents." />
+          <ClickableInfoCard title="Beneficial Ownership Mapping" desc="Press Note 3 looks through the full ownership chain, not just the direct investor — a global fund or holding company with Chinese beneficial ownership above the threshold can trigger approval requirements even if the investing entity itself isn't Chinese. This mapping exercise needs to happen before you file, not after." />
         </div>
       </div>
 

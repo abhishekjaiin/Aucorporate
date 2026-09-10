@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 import { EntitySelectorTool } from '@/components/EntitySelectorTool'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
+import { InlineInquiryCTA } from '@/components/InlineInquiryCTA'
 
 export default function IndiaEntryForAustralianCompanies() {
   return (
@@ -29,18 +31,14 @@ export default function IndiaEntryForAustralianCompanies() {
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">Entity Structure</h3>
             <p className="text-gray-600 text-sm">Most Australian companies enter via a wholly-owned Private Limited subsidiary under the automatic FDI route for most sectors. See our <Link href="/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">subsidiary vs. branch office comparison</Link> for the full tradeoffs, including Australia&apos;s CFC attribution rules.</p>
+            <InlineInquiryCTA />
           </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">India-Australia DTAA</h3>
-            <p className="text-gray-600 text-sm">Unlike several of India's other major treaties, this one isn't a flat rate: 15% withholding on dividends, interest, and fees for technical services, and a split royalty rate — 10% on equipment-related royalties, 15% on others. Since Finance Act 2023 cut India's domestic royalty/FTS withholding rate to 10%, that domestic rate now often applies instead of the treaty rate, which changes the repatriation-planning math compared to treaties with a lower flat rate.</p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">FEMA & RBI Filings</h3>
-            <p className="text-gray-600 text-sm">Form FC-GPR on share allotment, Form FC-TRS on any transfer, and the annual FLA return — the same core filings that apply to any foreign-owned Indian subsidiary.</p>
-          </div>
+          <ClickableInfoCard title="India-Australia DTAA" desc="Unlike several of India's other major treaties, this one isn't a flat rate: 15% withholding on dividends, interest, and fees for technical services, and a split royalty rate — 10% on equipment-related royalties, 15% on others. Since Finance Act 2023 cut India's domestic royalty/FTS withholding rate to 10%, that domestic rate now often applies instead of the treaty rate, which changes the repatriation-planning math compared to treaties with a lower flat rate." />
+          <ClickableInfoCard title="FEMA & RBI Filings" desc="Form FC-GPR on share allotment, Form FC-TRS on any transfer, and the annual FLA return — the same core filings that apply to any foreign-owned Indian subsidiary." />
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">GCC Setup</h3>
             <p className="text-gray-600 text-sm">We support Australian companies setting up a Global Capability Center in India end to end — entity, tax, payroll, and operational setup. See our <Link href="/gcc-setup-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">complete GCC setup guide</Link>.</p>
+            <InlineInquiryCTA />
           </div>
         </div>
       </div>

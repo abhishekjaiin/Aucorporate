@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
 export default function FemaComplianceUSCompanyPage() {
   return (
@@ -22,24 +23,9 @@ export default function FemaComplianceUSCompanyPage() {
       <div className="mb-12">
         <h2 className="text-2xl font-bold mb-6">Core Filings for a US-Owned Subsidiary</h2>
         <div className="space-y-6">
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Form FC-GPR</h3>
-            <p className="text-gray-600">
-              Filed with the RBI within 30 days of allotting shares to the US parent against inward FDI. This is the filing that formally records the foreign investment in the subsidiary&apos;s capital structure.
-            </p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Form FC-TRS</h3>
-            <p className="text-gray-600">
-              Required whenever shares are transferred between a resident and non-resident — relevant if the US parent later transfers shares, brings in a co-investor, or restructures ownership.
-            </p>
-          </div>
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <h3 className="font-bold text-lg mb-2">Annual FLA Return</h3>
-            <p className="text-gray-600">
-              The Foreign Liabilities and Assets return is filed annually with the RBI by every Indian entity that has received FDI or made overseas investment, regardless of whether there was any transaction that year. This is the filing most foreign-owned subsidiaries forget once the initial setup is done.
-            </p>
-          </div>
+          <ClickableInfoCard title="Form FC-GPR" desc="Filed with the RBI within 30 days of allotting shares to the US parent against inward FDI. This is the filing that formally records the foreign investment in the subsidiary's capital structure." />
+          <ClickableInfoCard title="Form FC-TRS" desc="Required whenever shares are transferred between a resident and non-resident — relevant if the US parent later transfers shares, brings in a co-investor, or restructures ownership." />
+          <ClickableInfoCard title="Annual FLA Return" desc="The Foreign Liabilities and Assets return is filed annually with the RBI by every Indian entity that has received FDI or made overseas investment, regardless of whether there was any transaction that year. This is the filing most foreign-owned subsidiaries forget once the initial setup is done." />
         </div>
       </div>
 
