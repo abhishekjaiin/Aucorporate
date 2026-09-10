@@ -86,6 +86,9 @@ const pages: Page[] = [
   { path: "/services/transaction-advisory", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
   { path: "/services/training-workshops", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-31" },
 
+  // Partners
+  { path: "/partners/uniproasia", priority: 0.7, changeFrequency: "monthly", lastModified: "2026-09-10" },
+
   // Blog Hub + Articles
   { path: "/blog", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-08-26" },
   { path: "/blog/india-japan-bis-exemption-high-tech-investment", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-31" },

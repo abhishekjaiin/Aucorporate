@@ -407,6 +407,27 @@ export default function OutsourcingPage() {
   </div>
 </section>
 
+      {/* GLOBAL PARTNER NETWORK */}
+      <section className="py-24 bg-secondary/50">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <Reveal>
+            <h2 className="text-3xl font-bold mb-4">
+              Expanding Beyond India Too?
+            </h2>
+            <p className="text-muted-foreground mb-8">
+              We partner with UniproAsia for clients whose expansion plans also cover
+              Hong Kong, Singapore or Mainland China — company formation, accounting,
+              tax and compliance, coordinated alongside your India entity.
+            </p>
+            <Button asChild variant="outline">
+              <Link href="/partners/uniproasia">
+                See the UniproAsia Partnership <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </Button>
+          </Reveal>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-24 text-center">
         <h2 className="text-3xl font-bold mb-4">
