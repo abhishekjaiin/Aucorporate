@@ -5,7 +5,23 @@ import { Reveal } from "@/components/Reveal"
 import { ClickableInfoCard } from "@/components/ClickableInfoCard"
 import { RelatedResources } from "@/components/RelatedResources"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Building2, Globe2, ShieldCheck } from "lucide-react"
+import { ArrowRight, Building2, Globe2, ShieldCheck, Cloud, Lock, Smartphone, MapPin, Mail, Phone } from "lucide-react"
+
+const processSteps = [
+  { step: "01", title: "Business Idea", desc: "You share your expansion plans — India and any of Hong Kong, Singapore or China." },
+  { step: "02", title: "Market Selection", desc: "AU Corporate and UniproAsia help confirm which markets and structure actually fit your plans." },
+  { step: "03", title: "Company Setup", desc: "India incorporation runs through AU Corporate; Hong Kong, Singapore or China setup runs through UniproAsia." },
+  { step: "04", title: "Accounting & Tax", desc: "Bookkeeping, tax advisory and financial reporting for each entity, in each jurisdiction." },
+  { step: "05", title: "Compliance", desc: "Ongoing statutory compliance and corporate maintenance keep every entity in good standing." },
+  { step: "06", title: "Business Growth", desc: "A coordinated regional footprint to support you as the business scales." },
+]
+
+const techFeatures = [
+  { icon: Cloud, title: "Cloud-Based", desc: "Accounting and records managed through a cloud accounting platform, not paper files." },
+  { icon: Lock, title: "Secure", desc: "Information encrypted and servers protected, per UniproAsia's stated security practices." },
+  { icon: Smartphone, title: "Multi-Device", desc: "Information syncs across desktop, tablet and mobile." },
+  { icon: Globe2, title: "Accessible", desc: "View company financial information from anywhere, anytime." },
+]
 
 const services = [
   { title: "Company Registration", desc: "Incorporation and registration support for setting up an entity in Hong Kong, Singapore or Mainland China." },
@@ -77,6 +93,18 @@ const faqs = [
   {
     q: "Why would a company entering India also consider Hong Kong or Singapore?",
     a: "It's a common pairing for holding company structures, regional treasury and invoicing, and broader Southeast Asian market access — alongside an operating entity in India. Which structure makes sense depends on your specific plans, which is exactly what an introductory conversation with both teams is for.",
+  },
+  {
+    q: "Can I engage UniproAsia for just one market, not all three?",
+    a: "Yes. Most clients start with whichever single market matches their immediate plans — Hong Kong, Singapore, or China — and expand to the others later if needed.",
+  },
+  {
+    q: "Is UniproAsia's fee included in AU Corporate's pricing?",
+    a: "No. AU Corporate's India services and UniproAsia's Hong Kong, Singapore or China services are billed separately by each firm — we coordinate the introduction and the India side, UniproAsia quotes and bills its own regional work directly.",
+  },
+  {
+    q: "How do I get started with this partnership?",
+    a: "Talk to AU Corporate about your India plans and mention that your expansion also covers Hong Kong, Singapore or China. We'll coordinate the India side and introduce you to UniproAsia for the rest.",
   },
 ]
 
@@ -211,6 +239,35 @@ export default function UniproAsiaPartnerPage() {
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
+      <section aria-labelledby="how-it-works" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <Reveal className="text-center mb-14">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-yellow-600 mb-3">
+              From Aspiration to Reality
+            </p>
+            <h2 id="how-it-works" className="text-3xl font-bold text-[#081a42]">
+              How the Partnership Works
+            </h2>
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+              Focus on your business while AU Corporate and UniproAsia handle the entity setup and compliance behind your expansion.
+            </p>
+          </Reveal>
+          <div className="relative grid sm:grid-cols-2 lg:grid-cols-6 gap-8">
+            <div className="hidden lg:block absolute top-6 left-[8%] right-[8%] h-px bg-gray-200" aria-hidden="true" />
+            {processSteps.map((item, i) => (
+              <Reveal key={item.step} delay={i * 0.08} className="relative">
+                <div className="relative z-10 w-12 h-12 rounded-full flex items-center justify-center font-bold mb-4 bg-white border-2 border-yellow-400 text-[#081a42]">
+                  {item.step}
+                </div>
+                <h3 className="font-semibold text-base mb-2 text-[#081a42]">{item.title}</h3>
+                <p className="text-sm text-gray-500">{item.desc}</p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* REGION BLOCKS — Hong Kong, Singapore, China */}
       {regions.map((r, i) => (
         <section key={r.name} aria-labelledby={`region-${r.name.toLowerCase().replace(/\s+/g, "-")}`} className={i % 2 === 0 ? "py-20 bg-white" : "py-20 bg-gray-50"}>
@@ -273,6 +330,73 @@ export default function UniproAsiaPartnerPage() {
             {services.map((item) => (
               <ClickableInfoCard key={item.title} title={item.title} desc={item.desc} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TECHNOLOGY */}
+      <section aria-labelledby="uniproasia-technology" className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <Reveal className="text-center mb-14">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-yellow-600 mb-3">
+              Technology
+            </p>
+            <h2 id="uniproasia-technology" className="text-3xl font-bold text-[#081a42]">
+              Powered by Cloud Technology
+            </h2>
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+              UniproAsia runs on a cloud accounting platform, so your financial information stays current and accessible without chasing paperwork.
+            </p>
+          </Reveal>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {techFeatures.map((f, i) => (
+              <Reveal key={f.title} delay={i * 0.1} className="p-6 bg-white border rounded-xl text-center">
+                <div className="w-12 h-12 mx-auto rounded-lg bg-yellow-50 flex items-center justify-center mb-4">
+                  <f.icon className="text-[#081a42]" size={22} />
+                </div>
+                <h3 className="font-semibold mb-2 text-[#081a42]">{f.title}</h3>
+                <p className="text-sm text-gray-600">{f.desc}</p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* OFFICES */}
+      <section aria-labelledby="uniproasia-offices" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <Reveal className="text-center mb-14">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-yellow-600 mb-3">
+              Contact
+            </p>
+            <h2 id="uniproasia-offices" className="text-3xl font-bold text-[#081a42]">
+              UniproAsia Offices
+            </h2>
+          </Reveal>
+          <div className="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Reveal className="p-6 border rounded-xl">
+              <h3 className="font-semibold text-lg mb-3 text-[#081a42]">Hong Kong</h3>
+              <p className="text-sm text-gray-600 mb-1">Unipro Consulting Limited</p>
+              <p className="text-sm text-gray-600 flex items-start gap-2">
+                <MapPin className="shrink-0 mt-0.5 text-yellow-600" size={16} />
+                Room 409 &amp; Room 4-5 G/F, Beverley Commercial Centre, 87-105 Chatham Road South, Tsim Sha Tsui, Kowloon, Hong Kong SAR, China
+              </p>
+            </Reveal>
+            <Reveal delay={0.1} className="p-6 border rounded-xl">
+              <h3 className="font-semibold text-lg mb-3 text-[#081a42]">Singapore</h3>
+              <p className="text-sm text-gray-600 flex items-start gap-2">
+                <MapPin className="shrink-0 mt-0.5 text-yellow-600" size={16} />
+                183 Jalan Pelikat, #B2-02, The Promenade@Pelikat, Singapore 537643
+              </p>
+            </Reveal>
+          </div>
+          <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-gray-600">
+            <a href="mailto:info@uniproasia.com" className="flex items-center gap-2 hover:text-yellow-600">
+              <Mail size={16} className="text-yellow-600" /> info@uniproasia.com
+            </a>
+            <a href="tel:+85231534327" className="flex items-center gap-2 hover:text-yellow-600">
+              <Phone size={16} className="text-yellow-600" /> +852 3153-4327
+            </a>
           </div>
         </div>
       </section>
