@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { Reveal } from "@/components/Reveal"
 import { ClickableInfoCard } from "@/components/ClickableInfoCard"
+import { InquiryButton } from "@/components/InquiryButton"
 import { RelatedResources } from "@/components/RelatedResources"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Building2, Globe2, ShieldCheck, Cloud, Lock, Smartphone, MapPin, Mail, Phone, ExternalLink } from "lucide-react"
@@ -155,11 +156,7 @@ export default function UniproAsiaPartnerPage() {
             alongside your India entity.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
-              <Link href="/contact">
-                Talk to AU Corporate <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </Button>
+            <InquiryButton />
             <Button asChild variant="outline" className="bg-white/10 text-white border-white/40 hover:bg-white/20 hover:text-white">
               <a href="https://uniproasia.com/" target="_blank" rel="noopener noreferrer">
                 Visit UniproAsia <ExternalLink className="ml-2 w-4 h-4" />
