@@ -6,6 +6,7 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { WhatsAppIcon } from "@/components/WhatsAppIcon"
 
 const navLinks = [
   { label: "Arbitration Services", href: "/arbitration-services" },
@@ -230,8 +231,14 @@ export function Navbar() {
         )}
       </nav>
 
-      <a href="https://wa.me/919999010513" target="_blank" rel="noopener noreferrer" aria-label="Chat with AU Corporate on WhatsApp" className="fixed bottom-5 right-5 z-[60] h-14 w-14 shadow-lg transition-transform hover:scale-105">
-        <Image src="/whatsapp-icon.png" alt="Chat on WhatsApp" width={56} height={56} sizes="56px" className="h-full w-full rounded-2xl" />
+      <a
+        href="https://wa.me/919999010513"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with AU Corporate on WhatsApp"
+        className="fixed bottom-5 right-5 z-[60] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-105"
+      >
+        <WhatsAppIcon size={30} />
       </a>
     </header>
   )
