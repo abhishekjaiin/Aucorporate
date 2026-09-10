@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Reveal"
 import { ClickableInfoCard } from "@/components/ClickableInfoCard"
 import { RelatedResources } from "@/components/RelatedResources"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Building2, Globe2, ShieldCheck, Cloud, Lock, Smartphone, MapPin, Mail, Phone } from "lucide-react"
+import { ArrowRight, Building2, Globe2, ShieldCheck, Cloud, Lock, Smartphone, MapPin, Mail, Phone, ExternalLink } from "lucide-react"
 
 const processSteps = [
   { step: "01", title: "Business Idea", desc: "You share your expansion plans — India and any of Hong Kong, Singapore or China." },
@@ -154,11 +154,16 @@ export default function UniproAsiaPartnerPage() {
             formation, accounting, tax, audit and compliance, coordinated
             alongside your India entity.
           </p>
-          <div className="mt-8">
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
               <Link href="/contact">
                 Talk to AU Corporate <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
+            </Button>
+            <Button asChild variant="outline" className="bg-white/10 text-white border-white/40 hover:bg-white/20 hover:text-white">
+              <a href="https://uniproasia.com/" target="_blank" rel="noopener noreferrer">
+                Visit UniproAsia <ExternalLink className="ml-2 w-4 h-4" />
+              </a>
             </Button>
           </div>
         </Reveal>
@@ -428,23 +433,18 @@ export default function UniproAsiaPartnerPage() {
             Tell us about your plans and we&apos;ll help coordinate the India side
             directly, and connect you with UniproAsia for Hong Kong, Singapore or China.
           </p>
-          <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
-            <Link href="/contact">
-              Talk to AU Corporate <ArrowRight className="ml-2 w-4 h-4" />
-            </Link>
-          </Button>
-          <p className="mt-6 text-xs text-gray-400">
-            Learn more about UniproAsia directly at{" "}
-            <a
-              href="https://uniproasia.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-yellow-600 hover:underline"
-            >
-              uniproasia.com
-            </a>
-            .
-          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
+              <Link href="/contact">
+                Talk to AU Corporate <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </Button>
+            <Button asChild variant="outline">
+              <a href="https://uniproasia.com/" target="_blank" rel="noopener noreferrer">
+                Visit UniproAsia <ExternalLink className="ml-2 w-4 h-4" />
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
