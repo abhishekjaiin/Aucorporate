@@ -1,7 +1,72 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Breadcrumb } from '@/components/Breadcrumb'
-import { ArrowRight, CheckCircle, Globe, Zap } from 'lucide-react'
+import { FaqAccordion } from '@/components/FaqAccordion'
+import { ClickableInfoCard } from '@/components/ClickableInfoCard'
+import { ClickableReveal } from '@/components/ClickableReveal'
+import { ArrowRight, CheckCircle, Globe, Zap, AlertCircle } from 'lucide-react'
+
+const entitySnapshot = [
+  {
+    name: 'Private Limited Company (WOS)',
+    desc: 'The default vehicle for most foreign investment — a wholly owned subsidiary with full operating flexibility and limited liability.',
+  },
+  {
+    name: 'Limited Liability Partnership (LLP)',
+    desc: 'Combines partnership flexibility with limited liability; less commonly used than a Private Limited Company for FDI-funded operating businesses.',
+  },
+  {
+    name: 'Branch Office',
+    desc: 'An extension of the foreign parent rather than a separate Indian entity — permitted only for specified activities and RBI-approval gated.',
+  },
+  {
+    name: 'Liaison Office',
+    desc: 'A non-revenue-generating representative presence, used purely for market research or coordination with Indian counterparts.',
+  },
+  {
+    name: 'Project Office',
+    desc: 'A temporary presence set up to execute a specific contract or project in India.',
+  },
+  {
+    name: 'Joint Venture (JV)',
+    desc: 'An Indian entity co-owned with a local partner, typically structured as a Private Limited Company under a shareholders’ agreement.',
+  },
+]
+
+const timelineGlance = [
+  { week: 'Week 1-2', activity: 'Entity selection and documentation — choosing the right structure and assembling apostilled parent-company documents' },
+  { week: 'Week 2-4', activity: 'Company registration and approvals — SPICe+ filing, and DPIIT approval if the Government Route applies' },
+  { week: 'Week 4-6', activity: 'Bank account opening and tax registration — PAN/TAN, GST where applicable, and capital remittance' },
+  { week: 'Week 6-8', activity: 'Compliance setup — FEMA/RBI reporting, labour registrations, and internal process training' },
+  { week: 'Week 8-12', activity: 'Final operationalization — the point at which most entities are fully banked, compliant, and trading' },
+]
+
+const hubFaqs = [
+  {
+    q: 'Where should I start if I’m setting up a business in India for the first time?',
+    a: 'Start by confirming the two things that determine everything downstream: which entity type fits what you actually want to do in India, and whether your sector falls under the Automatic Route or needs Government Route approval. Those two answers dictate the timeline, the documentation, and which of this guide’s five sections you need first. If you’re still validating the market opportunity itself, our Why India overview is the right starting point instead.',
+  },
+  {
+    q: 'Can a foreign company or individual own 100% of an Indian entity?',
+    a: 'Yes, in most sectors. Manufacturing, most services, IT and software, and infrastructure development all permit 100% foreign ownership under the Automatic Route with no prior government approval. A shorter list of sensitive sectors — multi-brand retail, insurance, defence beyond certain limits, and a handful of others — caps foreign equity or requires Government Route approval instead. See our FDI Channels guide for the full sector-by-sector breakdown.',
+  },
+  {
+    q: 'Do I need to travel to India to incorporate a company?',
+    a: 'No — the SPICe+ filing, Digital Signature Certificate application, DIN application and name reservation are all completed online through the MCA21 V3 portal. The steps that can’t be done remotely are outside the portal itself, mainly getting the foreign parent’s documents apostilled in its home country. Our Company Formation guide walks through the exact document set and sequencing.',
+  },
+  {
+    q: 'What’s the difference between the Automatic Route and the Government Route, and which one applies to me?',
+    a: 'The Automatic Route covers most sectors and requires no prior government approval before the investment is made — the entity simply completes its RBI reporting afterward, and this typically clears in 4-6 weeks. The Government Route applies to a shorter list of sensitive sectors and requires DPIIT and sector-ministry approval before the investment can proceed, which usually takes 8-12 weeks. Our FDI Channels guide has the full sector table.',
+  },
+  {
+    q: 'How long does the entire process take, from entity decision to a working, banked company?',
+    a: 'Most foreign-owned entities are fully incorporated, banked, and operational within 8-12 weeks end to end, assuming an Automatic Route sector and no major document delays. That figure covers entity selection, incorporation, bank account opening, capital remittance and initial compliance setup — see our Timeline & Resources page for the week-by-week breakdown and budget.',
+  },
+  {
+    q: 'Is a local resident director or office required to set up a business in India?',
+    a: 'Yes for a company: at least one director must have stayed in India for a total of not less than 182 days in the preceding financial year, under Section 149(3) of the Companies Act, 2013. That director doesn’t need to be a shareholder and is often appointed specifically to satisfy this requirement, so an all-foreign-national board can still incorporate as long as one qualifying resident director is on the board from day one. A registered office address in India is also required from incorporation onward.',
+  },
+]
 
 export default function IndiaBusinessSetupHub() {
   const setupSteps = [
@@ -85,8 +150,62 @@ export default function IndiaBusinessSetupHub() {
         </div>
       </section>
 
+      {/* ORIENTATION OVERVIEW */}
+      <section className="py-20 bg-white border-b">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-6">How Setting Up a Business in India Actually Works</h2>
+          <p className="max-w-4xl leading-relaxed text-gray-600 mb-6">
+            &ldquo;India business setup&rdquo; isn&apos;t one filing — it&apos;s four separate decisions that happen roughly in sequence: which entity structure fits what you want to do here, whether your sector needs prior government approval before the investment can proceed, how to actually get that entity incorporated and banked, and what ongoing compliance the entity takes on once it exists. Most of the confusion foreign companies run into comes from treating these as one step rather than four, or starting the paperwork before the entity and route decisions are settled. This page is the map; the five sections linked below are where each decision gets made in full detail.
+          </p>
+          <p className="max-w-4xl leading-relaxed text-gray-600 mb-12">
+            Two numbers are worth anchoring on before anything else: a foreign-owned entity going through the <strong>Automatic Route</strong> (no prior government approval needed) typically incorporates in <strong>4-6 weeks</strong>, while one requiring <strong>Government Route</strong> approval takes <strong>8-12 weeks</strong>. Either way, the full path from entity selection through a working, banked, compliant entity generally runs <strong>8-12 weeks</strong> overall — see the timeline snapshot further down this page.
+          </p>
+
+          <h3 className="text-2xl font-bold mb-2 text-gray-900">Entity Options at a Glance</h3>
+          <p className="max-w-4xl leading-relaxed text-gray-600 mb-8">
+            Six structures cover almost every foreign company entering India. A Private Limited Company (wholly owned subsidiary) is the default for a business that wants to trade, hire and hold assets in its own name; the others suit narrower purposes.
+          </p>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mb-6">
+            {entitySnapshot.map((entity) => (
+              <ClickableInfoCard key={entity.name} title={entity.name} desc={entity.desc} />
+            ))}
+          </div>
+          <p className="max-w-4xl leading-relaxed text-gray-600 mb-16">
+            For the full decision framework — including a One Person Company (available only to certain resident Indian/NRI individuals, not to a foreign national or corporate parent) — see the complete entity comparison on our{' '}
+            <Link href="/india-business-setup/company-formation" className="text-yellow-700 font-semibold hover:underline">
+              Company Formation
+            </Link>{' '}
+            page.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="border-2 border-green-200 rounded-lg p-6 bg-green-50">
+              <div className="flex items-center gap-3 mb-2">
+                <CheckCircle className="w-6 h-6 text-green-600" />
+                <h4 className="text-lg font-bold text-green-900">Automatic Route</h4>
+              </div>
+              <p className="text-sm text-green-900">No prior government approval — most sectors, including manufacturing, IT/software and most services. Typical timeline: 4-6 weeks.</p>
+            </div>
+            <div className="border-2 border-blue-200 rounded-lg p-6 bg-blue-50">
+              <div className="flex items-center gap-3 mb-2">
+                <AlertCircle className="w-6 h-6 text-blue-600" />
+                <h4 className="text-lg font-bold text-blue-900">Government Route</h4>
+              </div>
+              <p className="text-sm text-blue-900">DPIIT and sector-ministry approval required — multi-brand retail, insurance, defence beyond certain limits, and other sensitive sectors. Typical timeline: 8-12 weeks.</p>
+            </div>
+          </div>
+          <p className="mt-6 max-w-4xl leading-relaxed text-gray-600">
+            Unsure which route your sector falls under? The{' '}
+            <Link href="/india-business-setup/fdi-channels" className="text-yellow-700 font-semibold hover:underline">
+              FDI Channels
+            </Link>{' '}
+            guide has the full sector-by-sector table.
+          </p>
+        </div>
+      </section>
+
       {/* SEVEN-STEP FRAMEWORK */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">The Path to Setting Up in India</h2>
           <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
@@ -120,6 +239,29 @@ export default function IndiaBusinessSetupHub() {
               )
             })}
           </div>
+        </div>
+      </section>
+
+      {/* TIMELINE AT A GLANCE */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">Setup Timeline at a Glance</h2>
+          <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+            A realistic, stage-by-stage view of the roughly 8-12 weeks it takes most foreign-owned entities to go from entity decision to fully operational.
+          </p>
+          <div className="space-y-4 max-w-4xl mx-auto">
+            {timelineGlance.map((item, i) => (
+              <ClickableReveal key={i} className="flex flex-col sm:flex-row gap-2 sm:gap-6 p-6 border rounded-lg bg-gray-50 cursor-pointer">
+                <div className="font-bold text-yellow-600 min-w-[100px]">{item.week}</div>
+                <div className="text-gray-700">{item.activity}</div>
+              </ClickableReveal>
+            ))}
+          </div>
+          <p className="text-center mt-10">
+            <Link href="/india-business-setup/timeline-resources" className="text-yellow-700 font-semibold hover:underline">
+              See the full week-by-week timeline and budget breakdown →
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -165,8 +307,31 @@ export default function IndiaBusinessSetupHub() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-10 text-center">Frequently Asked Questions</h2>
+          <FaqAccordion faqs={hubFaqs} />
+        </div>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: hubFaqs.map((f) => ({
+                '@type': 'Question',
+                name: f.q,
+                acceptedAnswer: { '@type': 'Answer', text: f.a },
+              })),
+            }),
+          }}
+        />
+      </section>
+
       {/* RELATED RESOURCES */}
-      <section className="py-16 bg-white border-t">
+      <section className="py-16 bg-gray-50 border-t">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-8">Complementary Services</h2>
 
