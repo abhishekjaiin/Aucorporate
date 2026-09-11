@@ -24,14 +24,14 @@ const pages: Page[] = [
   { path: "/", priority: 1.0, changeFrequency: "daily", lastModified: "2026-08-26" },
 
   // Core Service Hub
-  { path: "/services", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-26" },
+  { path: "/services", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-11" },
 
   // 10 Service Pillars
-  { path: "/india-business-setup", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-26" },
-  { path: "/services/accounting-assurance", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-08-31" },
-  { path: "/hr-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-05-04" },
+  { path: "/india-business-setup", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-11" },
+  { path: "/services/accounting-assurance", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-09-11" },
+  { path: "/hr-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-09-11" },
   { path: "/services/taxation-regulatory", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
-  { path: "/outsourcing", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-08-26" },
+  { path: "/outsourcing", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-09-11" },
   { path: "/arbitration-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-08-26" },
 
   // Main Pages
@@ -42,7 +42,7 @@ const pages: Page[] = [
   { path: "/terms", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-07-30" },
 
   // Doing Business in India Hub + cluster
-  { path: "/doing-business-in-india", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-25" },
+  { path: "/doing-business-in-india", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-11" },
   { path: "/doing-business-in-india/why-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
   { path: "/doing-business-in-india/pre-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
   { path: "/doing-business-in-india/entry-process", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
@@ -57,7 +57,7 @@ const pages: Page[] = [
   { path: "/india-business-setup/company-formation", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
   { path: "/india-business-setup/regulatory-compliance", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-20" },
   { path: "/india-business-setup/banking-taxation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-20" },
-  { path: "/india-business-setup/timeline-resources", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
+  { path: "/india-business-setup/timeline-resources", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
 
   // Regional India Entry Clusters
   { path: "/india-entry-for-us-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
@@ -82,9 +82,9 @@ const pages: Page[] = [
   { path: "/india-entry-for-china-companies", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-08-31" },
 
   // Service Pages
-  { path: "/services/risk-management", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/services/risk-management", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
   { path: "/services/transaction-advisory", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
-  { path: "/services/training-workshops", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/services/training-workshops", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
 
   // Partners
   { path: "/partners/uniproasia", priority: 0.7, changeFrequency: "monthly", lastModified: "2026-09-10" },
