@@ -9,16 +9,24 @@ import { Reveal } from "@/components/Reveal"
 const NAVY = "#081a42"
 const GOLD = "#facc15"
 
-type Category = "India Entry" | "Taxation" | "Arbitration" | "FDI & Investment"
+type Category = "India Entry" | "Taxation" | "Arbitration" | "FDI & Investment" | "Outsourcing"
 
 const categoryStyles: Record<Category, { bg: string; text: string; dot: string }> = {
   "India Entry": { bg: "#eff6ff", text: "#1d4ed8", dot: "#2563eb" },
   Taxation: { bg: "#f0fdf4", text: "#15803d", dot: "#16a34a" },
   Arbitration: { bg: "#fef2f2", text: "#b91c1c", dot: "#dc2626" },
   "FDI & Investment": { bg: "#fffbeb", text: "#b45309", dot: "#d97706" },
+  Outsourcing: { bg: "#f5f3ff", text: "#6d28d9", dot: "#7c3aed" },
 }
 
 const blogs: { title: string; desc: string; slug: string; category: Category; date: string; featured?: boolean }[] = [
+  {
+    title: "Accounting Outsourcing to India for US Businesses: How to Choose the Right Partner",
+    desc: "US businesses and CPA firms are increasingly sending bookkeeping, tax prep, and back-office accounting work to India. Here's how to evaluate providers, what drives cost, and a look at a few firms in this space.",
+    slug: "accounting-outsourcing-india-us-businesses",
+    category: "Outsourcing",
+    date: "14 Sep 2026",
+  },
   {
     title: "India Opens Another Door for Japanese High-Tech Investment",
     desc: "Commerce Minister Piyush Goyal's proposed BIS certification exemption for high-tech manufacturers, announced in Tokyo on 25 August 2026 — and what it signals for Japanese semiconductor, electronics, and AI companies evaluating India.",
@@ -87,7 +95,7 @@ const blogs: { title: string; desc: string; slug: string; category: Category; da
 
 const featuredPost = blogs.find((b) => b.featured)!
 const restPosts = blogs.filter((b) => !b.featured)
-const categories: ("All" | Category)[] = ["All", "India Entry", "Taxation", "Arbitration", "FDI & Investment"]
+const categories: ("All" | Category)[] = ["All", "India Entry", "Taxation", "Arbitration", "FDI & Investment", "Outsourcing"]
 
 export default function BlogPage() {
   const [active, setActive] = useState<"All" | Category>("All")
