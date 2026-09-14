@@ -23,6 +23,21 @@ export default function IndiaEntryForAustralianCompanies() {
         </p>
       </div>
 
+      <div className="mb-12 p-6 bg-gray-50 rounded-lg border border-gray-200">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+          Australia&apos;s India Engagement Infrastructure: AIBX, CAIR, and the Innovation Network
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Two-way trade in goods and services between Australia and India reached roughly A$50 billion in 2025, with Australian agricultural exports to India up 131% since 2022 — helped along by ECTA&apos;s tariff cuts — and industrial exports (excluding coal) up 70% over the same period, according to Australia&apos;s Department of Foreign Affairs and Trade. Education remains Australia&apos;s single largest services export to India, at roughly A$9.4 billion, a reminder that the relationship runs well beyond the manufacturing and mining sectors most market-entry guides focus on.
+        </p>
+        <p className="text-gray-700 mb-4">
+          Australian companies evaluating India also have access to government-backed facilitation channels most other foreign investors don&apos;t. The <strong>Australia-India Business Exchange (AIBX)</strong> — an Austrade program now folded into the broader South Asia Business Exchange — connects Australian exporters and investors with Austrade trade commissioners across major Indian cities, backed by a further $14.4 million in federal funding over four years to expand its reach. A companion initiative, the <strong>Australia-India Innovation Network (AIIN)</strong>, focuses specifically on helping Australian technology companies access India&apos;s digital economy.
+        </p>
+        <p className="text-gray-700">
+          Separately, the <strong>Centre for Australia-India Relations (CAIR)</strong>, established by the Australian Government in 2023, runs the Maitri Grants and Fellowships program aimed at businesses — including SMEs — that don&apos;t yet have established channels into the Indian market. We regularly pick up engagements from Australian companies who&apos;ve already used AIBX or CAIR-level market intelligence before turning to us for the entity structuring, tax, and compliance work below.
+        </p>
+      </div>
+
       <div className="mb-12">
         <h2 className="text-2xl sm:text-3xl font-bold mb-8">
           What Australian Companies Need to Know
@@ -40,6 +55,8 @@ export default function IndiaEntryForAustralianCompanies() {
             <p className="text-gray-600 text-sm">We support Australian companies setting up a Global Capability Center in India end to end — entity, tax, payroll, and operational setup. See our <Link href="/gcc-setup-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">complete GCC setup guide</Link>.</p>
             <InlineInquiryCTA />
           </div>
+          <ClickableInfoCard title="Transfer Pricing & Thin Capitalisation" desc="Intercompany loans, management fees, and royalty/IP licensing between an Australian parent and its Indian subsidiary must be arm's-length documented under India's transfer pricing rules (historically Section 92 of the Income Tax Act, 1961, restructured as Section 161 under the Income-tax Act, 2025, effective April 2026), and India disallows interest deductions above 30% of EBITDA once net interest crosses ₹1 crore. Australia runs its own earnings-based test under Division 820 of the ITAA 1997 — also a 30% tax-EBITDA fixed ratio test, for income years starting on or after 1 July 2024 — so funding structures need to clear both countries' interest-deductibility rules, not just India's." />
+          <ClickableInfoCard title="Permanent Establishment Risk" desc="Rotating Australian engineers, mining-services, or consulting staff into India for installation, commissioning, or ongoing technical support can create a Service Permanent Establishment even without a fixed office — though the India-Australia DTAA sets a more generous 183-day-in-any-12-months threshold for services furnished through personnel than several of India's other treaties (90 days under the India-US DTAA, for example). Structuring secondment agreements and invoicing correctly before deployment is what keeps a short assignment from becoming a taxable presence." />
         </div>
       </div>
 
@@ -58,6 +75,36 @@ export default function IndiaEntryForAustralianCompanies() {
           </Link>{' '}
           for entity-choice tradeoffs specific to Australian parents.
         </p>
+      </div>
+
+      <div className="mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">Common Questions from Australian Companies</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="font-bold text-lg mb-2 text-[#081a42]">Does an Australian parent need a resident director to incorporate an Indian subsidiary?</h3>
+            <p className="text-gray-700">
+              Yes. Under Section 149(3) of the Companies Act, 2013, every Indian company — including a wholly foreign-owned subsidiary — must have at least one director who was resident in India for 182 days or more in the preceding calendar year. Australian parents typically meet this with a local hire or a professional resident-director arrangement rather than waiting for an Australian national to relocate.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-bold text-lg mb-2 text-[#081a42]">Do Australia&apos;s CFC rules apply to an Indian subsidiary?</h3>
+            <p className="text-gray-700">
+              Almost always — a wholly or majority Australian-owned Indian subsidiary will typically meet the ownership threshold to be a &quot;controlled foreign company&quot; for Australian tax purposes, so whether any of its income gets attributed back to the Australian parent turns on Part X of the Income Tax Assessment Act 1936&apos;s active income test rather than on ownership alone. See our <Link href="/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">subsidiary vs. branch office comparison</Link> for the full attribution mechanics.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-bold text-lg mb-2 text-[#081a42]">Does the India-Australia DTAA really beat India&apos;s domestic withholding rate on everything?</h3>
+            <p className="text-gray-700">
+              On dividends and interest, yes — the treaty&apos;s flat 15% comfortably undercuts India&apos;s 20%+ domestic rate on non-resident payments. Royalties and fees for technical services are more nuanced: the treaty splits the rate (10% on equipment-related royalties, 15% on others, subject to the &quot;make available&quot; test), and Finance Act 2023 raised India&apos;s own domestic rate on these categories from 10% to 20% — so the treaty is now clearly favourable across the board, but claiming it still requires a valid Tax Residency Certificate and Form 10F filed before remittance.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-bold text-lg mb-2 text-[#081a42]">Can rotating Australian staff into India for short-term projects create a tax presence?</h3>
+            <p className="text-gray-700">
+              It can, though the India-Australia treaty is somewhat more forgiving on this point than others — services furnished through employees or personnel only create a Service Permanent Establishment once the relevant activity exceeds 183 days in any 12-month period, versus a 90-day threshold under some other Indian treaties. That said, poorly structured secondment agreements, invoicing, or on-the-ground supervision arrangements can still trigger PE exposure well before the day count, so it&apos;s worth reviewing deployment plans before travel begins, not after an assessment starts.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="mb-12">
@@ -83,6 +130,24 @@ export default function IndiaEntryForAustralianCompanies() {
           </Link>
           <Link href="/outsourcing" className="text-sm text-yellow-600 hover:text-yellow-700 font-semibold">
             Accounting outsourcing for Australian companies in India →
+          </Link>
+        </div>
+      </div>
+
+      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+        <h3 className="font-bold text-lg mb-4">Related Reading</h3>
+        <div className="flex flex-col gap-2">
+          <Link href="/blog/india-safe-harbour-rules-2026" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+            India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained →
+          </Link>
+          <Link href="/doing-business-in-india/why-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+            Why Invest in India →
+          </Link>
+          <Link href="/india-business-setup/fdi-channels" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+            FDI Channels & Investment Routes in India →
+          </Link>
+          <Link href="/services/transaction-advisory" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+            Transaction & Business Advisory Services →
           </Link>
         </div>
       </div>
