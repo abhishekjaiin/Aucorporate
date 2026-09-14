@@ -32,7 +32,7 @@ const pages: Page[] = [
   { path: "/hr-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-09-11" },
   { path: "/services/taxation-regulatory", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-14" },
   { path: "/outsourcing", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-09-11" },
-  { path: "/arbitration-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-08-26" },
+  { path: "/arbitration-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-09-14" },
 
   // Main Pages
   { path: "/about", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
