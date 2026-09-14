@@ -75,6 +75,11 @@ const nextConfig = {
         destination: "/doing-business-in-india/post-incorporation",
         permanent: true,
       },
+      {
+        source: "/blog/accounting-outsourcing-india-us-businesses",
+        destination: "/accounting-outsourcing-firm-for-united-states-cpas-firm",
+        permanent: true,
+      },
     ]
   },
 

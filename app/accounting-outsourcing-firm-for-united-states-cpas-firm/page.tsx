@@ -39,12 +39,12 @@ export default function AccountingOutsourcingIndiaBlogPage() {
       <BlogPostingSchema
         headline="Accounting Outsourcing to India for US Businesses: How to Choose the Right Partner"
         description="Considering accounting, tax, or bookkeeping outsourcing to India? Here's how US businesses and CPA firms should evaluate providers, what drives cost, and a look at a few firms serving this space."
-        url="https://www.theaucorp.com/blog/accounting-outsourcing-india-us-businesses"
+        url="https://www.theaucorp.com/accounting-outsourcing-firm-for-united-states-cpas-firm"
         image="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?fm=jpg&q=80&w=1600&auto=format&fit=crop"
         datePublished="2026-09-14"
         dateModified="2026-09-14"
       />
-      <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Accounting Outsourcing to India for US Businesses" }]} />
+      <Breadcrumb items={[{ label: "Accounting Outsourcing to India for US Businesses" }]} />
 
       <h1 className="text-4xl font-bold mb-6">
         Accounting Outsourcing to India for US Businesses: How to Choose the Right Partner

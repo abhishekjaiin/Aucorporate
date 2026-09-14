@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Considering accounting, tax, or bookkeeping outsourcing to India? Here's how US businesses and CPA firms should evaluate providers, what drives cost, and a look at a few firms serving this space.",
   alternates: {
-    canonical: "https://www.theaucorp.com/blog/accounting-outsourcing-india-us-businesses",
+    canonical: "https://www.theaucorp.com/accounting-outsourcing-firm-for-united-states-cpas-firm",
   },
   openGraph: {
     title: "Accounting Outsourcing to India for US Businesses: How to Choose",
     description:
       "Considering accounting, tax, or bookkeeping outsourcing to India? Here's how US businesses and CPA firms should evaluate providers, what drives cost, and a look at a few firms serving this space.",
-    url: "https://www.theaucorp.com/blog/accounting-outsourcing-india-us-businesses",
+    url: "https://www.theaucorp.com/accounting-outsourcing-firm-for-united-states-cpas-firm",
   },
   twitter: {
     title: "Accounting Outsourcing to India for US Businesses: How to Choose",
