@@ -606,7 +606,7 @@ export default function HomePage() {
             Related Resources
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link href="/services/taxation-regulatory" className="p-6 border rounded-lg hover:shadow-md transition group">
               <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
                 Taxation &amp; Regulatory Services
@@ -631,6 +631,15 @@ export default function HomePage() {
               </h3>
               <p className="text-sm text-gray-600">
                 Comprehensive financial reporting, IFRS compliance, and assurance services for growing businesses.
+              </p>
+            </Link>
+
+            <Link href="/gcc-setup-india" className="p-6 border rounded-lg hover:shadow-md transition group">
+              <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+                GCC Setup in India
+              </h3>
+              <p className="text-sm text-gray-600">
+                Entity choice, FEMA/RBI filings, and Safe Harbour tax rules for setting up a Global Capability Center in India.
               </p>
             </Link>
           </div>
