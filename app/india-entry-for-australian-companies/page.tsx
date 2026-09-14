@@ -33,7 +33,7 @@ export default function IndiaEntryForAustralianCompanies() {
             <p className="text-gray-600 text-sm">Most Australian companies enter via a wholly-owned Private Limited subsidiary under the automatic FDI route for most sectors. See our <Link href="/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">subsidiary vs. branch office comparison</Link> for the full tradeoffs, including Australia&apos;s CFC attribution rules.</p>
             <InlineInquiryCTA />
           </div>
-          <ClickableInfoCard title="India-Australia DTAA" desc="Unlike several of India's other major treaties, this one isn't a flat rate: 15% withholding on dividends, interest, and fees for technical services, and a split royalty rate — 10% on equipment-related royalties, 15% on others. Since Finance Act 2023 cut India's domestic royalty/FTS withholding rate to 10%, that domestic rate now often applies instead of the treaty rate, which changes the repatriation-planning math compared to treaties with a lower flat rate." />
+          <ClickableInfoCard title="India-Australia DTAA" desc="Unlike several of India's other major treaties, this one isn't a flat rate: 15% withholding on dividends and interest, and a split royalty/FTS rate — 10% on equipment-related royalties, 15% on other royalties and fees for technical services (subject to the treaty's 'make available' test). Finance Act 2023 raised India's domestic royalty/FTS withholding rate from 10% to 20% (effective April 2023), so the treaty rate is now the clearly better option — but claiming it requires a valid Tax Residency Certificate and Form 10F filed before remittance, or the higher domestic rate applies by default." />
           <ClickableInfoCard title="FEMA & RBI Filings" desc="Form FC-GPR on share allotment, Form FC-TRS on any transfer, and the annual FLA return — the same core filings that apply to any foreign-owned Indian subsidiary." />
           <div className="p-6 border border-gray-200 rounded-lg">
             <h3 className="font-bold text-lg mb-2">GCC Setup</h3>
@@ -68,6 +68,9 @@ export default function IndiaEntryForAustralianCompanies() {
         <h3 className="font-bold text-lg mb-4">
           Comprehensive Services for Australian Companies
         </h3>
+        <p className="text-gray-700 text-sm mb-4">
+          Not every Australian company needs a subsidiary on day one. If you&apos;re testing the Indian market or need finance-function support without building out an in-country team, our accounting outsourcing service covers bookkeeping, payroll, and statutory filings for Australian businesses operating in India, and can convert into full in-house support once you incorporate.
+        </p>
         <div className="flex flex-wrap gap-3">
           <Link href="/india-business-setup/company-formation" className="text-sm text-yellow-600 hover:text-yellow-700 font-semibold">
             Full company registration process in India →
@@ -79,7 +82,7 @@ export default function IndiaEntryForAustralianCompanies() {
             Accounting Services →
           </Link>
           <Link href="/outsourcing" className="text-sm text-yellow-600 hover:text-yellow-700 font-semibold">
-            Outsourcing Services →
+            Accounting outsourcing for Australian companies in India →
           </Link>
         </div>
       </div>

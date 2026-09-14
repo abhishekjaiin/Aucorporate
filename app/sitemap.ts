@@ -44,10 +44,10 @@ const pages: Page[] = [
   // Doing Business in India Hub + cluster
   { path: "/doing-business-in-india", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-11" },
   { path: "/doing-business-in-india/why-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-04" },
-  { path: "/doing-business-in-india/pre-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/doing-business-in-india/pre-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-14" },
   { path: "/doing-business-in-india/entry-process", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
-  { path: "/doing-business-in-india/incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
-  { path: "/doing-business-in-india/post-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-25" },
+  { path: "/doing-business-in-india/incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-14" },
+  { path: "/doing-business-in-india/post-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-14" },
 
   // GCC Setup
   { path: "/gcc-setup-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
@@ -56,7 +56,7 @@ const pages: Page[] = [
   { path: "/india-business-setup/fdi-channels", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
   { path: "/india-business-setup/company-formation", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
   { path: "/india-business-setup/regulatory-compliance", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-20" },
-  { path: "/india-business-setup/banking-taxation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-20" },
+  { path: "/india-business-setup/banking-taxation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-14" },
   { path: "/india-business-setup/timeline-resources", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
 
   // Regional India Entry Clusters
@@ -74,12 +74,12 @@ const pages: Page[] = [
   { path: "/india-entry-for-uk-companies/fema-compliance-uk-company-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
   { path: "/india-entry-for-uk-companies/cost-timeline-incorporate-company-india-from-uk", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
 
-  { path: "/india-entry-for-singapore-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-08-31" },
-  { path: "/india-entry-for-australian-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-08-31" },
+  { path: "/india-entry-for-singapore-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-09-14" },
+  { path: "/india-entry-for-australian-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-09-14" },
   { path: "/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
-  { path: "/india-entry-for-german-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-08-31" },
-  { path: "/india-entry-for-japan-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-08-31" },
-  { path: "/india-entry-for-china-companies", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-08-31" },
+  { path: "/india-entry-for-german-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-09-14" },
+  { path: "/india-entry-for-japan-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-09-14" },
+  { path: "/india-entry-for-china-companies", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-09-14" },
 
   // Service Pages
   { path: "/services/risk-management", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
