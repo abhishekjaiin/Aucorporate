@@ -16,7 +16,7 @@ This is real, firm-supplied positioning describing an actual service line (not t
 
 | Stage | Agent | Output | Status |
 |---|---|---|---|
-| 1 | seo-researcher | 01-serp-research.md | pending |
+| 1 | seo-researcher | 01-serp-research.md | done — OIDAR GST regime confirmed as strong India-specific hook (amended Oct 2023, explicitly covers AI/cloud/SaaS); Equalisation Levy fully withdrawn (2024/2025, past tense only); global VAT/OSS queries dominated by VAT-tech vendors (Fonoa, Anrok, etc.) — no credible India-advisory competition there; India-advisory firms (Treelife, KNM, Nexdigm) compete on OIDAR/India-entry queries instead. Semrush unavailable (API units); WebFetch blocked site-wide (proxy) — SERP structure inferred from search snippets only. |
 | 2 | keyword-intent-analyst | 02-keyword-intent-map.md | pending |
 | 3 | competitor-reverse-engineer | 03-competitor-analysis.md | pending |
 | 4 | content-gap-analyst | 04-content-gap.md | pending |
