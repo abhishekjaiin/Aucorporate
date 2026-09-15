@@ -12,6 +12,10 @@
 
 This is real, firm-supplied positioning describing an actual service line (not to be treated as literal page copy — it reads as outreach-email framing — but as the authoritative source for what AU Corporate genuinely does for this client segment, to ground Stage 5 and prevent generic/fabricated positioning claims).
 
+## User instruction (2026-09-15): tone
+
+User asked for the final copy to read "humanized" — natural, human-written tone, not generic/robotic AI-sounding copy. Must be passed explicitly to Stage 5 (positioning/voice) and Stage 7 (expert-content-writer) and checked at Stage 11 (final QC).
+
 ## Stage Log
 
 | Stage | Agent | Output | Status |
