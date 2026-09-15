@@ -17,7 +17,7 @@ This is real, firm-supplied positioning describing an actual service line (not t
 | Stage | Agent | Output | Status |
 |---|---|---|---|
 | 1 | seo-researcher | 01-serp-research.md | done — OIDAR GST regime confirmed as strong India-specific hook (amended Oct 2023, explicitly covers AI/cloud/SaaS); Equalisation Levy fully withdrawn (2024/2025, past tense only); global VAT/OSS queries dominated by VAT-tech vendors (Fonoa, Anrok, etc.) — no credible India-advisory competition there; India-advisory firms (Treelife, KNM, Nexdigm) compete on OIDAR/India-entry queries instead. Semrush unavailable (API units); WebFetch blocked site-wide (proxy) — SERP structure inferred from search snippets only. |
-| 2 | keyword-intent-analyst | 02-keyword-intent-map.md | pending |
+| 2 | keyword-intent-analyst | 02-keyword-intent-map.md | done — IMPORTANT: real demand splits into two distinct clusters (A: OIDAR/GST compliance obligation, primary "OIDAR registration India"; B: India market entry, primary "India entry for SaaS companies"), and Treelife (closest competitor) runs these as two separate pages. No single combined primary keyword is well-supported. Flagged for Checkpoint 1 decision: one page (India-entry-led, GST as secondary section) vs. two pages. Semrush still unavailable (API units) — all keyword data is SERP-recurrence-inferred, not volume-verified. |
 | 3 | competitor-reverse-engineer | 03-competitor-analysis.md | pending |
 | 4 | content-gap-analyst | 04-content-gap.md | pending |
 | 5 | au-corporate-strategist | 05-au-positioning.md | pending |
