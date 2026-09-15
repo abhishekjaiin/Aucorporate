@@ -49,8 +49,8 @@ const blogs: { title: string; desc: string; slug: string; category: Category; da
     date: "4 May 2026",
   },
   {
-    title: "Doing Business in India",
-    desc: "A Structured Approach to Navigating India’s Regulatory, Tax, and Compliance Landscape",
+    title: "Doing Business in India in 2026: What's Actually Changed",
+    desc: "GST 2.0, four new Labour Codes, a record FDI year, and a World Bank ranking that's gone stale — what has genuinely changed for foreign companies doing business in India in 2026.",
     slug: "doing-business-india",
     category: "India Entry",
     date: "4 May 2026",

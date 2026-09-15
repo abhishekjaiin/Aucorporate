@@ -2,23 +2,23 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Construction Arbitration in India | AU Corporate Blog",
+    absolute: "Construction Arbitration in India: From Winning Claims to Enforcing Awards | AU Corporate Blog",
   },
   description:
-    "Key considerations in construction sector arbitration disputes in India and how they're typically resolved.",
+    "How construction disputes reach arbitration in India, the claim types that dominate the docket — extension of time, liquidated damages, defects liability — and what happens between a favourable award and enforcement.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/construction-arbitration-india",
   },
   openGraph: {
-    title: "Construction Arbitration in India | AU Corporate Blog",
+    title: "Construction Arbitration in India: From Winning Claims to Enforcing Awards | AU Corporate Blog",
     description:
-      "Key considerations in construction sector arbitration disputes in India and how they're typically resolved.",
+      "How construction disputes reach arbitration in India, the claim types that dominate the docket — extension of time, liquidated damages, defects liability — and what happens between a favourable award and enforcement.",
     url: "https://www.theaucorp.com/blog/construction-arbitration-india",
   },
   twitter: {
-    title: "Construction Arbitration in India | AU Corporate Blog",
+    title: "Construction Arbitration in India: From Winning Claims to Enforcing Awards | AU Corporate Blog",
     description:
-      "Key considerations in construction sector arbitration disputes in India and how they're typically resolved.",
+      "How construction disputes reach arbitration in India, the claim types that dominate the docket — extension of time, liquidated damages, defects liability — and what happens between a favourable award and enforcement.",
   },
 }
 
