@@ -68,7 +68,7 @@ const pages: Page[] = [
   { path: "/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
 
   { path: "/india-entry-for-uk-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
-  { path: "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
   { path: "/india-entry-for-uk-companies/how-to-incorporate-subsidiary-india-from-uk", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
   { path: "/india-entry-for-uk-companies/fema-compliance-uk-company-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
@@ -76,7 +76,7 @@ const pages: Page[] = [
 
   { path: "/india-entry-for-singapore-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-09-14" },
   { path: "/india-entry-for-australian-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-09-14" },
-  { path: "/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/india-entry-for-german-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-09-14" },
   { path: "/india-entry-for-japan-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-09-14" },
   { path: "/india-entry-for-china-companies", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-09-14" },
@@ -99,8 +99,8 @@ const pages: Page[] = [
   { path: "/blog/fdi-green-vs-brown-channel", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-31" },
   { path: "/blog/mail-box-dtaa-benefits", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/blog/tax-loan-waiver-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-09-15" },
-  { path: "/blog/wholly-owned-subsidiary", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
-  { path: "/blog/india-safe-harbour-rules-2026", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
+  { path: "/blog/wholly-owned-subsidiary", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
+  { path: "/blog/india-safe-harbour-rules-2026", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
