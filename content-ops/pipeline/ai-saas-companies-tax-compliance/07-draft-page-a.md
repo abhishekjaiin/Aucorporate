@@ -13,7 +13,7 @@ URL: /oidar-gst-registration-india
 
 # OIDAR & GST Registration in India for Foreign SaaS and AI Companies
 
-*Last updated 2026 · Compliance guide for foreign digital-services providers*
+*Last updated: 15 September 2026 — prepared by AU Corporate's cross-border tax and India business-setup practice.*
 
 [Breadcrumb: Home / OIDAR & GST Registration in India]
 
