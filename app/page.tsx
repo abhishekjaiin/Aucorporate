@@ -606,7 +606,7 @@ export default function HomePage() {
             Related Resources
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link href="/services/taxation-regulatory" className="p-6 border rounded-lg hover:shadow-md transition group">
               <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
                 Taxation &amp; Regulatory Services
@@ -640,6 +640,24 @@ export default function HomePage() {
               </h3>
               <p className="text-sm text-gray-600">
                 Entity choice, FEMA/RBI filings, and Safe Harbour tax rules for setting up a Global Capability Center in India.
+              </p>
+            </Link>
+
+            <Link href="/oidar-gst-registration-india" className="p-6 border rounded-lg hover:shadow-md transition group">
+              <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+                OIDAR &amp; GST Registration for Foreign SaaS Companies
+              </h3>
+              <p className="text-sm text-gray-600">
+                No Indian entity, but Indian customers? When OIDAR/GST registration is mandatory for foreign SaaS and AI companies, and what it requires.
+              </p>
+            </Link>
+
+            <Link href="/india-entry-for-saas-companies" className="p-6 border rounded-lg hover:shadow-md transition group">
+              <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+                India Entry for AI &amp; SaaS Companies
+              </h3>
+              <p className="text-sm text-gray-600">
+                Entity structuring, FEMA/RBI basics, and tax treatment for AI, SaaS, and technology companies setting up in India.
               </p>
             </Link>
           </div>
