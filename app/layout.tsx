@@ -28,12 +28,12 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "AU Corporate | India Entry, Tax & Business Advisory",
+      "AU Corporate | India Business Setup, Tax & Compliance Firm",
     template: "AU Corporate | %s",
   },
 
   description:
-    "AU Corporate helps foreign companies register, stay tax and FEMA compliant, and outsource accounting and payroll in India — end to end.",
+    "AU Corporate — a New Delhi-based advisory firm (est. 2016) helping foreign companies enter India with entity setup, tax, GST, FEMA compliance and payroll.",
 
   alternates: {
     canonical: "https://www.theaucorp.com",
@@ -92,10 +92,10 @@ export const metadata: Metadata = {
     siteName: "AU Corporate",
 
     title:
-      "AU Corporate | India Entry, Tax & Business Advisory",
+      "AU Corporate | India Business Setup, Tax & Compliance Firm",
 
     description:
-      "AU Corporate helps foreign companies register, stay tax and FEMA compliant, and outsource accounting and payroll in India — end to end.",
+      "AU Corporate — a New Delhi-based advisory firm (est. 2016) helping foreign companies enter India with entity setup, tax, GST, FEMA compliance and payroll.",
 
     images: [
       {
@@ -111,10 +111,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "AU Corporate | India Entry, Tax & Business Advisory",
+      "AU Corporate | India Business Setup, Tax & Compliance Firm",
 
     description:
-      "AU Corporate helps foreign companies register, stay tax and FEMA compliant, and outsource accounting and payroll in India — end to end.",
+      "AU Corporate — a New Delhi-based advisory firm (est. 2016) helping foreign companies enter India with entity setup, tax, GST, FEMA compliance and payroll.",
 
     images: ["https://www.theaucorp.com/og-image.png"],
   },
