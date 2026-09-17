@@ -5,6 +5,7 @@ import Script from "next/script"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { FloatingInquiryCTA } from "@/components/FloatingInquiryCTA"
+import { StickyInquirySidebar } from "@/components/StickyInquirySidebar"
 
 import "./globals.css"
 
@@ -436,19 +437,25 @@ export default function RootLayout({
         <Navbar />
       </div>
 
-      {/* MAIN CONTENT */}
+      {/* MAIN CONTENT — 2xl:pr reserves a gutter matching StickyInquirySidebar's
+          width so the fixed sidebar never overlaps in-flow content, including
+          wide (max-w-7xl) sections, on the large desktop viewports it appears at. */}
       <div className="flex flex-col min-h-screen">
-        <main className="flex-1 pt-16 sm:pt-20">
+        <main className="flex-1 pt-16 sm:pt-20 2xl:pr-[340px]">
           {children}
         </main>
 
         <Footer />
       </div>
 
-      {/* SITEWIDE LEAD-GENERATION CTA — floating "Talk to an Expert" trigger (desktop)
+      {/* SITEWIDE LEAD-GENERATION CTA — floating "Talk to an Expert" trigger (lg-2xl)
           and sticky bar (mobile) that open the enquiry form in a modal on every page,
           not just the handful of pages that already embed it inline. */}
       <FloatingInquiryCTA />
+
+      {/* SITEWIDE LEAD-GENERATION SIDEBAR — persistent enquiry form on large desktop
+          viewports (2xl+), replacing the floating trigger at that breakpoint. */}
+      <StickyInquirySidebar />
 
       {/* APOLLO TRACKER */}
             <Script

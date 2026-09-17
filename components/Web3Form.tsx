@@ -9,7 +9,7 @@ const WEB3FORMS_ACCESS_KEY = "7f7b220d-2540-451d-88ba-6b6f878ec151"
 const inputClass =
   "w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-900 focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
 
-export function Web3Form() {
+export function Web3Form({ compact = false }: { compact?: boolean } = {}) {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle")
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -41,8 +41,8 @@ export function Web3Form() {
 
   if (status === "success") {
     return (
-      <div className="flex min-h-[300px] flex-col items-center justify-center rounded-xl border border-gray-200 bg-white p-8 text-center">
-        <CheckCircle2 className="mb-3 h-10 w-10 text-green-600" />
+      <div className={`flex ${compact ? "min-h-[160px]" : "min-h-[300px]"} flex-col items-center justify-center rounded-xl border border-gray-200 bg-white p-8 text-center`}>
+        <CheckCircle2 className={`mb-3 text-green-600 ${compact ? "h-7 w-7" : "h-10 w-10"}`} />
         <p className="text-lg font-semibold text-[#081a42]">Thanks — we&apos;ve got your message.</p>
         <p className="mt-1 text-sm text-gray-600">Our team will get back to you shortly.</p>
       </div>
@@ -53,7 +53,7 @@ export function Web3Form() {
     <form onSubmit={handleSubmit} className="space-y-4">
       <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className={compact ? "space-y-4" : "grid gap-4 sm:grid-cols-2"}>
         <div>
           <label htmlFor="name" className="mb-1 block text-sm font-medium text-gray-700">Name*</label>
           <input id="name" type="text" name="name" required className={inputClass} />
@@ -64,25 +64,31 @@ export function Web3Form() {
           <input id="email" type="email" name="email" required className={inputClass} />
         </div>
 
-        <div>
-          <label htmlFor="phone" className="mb-1 block text-sm font-medium text-gray-700">Phone</label>
-          <input id="phone" type="tel" name="phone" className={inputClass} />
-        </div>
+        {!compact && (
+          <>
+            <div>
+              <label htmlFor="phone" className="mb-1 block text-sm font-medium text-gray-700">Phone</label>
+              <input id="phone" type="tel" name="phone" className={inputClass} />
+            </div>
 
-        <div>
-          <label htmlFor="company" className="mb-1 block text-sm font-medium text-gray-700">Company</label>
-          <input id="company" type="text" name="company" className={inputClass} />
-        </div>
+            <div>
+              <label htmlFor="company" className="mb-1 block text-sm font-medium text-gray-700">Company</label>
+              <input id="company" type="text" name="company" className={inputClass} />
+            </div>
+          </>
+        )}
       </div>
 
-      <div>
-        <label htmlFor="country" className="mb-1 block text-sm font-medium text-gray-700">Country</label>
-        <input id="country" type="text" name="country" placeholder="e.g. Australia, Japan, USA" className={inputClass} />
-      </div>
+      {!compact && (
+        <div>
+          <label htmlFor="country" className="mb-1 block text-sm font-medium text-gray-700">Country</label>
+          <input id="country" type="text" name="country" placeholder="e.g. Australia, Japan, USA" className={inputClass} />
+        </div>
+      )}
 
       <div>
         <label htmlFor="message" className="mb-1 block text-sm font-medium text-gray-700">Message*</label>
-        <textarea id="message" name="message" required rows={5} className={inputClass} />
+        <textarea id="message" name="message" required rows={compact ? 3 : 5} className={inputClass} />
       </div>
 
       {status === "error" && (

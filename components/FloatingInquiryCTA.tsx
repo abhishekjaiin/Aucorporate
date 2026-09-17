@@ -35,11 +35,12 @@ export function FloatingInquiryCTA() {
 
   return (
     <>
-      {/* Desktop floating trigger */}
+      {/* Desktop floating trigger — hidden at 2xl+, where StickyInquirySidebar
+          (a persistent form, not just a trigger) takes over this role. */}
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="fixed bottom-6 left-6 z-[55] hidden items-center gap-2 rounded-full border border-[#081a42]/15 bg-white px-4 py-3 text-xs font-semibold text-[#081a42] shadow-lg transition hover:scale-105 lg:inline-flex"
+        className="fixed bottom-6 left-6 z-[55] hidden items-center gap-2 rounded-full border border-[#081a42]/15 bg-white px-4 py-3 text-xs font-semibold text-[#081a42] shadow-lg transition hover:scale-105 lg:inline-flex 2xl:hidden"
       >
         <MessageSquareText className="h-4 w-4 text-gold-dark" aria-hidden="true" />
         Talk to an Expert

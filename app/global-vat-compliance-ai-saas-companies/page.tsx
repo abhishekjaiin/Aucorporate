@@ -3,6 +3,7 @@ import { Breadcrumb } from "@/components/Breadcrumb"
 import { Button } from "@/components/ui/button"
 import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
+import { GlobalComplianceHeroGraphic } from "@/components/GlobalComplianceHeroGraphic"
 import {
   ArrowRight,
   AlertTriangle,
@@ -11,6 +12,9 @@ import {
   UploadCloud,
   ClipboardCheck,
   Send,
+  RefreshCw,
+  FileCheck2,
+  CalendarClock,
 } from "lucide-react"
 
 const painPoints = [
@@ -55,6 +59,8 @@ const howItWorks = [
 const jurisdictionGroups = [
   {
     region: "Americas",
+    blurb:
+      "The US doesn't have a single federal sales tax — it's a patchwork of state-level economic-nexus rules, each with its own revenue or transaction-count trigger, so a company can be liable in a handful of states long before it's liable in all fifty. Canada layers its federal GST on top of provincial rules that vary by where the customer sits.",
     items: [
       { label: "United States", note: "State sales tax & economic nexus" },
       { label: "Canada", note: "GST/HST" },
@@ -62,6 +68,8 @@ const jurisdictionGroups = [
   },
   {
     region: "Europe",
+    blurb:
+      "The EU's One Stop Shop lets a non-EU digital-services seller register once and file a single return covering every member state, which sounds simple until you're the one reconciling twenty-seven different VAT rates against a single Stripe export. The UK sits outside OSS post-Brexit and runs its own HMRC registration; Switzerland, Liechtenstein and Serbia each have their own separate regimes again.",
     items: [
       { label: "United Kingdom", note: "HMRC VAT" },
       { label: "European Union", note: "One Stop Shop (OSS)" },
@@ -72,6 +80,8 @@ const jurisdictionGroups = [
   },
   {
     region: "Asia-Pacific",
+    blurb:
+      "Japan's consumption tax on digital services has its own registered-supplier mechanics that read nothing like a European VAT return. Singapore and South Korea both tax digital services at the point of consumption but calculate and file differently from each other, and India runs an entirely separate no-threshold rule for foreign OIDAR suppliers — covered in full on our dedicated India guide rather than repeated here.",
     items: [
       { label: "Japan", note: "Consumption tax (JCT)" },
       { label: "South Korea", note: "VAT" },
@@ -82,7 +92,27 @@ const jurisdictionGroups = [
   },
   {
     region: "Emerging Markets",
+    blurb:
+      "Turkey taxes digital services supplied to Turkish consumers regardless of where the supplier is based — one of a growing list of markets outside the traditional EU/UK/US set that founders often don't think to check until a customer or an auditor raises it.",
     items: [{ label: "Turkey", note: "Digital services VAT" }],
+  },
+]
+
+const monthlyDeliverables = [
+  {
+    icon: FileCheck2,
+    title: "Filed returns, confirmed",
+    body: "A copy of every return we file on your behalf, with the confirmation or receipt from the relevant tax authority attached — not just a summary spreadsheet you have to take on faith.",
+  },
+  {
+    icon: CalendarClock,
+    title: "A calendar you don't have to own",
+    body: "We track each jurisdiction's filing deadline and nil-return obligations ourselves. You're not the one remembering that a country you registered in eighteen months ago still needs a return this month.",
+  },
+  {
+    icon: RefreshCw,
+    title: "A running exposure map",
+    body: "As your customer base shifts — a new market picks up, another quiets down — we flag it before it becomes a registration you should have made three months ago instead of one you're making now.",
   },
 ]
 
@@ -134,6 +164,18 @@ const faqs = [
     q: "Do you also help with India-specific OIDAR/GST registration?",
     a: "Yes — India is one of the jurisdictions we cover, and it has its own distinct no-threshold registration rule for foreign digital-services suppliers. See our dedicated guide on OIDAR & GST registration in India for the India-specific mechanics; this page covers the broader global picture.",
   },
+  {
+    q: "We're not sure where we even owe tax yet — can you help with that first?",
+    a: "That's usually the actual starting point, not a prerequisite you need to sort out before talking to us. We map your existing billing data against each market's rules to find out where you already have an obligation before registering or filing anything — it's often a shorter list than founders expect, and occasionally a longer one.",
+  },
+  {
+    q: "What if we've been selling into a market for a while without registering?",
+    a: "It happens more often than you'd think, and it's better addressed directly than left alone. Depending on the jurisdiction, there may be a voluntary disclosure or catch-up filing route that limits exposure compared to waiting for a tax authority to find it themselves. We'll walk through what that looks like for your specific markets rather than assume one approach fits every country.",
+  },
+  {
+    q: "How long does onboarding take before our first return is filed?",
+    a: "It depends on how many jurisdictions you're already active in and whether any of them need a fresh registration before a return can even be filed — a new registration typically takes longer than an ongoing filing cycle once you're set up. We'll give you a specific timeline once we've seen your billing footprint, rather than a generic estimate that doesn't reflect your actual markets.",
+  },
 ]
 
 export default function GlobalVatComplianceAiSaasPage() {
@@ -143,29 +185,46 @@ export default function GlobalVatComplianceAiSaasPage() {
 
       {/* HERO */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
-        <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">GST/VAT Advisory &amp; Compliance</span>
-          <h1 className="mb-6 mt-3 text-4xl font-bold text-gray-900 md:text-5xl">
-            Global VAT &amp; Sales Tax Compliance for AI &amp; SaaS Companies
-          </h1>
-          <p className="mb-8 text-xl leading-relaxed text-gray-600">
-            Protect your international scaling. We handle remote-seller tax registration, data sorting, and monthly filing across the US, EU, UK, Japan, Singapore and more. You sell globally — we keep you compliant without spending your engineering team's time on it.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
-              <Link href="#inquiry-form">
-                Book a Tax Consultation <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </Button>
-            <Button asChild variant="outline">
-              <Link href="/oidar-gst-registration-india">Explore Our OIDAR &amp; SaaS Guides</Link>
-            </Button>
+        <div className="max-w-6xl mx-auto px-4 grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
+          <div>
+            <span className="text-sm font-semibold uppercase tracking-wider text-gold">GST/VAT Advisory &amp; Compliance</span>
+            <h1 className="mb-6 mt-3 text-4xl font-bold text-gray-900 md:text-5xl">
+              Global VAT &amp; Sales Tax Compliance for AI &amp; SaaS Companies
+            </h1>
+            <p className="mb-8 text-xl leading-relaxed text-gray-600">
+              Protect your international scaling. We handle remote-seller tax registration, data sorting, and monthly filing across the US, EU, UK, Japan, Singapore and more. You sell globally — we keep you compliant without spending your engineering team's time on it.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
+                <Link href="#inquiry-form">
+                  Book a Tax Consultation <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link href="/oidar-gst-registration-india">Explore Our OIDAR &amp; SaaS Guides</Link>
+              </Button>
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <GlobalComplianceHeroGraphic />
           </div>
         </div>
       </section>
 
+      {/* NARRATIVE / WHY THIS EXISTS */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Most founders don't set out to build a multi-country tax problem. It happens gradually — a few customers sign up from the UK, then a startup in Berlin starts paying you in euros, then a distributor in Tokyo asks why your invoices don't show consumption tax. None of that was a deliberate "let's expand into these markets" decision. It was just growth, and growth in a SaaS or AI business almost always outruns the tax registrations that are quietly supposed to come with it.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            We built this service because the two options founders usually reach for don't actually solve the problem. Automated tax software tells you what you owe but still expects your team to sort the data, build the integration, and often still handle the actual filing. Doing nothing and hoping it doesn't come up in due diligence eventually stops being a strategy. What's missing is someone who treats this the way your accountant treats payroll — as a recurring operational job that gets done every month, not a project you have to keep relaunching.
+          </p>
+        </div>
+      </section>
+
       {/* PAIN POINTS */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-secondary/30">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Cross-Border Digital-Services Tax Is Broken for AI Companies</h2>
           <p className="text-gray-600 leading-relaxed mb-10">
@@ -173,7 +232,7 @@ export default function GlobalVatComplianceAiSaasPage() {
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {painPoints.map((p) => (
-              <div key={p.title} className="p-6 bg-secondary/30 rounded-xl border">
+              <div key={p.title} className="p-6 bg-white rounded-xl border">
                 <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
                   <p.icon size={20} className="text-gold" />
                 </div>
@@ -186,11 +245,14 @@ export default function GlobalVatComplianceAiSaasPage() {
       </section>
 
       {/* VALUE PROP / COMPARISON */}
-      <section className="py-20 bg-secondary/50">
+      <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">A Managed Global Tax Compliance Service — Not Another Tool to Maintain</h2>
-          <p className="text-gray-600 leading-relaxed mb-10">
+          <p className="text-gray-600 leading-relaxed mb-4">
             Unlike rigid automated tax software that dumps sorting and filing work back on your team, AU Corporate runs this as an end-to-end managed service.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-10">
+            That distinction matters more than it sounds. A tax-calculation API can tell you what rate applies to a given transaction, but someone still has to reconcile that against your actual billing data, catch the edge cases (a refund, a proration, a customer who upgraded mid-cycle), and physically submit the return before the deadline. We do that part — the part software vendors usually leave as "coming soon" or bundle in as a separate, pricier add-on.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-gray-300 bg-white">
@@ -215,6 +277,19 @@ export default function GlobalVatComplianceAiSaasPage() {
         </div>
       </section>
 
+      {/* BUILT FOR HOW SAAS/AI COMPANIES ACTUALLY BILL */}
+      <section className="py-20 bg-secondary/50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Built for How AI &amp; SaaS Companies Actually Bill</h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Most VAT tooling was designed around a simpler model than the one your business probably runs on — a fixed price, a single currency, a transaction that happens once. Subscription and usage-based billing doesn't work that way. A customer upgrades mid-cycle, a proration hits the invoice, a free trial converts three weeks after the signup date that technically started the tax clock, and a single account might be billed in three different currencies depending on which entity of theirs is paying. Generic tax software tends to choke on exactly this kind of billing complexity, or quietly gets it wrong in ways nobody notices until a filing doesn't reconcile.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Because we're working from your actual billing export rather than a live API feed, we see the full transaction history the way it really happened — upgrades, downgrades, credits, and all — and can apply the right tax treatment to each line rather than an approximation. It's slower than a real-time API call, but it's also the reason the numbers hold up when someone actually checks them.
+          </p>
+        </div>
+      </section>
+
       {/* HOW IT WORKS */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
@@ -233,8 +308,29 @@ export default function GlobalVatComplianceAiSaasPage() {
         </div>
       </section>
 
-      {/* JURISDICTIONS */}
+      {/* WHAT YOU GET EVERY MONTH */}
       <section className="py-20 bg-secondary/50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-3">What You Actually Get Every Month</h2>
+          <p className="text-gray-600 leading-relaxed mb-10">
+            "We'll handle it" isn't very reassuring on its own, so here's what actually lands in your inbox once you're onboarded.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {monthlyDeliverables.map((d) => (
+              <div key={d.title} className="p-6 bg-white rounded-xl border">
+                <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
+                  <d.icon size={20} className="text-gold" />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2">{d.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{d.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* JURISDICTIONS */}
+      <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">One Partner. Complete Global Coverage.</h2>
           <p className="text-gray-600 leading-relaxed mb-10">
@@ -242,8 +338,9 @@ export default function GlobalVatComplianceAiSaasPage() {
           </p>
           <div className="grid sm:grid-cols-2 gap-6">
             {jurisdictionGroups.map((g) => (
-              <div key={g.region} className="bg-white p-6 rounded-xl border">
-                <h3 className="font-bold text-gray-900 mb-4">{g.region}</h3>
+              <div key={g.region} className="bg-secondary/30 p-6 rounded-xl border">
+                <h3 className="font-bold text-gray-900 mb-3">{g.region}</h3>
+                <p className="text-xs text-gray-600 leading-relaxed mb-4">{g.blurb}</p>
                 <ul className="space-y-2">
                   {g.items.map((item) => (
                     <li key={item.label} className="flex items-center justify-between text-sm">
