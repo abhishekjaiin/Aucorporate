@@ -15,6 +15,8 @@ import {
   RefreshCw,
   FileCheck2,
   CalendarClock,
+  CheckCircle2,
+  XCircle,
 } from "lucide-react"
 
 const painPoints = [
@@ -254,25 +256,59 @@ export default function GlobalVatComplianceAiSaasPage() {
           <p className="text-gray-600 leading-relaxed mb-10">
             That distinction matters more than it sounds. A tax-calculation API can tell you what rate applies to a given transaction, but someone still has to reconcile that against your actual billing data, catch the edge cases (a refund, a proration, a customer who upgraded mid-cycle), and physically submit the return before the deadline. We do that part — the part software vendors usually leave as "coming soon" or bundle in as a separate, pricier add-on.
           </p>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse border border-gray-300 bg-white">
+
+          {/* Desktop/tablet: table, with the AU Corporate column visually favored */}
+          <div className="hidden md:block overflow-hidden rounded-2xl border border-gray-200">
+            <table className="w-full border-collapse bg-white">
               <thead>
-                <tr className="bg-gray-100">
-                  <th className="border border-gray-300 p-3 text-left text-sm">Factor</th>
-                  <th className="border border-gray-300 p-3 text-left text-sm">Rigid Automated Software</th>
-                  <th className="border border-gray-300 p-3 text-left text-sm">AU Corporate Managed Service</th>
+                <tr>
+                  <th className="p-4 text-left text-sm font-semibold text-gray-500 w-[22%]">Factor</th>
+                  <th className="p-4 text-left text-sm font-semibold text-gray-500 bg-gray-50">Rigid Automated Software</th>
+                  <th className="p-4 text-left bg-[#081a42] rounded-t-xl">
+                    <span className="inline-block mb-1 rounded-full bg-gold px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-black">
+                      Recommended
+                    </span>
+                    <span className="block text-sm font-semibold text-white">AU Corporate Managed Service</span>
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                {comparisonRows.map((row) => (
-                  <tr key={row.factor}>
-                    <td className="border border-gray-300 p-3 font-semibold text-sm">{row.factor}</td>
-                    <td className="border border-gray-300 p-3 text-xs text-gray-600">{row.software}</td>
-                    <td className="border border-gray-300 p-3 text-xs text-gray-600">{row.au}</td>
+                {comparisonRows.map((row, i) => (
+                  <tr key={row.factor} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
+                    <td className="p-4 align-top text-sm font-semibold text-gray-900 border-t border-gray-100">{row.factor}</td>
+                    <td className="p-4 align-top border-t border-gray-100">
+                      <div className="flex gap-2">
+                        <XCircle className="h-4 w-4 shrink-0 text-gray-300 mt-0.5" aria-hidden="true" />
+                        <span className="text-sm text-gray-600">{row.software}</span>
+                      </div>
+                    </td>
+                    <td className="p-4 align-top border-t border-gray-100 bg-yellow-50/40">
+                      <div className="flex gap-2">
+                        <CheckCircle2 className="h-4 w-4 shrink-0 text-green-600 mt-0.5" aria-hidden="true" />
+                        <span className="text-sm text-gray-800">{row.au}</span>
+                      </div>
+                    </td>
                   </tr>
                 ))}
               </tbody>
             </table>
+          </div>
+
+          {/* Mobile: stacked cards instead of a cramped, horizontally-scrolling table */}
+          <div className="md:hidden space-y-4">
+            {comparisonRows.map((row) => (
+              <div key={row.factor} className="rounded-xl border border-gray-200 overflow-hidden">
+                <div className="bg-gray-50 px-4 py-2 text-sm font-semibold text-gray-900">{row.factor}</div>
+                <div className="p-4 flex gap-2 border-t border-gray-100">
+                  <XCircle className="h-4 w-4 shrink-0 text-gray-300 mt-0.5" aria-hidden="true" />
+                  <span className="text-sm text-gray-600">{row.software}</span>
+                </div>
+                <div className="p-4 flex gap-2 border-t border-gray-100 bg-yellow-50/40">
+                  <CheckCircle2 className="h-4 w-4 shrink-0 text-green-600 mt-0.5" aria-hidden="true" />
+                  <span className="text-sm text-gray-800">{row.au}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -294,10 +330,11 @@ export default function GlobalVatComplianceAiSaasPage() {
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Compliance in 3 Simple Steps</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="relative grid md:grid-cols-3 gap-8">
+            <div className="hidden md:block absolute top-12 left-[16.5%] right-[16.5%] h-px bg-gray-300" aria-hidden="true" />
             {howItWorks.map((s) => (
               <div key={s.step} className="relative p-6 border rounded-xl bg-secondary/30">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center font-bold mb-4 bg-white border-2 border-gold text-[#081a42]">
+                <div className="relative z-10 w-12 h-12 rounded-full flex items-center justify-center font-bold mb-4 bg-white border-2 border-gold text-[#081a42]">
                   {s.step}
                 </div>
                 <h3 className="font-bold text-lg mb-2 text-gray-900">{s.title}</h3>
@@ -340,7 +377,7 @@ export default function GlobalVatComplianceAiSaasPage() {
             {jurisdictionGroups.map((g) => (
               <div key={g.region} className="bg-secondary/30 p-6 rounded-xl border">
                 <h3 className="font-bold text-gray-900 mb-3">{g.region}</h3>
-                <p className="text-xs text-gray-600 leading-relaxed mb-4">{g.blurb}</p>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">{g.blurb}</p>
                 <ul className="space-y-2">
                   {g.items.map((item) => (
                     <li key={item.label} className="flex items-center justify-between text-sm">
