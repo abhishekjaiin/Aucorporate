@@ -437,11 +437,9 @@ export default function RootLayout({
         <Navbar />
       </div>
 
-      {/* MAIN CONTENT — 2xl:pr reserves a gutter matching StickyInquirySidebar's
-          width so the fixed sidebar never overlaps in-flow content, including
-          wide (max-w-7xl) sections, on the large desktop viewports it appears at. */}
+      {/* MAIN CONTENT */}
       <div className="flex flex-col min-h-screen">
-        <main className="flex-1 pt-16 sm:pt-20 2xl:pr-[340px]">
+        <main className="flex-1 pt-16 sm:pt-20">
           {children}
         </main>
 
@@ -453,8 +451,11 @@ export default function RootLayout({
           not just the handful of pages that already embed it inline. */}
       <FloatingInquiryCTA />
 
-      {/* SITEWIDE LEAD-GENERATION SIDEBAR — persistent enquiry form on large desktop
-          viewports (2xl+), replacing the floating trigger at that breakpoint. */}
+      {/* SITEWIDE LEAD-GENERATION SIDEBAR — a slim, click-to-open "Quick Enquiry"
+          tab docked to the right edge on large desktop viewports (2xl+), replacing
+          the floating trigger at that breakpoint. Starts collapsed (doesn't reserve
+          any page width or open itself) and only expands into the form as a
+          floating overlay when clicked. */}
       <StickyInquirySidebar />
 
       {/* APOLLO TRACKER */}

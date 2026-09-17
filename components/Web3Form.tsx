@@ -64,18 +64,16 @@ export function Web3Form({ compact = false }: { compact?: boolean } = {}) {
           <input id="email" type="email" name="email" required className={inputClass} />
         </div>
 
-        {!compact && (
-          <>
-            <div>
-              <label htmlFor="phone" className="mb-1 block text-sm font-medium text-gray-700">Phone</label>
-              <input id="phone" type="tel" name="phone" className={inputClass} />
-            </div>
+        <div>
+          <label htmlFor="phone" className="mb-1 block text-sm font-medium text-gray-700">Mobile Number</label>
+          <input id="phone" type="tel" name="phone" className={inputClass} />
+        </div>
 
-            <div>
-              <label htmlFor="company" className="mb-1 block text-sm font-medium text-gray-700">Company</label>
-              <input id="company" type="text" name="company" className={inputClass} />
-            </div>
-          </>
+        {!compact && (
+          <div>
+            <label htmlFor="company" className="mb-1 block text-sm font-medium text-gray-700">Company</label>
+            <input id="company" type="text" name="company" className={inputClass} />
+          </div>
         )}
       </div>
 
