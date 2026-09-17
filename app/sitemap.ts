@@ -53,8 +53,9 @@ const pages: Page[] = [
   { path: "/gcc-setup-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
 
   // AI/SaaS Tax Compliance & India Entry Pair
-  { path: "/oidar-gst-registration-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-16" },
+  { path: "/oidar-gst-registration-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-17" },
   { path: "/india-entry-for-saas-companies", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-16" },
+  { path: "/global-vat-compliance-ai-saas-companies", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-17" },
 
   // India Business Setup Cluster
   { path: "/india-business-setup/fdi-channels", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
