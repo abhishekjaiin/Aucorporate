@@ -167,6 +167,11 @@ export default function BranchOfficeInIndiaPage() {
           <p className="text-gray-600 leading-relaxed mb-4">
             A detail worth flagging because it catches people out: <strong>an Indian subsidiary of a foreign company cannot itself open a Branch Office in India under the Automatic route.</strong> If your group already has an Indian subsidiary and is considering layering a Branch Office on top of it, that structure needs specific advice before you file anything.
           </p>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            If a Branch Office looks too commercially active for what you actually need — pure market research or coordination, with no revenue in India at all — see the full{" "}
+            <Link href="/liaison-office-in-india" className="text-gold font-semibold hover:underline">Liaison Office in India guide</Link>{" "}
+            for the lighter-touch alternative.
+          </p>
           <p className="text-gray-600 leading-relaxed">
             If your parent company is based in Australia, the UK, or the US, the decision between a subsidiary and a Branch Office also carries home-country tax consequences — CFC rules, DTAA treatment, and (for US groups) specific US filing obligations — that this page deliberately does not cover, because they differ by jurisdiction. For an Australian parent, see the{" "}
             <Link href="/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india" className="text-gold font-semibold hover:underline">Australia-specific subsidiary vs branch office comparison</Link>; for a UK parent, the{" "}
