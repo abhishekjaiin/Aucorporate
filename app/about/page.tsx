@@ -79,7 +79,7 @@ export default function AboutHero() {
 
           <Reveal delay={0.15}>
             <Image
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+              src="/images/pexels-pixabay-164606.jpg"
               alt="Team work"
               width={500}
               height={350}

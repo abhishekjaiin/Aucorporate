@@ -5,15 +5,6 @@ import { RelatedResources } from "@/components/RelatedResources"
 import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 import { FaqAccordion } from "@/components/FaqAccordion"
 
-export const metadata = {
-  title: "Doing Business in India in 2026: What's Actually Changed",
-  description:
-    "GST 2.0, four new Labour Codes, a record FDI year, and a World Bank ranking that's gone stale — a look at what has genuinely changed for foreign companies doing business in India in 2026, and what hasn't.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/doing-business-india",
-  },
-}
-
 const faqs = [
   {
     q: "Is India's ease-of-doing-business ranking still 63rd, as a lot of guides still say?",
@@ -45,7 +36,7 @@ export default function BlogPage() {
         headline="Doing Business in India in 2026: What's Actually Changed"
         description="GST 2.0, four new Labour Codes, a record FDI year, and a World Bank ranking that's gone stale — a look at what has genuinely changed for foreign companies doing business in India in 2026, and what hasn't."
         url="https://www.theaucorp.com/blog/doing-business-india"
-        image="https://images.unsplash.com/photo-1589802829985-817e51171b92?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        image="https://www.theaucorp.com/images/pexels-followingnyc-16094899.jpg"
         datePublished="2026-05-04"
         dateModified="2026-09-15"
       />
@@ -60,7 +51,7 @@ export default function BlogPage() {
       </p>
 
       <Image
-        src="https://images.unsplash.com/photo-1589802829985-817e51171b92?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        src="/images/pexels-followingnyc-16094899.jpg"
         alt="India business skyline"
         width={1200}
         height={630}

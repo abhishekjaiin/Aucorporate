@@ -35,7 +35,7 @@ export default function Page() {
         headline="Tax Treatment of Loan Waiver in India | Supreme Court Ruling & 2023 Amendment"
         description="How Indian courts settled the tax treatment of loan waivers — from T.V. Sundaram Iyengar to the Supreme Court's 2018 ruling in Mahindra & Mahindra, and how the Finance Act 2023 amendment to Section 28(iv) reopened part of the question for waivers from AY 2024-25 onwards."
         url="https://www.theaucorp.com/blog/tax-loan-waiver-india"
-        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        image="https://www.theaucorp.com/images/pexels-followingnyc-16094899.jpg"
         datePublished="2026-05-04"
         dateModified="2026-09-15"
       />
@@ -47,7 +47,7 @@ export default function Page() {
       </h1>
 
       <Image
-        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        src="/images/pexels-followingnyc-16094899.jpg"
         alt="Legal Finance Concept"
         width={1200}
         height={630}
@@ -73,7 +73,7 @@ export default function Page() {
         </p>
 
         <Image
-          src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-amar-20624924.jpg"
           alt="Supreme Court India"
           width={1000}
           height={560}
@@ -89,7 +89,7 @@ export default function Page() {
         </h2>
 
         <Image
-          src="https://images.unsplash.com/photo-1521790366324-2073b3e8f7e1?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-pierre-blache-651604-9280877.jpg"
           alt="Finance Law Concept"
           width={1000}
           height={560}
@@ -117,7 +117,7 @@ export default function Page() {
         </h2>
 
         <Image
-          src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-pierre-blache-651604-9280877.jpg"
           alt="Tax Documents"
           width={1000}
           height={560}
@@ -167,7 +167,7 @@ export default function Page() {
         </h2>
 
         <Image
-          src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-pixabay-164606.jpg"
           alt="Court Judgment"
           width={1000}
           height={560}

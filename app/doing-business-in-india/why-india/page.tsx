@@ -247,37 +247,37 @@ export default function WhyIndiaPage() {
             {[
               {
                 title: "Pharmaceuticals & Life Sciences",
-                image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+                image: "/images/pexels-followingnyc-16094899.jpg",
                 desc: "Global leader in generics, vaccines and contract manufacturing.",
                 stat: "20% global supply share",
               },
               {
                 title: "IT Services & SaaS",
-                image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+                image: "/images/pexels-pixabay-164606.jpg",
                 desc: "India dominates global IT outsourcing and digital services delivery.",
                 stat: "$350B+ industry",
               },
               {
                 title: "Automobile & EV",
-                image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+                image: "/images/pexels-pierre-blache-651604-9280877.jpg",
                 desc: "Rapid EV adoption and manufacturing ecosystem expansion.",
                 stat: "4th largest auto market",
               },
               {
                 title: "Renewable Energy",
-                image: "https://images.unsplash.com/photo-1509391366360-2e959784a276",
+                image: "/images/pexels-amar-20624924.jpg",
                 desc: "Massive solar, wind and green hydrogen expansion pipeline.",
                 stat: "500+ GW target",
               },
               {
                 title: "Infrastructure & Construction",
-                image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85",
+                image: "/images/pexels-followingnyc-16094899.jpg",
                 desc: "Smart cities, highways, logistics and real estate boom.",
                 stat: "$1T+ pipeline",
               },
               {
                 title: "Financial Services & Fintech",
-                image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07",
+                image: "/images/pexels-pixabay-164606.jpg",
                 desc: "UPI-driven digital economy transforming financial systems.",
                 stat: "1B+ monthly transactions",
               },

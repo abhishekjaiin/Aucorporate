@@ -44,7 +44,7 @@ const regions = [
     heading: "Company Formation & Ongoing Support in Hong Kong",
     body: "UniproAsia handles company registration, corporate maintenance, accounting and tax, and compliance support for a Hong Kong entity — a common choice for clients using a Hong Kong holding structure alongside their India operations.",
     points: ["Company registration", "Corporate maintenance", "Accounting & tax", "Compliance support"],
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/pexels-followingnyc-16094899.jpg",
     alt: "Business district office towers",
   },
   {
@@ -53,7 +53,7 @@ const regions = [
     heading: "Company Formation & Compliance in Singapore",
     body: "For businesses entering Southeast Asia, UniproAsia supports Singapore company formation, ongoing corporate compliance, accounting and tax, and general business support.",
     points: ["Company formation", "Corporate compliance", "Accounting & tax", "Business support"],
-    image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/pexels-pixabay-164606.jpg",
     alt: "Business meeting and financial discussion",
   },
   {
@@ -62,7 +62,7 @@ const regions = [
     heading: "Regional Business & Sourcing Support Across China",
     body: "UniproAsia's Mainland China coverage supports regional business activity and sourcing, alongside their Hong Kong and Singapore operations — useful where an India entity is one part of a wider Asia manufacturing or sourcing footprint.",
     points: ["Regional business support", "Sourcing support", "Coordinated with HK & Singapore operations"],
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/pexels-pierre-blache-651604-9280877.jpg",
     alt: "Corporate compliance documentation and planning",
   },
 ]
@@ -135,7 +135,7 @@ export default function UniproAsiaPartnerPage() {
       {/* HERO */}
       <section className="relative h-[70vh] flex items-center justify-center text-center text-white overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=1600&q=80"
+          src="/images/pexels-amar-20624924.jpg"
           alt="Asia business district skyline"
           fill
           priority
@@ -193,7 +193,7 @@ export default function UniproAsiaPartnerPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <Image
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+              src="/images/pexels-pixabay-164606.jpg"
               alt="Business team in a strategy meeting"
               width={1000}
               height={700}

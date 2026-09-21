@@ -59,7 +59,7 @@ export default function BlogPage() {
         headline="Arbitration Enforcement in India: Domestic and Foreign Award Enforcement Explained"
         description="How domestic and foreign arbitral awards are enforced in India under Sections 34/36 and Part II (Sections 44-52) of the Arbitration and Conciliation Act, 1996 — including limitation periods, the Section 48 refusal grounds, and recent Supreme Court guidance."
         url="https://www.theaucorp.com/blog/arbitration-enforcement-india"
-        image="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
+        image="https://www.theaucorp.com/images/pexels-pixabay-164606.jpg"
         datePublished="2026-05-04"
         dateModified="2026-09-15"
       />
@@ -72,7 +72,7 @@ export default function BlogPage() {
       {/* HERO IMAGE */}
       <div className="mt-4 relative w-full aspect-[16/9] overflow-hidden rounded-2xl">
         <Image
-          src="https://images.unsplash.com/photo-1554224154-26032ffc0d07"
+          src="/images/pexels-pixabay-164606.jpg"
           alt="Arbitration Enforcement India"
           fill
           sizes="100vw"
@@ -102,7 +102,7 @@ export default function BlogPage() {
       {/* IMAGE */}
       <div className="mt-8 relative w-full aspect-[16/9] overflow-hidden rounded-xl">
         <Image
-          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
+          src="/images/pexels-pierre-blache-651604-9280877.jpg"
           alt="Legal Discussion"
           fill
           sizes="100vw"
@@ -136,7 +136,7 @@ export default function BlogPage() {
       {/* IMAGE */}
       <div className="mt-8 relative w-full aspect-[16/9] overflow-hidden rounded-xl">
         <Image
-          src="https://images.unsplash.com/photo-1581091012184-7c7f8e84f3b5"
+          src="/images/pexels-amar-20624924.jpg"
           alt="Court Judgment"
           fill
           sizes="100vw"

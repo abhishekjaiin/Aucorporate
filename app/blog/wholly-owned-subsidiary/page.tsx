@@ -40,7 +40,7 @@ export default function BlogPage() {
         headline="Wholly Owned Subsidiary in India | Ownership, FEMA Caps & FC-GPR Compliance Guide"
         description="What actually makes an Indian subsidiary 'wholly owned' — ownership and control versus a branch office or JV, the FEMA sectoral caps and automatic-vs-government route for 100% foreign ownership, and the post-incorporation FC-GPR and FLA reporting a WOS owes RBI."
         url="https://www.theaucorp.com/blog/wholly-owned-subsidiary"
-        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        image="https://www.theaucorp.com/images/pexels-followingnyc-16094899.jpg"
         datePublished="2026-05-04"
         dateModified="2026-09-15"
       />
@@ -51,7 +51,7 @@ export default function BlogPage() {
       </h1>
 
       <Image
-        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        src="/images/pexels-followingnyc-16094899.jpg"
         alt="Business setup India"
         width={1200}
         height={630}
@@ -79,7 +79,7 @@ export default function BlogPage() {
 
       <section aria-labelledby="wos-ownership">
         <Image
-          src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-amar-20624924.jpg"
           alt="Corporate structure"
           width={1000}
           height={560}
@@ -123,7 +123,7 @@ export default function BlogPage() {
 
       <section aria-labelledby="wos-steps">
         <Image
-          src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-pixabay-164606.jpg"
           alt="Incorporation process"
           width={1000}
           height={560}
@@ -169,7 +169,7 @@ export default function BlogPage() {
 
       <section aria-labelledby="wos-fema-caps">
         <Image
-          src="https://images.unsplash.com/photo-1521790366324-2073b3e8f7e1?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-pierre-blache-651604-9280877.jpg"
           alt="Regulatory framework"
           width={1000}
           height={560}
@@ -214,7 +214,7 @@ export default function BlogPage() {
 
       <section aria-labelledby="wos-compliance">
         <Image
-          src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-pierre-blache-651604-9280877.jpg"
           alt="Compliance India"
           width={1000}
           height={560}
@@ -258,7 +258,7 @@ export default function BlogPage() {
 
       <section aria-labelledby="wos-challenges">
         <Image
-          src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-amar-20624924.jpg"
           alt="Business challenges"
           width={1000}
           height={560}
@@ -304,7 +304,7 @@ export default function BlogPage() {
 
       <section aria-labelledby="wos-assist">
         <Image
-          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-pierre-blache-651604-9280877.jpg"
           alt="Consulting services"
           width={1000}
           height={560}

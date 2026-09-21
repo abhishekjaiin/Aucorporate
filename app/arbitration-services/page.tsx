@@ -242,7 +242,7 @@ export default function ArbitrationServicesPage() {
 
           <Reveal>
             <Image
-              src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=800&q=80"
+              src="/images/pexels-pixabay-164606.jpg"
               alt="Dispute resolution and negotiation process"
               width={600}
               height={450}
@@ -318,7 +318,7 @@ export default function ArbitrationServicesPage() {
 
           <Reveal delay={0.1}>
             <Image
-              src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80"
+              src="/images/pexels-followingnyc-16094899.jpg"
               alt="Legal consultation and court proceedings"
               width={600}
               height={450}

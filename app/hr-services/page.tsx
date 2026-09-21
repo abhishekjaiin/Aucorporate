@@ -167,7 +167,7 @@ export default function HRServicesPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <Reveal className="hover:scale-105 transition-transform duration-300">
               <Image
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                src="/images/pexels-followingnyc-16094899.jpg"
                 alt="Recruiter reviewing candidate profiles for permanent placement"
                 width={1200}
                 height={800}
@@ -203,7 +203,7 @@ export default function HRServicesPage() {
 
             <Reveal delay={0.15} className="hover:scale-105 transition-transform duration-300">
               <Image
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+                src="/images/pexels-pixabay-164606.jpg"
                 alt="Team collaborating on project staffing and talent sourcing"
                 width={1200}
                 height={800}
@@ -216,7 +216,7 @@ export default function HRServicesPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <Reveal className="hover:scale-105 transition-transform duration-300">
               <Image
-                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
+                src="/images/pexels-pierre-blache-651604-9280877.jpg"
                 alt="Payroll and HR outsourcing services documentation and processing"
                 width={1200}
                 height={800}

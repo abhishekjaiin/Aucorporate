@@ -22,7 +22,7 @@ export default function BlogPage() {
         headline="India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained"
         description="Union Budget 2026 consolidated IT, ITeS, KPO and contract R&D into a single Safe Harbour category at 15.5% margin, with the eligibility threshold raised from Rs 300 crore to Rs 2,000 crore. Here's what it means for your GCC or subsidiary."
         url="https://www.theaucorp.com/blog/india-safe-harbour-rules-2026"
-        image="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        image="https://www.theaucorp.com/images/pexels-amar-20624924.jpg"
         datePublished="2026-07-30"
         dateModified="2026-09-15"
       />
@@ -33,7 +33,7 @@ export default function BlogPage() {
       </h1>
 
       <Image
-        src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        src="/images/pexels-amar-20624924.jpg"
         alt="Transfer pricing documents and financial charts"
         width={1200}
         height={630}

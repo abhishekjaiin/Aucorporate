@@ -1,17 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "cdn.imageurlgenerator.com",
-      },
-    ],
-
+    // No remotePatterns: every image on this site is self-hosted from
+    // public/images/ or CSS/SVG. Hotlinked Unsplash images previously
+    // 404'd in production and were removed sitewide (2026-09-21) — do not
+    // re-add an external image host without confirming it's reliable.
     formats: ["image/avif", "image/webp"],
 
     minimumCacheTTL: 60 * 60 * 24 * 365,

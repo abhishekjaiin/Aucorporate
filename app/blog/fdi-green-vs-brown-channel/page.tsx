@@ -11,7 +11,7 @@ export default function BlogPage() {
         headline="FDI in India: Green Channel vs Brown Channel"
         description="FDI in India explained: the regulatory framework, automatic vs. government route, and how Green Channel and Brown Channel approvals differ."
         url="https://www.theaucorp.com/blog/fdi-green-vs-brown-channel"
-        image="https://images.unsplash.com/photo-1524492449090-1b4b0d8b4c0b?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        image="https://www.theaucorp.com/images/pexels-amar-20624924.jpg"
         datePublished="2026-05-04"
         dateModified="2026-05-04"
       />
@@ -22,7 +22,7 @@ export default function BlogPage() {
       </h1>
 
       <Image
-        src="https://images.unsplash.com/photo-1524492449090-1b4b0d8b4c0b?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+        src="/images/pexels-amar-20624924.jpg"
         alt="FDI India"
         width={1200}
         height={630}
@@ -44,7 +44,7 @@ export default function BlogPage() {
         </h2>
 
         <Image
-          src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-followingnyc-16094899.jpg"
           alt="Regulations"
           width={1000}
           height={560}
@@ -75,7 +75,7 @@ export default function BlogPage() {
         </h2>
 
         <Image
-          src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-pixabay-164606.jpg"
           alt="Investment routes"
           width={1000}
           height={560}
@@ -106,7 +106,7 @@ export default function BlogPage() {
         </h2>
 
         <Image
-          src="https://images.unsplash.com/photo-1581091012184-7c7f8e84f3b5?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-pixabay-164606.jpg"
           alt="Fast approval"
           width={1000}
           height={560}
@@ -145,7 +145,7 @@ export default function BlogPage() {
         </h2>
 
         <Image
-          src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-amar-20624924.jpg"
           alt="Detailed review"
           width={1000}
           height={560}
@@ -176,7 +176,7 @@ export default function BlogPage() {
         </h2>
 
         <Image
-          src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
+          src="/images/pexels-pierre-blache-651604-9280877.jpg"
           alt="Compliance"
           width={1000}
           height={560}
