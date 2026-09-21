@@ -16,7 +16,7 @@ Checked `topics.csv` — no row targets "liaison office in India" as a primary k
 ## Stage log
 | Stage | Agent | Output | Status | Timestamp |
 |---|---|---|---|---|
-| 1 | seo-researcher | 01-serp-research.md | pending | |
+| 1 | seo-researcher | 01-serp-research.md | done | 2026-09-21 |
 | 2 | keyword-intent-analyst | 02-keyword-intent-map.md | pending | |
 | 3 | competitor-reverse-engineer | 03-competitor-analysis.md | pending | |
 | 4 | content-gap-analyst | 04-content-gap.md | pending | |
