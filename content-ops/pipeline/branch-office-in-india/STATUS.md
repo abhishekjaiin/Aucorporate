@@ -16,7 +16,7 @@ Checked `topics.csv` for existing/near-duplicate entries. Found only country-spe
 | 3 | competitor-reverse-engineer | 03-competitor-analysis.md | done | 2026-09-21 |
 | 4 | content-gap-analyst | 04-content-gap.md | done | 2026-09-21 |
 | 5 | au-corporate-strategist | 05-au-positioning.md | done | 2026-09-21 |
-| Checkpoint 1 | — | — | pending | |
+| Checkpoint 1 | — | — | APPROVED | 2026-09-21 |
 | 6 | content-architect | 06-content-architecture.md | pending | |
 | Checkpoint 2 | — | — | pending | |
 | 7 | expert-content-writer | 07-draft.md | pending | |
@@ -24,3 +24,7 @@ Checked `topics.csv` for existing/near-duplicate entries. Found only country-spe
 | 9 | fact-authority-checker | 09-fact-check.md | pending | |
 | 10 | eeat-trust-reviewer | 10-eeat-review.md | pending | |
 | 11 | final-seo-qc | 11-final-qa.md | pending | |
+
+## Checkpoint approvals
+- Checkpoint 1 (Research + Keyword Strategy): APPROVED by user 2026-09-21 ("pls do").
+- User also authorized moving faster through remaining checkpoints (this page and the 3 other queued entity-type pages: Liaison Office, Project Office, LLP) — only pause if a stage flags something genuinely concerning, rather than presenting every checkpoint for explicit sign-off.
