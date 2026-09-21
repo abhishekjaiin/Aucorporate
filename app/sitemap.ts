@@ -21,7 +21,7 @@ type Page = {
 
 const pages: Page[] = [
   // Homepage - Highest Priority
-  { path: "/", priority: 1.0, changeFrequency: "daily", lastModified: "2026-08-26" },
+  { path: "/", priority: 1.0, changeFrequency: "daily", lastModified: "2026-09-21" },
 
   // Core Service Hub
   { path: "/services", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-11" },

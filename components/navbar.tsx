@@ -34,6 +34,8 @@ const taxSubServices = [
   { label: "Goods & Service Tax", href: "/services/taxation-regulatory" },
   { label: "Regulatory Services", href: "/services/taxation-regulatory" },
   { label: "Secretarial & Legal", href: "/services/taxation-regulatory" },
+  { label: "OIDAR & GST for SaaS/AI Companies", href: "/oidar-gst-registration-india" },
+  { label: "Global VAT & Sales Tax Compliance", href: "/global-vat-compliance-ai-saas-companies" },
 ]
 
 const indiaLinks = [

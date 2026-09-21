@@ -606,7 +606,7 @@ export default function HomePage() {
             Related Resources
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link href="/services/taxation-regulatory" className="p-6 border rounded-lg hover:shadow-md transition group">
               <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
                 Taxation &amp; Regulatory Services
@@ -658,6 +658,15 @@ export default function HomePage() {
               </h3>
               <p className="text-sm text-gray-600">
                 Entity structuring, FEMA/RBI basics, and tax treatment for AI, SaaS, and technology companies setting up in India.
+              </p>
+            </Link>
+
+            <Link href="/global-vat-compliance-ai-saas-companies" className="p-6 border rounded-lg hover:shadow-md transition group">
+              <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+                Global VAT &amp; Sales Tax Compliance
+              </h3>
+              <p className="text-sm text-gray-600">
+                Managed VAT/sales-tax registration and filing across the US, EU, UK, Japan and more for AI and SaaS companies selling globally.
               </p>
             </Link>
           </div>
