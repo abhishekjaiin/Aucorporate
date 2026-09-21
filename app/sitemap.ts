@@ -54,6 +54,7 @@ const pages: Page[] = [
 
   // Entity-Type Pages
   { path: "/branch-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-21" },
+  { path: "/liaison-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-21" },
 
   // AI/SaaS Tax Compliance & India Entry Pair
   { path: "/oidar-gst-registration-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-17" },
