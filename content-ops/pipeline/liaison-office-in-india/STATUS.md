@@ -20,8 +20,8 @@ Checked `topics.csv` — no row targets "liaison office in India" as a primary k
 | 2 | keyword-intent-analyst | 02-keyword-intent-map.md | done | 2026-09-21 |
 | 3 | competitor-reverse-engineer | 03-competitor-analysis.md | done | 2026-09-21 |
 | 4 | content-gap-analyst | 04-content-gap.md | done | 2026-09-21 |
-| 5 | au-corporate-strategist | 05-au-positioning.md | pending | |
-| Checkpoint 1 | — | — | pending | |
+| 5 | au-corporate-strategist | 05-au-positioning.md | done | 2026-09-21 |
+| Checkpoint 1 | — | — | APPROVED (standing authorization) | 2026-09-21 |
 | 6 | content-architect | 06-content-architecture.md | pending | |
 | Checkpoint 2 | — | — | pending | |
 | 7 | expert-content-writer | 07-draft.md | pending | |
