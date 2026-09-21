@@ -18,7 +18,7 @@ Checked `topics.csv` — no row targets "liaison office in India" as a primary k
 |---|---|---|---|---|
 | 1 | seo-researcher | 01-serp-research.md | done | 2026-09-21 |
 | 2 | keyword-intent-analyst | 02-keyword-intent-map.md | done | 2026-09-21 |
-| 3 | competitor-reverse-engineer | 03-competitor-analysis.md | pending | |
+| 3 | competitor-reverse-engineer | 03-competitor-analysis.md | done | 2026-09-21 |
 | 4 | content-gap-analyst | 04-content-gap.md | pending | |
 | 5 | au-corporate-strategist | 05-au-positioning.md | pending | |
 | Checkpoint 1 | — | — | pending | |
