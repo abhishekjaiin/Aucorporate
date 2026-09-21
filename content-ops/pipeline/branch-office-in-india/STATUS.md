@@ -15,7 +15,7 @@ Checked `topics.csv` for existing/near-duplicate entries. Found only country-spe
 | 2 | keyword-intent-analyst | 02-keyword-intent-map.md | done | 2026-09-21 |
 | 3 | competitor-reverse-engineer | 03-competitor-analysis.md | done | 2026-09-21 |
 | 4 | content-gap-analyst | 04-content-gap.md | done | 2026-09-21 |
-| 5 | au-corporate-strategist | 05-au-positioning.md | pending | |
+| 5 | au-corporate-strategist | 05-au-positioning.md | done | 2026-09-21 |
 | Checkpoint 1 | — | — | pending | |
 | 6 | content-architect | 06-content-architecture.md | pending | |
 | Checkpoint 2 | — | — | pending | |
