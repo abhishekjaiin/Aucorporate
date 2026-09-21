@@ -14,7 +14,11 @@ export function CountUp({
   decimals?: number
 }) {
   const ref = useRef<HTMLSpanElement>(null)
-  const [display, setDisplay] = useState(0)
+  // Starts at the real value, not 0: this renders server-side and before
+  // hydration, so a placeholder 0 would be what crawlers and the first
+  // paint actually see. The animation resets to 0 and counts up only once
+  // it's actually triggered client-side.
+  const [display, setDisplay] = useState(value)
   const started = useRef(false)
 
   useEffect(() => {
@@ -24,6 +28,7 @@ export function CountUp({
       ([entry]) => {
         if (entry.isIntersecting && !started.current) {
           started.current = true
+          setDisplay(0)
           const start = performance.now()
           const tick = (now: number) => {
             const progress = Math.min((now - start) / duration, 1)

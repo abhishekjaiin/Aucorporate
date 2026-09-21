@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/Reveal"
 import { ClickableReveal } from "@/components/ClickableReveal"
 import { ClickableInfoCard } from "@/components/ClickableInfoCard"
+import { Breadcrumb } from "@/components/Breadcrumb"
 import { CountUp } from "@/components/CountUp"
 import { FaqAccordion } from "@/components/FaqAccordion"
 import { LeadForm } from "@/components/LeadForm"
@@ -103,6 +104,8 @@ const hrFaqs = [
 export default function HRServicesPage() {
   return (
     <div className="min-h-screen pt-20">
+      <div className="max-w-7xl mx-auto px-4"><Breadcrumb items={[{ label: "HR Services" }]} /></div>
+
       <section className="relative py-24 min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
