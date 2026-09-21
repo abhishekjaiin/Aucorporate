@@ -2,10 +2,10 @@
 
 ## Metadata
 **Title:** Branch Office in India: RBI Approval, Process & Compliance Guide (2026)
-**Meta description:** How to set up a Branch Office in India: RBI/FEMA 22(R) eligibility, the Automatic vs Approval route, Form FNC, permitted activities, tax treatment, and closure — explained with current regulatory citations.
+**Meta description:** How to set up a Branch Office in India: RBI/FEMA 22(R) eligibility, Automatic vs Approval route, Form FNC, permitted activities, tax treatment and closure.
 **URL:** /branch-office-in-india
 
-(Title, meta description, and URL match Stage 6 exactly — no tweaks required.)
+(Title and URL match Stage 6 exactly — no tweaks required. Meta description shortened by SEO Editor — Stage 6's version ran ~206 characters, well past the ~155–160 character point at which Google truncates SERP snippets; trimmed to ~155 characters, keeping the primary keyword and every regulatory hook, only dropping the closing "explained with current regulatory citations" framing clause.)
 
 ---
 
@@ -13,7 +13,7 @@
 
 # Branch Office in India: A Complete Guide to RBI Approval, Setup and Compliance
 
-A Branch Office is one of the narrower, more specific ways a foreign company can establish a presence in India — used by companies that want to trade, provide services, or represent the parent's interests here without setting up a separate Indian subsidiary. It is governed directly by the Reserve Bank of India under India's foreign exchange law, not by the Companies Act incorporation route most people associate with "setting up a company in India."
+A Branch Office in India is one of the narrower, more specific ways a foreign company can establish a presence here — used by companies that want to trade, provide services, or represent the parent's interests without setting up a separate Indian subsidiary. It is governed directly by the Reserve Bank of India under India's foreign exchange law, not by the Companies Act incorporation route most people associate with "setting up a company in India."
 
 This guide walks through what a Branch Office is, who can open one, how RBI approval and registration actually work, what a Branch Office is and isn't allowed to do, how it is taxed, and what closing one down involves.
 
@@ -139,40 +139,40 @@ If a Branch Office looks like the right structure for your India presence, our t
 
 ## Frequently Asked Questions
 
-**1. Who approves a branch office in India — RBI or MCA?**
+### 1. Who approves a branch office in India — RBI or MCA?
 Both, at different stages and for different purposes. RBI, acting through the applicant's AD Category-I bank, approves the *establishment* of the Branch Office under FEMA 22(R)/2016-RB — this is the foreign-exchange-law approval that must come first. Separately, the MCA/ROC registers the Branch Office as a foreign company under Section 380 of the Companies Act, 2013, once RBI approval is in hand. Neither one substitutes for the other; a Branch Office needs both.
 
-**2. What is the difference between a branch office and a liaison office (and a project office) in India?**
+### 2. What is the difference between a branch office and a liaison office (and a project office) in India?
 A Liaison Office cannot generate any revenue in India — it exists only to represent and communicate on the parent's behalf. A Branch Office can undertake specific RBI-permitted revenue-generating activities and invoice Indian customers, but within a defined, approved scope. A Project Office is set up for the duration of a specific contract a foreign company has secured in India, and unlike a Branch or Liaison Office, it does not require RBI to issue a UIN in the same way.
 
-**3. What is the difference between a branch office and a subsidiary company in India?**
+### 3. What is the difference between a branch office and a subsidiary company in India?
 A Branch Office is an extension of the foreign parent with no separate legal identity and a narrowly RBI-approved scope of activity; a subsidiary is an independently incorporated Indian company that can undertake any lawful business within its objects, with its own board and its own tax and compliance obligations as a domestic company. Which one fits depends heavily on your parent company's home jurisdiction and how it treats each structure for CFC/DTAA purposes — see the [company registration guide](/india-business-setup/company-formation) for the subsidiary route, [wholly owned subsidiary](/blog/wholly-owned-subsidiary) for a direct comparison, or the relevant country-specific comparison (linked in the section above) if your parent is based in Australia, the UK, or the US.
 
-**4. What activities can a branch office undertake in India, and what is it not allowed to do?**
+### 4. What activities can a branch office undertake in India, and what is it not allowed to do?
 Permitted activities include export/import of goods, professional and consultancy services, parent-directed research, promoting technical/financial collaborations, acting as a buying/selling agent, IT and software services, technical support for the parent's products, and representing a foreign airline or shipping line — but only within the specific scope RBI has approved. A Branch Office cannot engage in retail trading or carry out manufacturing/processing in India (except within an SEZ), and cannot practice Indian law.
 
-**5. Can a branch office in India hire local employees?**
+### 5. Can a branch office in India hire local employees?
 Yes. A Branch Office can hire staff in India for the activities it is permitted to carry out, subject to standard Indian labour-law, payroll, and statutory-benefits obligations that apply to any employer.
 
-**6. What is Form FNC, and how is it filed?**
+### 6. What is Form FNC, and how is it filed?
 Form FNC (Form for Foreign Companies) is the application through which a foreign company applies to establish a Branch Office (or Liaison/Project Office) in India. It is filed with the applicant's designated AD Category-I bank, along with supporting documents including the parent company's incorporation documents, audited financials, a banker's report, and board authorisation for the India establishment.
 
-**7. How long does RBI approval for a branch office take?**
+### 7. How long does RBI approval for a branch office take?
 There isn't a fixed statutory number of days. The timeline depends on whether the application is processed under the Automatic route (through the AD bank alone) or the Approval route (forwarded to RBI), how complete the initial filing is, and whether any clarification queries come back from the AD bank or RBI during review. Build in time for document preparation and at least one review cycle rather than planning against a fixed figure.
 
-**8. How long can a branch office operate in India — does the approval need to be renewed?**
+### 8. How long can a branch office operate in India — does the approval need to be renewed?
 Unlike a Liaison Office, which is clearly subject to a fixed renewal cycle, we were unable to confirm a specific numeric validity/renewal period for Branch Offices against a primary RBI source. The accurate answer is that a Branch Office continues to operate for as long as its RBI/AD-bank approval and AAC compliance remain in good standing, rather than against a fixed calendar expiry.
 
-**9. What is the Annual Activity Certificate (AAC), and when is it due?**
+### 9. What is the Annual Activity Certificate (AAC), and when is it due?
 The AAC is an annual, CA-certified filing confirming that the Branch Office's activities during the year stayed within its RBI-approved scope. It is filed each year following the close of the financial year and routed to both the AD Category-I bank and the Directorate General of Income Tax (International Taxation).
 
-**10. How is a branch office taxed in India?**
+### 10. How is a branch office taxed in India?
 As a foreign company with a Permanent Establishment in India — currently a 35% base corporate tax rate (reduced from 40% under the Finance Act 2024), with surcharge and cess bringing the effective rate to roughly 36–38%. There's no separate dividend-withholding event on profit remittance since a branch has no shares to pay dividends on, but transfer pricing rules apply to transactions with the parent, and profit attribution to the Indian PE is a genuine, recurring area of engagement with tax authorities rather than a mechanical calculation.
 
-**11. Can a company from Pakistan, China or Bangladesh open a branch office in India?**
+### 11. Can a company from Pakistan, China or Bangladesh open a branch office in India?
 It depends on nationality and sector, not a flat yes/no. Applications connected to Pakistan face additional scrutiny, and applications connected to Bangladesh, Sri Lanka, Afghanistan, Iran, China, Hong Kong, or Macau are routed through a government-consultation process rather than the standard AD-bank channel. This changes the approval route and timeline; it doesn't automatically rule out an application.
 
-**12. How do you close or wind up a branch office in India?**
+### 12. How do you close or wind up a branch office in India?
 Through a defined sequence: RBI approval for closure via the AD Category-I bank, an auditor's certificate confirming Indian liabilities are settled, a ROC closure certificate formally ending the foreign company registration, and Form 15CA/15CB for the final remittance of remaining funds to the parent company.
 
 ## Related Reading — Continue Your India Entry Journey
