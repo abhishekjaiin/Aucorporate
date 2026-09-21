@@ -131,6 +131,12 @@ export default function USSubsidiaryVsBranchPage() {
           </ul>
         </div>
       </div>
+      <p className="mt-6 text-gray-700">
+        For the full RBI approval process, eligibility, permitted activities, and compliance mechanics — not specific to the US — see the{' '}
+        <Link href="/branch-office-in-india" className="text-yellow-700 font-semibold hover:underline">
+          Branch Office in India registration and compliance guide
+        </Link>.
+      </p>
 
       {/* INTERACTIVE ENTITY SELECTOR */}
       <div className="mb-12">

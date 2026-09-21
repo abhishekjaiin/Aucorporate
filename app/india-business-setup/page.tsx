@@ -175,7 +175,11 @@ export default function IndiaBusinessSetupHub() {
             <Link href="/india-business-setup/company-formation" className="text-yellow-700 font-semibold hover:underline">
               Company Formation
             </Link>{' '}
-            page.
+            page, or the dedicated{' '}
+            <Link href="/branch-office-in-india" className="text-yellow-700 font-semibold hover:underline">
+              Branch Office registration guide
+            </Link>{' '}
+            if that structure fits your plans.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">

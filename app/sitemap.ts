@@ -52,6 +52,9 @@ const pages: Page[] = [
   // GCC Setup
   { path: "/gcc-setup-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-31" },
 
+  // Entity-Type Pages
+  { path: "/branch-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-21" },
+
   // AI/SaaS Tax Compliance & India Entry Pair
   { path: "/oidar-gst-registration-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-17" },
   { path: "/india-entry-for-saas-companies", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-16" },

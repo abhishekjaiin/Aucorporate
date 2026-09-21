@@ -101,7 +101,11 @@ export default function BlogPage() {
 
         <ul className="list-disc pl-6 mb-6">
           <li>
-            <strong>Branch Office:</strong> Not a separate Indian entity at all — legally, it is the foreign company itself, operating in India under RBI approval and restricted to a defined set of permitted activities (manufacturing is generally off-limits). The parent carries the branch&apos;s liabilities directly, and a branch is taxed as a foreign company, at a materially higher effective rate than a WOS taxed as a domestic company.
+            <strong>Branch Office:</strong> Not a separate Indian entity at all — legally, it is the foreign company itself, operating in India under RBI approval and restricted to a defined set of permitted activities (manufacturing is generally off-limits). The parent carries the branch&apos;s liabilities directly, and a branch is taxed as a foreign company, at a materially higher effective rate than a WOS taxed as a domestic company. See the{' '}
+            <Link href="/branch-office-in-india" className="text-yellow-700 font-semibold hover:underline">
+              Branch Office in India guide
+            </Link>{' '}
+            for the full RBI approval process and compliance mechanics.
           </li>
           <li>
             <strong>Joint Venture:</strong> Structurally similar to a WOS — usually a Private Limited Company — but co-owned with an Indian (or third-country) partner under a shareholders&apos; agreement, which means shared control, negotiated exit and deadlock provisions, and governance that has to account for a second voice at the board.
