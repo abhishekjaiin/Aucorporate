@@ -24,7 +24,7 @@ Checked `topics.csv` — no row targets "liaison office in India" as a primary k
 | Checkpoint 1 | — | — | APPROVED (standing authorization) | 2026-09-21 |
 | 6 | content-architect | 06-content-architecture.md | done | 2026-09-21 |
 | Checkpoint 2 | — | — | APPROVED (standing authorization) | 2026-09-21 |
-| 7 | expert-content-writer | 07-draft.md | pending | |
+| 7 | expert-content-writer | 07-draft.md | done | 2026-09-21 |
 | 8 | seo-editor | 08-seo-edit.md | pending | |
 | 9 | fact-authority-checker | 09-fact-check.md | pending | |
 | 10 | eeat-trust-reviewer | 10-eeat-review.md | pending | |
