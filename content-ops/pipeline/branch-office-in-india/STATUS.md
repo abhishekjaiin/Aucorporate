@@ -21,7 +21,7 @@ Checked `topics.csv` for existing/near-duplicate entries. Found only country-spe
 | Checkpoint 2 | — | — | APPROVED (standing authorization from user, no concerning findings) | 2026-09-21 |
 | 7 | expert-content-writer | 07-draft.md | done | 2026-09-21 |
 | 8 | seo-editor | 08-seo-edit.md | done | 2026-09-21 |
-| 9 | fact-authority-checker | 09-fact-check.md | pending | |
+| 9 | fact-authority-checker | 09-fact-check.md | done | 2026-09-21 |
 | 10 | eeat-trust-reviewer | 10-eeat-review.md | pending | |
 | 11 | final-seo-qc | 11-final-qa.md | pending | |
 
