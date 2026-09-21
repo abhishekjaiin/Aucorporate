@@ -17,8 +17,8 @@ Checked `topics.csv` for existing/near-duplicate entries. Found only country-spe
 | 4 | content-gap-analyst | 04-content-gap.md | done | 2026-09-21 |
 | 5 | au-corporate-strategist | 05-au-positioning.md | done | 2026-09-21 |
 | Checkpoint 1 | — | — | APPROVED | 2026-09-21 |
-| 6 | content-architect | 06-content-architecture.md | pending | |
-| Checkpoint 2 | — | — | pending | |
+| 6 | content-architect | 06-content-architecture.md | done | 2026-09-21 |
+| Checkpoint 2 | — | — | APPROVED (standing authorization from user, no concerning findings) | 2026-09-21 |
 | 7 | expert-content-writer | 07-draft.md | pending | |
 | 8 | seo-editor | 08-seo-edit.md | pending | |
 | 9 | fact-authority-checker | 09-fact-check.md | pending | |
