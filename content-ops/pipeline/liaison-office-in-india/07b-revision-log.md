@@ -37,3 +37,17 @@ Writer's Note #8 was rewritten to explain the update and to flag that a qualifie
 
 ## Not changed
 Everything else in the draft — H2/H3 structure, FAQ order/count and all other FAQ answers, CTA copy, related-resources block, metadata, and all other Writer's Notes entries — is unchanged from the version Stage 9 reviewed.
+
+## Second revision round (Stage 10 EEAT review response)
+
+Stage 10's E-E-A-T review (`10-eeat-review.md`) found 2 more items stated as flat fact in the visible copy despite only convergent-secondary-sourcing support:
+
+### Fix 4 — Form FNC annex reference
+**Where:** Main body ("How to Register a Liaison Office" section) and the "What is Form FNC" FAQ.
+**What changed:** "under Annex B/Annex-1 of FED Master Direction No. 10/2015-16" → "under the applicable annex of FED Master Direction No. 10/2015-16," with an added note that the exact annex reference is worth confirming against the current, in-force Master Direction text at filing time since annexes are periodically renumbered. Stage 9 had found a conflicting secondary source citing "Annex C" instead.
+
+### Fix 5 — Restricted-sector list
+**Where:** Main body, "Restricted Countries, Sensitive Sectors, and the Nepal Exception" section.
+**What changed:** The sector list (Defence, Telecom, Private Security, Information & Broadcasting) now carries an inline qualifier — "based on current secondary regulatory reporting rather than a directly-cited primary text; it's worth confirming this list against the current Master Direction/FEMA 22(R) text for your specific sector before filing" — rather than being stated with the same certainty as the independently-verified Pakistan rule.
+
+Both edits are minimal, in-register additions (professional caution, not disclaimers) — no information was removed, only stated with accurate confidence. Writer's Notes #5 and #11 were updated to record these edits. Nothing else in the draft was touched.
