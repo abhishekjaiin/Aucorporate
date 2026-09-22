@@ -29,7 +29,7 @@ No row in topics.csv targets "project office in India" as a primary keyword. Bot
 | 8 | seo-editor | 08-seo-edit.md | done | 2026-09-22 |
 | 9 | fact-authority-checker | 09-fact-check.md | done (UIN resolved — needs writer revision) | 2026-09-22 |
 | 10 | eeat-trust-reviewer | 10-eeat-review.md | done (PASS) | 2026-09-22 |
-| 11 | final-seo-qc | 11-final-qa.md | pending | |
+| 11 | final-seo-qc | 11-final-qa.md | done — 8.5/10 | 2026-09-22 |
 
 ## Checkpoint approvals
 Standing authorization from user: move through checkpoints without pausing for explicit sign-off unless a stage flags something genuinely concerning. Both prior pipelines (Branch Office, Liaison Office) demonstrated this works well — Stage 9/10 looped back and fixed real issues twice on the Liaison Office page without needing a user pause.
