@@ -4,7 +4,21 @@ import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { Menu, X, ChevronDown, ChevronRight } from "lucide-react"
+import {
+  Menu,
+  X,
+  ChevronDown,
+  ChevronRight,
+  ArrowRight,
+  Building2,
+  FileCheck,
+  Calculator,
+  Shield,
+  Scale,
+  Users,
+  LineChart,
+  GraduationCap,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { WhatsAppIcon } from "@/components/WhatsAppIcon"
 
@@ -58,16 +72,16 @@ const dbiColumns = [
   },
 ]
 
-// ── Services — flat list matching the /services hub's own 8 categories ─────
+// ── Services — matches the /services hub's own 8 categories & icons ────────
 const coreServiceLinks = [
-  { label: "Taxation & Regulatory Services", href: "/services/taxation-regulatory" },
-  { label: "Accounting & Assurance", href: "/services/accounting-assurance" },
-  { label: "Risk Management", href: "/services/risk-management" },
-  { label: "Transaction Advisory Services", href: "/services/transaction-advisory" },
-  { label: "HR & Payroll Solutions", href: "/hr-services" },
-  { label: "Arbitration & Dispute Resolution", href: "/arbitration-services" },
-  { label: "Training & Workshops", href: "/services/training-workshops" },
-  { label: "Global Support Services (Outsourcing)", href: "/outsourcing" },
+  { label: "Taxation & Regulatory Services", desc: "Domestic & international tax advisory", href: "/services/taxation-regulatory", icon: Calculator },
+  { label: "Accounting & Assurance", desc: "Audit, reporting & compliance assurance", href: "/services/accounting-assurance", icon: FileCheck },
+  { label: "Risk Management", desc: "Governance, controls & cyber risk", href: "/services/risk-management", icon: Shield },
+  { label: "Transaction Advisory Services", desc: "M&A, valuations & fundraising", href: "/services/transaction-advisory", icon: LineChart },
+  { label: "HR & Payroll Solutions", desc: "Workforce, payroll & compliance", href: "/hr-services", icon: Users },
+  { label: "Arbitration & Dispute Resolution", desc: "Commercial arbitration & disputes", href: "/arbitration-services", icon: Scale },
+  { label: "Training & Workshops", desc: "Compliance & audit training programs", href: "/services/training-workshops", icon: GraduationCap },
+  { label: "Global Support Services (Outsourcing)", desc: "Outsourcing & back-office support", href: "/outsourcing", icon: Building2 },
 ]
 
 const specialistServiceLinks = [
@@ -130,7 +144,7 @@ export function Navbar() {
               </button>
 
               {activeMenu === "dbi" && (
-                <div className="absolute left-1/2 top-full z-50 w-[min(960px,90vw)] -translate-x-1/3 pt-2">
+                <div className="absolute left-1/2 top-full z-50 w-[min(1040px,90vw)] -translate-x-1/3 pt-2">
                   <div className="overflow-hidden rounded-2xl border bg-white shadow-2xl">
                     <div className="grid grid-cols-4 gap-0 p-6">
                       {dbiColumns.map((col, i) => (
@@ -151,6 +165,19 @@ export function Navbar() {
                         </div>
                       ))}
                     </div>
+                    <Link
+                      href="/contact"
+                      className="flex items-center justify-between px-6 py-3.5 text-sm transition-colors hover:opacity-90"
+                      style={{ backgroundColor: "#081a42" }}
+                    >
+                      <span className="text-white">
+                        <span className="font-semibold">Not sure which entity type fits your business?</span>{" "}
+                        <span className="text-white/70">Our team can walk you through it in one call.</span>
+                      </span>
+                      <span className="inline-flex shrink-0 items-center gap-1 font-semibold text-yellow-400">
+                        Talk to an expert <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                      </span>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -173,25 +200,51 @@ export function Navbar() {
               </button>
 
               {activeMenu === "services" && (
-                <div className="absolute left-0 top-full z-50 w-[340px] pt-2">
-                  <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl py-3">
-                    <Link href="/services" className="flex items-center justify-between px-5 py-2.5 text-sm font-semibold text-[#081a42] hover:bg-gray-50">
-                      All Services <ChevronRight className="h-4 w-4 text-gold" aria-hidden="true" />
-                    </Link>
-                    <div className="my-1 border-t" />
-                    {coreServiceLinks.map((item) => (
-                      <Link key={item.label} href={item.href} className="flex items-center justify-between px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#081a42]">
-                        <span>{item.label}</span>
-                        <ChevronRight className="h-4 w-4 text-gray-300" aria-hidden="true" />
+                <div className="absolute left-0 top-full z-50 w-[640px] pt-2">
+                  <div className="flex overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl">
+                    {/* Navy service-line rail, matching the /services hub's own icons */}
+                    <div className="w-[62%] py-4" style={{ backgroundColor: "#081a42" }}>
+                      <Link href="/services" className="mx-2 mb-2 flex items-center justify-between rounded-lg px-4 py-2 text-sm font-semibold text-yellow-400 hover:bg-white/10">
+                        All Services <ArrowRight className="h-4 w-4" aria-hidden="true" />
                       </Link>
-                    ))}
-                    <p className="px-5 pb-1 pt-3 text-xs font-semibold uppercase tracking-wider text-gray-400">Specialist / Industry-Specific</p>
-                    {specialistServiceLinks.map((item) => (
-                      <Link key={item.label} href={item.href} className="flex items-center justify-between px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#081a42]">
-                        <span>{item.label}</span>
-                        <ChevronRight className="h-4 w-4 text-gray-300" aria-hidden="true" />
+                      <div className="mx-2 mb-2 border-t border-white/10" />
+                      {coreServiceLinks.map((item) => (
+                        <Link
+                          key={item.label}
+                          href={item.href}
+                          className="group mx-2 flex items-start gap-3 rounded-lg px-4 py-2.5 transition-colors hover:bg-white/10"
+                        >
+                          <item.icon className="mt-0.5 h-4 w-4 shrink-0 text-yellow-400" aria-hidden="true" />
+                          <span>
+                            <span className="block text-sm font-medium text-white">{item.label}</span>
+                            <span className="block text-xs text-white/60">{item.desc}</span>
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+
+                    {/* Specialist services + CTA */}
+                    <div className="flex w-[38%] flex-col justify-between p-5">
+                      <div>
+                        <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-gray-400">Specialist / Industry-Specific</p>
+                        {specialistServiceLinks.map((item) => (
+                          <Link key={item.label} href={item.href} className="group flex items-start justify-between gap-2 rounded-lg px-2 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#081a42]">
+                            <span>{item.label}</span>
+                            <ChevronRight className="mt-0.5 h-4 w-4 shrink-0 text-gray-300 group-hover:text-gold" aria-hidden="true" />
+                          </Link>
+                        ))}
+                      </div>
+                      <Link
+                        href="/contact"
+                        className="mt-4 block rounded-xl border border-gray-200 bg-gray-50 p-4 transition-colors hover:border-gold"
+                      >
+                        <p className="text-sm font-semibold text-[#081a42]">Not sure where to start?</p>
+                        <p className="mt-1 text-xs text-gray-500">Talk to an expert about your specific requirement.</p>
+                        <span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-gold-dark">
+                          Get in touch <ArrowRight className="h-3 w-3" aria-hidden="true" />
+                        </span>
                       </Link>
-                    ))}
+                    </div>
                   </div>
                 </div>
               )}
@@ -245,13 +298,29 @@ export function Navbar() {
                   {col.items.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
                 </div>
               ))}
+              <Link href="/contact" onClick={closeMobile} className="mt-4 block rounded-xl p-4" style={{ backgroundColor: "#081a42" }}>
+                <span className="block text-sm font-semibold text-white">Not sure which entity type fits?</span>
+                <span className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-yellow-400">Talk to an expert <ArrowRight className="h-3 w-3" aria-hidden="true" /></span>
+              </Link>
             </MobileGroup>
 
             <MobileGroup label="Services" open={mobileMenu === "services"} onToggle={() => setMobileMenu(mobileMenu === "services" ? null : "services")}>
               <Link href="/services" onClick={closeMobile} className="block py-2 text-sm font-semibold text-gold">All Services</Link>
-              {coreServiceLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
+              {coreServiceLinks.map((item) => (
+                <Link key={item.label} href={item.href} onClick={closeMobile} className="flex items-start gap-3 py-2">
+                  <item.icon className="mt-0.5 h-4 w-4 shrink-0 text-[#081a42]" aria-hidden="true" />
+                  <span>
+                    <span className="block text-sm">{item.label}</span>
+                    <span className="block text-xs text-gray-500">{item.desc}</span>
+                  </span>
+                </Link>
+              ))}
               <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Specialist / Industry-Specific</p>
               {specialistServiceLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
+              <Link href="/contact" onClick={closeMobile} className="mt-4 block rounded-xl p-4" style={{ backgroundColor: "#081a42" }}>
+                <span className="block text-sm font-semibold text-white">Not sure where to start?</span>
+                <span className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-yellow-400">Talk to an expert <ArrowRight className="h-3 w-3" aria-hidden="true" /></span>
+              </Link>
             </MobileGroup>
 
             <Link href="/blog" onClick={closeMobile} className="block border-b py-4 text-base font-semibold">Insights</Link>
