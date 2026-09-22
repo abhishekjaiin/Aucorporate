@@ -96,7 +96,7 @@ export function FloatingInquiryCTA() {
             <p className="mb-4 text-sm text-gray-600">
               Tell us what you&apos;re planning — we&apos;ll get back to you shortly.
             </p>
-            <Web3Form />
+            <Web3Form compact />
           </div>
         </div>
       )}
