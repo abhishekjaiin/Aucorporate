@@ -1,0 +1,71 @@
+# Content Gap Analysis: LLP in India
+
+Pages diffed against each other (Stage 3 set): cleartax.in, indiafilings.com (+ /learn/ hub), vjmglobal.com, ssrana.in, razorpay.com. This is a competitor-vs-competitor diff only — AU Corporate's own service list is intentionally excluded; that mapping belongs to Stage 5.
+
+## Coverage Tally
+| Sub-topic/question | # pages covering (of 5) | Assessment |
+|---|---|---|
+| LLP Act 2008 as governing statute | 5 | Table stakes |
+| Minimum 2 designated partners, 1 India-resident | 5 (all state a partner count/residency rule; **accuracy of the residency figure varies** — see below) | Table stakes, but market-wide accuracy failure on the residency day-count |
+| Resident-partner day-count test (120 vs 182 days) | 5 state a figure; **only 1 (vjmglobal.com) states the current 120-day rule correctly** — cleartax.in, indiafilings.com (eligibility spoke), ssrana.in, and razorpay.com each surface the stale 182-day figure (razorpay.com's version is a partial "182 days ... financial year" hybrid, suggesting a half-completed update) | Table stakes to mention: yes. Correct as stated by the field: no. This is a checkable accuracy gap, not a coverage gap. |
+| DPIN/DIN | 4-5 (recurs as a named entity across the set per Stage 1/3; not confirmed present on razorpay.com specifically) | Table stakes |
+| Digital Signature Certificate (DSC) | Named consistently as a recurring entity, not separately confirmed page-by-page | Table stakes (procedural prerequisite) |
+| LLP Agreement / Form 3 | Recurs across the registration-process pages (cleartax.in, indiafilings.com, razorpay.com); not covered by vjmglobal.com (FDI-only scope) or evidenced separately for ssrana.in | Table stakes |
+| Incorporation process (name reservation/RUN-LLP, Form FiLLiP, Certificate of Incorporation) | 3 (cleartax.in, indiafilings.com, razorpay.com — the registration-platform pages); absent from vjmglobal.com (narrow FDI scope) and not evidenced on ssrana.in's FAQ page | Table stakes for a "LLP in India" head-term page, since 3 of 5 analyzed pages anchor on it and it is the dominant transactional-intent cluster per Stage 1/2 |
+| FDI-in-LLP two-part automatic-route gate (sector permits 100% automatic route AND no FDI-linked performance conditions) | 2 (indiafilings.com's dedicated FDI spoke page states it most precisely; vjmglobal.com states it with equal precision plus adds the Form FDI-LLP(I) 30-day reporting obligation) — **absent from cleartax.in, ssrana.in, and razorpay.com entirely** | Covered by only some — differentiating, not table stakes, but a real and correctly-answerable question |
+| FDI gate connected to practical next-step guidance (how to check sector eligibility, what happens if performance conditions apply, what triggers government-approval route instead) | 0 of 5 | Genuine gap — even the 2 pages that state the gate correctly stop at the rule itself |
+| LLP tax treatment (30% flat rate, partnership/single-level taxation, Sec 10(2A)) | Recurs as a named entity/topic across the set per Stage 1/2; confirmed associated with the registration-platform pages (cleartax.in) more than the FAQ/advisory pages | Table stakes |
+| Annual compliance (Form 8, Form 11, audit threshold) | Recurs consistently as a named-entity cluster across Stage 1's findings; not individually confirmed present on vjmglobal.com's narrow-scope page | Table stakes |
+| LLP vs Pvt Ltd comparison | Not evidenced as present on any of the 5 pages analyzed in Stage 3 (this comparison cluster lives on separate dedicated pages per Stage 1 — cleartax.in's own comparison page, ebizfiling.com, legalwiz.in — outside the 5-page Stage 3 set) | Table stakes for reader completeness, but per Stage 2's strategist note, full head-to-head depth is a separate-cluster decision, not resolved here |
+| LLP-to-Pvt-Ltd conversion (Sec 366, Form URC-1/SPICe+/INC-23/INC-24) | Recurs as a named-entity cluster in Stage 1's regulatory findings but not confirmed present on any of the 5 Stage-3-analyzed pages specifically | Gap among the 5 analyzed pages, even though it's a known topic in the wider field |
+| Full lifecycle in one page (registration + eligibility + FDI + compliance + conversion, no second click required) | 0 of 5 — indiafilings.com spreads it across a pillar+spoke cluster (multiple URLs); vjmglobal.com is single-topic (FDI only); cleartax.in, ssrana.in, razorpay.com each cover only part of the lifecycle | Genuine structural gap, not a topic gap — the pieces exist somewhere in the market, never combined |
+| Visible authorship / credential / last-updated signal | 0 of 5 | Genuine gap, confirmed across every analyzed page including the two advisory-positioned ones (vjmglobal.com, ssrana.in) where it matters most |
+| FAQ-structured format matching question-based search intent | 1 (ssrana.in) structurally, though undermined by the 182-day error inside it | Differentiating when paired with correct content |
+
+## Minimum Coverage List
+(What the page MUST address to be competitive — table stakes. Absence of any of these makes the page look incomplete next to at least 3 of the 5 analyzed competitors.)
+- LLP Act 2008 as the governing statute, stated plainly
+- Minimum 2 designated partners, at least 1 India-resident — **and the residency day-count test must be stated correctly** (see Differentiation List; getting this right is now itself part of the minimum bar, not optional)
+- DPIN/DIN requirement and DSC prerequisite for designated partners
+- LLP Agreement and its filing via Form 3
+- Full incorporation process: name reservation (RUN-LLP), Form FiLLiP, Certificate of Incorporation
+- LLP tax treatment: 30% flat rate, single-level/partnership taxation
+- Annual compliance basics: Form 8 (Statement of Account & Solvency), Form 11 (Annual Return), and the audit threshold trigger
+- Some LLP vs Pvt Ltd comparison content, even if not full dedicated-cluster depth (per Stage 2's "address naturally" framing)
+- LLP-to-Pvt-Ltd conversion, at least as an FAQ-depth answer — no analyzed page covers this, but it recurs as an expected topic across Stage 1's regulatory findings and Stage 2's keyword map, so its absence would read as incomplete against the wider field even though not one of the 5 analyzed pages happens to cover it
+
+## Differentiation List
+(What almost nobody covers well, or covers at all — the real opportunity. Every item below traces to a specific observed gap in Stage 3, not a generic "add more detail" instinct.)
+
+1. **Correct the 120-day residency rule, explicitly naming the 182-day confusion.** This is not a marginal fact-check: the stale 182-day figure was found tied to specific-domain search evidence on cleartax.in, indiafilings.com's eligibility spoke, ssrana.in, and razorpay.com — spanning four distinct business-model types (tax-filing SaaS, registration platform, law firm, fintech transactional platform). Only vjmglobal.com states the current rule correctly, and even it doesn't acknowledge the market confusion. A page that states 120 days correctly *and* explicitly flags why so many sources still say 182 answers both the correct-fact search and the confusion-driven search in one place — no analyzed page does this.
+
+2. **Connect the FDI-in-LLP gate to an actual decision, not just a definition.** Only indiafilings.com and vjmglobal.com state the two-part automatic-route gate (sector permits 100% automatic-route FDI AND no FDI-linked performance conditions) with precision, and vjmglobal.com adds the Form FDI-LLP(I) 30-day reporting step beyond that. But zero of the 5 pages walk a foreign investor through what to do next: how to actually check whether their sector qualifies, what happens when performance conditions do apply, or what triggers the government-approval route instead of automatic route. The rule is stated in isolation everywhere it appears at all — the connective, practical layer is the gap, not the rule itself.
+
+3. **Full-lifecycle coverage in a single page.** No analyzed page combines registration + eligibility + FDI + compliance + conversion in one place. IndiaFilings gets closest by volume but fragments it across a pillar+spoke cluster (a founder or CFO needs 3+ separate URLs to assemble the full picture); vjmglobal.com is precise but single-topic (FDI only, no registration/compliance/conversion content at all). A single page that genuinely completes the lifecycle — without forcing a second click for the FDI section or the conversion section — has no direct match among the 5 pages analyzed.
+
+4. **Visible authorship/credential signal.** None of the 5 analyzed pages — including the two with advisory-firm positioning closest to AU Corporate (vjmglobal.com, ssrana.in) — shows any named author, professional credential, or visible last-updated date in the available evidence. For regulatory/compliance content, this is a trust-signal gap the whole competitive set shares, and one a named-expert byline directly closes.
+
+## Unanswered PAA/Related Questions
+(Pulled from Stage 1's PAA/related-search reconstruction; these are questions no single analyzed page resolves well, either because the answer is wrong where it appears, or because it doesn't appear on the pages analyzed at all.)
+- "What is the minimum number of partners required for LLP in India?" — answered everywhere, but the residency-day-count half of this question (who counts as "resident") is wrong on 4 of 5 pages.
+- "Can a foreigner be a partner in an LLP in India?" — only 2 of 5 pages (indiafilings.com's FDI spoke, vjmglobal.com) address foreign-partner/FDI eligibility at all; cleartax.in, ssrana.in, and razorpay.com are silent on it per available evidence.
+- "Can an LLP be converted into a Private Limited Company?" — not evidenced as covered on any of the 5 analyzed pages, despite recurring in Stage 1's PAA reconstruction and Stage 2's keyword map.
+- "What documents are required for LLP registration in India?" plus "How many days does it take?" — covered on the registration-platform pages (cleartax.in, indiafilings.com, razorpay.com) but absent from the two advisory-positioned pages (vjmglobal.com, ssrana.in), meaning a reader who lands on the more credible advisory-style page doesn't get a practical answer.
+- The FDI decision-path questions implied by Stage 3's Verdict — "how do I know if my sector qualifies for the automatic route," "what if FDI-linked performance conditions apply to my sector," "what's the reporting obligation after I invest" — are not resolved anywhere in the analyzed set beyond vjmglobal.com's single mention of the Form FDI-LLP(I) 30-day filing.
+
+## Potential Unique Angles
+(Grounded in the gaps above, not invented.)
+- **An explicit "120 days, not 182 days" correction callout**, naming the LLP (Amendment) Act, 2021 as the source of the change — directly addressing a market-wide, checkable error rather than a generic accuracy claim.
+- **A foreign-investor decision framework for the FDI-in-LLP gate**: a clear sequence (is the sector open to 100% automatic-route FDI for a company? does it carry FDI-linked performance conditions? if either answer is no, what's the alternative route?) — no analyzed page attempts this sequencing; it stays a static rule statement everywhere it appears.
+- **A single-page full-lifecycle structure** (registration through conversion) that explicitly out-flanks both failure modes seen in Stage 3: IndiaFilings' multi-URL fragmentation and vjmglobal.com's single-topic narrowness.
+- **A named-author/credential line on regulatory content**, closing a trust-signal gap that is universal across the analyzed set, including on the two law/CA-firm pages where a reader would most expect it.
+- **A worked example on the FDI reporting obligation** (Form FDI-LLP(I), 30-day window) — the one piece of procedural specificity Stage 3 found nowhere else but vjmglobal.com's single mention — could be built out into an actual step/timeline rather than a one-line reference.
+
+## Opportunities for Authoritative Sourcing
+(Where citing MCA/RBI/Income Tax/GST primary sources would beat what's currently ranking — none of the 5 analyzed pages was confirmed via WebFetch to cite a primary source directly; all Stage 1/3 evidence is search-snippet/synthesis-based, so primary-source citation is itself a plausible differentiator against a field that reads as secondary-source-driven.)
+- **LLP (Amendment) Act, 2021** as the direct statutory basis for the 120-day resident-partner rule — citing the amendment itself, not just stating the figure, would outdo every page in the set, all of which state a number without visibly sourcing it.
+- **MCA21/MCA V3 portal and Form FiLLiP/RUN-LLP instruction kit** as the primary reference for the incorporation process, rather than the platform-summarized versions cleartax.in and razorpay.com appear to run.
+- **RBI/FEMA and the DPIIT FDI Policy (10 November 2015 liberalization)** as the primary source for the automatic-route two-part gate — Stage 1 flagged that even the best current page on this point (VJM Global, IndiaFilings) was not confirmed to cite the underlying FEMA/DPIIT text directly; a page that names the specific circular/policy paragraph would be the first in the analyzed set to do so.
+- **Income Tax Act, Section 10(2A)** for the single-level LLP taxation claim, and the **Alternate Minimum Tax (AMT) provision (18.5%)** — both recur as named entities across Stage 1's findings but were not confirmed as directly cited (vs. just referenced) on any of the 5 analyzed pages.
+- **Companies Act, 2013, Section 366 + Company (Authorised to Register) Rules, 2014** for the conversion process — this citation-level detail did not surface as present on any of the 5 pages at all, making it a clean opportunity, not just an accuracy upgrade.
+- Note: Stage 1 flagged the audit threshold (₹40 lakh turnover / ₹25 lakh contribution) and the ₹100/day Form 8 late fee as market-consensus figures repeated across many pages but never independently verified against primary LLP Rules text in this pipeline (WebFetch to mca.gov.in was blocked throughout). Recommend the downstream writer confirm this against the primary LLP Rules before publishing it as a citation-backed claim rather than a repeated-consensus one.
