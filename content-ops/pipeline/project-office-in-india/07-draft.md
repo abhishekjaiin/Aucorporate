@@ -4,11 +4,11 @@
 
 Title: Project Office in India: RBI Approval, Registration & Compliance Guide (2026)
 
-Meta description: How to set up a Project Office in India: FEMA/Regulation 5 eligibility, RBI/AD-bank approval via Form FNC-1, permanent establishment tax exposure, AAC compliance and closure.
+Meta description: Project Office in India: FEMA/Regulation 5 eligibility, RBI/AD-bank approval via Form FNC-1, permanent establishment tax exposure, AAC compliance and closure.
 
 URL: /project-office-in-india
 
-(Title, meta description and URL match Stage 6's approved architecture exactly — no changes made.)
+(Title and URL match Stage 6's approved architecture exactly — no changes made. Meta description trimmed from Stage 6's draft — see SEO Edit Notes; the original ran to 174 characters, past the point search engines reliably display before truncating, and led with "How to set up a" rather than the primary keyword. Removing that four-word lead-in brings it to 158 characters and puts "Project Office in India" at the very start of the snippet, with no change to the substance of what's promised.)
 
 ---
 
@@ -16,7 +16,7 @@ URL: /project-office-in-india
 
 # Project Office in India: A Complete Guide to RBI Approval, Registration and Compliance
 
-A Project Office in India is the narrowest-purpose, most time-bound way a foreign company can establish a presence here — used not for ongoing representation or general trading, but to execute one specific contract it has already won from an Indian company or entity. It is governed directly by the Reserve Bank of India under India's foreign exchange law, not by the Companies Act incorporation route most people associate with "setting up a company in India."
+A Project Office in India is the narrowest-purpose, most time-bound way a foreign company can establish a presence here. It is not used for ongoing representation or general trading, but to execute one specific contract it has already won from an Indian company or entity. It is governed directly by the Reserve Bank of India under India's foreign exchange law, not by the Companies Act incorporation route most people associate with "setting up a company in India."
 
 This guide walks through who qualifies for a Project Office, how RBI/AD-bank approval and registration actually work, what a Project Office is and isn't allowed to do, the tax exposure it genuinely creates, and how to close one out cleanly once the project is complete.
 
@@ -24,7 +24,7 @@ This guide walks through who qualifies for a Project Office, how RBI/AD-bank app
 
 A Project Office is not a separate legal entity. It is an extension of the foreign parent company operating inside India for the duration of a specific, already-secured contract — there is no separate Indian shareholding, no separate board, and no separate corporate personality. Legally, the parent company itself is executing the project in India through the Project Office. If your intent is a fully independent Indian operating company rather than a contract-linked extension of the parent, the [company registration guide](/india-business-setup/company-formation) covers that route in full.
 
-The statutory basis sits in foreign exchange law, not company law. Section 6(6) of the Foreign Exchange Management Act, 1999 (FEMA) empowers the RBI to regulate the establishment in India of a branch, office, or other place of business by a person resident outside India. The operative regulation made under that power — the Foreign Exchange Management (Establishment in India of a Branch Office or a Liaison Office or a Project Office or Any Other Place of Business) Regulations, 2016, commonly cited as FEMA 22(R)/2016-RB — is what this page is written against. A draft set of RBI Establishment Regulations has circulated since October 2025 proposing a more principle-based framework across all three structures; it has not been notified in the Official Gazette and is not yet law. Plan against FEMA 22(R)/2016-RB, not the draft, and re-check its notification status before you file anything.
+The statutory basis sits in foreign exchange law, not company law. Section 6(6) of the Foreign Exchange Management Act, 1999 (FEMA) empowers the RBI to regulate the establishment in India of a branch, office, or other place of business by a person resident outside India. The operative regulation made under that power — the Foreign Exchange Management (Establishment in India of a Branch Office or a Liaison Office or a Project Office or Any Other Place of Business) Regulations, 2016, commonly cited as FEMA 22(R)/2016-RB — is what this page is written against. A draft set of RBI Establishment Regulations has circulated since October 2025 proposing a more principle-based framework across all three structures; it has not been notified in the Official Gazette and is not yet law. Plan against FEMA 22(R)/2016-RB, not the draft, and re-check its notification status before you file anything. This establishment route is also separate from the FDI equity-investment framework under FEMA 20(R) — if you're evaluating putting equity into an Indian company rather than executing a specific contract through an unincorporated presence, see [The FDI Automatic vs Government Route](/india-business-setup/fdi-channels) instead.
 
 What sets a Project Office apart from a Branch or Liaison Office is not how much commercial activity it can undertake, but why it exists at all. A Project Office is set up for the fixed duration of a specific contract or project a foreign company has already secured from an Indian entity. It is not an ongoing representative presence the way a Liaison Office is, and it is not a general-purpose revenue-generating presence the way a Branch Office is — it exists to execute one project, and it is expected to wind down when that project ends.
 
