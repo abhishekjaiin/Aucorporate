@@ -35,6 +35,7 @@ Checked `topics.csv` — no row targets "LLP in India" as a primary keyword. Exi
 | 7 | expert-content-writer | 07-draft.md | done | 2026-09-22 |
 | 8 | seo-editor | 08-seo-edit.md | done | 2026-09-22 |
 | 9 | fact-authority-checker | 09-fact-check.md | done — needs writer revision | 2026-09-22 |
+| 9b | expert-content-writer (revision) | 09b-revision.md | done | 2026-09-22 |
 | 10 | eeat-trust-reviewer | 10-eeat-review.md | pending | |
 | 11 | final-seo-qc | 11-final-qa.md | pending | |
 
