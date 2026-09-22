@@ -182,9 +182,12 @@ export default function IndiaBusinessSetupHub() {
             <Link href="/liaison-office-in-india" className="text-yellow-700 font-semibold hover:underline">
               Liaison Office guide
             </Link>{' '}
-            or{' '}
             <Link href="/project-office-in-india" className="text-yellow-700 font-semibold hover:underline">
               Project Office guide
+            </Link>{' '}
+            or{' '}
+            <Link href="/llp-in-india" className="text-yellow-700 font-semibold hover:underline">
+              LLP registration guide
             </Link>{' '}
             if any of those structures fit your plans.
           </p>
