@@ -25,7 +25,7 @@ No row in topics.csv targets "project office in India" as a primary keyword. Bot
 | Checkpoint 1 | — | — | APPROVED (standing authorization) | 2026-09-22 |
 | 6 | content-architect | 06-content-architecture.md | done | 2026-09-22 |
 | Checkpoint 2 | — | — | APPROVED (standing authorization) | 2026-09-22 |
-| 7 | expert-content-writer | 07-draft.md | pending | |
+| 7 | expert-content-writer | 07-draft.md | done | 2026-09-22 |
 | 8 | seo-editor | 08-seo-edit.md | pending | |
 | 9 | fact-authority-checker | 09-fact-check.md | pending | |
 | 10 | eeat-trust-reviewer | 10-eeat-review.md | pending | |
@@ -33,3 +33,10 @@ No row in topics.csv targets "project office in India" as a primary keyword. Bot
 
 ## Checkpoint approvals
 Standing authorization from user: move through checkpoints without pausing for explicit sign-off unless a stage flags something genuinely concerning. Both prior pipelines (Branch Office, Liaison Office) demonstrated this works well — Stage 9/10 looped back and fixed real issues twice on the Liaison Office page without needing a user pause.
+
+## Stage 7 notes for downstream stages
+- Full draft written to `07-draft.md`, following Stage 6's approved H2/H3/FAQ structure exactly — no restructuring.
+- UIN question handled per Stage 6's explicit directive: hedged in one body paragraph (registration/Form FNC-1 section) and one FAQ item (#6) only, no flat assertion either way, not used in title/meta/H1. Not resolved on this page — Stage 9 still needs to make the sourced call and separately flag the sibling-page (`/branch-office-in-india`, `/liaison-office-in-india`) correction question to the orchestrator, per Stage 6.
+- PE/tax-risk content (Section 7 in the draft) integrated into the main page body as instructed, not siloed — this is the page's primary differentiator per Stage 4/5.
+- A full "Writer's Notes — Needs Verification" list (13 items) is included at the end of `07-draft.md` for Stage 9 — covers the UIN question, Regulation 5 numbering, FNC vs FNC-1 naming, the six-month opening window, FC-2/closure mechanics, missing MCA primary source, RBI Master Direction sourcing, and several lower-stakes applicability hedges (FLA, ITR-6).
+- No fabricated statistics, client counts, or testimonials used. Single low-key CTA near the end (`/contact`), no services-grid, matching both sibling pages' register and structure.
