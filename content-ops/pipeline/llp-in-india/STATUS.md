@@ -38,7 +38,7 @@ Checked `topics.csv` — no row targets "LLP in India" as a primary keyword. Exi
 | 9b | expert-content-writer (revision) | 09b-revision.md | done | 2026-09-22 |
 | 10 | eeat-trust-reviewer | 10-eeat-review.md | done — needs revision | 2026-09-22 |
 | 10b | expert-content-writer (revision) | 10b-revision.md | done | 2026-09-22 |
-| 11 | final-seo-qc | 11-final-qa.md | pending | |
+| 11 | final-seo-qc | 11-final-qa.md | done — 8.5/10, approved with must-fix (procedural) items | 2026-09-22 |
 
 ## Checkpoint approvals
 Standing authorization from user: move through checkpoints without pausing for explicit sign-off unless a stage flags something genuinely concerning. Demonstrated working well across all 3 prior pipelines (2 real errors caught and fixed on Liaison Office; a UIN question properly investigated and correctly resolved on Project Office).
