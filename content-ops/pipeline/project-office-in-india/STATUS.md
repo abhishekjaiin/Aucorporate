@@ -23,8 +23,8 @@ No row in topics.csv targets "project office in India" as a primary keyword. Bot
 | 4 | content-gap-analyst | 04-content-gap.md | done | 2026-09-22 |
 | 5 | au-corporate-strategist | 05-au-positioning.md | done | 2026-09-22 |
 | Checkpoint 1 | — | — | APPROVED (standing authorization) | 2026-09-22 |
-| 6 | content-architect | 06-content-architecture.md | pending | |
-| Checkpoint 2 | — | — | pending | |
+| 6 | content-architect | 06-content-architecture.md | done | 2026-09-22 |
+| Checkpoint 2 | — | — | APPROVED (standing authorization) | 2026-09-22 |
 | 7 | expert-content-writer | 07-draft.md | pending | |
 | 8 | seo-editor | 08-seo-edit.md | pending | |
 | 9 | fact-authority-checker | 09-fact-check.md | pending | |
