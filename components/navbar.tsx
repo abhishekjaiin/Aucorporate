@@ -8,71 +8,85 @@ import { Menu, X, ChevronDown, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { WhatsAppIcon } from "@/components/WhatsAppIcon"
 
-const navLinks = [
-  { label: "Arbitration Services", href: "/arbitration-services" },
-  { label: "HR Services", href: "/hr-services" },
-  { label: "Global Support", href: "/outsourcing" },
-  { label: "About", href: "/about" },
-  { label: "Career", href: "/career" },
+// ── Doing Business in India — mega menu, 4 columns ──────────────────────────
+const dbiColumns = [
+  {
+    heading: "India Entry Basics",
+    hub: { label: "Doing Business in India — Overview", href: "/doing-business-in-india" },
+    items: [
+      { label: "Why India", href: "/doing-business-in-india/why-india" },
+      { label: "Entry Process", href: "/doing-business-in-india/entry-process" },
+      { label: "Pre-Incorporation", href: "/doing-business-in-india/pre-incorporation" },
+      { label: "Incorporation", href: "/doing-business-in-india/incorporation" },
+      { label: "Post-Incorporation", href: "/doing-business-in-india/post-incorporation" },
+    ],
+  },
+  {
+    heading: "Entity Types & Setup",
+    items: [
+      { label: "Company Registration / Incorporation", href: "/india-business-setup/company-formation" },
+      { label: "Wholly Owned Subsidiary", href: "/blog/wholly-owned-subsidiary" },
+      { label: "Branch Office", href: "/branch-office-in-india" },
+      { label: "Liaison Office", href: "/liaison-office-in-india" },
+      { label: "Project Office", href: "/project-office-in-india" },
+      { label: "LLP", href: "/llp-in-india" },
+      { label: "FDI Channels (Automatic vs Government)", href: "/india-business-setup/fdi-channels" },
+    ],
+  },
+  {
+    heading: "Compliance & Specialized Entry",
+    items: [
+      { label: "Regulatory Compliance", href: "/india-business-setup/regulatory-compliance" },
+      { label: "Banking & Taxation", href: "/india-business-setup/banking-taxation" },
+      { label: "Timeline & Resources", href: "/india-business-setup/timeline-resources" },
+      { label: "Global Capability Center (GCC) Setup", href: "/gcc-setup-india" },
+      { label: "India Entry for SaaS/AI Companies", href: "/india-entry-for-saas-companies" },
+    ],
+  },
+  {
+    heading: "By Country",
+    items: [
+      { label: "USA", href: "/india-entry-for-us-companies" },
+      { label: "UK", href: "/india-entry-for-uk-companies" },
+      { label: "Singapore", href: "/india-entry-for-singapore-companies" },
+      { label: "Australia", href: "/india-entry-for-australian-companies" },
+      { label: "Germany", href: "/india-entry-for-german-companies" },
+      { label: "Japan", href: "/india-entry-for-japan-companies" },
+      { label: "China", href: "/india-entry-for-china-companies" },
+      { label: "Via Our Partners (HK / Singapore / China)", href: "/partners/uniproasia" },
+    ],
+  },
 ]
 
-const mainServices = [
-  { label: "Risk Management Services", key: "risk" },
+// ── Services — flat list matching the /services hub's own 8 categories ─────
+const coreServiceLinks = [
+  { label: "Taxation & Regulatory Services", href: "/services/taxation-regulatory" },
   { label: "Accounting & Assurance", href: "/services/accounting-assurance" },
-  { label: "Taxation & Regulatory Services", key: "tax" },
-  { label: "Transaction Advisory Services", href: "/services/transaction-advisory" },
-]
-
-const riskSubServices = [
   { label: "Risk Management", href: "/services/risk-management" },
-  { label: "Forensic Services", href: "/services/risk-management" },
-  { label: "Special Audit / Review", href: "/services/risk-management" },
+  { label: "Transaction Advisory Services", href: "/services/transaction-advisory" },
+  { label: "HR & Payroll Solutions", href: "/hr-services" },
+  { label: "Arbitration & Dispute Resolution", href: "/arbitration-services" },
+  { label: "Training & Workshops", href: "/services/training-workshops" },
+  { label: "Global Support Services (Outsourcing)", href: "/outsourcing" },
 ]
 
-const taxSubServices = [
-  { label: "Direct Taxation", href: "/services/taxation-regulatory" },
-  { label: "Goods & Service Tax", href: "/services/taxation-regulatory" },
-  { label: "Regulatory Services", href: "/services/taxation-regulatory" },
-  { label: "Secretarial & Legal", href: "/services/taxation-regulatory" },
+const specialistServiceLinks = [
   { label: "OIDAR & GST for SaaS/AI Companies", href: "/oidar-gst-registration-india" },
   { label: "Global VAT & Sales Tax Compliance", href: "/global-vat-compliance-ai-saas-companies" },
 ]
 
-const indiaLinks = [
-  { label: "Why India", href: "/doing-business-in-india/why-india" },
-  { label: "Entry Process", href: "/doing-business-in-india/entry-process" },
-  { label: "Pre-Incorporation", href: "/doing-business-in-india/pre-incorporation" },
-  { label: "Incorporation", href: "/doing-business-in-india/incorporation" },
-  { label: "Post-Incorporation", href: "/doing-business-in-india/post-incorporation" },
-]
-
-const indiaSetupLinks = [
-  { label: "Company Formation", href: "/india-business-setup/company-formation" },
-  { label: "FDI Channels", href: "/india-business-setup/fdi-channels" },
-  { label: "Regulatory Compliance", href: "/india-business-setup/regulatory-compliance" },
-  { label: "Banking & Taxation", href: "/india-business-setup/banking-taxation" },
-  { label: "Timeline & Resources", href: "/india-business-setup/timeline-resources" },
-]
-
-const countryLinks = [
-  { label: "USA", href: "/india-entry-for-us-companies" },
-  { label: "UK", href: "/india-entry-for-uk-companies" },
-  { label: "Japan", href: "/india-entry-for-japan-companies" },
-  { label: "Germany", href: "/india-entry-for-german-companies" },
-  { label: "Singapore", href: "/india-entry-for-singapore-companies" },
-  { label: "Australia", href: "/india-entry-for-australian-companies" },
-  { label: "China", href: "/india-entry-for-china-companies" },
-]
-
-const partnerIncorporationLinks = [
-  { label: "Hong Kong / Singapore / China", href: "/partners/uniproasia" },
+// ── About ────────────────────────────────────────────────────────────────
+const aboutLinks = [
+  { label: "About AU Corporate", href: "/about" },
+  { label: "Partners", href: "/partners/uniproasia" },
+  { label: "Careers", href: "/career" },
+  { label: "Contact", href: "/contact" },
 ]
 
 export function Navbar() {
   const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
   const [activeMenu, setActiveMenu] = useState<string | null>(null)
-  const [activeServiceSubmenu, setActiveServiceSubmenu] = useState("risk")
   const [mobileMenu, setMobileMenu] = useState<string | null>(null)
 
   const closeMobile = () => {
@@ -85,9 +99,6 @@ export function Navbar() {
       window.scrollTo({ top: 0, behavior: "smooth" })
     }
   }
-
-  const serviceSubmenu = activeServiceSubmenu === "tax" ? taxSubServices : riskSubServices
-  const serviceSubmenuTitle = activeServiceSubmenu === "tax" ? "Tax & Regulatory" : "Risk Management"
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b bg-white">
@@ -102,6 +113,50 @@ export function Navbar() {
           </Link>
 
           <div className="hidden items-center gap-1 lg:flex">
+            {/* DOING BUSINESS IN INDIA — mega menu */}
+            <div
+              className="relative"
+              onMouseEnter={() => setActiveMenu("dbi")}
+              onMouseLeave={() => setActiveMenu(null)}
+            >
+              <button
+                type="button"
+                onClick={() => setActiveMenu(activeMenu === "dbi" ? null : "dbi")}
+                className="flex items-center gap-1 px-3 py-2 text-sm text-gray-700 hover:text-black"
+                aria-haspopup="true"
+                aria-expanded={activeMenu === "dbi"}
+              >
+                Doing Business in India <ChevronDown className="h-4 w-4" aria-hidden="true" />
+              </button>
+
+              {activeMenu === "dbi" && (
+                <div className="absolute left-1/2 top-full z-50 w-[min(960px,90vw)] -translate-x-1/3 pt-2">
+                  <div className="overflow-hidden rounded-2xl border bg-white shadow-2xl">
+                    <div className="grid grid-cols-4 gap-0 p-6">
+                      {dbiColumns.map((col, i) => (
+                        <div key={col.heading} className={i > 0 ? "border-l pl-5 ml-5" : ""}>
+                          <h3 className="mb-3 text-sm font-semibold text-[#081a42]">{col.heading}</h3>
+                          {col.hub && (
+                            <Link href={col.hub.href} className="mb-2 block text-xs font-semibold text-gold hover:underline">
+                              {col.hub.label} →
+                            </Link>
+                          )}
+                          <div className="space-y-0.5">
+                            {col.items.map((item) => (
+                              <Link key={item.label} href={item.href} className="block py-1.5 text-sm leading-snug text-gray-700 hover:text-gold">
+                                {item.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* SERVICES */}
             <div
               className="relative"
               onMouseEnter={() => setActiveMenu("services")}
@@ -118,96 +173,60 @@ export function Navbar() {
               </button>
 
               {activeMenu === "services" && (
-                <div className="absolute left-0 top-full z-50 w-[720px] pt-2">
-                  <div className="flex overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl">
-                    <div className="w-[46%] border-r bg-gray-50 py-3">
-                      <p className="px-5 pb-2 text-xs font-semibold uppercase tracking-wider text-gray-400">Our Services</p>
-                      {mainServices.map((service) => {
-                        const hasSubmenu = service.key === "risk" || service.key === "tax"
-                        const isActive = service.key === activeServiceSubmenu
-
-                        if (hasSubmenu) {
-                          return (
-                            <button
-                              key={service.label}
-                              type="button"
-                              onMouseEnter={() => setActiveServiceSubmenu(service.key!)}
-                              onFocus={() => setActiveServiceSubmenu(service.key!)}
-                              onClick={() => setActiveServiceSubmenu(service.key!)}
-                              className={`flex w-full items-center justify-between px-5 py-3 text-left text-sm transition-colors ${isActive ? "bg-white font-medium text-[#081a42]" : "text-gray-700 hover:bg-white"}`}
-                              aria-expanded={isActive}
-                            >
-                              <span>{service.label}</span>
-                              <ChevronRight className={`h-4 w-4 ${isActive ? "text-gold" : "text-gray-400"}`} aria-hidden="true" />
-                            </button>
-                          )
-                        }
-
-                        return (
-                          <Link
-                            key={service.label}
-                            href={service.href!}
-                            className="flex items-center justify-between px-5 py-3 text-sm text-gray-700 transition-colors hover:bg-white hover:text-[#081a42]"
-                            onFocus={() => setActiveServiceSubmenu("risk")}
-                          >
-                            <span>{service.label}</span>
-                            <ChevronRight className="h-4 w-4 text-gray-300" aria-hidden="true" />
-                          </Link>
-                        )
-                      })}
-                    </div>
-
-                    <div className="flex-1 p-6">
-                      <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-gold">Explore</p>
-                      <h3 className="mb-4 text-lg font-semibold text-[#081a42]">{serviceSubmenuTitle}</h3>
-                      <div className="space-y-1">
-                        {serviceSubmenu.map((item) => (
-                          <Link
-                            key={item.label}
-                            href={item.href}
-                            className="group flex items-center justify-between rounded-lg px-3 py-3 text-sm text-gray-700 transition-colors hover:bg-gray-50 hover:text-gold"
-                          >
-                            <span>{item.label}</span>
-                            <ChevronRight className="h-4 w-4 text-gray-300 transition-transform group-hover:translate-x-1 group-hover:text-gold" aria-hidden="true" />
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
+                <div className="absolute left-0 top-full z-50 w-[340px] pt-2">
+                  <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl py-3">
+                    <Link href="/services" className="flex items-center justify-between px-5 py-2.5 text-sm font-semibold text-[#081a42] hover:bg-gray-50">
+                      All Services <ChevronRight className="h-4 w-4 text-gold" aria-hidden="true" />
+                    </Link>
+                    <div className="my-1 border-t" />
+                    {coreServiceLinks.map((item) => (
+                      <Link key={item.label} href={item.href} className="flex items-center justify-between px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#081a42]">
+                        <span>{item.label}</span>
+                        <ChevronRight className="h-4 w-4 text-gray-300" aria-hidden="true" />
+                      </Link>
+                    ))}
+                    <p className="px-5 pb-1 pt-3 text-xs font-semibold uppercase tracking-wider text-gray-400">Specialist / Industry-Specific</p>
+                    {specialistServiceLinks.map((item) => (
+                      <Link key={item.label} href={item.href} className="flex items-center justify-between px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#081a42]">
+                        <span>{item.label}</span>
+                        <ChevronRight className="h-4 w-4 text-gray-300" aria-hidden="true" />
+                      </Link>
+                    ))}
                   </div>
                 </div>
               )}
             </div>
 
-            <div className="relative" onMouseEnter={() => setActiveMenu("india")} onMouseLeave={() => setActiveMenu(null)}>
-              <button type="button" onClick={() => setActiveMenu(activeMenu === "india" ? null : "india")} className="flex items-center gap-1 px-3 py-2 text-sm text-gray-700 hover:text-black" aria-haspopup="true" aria-expanded={activeMenu === "india"}>
-                Doing Business in India <ChevronDown className="h-4 w-4" aria-hidden="true" />
+            <Link href="/blog" className="px-3 py-2 text-sm text-gray-700 hover:text-black">Insights</Link>
+
+            {/* ABOUT */}
+            <div
+              className="relative"
+              onMouseEnter={() => setActiveMenu("about")}
+              onMouseLeave={() => setActiveMenu(null)}
+            >
+              <button
+                type="button"
+                onClick={() => setActiveMenu(activeMenu === "about" ? null : "about")}
+                className="flex items-center gap-1 px-3 py-2 text-sm text-gray-700 hover:text-black"
+                aria-haspopup="true"
+                aria-expanded={activeMenu === "about"}
+              >
+                About <ChevronDown className="h-4 w-4" aria-hidden="true" />
               </button>
-              {activeMenu === "india" && (
-                <div className="absolute left-0 top-full z-50 w-[760px] pt-2">
-                  <div className="overflow-hidden rounded-2xl border bg-white shadow-2xl">
-                    <div className="grid grid-cols-3 gap-0 p-5">
-                      <div className="border-r pr-5">
-                        <h3 className="mb-3 text-sm font-semibold text-[#081a42]">India Entry</h3>
-                        {indiaLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
-                      </div>
-                      <div className="border-r px-5">
-                        <h3 className="mb-3 text-sm font-semibold text-[#081a42]">Business Setup</h3>
-                        {indiaSetupLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
-                      </div>
-                      <div className="pl-5">
-                        <h3 className="mb-3 text-sm font-semibold text-[#081a42]">Incorporation</h3>
-                        <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-gray-400">India Entry, By Country</p>
-                        <div className="grid grid-cols-2 gap-x-4">{countryLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}</div>
-                        <p className="mb-1 mt-3 text-xs font-semibold uppercase tracking-wider text-gray-400">Via Our Partners</p>
-                        {partnerIncorporationLinks.map((item) => <Link key={item.label} href={item.href} className="block py-2 text-sm text-gray-700 hover:text-gold">{item.label}</Link>)}
-                      </div>
-                    </div>
+
+              {activeMenu === "about" && (
+                <div className="absolute left-0 top-full z-50 w-[220px] pt-2">
+                  <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl py-2">
+                    {aboutLinks.map((item) => (
+                      <Link key={item.label} href={item.href} className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#081a42]">
+                        {item.label}
+                      </Link>
+                    ))}
                   </div>
                 </div>
               )}
             </div>
-
-            {navLinks.map((link) => <Link key={link.label} href={link.href} className="px-3 py-2 text-sm text-gray-700 hover:text-black">{link.label}</Link>)}
           </div>
 
           <div className="hidden lg:block"><Button asChild><Link href="/contact">Get Started</Link></Button></div>
@@ -218,27 +237,29 @@ export function Navbar() {
 
         {isOpen && (
           <div id="mobile-navigation" className="absolute left-0 top-16 max-h-[calc(100dvh-4rem)] w-full overflow-y-auto border-t bg-white px-5 py-6 shadow-lg sm:top-20 sm:max-h-[calc(100dvh-5rem)]">
+            <MobileGroup label="Doing Business in India" open={mobileMenu === "dbi"} onToggle={() => setMobileMenu(mobileMenu === "dbi" ? null : "dbi")}>
+              {dbiColumns.map((col) => (
+                <div key={col.heading}>
+                  <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400 first:pt-1">{col.heading}</p>
+                  {col.hub && <Link href={col.hub.href} onClick={closeMobile} className="block py-2 text-sm font-semibold text-gold">{col.hub.label}</Link>}
+                  {col.items.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
+                </div>
+              ))}
+            </MobileGroup>
+
             <MobileGroup label="Services" open={mobileMenu === "services"} onToggle={() => setMobileMenu(mobileMenu === "services" ? null : "services")}>
-              <p className="pb-2 pt-1 text-xs font-semibold uppercase tracking-wider text-gray-400">Risk Management</p>
-              {riskSubServices.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
-              <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Accounting & Assurance</p>
-              <Link href="/services/accounting-assurance" onClick={closeMobile} className="block py-2 text-sm">Accounting & Assurance</Link>
-              <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Tax & Regulatory</p>
-              {taxSubServices.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
-              <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Transaction Advisory</p>
-              <Link href="/services/transaction-advisory" onClick={closeMobile} className="block py-2 text-sm">Transaction Advisory Services</Link>
+              <Link href="/services" onClick={closeMobile} className="block py-2 text-sm font-semibold text-gold">All Services</Link>
+              {coreServiceLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
+              <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Specialist / Industry-Specific</p>
+              {specialistServiceLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
             </MobileGroup>
-            <MobileGroup label="Doing Business in India" open={mobileMenu === "india"} onToggle={() => setMobileMenu(mobileMenu === "india" ? null : "india")}>
-              <p className="pb-2 pt-1 text-xs font-semibold uppercase tracking-wider text-gray-400">India Entry</p>
-              {indiaLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
-              <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Business Setup</p>
-              {indiaSetupLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
-              <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Incorporation — India Entry, By Country</p>
-              {countryLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
-              <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Incorporation — Via Our Partners</p>
-              {partnerIncorporationLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
+
+            <Link href="/blog" onClick={closeMobile} className="block border-b py-4 text-base font-semibold">Insights</Link>
+
+            <MobileGroup label="About" open={mobileMenu === "about"} onToggle={() => setMobileMenu(mobileMenu === "about" ? null : "about")}>
+              {aboutLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
             </MobileGroup>
-            <div className="space-y-3 border-t pt-4">{navLinks.map((link) => <Link key={link.label} href={link.href} onClick={closeMobile} className="block py-1 text-sm">{link.label}</Link>)}</div>
+
             <Button asChild className="mt-6 w-full"><Link href="/contact" onClick={closeMobile}>Get Started</Link></Button>
           </div>
         )}

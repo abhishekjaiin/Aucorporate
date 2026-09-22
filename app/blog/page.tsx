@@ -18,7 +18,15 @@ const categoryStyles: Record<Category, { bg: string; text: string; dot: string }
   "FDI & Investment": { bg: "#fffbeb", text: "#b45309", dot: "#d97706" },
 }
 
-const blogs: { title: string; desc: string; slug: string; category: Category; date: string; featured?: boolean }[] = [
+const blogs: { title: string; desc: string; slug: string; href?: string; category: Category; date: string; featured?: boolean }[] = [
+  {
+    title: "Accounting Outsourcing for US CPA Firms: A Practical Guide",
+    desc: "How US CPA firms use India-based accounting outsourcing to handle overflow work, seasonal capacity and back-office bookkeeping — scope, security, and what to check before engaging a partner.",
+    slug: "accounting-outsourcing-firm-for-united-states-cpas-firm",
+    href: "/accounting-outsourcing-firm-for-united-states-cpas-firm",
+    category: "India Entry",
+    date: "14 Sep 2026",
+  },
   {
     title: "India Opens Another Door for Japanese High-Tech Investment",
     desc: "Commerce Minister Piyush Goyal's proposed BIS certification exemption for high-tech manufacturers, announced in Tokyo on 25 August 2026 — and what it signals for Japanese semiconductor, electronics, and AI companies evaluating India.",
@@ -209,7 +217,7 @@ export default function BlogPage() {
           {filtered.map((blog, i) => (
             <Reveal key={blog.slug} delay={(i % 6) * 0.08}>
               <Link
-                href={`/blog/${blog.slug}`}
+                href={blog.href || `/blog/${blog.slug}`}
                 className="group flex h-full flex-col rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all overflow-hidden"
               >
                 <div className="h-1.5 w-full" style={{ backgroundColor: categoryStyles[blog.category].dot }} />
