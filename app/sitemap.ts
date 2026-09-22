@@ -56,6 +56,15 @@ const pages: Page[] = [
   { path: "/branch-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-21" },
   { path: "/liaison-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-21" },
   { path: "/project-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-22" },
+  // LLP is an MCA-incorporation topic (not a FEMA-establishment structure like the three above),
+  // but it is still an alternative entity-type choice, not a stage in the /india-business-setup/
+  // journey — see content-ops/pipeline/llp-in-india/06-content-architecture.md for the full IA
+  // reasoning. Priority/frequency matched to the three sibling entity-type pages, not to
+  // company-formation (0.95/weekly), since this page's IA role is "entity-type deep-dive," not
+  // "pillar hub page." NOTE: page.tsx for this route has not been built yet (pending Stage 7 of
+  // the content pipeline) — this entry is added ahead of the build per Stage 6 instructions and
+  // will 404 until that page ships; remove or gate this entry if publish is delayed materially.
+  { path: "/llp-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-22" },
 
   // AI/SaaS Tax Compliance & India Entry Pair
   { path: "/oidar-gst-registration-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-17" },

@@ -30,8 +30,8 @@ Checked `topics.csv` — no row targets "LLP in India" as a primary keyword. Exi
 | 4 | content-gap-analyst | 04-content-gap.md | done | 2026-09-22 |
 | 5 | au-corporate-strategist | 05-au-positioning.md | done | 2026-09-22 |
 | Checkpoint 1 | — | — | APPROVED (standing authorization) | 2026-09-22 |
-| 6 | content-architect | 06-content-architecture.md | pending | |
-| Checkpoint 2 | — | — | pending | |
+| 6 | content-architect | 06-content-architecture.md | done | 2026-09-22 |
+| Checkpoint 2 | — | — | APPROVED (standing authorization) | 2026-09-22 |
 | 7 | expert-content-writer | 07-draft.md | pending | |
 | 8 | seo-editor | 08-seo-edit.md | pending | |
 | 9 | fact-authority-checker | 09-fact-check.md | pending | |
@@ -40,3 +40,11 @@ Checked `topics.csv` — no row targets "LLP in India" as a primary keyword. Exi
 
 ## Checkpoint approvals
 Standing authorization from user: move through checkpoints without pausing for explicit sign-off unless a stage flags something genuinely concerning. Demonstrated working well across all 3 prior pipelines (2 real errors caught and fixed on Liaison Office; a UIN question properly investigated and correctly resolved on Project Office).
+
+## Stage 6 notes
+Full blueprint written to `06-content-architecture.md`. Key decisions requiring human attention at Checkpoint 2, not silently assumed:
+- **URL decided as `/llp-in-india`** (top-level, matching the entity-type pattern of the 3 published siblings), not `/india-business-setup/llp-registration` — reasoned from the site's actual IA (the `/india-business-setup/*` sub-pages are organized by *stage of the setup journey*, not by entity type; LLP is an alternative entity type, the same category as Branch/Liaison/Project, all three of which are already top-level for that exact reason). Content *register/depth* still matches `company-formation`, per the brief — only the URL follows the entity-type precedent, not the content approach.
+- **`app/sitemap.ts` updated** with a `/llp-in-india` entry (priority 0.9, changeFrequency "monthly", matching the 3 sibling entity-type pages rather than company-formation's 0.95/weekly, since this page's IA role is "entity-type deep-dive" not "pillar hub"). Flag for whoever runs Stage 7: **this sitemap entry now points at a route that doesn't exist yet** (`app/llp-in-india/page.tsx` has not been built) — it will 404 until Stage 7 ships the page. This was added now per explicit Stage 6 instructions; if Stage 7 is delayed materially, either revert this sitemap entry or prioritize the build.
+- **Confirmed and flagged a real, pre-existing site gap**, not new to this page: none of the LLP mentions already live on the site (`company-formation`'s `entityTypes` array, the `india-business-setup` hub's `entitySnapshot` array, or the homepage `structures` card grid) are actually hyperlinked anywhere — all render as plain text or link to a generic `#inquiry-form` anchor. This same gap was already flagged for Branch/Liaison/Project Office in their own Stage 6 docs and was never fixed in the live code (verified by reading current `entityTypes`/`entitySnapshot`/`structures` arrays directly). Recommend Stage 7 (or a follow-up ticket) fix all four entity-type links in one batched edit rather than patching LLP alone.
+- Cannibalization check: no existing dedicated page competes; only one-line mentions exist across 6 pages (`company-formation`, `india-business-setup` hub, homepage, `doing-business-in-india/entry-process`, `timeline-resources`, `blog/wholly-owned-subsidiary`) — none of them a deep treatment. New standalone page recommended, not a rewrite.
+- Carried forward Stage 5's hard constraints into the outline placement: 120-day correction leads Section 2 (not buried), FDI-LLP(I) explicitly distinguished from FC-GPR in its own H3, tax section is reasoned/conditional (no flat rate table), audit threshold explicitly flagged for Stage 9 primary-source verification, and GST/Transfer Pricing/Valuation/Risk Advisory/Payroll/Virtual CFO are all excluded per Stage 5.
