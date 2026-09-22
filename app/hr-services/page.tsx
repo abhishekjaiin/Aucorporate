@@ -165,7 +165,7 @@ export default function HRServicesPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 space-y-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <Reveal className="hover:scale-105 transition-transform duration-300">
@@ -273,7 +273,7 @@ export default function HRServicesPage() {
       </section>
 
       {/* EOR VS OWN ENTITY */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4 md:text-4xl">Employer of Record vs. Hiring Under Your Own Entity</h2>
           <p className="text-gray-600 max-w-3xl mb-10 leading-relaxed">
@@ -315,7 +315,7 @@ export default function HRServicesPage() {
           <div className="relative space-y-4">
             <div aria-hidden="true" className="absolute left-[35px] top-9 bottom-9 hidden w-px bg-yellow-200 sm:block" />
             {hrProcessSteps.map((step, index) => (
-              <ClickableReveal key={step.title} className="relative flex gap-5 rounded-xl border bg-gray-50 p-6 cursor-pointer">
+              <ClickableReveal key={step.title} className="relative flex gap-5 rounded-xl border bg-gray-100 p-6 cursor-pointer">
                 <div className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-yellow-100 font-bold text-yellow-700">{index + 1}</div>
                 <div>
                   <h3 className="font-bold text-base mb-1 text-[#081a42]">{step.title}</h3>
@@ -329,7 +329,7 @@ export default function HRServicesPage() {
       </section>
 
       {/* LEAD FORM */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
           <LeadForm title="Ready to Set Up Payroll for Your India Team?" description="Tell us your headcount, states of operation, and where you are in the entity-setup process — our HR & payroll team will get back to you with next steps." />
         </div>
@@ -359,7 +359,7 @@ export default function HRServicesPage() {
       </section>
 
       {/* NEXT STEPS */}
-      <section className="py-16 bg-gray-50 border-t">
+      <section className="py-16 bg-gray-100 border-t">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-8">Continue Your Journey</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

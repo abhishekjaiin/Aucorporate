@@ -160,7 +160,7 @@ export default function HowToIncorporateFromUKPage() {
         </div>
       </div>
 
-      <div className="mb-12 rounded-xl border-l-4 border-yellow-400 bg-gray-50 p-6">
+      <div className="mb-12 rounded-xl border-l-4 border-yellow-400 bg-gray-100 p-6">
         <h3 className="font-bold text-lg mb-2 text-[#081a42]">The Resident Director Requirement, in Detail</h3>
         <p className="text-gray-700 mb-3">
           Under Section 149(3) of the Companies Act, 2013, every Indian company — including a wholly-owned UK subsidiary — must have at least one director who stayed in India for a total of not less than 182 days in the preceding financial year. A board made up entirely of UK-based individuals can&apos;t incorporate on its own; this is a fixed requirement, not a negotiable one.
@@ -208,7 +208,7 @@ export default function HowToIncorporateFromUKPage() {
         />
       </div>
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Related Reading</h3>
         <div className="flex flex-col gap-2">
           <Link href="/india-entry-for-uk-companies/cost-timeline-incorporate-company-india-from-uk" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">

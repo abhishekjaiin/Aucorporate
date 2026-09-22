@@ -23,7 +23,7 @@ export default function IndiaEntryForAustralianCompanies() {
         </p>
       </div>
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg border border-gray-200">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg border border-gray-200">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
           Australia&apos;s India Engagement Infrastructure: AIBX, CAIR, and the Innovation Network
         </h2>
@@ -111,7 +111,7 @@ export default function IndiaEntryForAustralianCompanies() {
         <EntitySelectorTool />
       </div>
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">
           Comprehensive Services for Australian Companies
         </h3>
@@ -134,7 +134,7 @@ export default function IndiaEntryForAustralianCompanies() {
         </div>
       </div>
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Related Reading</h3>
         <div className="flex flex-col gap-2">
           <Link href="/blog/india-safe-harbour-rules-2026" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">

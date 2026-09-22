@@ -112,7 +112,7 @@ export default function BankingTaxationPage() {
       </section>
 
       {/* CORPORATE TAX RATES */}
-      <section className="py-16 bg-gray-50 border-t">
+      <section className="py-16 bg-gray-100 border-t">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Corporate Income Tax Rates for a Foreign-Owned Indian Company</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
@@ -138,7 +138,7 @@ export default function BankingTaxationPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-gray-50 border-t">
+      <section className="py-20 bg-gray-100 border-t">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Frequently Asked Questions</h2>
           <FaqAccordion faqs={bankingTaxationFaqs} />

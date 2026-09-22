@@ -60,7 +60,7 @@ export default function AboutHero() {
       </section>
 
       {/* WHO WE ARE */}
-      <section className="py-12 sm:py-24 bg-gray-50">
+      <section className="py-12 sm:py-24 bg-gray-100">
         <div className="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 items-center">
 
           <Reveal>
@@ -131,7 +131,7 @@ export default function AboutHero() {
       </section>
 
       {/* SERVICES SNAPSHOT */}
-      <section className="py-12 sm:py-24 bg-gray-50">
+      <section className="py-12 sm:py-24 bg-gray-100">
         <div className="mx-auto max-w-7xl px-4 mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-4">Our Service Pillars</h2>
           <p className="text-gray-500 text-center text-sm sm:text-base max-w-2xl mx-auto">AU Corporate specializes in 10 core service areas to support your business growth</p>

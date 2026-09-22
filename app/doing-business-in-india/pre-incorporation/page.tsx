@@ -132,7 +132,7 @@ export default function Page() {
         }}
       />
 
-      <div className="mt-12 p-6 border border-gray-200 rounded-xl bg-gray-50">
+      <div className="mt-12 p-6 border border-gray-200 rounded-xl bg-gray-100">
         <p className="text-gray-700">
           Still weighing whether incorporation is the right move at all?{" "}
           <Link href="/doing-business-in-india/incorporation" className="text-yellow-600 hover:text-yellow-700 font-semibold">

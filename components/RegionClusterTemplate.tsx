@@ -65,7 +65,7 @@ export function RegionClusterTemplate({
       </section>
 
       {/* TRUST BAR - FIXED ZONE */}
-      <section className="py-12 sm:py-16 bg-gray-50 border-y">
+      <section className="py-12 sm:py-16 bg-gray-100 border-y">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat) => (

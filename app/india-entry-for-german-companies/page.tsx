@@ -22,7 +22,7 @@ export default function IndiaEntryForGermanyCompanies() {
         </p>
       </div>
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg border border-gray-200">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg border border-gray-200">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
           Germany&apos;s India Momentum: Trade, Manufacturing Clusters, and the EU-India FTA
         </h2>
@@ -98,7 +98,7 @@ export default function IndiaEntryForGermanyCompanies() {
         <EntitySelectorTool />
       </div>
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Related Reading</h3>
         <div className="flex flex-col gap-2">
           <Link href="/blog/india-safe-harbour-rules-2026" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">

@@ -46,7 +46,8 @@ export default function BlogPage() {
   }
 
   return (
-    <main className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+    <div className="bg-gray-100 py-10">
+    <main className="max-w-3xl mx-auto px-4 sm:px-6 pb-16 pt-8 bg-white rounded-2xl shadow-sm">
       <BlogPostingSchema
         headline="Construction Arbitration in India: From Winning Claims to Enforcing Awards"
         description="How construction disputes reach arbitration in India, the claim types that dominate the docket — extension of time, liquidated damages, defects liability — and what actually happens between a favourable award and enforcement."
@@ -265,5 +266,6 @@ export default function BlogPage() {
       />
 
     </main>
+    </div>
   )
 }

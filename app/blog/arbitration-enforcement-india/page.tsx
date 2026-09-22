@@ -54,7 +54,8 @@ export default function BlogPage() {
   }
 
   return (
-    <main className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+    <div className="bg-gray-100 py-10">
+    <main className="max-w-3xl mx-auto px-4 sm:px-6 pb-16 pt-8 bg-white rounded-2xl shadow-sm">
       <BlogPostingSchema
         headline="Arbitration Enforcement in India: Domestic and Foreign Award Enforcement Explained"
         description="How domestic and foreign arbitral awards are enforced in India under Sections 34/36 and Part II (Sections 44-52) of the Arbitration and Conciliation Act, 1996 — including limitation periods, the Section 48 refusal grounds, and recent Supreme Court guidance."
@@ -246,5 +247,6 @@ export default function BlogPage() {
       />
 
     </main>
+    </div>
   )
 }

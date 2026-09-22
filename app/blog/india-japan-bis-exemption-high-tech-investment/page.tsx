@@ -315,7 +315,7 @@ export default function BlogPost() {
           </p>
 
           <div
-            className="relative my-8 overflow-hidden rounded-lg border-l-4 bg-gray-50 p-6"
+            className="relative my-8 overflow-hidden rounded-lg border-l-4 bg-gray-100 p-6"
             style={{ borderColor: JAPAN_RED }}
           >
             <svg aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.05]">

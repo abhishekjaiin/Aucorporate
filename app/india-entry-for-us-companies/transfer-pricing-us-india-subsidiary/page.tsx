@@ -140,7 +140,7 @@ export default function TransferPricingUSIndiaPage() {
         }}
       />
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Related Reading</h3>
         <div className="flex flex-col gap-2">
           <Link href="/blog/india-safe-harbour-rules-2026" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">

@@ -6,7 +6,8 @@ import { FaqAccordion } from "@/components/FaqAccordion"
 
 export default function BlogPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
+    <div className="bg-gray-100 py-10">
+    <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7 bg-white rounded-2xl shadow-sm">
 
       <BlogPostingSchema
         headline="DTAA & Mailbox Companies in India | Tiger Global Supreme Court 2026"
@@ -332,5 +333,6 @@ export default function BlogPage() {
       />
 
     </main>
+    </div>
   );
 }

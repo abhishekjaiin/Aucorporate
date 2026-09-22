@@ -59,7 +59,7 @@ export default function ContactPage() {
       </section>
 
       {/* CONTACT INFO */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
           {contactInfo.map((info, index) => {
@@ -120,7 +120,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 text-center bg-gray-50">
+      <section className="py-16 text-center bg-gray-100">
 
         <h2 className="text-3xl font-bold mb-6">
           Need Immediate Assistance?

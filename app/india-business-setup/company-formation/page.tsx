@@ -132,7 +132,7 @@ export default function CompanyFormationPage() {
       </section>
 
       {/* ENTITY TYPES */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-gray-100 py-20">
         <div className="mx-auto max-w-7xl px-4">
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">Choosing the Right Entity Type in India</h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -171,7 +171,7 @@ export default function CompanyFormationPage() {
       </section>
 
       {/* SPICE+ STEPS */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-gray-100 py-20">
         <div className="mx-auto max-w-7xl px-4">
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">How to Register a Company in India: Step-by-Step (SPICe+ Process)</h2>
           <p className="max-w-4xl leading-relaxed text-gray-600 mb-10">
@@ -214,7 +214,7 @@ export default function CompanyFormationPage() {
       </section>
 
       {/* COST AND TIMELINE */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-100 py-16">
         <div className="mx-auto max-w-5xl px-4">
           <h2 className="text-2xl font-bold text-gray-900 md:text-3xl mb-4">Company Registration Cost and Timeline in India</h2>
           <p className="leading-relaxed text-gray-600 mb-4">
@@ -234,7 +234,7 @@ export default function CompanyFormationPage() {
       </section>
 
       {/* COMPLIANCE ROADMAP */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-gray-100 py-20">
         <div className="mx-auto max-w-7xl px-4">
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">What Happens After Incorporation: The Compliance Roadmap</h2>
           <p className="max-w-4xl leading-relaxed text-gray-600 mb-10">Incorporation is the start of the compliance relationship, not the end of it. In sequence:</p>
@@ -264,7 +264,7 @@ export default function CompanyFormationPage() {
           <p className="leading-relaxed text-gray-600 mb-8">
             Once a company has foreign investment on its books, three RBI filings under the Foreign Exchange Management Act, 1999 (FEMA) become recurring obligations: Form FC-GPR reports the initial (and any subsequent) share allotment to the foreign parent, filed via the FIRMS portal within the prescribed window from allotment; Form FC-TRS reports any later transfer of shares between a resident and a non-resident; and the annual FLA return is a standing yearly obligation for as long as the entity carries foreign investment, independent of whether any transaction occurred that year. Missing the FC-GPR window doesn&apos;t just trigger a generic penalty — a late filing has to be regularised through RBI&apos;s compounding process under FEMA, which involves submitting a compounding application, paying a compounding amount calculated on the delay, and carrying that history on the entity&apos;s compliance record; it isn&apos;t simply a fee you pay after the fact.
           </p>
-          <div className="rounded-xl border-l-4 border-yellow-400 bg-gray-50 p-6">
+          <div className="rounded-xl border-l-4 border-yellow-400 bg-gray-100 p-6">
             <h3 className="mb-2 text-lg font-bold text-[#081a42]">What Is an FOCC (Foreign Owned or Controlled Company)?</h3>
             <p className="text-sm leading-relaxed text-gray-600">
               An FOCC — a Foreign Owned or Controlled Company — is an Indian company that is itself owned or controlled by non-resident entities (directly or through other Indian companies). The concept matters because of what it triggers downstream: under Rule 23 of the Foreign Exchange Management (Non-Debt Instruments) Rules, 2019, any further investment an FOCC makes into another Indian company is treated as indirect foreign investment and is subject to the same sectoral caps, entry-route conditions and reporting requirements as if the investment had come directly from abroad. In practice, this means a foreign-owned Indian subsidiary that wants to invest in, or acquire, another Indian company can&apos;t assume it&apos;s making a purely domestic investment — the FDI rules follow the ownership chain, not just the immediate investor.
@@ -274,7 +274,7 @@ export default function CompanyFormationPage() {
       </section>
 
       {/* GST */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-100 py-16">
         <div className="mx-auto max-w-5xl px-4">
           <h2 className="text-2xl font-bold text-gray-900 md:text-3xl mb-4">GST Registration After Incorporation</h2>
           <p className="leading-relaxed text-gray-600">
@@ -304,7 +304,7 @@ export default function CompanyFormationPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-gray-100 py-20">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-10 text-center">Frequently Asked Questions</h2>
           <FaqAccordion faqs={faqs} />

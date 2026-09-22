@@ -44,7 +44,7 @@ export default function AustraliaSubsidiaryVsBranchPage() {
                 <td className="border border-gray-300 p-4">Separate legal entity incorporated under Indian law</td>
                 <td className="border border-gray-300 p-4">Not a separate entity; extension of the parent company</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-100">
                 <td className="border border-gray-300 p-4 font-semibold">Liability</td>
                 <td className="border border-gray-300 p-4">Limited to the subsidiary&apos;s assets</td>
                 <td className="border border-gray-300 p-4">Parent company jointly liable for all debts</td>
@@ -54,7 +54,7 @@ export default function AustraliaSubsidiaryVsBranchPage() {
                 <td className="border border-gray-300 p-4 text-sm">Automatic route available for most sectors; no prior RBI approval needed for incorporation itself — typically 3-5 weeks via the standard Companies Act/SPICe+ process.</td>
                 <td className="border border-gray-300 p-4 text-sm">Requires specific RBI approval via an Authorised Dealer bank before commencing operations, generally 8-12 weeks or longer. Under the current (2016) framework this also depends on the Australian parent meeting a USD 100,000 minimum net worth and a 5-year profit track record — see the regulatory watch note below.</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-100">
                 <td className="border border-gray-300 p-4 font-semibold">Permitted Activities</td>
                 <td className="border border-gray-300 p-4 text-sm">Full commercial operations, manufacturing, and revenue generation as permitted under the sector&apos;s FDI policy.</td>
                 <td className="border border-gray-300 p-4 text-sm">Restricted to the 8 activities specified under Annex 1 to FEMA 22(R)/2016 — export/import trading, professional/consultancy services, R&amp;D on behalf of the parent, technical support, and similar — and cannot undertake manufacturing or processing in India.</td>
@@ -64,7 +64,7 @@ export default function AustraliaSubsidiaryVsBranchPage() {
                 <td className="border border-gray-300 p-4 text-sm">Can elect into India&apos;s concessional domestic-company regime — 22% base rate, roughly 25.17% effective with surcharge and cess — on income earned in India.</td>
                 <td className="border border-gray-300 p-4 text-sm">Taxed as a foreign company&apos;s permanent establishment: 35% base rate (cut from 40% by the Finance Act, 2024), roughly 36-38% effective with surcharge and cess. How much of the parent&apos;s global profit is attributable to the Indian PE is a genuine, recurring point of negotiation with Indian tax authorities, not just a paperwork difference.</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-100">
                 <td className="border border-gray-300 p-4 font-semibold">Australian Tax Treatment</td>
                 <td className="border border-gray-300 p-4 text-sm">An Indian subsidiary is a foreign company for Australian tax purposes and generally falls within Australia&apos;s Controlled Foreign Company (CFC) rules under Part X of the Income Tax Assessment Act 1936 — certain categories of the subsidiary&apos;s income can be attributed back to the Australian parent and taxed in Australia even before any dividend is actually paid out, subject to the active income test (tainted income ratio below 5%) and India&apos;s &quot;unlisted country&quot; status for CFC purposes (see below).</td>
                 <td className="border border-gray-300 p-4 text-sm">A branch is not a separate entity — its income and losses generally flow directly into the Australian parent&apos;s own tax return as foreign branch income, rather than through the separate CFC attribution regime that applies to a subsidiary.</td>
@@ -74,7 +74,7 @@ export default function AustraliaSubsidiaryVsBranchPage() {
                 <td className="border border-gray-300 p-4 text-sm">Separate Ind AS financial statements required in India; consolidation into the parent&apos;s AASB (Australian Accounting Standards) financials follows the usual subsidiary-consolidation rules.</td>
                 <td className="border border-gray-300 p-4 text-sm">Branch results are included directly in the parent&apos;s own AASB financial statements — no separate consolidation step.</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-100">
                 <td className="border border-gray-300 p-4 font-semibold">India-Australia DTAA Treatment</td>
                 <td className="border border-gray-300 p-4 text-sm">Dividends repatriated to the Australian parent are taxed as dividend income — capped at 15% withholding under the treaty. Royalties and fees for technical services carry a split rate (10% on equipment-related royalties, 15% on others), though the Finance Act 2023&apos;s increase to India&apos;s domestic royalty/FTS withholding rate (to 20%, from April 2023) now often makes the treaty rate the clearly better option.</td>
                 <td className="border border-gray-300 p-4 text-sm">A branch has no separate dividend to repatriate — profit remittances to the Australian head office are governed by India&apos;s branch profit remittance rules rather than the DTAA&apos;s dividend article.</td>
@@ -84,7 +84,7 @@ export default function AustraliaSubsidiaryVsBranchPage() {
                 <td className="border border-gray-300 p-4 text-sm">Higher: RoC filings, independent statutory audit, ongoing Companies Act compliance duties.</td>
                 <td className="border border-gray-300 p-4 text-sm">Lower on the India corporate-filings side (annual activity certificate to the RBI rather than a full company maintenance cycle), but Australian CFC-adjacent reporting and branch-specific disclosures still apply, and PE profit attribution for tax purposes typically needs its own supporting study.</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-100">
                 <td className="border border-gray-300 p-4 font-semibold">Exit / Closure Process</td>
                 <td className="border border-gray-300 p-4 text-sm">ROC strike-off under Section 248 of the Companies Act (fast, low-cost, but only if dormant for the prior 2 years with all liabilities cleared) or a formal voluntary liquidation under IBBI regulations if the entity has ongoing obligations to wind down in an orderly way.</td>
                 <td className="border border-gray-300 p-4 text-sm">Requires RBI approval through the AD Category-I bank — original RBI permission letter, auditor&apos;s certificate confirming all Indian liabilities are settled, ROC closure certificate, and Form 15CA/15CB for the final outward remittance. This RBI-approval step typically adds 2-6 months versus a straightforward company closure.</td>
@@ -297,7 +297,7 @@ export default function AustraliaSubsidiaryVsBranchPage() {
       />
 
       {/* RELATED SUB-PAGES */}
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Continue Your India Entry Journey</h3>
         <div className="space-y-2">
           <Link href="/india-business-setup/company-formation" className="text-yellow-600 hover:text-yellow-700 font-semibold block">

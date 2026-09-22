@@ -35,7 +35,7 @@ export function ScenarioSelector() {
           ))}
         </div>
       ) : (
-        <div className="rounded-xl bg-gray-50 p-6">
+        <div className="rounded-xl bg-gray-100 p-6">
           <div className="mb-3 flex items-start gap-3">
             <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-yellow-600" />
             <div>

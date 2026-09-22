@@ -29,7 +29,8 @@ const faqs = [
 
 export default function Page() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
+    <div className="bg-gray-100 py-10">
+    <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7 bg-white rounded-2xl shadow-sm">
 
       <BlogPostingSchema
         headline="Tax Treatment of Loan Waiver in India | Supreme Court Ruling & 2023 Amendment"
@@ -284,5 +285,6 @@ export default function Page() {
       />
 
     </main>
+    </div>
   );
 }

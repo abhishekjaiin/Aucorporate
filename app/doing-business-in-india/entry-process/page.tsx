@@ -154,7 +154,7 @@ export default function EntryProcessPage() {
       </section>
 
       {/* ROUTES TO MARKET */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
 
           <Reveal className="text-center mb-14">
@@ -267,7 +267,7 @@ export default function EntryProcessPage() {
       </section>
 
       {/* BUSINESS STRUCTURES */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-3xl font-bold text-center mb-4">
@@ -314,7 +314,7 @@ export default function EntryProcessPage() {
         </div>
       </section>
       {/* AU SUPPORT AGAINST ENTRY RISKS */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
 
           {/* HEADER */}

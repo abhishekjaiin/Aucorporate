@@ -131,7 +131,7 @@ export default function PostIncorporationPage() {
       </section>
 
       {/* FINANCE FUNCTION */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-2xl font-semibold text-[#081a42] mb-2">Building vs. Outsourcing Your Finance Function</h2>
           <p className="text-gray-600 mb-8">There's no fixed rule here — it's a scale decision that should track headcount, transaction volume, and regulatory complexity, not a default made at incorporation and never revisited.</p>
@@ -157,7 +157,7 @@ export default function PostIncorporationPage() {
       </section>
 
       {/* GOVERNANCE MATURITY */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-2xl font-semibold text-[#081a42] mb-2">Governance Maturity: What's Actually Mandatory vs. Good Practice</h2>
           <p className="text-gray-600 mb-8">Most foreign-owned subsidiaries are private companies, and several governance obligations that apply to listed and public companies only kick in for a private company once it crosses specific size thresholds — worth knowing precisely, not assuming either way.</p>
@@ -183,7 +183,7 @@ export default function PostIncorporationPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-2xl font-semibold text-[#081a42] mb-10 text-center">Frequently Asked Questions</h2>
           <div className="space-y-8">

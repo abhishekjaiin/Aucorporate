@@ -454,7 +454,7 @@ export default function GCCSetupIndiaPage() {
             ))}
           </div>
 
-          <div className="p-6 bg-gray-50 rounded-lg">
+          <div className="p-6 bg-gray-100 rounded-lg">
             <h3 className="font-semibold text-gray-900 mb-3 text-sm">If your parent company is based in one of these regions, see our region-specific India entry guide:</h3>
             <div className="flex flex-wrap gap-3">
               {regionLinks.map((r) => (

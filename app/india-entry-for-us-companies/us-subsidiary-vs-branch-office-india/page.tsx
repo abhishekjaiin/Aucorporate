@@ -44,7 +44,7 @@ export default function USSubsidiaryVsBranchPage() {
                 <td className="border border-gray-300 p-4">Separate legal entity incorporated under Indian law</td>
                 <td className="border border-gray-300 p-4">Not a separate entity; extension of parent company</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-100">
                 <td className="border border-gray-300 p-4 font-semibold">Liability</td>
                 <td className="border border-gray-300 p-4">Limited to subsidiary&apos;s assets</td>
                 <td className="border border-gray-300 p-4">Parent company jointly liable for all debts</td>
@@ -54,7 +54,7 @@ export default function USSubsidiaryVsBranchPage() {
                 <td className="border border-gray-300 p-4 text-sm">Automatic route for most sectors — no prior RBI approval for the FDI itself; incorporation typically takes 3-5 weeks via the standard Companies Act/SPICe+ process.</td>
                 <td className="border border-gray-300 p-4 text-sm">Requires specific RBI approval via an Authorised Dealer bank before commencing operations, generally 8-12 weeks or longer. Under the current (2016) framework this approval also depends on the US parent meeting a USD 100,000 minimum net worth and a 5-year profit track record — see the regulatory watch note below.</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-100">
                 <td className="border border-gray-300 p-4 font-semibold">Permitted Activities</td>
                 <td className="border border-gray-300 p-4 text-sm">Full commercial operations, manufacturing, and revenue generation as permitted under the sector&apos;s FDI policy.</td>
                 <td className="border border-gray-300 p-4 text-sm">Restricted to the 8 activities specified under Annex 1 to FEMA 22(R)/2016 — export/import trading, professional/consultancy services, R&amp;D, technical support, and similar — and cannot undertake manufacturing or processing in India.</td>
@@ -64,7 +64,7 @@ export default function USSubsidiaryVsBranchPage() {
                 <td className="border border-gray-300 p-4 text-sm">Can elect into India&apos;s concessional domestic-company regime — 22% base rate, roughly 25.17% effective with surcharge and cess — on income earned in India.</td>
                 <td className="border border-gray-300 p-4 text-sm">Taxed as a foreign company&apos;s permanent establishment: 35% base rate (cut from 40% by the Finance Act, 2024), roughly 36-38% effective. Under Article 7 of the India-US DTAA, profits are attributed to the PE using a &quot;functionally separate entity&quot; test — how much of the parent&apos;s global profit gets attributed to the Indian branch is a genuine, recurring point of dispute with Indian tax authorities, not just a paperwork difference.</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-100">
                 <td className="border border-gray-300 p-4 font-semibold">US Tax Treatment</td>
                 <td className="border border-gray-300 p-4 text-sm">A subsidiary is a separate foreign corporation for US tax purposes, and a wholly-owned one is almost always a Controlled Foreign Corporation (CFC) under IRC Section 957. The US parent reports ownership and financials annually on Form 5471, and may have current-year income inclusions under Subpart F/NCTI (formerly GILTI) rules even without a cash distribution — though active business income from unrelated Indian customers is typically outside Subpart F, it&apos;s intercompany management fees, royalties, and interest between group entities that most often trigger an inclusion.</td>
                 <td className="border border-gray-300 p-4 text-sm">A branch is not a separate entity — its income flows directly onto the US parent&apos;s own Form 1120 return. The branch&apos;s activity is disclosed via Form 8858 rather than a separate foreign-corporation filing, and CFC/Subpart F rules don&apos;t apply since there&apos;s no separate foreign corporation to be a CFC.</td>
@@ -74,7 +74,7 @@ export default function USSubsidiaryVsBranchPage() {
                 <td className="border border-gray-300 p-4 text-sm">Equity funding is reported to the RBI via Form FC-GPR. On the US side, contributing more than $100,000 in cash or property to the subsidiary within a 12-month period is a reportable transfer of property to a foreign corporation under IRC Section 6038B, filed on Form 926 with the parent&apos;s US tax return.</td>
                 <td className="border border-gray-300 p-4 text-sm">Funding a branch is simply remitting funds within the same legal entity, not a transfer to a separate foreign corporation — Form 926 doesn&apos;t apply in the same way, though the remittance itself still needs to be tracked through the branch&apos;s FEMA reporting.</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-100">
                 <td className="border border-gray-300 p-4 font-semibold">GAAP to Ind AS</td>
                 <td className="border border-gray-300 p-4">Separate Ind AS financial statements required; consolidation impacts GAAP reporting</td>
                 <td className="border border-gray-300 p-4">Branch results included in parent&apos;s Ind AS financials</td>
@@ -84,7 +84,7 @@ export default function USSubsidiaryVsBranchPage() {
                 <td className="border border-gray-300 p-4 text-sm">Higher: ROC filings, independent statutory audit, board governance, and standard Companies Act compliance duties.</td>
                 <td className="border border-gray-300 p-4 text-sm">Lower on the corporate-filings side (no separate company to maintain, just an annual activity certificate to the RBI) — but PE profit attribution for tax purposes typically needs its own supporting study, which is its own recurring compliance cost.</td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-100">
                 <td className="border border-gray-300 p-4 font-semibold">Exit / Closure Process</td>
                 <td className="border border-gray-300 p-4 text-sm">ROC strike-off under Section 248 of the Companies Act (fast, low-cost, but only if dormant for the prior 2 years with all liabilities cleared) or a formal voluntary liquidation under IBBI regulations if the entity has ongoing obligations to wind down in an orderly way.</td>
                 <td className="border border-gray-300 p-4 text-sm">Requires RBI approval through the AD Category-I bank — original RBI permission letter, auditor&apos;s certificate confirming all Indian liabilities are settled, ROC closure certificate, and Form 15CA/15CB for the final outward remittance. This RBI-approval step typically adds 2-6 months versus a straightforward company closure.</td>
@@ -269,7 +269,7 @@ export default function USSubsidiaryVsBranchPage() {
       />
 
       {/* RELATED SUB-PAGES */}
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Continue Your India Entry Journey</h3>
         <div className="space-y-2">
           <Link href="/india-entry-for-us-companies/how-to-incorporate-subsidiary-india-from-us" className="text-yellow-600 hover:text-yellow-700 font-semibold">

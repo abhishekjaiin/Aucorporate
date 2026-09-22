@@ -5,7 +5,8 @@ import { BlogPostingSchema } from "@/components/BlogPostingSchema"
 
 export default function BlogPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7">
+    <div className="bg-gray-100 py-10">
+    <main className="max-w-4xl mx-auto px-6 py-12 text-gray-800 leading-7 bg-white rounded-2xl shadow-sm">
 
       <BlogPostingSchema
         headline="FDI in India: Green Channel vs Brown Channel"
@@ -272,5 +273,6 @@ export default function BlogPage() {
       />
 
     </main>
+    </div>
   );
 }

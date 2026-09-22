@@ -124,7 +124,7 @@ export default function BlogPage() {
         The mechanics of the test matter as much as the number itself. The Rs 2,000 crore ceiling is tested only in the <strong>first year</strong> of the five-year block — once an entity qualifies at election, it keeps the benefit for the full block even if its revenue from the transaction later exceeds Rs 2,000 crore in a subsequent year. Two further conditions apply: the entity must affirmatively elect in by filing Form No. 49 (this isn't a default status), and the transaction must not be with an associated enterprise located in a jurisdiction notified as a no-tax or low-tax jurisdiction. Once accepted, there is no comparability adjustment or tolerance band — the declared margin has to meet or exceed 15.5% exactly; there's no "close enough" the way ordinary transfer pricing benchmarking sometimes allows for.
       </p>
 
-      <div className="my-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
+      <div className="my-8 p-6 bg-gray-100 rounded-lg border border-gray-200">
         <h3 className="font-bold text-lg mb-3">Quick Reference: 2026 Safe Harbour for IT Services</h3>
         <ul className="space-y-2 text-sm text-gray-700">
           <li>• <strong>Margin:</strong> 15.5% of operating expenses (unified across software development, ITeS, KPO, and contract R&D) — no tolerance band</li>

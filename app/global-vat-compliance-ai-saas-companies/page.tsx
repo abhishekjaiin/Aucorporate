@@ -263,7 +263,7 @@ export default function GlobalVatComplianceAiSaasPage() {
               <thead>
                 <tr>
                   <th className="p-4 text-left text-sm font-semibold text-gray-500 w-[22%]">Factor</th>
-                  <th className="p-4 text-left text-sm font-semibold text-gray-500 bg-gray-50">Rigid Automated Software</th>
+                  <th className="p-4 text-left text-sm font-semibold text-gray-500 bg-gray-100">Rigid Automated Software</th>
                   <th className="p-4 text-left bg-[#081a42] rounded-t-xl">
                     <span className="inline-block mb-1 rounded-full bg-gold px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-black">
                       Recommended
@@ -274,7 +274,7 @@ export default function GlobalVatComplianceAiSaasPage() {
               </thead>
               <tbody>
                 {comparisonRows.map((row, i) => (
-                  <tr key={row.factor} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
+                  <tr key={row.factor} className={i % 2 === 0 ? "bg-white" : "bg-gray-100/50"}>
                     <td className="p-4 align-top text-sm font-semibold text-gray-900 border-t border-gray-100">{row.factor}</td>
                     <td className="p-4 align-top border-t border-gray-100">
                       <div className="flex gap-2">
@@ -298,7 +298,7 @@ export default function GlobalVatComplianceAiSaasPage() {
           <div className="md:hidden space-y-4">
             {comparisonRows.map((row) => (
               <div key={row.factor} className="rounded-xl border border-gray-200 overflow-hidden">
-                <div className="bg-gray-50 px-4 py-2 text-sm font-semibold text-gray-900">{row.factor}</div>
+                <div className="bg-gray-100 px-4 py-2 text-sm font-semibold text-gray-900">{row.factor}</div>
                 <div className="p-4 flex gap-2 border-t border-gray-100">
                   <XCircle className="h-4 w-4 shrink-0 text-gray-300 mt-0.5" aria-hidden="true" />
                   <span className="text-sm text-gray-600">{row.software}</span>

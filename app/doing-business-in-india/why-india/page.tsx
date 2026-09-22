@@ -171,7 +171,7 @@ export default function WhyIndiaPage() {
       </section>
 
       {/* KEY DRIVERS */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-3xl font-bold text-center">
@@ -365,7 +365,7 @@ export default function WhyIndiaPage() {
       </section>
 
       {/* AU CORPORATE STRATEGY */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-3xl font-bold text-center mb-10">

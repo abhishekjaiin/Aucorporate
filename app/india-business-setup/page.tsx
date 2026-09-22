@@ -219,7 +219,7 @@ export default function IndiaBusinessSetupHub() {
       </section>
 
       {/* SEVEN-STEP FRAMEWORK */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">The Path to Setting Up in India</h2>
           <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
@@ -265,7 +265,7 @@ export default function IndiaBusinessSetupHub() {
           </p>
           <div className="space-y-4 max-w-4xl mx-auto">
             {timelineGlance.map((item, i) => (
-              <ClickableReveal key={i} className="flex flex-col sm:flex-row gap-2 sm:gap-6 p-6 border rounded-lg bg-gray-50 cursor-pointer">
+              <ClickableReveal key={i} className="flex flex-col sm:flex-row gap-2 sm:gap-6 p-6 border rounded-lg bg-gray-100 cursor-pointer">
                 <div className="font-bold text-yellow-600 min-w-[100px]">{item.week}</div>
                 <div className="text-gray-700">{item.activity}</div>
               </ClickableReveal>
@@ -280,7 +280,7 @@ export default function IndiaBusinessSetupHub() {
       </section>
 
       {/* KEY BENEFITS */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">Why Choose AU Corporate</h2>
 
@@ -349,7 +349,7 @@ export default function IndiaBusinessSetupHub() {
       </section>
 
       {/* RELATED RESOURCES */}
-      <section className="py-16 bg-gray-50 border-t">
+      <section className="py-16 bg-gray-100 border-t">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-8">Complementary Services</h2>
 

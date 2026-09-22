@@ -242,7 +242,7 @@ export default function HomePage() {
       <HeroSection />
 
       {/* ================= TRUST STRIP ================= */}
-      <section className="py-10 border-b bg-gray-50">
+      <section className="py-10 border-b bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
           <p className="text-center text-sm font-semibold mb-6 text-gray-500">
             HELPING BUSINESSES NAVIGATE INDIA WITH CONFIDENCE
@@ -302,7 +302,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= CORE SERVICES ================= */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
 
           <h2 className="text-3xl font-bold text-center mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
@@ -367,7 +367,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= INDUSTRIES ================= */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
             Industries We Work With
@@ -416,7 +416,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= WHY AU CORPORATE ================= */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
             Why Businesses Choose AU Corporate
@@ -576,7 +576,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= INSIGHTS ================= */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
             Stay Informed. Stay Ahead.
@@ -691,7 +691,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= INQUIRY FORM ================= */}
-      <section id="inquiry-form" className="py-20 bg-gray-50 scroll-mt-24">
+      <section id="inquiry-form" className="py-20 bg-gray-100 scroll-mt-24">
         <div className="max-w-2xl mx-auto px-4">
           <InquiryForm
             title="Tell Us What You Need Help With"

@@ -67,7 +67,7 @@ export default function BlogPage() {
         2026 is a reasonable moment to take stock of what has genuinely changed. In the past twelve months India rewired its indirect tax system, put a new industrial-relations framework into force, posted a record year for foreign investment with a catch buried in the fine print, and quietly lost the ranking number that most &ldquo;doing business in India&rdquo; content still leads with. None of this replaces the fundamentals of market entry — but it does mean a foreign company evaluating India today is looking at a materially different regulatory landscape than one that read the same guide in 2023.
       </p>
 
-      <div className="my-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
+      <div className="my-8 p-6 bg-gray-100 rounded-lg border border-gray-200">
         <p className="text-sm text-gray-700">
           <strong>Looking for the full playbook instead of what&apos;s new?</strong> This article is deliberately narrow — it covers recent developments, not the complete process. For the strategic and procedural deep-dive — entity selection, market entry routes, incorporation, and what changes after you&apos;re set up — see our{" "}
           <Link href="/doing-business-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">

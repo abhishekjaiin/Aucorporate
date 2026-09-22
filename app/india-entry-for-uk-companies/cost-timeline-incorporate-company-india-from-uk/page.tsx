@@ -154,7 +154,7 @@ export default function CostTimelineUKPage() {
         </div>
       </div>
 
-      <div className="mb-12 rounded-xl border-l-4 border-yellow-400 bg-gray-50 p-6">
+      <div className="mb-12 rounded-xl border-l-4 border-yellow-400 bg-gray-100 p-6">
         <h3 className="font-bold text-lg mb-2 text-[#081a42]">The UK-Specific Step: Notarisation &amp; FCDO Apostille</h3>
         <p className="text-gray-700 mb-3">
           Because both the UK and India are signatories to the Hague Apostille Convention, a UK parent company&apos;s certificate of incorporation, board resolution authorising the Indian subsidiary, and power of attorney need a two-stage process before Indian authorities will accept them: a UK solicitor or notary public certifies the documents first, then the FCDO attaches the official apostille — the FCDO will not apostille a document that hasn&apos;t been signed by a UK solicitor first.
@@ -193,7 +193,7 @@ export default function CostTimelineUKPage() {
         />
       </div>
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Related Reading</h3>
         <div className="flex flex-col gap-2">
           <Link href="/india-entry-for-uk-companies/how-to-incorporate-subsidiary-india-from-uk" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">

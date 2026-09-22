@@ -10,7 +10,7 @@ export function TabbedComparison({ tabs }: { tabs: Tab[] }) {
 
   return (
     <div className="rounded-xl border bg-white overflow-hidden">
-      <div className="flex flex-wrap border-b bg-gray-50" role="tablist">
+      <div className="flex flex-wrap border-b bg-gray-100" role="tablist">
         {tabs.map((tab, i) => (
           <button
             key={tab.title}

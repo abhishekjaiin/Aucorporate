@@ -237,7 +237,7 @@ export default function ArbitrationServicesPage() {
       </section>
 
       {/* ================= SERVICE 1 ================= */}
-      <section id="services" className="py-24 bg-gray-50">
+      <section id="services" className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
 
           <Reveal>
@@ -331,7 +331,7 @@ export default function ArbitrationServicesPage() {
       </section>
 
       {/* ================= UNDERSTANDING ARBITRATION IN INDIA ================= */}
-      <section id="understanding-arbitration" className="py-24 bg-gray-50">
+      <section id="understanding-arbitration" className="py-24 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
 
           <Reveal>
@@ -390,7 +390,7 @@ export default function ArbitrationServicesPage() {
       </section>
 
       {/* ================= WHY CHOOSE US ================= */}
-      <section className="py-24 bg-gray-50 text-center">
+      <section className="py-24 bg-gray-100 text-center">
         <div className="max-w-5xl mx-auto px-4">
 
           <h2 className="text-3xl font-bold mb-10">
@@ -452,7 +452,7 @@ export default function ArbitrationServicesPage() {
       </section>
 
       {/* ================= MID-PAGE LEAD FORM ================= */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
           <LeadForm
             title="Facing an Arbitration or Commercial Dispute in India?"
@@ -473,7 +473,7 @@ export default function ArbitrationServicesPage() {
       </section>
 
       {/* RELATED RESOURCES */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
           <RelatedResources
             links={[
@@ -547,7 +547,7 @@ export default function ArbitrationServicesPage() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-24 text-center bg-gray-50">
+      <section className="py-24 text-center bg-gray-100">
         <h2 className="text-3xl font-bold mb-4">
           Confidential & Professional Support
         </h2>

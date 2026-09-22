@@ -153,7 +153,7 @@ export default function TimelineResourcesPage() {
       </section>
 
       {/* SETUP TIMELINE */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold mb-4">Setup Timeline: Phase by Phase</h2>
           <p className="max-w-4xl leading-relaxed text-gray-600 mb-10">
@@ -203,7 +203,7 @@ export default function TimelineResourcesPage() {
       </section>
 
       {/* STATE VARIANCE */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-100">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Why Costs Vary by State</h2>
           <p className="leading-relaxed text-gray-600">
@@ -228,7 +228,7 @@ export default function TimelineResourcesPage() {
       </section>
 
       {/* MID-PAGE LEAD FORM */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-100 py-16">
         <div className="mx-auto max-w-6xl px-4">
           <LeadForm title="Need an Exact Timeline and Budget for Your Setup?" description="Every one of the variables on this page — entity type, FDI route, director nationality, state — changes your specific numbers. Tell us about your setup and we'll walk through the real timeline and cost for your situation." />
         </div>
@@ -258,7 +258,7 @@ export default function TimelineResourcesPage() {
       </section>
 
       {/* CONTINUE YOUR JOURNEY */}
-      <section className="py-16 bg-gray-50 border-t">
+      <section className="py-16 bg-gray-100 border-t">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-8">Continue Your Journey</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

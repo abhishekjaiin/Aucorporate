@@ -174,7 +174,7 @@ export default function FDIChannelsPage() {
       </section>
 
       {/* LEGAL FRAMEWORK */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-100 py-16">
         <div className="mx-auto max-w-5xl px-4">
           <h2 className="text-2xl font-bold text-gray-900 md:text-3xl mb-4">The Legal Framework Behind FDI in India</h2>
           <p className="leading-relaxed text-gray-600 mb-4">
@@ -235,7 +235,7 @@ export default function FDIChannelsPage() {
       </section>
 
       {/* GOVERNMENT APPROVAL DETAILS */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold mb-4">Government Approval Route - Process</h2>
           <p className="max-w-4xl leading-relaxed text-gray-600 mb-12">
@@ -274,7 +274,7 @@ export default function FDIChannelsPage() {
       </section>
 
       {/* MID-PAGE LEAD FORM */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-100 py-16">
         <div className="mx-auto max-w-6xl px-4">
           <LeadForm title="Not Sure Which FDI Route Applies to You?" description="Tell us about your sector and investment structure and our FEMA and regulatory team will confirm the applicable route and timeline." />
         </div>
@@ -297,7 +297,7 @@ export default function FDIChannelsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-gray-100 py-20">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-10 text-center">Frequently Asked Questions</h2>
           <FaqAccordion faqs={faqs} />

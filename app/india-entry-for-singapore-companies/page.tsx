@@ -57,7 +57,7 @@ export default function IndiaEntryForSingaporeCompanies() {
         </div>
       </div>
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg border border-gray-200">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg border border-gray-200">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
           Limitation of Benefits: A Closer Look
         </h2>
@@ -163,7 +163,7 @@ export default function IndiaEntryForSingaporeCompanies() {
         }}
       />
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">
           Comprehensive Services for Singapore Companies
         </h3>

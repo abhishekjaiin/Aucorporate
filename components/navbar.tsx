@@ -102,10 +102,12 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [activeMenu, setActiveMenu] = useState<string | null>(null)
   const [mobileMenu, setMobileMenu] = useState<string | null>(null)
+  const [mobileDbiSub, setMobileDbiSub] = useState<string | null>(null)
 
   const closeMobile = () => {
     setIsOpen(false)
     setMobileMenu(null)
+    setMobileDbiSub(null)
   }
 
   const handleLogoClick = () => {
@@ -228,7 +230,7 @@ export function Navbar() {
                       <div>
                         <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-gray-400">Specialist / Industry-Specific</p>
                         {specialistServiceLinks.map((item) => (
-                          <Link key={item.label} href={item.href} className="group flex items-start justify-between gap-2 rounded-lg px-2 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#081a42]">
+                          <Link key={item.label} href={item.href} className="group flex items-start justify-between gap-2 rounded-lg px-2 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#081a42]">
                             <span>{item.label}</span>
                             <ChevronRight className="mt-0.5 h-4 w-4 shrink-0 text-gray-300 group-hover:text-gold" aria-hidden="true" />
                           </Link>
@@ -236,7 +238,7 @@ export function Navbar() {
                       </div>
                       <Link
                         href="/contact"
-                        className="mt-4 block rounded-xl border border-gray-200 bg-gray-50 p-4 transition-colors hover:border-gold"
+                        className="mt-4 block rounded-xl border border-gray-200 bg-gray-100 p-4 transition-colors hover:border-gold"
                       >
                         <p className="text-sm font-semibold text-[#081a42]">Not sure where to start?</p>
                         <p className="mt-1 text-xs text-gray-500">Talk to an expert about your specific requirement.</p>
@@ -272,7 +274,7 @@ export function Navbar() {
                 <div className="absolute left-0 top-full z-50 w-[220px] pt-2">
                   <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl py-2">
                     {aboutLinks.map((item) => (
-                      <Link key={item.label} href={item.href} className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#081a42]">
+                      <Link key={item.label} href={item.href} className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#081a42]">
                         {item.label}
                       </Link>
                     ))}
@@ -283,7 +285,7 @@ export function Navbar() {
           </div>
 
           <div className="hidden lg:block"><Button asChild><Link href="/contact">Get Started</Link></Button></div>
-          <button type="button" onClick={() => setIsOpen((v) => !v)} className="rounded-md p-2 hover:bg-gray-50 lg:hidden" aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={isOpen} aria-controls="mobile-navigation">
+          <button type="button" onClick={() => setIsOpen((v) => !v)} className="rounded-md p-2 hover:bg-gray-100 lg:hidden" aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={isOpen} aria-controls="mobile-navigation">
             {isOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
           </button>
         </div>
@@ -291,13 +293,30 @@ export function Navbar() {
         {isOpen && (
           <div id="mobile-navigation" className="absolute left-0 top-16 max-h-[calc(100dvh-4rem)] w-full overflow-y-auto border-t bg-white px-5 py-6 shadow-lg sm:top-20 sm:max-h-[calc(100dvh-5rem)]">
             <MobileGroup label="Doing Business in India" open={mobileMenu === "dbi"} onToggle={() => setMobileMenu(mobileMenu === "dbi" ? null : "dbi")}>
-              {dbiColumns.map((col) => (
-                <div key={col.heading}>
-                  <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400 first:pt-1">{col.heading}</p>
-                  {col.hub && <Link href={col.hub.href} onClick={closeMobile} className="block py-2 text-sm font-semibold text-gold">{col.hub.label}</Link>}
-                  {col.items.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
-                </div>
-              ))}
+              <Link href="/doing-business-in-india" onClick={closeMobile} className="mb-2 block text-sm font-semibold text-gold">
+                Doing Business in India — Overview
+              </Link>
+              {dbiColumns.map((col) => {
+                const subOpen = mobileDbiSub === col.heading
+                return (
+                  <div key={col.heading} className="border-t first:border-t-0">
+                    <button
+                      type="button"
+                      onClick={() => setMobileDbiSub(subOpen ? null : col.heading)}
+                      className="flex w-full items-center justify-between py-2.5 text-left text-sm font-semibold text-gray-800"
+                      aria-expanded={subOpen}
+                    >
+                      {col.heading}
+                      <ChevronDown className={`h-4 w-4 shrink-0 text-gray-400 transition-transform ${subOpen ? "rotate-180" : ""}`} aria-hidden="true" />
+                    </button>
+                    {subOpen && (
+                      <div className="pb-2">
+                        {col.items.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-1.5 pl-2 text-sm text-gray-600">{item.label}</Link>)}
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
               <Link href="/contact" onClick={closeMobile} className="mt-4 block rounded-xl p-4" style={{ backgroundColor: "#081a42" }}>
                 <span className="block text-sm font-semibold text-white">Not sure which entity type fits?</span>
                 <span className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-yellow-400">Talk to an expert <ArrowRight className="h-3 w-3" aria-hidden="true" /></span>

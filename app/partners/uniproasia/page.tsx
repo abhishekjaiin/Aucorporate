@@ -206,7 +206,7 @@ export default function UniproAsiaPartnerPage() {
       </section>
 
       {/* WHY THIS PARTNERSHIP */}
-      <section aria-labelledby="why-partnership" className="py-20 bg-gray-50">
+      <section aria-labelledby="why-partnership" className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
           <Reveal className="text-center mb-14">
             <h2 id="why-partnership" className="text-3xl font-bold text-[#081a42]">
@@ -273,7 +273,7 @@ export default function UniproAsiaPartnerPage() {
 
       {/* REGION BLOCKS — Hong Kong, Singapore, China */}
       {regions.map((r, i) => (
-        <section key={r.name} aria-labelledby={`region-${r.name.toLowerCase().replace(/\s+/g, "-")}`} className={i % 2 === 0 ? "py-20 bg-white" : "py-20 bg-gray-50"}>
+        <section key={r.name} aria-labelledby={`region-${r.name.toLowerCase().replace(/\s+/g, "-")}`} className={i % 2 === 0 ? "py-20 bg-white" : "py-20 bg-gray-100"}>
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className={i % 2 === 1 ? "md:order-2" : ""}>
@@ -338,7 +338,7 @@ export default function UniproAsiaPartnerPage() {
       </section>
 
       {/* TECHNOLOGY */}
-      <section aria-labelledby="uniproasia-technology" className="py-20 bg-gray-50">
+      <section aria-labelledby="uniproasia-technology" className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-6">
           <Reveal className="text-center mb-14">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-yellow-600 mb-3">
@@ -423,7 +423,7 @@ export default function UniproAsiaPartnerPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gray-50 text-center">
+      <section className="py-20 bg-gray-100 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#081a42] mb-4">
             Planning to Expand Beyond India?

@@ -251,7 +251,7 @@ export default function RiskManagementPage() {
   }
 
   return (
-    <div className="min-h-screen pt-24 px-6 bg-gray-50">
+    <div className="min-h-screen pt-24 px-6 bg-gray-100">
 
       <div className="max-w-7xl mx-auto">
 

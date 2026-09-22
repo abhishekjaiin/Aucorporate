@@ -140,7 +140,7 @@ export default function Page() {
 
       <section aria-labelledby="pe-risk">
         <h2 id="pe-risk" className="text-2xl font-bold text-[#081a42] mt-12 mb-4">The Real Cost of Waiting Too Long: Business Connection Risk</h2>
-        <div className="rounded-xl border-l-4 border-yellow-400 bg-gray-50 p-6 mb-12">
+        <div className="rounded-xl border-l-4 border-yellow-400 bg-gray-100 p-6 mb-12">
           <p className="text-sm text-gray-700 leading-relaxed">
             Delaying incorporation isn&apos;t only a cost in lost deals — left long enough, it can create a live tax exposure. Under Section 9 of the Income-tax Act, 2025 (India&apos;s current income tax law, effective from the 2026-27 assessment year and the successor to the identically structured business-connection provision in the 1961 Act), income earned through a &ldquo;business connection&rdquo; in India is deemed to accrue here and becomes taxable — whether or not the foreign company has registered any entity. A dependent agent taking orders on the company&apos;s behalf, or a &ldquo;Significant Economic Presence&rdquo; under Section 9(9) — a codified threshold covering systematic or continuous transactional engagement with Indian customers — can be enough to trigger it. Where India has a tax treaty with the parent&apos;s jurisdiction, that treaty generally caps India&apos;s taxing right to profits attributable to an actual Permanent Establishment under the treaty&apos;s PE article, which is narrower than the domestic business-connection test — but that protection has to be actively claimed and supported, not assumed. In practice, a company that keeps closing India business through agents, resellers, or a growing remote sales motion without ever incorporating can end up with an unplanned India tax filing obligation anyway, minus the structure — a local entity, transfer pricing documentation, a clean profit-attribution position — that would normally support it. It&apos;s one of the more concrete reasons the &ldquo;wait and see&rdquo; posture has a real expiry date once India-facing revenue is actually flowing.
           </p>
@@ -167,7 +167,7 @@ export default function Page() {
         }}
       />
 
-      <div className="mt-12 p-6 border border-gray-200 rounded-xl bg-gray-50">
+      <div className="mt-12 p-6 border border-gray-200 rounded-xl bg-gray-100">
         <p className="text-gray-700">
           Decided incorporation is the right move?{" "}
           <Link href="/india-business-setup/company-formation" className="text-yellow-600 hover:text-yellow-700 font-semibold">

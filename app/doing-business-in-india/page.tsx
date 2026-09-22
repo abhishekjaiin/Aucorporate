@@ -147,7 +147,7 @@ export default function DoingBusinessInIndiaPage() {
       </section>
 
       {/* QUICK STATS */}
-      <section className="bg-gray-50 py-14">
+      <section className="bg-gray-100 py-14">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 text-center gap-8">
           {quickStats.map((stat) => (
             <ClickableReveal key={stat.label} className="cursor-pointer">
@@ -193,7 +193,7 @@ export default function DoingBusinessInIndiaPage() {
       </section>
 
       {/* QUICK DIAGNOSTIC — self-identification wayfinding, distinct from the full cluster cards below */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-100">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-2xl font-bold text-center mb-10">
             Which Stage Are You In?

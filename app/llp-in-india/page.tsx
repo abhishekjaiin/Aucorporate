@@ -124,7 +124,7 @@ export default function LlpInIndiaPage() {
       </section>
 
       {/* TRUST STRIP */}
-      <section className="py-12 bg-gray-50 border-y">
+      <section className="py-12 bg-gray-100 border-y">
         <div className="max-w-4xl mx-auto px-4">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {[

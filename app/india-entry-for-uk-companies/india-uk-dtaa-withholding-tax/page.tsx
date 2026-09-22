@@ -73,14 +73,14 @@ export default function IndiaUKDTAAPage() {
         </p>
       </div>
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-2">Why the treaty rate matters more than it used to</h3>
         <p className="text-gray-700">
           Until 31 March 2023, India&apos;s domestic withholding rate on royalties and fees for technical services paid to non-residents was only 10% — barely different from, or in some cases equal to, the treaty rate itself, which made chasing the TRC and Form 10F for royalty payments a marginal exercise for many groups. The Finance Act 2023 doubled that domestic rate to 20% with effect from 1 April 2023. Against that higher baseline, the treaty&apos;s 10-15% cap on royalties and FTS is now a real, material saving — not just a compliance formality — which is exactly the kind of change worth checking your repatriation structure against if it hasn&apos;t been reviewed since before 2023.
         </p>
       </div>
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-2">The paperwork changed names on 1 April 2026 — not the requirement</h3>
         <p className="text-gray-700">
           The Income-tax Act, 2025 replaced the Income-tax Act, 1961 from 1 April 2026, renumbering the relevant sections and renaming several forms this page relies on. What was Form 10F (filed under old Section 90) is now Form 41, filed under Section 159(8) of the new Act and Rule 75 of the Income-tax Rules, 2026. What was Form 15CA / Form 15CB (filed under old Section 195) is now Form 145 / Form 146, filed under new Section 393(2). None of this changes what you actually have to do — a TRC plus a self-declaration before the treaty rate is applied, and a CA-certified declaration before the remittance clears the bank — only the form numbers and legal citations changed. Payments processed before 1 April 2026 remain governed by the old forms and sections; anything from that date onward uses the new ones. (Source: Income Tax Department, Form 41 guidance, incometaxindia.gov.in.)
@@ -147,7 +147,7 @@ export default function IndiaUKDTAAPage() {
         </div>
       </div>
 
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Related Reading</h3>
         <div className="flex flex-col gap-2">
           <Link href="/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">

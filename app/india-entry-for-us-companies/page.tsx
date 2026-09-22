@@ -154,7 +154,7 @@ export default function IndiaEntryForUSCompanies() {
       </div>
 
       {/* RELATED SERVICES */}
-      <div className="mb-12 p-6 bg-gray-50 rounded-lg">
+      <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">
           Comprehensive Services for US Companies
         </h3>

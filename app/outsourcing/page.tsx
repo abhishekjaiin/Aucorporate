@@ -455,7 +455,7 @@ export default function OutsourcingPage() {
               <Link key={s.name} href="/contact#inquiry-form" className="block">
                 <Reveal
                   delay={(i % 6) * 0.08}
-                  className="p-4 bg-gray-50 border rounded-xl flex items-center justify-center hover:shadow-md hover:border-gold/50 transition"
+                  className="p-4 bg-gray-100 border rounded-xl flex items-center justify-center hover:shadow-md hover:border-gold/50 transition"
                 >
                   <span className="font-semibold text-gray-700 text-sm sm:text-base text-center">
                     {s.name}
