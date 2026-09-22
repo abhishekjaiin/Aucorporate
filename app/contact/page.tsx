@@ -2,11 +2,20 @@ import { InquiryForm } from "@/components/InquiryForm"
 import {
   Mail,
   MapPin,
+  Calendar,
 } from "lucide-react"
 
 const GOLD = "#facc15"
 
 const contactInfo = [
+  {
+    icon: Calendar,
+    title: "Book a Call",
+    description: "Schedule a 30-minute consultation directly",
+    value: "Pick a time that works for you",
+    href: "https://cal.com/abhishek-jaiin-ybbklq/30min",
+    external: true,
+  },
   {
     icon: Mail,
     title: "Email Us",
@@ -68,6 +77,8 @@ export default function ContactPage() {
               <a
                 key={index}
                 href={info.href}
+                target={info.external ? "_blank" : undefined}
+                rel={info.external ? "noopener noreferrer" : undefined}
                 className="p-6 bg-white border rounded-xl hover:shadow-md transition block"
               >
                 {content}
