@@ -105,21 +105,41 @@ export default function LlpInIndiaPage() {
       <Breadcrumb items={[{ label: "LLP in India" }]} />
 
       {/* HERO */}
-      <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <section className="py-20 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
         <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">India Entry</span>
-          <h1 className="mb-6 mt-3 text-4xl font-bold text-gray-900 md:text-5xl">
+          <span className="text-sm font-semibold uppercase tracking-wider text-yellow-400">India Entry</span>
+          <h1 className="mb-6 mt-3 text-4xl font-bold md:text-5xl">
             LLP Registration in India: A Complete Guide to Eligibility, Process, FDI and Compliance
           </h1>
-          <p className="mb-2 text-sm text-gray-500">
+          <p className="mb-2 text-sm text-white/60">
             Last updated: 22 September 2026 — prepared by AU Corporate&apos;s taxation and regulatory compliance practice.
           </p>
-          <p className="mb-4 text-xl leading-relaxed text-gray-600">
+          <p className="mb-4 text-xl leading-relaxed text-white/85">
             A Limited Liability Partnership is a separate legal entity registered with the Ministry of Corporate Affairs under the Limited Liability Partnership Act, 2008 — not an informal partnership, and not an extension of a foreign parent the way a Branch or Liaison Office is. It can hold property, enter contracts, sue and be sued in its own name, and its partners&apos; liability is generally limited to what they&apos;ve agreed to contribute.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-white/70 leading-relaxed">
             This guide walks through LLP registration in India from end to end: who can form one, how the registration process actually works, what foreign investment into an LLP does and doesn&apos;t allow, how an LLP is taxed, and what the ongoing compliance and conversion picture looks like — in one page, in the order a founder or CFO actually needs to work through it.
           </p>
+        </div>
+      </section>
+
+      {/* TRUST STRIP */}
+      <section className="py-12 bg-gray-50 border-y">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            {[
+              { value: "120 Days", label: "Current resident-partner test" },
+              { value: "100%", label: "FDI under the automatic route*" },
+              { value: "30+", label: "Years collective experience" },
+              { value: "New Delhi", label: "Based, serving global clients" },
+            ].map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="text-xl sm:text-2xl font-bold text-yellow-600 mb-1">{stat.value}</div>
+                <p className="text-xs sm:text-sm text-gray-600">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-center text-xs text-gray-400">*Subject to sector eligibility — see the FDI section below.</p>
         </div>
       </section>
 
