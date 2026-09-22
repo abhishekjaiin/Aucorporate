@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection"
 import { FaqAccordion } from "@/components/FaqAccordion"
 import { InquiryForm } from "@/components/InquiryForm"
 import { ClickableReveal } from "@/components/ClickableReveal"
+import { InquiryCard } from "@/components/InquiryCard"
 
 import {
   Calculator,
@@ -283,10 +284,14 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center items-stretch gap-4">
             {lifecycle.map((l, i) => (
               <div key={l.title} className="flex items-center gap-4">
-                <Link href="#inquiry-form" className="w-32 p-4 rounded-xl border border-gray-200 block hover:shadow-md hover:border-yellow-300 transition">
-                  <div className="font-bold mb-1" style={{ color: ROYAL_BLUE, fontFamily: "var(--font-heading)" }}>{l.title}</div>
-                  <div className="text-xs text-gray-500">{l.description}</div>
-                </Link>
+                <InquiryCard
+                  title={l.title}
+                  description={l.description}
+                  className="w-32 p-4 rounded-xl border border-gray-200 block hover:shadow-md hover:border-yellow-300 transition"
+                  titleClassName="font-bold mb-1"
+                  titleStyle={{ color: ROYAL_BLUE, fontFamily: "var(--font-heading)" }}
+                  descriptionClassName="text-xs text-gray-500"
+                />
                 {i < lifecycle.length - 1 && (
                   <ArrowRight className="hidden sm:block shrink-0" size={18} style={{ color: GOLD }} />
                 )}
@@ -341,10 +346,15 @@ export default function HomePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {structures.map((s) => (
-              <Link key={s.title} href="#inquiry-form" className="block p-6 border rounded-xl hover:shadow-lg hover:border-yellow-300 transition-all duration-300">
-                <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>{s.title}</h3>
-                <p className="text-sm text-gray-500">{s.description}</p>
-              </Link>
+              <InquiryCard
+                key={s.title}
+                title={s.title}
+                description={s.description}
+                className="block p-6 border rounded-xl hover:shadow-lg hover:border-yellow-300 transition-all duration-300"
+                titleClassName="font-semibold mb-2"
+                titleStyle={{ fontFamily: "var(--font-heading)", color: NAVY }}
+                descriptionClassName="text-sm text-gray-500"
+              />
             ))}
           </div>
 
@@ -414,13 +424,20 @@ export default function HomePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {pillars.map((p) => (
-              <Link key={p.title} href="#inquiry-form" className="block p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
-                  <p.icon size={20} style={{ color: ROYAL_BLUE }} />
-                </div>
-                <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>{p.title}</h3>
-                <p className="text-sm text-gray-500">{p.description}</p>
-              </Link>
+              <InquiryCard
+                key={p.title}
+                title={p.title}
+                description={p.description}
+                className="block p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                titleClassName="font-semibold mb-2"
+                titleStyle={{ fontFamily: "var(--font-heading)" }}
+                descriptionClassName="text-sm text-gray-500"
+                icon={
+                  <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
+                    <p.icon size={20} style={{ color: ROYAL_BLUE }} />
+                  </div>
+                }
+              />
             ))}
           </div>
         </div>

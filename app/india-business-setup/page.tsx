@@ -311,12 +311,16 @@ export default function IndiaBusinessSetupHub() {
                 title: 'Post-Setup Support',
                 description: 'Ongoing compliance, annual audits, and quarterly reviews included',
               },
-            ].map((benefit, index) => (
-              <Link key={index} href={benefit.href || '/contact#inquiry-form'} className="block bg-white p-6 rounded-lg hover:shadow-lg transition">
-                <h3 className="font-semibold text-lg text-gray-900 mb-3">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
-              </Link>
-            ))}
+            ].map((benefit, index) =>
+              benefit.href ? (
+                <Link key={index} href={benefit.href} className="block bg-white p-6 rounded-lg hover:shadow-lg transition">
+                  <h3 className="font-semibold text-lg text-gray-900 mb-3">{benefit.title}</h3>
+                  <p className="text-gray-600">{benefit.description}</p>
+                </Link>
+              ) : (
+                <ClickableInfoCard key={index} title={benefit.title} desc={benefit.description} />
+              )
+            )}
           </div>
         </div>
       </section>
