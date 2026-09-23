@@ -3,6 +3,7 @@ import { HeroBackgroundLight } from '@/components/HeroBackgroundLight'
 import { Button } from '@/components/ui/button'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { InquiryForm } from '@/components/InquiryForm'
+import { ClickableReveal } from '@/components/ClickableReveal'
 import { FaqAccordion } from '@/components/FaqAccordion'
 import {
   Shield,
@@ -243,12 +244,12 @@ export default function ServicesPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {industries.map((industry) => (
-              <Link key={industry.name} href="#inquiry-form" className="block p-6 rounded-xl bg-secondary border border-border text-center hover:border-gold/50 hover:shadow-lg transition-all duration-300">
+              <ClickableReveal key={industry.name} className="p-6 rounded-xl bg-secondary border border-border text-center hover:border-gold/50 hover:shadow-lg transition-all duration-300 cursor-pointer">
                 <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mx-auto mb-4">
                   <industry.icon className="h-7 w-7 text-gold" />
                 </div>
                 <h3 className="font-medium text-foreground">{industry.name}</h3>
-              </Link>
+              </ClickableReveal>
             ))}
           </div>
         </div>
