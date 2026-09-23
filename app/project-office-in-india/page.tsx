@@ -108,18 +108,37 @@ export default function ProjectOfficeInIndiaPage() {
       <Breadcrumb items={[{ label: "Project Office in India" }]} />
 
       {/* HERO */}
-      <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <section className="py-20 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
         <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">India Entry</span>
-          <h1 className="mb-6 mt-3 text-4xl font-bold text-gray-900 md:text-5xl">
+          <span className="text-sm font-semibold uppercase tracking-wider text-yellow-400">India Entry</span>
+          <h1 className="mb-6 mt-3 text-4xl font-bold md:text-5xl">
             Project Office in India: A Complete Guide to RBI Approval, Registration and Compliance
           </h1>
-          <p className="mb-4 text-xl leading-relaxed text-gray-600">
+          <p className="mb-4 text-xl leading-relaxed text-white/85">
             A Project Office in India is the narrowest-purpose, most time-bound way a foreign company can establish a presence here. It is not used for ongoing representation or general trading, but to execute one specific contract it has already won from an Indian company or entity. It is governed directly by the Reserve Bank of India under India&apos;s foreign exchange law, not by the Companies Act incorporation route most people associate with &quot;setting up a company in India.&quot;
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-white/70 leading-relaxed">
             This guide walks through who qualifies for a Project Office, how RBI/AD-bank approval and registration actually work, what a Project Office is and isn&apos;t allowed to do, the tax exposure it genuinely creates, and how to close one out cleanly once the project is complete.
           </p>
+        </div>
+      </section>
+
+      {/* TRUST STRIP */}
+      <section className="py-12 bg-gray-100 border-y">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            {[
+              { value: "1 Contract", label: "Tied to a specific, secured project" },
+              { value: "4 Conditions", label: "Regulation 5 general-permission test" },
+              { value: "FEMA 22(R)", label: "Governing RBI regulation" },
+              { value: "New Delhi", label: "Based, serving global clients" },
+            ].map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="text-xl sm:text-2xl font-bold text-yellow-600 mb-1">{stat.value}</div>
+                <p className="text-xs sm:text-sm text-gray-600">{stat.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
