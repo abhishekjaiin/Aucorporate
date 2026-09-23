@@ -441,9 +441,9 @@ export default function ArbitrationServicesPage() {
               "MSMEs",
               "Growing Businesses",
             ].map((item) => (
-              <Link key={item} href="/contact#inquiry-form" className="block p-4 border rounded-lg hover:shadow-md hover:border-yellow-400 transition">
+              <ClickableReveal key={item} className="p-4 border rounded-lg hover:shadow-md hover:border-yellow-400 transition cursor-pointer">
                 {item}
-              </Link>
+              </ClickableReveal>
             ))}
 
           </div>

@@ -11,6 +11,7 @@ import {
   Globe,
 } from "lucide-react"
 import { Reveal } from "@/components/Reveal"
+import { ClickableReveal } from "@/components/ClickableReveal"
 
 export default function AboutHero() {
   return (
@@ -111,20 +112,19 @@ export default function AboutHero() {
               text: "Integrity, independence, confidentiality, and expert-driven execution define our approach."
             }
           ].map((item, i) => (
-            <Link key={i} href="/contact#inquiry-form" className="block">
-              <Reveal
-                delay={i * 0.1}
-                className="p-5 sm:p-8 border rounded-xl hover:shadow-xl hover:border-gold/50 bg-white transition"
-              >
-                <item.icon className="text-gold mb-3" />
-                <h3 className="font-bold text-base sm:text-lg mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-500 text-sm">
-                  {item.text}
-                </p>
-              </Reveal>
-            </Link>
+            <ClickableReveal
+              key={i}
+              delay={i * 0.1}
+              className="p-5 sm:p-8 border rounded-xl hover:shadow-xl hover:border-gold/50 bg-white transition cursor-pointer"
+            >
+              <item.icon className="text-gold mb-3" />
+              <h3 className="font-bold text-base sm:text-lg mb-2">
+                {item.title}
+              </h3>
+              <p className="text-gray-500 text-sm">
+                {item.text}
+              </p>
+            </ClickableReveal>
           ))}
 
         </div>
