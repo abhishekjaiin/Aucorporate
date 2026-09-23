@@ -5,20 +5,20 @@ export const metadata: Metadata = {
     absolute: "India-UK DTAA & Withholding Tax Rates Explained",
   },
   description:
-    "A breakdown of India-UK DTAA withholding tax rates on dividends, interest, and royalties, and how to claim treaty benefits.",
+    "Does India have a double taxation agreement with the UK? Yes — see the India-UK DTAA (tax treaty) withholding tax rates on dividends, interest, and royalties, with treaty article citations, and how to claim treaty benefits.",
   alternates: {
     canonical: "https://www.theaucorp.com/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax",
   },
   openGraph: {
     title: "India-UK DTAA & Withholding Tax Rates Explained",
     description:
-      "A breakdown of India-UK DTAA withholding tax rates on dividends, interest, and royalties, and how to claim treaty benefits.",
+      "Does India have a double taxation agreement with the UK? Yes — see the India-UK DTAA (tax treaty) withholding tax rates on dividends, interest, and royalties, with treaty article citations, and how to claim treaty benefits.",
     url: "https://www.theaucorp.com/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax",
   },
   twitter: {
     title: "India-UK DTAA & Withholding Tax Rates Explained",
     description:
-      "A breakdown of India-UK DTAA withholding tax rates on dividends, interest, and royalties, and how to claim treaty benefits.",
+      "Does India have a double taxation agreement with the UK? Yes — see the India-UK DTAA (tax treaty) withholding tax rates on dividends, interest, and royalties, with treaty article citations, and how to claim treaty benefits.",
   },
 }
 

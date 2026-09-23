@@ -4,7 +4,7 @@ import { Breadcrumb } from '@/components/Breadcrumb'
 import { FaqAccordion } from '@/components/FaqAccordion'
 import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 import { ClickableReveal } from '@/components/ClickableReveal'
-import { ArrowRight, CheckCircle, Globe, Zap, AlertCircle } from 'lucide-react'
+import { ArrowRight, CheckCircle, Globe, Zap, AlertCircle, Timer, Clock, IndianRupee, Layers } from 'lucide-react'
 
 const entitySnapshot = [
   {
@@ -48,7 +48,7 @@ const hubFaqs = [
   },
   {
     q: 'Can a foreign company or individual own 100% of an Indian entity?',
-    a: 'Yes, in most sectors. Manufacturing, most services, IT and software, and infrastructure development all permit 100% foreign ownership under the Automatic Route with no prior government approval. A shorter list of sensitive sectors — multi-brand retail, insurance, defence beyond certain limits, and a handful of others — caps foreign equity or requires Government Route approval instead. See our FDI Channels guide for the full sector-by-sector breakdown.',
+    a: 'Yes, in most sectors. Manufacturing, most services, IT and software, infrastructure development, and — since a February 2026 liberalisation (DPIIT Press Note 1, 2026 Series) — insurance now all permit 100% foreign ownership under the Automatic Route with no prior government approval. A shorter list of sensitive sectors — multi-brand retail, defence beyond certain limits, and a handful of others — still caps foreign equity or requires Government Route approval instead. See our FDI Channels guide for the full sector-by-sector breakdown, including the insurance liberalisation.',
   },
   {
     q: 'Do I need to travel to India to incorporate a company?',
@@ -65,6 +65,14 @@ const hubFaqs = [
   {
     q: 'Is a local resident director or office required to set up a business in India?',
     a: 'Yes for a company: at least one director must have stayed in India for a total of not less than 182 days in the preceding financial year, under Section 149(3) of the Companies Act, 2013. That director doesn’t need to be a shareholder and is often appointed specifically to satisfy this requirement, so an all-foreign-national board can still incorporate as long as one qualifying resident director is on the board from day one. A registered office address in India is also required from incorporation onward.',
+  },
+  {
+    q: 'What does it cost to set up a business in India?',
+    a: 'Budget for two separate categories. One-time setup costs — government filing fees, stamp duty, legal documentation, bank account setup, tax registration, compliance setup and professional fees combined — typically run from roughly ₹55,000 at the low end to well over ₹1,15,000, depending on entity complexity, the state of registration, and whether a foreign director or Government Route sector is involved. On top of that, budget for recurring annual compliance costs (statutory audit, RoC filings, income tax, GST where applicable, and the FLA return where FDI is involved) as an ongoing cost, not a one-time one. See our Timeline & Resources page for the full line-by-line breakdown.',
+  },
+  {
+    q: 'What documents does a foreign company need to register a business in India?',
+    a: "The core set includes the foreign parent's certificate of incorporation, its MOA/AOA (or equivalent constitutional documents), a board resolution authorising the Indian entity's formation, and identity and address proof for each proposed director. Because these documents originate outside India, each one needs apostille or embassy legalisation in the parent's home country before it can be used in the SPICe+ filing — this step, not the MCA filing itself, is usually what determines how fast the paperwork side of incorporation actually moves. See our Company Formation guide for the exact document checklist and filing sequence.",
   },
 ]
 
@@ -133,6 +141,7 @@ export default function IndiaBusinessSetupHub() {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               Complete India Business Setup Guide
             </h1>
+            <p className="mb-4 text-sm text-gray-500">Last updated: 23 September 2026 — prepared by AU Corporate&apos;s company registration and compliance practice.</p>
             <p className="text-xl text-gray-600 mb-8">
               Setting up in India means working through market entry, incorporation, compliance, and banking — usually in that order. This guide walks through each stage, with links to the detail you need at each one.
             </p>
@@ -146,6 +155,20 @@ export default function IndiaBusinessSetupHub() {
                 <Link href="/contact">Schedule Consultation</Link>
               </Button>
             </div>
+          </div>
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4 max-w-3xl">
+            {[
+              { icon: Timer, value: '4-6 weeks', label: 'Automatic Route' },
+              { icon: Clock, value: '8-12 weeks', label: 'Full Setup (End to End)' },
+              { icon: IndianRupee, value: '₹55K-1.15L+', label: 'Typical One-Time Setup Cost' },
+              { icon: Layers, value: '8', label: 'Entity Types Covered' },
+            ].map((stat) => (
+              <ClickableReveal key={stat.label} className="rounded-xl border border-gray-200 bg-white/70 p-4 text-center backdrop-blur-sm cursor-pointer">
+                <stat.icon className="mx-auto mb-2 h-5 w-5 text-yellow-600" />
+                <div className="text-lg font-bold text-[#081a42]">{stat.value}</div>
+                <div className="text-xs text-gray-500">{stat.label}</div>
+              </ClickableReveal>
+            ))}
           </div>
         </div>
       </section>
@@ -198,14 +221,14 @@ export default function IndiaBusinessSetupHub() {
                 <CheckCircle className="w-6 h-6 text-green-600" />
                 <h4 className="text-lg font-bold text-green-900">Automatic Route</h4>
               </div>
-              <p className="text-sm text-green-900">No prior government approval — most sectors, including manufacturing, IT/software and most services. Typical timeline: 4-6 weeks.</p>
+              <p className="text-sm text-green-900">No prior government approval — most sectors, including manufacturing, IT/software, most services, and — since a February 2026 liberalisation — insurance up to 100%. Typical timeline: 4-6 weeks.</p>
             </div>
             <div className="border-2 border-blue-200 rounded-lg p-6 bg-blue-50">
               <div className="flex items-center gap-3 mb-2">
                 <AlertCircle className="w-6 h-6 text-blue-600" />
                 <h4 className="text-lg font-bold text-blue-900">Government Route</h4>
               </div>
-              <p className="text-sm text-blue-900">DPIIT and sector-ministry approval required — multi-brand retail, insurance, defence beyond certain limits, and other sensitive sectors. Typical timeline: 8-12 weeks.</p>
+              <p className="text-sm text-blue-900">DPIIT and sector-ministry approval required — multi-brand retail, defence beyond certain limits, and other sensitive sectors. Typical timeline: 8-12 weeks.</p>
             </div>
           </div>
           <p className="mt-6 max-w-4xl leading-relaxed text-gray-600">
@@ -260,8 +283,11 @@ export default function IndiaBusinessSetupHub() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">Setup Timeline at a Glance</h2>
-          <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+          <p className="text-center text-gray-600 mb-4 max-w-2xl mx-auto">
             A realistic, stage-by-stage view of the roughly 8-12 weeks it takes most foreign-owned entities to go from entity decision to fully operational.
+          </p>
+          <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+            Budget-wise, one-time setup costs typically run from roughly ₹55,000 to well over ₹1,15,000 depending on entity complexity, state, and whether a foreign director or Government Route sector is involved — see the full line-by-line breakdown below.
           </p>
           <div className="space-y-4 max-w-4xl mx-auto">
             {timelineGlance.map((item, i) => (

@@ -52,25 +52,29 @@ export default function IndiaUKDTAAPage() {
           </thead>
           <tbody>
             <tr>
-              <td className="border border-gray-300 p-4 font-semibold">Dividends</td>
+              <td className="border border-gray-300 p-4 font-semibold">Dividends (Article 11)</td>
               <td className="border border-gray-300 p-4 text-sm">10% (general); 15% for certain property-income-derived distributions</td>
               <td className="border border-gray-300 p-4 text-sm">20%</td>
             </tr>
             <tr>
-              <td className="border border-gray-300 p-4 font-semibold">Interest</td>
+              <td className="border border-gray-300 p-4 font-semibold">Interest (Article 12)</td>
               <td className="border border-gray-300 p-4 text-sm">10% if paid to a bank/financial institution; 15% in other cases</td>
               <td className="border border-gray-300 p-4 text-sm">20%</td>
             </tr>
             <tr>
-              <td className="border border-gray-300 p-4 font-semibold">Royalties / Fees for Technical Services</td>
+              <td className="border border-gray-300 p-4 font-semibold">Royalties / Fees for Technical Services (Article 13)</td>
               <td className="border border-gray-300 p-4 text-sm">15% generally; 10% for equipment royalties</td>
               <td className="border border-gray-300 p-4 text-sm">20%</td>
             </tr>
           </tbody>
         </table>
         <p className="text-xs text-gray-500 mt-2">
-          Rates shown are treaty caps before applicable surcharge and cess under Indian domestic law. Actual withholding uses whichever of the treaty rate or domestic rate is more beneficial to the taxpayer. Domestic rates are further increased by surcharge (typically 2-5% for a foreign company, depending on income) and a 4% health and education cess.
+          Rates shown are treaty caps before applicable surcharge and cess under Indian domestic law. Actual withholding uses whichever of the treaty rate or domestic rate is more beneficial to the taxpayer — a right of election that sits in Section 159 of the Income-tax Act, 2025 (the consolidated successor to Sections 90/90A of the 1961 Act), not just in the treaty itself. Domestic rates are further increased by surcharge (typically 2-5% for a foreign company, depending on income) and a 4% health and education cess. Unlike the India-US treaty, the India-UK treaty&apos;s royalty/FTS article carries no &quot;make available&quot; test, so the 10-15% cap (and the 20% domestic rate it&apos;s measured against) applies to essentially all managerial, technical, and consultancy fees paid to the UK parent, not only payments that transfer usable technical knowledge.
         </p>
+        <div className="mt-4 p-4 bg-blue-50 border-l-4 border-blue-400 rounded text-sm text-gray-700">
+          <span className="font-semibold">Illustration: </span>
+          On a ₹1 crore dividend to the UK parent, the treaty rate withholds ₹10 lakh. Without a valid TRC and Form 41 on file, the payer defaults to the 20% domestic rate — roughly ₹21-22 lakh once surcharge and cess are added for a typical mid-size foreign company — meaning the paperwork gap alone can cost upward of ₹11 lakh sitting with the Indian tax authority until reclaimed, rather than with the group.
+        </div>
       </div>
 
       <div className="mb-12 p-6 bg-gray-100 rounded-lg">
@@ -146,6 +150,24 @@ export default function IndiaUKDTAAPage() {
           ))}
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((item) => ({
+              "@type": "Question",
+              name: item.q,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.a,
+              },
+            })),
+          }),
+        }}
+      />
 
       <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Related Reading</h3>
