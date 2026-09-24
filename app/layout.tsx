@@ -171,27 +171,15 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* GOOGLE ANALYTICS — lazyOnload: not needed for initial interactivity, so it
-            shouldn't compete with hydration for main-thread time (Total Blocking Time) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-V2EZ4HBLZS"
-          strategy="lazyOnload"
-        />
-
-        <Script
-          id="google-analytics"
-          strategy="lazyOnload"
-        >
-          {`
-            window.dataLayer = window.dataLayer || [];
-
-            function gtag(){dataLayer.push(arguments);}
-
-            gtag('js', new Date());
-
-            gtag('config', 'G-V2EZ4HBLZS');
-          `}
-        </Script>
+        {/* GA4 (G-V2EZ4HBLZS) is intentionally NOT loaded here as a separate direct
+            gtag.js script. It was previously duplicated alongside GTM below — GTM is
+            already designed to load and configure GA4 itself via a GA4 Configuration
+            tag inside the GTM container, so hardcoding a second, direct gtag.js here
+            was redundant script weight on every page (flagged by PageSpeed Insights'
+            "reduce unused JavaScript" audit). If GA4 property G-V2EZ4HBLZS is not
+            already configured as a tag inside GTM container GTM-N23Z4X6Z, add it there
+            (tagmanager.google.com) rather than restoring this direct script — verify
+            GA4 data continuity in the GA4 Realtime report after this deploys. */}
 
         {/* BING CLARITY TRACKING — lazyOnload for the same reason */}
         <Script
