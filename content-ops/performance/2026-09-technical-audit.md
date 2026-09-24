@@ -33,3 +33,13 @@ The site's crawl fundamentals are clean — no broken links, no orphan pages, no
 
 - **TTI/beforeInteractive fix**: High confidence. Root cause is structural and unambiguous (static data in a blocking script slot), fix is verified with before/after schema-parity checks, and the pattern explains the consistency of the TTI finding across unrelated pages.
 - **CLS**: Explicitly low/unconfirmed — reported as a monitoring item, not a finding, per the "never claim causation from insufficient data" principle.
+
+## Update — 2026-09-24, real PSI report from user
+
+User supplied a live PageSpeed Insights report for `/` (homepage, mobile): Performance 79, LCP 4.3s, CLS 0 (confirms the earlier CLS finding was noise, not a real bug), Accessibility 97, Best Practices 96, SEO 100.
+
+| Priority | Finding | Investigation | Status |
+|---|---|---|---|
+| **P1** | "Reduce unused JavaScript: 306 KiB", "Legacy JavaScript: 25 KiB", "7 long main-thread tasks" | JS-coverage analysis on the site's own bundle showed 0 KB unused (541.7 KB, fully utilized) — the weight isn't coming from app code. `app/layout.tsx` loaded 4 separate third-party scripts on every page: GTM, a **directly hardcoded gtag.js for GA4** (redundant — GTM is designed to load/configure GA4 itself via a tag inside the container), Microsoft Clarity, and the Apollo.io website tracker. | **Fixed** (user-authorized) — removed the standalone gtag.js script and its inline config block. GTM and Clarity untouched. **Action needed from user**: confirm GA4 property G-V2EZ4HBLZS is configured as a tag inside GTM container GTM-N23Z4X6Z (tagmanager.google.com) — this can't be verified from the codebase. Check the GA4 Realtime report after this deploys. |
+| P3 | "Browser errors were logged to the console" (Best Practices) | Attempted to reproduce locally — this sandbox's network proxy blocks all third-party script loads (GTM/Clarity/Apollo/etc.), so any error specific to those scripts on production can't be reproduced or diagnosed from this environment. | **Not resolved.** Needs a manual check: open the live homepage in Chrome DevTools → Console and look for the specific error. |
+| P3 | Contrast issue (Accessibility, no specific element named in the report) | Attempted an automated axe-core scan; no accessibility-testing tooling available in this sandboxed environment and no internet access to install one. Manually checked the navy-hero text patterns added this session (`text-white/60`, `text-white/70` on `#081a42`) — both pass WCAG AA (6.7:1 and higher), so likely not the culprit. | **Not resolved.** Needs the PSI report's full "Contrast" audit expansion (which specific element) or a manual axe DevTools scan to pinpoint.
