@@ -146,7 +146,7 @@ export function Navbar() {
               </button>
 
               {activeMenu === "dbi" && (
-                <div className="absolute left-1/2 top-full z-50 w-[min(1040px,90vw)] -translate-x-1/3 pt-2">
+                <div className="fixed left-1/2 top-20 z-50 w-[min(1040px,calc(100vw-2rem))] -translate-x-1/2 pt-2">
                   <div className="overflow-hidden rounded-2xl border bg-white shadow-2xl">
                     <div className="grid grid-cols-4 gap-0 p-6">
                       {dbiColumns.map((col, i) => (
@@ -202,7 +202,7 @@ export function Navbar() {
               </button>
 
               {activeMenu === "services" && (
-                <div className="absolute left-0 top-full z-50 w-[640px] pt-2">
+                <div className="fixed left-1/2 top-20 z-50 w-[min(640px,calc(100vw-2rem))] -translate-x-1/2 pt-2">
                   <div className="flex overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl">
                     {/* Navy service-line rail, matching the /services hub's own icons */}
                     <div className="w-[62%] py-4" style={{ backgroundColor: "#081a42" }}>
@@ -271,7 +271,7 @@ export function Navbar() {
               </button>
 
               {activeMenu === "about" && (
-                <div className="absolute left-0 top-full z-50 w-[220px] pt-2">
+                <div className="absolute right-0 top-full z-50 w-[220px] pt-2">
                   <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl py-2">
                     {aboutLinks.map((item) => (
                       <Link key={item.label} href={item.href} className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#081a42]">
@@ -291,7 +291,7 @@ export function Navbar() {
         </div>
 
         {isOpen && (
-          <div id="mobile-navigation" className="absolute left-0 top-16 max-h-[calc(100dvh-4rem)] w-full overflow-y-auto border-t bg-white px-5 py-6 shadow-lg sm:top-20 sm:max-h-[calc(100dvh-5rem)]">
+          <div id="mobile-navigation" className="absolute left-0 top-16 h-[calc(100dvh-4rem)] w-full overflow-y-auto border-t bg-white px-5 py-6 shadow-lg sm:top-20 sm:h-[calc(100dvh-5rem)]">
             <MobileGroup label="Doing Business in India" open={mobileMenu === "dbi"} onToggle={() => setMobileMenu(mobileMenu === "dbi" ? null : "dbi")}>
               <Link href="/doing-business-in-india" onClick={closeMobile} className="mb-2 block text-sm font-semibold text-gold-dark">
                 Doing Business in India — Overview

@@ -61,7 +61,7 @@ export function FloatingInquiryCTA() {
             type="button"
             onClick={() => setBarDismissed(true)}
             aria-label="Dismiss"
-            className="shrink-0 rounded-full p-1 text-[#081a42]/70 hover:text-[#081a42]"
+            className="shrink-0 rounded-full p-3 -m-1 text-[#081a42]/70 hover:text-[#081a42]"
           >
             <X className="h-4 w-4" aria-hidden="true" />
           </button>
