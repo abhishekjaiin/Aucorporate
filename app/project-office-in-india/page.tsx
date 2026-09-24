@@ -148,18 +148,18 @@ export default function ProjectOfficeInIndiaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is a Project Office in India?</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             A Project Office is not a separate legal entity. It is an extension of the foreign parent company operating inside India for the duration of a specific, already-secured contract — there is no separate Indian shareholding, no separate board, and no separate corporate personality. Legally, the parent company itself is executing the project in India through the Project Office. If your intent is a fully independent Indian operating company rather than a contract-linked extension of the parent, the{" "}
-            <Link href="/india-business-setup/company-formation" className="text-gold font-semibold hover:underline">company registration guide</Link> covers that route in full.
+            <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">company registration guide</Link> covers that route in full.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             The statutory basis sits in foreign exchange law, not company law. Section 6(6) of the Foreign Exchange Management Act, 1999 (FEMA) empowers the RBI to regulate the establishment in India of a branch, office, or other place of business by a person resident outside India. The operative regulation made under that power — the Foreign Exchange Management (Establishment in India of a Branch Office or a Liaison Office or a Project Office or Any Other Place of Business) Regulations, 2016, commonly cited as FEMA 22(R)/2016-RB — is what this page is written against. A draft set of RBI Establishment Regulations has circulated since October 2025 proposing a more principle-based framework across all three structures; it has not been notified in the Official Gazette and is not yet law. Plan against FEMA 22(R)/2016-RB, not the draft, and re-check its notification status before you file anything. This establishment route is also separate from the FDI equity-investment framework under FEMA 20(R) — if you&apos;re evaluating putting equity into an Indian company rather than executing a specific contract through an unincorporated presence, see{" "}
-            <Link href="/india-business-setup/fdi-channels" className="text-gold font-semibold hover:underline">The FDI Automatic vs Government Route</Link> instead.
+            <Link href="/india-business-setup/fdi-channels" className="text-gold-dark font-semibold hover:underline">The FDI Automatic vs Government Route</Link> instead.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             What sets a Project Office apart from a Branch or Liaison Office is not how much commercial activity it can undertake, but why it exists at all. A Project Office is set up for the fixed duration of a specific contract or project a foreign company has already secured from an Indian entity. It is not an ongoing representative presence the way a Liaison Office is, and it is not a general-purpose revenue-generating presence the way a Branch Office is — it exists to execute one project, and it is expected to wind down when that project ends.
           </p>
           <p className="text-gray-600 leading-relaxed">
             <strong>Who this page is for:</strong> a foreign company that has already won a specific Indian contract — typically in engineering, construction, infrastructure, or another turnkey project — and needs a compliant, time-bound India presence to execute it, plus a clear picture of the tax exposure that creates and how to close the office out cleanly afterward. If you&apos;re confident you need a full operating company instead, the{" "}
-            <Link href="/india-business-setup/company-formation" className="text-gold font-semibold hover:underline">company registration guide</Link> covers that process.
+            <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">company registration guide</Link> covers that process.
           </p>
         </div>
       </section>
@@ -181,8 +181,8 @@ export default function ProjectOfficeInIndiaPage() {
           </div>
           <p className="text-gray-600 leading-relaxed">
             If a Project Office turns out to be too narrow for what you actually intend to do — an ongoing commercial presence beyond a single contract — see the full{" "}
-            <Link href="/branch-office-in-india" className="text-gold font-semibold hover:underline">Branch Office in India guide</Link>. If what you actually need is a pure, non-revenue representative presence rather than contract execution, see the{" "}
-            <Link href="/liaison-office-in-india" className="text-gold font-semibold hover:underline">Liaison Office in India guide</Link>.
+            <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>. If what you actually need is a pure, non-revenue representative presence rather than contract execution, see the{" "}
+            <Link href="/liaison-office-in-india" className="text-gold-dark font-semibold hover:underline">Liaison Office in India guide</Link>.
           </p>
         </div>
       </section>
@@ -286,7 +286,7 @@ export default function ProjectOfficeInIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             For the fuller international-tax and DTAA picture — including how this interacts with your parent company&apos;s specific treaty position — see{" "}
-            <Link href="/services/taxation-regulatory" className="text-gold font-semibold hover:underline">International Taxation and DTAA Advisory</Link>{" "}
+            <Link href="/services/taxation-regulatory" className="text-gold-dark font-semibold hover:underline">International Taxation and DTAA Advisory</Link>{" "}
             rather than trying to resolve treaty-specific mechanics from a general guide like this one.
           </p>
         </div>
@@ -301,7 +301,7 @@ export default function ProjectOfficeInIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             Reverse-charge treatment is also worth flagging if the Project Office receives funding or services from its parent company — payments back to the parent can attract GST under the reverse-charge mechanism (RCM) depending on how the arrangement is structured. See{" "}
-            <Link href="/services/taxation-regulatory" className="text-gold font-semibold hover:underline">International Taxation and DTAA Advisory</Link>{" "}
+            <Link href="/services/taxation-regulatory" className="text-gold-dark font-semibold hover:underline">International Taxation and DTAA Advisory</Link>{" "}
             for the fuller RCM treatment already covered there.
           </p>
         </div>
@@ -322,7 +322,7 @@ export default function ProjectOfficeInIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             For the broader compliance landscape a registered foreign establishment needs to stay on top of, see{" "}
-            <Link href="/india-business-setup/regulatory-compliance" className="text-gold font-semibold hover:underline">ongoing regulatory compliance</Link>.
+            <Link href="/india-business-setup/regulatory-compliance" className="text-gold-dark font-semibold hover:underline">ongoing regulatory compliance</Link>.
           </p>
         </div>
       </section>
@@ -350,7 +350,7 @@ export default function ProjectOfficeInIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             If a Project Office looks like the right structure for the contract you&apos;ve secured in India, our team can walk through the Regulation 5 eligibility position, the RBI/AD-bank approval process, and the PE tax exposure for your specific situation —{" "}
-            <Link href="/contact" className="text-gold font-semibold hover:underline">get in touch</Link> to start that conversation.
+            <Link href="/contact" className="text-gold-dark font-semibold hover:underline">get in touch</Link> to start that conversation.
           </p>
         </div>
       </section>

@@ -57,7 +57,7 @@ export function EntitySelectorTool() {
   return (
     <div className="rounded-2xl border-2 border-yellow-400 bg-white p-6 md:p-8 shadow-sm">
       <div className="mb-6">
-        <span className="text-xs font-semibold uppercase tracking-wider text-gold">Interactive Tool</span>
+        <span className="text-xs font-semibold uppercase tracking-wider text-gold-dark">Interactive Tool</span>
         <h3 className="mt-1 text-xl md:text-2xl font-bold text-[#081a42]">Which Entity Type Is Right for You?</h3>
         <p className="mt-2 text-sm text-gray-600">Select what your India operation is primarily there to do, and we&apos;ll point you to the right structure.</p>
       </div>

@@ -469,7 +469,7 @@ export default function HomePage() {
                 <p className="text-sm text-gray-500">
                   {item.description}
                 </p>
-                <p className="mt-2 text-xs font-semibold" style={{ color: GOLD }}>Talk to an expert &rarr;</p>
+                <p className="mt-2 text-xs font-semibold" style={{ color: "var(--gold-dark)" }}>Talk to an expert &rarr;</p>
               </ClickableReveal>
             ))}
           </div>
@@ -592,7 +592,7 @@ export default function HomePage() {
                 href={`/blog/${post.slug}`}
                 className="p-6 bg-white border rounded-xl hover:shadow-lg transition-all duration-300 flex flex-col"
               >
-                <span className="text-xs font-semibold uppercase tracking-wide mb-3" style={{ color: GOLD }}>
+                <span className="text-xs font-semibold uppercase tracking-wide mb-3" style={{ color: "var(--gold-dark)" }}>
                   {post.category}
                 </span>
                 <h3 className="font-semibold mb-2 flex-1" style={{ fontFamily: "var(--font-heading)" }}>

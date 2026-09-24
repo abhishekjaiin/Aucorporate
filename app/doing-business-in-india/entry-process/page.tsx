@@ -321,7 +321,7 @@ export default function EntryProcessPage() {
           <Reveal className="text-center mb-14">
             <h2 className="text-3xl font-bold">
               How{" "}
-              <span className="text-[#facc15]">AU Corporate</span>{" "}
+              <span className="text-gold-dark">AU Corporate</span>{" "}
               Mitigates Entry Risks
             </h2>
 

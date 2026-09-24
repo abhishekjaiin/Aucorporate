@@ -60,7 +60,7 @@ export default function IndiaEntryForSaasCompaniesPage() {
       {/* HERO */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">India Business Setup</span>
+          <span className="text-sm font-semibold uppercase tracking-wider text-gold-dark">India Business Setup</span>
           <h1 className="mb-6 mt-3 text-4xl font-bold text-gray-900 md:text-5xl">
             India Entry for AI, SaaS and Technology Companies: Entity Structuring, FEMA and Tax
           </h1>
@@ -99,14 +99,14 @@ export default function IndiaEntryForSaasCompaniesPage() {
           <ScenarioSelector />
           <p className="text-gray-600 leading-relaxed mt-8">
             If Scenario 1 is where you are — you&apos;re billing Indian customers but have no other India footprint — this page isn&apos;t the one you need yet. Our full{" "}
-            <Link href="/oidar-gst-registration-india" className="text-gold font-semibold hover:underline">
+            <Link href="/oidar-gst-registration-india" className="text-gold-dark font-semibold hover:underline">
               OIDAR &amp; GST registration guide for foreign SaaS and AI companies
             </Link>{" "}
             covers exactly that obligation: when it applies, how to register, and what the filing calendar looks like. Come back here once one of the Scenario 3 signals shows up.
           </p>
           <p className="text-gray-600 leading-relaxed mt-4">
             If you&apos;re already OIDAR-registered and sitting in Scenario 2, the watch-list above is the thing to check against every quarter, not a box you tick once. Our{" "}
-            <Link href="/doing-business-in-india/incorporation" className="text-gold font-semibold hover:underline">
+            <Link href="/doing-business-in-india/incorporation" className="text-gold-dark font-semibold hover:underline">
               incorporation-timing guide
             </Link>{" "}
             runs the same &quot;ready or not yet&quot; judgment call for the general case — the signals above are that same checklist, specific to a company that&apos;s already billing India directly and knows its OIDAR status.
@@ -151,7 +151,7 @@ export default function IndiaEntryForSaasCompaniesPage() {
           <EntitySelectorTool />
           <p className="text-gray-600 leading-relaxed mt-8">
             For the actual mechanics of getting a WOS incorporated — the SPICe+ filing, Digital Signature Certificates, Director Identification Numbers, the resident-director requirement, and realistic timelines (roughly 4-6 weeks under the Automatic Route once documentation is in order) — we don&apos;t re-run that process here. Our{" "}
-            <Link href="/india-business-setup/company-formation" className="text-gold font-semibold hover:underline">
+            <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">
               company registration guide
             </Link>{" "}
             covers the full step-by-step SPICe+ process, document checklist and timeline in detail; treat this page as the &quot;which structure, and why, for a SaaS/AI business specifically&quot; layer that sits in front of it.
@@ -168,7 +168,7 @@ export default function IndiaEntryForSaasCompaniesPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             The caveat worth knowing rather than assuming away: sector classification isn&apos;t always as clean as &quot;software&quot; for a business whose product touches an adjacent regulated space — certain data-handling, fintech-adjacent, or broadcasting-adjacent functionality can pull parts of a business into a different sectoral bucket with its own conditions. If your product sits close to one of those edges, it&apos;s worth confirming classification specifically rather than assuming the general software category applies wholesale. For the full sector-by-sector Automatic Route vs. Government Route table, see our{" "}
-            <Link href="/india-business-setup/fdi-channels" className="text-gold font-semibold hover:underline">
+            <Link href="/india-business-setup/fdi-channels" className="text-gold-dark font-semibold hover:underline">
               FDI channels guide
             </Link>
             .
@@ -182,14 +182,14 @@ export default function IndiaEntryForSaasCompaniesPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Tax Treatment Once You Incorporate</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Once your India entity exists, it&apos;s taxed the same way any other Indian domestic company is — on its own India-source profits, not by reference to the parent&apos;s home-country tax position. Most SaaS/AI subsidiaries elect into the concessional corporate tax regime under Section 200 of the Income-tax Act, 2025 (the provision previously numbered Section 115BAA under the 1961 Act), which brings the base rate down to <strong>22%</strong> — around 25.17% once surcharge and cess are added — in exchange for giving up certain exemptions and incentives most digital-services businesses weren&apos;t planning to claim anyway. Whether that election makes sense for your specific entity is worth confirming with your tax advisor rather than assumed, but for a straightforward SaaS/AI subsidiary it&apos;s the norm rather than the exception. For the full domestic tax-compliance calendar, see our{" "}
-            <Link href="/services/taxation-regulatory" className="text-gold font-semibold hover:underline">
+            <Link href="/services/taxation-regulatory" className="text-gold-dark font-semibold hover:underline">
               taxation and regulatory practice
             </Link>
             .
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             There&apos;s a real cost to waiting too long to make this decision, and it isn&apos;t just &quot;your competitors get there first.&quot; Under <strong>Section 9(9) of the Income-tax Act, 2025</strong>, a foreign company can trigger a taxable presence in India — a <strong>Significant Economic Presence</strong> — purely through the scale of its India-sourced digital transactions or active user base, independent of whether it has incorporated anything here at all. That&apos;s a separate, direct-tax exposure from the GST/OIDAR obligation covered on our compliance page — different tax, different trigger, different consequence — but it&apos;s the reason &quot;we&apos;ll incorporate eventually&quot; isn&apos;t a cost-free holding pattern once revenue and usage are both growing. The specific revenue and user-count thresholds that define SEP are set by the CBDT and are worth confirming against the current notification before you rely on them for planning; our{" "}
-            <Link href="/doing-business-in-india/incorporation" className="text-gold font-semibold hover:underline">
+            <Link href="/doing-business-in-india/incorporation" className="text-gold-dark font-semibold hover:underline">
               incorporation-timing guide
             </Link>{" "}
             covers the fuller decision checklist and the SEP exposure in more depth than belongs on this page.
@@ -212,7 +212,7 @@ export default function IndiaEntryForSaasCompaniesPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             What actually happens to the existing OIDAR registration matters practically, too — it doesn&apos;t just vanish the day your Certificate of Incorporation is issued, and it doesn&apos;t automatically merge into the new entity&apos;s GST registration either. They&apos;re two separate registrations under two separate legal persons — the foreign parent (OIDAR/NRTP) and the new Indian subsidiary (ordinary GST) — so your India-billing activity moves onto the new entity&apos;s GSTR-1/GSTR-3B cadence, while the old OIDAR registration needs to be formally wound down on its own, rather than assumed to convert automatically. Worth planning that cutover deliberately with your advisor, confirming the specific cancellation steps, rather than assuming it resolves itself. If you&apos;re not yet incorporated and want the full detail on the OIDAR side of this — registration mechanics, GSTR-5A filing cadence, what happens if you don&apos;t register — that&apos;s the full subject of our{" "}
-            <Link href="/oidar-gst-registration-india" className="text-gold font-semibold hover:underline">
+            <Link href="/oidar-gst-registration-india" className="text-gold-dark font-semibold hover:underline">
               OIDAR &amp; GST registration guide
             </Link>
             .
@@ -229,11 +229,11 @@ export default function IndiaEntryForSaasCompaniesPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             None of these are optional or symbolic — a missed FC-GPR window, for instance, has to be resolved through RBI&apos;s compounding process rather than a simple late fee, and that history sits on the entity&apos;s compliance record. We&apos;re not walking through the full filing mechanics here; our{" "}
-            <Link href="/services/taxation-regulatory" className="text-gold font-semibold hover:underline">
+            <Link href="/services/taxation-regulatory" className="text-gold-dark font-semibold hover:underline">
               taxation and regulatory practice
             </Link>{" "}
             and{" "}
-            <Link href="/india-business-setup/regulatory-compliance" className="text-gold font-semibold hover:underline">
+            <Link href="/india-business-setup/regulatory-compliance" className="text-gold-dark font-semibold hover:underline">
               regulatory compliance guide
             </Link>{" "}
             both cover FEMA reporting in the depth an entity actually operating in India needs.
@@ -247,11 +247,11 @@ export default function IndiaEntryForSaasCompaniesPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Post-Incorporation: What Changes Operationally</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Incorporation is the start of an ongoing compliance relationship, not a one-time filing you complete and move past. Someone has to run the monthly (or quarterly) GST filings, keep the books in a form that satisfies both Indian statutory requirements and whatever reporting your parent needs for consolidation, and manage the RoC annual filings and audit. For most foreign-owned entities in their first couple of years, that&apos;s a Virtual CFO / outsourced accounting arrangement rather than a full in-house finance function — our{" "}
-            <Link href="/outsourcing" className="text-gold font-semibold hover:underline">
+            <Link href="/outsourcing" className="text-gold-dark font-semibold hover:underline">
               outsourcing
             </Link>{" "}
             and{" "}
-            <Link href="/services/accounting-assurance" className="text-gold font-semibold hover:underline">
+            <Link href="/services/accounting-assurance" className="text-gold-dark font-semibold hover:underline">
               accounting &amp; assurance
             </Link>{" "}
             teams support exactly this, and it&apos;s worth lining up before the entity&apos;s first filing deadline rather than after.
@@ -278,7 +278,7 @@ export default function IndiaEntryForSaasCompaniesPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Building a Full Delivery or Engineering Center Instead?</h2>
           <p className="text-gray-600 leading-relaxed">
             Not every reader on this page is deciding between &quot;compliance-only&quot; and &quot;a standard commercial subsidiary.&quot; Some are actually further along — planning to build a full captive engineering, R&amp;D or delivery center in India rather than a commercial entity that primarily invoices local customers. That&apos;s a genuinely different scale and structure of India presence, with its own hiring, tax and operational considerations. If that&apos;s closer to what you&apos;re evaluating, our{" "}
-            <Link href="/gcc-setup-india" className="text-gold font-semibold hover:underline">
+            <Link href="/gcc-setup-india" className="text-gold-dark font-semibold hover:underline">
               Global Capability Center setup guide
             </Link>{" "}
             covers that path in depth — it&apos;s a different guide for a different buyer, not an upsell from this one.
@@ -374,7 +374,7 @@ export default function IndiaEntryForSaasCompaniesPage() {
           </p>
           <div className="flex flex-wrap gap-3">
             {countryLinks.map((c) => (
-              <Link key={c.href} href={c.href} className="px-4 py-2 bg-white border rounded-lg text-sm font-semibold text-gold hover:underline hover:shadow-md transition">
+              <Link key={c.href} href={c.href} className="px-4 py-2 bg-white border rounded-lg text-sm font-semibold text-gold-dark hover:underline hover:shadow-md transition">
                 {c.label} →
               </Link>
             ))}

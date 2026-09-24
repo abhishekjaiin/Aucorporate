@@ -123,7 +123,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-2" onClick={handleLogoClick}>
             <Image src="/logo.png" alt="AU Corporate" width={42} height={42} priority sizes="42px" />
             <div className="flex flex-col leading-tight">
-              <span className="text-lg font-bold text-gold sm:text-2xl">AU Corporate</span>
+              <span className="text-lg font-bold text-gold-dark sm:text-2xl">AU Corporate</span>
               <span className="text-[9px] uppercase tracking-[0.2em] text-[#081a42] sm:text-[10px]">Growing Together</span>
             </div>
           </Link>
@@ -153,13 +153,13 @@ export function Navbar() {
                         <div key={col.heading} className={i > 0 ? "border-l pl-5 ml-5" : ""}>
                           <h3 className="mb-3 text-sm font-semibold text-[#081a42]">{col.heading}</h3>
                           {col.hub && (
-                            <Link href={col.hub.href} className="mb-2 block text-xs font-semibold text-gold hover:underline">
+                            <Link href={col.hub.href} className="mb-2 block text-xs font-semibold text-gold-dark hover:underline">
                               {col.hub.label} →
                             </Link>
                           )}
                           <div className="space-y-0.5">
                             {col.items.map((item) => (
-                              <Link key={item.label} href={item.href} className="block py-1.5 text-sm leading-snug text-gray-700 hover:text-gold">
+                              <Link key={item.label} href={item.href} className="block py-1.5 text-sm leading-snug text-gray-700 hover:text-gold-dark">
                                 {item.label}
                               </Link>
                             ))}
@@ -293,7 +293,7 @@ export function Navbar() {
         {isOpen && (
           <div id="mobile-navigation" className="absolute left-0 top-16 max-h-[calc(100dvh-4rem)] w-full overflow-y-auto border-t bg-white px-5 py-6 shadow-lg sm:top-20 sm:max-h-[calc(100dvh-5rem)]">
             <MobileGroup label="Doing Business in India" open={mobileMenu === "dbi"} onToggle={() => setMobileMenu(mobileMenu === "dbi" ? null : "dbi")}>
-              <Link href="/doing-business-in-india" onClick={closeMobile} className="mb-2 block text-sm font-semibold text-gold">
+              <Link href="/doing-business-in-india" onClick={closeMobile} className="mb-2 block text-sm font-semibold text-gold-dark">
                 Doing Business in India — Overview
               </Link>
               {dbiColumns.map((col) => {
@@ -324,7 +324,7 @@ export function Navbar() {
             </MobileGroup>
 
             <MobileGroup label="Services" open={mobileMenu === "services"} onToggle={() => setMobileMenu(mobileMenu === "services" ? null : "services")}>
-              <Link href="/services" onClick={closeMobile} className="block py-2 text-sm font-semibold text-gold">All Services</Link>
+              <Link href="/services" onClick={closeMobile} className="block py-2 text-sm font-semibold text-gold-dark">All Services</Link>
               {coreServiceLinks.map((item) => (
                 <Link key={item.label} href={item.href} onClick={closeMobile} className="flex items-start gap-3 py-2">
                   <item.icon className="mt-0.5 h-4 w-4 shrink-0 text-[#081a42]" aria-hidden="true" />

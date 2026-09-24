@@ -117,7 +117,7 @@ export default function GCCSetupIndiaPage() {
       {/* HERO */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">Global Capability Centers</span>
+          <span className="text-sm font-semibold uppercase tracking-wider text-gold-dark">Global Capability Centers</span>
           <h1 className="mb-6 mt-3 text-4xl font-bold text-gray-900 md:text-5xl">
             GCC Setup in India: A Complete Guide to Entity Structure, Compliance, and Costs
           </h1>
@@ -125,7 +125,7 @@ export default function GCCSetupIndiaPage() {
             A Global Capability Center (GCC) is one of the more consequential entities a foreign parent company will ever set up in India — not because the incorporation itself is unusually complex, but because of what follows it. A GCC typically grows headcount faster than a standard subsidiary, moves money across borders more frequently through intercompany service charges, and stays under continuous scrutiny from RBI, the tax department, and its own board back home.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            This guide walks through the decisions in the order a CFO or corporate-development lead actually has to make them: whether a GCC is the right model at all, which entity structure to use, how incorporation and FDI reporting work, what ongoing FEMA/RBI and tax obligations look like, and what a realistic cost and timeline picture looks like. If you&apos;re still evaluating India broadly rather than a GCC specifically, our <Link href="/doing-business-in-india/entry-process" className="text-gold font-semibold hover:underline">market entry process</Link> guide covers that earlier-stage decision.
+            This guide walks through the decisions in the order a CFO or corporate-development lead actually has to make them: whether a GCC is the right model at all, which entity structure to use, how incorporation and FDI reporting work, what ongoing FEMA/RBI and tax obligations look like, and what a realistic cost and timeline picture looks like. If you&apos;re still evaluating India broadly rather than a GCC specifically, our <Link href="/doing-business-in-india/entry-process" className="text-gold-dark font-semibold hover:underline">market entry process</Link> guide covers that earlier-stage decision.
           </p>
         </div>
       </section>
@@ -152,7 +152,7 @@ export default function GCCSetupIndiaPage() {
             India remains the largest GCC destination globally by a wide margin. According to NASSCOM and Zinnov&apos;s &ldquo;GCC Value Orbit: From Delivery Engine to Enterprise Nerve Centre&rdquo; report (July 2026), the country&apos;s GCC base has reached 2,117 centers, generating $98.4 billion in annual revenue and employing roughly 2.36 million professionals. The center of gravity has also shifted: what were once largely IT-services delivery hubs are increasingly R&D, product engineering, and enterprise-function centers with genuine decision-making authority devolved from the parent.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            These figures are NASSCOM and Zinnov&apos;s data, not AU Corporate&apos;s — cited here because they set useful context for a company weighing the decision. For the broader case behind India&apos;s growth as a destination, see our guide on <Link href="/doing-business-in-india/why-india" className="text-gold font-semibold hover:underline">why companies are choosing India</Link>.
+            These figures are NASSCOM and Zinnov&apos;s data, not AU Corporate&apos;s — cited here because they set useful context for a company weighing the decision. For the broader case behind India&apos;s growth as a destination, see our guide on <Link href="/doing-business-in-india/why-india" className="text-gold-dark font-semibold hover:underline">why companies are choosing India</Link>.
           </p>
         </div>
       </section>
@@ -167,7 +167,7 @@ export default function GCCSetupIndiaPage() {
 
           <h3 className="text-xl font-semibold text-gray-900 mb-3">Building the Internal Business Case</h3>
           <p className="text-gray-600 leading-relaxed mb-8">
-            The internal sign-off conversation for a GCC is rarely just a cost-savings pitch anymore — boards and CFOs increasingly ask for a case built on talent access, operating leverage, and strategic control. Building that case is a strategic and financial exercise your own leadership and finance team are best placed to lead; where AU Corporate&apos;s regulatory compliance and Virtual CFO practices add value is translating the eventual decision into an entity structure and compliance plan that doesn&apos;t box you in later. Our <Link href="/doing-business-in-india/pre-incorporation" className="text-gold font-semibold hover:underline">feasibility and pre-incorporation planning</Link> guide is a useful companion resource at this earlier stage.
+            The internal sign-off conversation for a GCC is rarely just a cost-savings pitch anymore — boards and CFOs increasingly ask for a case built on talent access, operating leverage, and strategic control. Building that case is a strategic and financial exercise your own leadership and finance team are best placed to lead; where AU Corporate&apos;s regulatory compliance and Virtual CFO practices add value is translating the eventual decision into an entity structure and compliance plan that doesn&apos;t box you in later. Our <Link href="/doing-business-in-india/pre-incorporation" className="text-gold-dark font-semibold hover:underline">feasibility and pre-incorporation planning</Link> guide is a useful companion resource at this earlier stage.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mb-3">Is It Worth Hiring a Consulting Firm to Set Up a GCC in India?</h3>
@@ -238,7 +238,7 @@ export default function GCCSetupIndiaPage() {
           </p>
 
           <p className="text-gray-700 italic">
-            If you&apos;d like a compliance calendar and entity recommendation specific to your headcount plan and sector, <Link href="/contact" className="text-gold font-semibold not-italic hover:underline">talk to AU Corporate&apos;s regulatory compliance practice</Link> directly.
+            If you&apos;d like a compliance calendar and entity recommendation specific to your headcount plan and sector, <Link href="/contact" className="text-gold-dark font-semibold not-italic hover:underline">talk to AU Corporate&apos;s regulatory compliance practice</Link> directly.
           </p>
         </div>
       </section>
@@ -248,7 +248,7 @@ export default function GCCSetupIndiaPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">The FDI Route: Automatic vs. Government Approval</h2>
           <p className="text-gray-600 leading-relaxed">
-            Most GCC-relevant sectors — IT and ITES, R&D and engineering services, shared services and back-office operations — qualify for the FDI automatic route, meaning 100% foreign ownership is permitted without prior government approval; the only requirement is post-facto reporting to RBI once funds are received and shares are allotted. A smaller set of sectors carry conditions or require government-route approval, and these conditions do shift from time to time, so it&apos;s worth confirming your specific sector&apos;s current status. Our <Link href="/india-business-setup/fdi-channels" className="text-gold font-semibold hover:underline">FDI automatic and government approval routes</Link> guide covers the full mechanics of both routes.
+            Most GCC-relevant sectors — IT and ITES, R&D and engineering services, shared services and back-office operations — qualify for the FDI automatic route, meaning 100% foreign ownership is permitted without prior government approval; the only requirement is post-facto reporting to RBI once funds are received and shares are allotted. A smaller set of sectors carry conditions or require government-route approval, and these conditions do shift from time to time, so it&apos;s worth confirming your specific sector&apos;s current status. Our <Link href="/india-business-setup/fdi-channels" className="text-gold-dark font-semibold hover:underline">FDI automatic and government approval routes</Link> guide covers the full mechanics of both routes.
           </p>
         </div>
       </section>
@@ -260,7 +260,7 @@ export default function GCCSetupIndiaPage() {
 
           <h3 className="text-xl font-semibold text-gray-900 mb-3">Incorporation Mechanics (SPICe+, MCA)</h3>
           <p className="text-gray-600 leading-relaxed mb-8">
-            Incorporation itself follows the same path as any other Private Limited company in India: name reservation, filing the integrated SPICe+ form with the Ministry of Corporate Affairs, obtaining a Certificate of Incorporation, and opening a bank account to receive the initial FDI inflow (our <Link href="/india-business-setup/banking-taxation" className="text-gold font-semibold hover:underline">banking and tax setup</Link> guide covers this in more detail). Our <Link href="/india-business-setup/company-formation" className="text-gold font-semibold hover:underline">SPICe+ incorporation process</Link> and <Link href="/doing-business-in-india/incorporation" className="text-gold font-semibold hover:underline">company incorporation and legal registration</Link> content covers this mechanically in full; nothing about the SPICe+ process itself differs for a GCC versus any other foreign-owned subsidiary — what differs is what happens immediately after, on the FEMA/RBI reporting side.
+            Incorporation itself follows the same path as any other Private Limited company in India: name reservation, filing the integrated SPICe+ form with the Ministry of Corporate Affairs, obtaining a Certificate of Incorporation, and opening a bank account to receive the initial FDI inflow (our <Link href="/india-business-setup/banking-taxation" className="text-gold-dark font-semibold hover:underline">banking and tax setup</Link> guide covers this in more detail). Our <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">SPICe+ incorporation process</Link> and <Link href="/doing-business-in-india/incorporation" className="text-gold-dark font-semibold hover:underline">company incorporation and legal registration</Link> content covers this mechanically in full; nothing about the SPICe+ process itself differs for a GCC versus any other foreign-owned subsidiary — what differs is what happens immediately after, on the FEMA/RBI reporting side.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mb-3">Choosing a Location</h3>
@@ -279,7 +279,7 @@ export default function GCCSetupIndiaPage() {
             Karnataka was an early mover, with a dedicated GCC policy targeting several hundred new centers and a large jobs number by the end of the decade, backed by talent-skilling initiatives and new innovation districts outside Bengaluru itself. Haryana introduced its own GCC policy in 2026, aimed at the NCR/Gurgaon corridor. Tamil Nadu runs a GCC-specific incentive scheme with its own eligibility criteria, including minimum direct-employment and company-scale benchmarks. Telangana does not yet have a dedicated GCC policy as of this writing, relying instead on its broader ICT incentive framework and single-window clearance system to compete for GCC investment. Other states are moving in the same direction, and a formal national GCC policy framework — intended to standardize definitions and incentives across states rather than leaving each state to compete on its own terms — has been under discussion since the Union Budget 2025-26 but had not been finalized as of this guide&apos;s most recent update.
           </p>
           <p className="text-gray-600 leading-relaxed mb-8">
-            The practical implication: state-level incentives (capital subsidies, stamp duty relief, employment-linked benefits, and similar) can meaningfully change the economics of where you locate a GCC, and they change faster than national tax or FEMA rules do. Confirm the current policy status and eligibility criteria for your specific state and headcount plan directly — with the relevant state&apos;s industries department, or <Link href="/contact" className="text-gold font-semibold hover:underline">with us</Link> — before treating any state incentive as settled.
+            The practical implication: state-level incentives (capital subsidies, stamp duty relief, employment-linked benefits, and similar) can meaningfully change the economics of where you locate a GCC, and they change faster than national tax or FEMA rules do. Confirm the current policy status and eligibility criteria for your specific state and headcount plan directly — with the relevant state&apos;s industries department, or <Link href="/contact" className="text-gold-dark font-semibold hover:underline">with us</Link> — before treating any state incentive as settled.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mb-3">GIFT City / IFSC as a Structuring Option</h3>
@@ -308,7 +308,7 @@ export default function GCCSetupIndiaPage() {
             ))}
           </div>
           <p className="text-gray-600 leading-relaxed">
-            Because these three filings — FC-GPR, FC-TRS, and the annual FLA return — are the ones we consistently see foreign-owned entities in India get wrong or miss, they&apos;re also the anchor of the compliance calendar below. See our broader <Link href="/india-business-setup/regulatory-compliance" className="text-gold font-semibold hover:underline">regulatory compliance requirements</Link> and <Link href="/doing-business-in-india/post-incorporation" className="text-gold font-semibold hover:underline">post-incorporation compliance obligations</Link> guides for the fuller picture beyond FEMA/RBI specifically.
+            Because these three filings — FC-GPR, FC-TRS, and the annual FLA return — are the ones we consistently see foreign-owned entities in India get wrong or miss, they&apos;re also the anchor of the compliance calendar below. See our broader <Link href="/india-business-setup/regulatory-compliance" className="text-gold-dark font-semibold hover:underline">regulatory compliance requirements</Link> and <Link href="/doing-business-in-india/post-incorporation" className="text-gold-dark font-semibold hover:underline">post-incorporation compliance obligations</Link> guides for the fuller picture beyond FEMA/RBI specifically.
           </p>
         </div>
       </section>
@@ -325,7 +325,7 @@ export default function GCCSetupIndiaPage() {
 
           <h3 className="text-xl font-semibold text-gray-900 mb-3">Safe Harbour Rules and the 2026 Margin Change</h3>
           <p className="text-gray-600 leading-relaxed mb-8">
-            Because a GCC is, by definition, providing services to its own parent rather than to unrelated third parties, the pricing of that intercompany service — and whether tax authorities accept it as arm&apos;s-length — is a first-order tax consideration, not a footnote. India&apos;s safe harbour rules give eligible captive service providers, including many GCCs, a way to have their transfer pricing accepted without a full transfer-pricing audit, provided the entity&apos;s margin on qualifying transactions meets a specified threshold. Rather than re-deriving the mechanics and figures here, see our dedicated coverage of <Link href="/blog/india-safe-harbour-rules-2026" className="text-gold font-semibold hover:underline">India&apos;s 2026 Safe Harbour Rules</Link> for the full detail on eligibility, margin thresholds, and what they mean for a GCC or subsidiary specifically.
+            Because a GCC is, by definition, providing services to its own parent rather than to unrelated third parties, the pricing of that intercompany service — and whether tax authorities accept it as arm&apos;s-length — is a first-order tax consideration, not a footnote. India&apos;s safe harbour rules give eligible captive service providers, including many GCCs, a way to have their transfer pricing accepted without a full transfer-pricing audit, provided the entity&apos;s margin on qualifying transactions meets a specified threshold. Rather than re-deriving the mechanics and figures here, see our dedicated coverage of <Link href="/blog/india-safe-harbour-rules-2026" className="text-gold-dark font-semibold hover:underline">India&apos;s 2026 Safe Harbour Rules</Link> for the full detail on eligibility, margin thresholds, and what they mean for a GCC or subsidiary specifically.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mb-3">A Worked Example — Intercompany Pricing for a Captive Service Center</h3>
@@ -338,7 +338,7 @@ export default function GCCSetupIndiaPage() {
 
           <h3 className="text-xl font-semibold text-gray-900 mb-3">DTAA Relief on Cross-Charges to the Parent</h3>
           <p className="text-gray-600 leading-relaxed">
-            Where a GCC makes payments to its parent (management fees, royalties for shared IP or software, reimbursements) or the parent receives dividend or service income from the GCC, the applicable Double Taxation Avoidance Agreement between India and the parent&apos;s home jurisdiction can reduce withholding tax rates, provided substance and documentation requirements are met. Rates vary by treaty partner, so see our region-specific guides — for example, <Link href="/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax" className="text-gold font-semibold hover:underline">India-UK DTAA withholding rates</Link> — and our note on <Link href="/blog/mail-box-dtaa-benefits" className="text-gold font-semibold hover:underline">treaty-benefit substance requirements</Link>.
+            Where a GCC makes payments to its parent (management fees, royalties for shared IP or software, reimbursements) or the parent receives dividend or service income from the GCC, the applicable Double Taxation Avoidance Agreement between India and the parent&apos;s home jurisdiction can reduce withholding tax rates, provided substance and documentation requirements are met. Rates vary by treaty partner, so see our region-specific guides — for example, <Link href="/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax" className="text-gold-dark font-semibold hover:underline">India-UK DTAA withholding rates</Link> — and our note on <Link href="/blog/mail-box-dtaa-benefits" className="text-gold-dark font-semibold hover:underline">treaty-benefit substance requirements</Link>.
           </p>
         </div>
       </section>
@@ -353,16 +353,16 @@ export default function GCCSetupIndiaPage() {
           <div className="space-y-3 mb-8">
             {complianceCalendar.map((row) => (
               <Link key={row.when} href="#inquiry-form" className="flex flex-col sm:flex-row gap-2 sm:gap-6 p-4 border rounded-lg hover:shadow-md hover:border-gold/50 transition">
-                <div className="font-bold text-gold min-w-[220px] text-sm">{row.when}</div>
+                <div className="font-bold text-gold-dark min-w-[220px] text-sm">{row.when}</div>
                 <div className="text-gray-600 text-sm leading-relaxed">{row.items}</div>
               </Link>
             ))}
           </div>
           <p className="text-gray-600 leading-relaxed mb-6">
-            This calendar is deliberately the GCC-relevant version — a larger, faster headcount ramp than a typical subsidiary, and the transfer-pricing/safe-harbour dimension layered on top of the standard filings — rather than the general case, which our <Link href="/doing-business-in-india/post-incorporation" className="text-gold font-semibold hover:underline">post-incorporation compliance obligations</Link> guide covers for any foreign-owned Indian entity. Payroll-specific compliance is covered in more depth in our <Link href="/hr-services" className="text-gold font-semibold hover:underline">payroll and HR compliance</Link> resources, and ongoing statutory audit and assurance work is covered under <Link href="/services/accounting-assurance" className="text-gold font-semibold hover:underline">statutory audit and assurance</Link>.
+            This calendar is deliberately the GCC-relevant version — a larger, faster headcount ramp than a typical subsidiary, and the transfer-pricing/safe-harbour dimension layered on top of the standard filings — rather than the general case, which our <Link href="/doing-business-in-india/post-incorporation" className="text-gold-dark font-semibold hover:underline">post-incorporation compliance obligations</Link> guide covers for any foreign-owned Indian entity. Payroll-specific compliance is covered in more depth in our <Link href="/hr-services" className="text-gold-dark font-semibold hover:underline">payroll and HR compliance</Link> resources, and ongoing statutory audit and assurance work is covered under <Link href="/services/accounting-assurance" className="text-gold-dark font-semibold hover:underline">statutory audit and assurance</Link>.
           </p>
           <p className="text-gray-700 italic">
-            Most of the missed-deadline problems we see aren&apos;t from any single filing being hard — they&apos;re from nobody owning the calendar as a whole once the excitement of incorporation wears off. If it would help to have a compliance calendar built out against your specific entity structure and headcount plan, <Link href="/contact" className="text-gold font-semibold not-italic hover:underline">that&apos;s a conversation worth having with our regulatory compliance practice</Link>.
+            Most of the missed-deadline problems we see aren&apos;t from any single filing being hard — they&apos;re from nobody owning the calendar as a whole once the excitement of incorporation wears off. If it would help to have a compliance calendar built out against your specific entity structure and headcount plan, <Link href="/contact" className="text-gold-dark font-semibold not-italic hover:underline">that&apos;s a conversation worth having with our regulatory compliance practice</Link>.
           </p>
         </div>
       </section>
@@ -406,7 +406,7 @@ export default function GCCSetupIndiaPage() {
             </Link>
           </div>
           <p className="text-gray-600 leading-relaxed">
-            We&apos;re deliberately not putting a single number on either phase here, since realistic ranges depend on specifics that vary too much to generalize responsibly — a dedicated timeline guide with phase-by-phase ranges is planned as a follow-up resource. In the meantime, our <Link href="/india-business-setup/timeline-resources" className="text-gold font-semibold hover:underline">general incorporation timeline and budgeting</Link> guide covers the non-GCC-specific baseline these phases build on.
+            We&apos;re deliberately not putting a single number on either phase here, since realistic ranges depend on specifics that vary too much to generalize responsibly — a dedicated timeline guide with phase-by-phase ranges is planned as a follow-up resource. In the meantime, our <Link href="/india-business-setup/timeline-resources" className="text-gold-dark font-semibold hover:underline">general incorporation timeline and budgeting</Link> guide covers the non-GCC-specific baseline these phases build on.
           </p>
         </div>
       </section>
@@ -419,7 +419,7 @@ export default function GCCSetupIndiaPage() {
             Getting the legal entity and compliance mechanics right is necessary but not sufficient — the GCCs that succeed operationally, per NASSCOM&apos;s own research on the topic, tend to share a few characteristics beyond compliance: clear governance linking the India team to the parent&apos;s global functions, KPIs that reflect genuine ownership rather than vendor-style output metrics, and a deliberate talent strategy rather than opportunistic hiring.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            Once the entity is operational, the recurring operational needs are largely finance and HR: bookkeeping, MIS reporting to the parent, payroll processing, and statutory HR compliance as headcount grows. This is the &ldquo;Operate&rdquo; phase our <Link href="/outsourcing" className="text-gold font-semibold hover:underline">accounting outsourcing and Virtual CFO support</Link> and <Link href="/hr-services" className="text-gold font-semibold hover:underline">payroll and HR compliance</Link> practices are built around — keeping the finance and compliance backbone reliable as the India team scales, so your local leadership can focus on the actual capability the center exists to deliver.
+            Once the entity is operational, the recurring operational needs are largely finance and HR: bookkeeping, MIS reporting to the parent, payroll processing, and statutory HR compliance as headcount grows. This is the &ldquo;Operate&rdquo; phase our <Link href="/outsourcing" className="text-gold-dark font-semibold hover:underline">accounting outsourcing and Virtual CFO support</Link> and <Link href="/hr-services" className="text-gold-dark font-semibold hover:underline">payroll and HR compliance</Link> practices are built around — keeping the finance and compliance backbone reliable as the India team scales, so your local leadership can focus on the actual capability the center exists to deliver.
           </p>
         </div>
       </section>
@@ -480,7 +480,7 @@ export default function GCCSetupIndiaPage() {
               { label: 'Payroll and HR compliance', href: '/hr-services' },
               { label: 'Regulatory compliance requirements', href: '/india-business-setup/regulatory-compliance' },
             ].map((item) => (
-              <Link key={item.href} href={item.href} className="flex items-center gap-2 p-4 border rounded-lg hover:shadow-md transition text-sm font-medium text-gray-700 hover:text-gold">
+              <Link key={item.href} href={item.href} className="flex items-center gap-2 p-4 border rounded-lg hover:shadow-md transition text-sm font-medium text-gray-700 hover:text-gold-dark">
                 <CheckCircle2 className="h-4 w-4 text-gold shrink-0" />
                 {item.label}
               </Link>
@@ -491,7 +491,7 @@ export default function GCCSetupIndiaPage() {
             <h3 className="font-semibold text-gray-900 mb-3 text-sm">If your parent company is based in one of these regions, see our region-specific India entry guide:</h3>
             <div className="flex flex-wrap gap-3">
               {regionLinks.map((r) => (
-                <Link key={r.href} href={r.href} className="text-sm text-gold hover:underline font-semibold">
+                <Link key={r.href} href={r.href} className="text-sm text-gold-dark hover:underline font-semibold">
                   {r.label} →
                 </Link>
               ))}

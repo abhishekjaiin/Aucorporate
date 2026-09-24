@@ -189,7 +189,7 @@ export default function GlobalVatComplianceAiSaasPage() {
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-6xl mx-auto px-4 grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
           <div>
-            <span className="text-sm font-semibold uppercase tracking-wider text-gold">GST/VAT Advisory &amp; Compliance</span>
+            <span className="text-sm font-semibold uppercase tracking-wider text-gold-dark">GST/VAT Advisory &amp; Compliance</span>
             <h1 className="mb-6 mt-3 text-4xl font-bold text-gray-900 md:text-5xl">
               Global VAT &amp; Sales Tax Compliance for AI &amp; SaaS Companies
             </h1>
@@ -382,7 +382,7 @@ export default function GlobalVatComplianceAiSaasPage() {
                   {g.items.map((item) => (
                     <li key={item.label} className="flex items-center justify-between text-sm">
                       {item.href ? (
-                        <Link href={item.href} className="font-semibold text-gold hover:underline">
+                        <Link href={item.href} className="font-semibold text-gold-dark hover:underline">
                           {item.label} →
                         </Link>
                       ) : (

@@ -148,10 +148,10 @@ export default function ServicesPage() {
 
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_420px] lg:px-8">
           <div className="max-w-3xl">
-            <span className="text-gold text-sm font-semibold uppercase tracking-wider">Our Services</span>
+            <span className="text-gold-dark text-sm font-semibold uppercase tracking-wider">Our Services</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mt-4 mb-6">
               <span className="text-[#081a42]">Comprehensive Solutions for</span>
-              <span className="text-gold"> Business Excellence</span>
+              <span className="text-gold-dark"> Business Excellence</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               From strategic consulting to operational excellence, we deliver integrated solutions that address your most complex business challenges and drive sustainable growth.
@@ -169,7 +169,7 @@ export default function ServicesPage() {
 
       <section className="py-16 bg-white border-b border-border">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <span className="text-gold text-sm font-semibold uppercase tracking-wider">One Partner, Every Stage</span>
+          <span className="text-gold-dark text-sm font-semibold uppercase tracking-wider">One Partner, Every Stage</span>
           <h2 className="text-2xl md:text-3xl font-bold text-[#081a42] mt-3 mb-5">A Single Team Across Your Business Lifecycle</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
             AU Corporate is a multidisciplinary consultancy founded in 2016, with teams based in New Delhi and Gurugram and a client base spanning both foreign companies entering India and domestic businesses scaling their operations here. Our team brings together Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, lawyers, ex-bankers, and industry specialists under one roof, so a single engagement can cover incorporation, accounting, tax, compliance, and advisory without you coordinating across multiple vendors.
@@ -190,7 +190,7 @@ export default function ServicesPage() {
                     <service.icon className="h-8 w-8 text-gold" />
                   </div>
                   <div className="flex-1">
-                    <h2 className="text-xl font-semibold text-foreground mb-3 group-hover:text-gold transition-colors duration-300">{service.title}</h2>
+                    <h2 className="text-xl font-semibold text-foreground mb-3 group-hover:text-gold-dark transition-colors duration-300">{service.title}</h2>
                     <p className="text-muted-foreground text-sm leading-relaxed mb-6">{service.description}</p>
                     <ul className="space-y-2 mb-6">
                       {service.features.map((feature) => (
@@ -214,7 +214,7 @@ export default function ServicesPage() {
       <section id="not-sure" className="py-24 bg-secondary/50 scroll-mt-24">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-gold text-sm font-semibold uppercase tracking-wider">Quick Guide</span>
+            <span className="text-gold-dark text-sm font-semibold uppercase tracking-wider">Quick Guide</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">Not Sure Where to Start?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Most enquiries fall into one of these situations. Find yours below and go straight to the team that handles it.</p>
           </div>
@@ -238,7 +238,7 @@ export default function ServicesPage() {
       <section className="py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-gold text-sm font-semibold uppercase tracking-wider">Industry Expertise</span>
+            <span className="text-gold-dark text-sm font-semibold uppercase tracking-wider">Industry Expertise</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">Serving Diverse Industries</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Our deep industry knowledge enables us to deliver tailored solutions that address sector-specific challenges and opportunities.</p>
           </div>
@@ -258,7 +258,7 @@ export default function ServicesPage() {
       <section className="py-24 bg-secondary/50">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-gold text-sm font-semibold uppercase tracking-wider">How It Works</span>
+            <span className="text-gold-dark text-sm font-semibold uppercase tracking-wider">How It Works</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">Our Engagement Approach</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Whichever service you engage us for, the process starts the same way — a clear scope before any commitment.</p>
           </div>
@@ -277,7 +277,7 @@ export default function ServicesPage() {
       <section className="py-24 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-gold text-sm font-semibold uppercase tracking-wider">FAQ</span>
+            <span className="text-gold-dark text-sm font-semibold uppercase tracking-wider">FAQ</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">Frequently Asked Questions</h2>
           </div>
           <FaqAccordion faqs={faqs} />

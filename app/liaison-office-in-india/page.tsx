@@ -159,11 +159,11 @@ export default function LiaisonOfficeInIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             Because a Liaison Office involves no equity capital and no shares to subscribe to, it also sits outside FEMA 20(R)&apos;s Automatic-vs-Government route framework, which governs foreign direct investment into an Indian company&apos;s share capital. A Liaison Office isn&apos;t an &quot;FDI route&quot; question at all — it&apos;s an establishment question under a different regulation entirely. If what you&apos;re actually evaluating is an equity investment into an Indian entity rather than a representative presence, the{" "}
-            <Link href="/india-business-setup/fdi-channels" className="text-gold font-semibold hover:underline">FDI Automatic vs Government route</Link> is the relevant page, not this one.
+            <Link href="/india-business-setup/fdi-channels" className="text-gold-dark font-semibold hover:underline">FDI Automatic vs Government route</Link> is the relevant page, not this one.
           </p>
           <p className="text-gray-600 leading-relaxed">
             <strong>Who this page is for:</strong> foreign companies that need an India-based presence for market research, liaison and coordination work, or exploring the market ahead of a bigger commitment — not companies that already know they need to trade, invoice, or hire at scale in India. If that&apos;s your situation, most companies end up incorporating an Indian subsidiary instead; the{" "}
-            <Link href="/india-business-setup/company-formation" className="text-gold font-semibold hover:underline">company registration guide</Link> covers that route in full.
+            <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">company registration guide</Link> covers that route in full.
           </p>
         </div>
       </section>
@@ -185,16 +185,16 @@ export default function LiaisonOfficeInIndiaPage() {
           </div>
           <p className="text-gray-600 leading-relaxed mb-4">
             See the full{" "}
-            <Link href="/branch-office-in-india" className="text-gold font-semibold hover:underline">Branch Office guide</Link>{" "}
+            <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office guide</Link>{" "}
             if a Liaison Office turns out to be too restrictive for what you actually intend to do, or the{" "}
-            <Link href="/project-office-in-india" className="text-gold font-semibold hover:underline">Project Office in India guide</Link>{" "}
+            <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office in India guide</Link>{" "}
             if you&apos;ve already secured a specific, time-bound contract rather than needing ongoing representation.
           </p>
           <p className="text-gray-600 leading-relaxed">
             If your parent company is based in Australia, the UK, or the US, the decision between a subsidiary and a lighter-touch structure also carries home-country tax consequences — CFC rules, DTAA treatment, and (for US groups) specific US filing obligations — that this page deliberately doesn&apos;t cover, because they differ by jurisdiction. For an Australian parent, see the{" "}
-            <Link href="/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india" className="text-gold font-semibold hover:underline">Australia-specific subsidiary vs branch office comparison</Link>; for a UK parent, the{" "}
-            <Link href="/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india" className="text-gold font-semibold hover:underline">UK-specific comparison</Link>; for a US parent, the{" "}
-            <Link href="/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india" className="text-gold font-semibold hover:underline">US-specific comparison</Link>.
+            <Link href="/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india" className="text-gold-dark font-semibold hover:underline">Australia-specific subsidiary vs branch office comparison</Link>; for a UK parent, the{" "}
+            <Link href="/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india" className="text-gold-dark font-semibold hover:underline">UK-specific comparison</Link>; for a US parent, the{" "}
+            <Link href="/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india" className="text-gold-dark font-semibold hover:underline">US-specific comparison</Link>.
           </p>
         </div>
       </section>
@@ -285,13 +285,13 @@ export default function LiaisonOfficeInIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed mb-8">
             The practical test is closer to substance than form. Relaying a customer&apos;s inquiry back to the parent for a decision is squarely inside the permitted, preparatory-and-auxiliary activity a Liaison Office is meant to carry out. Negotiating contract terms, agreeing pricing, or otherwise committing the parent to a deal on the ground in India is a different thing entirely — even if nothing is formally invoiced from the Liaison Office itself, that pattern of activity is what tax authorities and courts have looked at in finding a PE. Where an office&apos;s day-to-day activity is genuinely limited to research, coordination, and communication, PE exposure stays low; where local staff start acting as the parent&apos;s de facto sales or contracting function, the exposure becomes real. For a fuller picture of how India&apos;s international tax and DTAA framework applies to a foreign parent more broadly, see{" "}
-            <Link href="/services/taxation-regulatory" className="text-gold font-semibold hover:underline">International Taxation and DTAA Advisory</Link>.
+            <Link href="/services/taxation-regulatory" className="text-gold-dark font-semibold hover:underline">International Taxation and DTAA Advisory</Link>.
           </p>
 
           <h3 className="text-xl font-bold text-gray-900 mb-4">Does a Liaison Office Need GST Registration?</h3>
           <p className="text-gray-600 leading-relaxed">
             Not by default. A compliant Liaison Office isn&apos;t supplying goods or services in India — it has no revenue and no taxable outward supply — so GST registration isn&apos;t automatically triggered simply by operating one. That changes if the office&apos;s actual activity drifts into something that looks like a taxable supply, including arrangements around cost reimbursement to the parent that get mischaracterised as a service being rendered rather than genuine expense funding. The underlying test tracks the same form-versus-substance question as the PE discussion above: it&apos;s what the office actually does, not what it was approved to do, that determines the GST position. For the fuller GST framework that would apply if this becomes a live question for your structure, see{" "}
-            <Link href="/services/taxation-regulatory" className="text-gold font-semibold hover:underline">International Taxation and DTAA Advisory</Link>.
+            <Link href="/services/taxation-regulatory" className="text-gold-dark font-semibold hover:underline">International Taxation and DTAA Advisory</Link>.
           </p>
         </div>
       </section>
@@ -302,7 +302,7 @@ export default function LiaisonOfficeInIndiaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Ongoing Compliance: The Annual Activity Certificate (AAC) and Validity/Renewal</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
             A Liaison Office&apos;s central recurring compliance obligation is the <strong>Annual Activity Certificate (AAC)</strong> — an annual filing, certified by a chartered accountant, confirming that the office&apos;s activities during the year stayed within the scope RBI approved. The AAC is routed to <strong>two</strong> authorities in parallel: the AD Category-I bank through which the Liaison Office was approved, and the <strong>Directorate General of Income Tax (International Taxation)</strong>, New Delhi. This dual-authority routing is a detail worth understanding precisely — one channel confirms the activity stayed within the FEMA-approved scope, the other feeds the tax administration&apos;s own record of the office&apos;s operations. The AAC is only one part of a Liaison Office&apos;s broader compliance calendar; for the fuller picture of what registered foreign establishments in India need to stay on top of, see{" "}
-            <Link href="/india-business-setup/regulatory-compliance" className="text-gold font-semibold hover:underline">ongoing regulatory compliance</Link>.
+            <Link href="/india-business-setup/regulatory-compliance" className="text-gold-dark font-semibold hover:underline">ongoing regulatory compliance</Link>.
           </p>
 
           <h3 className="text-xl font-bold text-gray-900 mb-4">Validity and Renewal</h3>
@@ -336,7 +336,7 @@ export default function LiaisonOfficeInIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             If a Liaison Office looks like the right structure for your India presence, our team can walk through the eligibility position and the RBI/AD-bank process for your specific situation —{" "}
-            <Link href="/contact" className="text-gold font-semibold hover:underline">get in touch</Link> to start that conversation.
+            <Link href="/contact" className="text-gold-dark font-semibold hover:underline">get in touch</Link> to start that conversation.
           </p>
         </div>
       </section>

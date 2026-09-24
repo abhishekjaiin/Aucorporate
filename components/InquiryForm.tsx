@@ -23,7 +23,7 @@ export function InquiryForm({
   return (
     <div className="rounded-2xl border border-border bg-white p-6 shadow-xl lg:p-7">
       <div className="mb-5">
-        <span className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">{eyebrow}</span>
+        <span className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-dark">{eyebrow}</span>
         <h2 className="mt-2 text-2xl font-bold text-[#081a42]">{title}</h2>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{description}</p>
       </div>

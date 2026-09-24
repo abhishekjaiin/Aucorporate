@@ -11,7 +11,11 @@
   /* Brand Colors */
   --gold: #facc15;
   --gold-light: #fde047;
-  --gold-dark: #ca8a04;
+  /* #8c5f03 (not the original #ca8a04): darkened so gold text clears WCAG AA
+     4.5:1 even on off-white card backgrounds (5.05:1 vs 2.7:1 on #f3f3f5,
+     5.6:1 on white) — same hue, no change to any gold background/button/icon,
+     which all still use --gold. */
+  --gold-dark: #8c5f03;
 
   --blue: #081a42;
   --blue-light: #102a66;

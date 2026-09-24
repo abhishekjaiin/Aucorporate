@@ -27,7 +27,7 @@ export default function AboutHero() {
               About Us
             </span>
 
-            <h1 className="text-gold text-3xl sm:text-4xl md:text-5xl font-bold mt-3 sm:mt-4 mb-4 sm:mb-6">
+            <h1 className="text-gold-dark text-3xl sm:text-4xl md:text-5xl font-bold mt-3 sm:mt-4 mb-4 sm:mb-6">
               AU Corporate
             </h1>
 

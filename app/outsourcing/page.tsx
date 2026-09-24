@@ -209,12 +209,12 @@ export default function OutsourcingPage() {
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-white">
           <Reveal>
-            <span className="text-gold text-sm font-semibold uppercase">
+            <span className="text-gold-dark text-sm font-semibold uppercase">
               Finance, Accounting & Compliance
             </span>
 
             <h1 className="text-5xl font-bold mt-4 mb-6">
-              Accounting & Finance <span className="text-gold">Outsourcing</span> in India
+              Accounting & Finance <span className="text-gold-dark">Outsourcing</span> in India
             </h1>
 
             <p className="text-white/80 mb-8 max-w-2xl">
@@ -287,7 +287,7 @@ export default function OutsourcingPage() {
               className="p-6 bg-white border rounded-xl text-center hover:shadow-lg hover:border-gold/50 transition cursor-pointer"
             >
               <b.icon className="text-gold mx-auto mb-3" />
-              <div className="text-2xl font-bold text-gold">{b.value}</div>
+              <div className="text-2xl font-bold text-gold-dark">{b.value}</div>
               <div>{b.title}</div>
               <p className="text-xs text-muted-foreground">{b.description}</p>
             </ClickableReveal>
@@ -331,7 +331,7 @@ export default function OutsourcingPage() {
           <TabbedComparison tabs={outsourcingComparisons} />
 
           <p className="text-sm text-muted-foreground text-center mt-6">
-            Further reading: <Link href="/doing-business-in-india/post-incorporation" className="text-gold font-semibold hover:underline">Life After Incorporation</Link> on the build-vs-outsource decision as you scale, and <Link href="/gcc-setup-india" className="text-gold font-semibold hover:underline">GCC Setup in India</Link> for the fuller outsourcing-vs-captive comparison.
+            Further reading: <Link href="/doing-business-in-india/post-incorporation" className="text-gold-dark font-semibold hover:underline">Life After Incorporation</Link> on the build-vs-outsource decision as you scale, and <Link href="/gcc-setup-india" className="text-gold-dark font-semibold hover:underline">GCC Setup in India</Link> for the fuller outsourcing-vs-captive comparison.
           </p>
         </div>
       </section>
@@ -350,11 +350,11 @@ export default function OutsourcingPage() {
               "Optimize Continuously"
             ].map((step, i) => (
               <ClickableReveal key={step} delay={i * 0.2} className="cursor-pointer">
-                <div className="text-gold font-bold text-lg mb-2">
+                <div className="text-gold-dark font-bold text-lg mb-2">
                   0{i + 1}
                 </div>
                 <p>{step}</p>
-                <p className="mt-2 text-xs font-semibold text-gold">Talk to an expert &rarr;</p>
+                <p className="mt-2 text-xs font-semibold text-gold-dark">Talk to an expert &rarr;</p>
               </ClickableReveal>
             ))}
           </div>
@@ -422,7 +422,7 @@ export default function OutsourcingPage() {
           delay={i * 0.2}
           className="p-8 bg-white border rounded-xl hover:shadow-lg hover:border-gold/50 transition cursor-pointer"
         >
-          <div className="text-gold font-bold text-xl mb-2">
+          <div className="text-gold-dark font-bold text-xl mb-2">
             0{i + 1}
           </div>
           <p>{step}</p>
@@ -507,7 +507,7 @@ export default function OutsourcingPage() {
           delay={i * 0.2}
           className="p-8 border rounded-xl hover:shadow-lg hover:border-gold/50 transition cursor-pointer"
         >
-          <div className="text-3xl font-bold text-gold mb-2">
+          <div className="text-3xl font-bold text-gold-dark mb-2">
             {item.value}
           </div>
           <p>{item.label}</p>

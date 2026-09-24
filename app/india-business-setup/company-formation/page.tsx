@@ -94,7 +94,7 @@ export default function CompanyFormationPage() {
       {/* HERO */}
       <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20">
         <div className="mx-auto max-w-7xl px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">Company Registration in India</span>
+          <span className="text-sm font-semibold uppercase tracking-wider text-gold-dark">Company Registration in India</span>
           <h1 className="mb-3 mt-3 max-w-4xl text-4xl font-bold text-gray-900 md:text-5xl">Company Registration in India: A Complete Guide for Foreign Companies</h1>
           <p className="mb-6 text-sm text-gray-500">Last updated: 25 August 2026 — prepared by AU Corporate&apos;s taxation and regulatory compliance practice.</p>
           <p className="mb-8 max-w-3xl text-lg leading-relaxed text-gray-600">

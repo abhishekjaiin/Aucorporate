@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-const GOLD = "#facc15"
+const GOLD = "var(--gold-dark)"
 
 function FaqItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false)

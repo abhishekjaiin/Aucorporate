@@ -149,7 +149,7 @@ export default function LlpInIndiaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is an LLP in India?</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             An LLP (Limited Liability Partnership) combines the operating flexibility of a partnership with the limited liability of a company: partners run the business directly under the LLP Agreement, rather than through a board and shareholding structure, and a partner&apos;s liability is generally capped at their agreed contribution — not their personal assets — except in cases involving fraud or wrongful trading. It sits alongside the Private Limited Company as one of the entity choices available to a founder or foreign investor setting up in India — see our{" "}
-            <Link href="/india-business-setup/company-formation" className="text-gold font-semibold hover:underline">company registration guide</Link>{" "}
+            <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">company registration guide</Link>{" "}
             for the Private Limited/wholly owned subsidiary route if that turns out to be the better fit for your situation.
           </p>
 
@@ -205,7 +205,7 @@ export default function LlpInIndiaPage() {
           <div className="space-y-6">
             {registrationSteps.map((step, i) => (
               <div key={step.title} className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold text-white flex items-center justify-center font-bold text-sm">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold text-blue flex items-center justify-center font-bold text-sm">
                   {i + 1}
                 </div>
                 <div>
@@ -240,7 +240,7 @@ export default function LlpInIndiaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">LLP Registration Cost and Timeline in India</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             As with company registration, the honest answer here sits across two separate figures rather than one headline number. Government filing fees for LLP incorporation — name reservation, the FiLLiP filing, and the LLP Agreement filing — are relatively modest and vary with the LLP&apos;s total contribution amount; see our{" "}
-            <Link href="/india-business-setup/timeline-resources" className="text-gold font-semibold hover:underline">detailed setup timeline and budget breakdown</Link>{" "}
+            <Link href="/india-business-setup/timeline-resources" className="text-gold-dark font-semibold hover:underline">detailed setup timeline and budget breakdown</Link>{" "}
             for the fuller cost picture across entity types. Professional and advisory fees for drafting the LLP Agreement, coordinating apostille/attestation for a foreign partner, and managing the filing sit on top of that and vary with structural complexity.
           </p>
           <p className="text-gray-600 leading-relaxed">
@@ -272,7 +272,7 @@ export default function LlpInIndiaPage() {
           <div className="space-y-6 mb-8">
             {fdiDecisionSequence.map((item, i) => (
               <div key={item.title} className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold text-white flex items-center justify-center font-bold text-sm">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold text-blue flex items-center justify-center font-bold text-sm">
                   {i + 1}
                 </div>
                 <div>
@@ -284,7 +284,7 @@ export default function LlpInIndiaPage() {
           </div>
           <p className="text-gray-600 leading-relaxed mb-4">
             Our{" "}
-            <Link href="/india-business-setup/fdi-channels" className="text-gold font-semibold hover:underline">FDI automatic and government approval routes</Link>{" "}
+            <Link href="/india-business-setup/fdi-channels" className="text-gold-dark font-semibold hover:underline">FDI automatic and government approval routes</Link>{" "}
             guide covers the sector-by-sector position in detail for question 1 above.
           </p>
 
@@ -312,7 +312,7 @@ export default function LlpInIndiaPage() {
           <h3 className="text-xl font-bold text-gray-900 mb-4">Flat 30% Rate and Single-Level Taxation Under Section 10(2A)</h3>
           <p className="text-gray-600 leading-relaxed mb-8">
             A domestic LLP is taxed as a partnership firm for Indian income-tax purposes, not as a company — which means a flat 30% rate (plus applicable surcharge and health-and-education cess) applies to the LLP&apos;s total income, regardless of the income slab. There&apos;s no equivalent of the company route&apos;s concessional rate options (see our{" "}
-            <Link href="/services/taxation-regulatory" className="text-gold font-semibold hover:underline">taxation and regulatory advisory</Link>{" "}
+            <Link href="/services/taxation-regulatory" className="text-gold-dark font-semibold hover:underline">taxation and regulatory advisory</Link>{" "}
             coverage of the 22% concessional company rate available to most newly incorporated subsidiaries) — an LLP doesn&apos;t get a lower headline rate for being newly formed or smaller. What an LLP does get is single-level taxation on distributed profit: once the LLP has paid tax on its income, a partner&apos;s share of that profit, when paid out, is exempt from further tax in the partner&apos;s hands under Section 10(2A) of the Income-tax Act — there&apos;s no second layer of tax on the profit distribution itself, the way a company&apos;s dividend distribution can carry its own withholding-tax exposure when profits move to shareholders.
           </p>
 
@@ -365,12 +365,12 @@ export default function LlpInIndiaPage() {
           <h3 className="text-xl font-bold text-gray-900 mb-4">Does Your LLP Need a Statutory Audit?</h3>
           <p className="text-gray-600 leading-relaxed mb-4">
             Not every LLP needs a statutory audit — it&apos;s triggered once the LLP crosses a turnover or partner-contribution threshold. The figures most commonly cited across professional guidance, under <strong>Section 34(4) of the LLP Act, 2008</strong> and <strong>Rule 24(8) of the LLP Rules, 2009</strong>, are <strong>₹40 lakh in annual turnover or ₹25 lakh in partner contribution</strong>, whichever is crossed first. We&apos;re citing this rule reference because it&apos;s consistently reported across professional sources, but it hasn&apos;t been independently verified against the primary Rules text — confirm it with your advisor before relying on it for a compliance decision, and we&apos;d recommend treating any Form 8 late-filing penalty figure you&apos;ve read elsewhere with the same caution until confirmed. (GST registration, separately, isn&apos;t triggered by LLP status at all — it follows the same turnover thresholds that apply to any Indian business entity; see our{" "}
-            <Link href="/india-business-setup/banking-taxation" className="text-gold font-semibold hover:underline">banking and tax setup guide</Link>{" "}
+            <Link href="/india-business-setup/banking-taxation" className="text-gold-dark font-semibold hover:underline">banking and tax setup guide</Link>{" "}
             if that&apos;s the next compliance question on your list.)
           </p>
           <p className="text-gray-600 leading-relaxed">
             Between Form 8, Form 11, and monitoring whether the audit threshold has been crossed, this is the kind of recurring compliance calendar that&apos;s genuinely worth having a retained advisory relationship for, rather than tracking manually each year — not because any one filing is complicated on its own, but because missing a due date compounds into penalty exposure that&apos;s avoidable with basic calendar discipline. These LLP-specific filings are only part of the picture — see our{" "}
-            <Link href="/india-business-setup/regulatory-compliance" className="text-gold font-semibold hover:underline">full six-regime compliance framework</Link>{" "}
+            <Link href="/india-business-setup/regulatory-compliance" className="text-gold-dark font-semibold hover:underline">full six-regime compliance framework</Link>{" "}
             for the labour, environmental, data-protection and IP obligations that apply to any India entity, LLP or company, once it&apos;s operating.
           </p>
         </div>
@@ -382,7 +382,7 @@ export default function LlpInIndiaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">LLP vs. Private Limited Company: Which Should You Choose?</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
             Our own{" "}
-            <Link href="/india-business-setup/company-formation" className="text-gold font-semibold hover:underline">company registration guide</Link>{" "}
+            <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">company registration guide</Link>{" "}
             already notes, in passing, that an LLP is &quot;less commonly used for FDI-funded operating businesses than a Private Limited Company&quot; — the section below explains why, rather than just repeating the claim.
           </p>
           <div className="overflow-x-auto mb-8">

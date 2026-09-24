@@ -51,7 +51,7 @@ export default function ContactPage() {
       {/* HERO */}
       <section className="py-20 text-center">
         <h1 className="text-4xl font-bold">
-          Contact <span style={{ color: GOLD }}>AU Corporate</span>
+          Contact <span style={{ color: "var(--gold-dark)" }}>AU Corporate</span>
         </h1>
         <p className="text-gray-500 mt-3">
           We’re here to help your business grow globally.
@@ -110,7 +110,7 @@ export default function ContactPage() {
               {offices.map((o, index) => (
                 <div key={index} className="p-4 border rounded-xl">
                   <h3 className="font-semibold">{o.region}</h3>
-                  <p style={{ color: GOLD }} className="text-sm">{o.city}</p>
+                  <p style={{ color: "var(--gold-dark)" }} className="text-sm">{o.city}</p>
                 </div>
               ))}
             </div>

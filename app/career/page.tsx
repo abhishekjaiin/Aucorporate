@@ -78,13 +78,13 @@ export default function CareerPage() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
 
-            <span className="text-gold text-sm font-semibold uppercase tracking-wider">
+            <span className="text-gold-dark text-sm font-semibold uppercase tracking-wider">
               Join Our Team
             </span>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-4 mb-6">
               <span className="text-white">Build Your Career at</span>{" "}
-              <span className="text-gold">AU Corporate</span>
+              <span className="text-gold-dark">AU Corporate</span>
             </h1>
 
             <p className="text-white/80 text-lg leading-relaxed">

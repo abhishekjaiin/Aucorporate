@@ -27,7 +27,7 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
 
             <Link href="/" className="flex flex-col mb-4">
-              <span className="text-xl sm:text-2xl font-bold tracking-wide text-yellow-400">
+              <span className="text-xl sm:text-2xl font-bold tracking-wide text-gold-dark">
                 AU Corporate<span className="align-super text-xs">&reg;</span>
               </span>
 
@@ -46,7 +46,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 aria-label="Visit AU Corporate LinkedIn Page"
-                className="inline-flex items-center gap-2 text-gray-600 hover:text-yellow-400 transition"
+                className="inline-flex items-center gap-2 text-gray-600 hover:text-gold-dark transition"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="text-sm">LinkedIn</span>
@@ -57,7 +57,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 aria-label="Visit AU Corporate Instagram Page"
-                className="inline-flex items-center gap-2 text-gray-600 hover:text-yellow-400 transition"
+                className="inline-flex items-center gap-2 text-gray-600 hover:text-gold-dark transition"
               >
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
@@ -70,7 +70,7 @@ export function Footer() {
 
           {/* QUICK LINKS */}
           <div>
-            <h3 className="text-yellow-400 font-semibold mb-4 text-sm sm:text-base">
+            <h3 className="text-gold-dark font-semibold mb-4 text-sm sm:text-base">
               Quick Links
             </h3>
 
@@ -79,7 +79,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-600 hover:text-yellow-400 text-sm transition"
+                    className="text-gray-600 hover:text-gold-dark text-sm transition"
                   >
                     {link.label}
                   </Link>
@@ -90,7 +90,7 @@ export function Footer() {
 
           {/* COMPANY */}
           <div>
-            <h3 className="text-yellow-400 font-semibold mb-4 text-sm sm:text-base">
+            <h3 className="text-gold-dark font-semibold mb-4 text-sm sm:text-base">
               Company
             </h3>
 
@@ -99,7 +99,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-600 hover:text-yellow-400 text-sm transition"
+                    className="text-gray-600 hover:text-gold-dark text-sm transition"
                   >
                     {link.label}
                   </Link>
@@ -110,7 +110,7 @@ export function Footer() {
 
           {/* CONTACT */}
           <div>
-            <h3 className="text-yellow-400 font-semibold mb-4 text-sm sm:text-base">
+            <h3 className="text-gold-dark font-semibold mb-4 text-sm sm:text-base">
               Contact
             </h3>
 
@@ -122,7 +122,7 @@ export function Footer() {
                 <a
                   href="mailto:partner@theaucorp.com"
                   aria-label="Email AU Corporate at partner@theaucorp.com"
-                  className="text-gray-600 hover:text-yellow-400 text-sm break-all"
+                  className="text-gray-600 hover:text-gold-dark text-sm break-all"
                 >
                   partner@theaucorp.com
                 </a>
@@ -134,7 +134,7 @@ export function Footer() {
                 <a
                   href="tel:+919999010513"
                   aria-label="Call AU Corporate at +91-9999010513"
-                  className="text-gray-600 hover:text-yellow-400 text-sm"
+                  className="text-gray-600 hover:text-gold-dark text-sm"
                 >
                   +91-9999010513
                 </a>
@@ -166,14 +166,14 @@ export function Footer() {
 
               <Link
                 href="/privacy"
-                className="text-gray-500 hover:text-yellow-400 text-xs sm:text-sm transition"
+                className="text-gray-500 hover:text-gold-dark text-xs sm:text-sm transition"
               >
                 Privacy Policy
               </Link>
 
               <Link
                 href="/terms"
-                className="text-gray-500 hover:text-yellow-400 text-xs sm:text-sm transition"
+                className="text-gray-500 hover:text-gold-dark text-xs sm:text-sm transition"
               >
                 Terms & Conditions
               </Link>

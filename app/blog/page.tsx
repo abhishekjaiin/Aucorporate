@@ -158,7 +158,7 @@ export default function BlogPage() {
                     <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: categoryStyles[featuredPost.category].dot }} />
                     {featuredPost.category}
                   </span>
-                  <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: GOLD }}>
+                  <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--gold-dark)" }}>
                     Featured
                   </span>
                 </div>

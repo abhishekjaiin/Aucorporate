@@ -58,7 +58,7 @@ export default function OidarGstRegistrationIndiaPage() {
       {/* HERO */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">GST Advisory &amp; Compliance</span>
+          <span className="text-sm font-semibold uppercase tracking-wider text-gold-dark">GST Advisory &amp; Compliance</span>
           <h1 className="mb-6 mt-3 text-4xl font-bold text-gray-900 md:text-5xl">
             OIDAR &amp; GST Registration in India for Foreign SaaS and AI Companies
           </h1>
@@ -70,7 +70,7 @@ export default function OidarGstRegistrationIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             This page walks through when that obligation applies, what it actually requires (registration, filing, an Indian representative), what happens if it&apos;s ignored, and how it&apos;s genuinely different from the GST rules that apply once a company has an Indian entity. If you&apos;re past the compliance question and actively weighing whether to set up in India, our{" "}
-            <Link href="/india-entry-for-saas-companies" className="text-gold font-semibold hover:underline">
+            <Link href="/india-entry-for-saas-companies" className="text-gold-dark font-semibold hover:underline">
               India entry guide for SaaS and AI companies
             </Link>{" "}
             picks up from there.
@@ -91,7 +91,7 @@ export default function OidarGstRegistrationIndiaPage() {
           <div className="p-6 border-l-4 border-gold bg-secondary/30 rounded-r-lg mb-4">
             <p className="text-gray-700 leading-relaxed">
               <strong>This is not the domestic GST turnover threshold.</strong> An Indian company (or an Indian subsidiary of a foreign parent) only has to register for GST once its aggregate turnover crosses Rs 20 lakh for services or Rs 40 lakh for goods in most states — see our{" "}
-              <Link href="/services/taxation-regulatory" className="text-gold font-semibold hover:underline">
+              <Link href="/services/taxation-regulatory" className="text-gold-dark font-semibold hover:underline">
                 taxation &amp; regulatory practice
               </Link>{" "}
               for how that threshold and the ordinary GST compliance calendar work for an already-incorporated entity. A foreign company with no Indian entity, billing Indian customers directly, is under a completely different rule with no equivalent threshold. Confusing the two is a genuinely easy mistake to make — some public guidance on this topic runs the domestic threshold and the OIDAR rule together as if they&apos;re the same test, and they aren&apos;t.
@@ -162,7 +162,7 @@ export default function OidarGstRegistrationIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed mt-4">
             If you&apos;re seeing hybrid signals — a reseller conversation, an EOR hire, an India-specific fundraising conversation — that&apos;s the zone to actively watch, not park. And if you have a signed customer requiring India-registered invoicing, a hiring need beyond what an EOR can support, or a tender that requires an India entity, that&apos;s where this page&apos;s job ends and our{" "}
-            <Link href="/india-entry-for-saas-companies" className="text-gold font-semibold hover:underline">
+            <Link href="/india-entry-for-saas-companies" className="text-gold-dark font-semibold hover:underline">
               India entry guide for SaaS and AI companies
             </Link>{" "}
             picks up — entity structuring, FDI eligibility, the tax picture post-incorporation, and exactly how your OIDAR registration transitions once you have an entity.
@@ -239,7 +239,7 @@ export default function OidarGstRegistrationIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             The second is <strong>Significant Economic Presence</strong> under Section 9(9) of the Income-tax Act, 2025 (a recently-commenced Act, so worth confirming the citation is still current at the time you&apos;re reading this) — a completely separate, direct-tax exposure that can apply to a foreign company with sustained, systematic transactions with Indian customers, independent of GST status entirely. It&apos;s a real consideration, but it&apos;s not this page&apos;s subject, and it&apos;s not the same regime as OIDAR — conflating the two is a mistake worth actively avoiding. Our{" "}
-            <Link href="/doing-business-in-india/incorporation" className="text-gold font-semibold hover:underline">
+            <Link href="/doing-business-in-india/incorporation" className="text-gold-dark font-semibold hover:underline">
               incorporation-timing guide
             </Link>{" "}
             covers Significant Economic Presence and the broader business-connection risk in full; this page&apos;s scope stays on GST/OIDAR.
@@ -253,18 +253,18 @@ export default function OidarGstRegistrationIndiaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">How This Differs From GST Once You Have an Indian Entity</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Everything above applies specifically to a foreign company with no Indian entity. The picture changes once you incorporate — GST then follows the <strong>ordinary domestic turnover threshold</strong> (Rs 20 lakh for services, Rs 40 lakh for goods in most states), the same rule any other Indian business operates under, rather than the no-threshold OIDAR/NTOR rule this page describes. Our{" "}
-            <Link href="/services/taxation-regulatory" className="text-gold font-semibold hover:underline">
+            <Link href="/services/taxation-regulatory" className="text-gold-dark font-semibold hover:underline">
               taxation &amp; regulatory practice
             </Link>{" "}
             covers that domestic GST regime, along with the fuller direct tax and compliance calendar that applies once you have an entity on the ground. And GST registration itself works differently at that stage too, alongside the rest of the entity-setup process — our{" "}
-            <Link href="/india-business-setup/company-formation" className="text-gold font-semibold hover:underline">
+            <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">
               company registration guide
             </Link>{" "}
             covers SPICe+ and incorporation mechanics in full.
           </p>
           <p className="text-gray-600 leading-relaxed">
             The important thing to understand is that an existing OIDAR registration doesn&apos;t simply vanish the day you incorporate, and it doesn&apos;t automatically merge into the new entity&apos;s GST registration either — they&apos;re two separate registrations under two separate legal persons (the foreign parent and the new Indian subsidiary), and the old one needs to be formally wound down once the new one is in place. That cutover is worth planning deliberately, with your advisor confirming the specific cancellation mechanics, rather than assuming it resolves itself. If incorporation is realistically on your horizon, our{" "}
-            <Link href="/india-entry-for-saas-companies" className="text-gold font-semibold hover:underline">
+            <Link href="/india-entry-for-saas-companies" className="text-gold-dark font-semibold hover:underline">
               India entry guide for SaaS and AI companies
             </Link>{" "}
             walks through exactly what changes, including this transition, in the section on GST after incorporation.
@@ -278,7 +278,7 @@ export default function OidarGstRegistrationIndiaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">A Note on Global Digital-Services Tax Trends</h2>
           <p className="text-gray-600 leading-relaxed">
             India isn&apos;t alone in taxing digital services at the point of consumption rather than the point of incorporation — the EU&apos;s VAT OSS regime, the UK&apos;s post-Brexit VAT rules for digital services, and similar frameworks elsewhere all work on a broadly comparable logic: if you&apos;re selling digital products to consumers in a jurisdiction, that jurisdiction increasingly expects to collect tax on the sale regardless of where you&apos;re based. What&apos;s relevant for a company already navigating India&apos;s OIDAR regime is that this is part of a broader, genuine global trend, not an isolated India-specific quirk, and companies expanding into several markets at once are increasingly running this same qualifying question — do we have an obligation here, based purely on where our customers are — in more than one country simultaneously. If you&apos;re tracking this obligation in more than one market at once, our{" "}
-            <Link href="/global-vat-compliance-ai-saas-companies" className="text-gold font-semibold hover:underline">
+            <Link href="/global-vat-compliance-ai-saas-companies" className="text-gold-dark font-semibold hover:underline">
               global VAT &amp; sales-tax compliance guide for AI and SaaS companies
             </Link>{" "}
             covers registration and filing across the US, EU, UK, Japan, and other markets alongside India.

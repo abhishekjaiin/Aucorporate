@@ -156,14 +156,14 @@ export default function BranchOfficeInIndiaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is a Branch Office in India?</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             A Branch Office is not a separate legal entity. It is an extension of the foreign parent company operating inside India — there is no separate Indian shareholding, no separate board, and no separate corporate personality. Legally, the parent company itself is doing business in India through the branch. This is the single biggest difference between a Branch Office and a wholly owned subsidiary, which is a distinct Indian company incorporated under the Companies Act with its own legal identity. If your intent is to build a fully independent Indian operating company rather than a narrowly scoped extension of the parent, the{" "}
-            <Link href="/india-business-setup/company-formation" className="text-gold font-semibold hover:underline">company registration guide</Link> covers that route in full.
+            <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">company registration guide</Link> covers that route in full.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             The statutory basis for a Branch Office sits in foreign exchange law, not company law. Section 6(6) of the Foreign Exchange Management Act, 1999 (FEMA) empowers the RBI to regulate the establishment in India of a branch, office, or other place of business by a person resident outside India. The operative regulations made under that power are the Foreign Exchange Management (Establishment in India of a Branch Office or a Liaison Office or a Project Office or Any Other Place of Business) Regulations, 2016 — commonly cited as FEMA 22(R)/2016-RB. This is the framework currently in force, and everything on this page is written against it.
           </p>
           <p className="text-gray-600 leading-relaxed">
             <strong>Who this page is for:</strong> foreign companies evaluating a specific, narrowly scoped India presence — export/import trading, professional or consultancy services, IT/software delivery, R&amp;D on behalf of the parent, or representing a foreign airline or shipping line — rather than a full commercial Indian operating company. If a Branch Office turns out to be too restrictive for what you actually intend to do in India, most companies in that position end up incorporating an Indian subsidiary instead; see the{" "}
-            <Link href="/india-business-setup/company-formation" className="text-gold font-semibold hover:underline">company registration guide</Link> for that process.
+            <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">company registration guide</Link> for that process.
           </p>
         </div>
       </section>
@@ -188,15 +188,15 @@ export default function BranchOfficeInIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             If a Branch Office looks too commercially active for what you actually need — pure market research or coordination, with no revenue in India at all — see the full{" "}
-            <Link href="/liaison-office-in-india" className="text-gold font-semibold hover:underline">Liaison Office in India guide</Link>{" "}
+            <Link href="/liaison-office-in-india" className="text-gold-dark font-semibold hover:underline">Liaison Office in India guide</Link>{" "}
             for the lighter-touch alternative. If instead you&apos;ve already secured a specific, time-bound contract rather than needing an ongoing commercial presence, see the{" "}
-            <Link href="/project-office-in-india" className="text-gold font-semibold hover:underline">Project Office in India guide</Link>.
+            <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office in India guide</Link>.
           </p>
           <p className="text-gray-600 leading-relaxed">
             If your parent company is based in Australia, the UK, or the US, the decision between a subsidiary and a Branch Office also carries home-country tax consequences — CFC rules, DTAA treatment, and (for US groups) specific US filing obligations — that this page deliberately does not cover, because they differ by jurisdiction. For an Australian parent, see the{" "}
-            <Link href="/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india" className="text-gold font-semibold hover:underline">Australia-specific subsidiary vs branch office comparison</Link>; for a UK parent, the{" "}
-            <Link href="/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india" className="text-gold font-semibold hover:underline">UK-specific comparison</Link>; for a US parent, the{" "}
-            <Link href="/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india" className="text-gold font-semibold hover:underline">US-specific comparison</Link>.
+            <Link href="/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india" className="text-gold-dark font-semibold hover:underline">Australia-specific subsidiary vs branch office comparison</Link>; for a UK parent, the{" "}
+            <Link href="/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india" className="text-gold-dark font-semibold hover:underline">UK-specific comparison</Link>; for a US parent, the{" "}
+            <Link href="/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india" className="text-gold-dark font-semibold hover:underline">US-specific comparison</Link>.
           </p>
         </div>
       </section>
@@ -236,7 +236,7 @@ export default function BranchOfficeInIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
             <strong>This is a different mechanism from the FDI equity Automatic-vs-Government route</strong> that applies when a foreign investor is subscribing to equity shares in an Indian company under FEMA 20(R) — that route governs capital investment into an Indian entity&apos;s share capital, not the establishment of a Branch Office. The two frameworks share similar vocabulary (&quot;Automatic&quot; and &quot;Approval/Government&quot;) but sit under different regulations and answer different questions. If what you&apos;re actually evaluating is an equity investment into an Indian subsidiary rather than a Branch Office,{" "}
-            <Link href="/india-business-setup/fdi-channels" className="text-gold font-semibold hover:underline">the FDI Automatic vs Government route</Link> is the relevant page.
+            <Link href="/india-business-setup/fdi-channels" className="text-gold-dark font-semibold hover:underline">the FDI Automatic vs Government route</Link> is the relevant page.
           </p>
           <p className="text-gray-600 leading-relaxed">
             Either way, an <strong>AD Category-I bank</strong> — a bank specifically authorised by RBI to deal in foreign exchange at this level — is the applicant&apos;s actual point of contact. The application is filed with the AD bank, which reviews it and either processes it directly (Automatic route) or forwards it to RBI with its recommendation (Approval route).
@@ -308,7 +308,7 @@ export default function BranchOfficeInIndiaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Ongoing Compliance: The Annual Activity Certificate (AAC)</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             A Branch Office&apos;s central recurring compliance obligation is the <strong>Annual Activity Certificate (AAC)</strong> — an annual filing, certified by a chartered accountant, confirming that the Branch Office&apos;s activities during the year stayed within the scope RBI originally approved. This is separate from — and should not be confused with — the FC-GPR/FC-TRS/FLA reporting stack that applies to an Indian company carrying foreign equity investment on its books; a Branch Office doesn&apos;t have equity shareholding in the same sense, so it doesn&apos;t file those returns. See{" "}
-            <Link href="/india-business-setup/regulatory-compliance" className="text-gold font-semibold hover:underline">ongoing regulatory compliance</Link> for how that separate reporting stack works for entities that do carry foreign investment.
+            <Link href="/india-business-setup/regulatory-compliance" className="text-gold-dark font-semibold hover:underline">ongoing regulatory compliance</Link> for how that separate reporting stack works for entities that do carry foreign investment.
           </p>
           <p className="text-gray-600 leading-relaxed mb-8">
             The AAC is filed annually, following the close of the financial year, and is routed to <strong>two</strong> authorities in parallel: the AD Category-I bank through which the Branch Office was approved, and the <strong>Directorate General of Income Tax (International Taxation)</strong>. This dual-authority routing — one channel confirming the activity stayed within the FEMA-approved scope, the other feeding the tax administration&apos;s own record of the branch&apos;s operations — is a detail worth understanding precisely rather than treating as a single generic &quot;annual filing.&quot;
@@ -345,7 +345,7 @@ export default function BranchOfficeInIndiaPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             If a Branch Office looks like the right structure for your India presence, our team can walk through the RBI approval and AD-bank process for your specific situation —{" "}
-            <Link href="/contact" className="text-gold font-semibold hover:underline">get in touch</Link> to start that conversation.
+            <Link href="/contact" className="text-gold-dark font-semibold hover:underline">get in touch</Link> to start that conversation.
           </p>
         </div>
       </section>
