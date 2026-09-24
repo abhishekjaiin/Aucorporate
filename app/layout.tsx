@@ -207,11 +207,12 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* ORGANIZATION SCHEMA */}
-<Script
+        {/* ORGANIZATION SCHEMA — plain script tag, not next/script: this is inert
+    JSON-LD data with no executable logic, so it doesn't need (and
+    shouldn't use) a hydration-blocking loading strategy. */}
+<script
   id="organization-schema"
   type="application/ld+json"
-  strategy="beforeInteractive"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
       "@context": "https://schema.org",
@@ -266,11 +267,10 @@ export default function RootLayout({
   }}
 />
 
-{/* WEBSITE SCHEMA */}
-<Script
+{/* WEBSITE SCHEMA — plain script tag, see note above */}
+<script
   id="website-schema"
   type="application/ld+json"
-  strategy="beforeInteractive"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
       "@context": "https://schema.org",
@@ -291,11 +291,10 @@ export default function RootLayout({
   }}
 />
 
-{/* PROFESSIONAL SERVICE SCHEMA */}
-<Script
+{/* PROFESSIONAL SERVICE SCHEMA — plain script tag, see note above */}
+<script
   id="professional-service-schema"
   type="application/ld+json"
-  strategy="beforeInteractive"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
       "@context": "https://schema.org",
@@ -350,11 +349,10 @@ export default function RootLayout({
   }}
 />
 
-      {/* SERVICE CATALOG SCHEMA - 10 Core Services */}
-      <Script
+      {/* SERVICE CATALOG SCHEMA - 10 Core Services — plain script tag, see note above */}
+      <script
         id="service-catalog-schema"
         type="application/ld+json"
-        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
