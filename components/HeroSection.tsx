@@ -24,18 +24,21 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24"
       style={{ backgroundColor: NAVY }}
     >
-      {heroSlides.map((slide, i) => (
-        <Image
-          key={slide.image}
-          src={slide.image}
-          alt={slide.imageAlt}
-          fill
-          priority={i === 0}
-          sizes="100vw"
-          className="object-cover transition-opacity duration-1000 ease-in-out"
-          style={{ opacity: activeSlide === i ? 1 : 0 }}
-        />
-      ))}
+      {/* Only the active slide's image is mounted — with all 3 mounted at
+          once (even at opacity 0), the browser laid out and fetched all 3
+          full-bleed images on first load since they're all positioned in
+          the viewport, which meant the LCP image was competing for
+          bandwidth with two images nobody could see yet. This trades the
+          crossfade transition for a real reduction in initial page weight. */}
+      <Image
+        key={heroSlides[activeSlide].image}
+        src={heroSlides[activeSlide].image}
+        alt={heroSlides[activeSlide].imageAlt}
+        fill
+        priority={activeSlide === 0}
+        sizes="100vw"
+        className="object-cover"
+      />
       <div className="absolute inset-0" style={{ backgroundColor: NAVY, opacity: 0.72 }} />
       <div className="absolute inset-0 bg-gradient-to-t from-[#081A42] via-[#081A42]/60 to-transparent" />
 
