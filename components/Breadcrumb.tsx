@@ -13,7 +13,13 @@ export type BreadcrumbItem = {
  * breadcrumb schema with no visible breadcrumb UI at all).
  */
 export function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
-  const withHome: BreadcrumbItem[] = [{ label: "Home", href: "/" }, ...items]
+  // "AU Corporate", not "Home": Google's SERP breadcrumb rich result reads
+  // this BreadcrumbList schema's first item name directly, and a generic
+  // "Home" gives it no brand string to associate with the site — a likely
+  // contributor to Google/Bing showing the raw domain instead of the brand
+  // name in search results across every page. Keeping the visible trail
+  // and the schema in sync (this component's whole reason for existing).
+  const withHome: BreadcrumbItem[] = [{ label: "AU Corporate", href: "/" }, ...items]
 
   const schema = {
     "@context": "https://schema.org",

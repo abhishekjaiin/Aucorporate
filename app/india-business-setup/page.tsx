@@ -409,13 +409,10 @@ export default function IndiaBusinessSetupHub() {
                 name: 'AU Corporate',
                 url: 'https://www.theaucorp.com',
               },
-              breadcrumb: {
-                '@type': 'BreadcrumbList',
-                itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
-                  { '@type': 'ListItem', position: 2, name: 'India Business Setup', item: 'https://www.theaucorp.com/india-business-setup' },
-                ],
-              },
+              // No nested breadcrumb here: the <Breadcrumb> component used
+              // above in this same page already emits its own standalone
+              // BreadcrumbList block — a second one here would be redundant/
+              // duplicate structured data for the same page.
             }),
           }}
         />
