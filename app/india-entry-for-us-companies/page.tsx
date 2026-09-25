@@ -109,12 +109,19 @@ export default function IndiaEntryForUSCompanies() {
         <p className="text-gray-700 mb-4">
           Any transaction between the US parent and its Indian subsidiary — management fees, cost allocations, intercompany services, IP royalties — is a related-party transaction reviewed on both sides: Section 482 of the Internal Revenue Code on the US side, India&apos;s own transfer pricing rules (restructured as Sections 161-173 under the Income-tax Act, 2025, effective April 1, 2026) on the Indian side. Both require arm&apos;s-length pricing, but the real risk isn&apos;t aggressive pricing — it&apos;s inconsistency: the figure reported to Indian authorities not matching what shows up on Schedule M of the US parent&apos;s Form 5471. That mismatch is one of the easiest things for either tax authority to flag, which is why keeping both filings reconciled to the same underlying numbers is the single highest-value thing a joint US-India advisory relationship does.
         </p>
-        <p className="text-gray-700">
+        <p className="text-gray-700 mb-4">
           Form 3CEB (the Indian transfer pricing audit report, due October 31 for the current cycle) is proposed to be replaced by a more data-rich Form 48 from Tax Year 2026-27 under draft Income-tax Rules, 2026 — still a proposal, not yet finalized. See our full{' '}
           <Link href="/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary" className="text-yellow-600 hover:text-yellow-700 font-semibold">
             transfer pricing &amp; Section 482 guide
           </Link>{' '}
           for the complete breakdown, including Safe Harbour Rules for IT/ITeS services.
+        </p>
+        <p className="text-gray-700">
+          For a subsidiary with large, recurring intercompany transactions, a bilateral{' '}
+          <Link href="/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            Advance Pricing Agreement (APA)
+          </Link>{' '}
+          can bind both the CBDT and the IRS to the same figure for up to nine assessment years, though it&apos;s slower and more resource-intensive to negotiate than annual Form 3CEB compliance.
         </p>
       </div>
 
