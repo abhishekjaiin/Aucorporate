@@ -71,26 +71,32 @@ const structures = [
   {
     title: "Private Limited Company",
     description: "For entrepreneurs, startups, and businesses operating commercially in India. The most common structure for genuine India operations.",
+    href: "/india-business-setup/company-formation",
   },
   {
     title: "Wholly Owned Subsidiary",
     description: "For foreign companies seeking full control over their Indian operations, with limited liability and access to the automatic FDI route in most sectors.",
+    href: "/blog/wholly-owned-subsidiary",
   },
   {
     title: "Branch Office",
     description: "For eligible foreign companies carrying out permitted representative or specific commercial activities in India, subject to RBI approval.",
+    href: "/branch-office-in-india",
   },
   {
     title: "Liaison Office",
     description: "For foreign companies establishing an initial representative presence in India, with restrictions on commercial activity.",
+    href: "/liaison-office-in-india",
   },
   {
     title: "Project Office",
     description: "For foreign companies executing a specific, time-bound project in India.",
+    href: "/project-office-in-india",
   },
   {
     title: "LLP",
     description: "For businesses where a Limited Liability Partnership structure suits the ownership and operating model.",
+    href: "/llp-in-india",
   },
 ]
 
@@ -346,15 +352,16 @@ export default function HomePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {structures.map((s) => (
-              <InquiryCard
+              <Link
                 key={s.title}
-                title={s.title}
-                description={s.description}
+                href={s.href}
                 className="block p-6 border rounded-xl hover:shadow-lg hover:border-yellow-300 transition-all duration-300"
-                titleClassName="font-semibold mb-2"
-                titleStyle={{ fontFamily: "var(--font-heading)", color: NAVY }}
-                descriptionClassName="text-sm text-gray-500"
-              />
+              >
+                <h3 className="font-semibold mb-2 font-heading text-blue">
+                  {s.title}
+                </h3>
+                <p className="text-sm text-gray-500">{s.description}</p>
+              </Link>
             ))}
           </div>
 
