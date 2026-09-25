@@ -302,8 +302,10 @@ export default function RootLayout({
       address: [
         {
           "@type": "PostalAddress",
+          streetAddress: "4O8 Surya Kiran Building, 19 KG Marg",
           addressLocality: "New Delhi",
           addressRegion: "Delhi",
+          postalCode: "110001",
           addressCountry: "IN",
         },
         {

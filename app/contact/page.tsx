@@ -35,7 +35,7 @@ const offices = [
   {
     region: "India (HQ)",
     city: "New Delhi",
-    address: "New Delhi",
+    address: "4O8 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001",
   },
   {
     region: "India",
@@ -110,7 +110,7 @@ export default function ContactPage() {
               {offices.map((o, index) => (
                 <div key={index} className="p-4 border rounded-xl">
                   <h3 className="font-semibold">{o.region}</h3>
-                  <p style={{ color: "var(--gold-dark)" }} className="text-sm">{o.city}</p>
+                  <p className="text-sm text-gray-600">{o.address}</p>
                 </div>
               ))}
             </div>
