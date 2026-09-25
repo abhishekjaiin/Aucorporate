@@ -93,6 +93,27 @@
   --color-gold-dark: var(--gold-dark);
   --color-blue: var(--blue);
   --color-blue-light: var(--blue-light);
+
+  /* Explicit user instruction (2026-09-25): no separate "gold" look anywhere
+     on the site — every yellow should be the one bright brand yellow used by
+     the logo/icons. Tailwind's own yellow-400 through yellow-900 utilities
+     are used in 100+ files sitewide (buttons, borders, links, stat numbers)
+     and the 500/600/700 shades in particular render as a visibly different,
+     more amber/orange "gold" than --gold. Overriding the scale here — one
+     line, applies everywhere those classes are already used — instead of
+     hand-editing every file, which would be slower and far more error-prone
+     for the same visual result. */
+  --color-yellow-50: var(--gold-light);
+  --color-yellow-100: var(--gold-light);
+  --color-yellow-200: var(--gold-light);
+  --color-yellow-300: var(--gold);
+  --color-yellow-400: var(--gold);
+  --color-yellow-500: var(--gold);
+  --color-yellow-600: var(--gold);
+  --color-yellow-700: var(--gold);
+  --color-yellow-800: var(--gold);
+  --color-yellow-900: var(--gold);
+  --color-yellow-950: var(--gold);
 }
 
 @layer base {
