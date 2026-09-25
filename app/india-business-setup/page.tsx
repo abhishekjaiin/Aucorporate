@@ -4,7 +4,7 @@ import { Breadcrumb } from '@/components/Breadcrumb'
 import { FaqAccordion } from '@/components/FaqAccordion'
 import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 import { ClickableReveal } from '@/components/ClickableReveal'
-import { ArrowRight, CheckCircle, Globe, Zap, AlertCircle, Timer, Clock, IndianRupee, Layers } from 'lucide-react'
+import { ArrowRight, CheckCircle, Zap, AlertCircle, Timer, Clock, IndianRupee, Layers } from 'lucide-react'
 
 const entitySnapshot = [
   {
@@ -43,6 +43,10 @@ const timelineGlance = [
 
 const hubFaqs = [
   {
+    q: 'What’s the difference between this guide and the Doing Business in India guide?',
+    a: 'This guide covers the mechanical process of India business setup once you’ve decided to incorporate — entity types, the SPICe+ filing, FDI routes, documents, banking, and timelines. Our Doing Business in India guide covers the strategic decisions that usually come before and after that: whether India is the right market, which entry route fits your business, and how your priorities shift once you’re operating. Most companies use both — that guide to decide and plan, this one to execute.',
+  },
+  {
     q: 'Where should I start if I’m setting up a business in India for the first time?',
     a: 'Start by confirming the two things that determine everything downstream: which entity type fits what you actually want to do in India, and whether your sector falls under the Automatic Route or needs Government Route approval. Those two answers dictate the timeline, the documentation, and which of this guide’s five sections you need first. If you’re still validating the market opportunity itself, our Why India overview is the right starting point instead.',
   },
@@ -80,48 +84,34 @@ export default function IndiaBusinessSetupHub() {
   const setupSteps = [
     {
       step: 1,
-      title: 'Why India?',
-      description: "Understand India's economic potential and market opportunities",
-      href: '/doing-business-in-india/why-india',
-      icon: Globe,
-    },
-    {
-      step: 2,
       title: 'FDI Channels',
       description: 'Learn automatic and government approval routes for investment',
       href: '/india-business-setup/fdi-channels',
       icon: Zap,
     },
     {
-      step: 3,
+      step: 2,
       title: 'Company Formation',
       description: 'Complete guide to registering your Indian entity',
       href: '/india-business-setup/company-formation',
       icon: CheckCircle,
     },
     {
-      step: 4,
+      step: 3,
       title: 'Regulatory Compliance',
       description: 'Navigate legal requirements and statutory filings',
       href: '/india-business-setup/regulatory-compliance',
       icon: CheckCircle,
     },
     {
-      step: 5,
+      step: 4,
       title: 'Banking & Taxation',
       description: 'Setup banking accounts and understand tax obligations',
       href: '/india-business-setup/banking-taxation',
       icon: CheckCircle,
     },
     {
-      step: 6,
-      title: 'Life After Incorporation',
-      description: 'Strategic priorities as you scale — finance function, governance, second-year mistakes',
-      href: '/doing-business-in-india/post-incorporation',
-      icon: CheckCircle,
-    },
-    {
-      step: 7,
+      step: 5,
       title: 'Timeline & Resources',
       description: 'Budgeting, timelines, and helpful resources',
       href: '/india-business-setup/timeline-resources',
@@ -141,14 +131,21 @@ export default function IndiaBusinessSetupHub() {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               Complete India Business Setup Guide
             </h1>
-            <p className="mb-4 text-sm text-gray-500">Last updated: 23 September 2026 — prepared by AU Corporate&apos;s company registration and compliance practice.</p>
-            <p className="text-xl text-gray-600 mb-8">
-              Setting up in India means working through market entry, incorporation, compliance, and banking — usually in that order. This guide walks through each stage, with links to the detail you need at each one.
+            <p className="mb-4 text-sm text-gray-500">Last updated: 25 September 2026 — prepared by AU Corporate&apos;s company registration and compliance practice.</p>
+            <p className="text-xl text-gray-600 mb-4">
+              India business setup for a foreign company means working through entity selection, FDI approval, incorporation, compliance, and banking — usually in that order. This guide walks through each stage, with links to the detail you need at each one.
             </p>
-            <div className="flex gap-4">
+            <p className="mb-8 text-sm text-gray-500">
+              Still deciding if and how to enter India, rather than ready to execute the setup itself? See our{' '}
+              <Link href="/doing-business-in-india" className="underline hover:text-gray-700">
+                Doing Business in India
+              </Link>{' '}
+              guide instead — that page covers the strategic entry decision; this one covers the mechanics of getting registered, banked and compliant.
+            </p>
+            <div className="flex flex-wrap gap-4">
               <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
-                <Link href="/doing-business-in-india/why-india">
-                  Get Started <ArrowRight className="ml-2 w-4 h-4" />
+                <Link href="/india-business-setup/company-formation">
+                  Start Your Setup <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
               <Button asChild variant="outline">
@@ -214,6 +211,9 @@ export default function IndiaBusinessSetupHub() {
             </Link>{' '}
             if any of those structures fit your plans.
           </p>
+          <p className="max-w-4xl leading-relaxed text-sm text-gray-500 mb-16">
+            You may also see Sole Proprietorship, Partnership Firm, and Section 8 (non-profit) Company listed as &ldquo;business structures in India&rdquo; elsewhere — these are domestic-founder structures that don&apos;t accept direct foreign incorporation or FDI in the way described above, so they sit outside the scope of this guide.
+          </p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="border-2 border-green-200 rounded-lg p-6 bg-green-50">
@@ -241,12 +241,19 @@ export default function IndiaBusinessSetupHub() {
         </div>
       </section>
 
-      {/* SEVEN-STEP FRAMEWORK */}
+      {/* FIVE-STEP SETUP FRAMEWORK */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">The Path to Setting Up in India</h2>
-          <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
-            Each stage builds on the last — start wherever you are today.
+          <h2 className="text-4xl font-bold text-center mb-4">The 5 Stages of India Business Setup</h2>
+          <p className="text-center text-gray-600 mb-4 max-w-2xl mx-auto">
+            Once you&apos;ve decided to set up in India, this is the mechanical path from FDI route to a fully operational entity — start wherever you are today.
+          </p>
+          <p className="text-center text-sm text-gray-500 mb-16 max-w-2xl mx-auto">
+            Still deciding <em>whether</em> and <em>how</em> to enter India rather than ready to execute? Our{' '}
+            <Link href="/doing-business-in-india/why-india" className="text-yellow-700 font-semibold hover:underline">
+              Why India
+            </Link>{' '}
+            overview covers that decision first.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -275,6 +282,20 @@ export default function IndiaBusinessSetupHub() {
                 </Link>
               )
             })}
+          </div>
+
+          <div className="mt-10 max-w-2xl mx-auto">
+            <Link
+              href="/doing-business-in-india/post-incorporation"
+              className="group flex items-center justify-between gap-4 p-5 bg-white border rounded-lg hover:shadow-lg hover:border-yellow-400 transition"
+            >
+              <div>
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">After setup</p>
+                <h3 className="font-semibold text-gray-900 group-hover:text-yellow-600">Life After Incorporation</h3>
+                <p className="text-gray-600 text-sm mt-1">Strategic priorities once you&apos;re operational — finance function, governance, second-year mistakes.</p>
+              </div>
+              <ArrowRight className="w-4 h-4 text-yellow-400 flex-shrink-0 group-hover:translate-x-1 transition" />
+            </Link>
           </div>
         </div>
       </section>
@@ -369,6 +390,32 @@ export default function IndiaBusinessSetupHub() {
                 name: f.q,
                 acceptedAnswer: { '@type': 'Answer', text: f.a },
               })),
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: 'Complete India Business Setup Guide',
+              url: 'https://www.theaucorp.com/india-business-setup',
+              description:
+                'India business setup guide for foreign companies — entity types, FDI routes, formation, compliance, banking and realistic timelines in one place.',
+              dateModified: '2026-09-25',
+              isPartOf: {
+                '@type': 'WebSite',
+                name: 'AU Corporate',
+                url: 'https://www.theaucorp.com',
+              },
+              breadcrumb: {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.theaucorp.com' },
+                  { '@type': 'ListItem', position: 2, name: 'India Business Setup', item: 'https://www.theaucorp.com/india-business-setup' },
+                ],
+              },
             }),
           }}
         />

@@ -27,7 +27,7 @@ const pages: Page[] = [
   { path: "/services", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-11" },
 
   // 10 Service Pillars
-  { path: "/india-business-setup", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-23" },
+  { path: "/india-business-setup", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-25" },
   { path: "/services/accounting-assurance", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-09-11" },
   { path: "/hr-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-09-11" },
   { path: "/services/taxation-regulatory", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-14" },
