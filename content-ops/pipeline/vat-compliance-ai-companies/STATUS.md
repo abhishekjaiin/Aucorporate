@@ -15,8 +15,8 @@ Jurisdiction data constraint: user confirmed — state "87 jurisdictions" as the
 | 1 | seo-researcher | done | 01-serp-research.md | Key finding: differentiation angle (AI usage-billing vs SaaS subscription) is evidence-based but VAT/GST-specific deemed-supplier extension to AI API marketplaces not directly sourced - only India CGST 9(5) notified categories + commercial MoR analogs. Cannibalization risk flagged for Stage 5 to resolve via distinct target queries. |
 | 2 | keyword-intent-analyst | done | 02-keyword-intent-map.md | Primary: "VAT and GST on AI usage-based billing (tokens, API calls & compute credits)"; co-primary: "AI API marketplace VAT/GST deemed-supplier compliance". Resolves cannibalization - genuinely distinct from existing SaaS page. Semrush still out of API units, volumes unverified throughout. |
 | 3 | competitor-reverse-engineer | done | 03-competitor-analysis.md | Confirmed gap: no competitor combines usage-billing classification + marketplace/deemed-supplier liability + global-and-India scope. Missing everywhere: decision framework, MoR-vs-deemed-supplier distinction, prepaid-vs-consumption VAT timing, India seller/exporter-side coverage (all India content found is buyer/importer-side only). |
-| 4 | content-gap-analyst | in_progress | 04-content-gap.md | |
-| 5 | au-corporate-strategist | pending | 05-au-positioning.md | |
+| 4 | content-gap-analyst | done | 04-content-gap.md | 7-item Minimum Coverage list + 7-item Differentiation list, each traced to a specific Stage 3 finding. Jurisdiction-fabrication constraint enforced in 3 places in the doc. |
+| 5 | au-corporate-strategist | in_progress | 05-au-positioning.md | |
 
 ## Checkpoints
 - Checkpoint 1 (Research + Keyword Strategy): not reached
