@@ -13,7 +13,7 @@ const GOLD = "#facc15"
 
 function SectionHeading({ children, icon }: { children: React.ReactNode; icon?: React.ReactNode }) {
   return (
-    <h2 className="flex items-center gap-3 text-2xl font-semibold mt-12 mb-4" style={{ color: NAVY }}>
+    <h2 className="flex items-center gap-3 text-2xl font-semibold mt-12 mb-4 text-blue">
       <span aria-hidden="true" className="inline-block h-6 w-1.5 rounded-full bg-gradient-to-b from-[#BC002D] to-[#facc15]" />
       {children}
       {icon}
@@ -325,7 +325,7 @@ export default function BlogPost() {
               </pattern>
               <rect width="100%" height="100%" fill="url(#seigaiha-quickref)" />
             </svg>
-            <h2 className="relative font-bold text-lg mb-3 flex items-center gap-2" style={{ color: NAVY }}>
+            <h2 className="relative font-bold text-lg mb-3 flex items-center gap-2 text-blue">
               <Sparkles size={18} style={{ color: JAPAN_RED }} /> Quick Reference: The BIS Announcement
             </h2>
             <ul className="relative space-y-2 text-sm text-gray-700">
@@ -362,7 +362,7 @@ export default function BlogPost() {
           >
             <KanjiWatermark char="縁" className="-right-4 -top-8" />
             <Quote aria-hidden="true" size={28} className="absolute -top-2 left-4 opacity-20" style={{ color: JAPAN_RED }} />
-            <p className="font-medium relative" style={{ color: NAVY }}>
+            <p className="font-medium relative text-blue">
               The relationship is therefore moving beyond the traditional &ldquo;Japanese manufacturing in India&rdquo; model, toward: Japanese technology + Japanese capital + Indian talent + Indian market + Indian manufacturing capabilities.
             </p>
           </blockquote>
@@ -381,10 +381,10 @@ export default function BlogPost() {
               { icon: Handshake, label: "R&D, GCC & Engineering Hub" },
             ].map(({ icon: Icon, label }) => (
               <div key={label} className="flex flex-col items-center text-center gap-2">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full" style={{ backgroundColor: GOLD }}>
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold">
                   <Icon size={20} className="text-[#081a42]" />
                 </span>
-                <span className="text-xs font-semibold" style={{ color: NAVY }}>{label}</span>
+                <span className="text-xs font-semibold text-blue">{label}</span>
               </div>
             ))}
           </div>
@@ -466,7 +466,7 @@ export default function BlogPost() {
             <Handshake aria-hidden="true" size={80} className="absolute -right-4 -bottom-4 opacity-10 text-white" />
             <div className="relative flex items-center gap-2 mb-4">
               <Handshake size={18} style={{ color: GOLD }} />
-              <span className="text-xs font-bold uppercase tracking-wider" style={{ color: GOLD }}>How AU Corporate Can Help</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-gold">How AU Corporate Can Help</span>
             </div>
             <ul className="relative space-y-2 text-sm text-white/85 mb-0 list-disc list-inside">
               <li><strong className="text-white">India entry strategy</strong> — evaluating entity structures, FDI/FEMA considerations, and location decisions</li>
@@ -526,11 +526,11 @@ export default function BlogPost() {
             <SakuraBranch className="pointer-events-none absolute -bottom-6 -left-6 h-20 w-20 opacity-[0.08]" />
             <div className="relative mb-3 flex items-center gap-2">
               <Hanko label="相談" size={28} />
-              <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: NAVY }}>
+              <span className="text-xs font-semibold uppercase tracking-wider text-blue">
                 Japan Desk Enquiry
               </span>
             </div>
-            <h3 className="relative text-base font-bold mb-1" style={{ color: NAVY }}>
+            <h3 className="relative text-base font-bold mb-1 text-blue">
               Planning Your India Entry?
             </h3>
             <p className="relative text-xs text-gray-500 mb-4">

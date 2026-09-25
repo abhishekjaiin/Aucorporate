@@ -46,7 +46,7 @@ export default function HeroSection() {
 
         <HeroCarousel onActiveChange={setActiveSlide} />
 
-        <p className="mb-9 sm:mb-10 text-xs sm:text-sm font-medium tracking-wide" style={{ color: GOLD }}>
+        <p className="mb-9 sm:mb-10 text-xs sm:text-sm font-medium tracking-wide text-gold">
           India Market Entry &nbsp;•&nbsp; Corporate Advisory &nbsp;•&nbsp; Tax &nbsp;•&nbsp; Accounting &nbsp;•&nbsp; Compliance &nbsp;•&nbsp; HR &amp; Payroll
         </p>
 

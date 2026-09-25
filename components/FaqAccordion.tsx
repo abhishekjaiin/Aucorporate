@@ -13,8 +13,8 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         className="w-full flex justify-between items-center text-left gap-4"
         aria-expanded={open}
       >
-        <span className="font-semibold" style={{ fontFamily: "var(--font-heading)" }}>{q}</span>
-        <span className="text-2xl leading-none shrink-0" style={{ color: GOLD }}>{open ? "−" : "+"}</span>
+        <span className="font-semibold font-heading">{q}</span>
+        <span className="text-2xl leading-none shrink-0 text-gold">{open ? "−" : "+"}</span>
       </button>
       {open && <p className="text-gray-600 mt-3 text-sm leading-relaxed">{a}</p>}
     </div>

@@ -271,7 +271,7 @@ export default function HomePage() {
       {/* ================= VALUE PROP / LIFECYCLE ================= */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+          <h2 className="text-3xl font-bold mb-4 font-heading text-blue">
             India Is Full of Opportunity. We Make It Easier to Navigate.
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto mb-4">
@@ -305,7 +305,7 @@ export default function HomePage() {
       <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
 
-          <h2 className="text-3xl font-bold text-center mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+          <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
             Complete Business Support for India
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
@@ -322,7 +322,7 @@ export default function HomePage() {
                 <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
                   <service.icon size={20} style={{ color: GOLD }} />
                 </div>
-                <h3 className="font-semibold" style={{ fontFamily: "var(--font-heading)" }}>
+                <h3 className="font-semibold font-heading">
                   {service.title}
                 </h3>
                 <p className="text-sm text-gray-500 mt-2">
@@ -337,7 +337,7 @@ export default function HomePage() {
       {/* ================= BUSINESS STRUCTURE ================= */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+          <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
             What's the Right Structure for Your India Business?
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
@@ -369,7 +369,7 @@ export default function HomePage() {
       {/* ================= INDUSTRIES ================= */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+          <h2 className="text-3xl font-bold mb-4 font-heading text-blue">
             Industries We Work With
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-10">
@@ -393,7 +393,7 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+            <h2 className="text-3xl font-bold mb-4 font-heading text-blue">
               Growing Together. Building Value.
             </h2>
             <p className="text-gray-600 mb-4">
@@ -406,9 +406,9 @@ export default function HomePage() {
               <Link href="/about">Know More About Us</Link>
             </Button>
           </div>
-          <div className="p-8 rounded-2xl" style={{ backgroundColor: NAVY }}>
+          <div className="p-8 rounded-2xl bg-blue">
             <p className="text-yellow-400 text-sm font-semibold mb-3 tracking-wide uppercase">Our Approach</p>
-            <p className="text-white/90 text-lg leading-relaxed" style={{ fontFamily: "var(--font-heading)" }}>
+            <p className="text-white/90 text-lg leading-relaxed font-heading">
               One Partner. Multiple Business Needs. AU Corporate brings market entry, accounting, tax, compliance, and advisory together — so you don&apos;t have to coordinate five different providers.
             </p>
           </div>
@@ -418,7 +418,7 @@ export default function HomePage() {
       {/* ================= WHY AU CORPORATE ================= */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+          <h2 className="text-3xl font-bold text-center mb-12 font-heading text-blue">
             Why Businesses Choose AU Corporate
           </h2>
 
@@ -446,7 +446,7 @@ export default function HomePage() {
       {/* ================= HOW WE WORK ================= */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+          <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
             A Simple, Structured Approach
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-14">
@@ -463,13 +463,13 @@ export default function HomePage() {
                 >
                   {item.step}
                 </div>
-                <h3 className="font-semibold text-lg mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+                <h3 className="font-semibold text-lg mb-2 font-heading">
                   {item.title}
                 </h3>
                 <p className="text-sm text-gray-500">
                   {item.description}
                 </p>
-                <p className="mt-2 text-xs font-semibold" style={{ color: "var(--gold-dark)" }}>Talk to an expert &rarr;</p>
+                <p className="mt-2 text-xs font-semibold text-gold-dark">Talk to an expert &rarr;</p>
               </ClickableReveal>
             ))}
           </div>
@@ -483,10 +483,10 @@ export default function HomePage() {
       </section>
 
       {/* ================= INDIA MARKET ENTRY / COUNTRY LINKS ================= */}
-      <section className="relative py-24 text-white overflow-hidden" style={{ backgroundColor: NAVY }}>
+      <section className="relative py-24 text-white overflow-hidden bg-blue">
         <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
 
-          <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)" }}>
+          <h2 className="text-3xl font-bold mb-4 font-heading">
             Planning to Expand Into India?
           </h2>
 
@@ -496,7 +496,7 @@ export default function HomePage() {
 
           <div className="grid sm:grid-cols-2 gap-4 mb-10 text-left">
             <Link href="/india-business-setup" className="block p-6 bg-white/10 border border-white/20 rounded-xl backdrop-blur-md hover:bg-white/20 transition">
-              <h3 className="font-semibold mb-2" style={{ color: GOLD, fontFamily: "var(--font-heading)" }}>
+              <h3 className="font-semibold mb-2 text-gold font-heading">
                 India Business Setup
               </h3>
               <p className="text-white/70 text-sm">
@@ -505,7 +505,7 @@ export default function HomePage() {
             </Link>
 
             <Link href="/doing-business-in-india" className="block p-6 bg-white/10 border border-white/20 rounded-xl backdrop-blur-md hover:bg-white/20 transition">
-              <h3 className="font-semibold mb-2" style={{ color: GOLD, fontFamily: "var(--font-heading)" }}>
+              <h3 className="font-semibold mb-2 text-gold font-heading">
                 Market Entry
               </h3>
               <p className="text-white/70 text-sm">
@@ -553,7 +553,7 @@ export default function HomePage() {
       {/* ================= FAQ ================= */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+          <h2 className="text-3xl font-bold text-center mb-12 font-heading text-blue">
             Frequently Asked Questions
           </h2>
           <FaqAccordion faqs={faqs} />
@@ -578,7 +578,7 @@ export default function HomePage() {
       {/* ================= INSIGHTS ================= */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+          <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
             Stay Informed. Stay Ahead.
           </h2>
           <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">
@@ -592,16 +592,16 @@ export default function HomePage() {
                 href={`/blog/${post.slug}`}
                 className="p-6 bg-white border rounded-xl hover:shadow-lg transition-all duration-300 flex flex-col"
               >
-                <span className="text-xs font-semibold uppercase tracking-wide mb-3" style={{ color: "var(--gold-dark)" }}>
+                <span className="text-xs font-semibold uppercase tracking-wide mb-3 text-gold-dark">
                   {post.category}
                 </span>
-                <h3 className="font-semibold mb-2 flex-1" style={{ fontFamily: "var(--font-heading)" }}>
+                <h3 className="font-semibold mb-2 flex-1 font-heading">
                   {post.title}
                 </h3>
                 <p className="text-sm text-gray-500 mb-4">
                   {post.excerpt}
                 </p>
-                <span className="text-sm font-semibold" style={{ color: NAVY }}>
+                <span className="text-sm font-semibold text-blue">
                   Read More →
                 </span>
               </Link>
@@ -619,13 +619,13 @@ export default function HomePage() {
       {/* ================= RELATED RESOURCES ================= */}
       <section className="py-16 bg-white border-t">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-8" style={{ fontFamily: "var(--font-heading)", color: NAVY }}>
+          <h2 className="text-2xl font-bold mb-8 font-heading text-blue">
             Related Resources
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link href="/services/taxation-regulatory" className="p-6 border rounded-lg hover:shadow-md transition group">
-              <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+              <h3 className="font-semibold mb-2 font-heading">
                 Taxation &amp; Regulatory Services
               </h3>
               <p className="text-sm text-gray-600">
@@ -634,7 +634,7 @@ export default function HomePage() {
             </Link>
 
             <Link href="/doing-business-in-india" className="p-6 border rounded-lg hover:shadow-md transition group">
-              <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+              <h3 className="font-semibold mb-2 font-heading">
                 Complete India Entry Guide
               </h3>
               <p className="text-sm text-gray-600">
@@ -643,7 +643,7 @@ export default function HomePage() {
             </Link>
 
             <Link href="/services/accounting-assurance" className="p-6 border rounded-lg hover:shadow-md transition group">
-              <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+              <h3 className="font-semibold mb-2 font-heading">
                 Accounting &amp; Assurance Services
               </h3>
               <p className="text-sm text-gray-600">
@@ -652,7 +652,7 @@ export default function HomePage() {
             </Link>
 
             <Link href="/gcc-setup-india" className="p-6 border rounded-lg hover:shadow-md transition group">
-              <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+              <h3 className="font-semibold mb-2 font-heading">
                 GCC Setup in India
               </h3>
               <p className="text-sm text-gray-600">
@@ -661,7 +661,7 @@ export default function HomePage() {
             </Link>
 
             <Link href="/oidar-gst-registration-india" className="p-6 border rounded-lg hover:shadow-md transition group">
-              <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+              <h3 className="font-semibold mb-2 font-heading">
                 OIDAR &amp; GST Registration for Foreign SaaS Companies
               </h3>
               <p className="text-sm text-gray-600">
@@ -670,7 +670,7 @@ export default function HomePage() {
             </Link>
 
             <Link href="/india-entry-for-saas-companies" className="p-6 border rounded-lg hover:shadow-md transition group">
-              <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+              <h3 className="font-semibold mb-2 font-heading">
                 India Entry for AI &amp; SaaS Companies
               </h3>
               <p className="text-sm text-gray-600">
@@ -679,7 +679,7 @@ export default function HomePage() {
             </Link>
 
             <Link href="/global-vat-compliance-ai-saas-companies" className="p-6 border rounded-lg hover:shadow-md transition group">
-              <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>
+              <h3 className="font-semibold mb-2 font-heading">
                 Global VAT &amp; Sales Tax Compliance
               </h3>
               <p className="text-sm text-gray-600">
@@ -701,9 +701,9 @@ export default function HomePage() {
       </section>
 
       {/* ================= FINAL CTA ================= */}
-      <section className="py-20 text-center text-white" style={{ backgroundColor: NAVY }}>
+      <section className="py-20 text-center text-white bg-blue">
         <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "var(--font-heading)" }}>
+          <h2 className="text-3xl font-bold mb-4 font-heading">
             Ready to Build Your Business in India?
           </h2>
           <p className="text-white/70 mb-8">

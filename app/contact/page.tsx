@@ -66,7 +66,7 @@ export default function ContactPage() {
             const Icon = info.icon
             const content = (
               <>
-                <Icon className="h-6 w-6 mb-3" style={{ color: GOLD }} />
+                <Icon className="h-6 w-6 mb-3 text-gold" />
                 <h2 className="font-semibold">{info.title}</h2>
                 <p className="text-sm text-gray-500">{info.description}</p>
                 <p className="text-sm font-medium mt-2">{info.value}</p>

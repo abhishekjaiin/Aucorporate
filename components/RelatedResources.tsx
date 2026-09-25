@@ -10,7 +10,7 @@ type RelatedLink = {
 export function RelatedResources({ links }: { links: RelatedLink[] }) {
   return (
     <div className="mt-12 pt-8 border-t">
-      <h2 className="text-xl font-bold mb-4" style={{ color: "#081A42" }}>
+      <h2 className="text-xl font-bold mb-4 text-blue">
         Related Resources
       </h2>
       <div className="grid sm:grid-cols-2 gap-4 mb-6">

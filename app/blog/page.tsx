@@ -158,18 +158,18 @@ export default function BlogPage() {
                     <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: categoryStyles[featuredPost.category].dot }} />
                     {featuredPost.category}
                   </span>
-                  <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--gold-dark)" }}>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-gold-dark">
                     Featured
                   </span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-3 group-hover:underline decoration-2 underline-offset-4" style={{ color: NAVY }}>
+                <h2 className="text-2xl sm:text-3xl font-bold mb-3 group-hover:underline decoration-2 underline-offset-4 text-blue">
                   {featuredPost.title}
                 </h2>
                 <p className="text-gray-500 mb-6">{featuredPost.desc}</p>
                 <div className="flex items-center gap-4 text-sm text-gray-400 mb-6">
                   <span>{featuredPost.date}</span>
                 </div>
-                <span className="inline-flex items-center gap-2 font-semibold text-sm w-fit" style={{ color: NAVY }}>
+                <span className="inline-flex items-center gap-2 font-semibold text-sm w-fit text-blue">
                   Read Full Article
                   <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </span>

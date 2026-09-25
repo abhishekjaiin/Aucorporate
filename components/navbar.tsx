@@ -237,7 +237,7 @@ export function Navbar() {
                 >
                   <div className="flex overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl">
                     {/* Navy service-line rail, matching the /services hub's own icons */}
-                    <div className="w-[62%] py-4" style={{ backgroundColor: "#081a42" }}>
+                    <div className="w-[62%] py-4 bg-blue">
                       <Link href="/services" className="mx-2 mb-2 flex items-center justify-between rounded-lg px-4 py-2 text-sm font-semibold text-yellow-400 hover:bg-white/10">
                         All Services <ArrowRight className="h-4 w-4" aria-hidden="true" />
                       </Link>
@@ -353,7 +353,7 @@ export function Navbar() {
                   </div>
                 )
               })}
-              <Link href="/contact" onClick={closeMobile} className="mt-4 block rounded-xl p-4" style={{ backgroundColor: "#081a42" }}>
+              <Link href="/contact" onClick={closeMobile} className="mt-4 block rounded-xl p-4 bg-blue">
                 <span className="block text-sm font-semibold text-white">Not sure which entity type fits?</span>
                 <span className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-yellow-400">Talk to an expert <ArrowRight className="h-3 w-3" aria-hidden="true" /></span>
               </Link>
@@ -372,7 +372,7 @@ export function Navbar() {
               ))}
               <p className="pb-2 pt-4 text-xs font-semibold uppercase tracking-wider text-gray-400">Specialist / Industry-Specific</p>
               {specialistServiceLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
-              <Link href="/contact" onClick={closeMobile} className="mt-4 block rounded-xl p-4" style={{ backgroundColor: "#081a42" }}>
+              <Link href="/contact" onClick={closeMobile} className="mt-4 block rounded-xl p-4 bg-blue">
                 <span className="block text-sm font-semibold text-white">Not sure where to start?</span>
                 <span className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-yellow-400">Talk to an expert <ArrowRight className="h-3 w-3" aria-hidden="true" /></span>
               </Link>
