@@ -16,8 +16,8 @@ Jurisdiction data constraint: user confirmed — state "87 jurisdictions" as the
 | 2 | keyword-intent-analyst | done | 02-keyword-intent-map.md | Primary: "VAT and GST on AI usage-based billing (tokens, API calls & compute credits)"; co-primary: "AI API marketplace VAT/GST deemed-supplier compliance". Resolves cannibalization - genuinely distinct from existing SaaS page. Semrush still out of API units, volumes unverified throughout. |
 | 3 | competitor-reverse-engineer | done | 03-competitor-analysis.md | Confirmed gap: no competitor combines usage-billing classification + marketplace/deemed-supplier liability + global-and-India scope. Missing everywhere: decision framework, MoR-vs-deemed-supplier distinction, prepaid-vs-consumption VAT timing, India seller/exporter-side coverage (all India content found is buyer/importer-side only). |
 | 4 | content-gap-analyst | done | 04-content-gap.md | 7-item Minimum Coverage list + 7-item Differentiation list, each traced to a specific Stage 3 finding. Jurisdiction-fabrication constraint enforced in 3 places in the doc. |
-| 5 | au-corporate-strategist | in_progress | 05-au-positioning.md | |
+| 5 | au-corporate-strategist | done | 05-au-positioning.md | 3 service lines only (GST Advisory, Accounting/Outsourcing as real filing mechanism, Compliance/Regulatory framing). Right-to-win: OpenRouter tax-ID docs as citable primary source, extends existing oidar-gst-registration-india into outbound export-of-services (s.2(6)) angle, honest-uncertainty discipline, decision framework no competitor has. Cannibalization guidance given for 2 sibling pages. |
 
 ## Checkpoints
-- Checkpoint 1 (Research + Keyword Strategy): not reached
+- Checkpoint 1 (Research + Keyword Strategy): presented to user, awaiting decision
 - Checkpoint 2 (Content Architecture): not reached
