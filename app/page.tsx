@@ -197,11 +197,11 @@ const process = [
 
 /* LIFECYCLE */
 const lifecycle = [
-  { title: "Enter", description: "Market entry & structuring" },
-  { title: "Establish", description: "Company formation & registrations" },
-  { title: "Operate", description: "Accounting, tax & payroll" },
-  { title: "Comply", description: "Corporate & regulatory compliance" },
-  { title: "Grow", description: "Advisory & strategic support" },
+  { title: "Enter", description: "Market entry & structuring", href: "/doing-business-in-india" },
+  { title: "Establish", description: "Company formation & registrations", href: "/india-business-setup/company-formation" },
+  { title: "Operate", description: "Accounting, tax & payroll", href: "/outsourcing" },
+  { title: "Comply", description: "Corporate & regulatory compliance", href: "/india-business-setup/regulatory-compliance" },
+  { title: "Grow", description: "Advisory & strategic support", href: "/services" },
 ]
 
 /* FAQ */
@@ -290,14 +290,15 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center items-stretch gap-4">
             {lifecycle.map((l, i) => (
               <div key={l.title} className="flex items-center gap-4">
-                <InquiryCard
-                  title={l.title}
-                  description={l.description}
+                <Link
+                  href={l.href}
                   className="w-32 p-4 rounded-xl border border-gray-200 block hover:shadow-md hover:border-yellow-300 transition"
-                  titleClassName="font-bold mb-1"
-                  titleStyle={{ color: ROYAL_BLUE, fontFamily: "var(--font-heading)" }}
-                  descriptionClassName="text-xs text-gray-500"
-                />
+                >
+                  <h3 className="font-bold mb-1 font-heading" style={{ color: ROYAL_BLUE }}>
+                    {l.title}
+                  </h3>
+                  <p className="text-xs text-gray-500">{l.description}</p>
+                </Link>
                 {i < lifecycle.length - 1 && (
                   <ArrowRight className="hidden sm:block shrink-0" size={18} style={{ color: GOLD }} />
                 )}
