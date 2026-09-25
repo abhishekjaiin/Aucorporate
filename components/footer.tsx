@@ -155,7 +155,9 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-yellow-400 shrink-0 mt-0.5" />
 
                 <span className="text-gray-600 text-sm">
-                  New Delhi & Gurugram, India
+                  4O8 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001
+                  <br />
+                  &amp; Gurugram, India
                 </span>
               </div>
 
