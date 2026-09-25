@@ -171,7 +171,7 @@ export function Navbar() {
 
               {activeMenu === "dbi" && (
                 <div
-                  className="fixed left-1/2 top-20 z-50 w-[min(1040px,calc(100vw-2rem))] -translate-x-1/2 pt-2"
+                  className="fixed left-1/2 top-20 z-50 w-[min(1040px,calc(100vw-2rem))] -translate-x-1/2"
                   onMouseEnter={cancelClose}
                   onMouseLeave={scheduleClose}
                 >
@@ -231,7 +231,7 @@ export function Navbar() {
 
               {activeMenu === "services" && (
                 <div
-                  className="fixed left-1/2 top-20 z-50 w-[min(640px,calc(100vw-2rem))] -translate-x-1/2 pt-2"
+                  className="fixed left-1/2 top-20 z-50 w-[min(640px,calc(100vw-2rem))] -translate-x-1/2"
                   onMouseEnter={cancelClose}
                   onMouseLeave={scheduleClose}
                 >
@@ -304,7 +304,7 @@ export function Navbar() {
 
               {activeMenu === "about" && (
                 <div
-                  className="absolute right-0 top-full z-50 w-[220px] pt-2"
+                  className="absolute right-0 top-full z-50 w-[220px]"
                   onMouseEnter={cancelClose}
                   onMouseLeave={scheduleClose}
                 >
