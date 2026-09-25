@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
@@ -103,11 +103,35 @@ export function Navbar() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null)
   const [mobileMenu, setMobileMenu] = useState<string | null>(null)
   const [mobileDbiSub, setMobileDbiSub] = useState<string | null>(null)
+  const closeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const closeMobile = () => {
     setIsOpen(false)
     setMobileMenu(null)
     setMobileDbiSub(null)
+  }
+
+  // The DBI/Services dropdown panels render fixed to the viewport (so they
+  // can't overflow off-screen on narrower widths), which visually detaches
+  // them from their trigger button — there's empty page between the two.
+  // Closing on the trigger's plain onMouseLeave meant crossing that gap
+  // closed the menu before the cursor ever reached the panel. openMenu/
+  // scheduleClose/cancelClose give the panel itself a brief window to
+  // "catch" the hover (via the same handlers) before the menu closes.
+  const openMenu = (key: string) => {
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current)
+    setActiveMenu(key)
+  }
+  const scheduleClose = () => {
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current)
+    // 400ms, not the usual ~200ms hover-intent default: since the DBI/Services
+    // panels render centered in the viewport (to stay fully on-screen on
+    // narrower widths), the trigger-to-panel gap can be 300px+ on a wide
+    // desktop — a shorter delay reliably closed the menu mid-transit.
+    closeTimeoutRef.current = setTimeout(() => setActiveMenu(null), 400)
+  }
+  const cancelClose = () => {
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current)
   }
 
   const handleLogoClick = () => {
@@ -132,8 +156,8 @@ export function Navbar() {
             {/* DOING BUSINESS IN INDIA — mega menu */}
             <div
               className="relative"
-              onMouseEnter={() => setActiveMenu("dbi")}
-              onMouseLeave={() => setActiveMenu(null)}
+              onMouseEnter={() => openMenu("dbi")}
+              onMouseLeave={scheduleClose}
             >
               <button
                 type="button"
@@ -146,7 +170,11 @@ export function Navbar() {
               </button>
 
               {activeMenu === "dbi" && (
-                <div className="fixed left-1/2 top-20 z-50 w-[min(1040px,calc(100vw-2rem))] -translate-x-1/2 pt-2">
+                <div
+                  className="fixed left-1/2 top-20 z-50 w-[min(1040px,calc(100vw-2rem))] -translate-x-1/2 pt-2"
+                  onMouseEnter={cancelClose}
+                  onMouseLeave={scheduleClose}
+                >
                   <div className="overflow-hidden rounded-2xl border bg-white shadow-2xl">
                     <div className="grid grid-cols-4 gap-0 p-6">
                       {dbiColumns.map((col, i) => (
@@ -188,8 +216,8 @@ export function Navbar() {
             {/* SERVICES */}
             <div
               className="relative"
-              onMouseEnter={() => setActiveMenu("services")}
-              onMouseLeave={() => setActiveMenu(null)}
+              onMouseEnter={() => openMenu("services")}
+              onMouseLeave={scheduleClose}
             >
               <button
                 type="button"
@@ -202,7 +230,11 @@ export function Navbar() {
               </button>
 
               {activeMenu === "services" && (
-                <div className="fixed left-1/2 top-20 z-50 w-[min(640px,calc(100vw-2rem))] -translate-x-1/2 pt-2">
+                <div
+                  className="fixed left-1/2 top-20 z-50 w-[min(640px,calc(100vw-2rem))] -translate-x-1/2 pt-2"
+                  onMouseEnter={cancelClose}
+                  onMouseLeave={scheduleClose}
+                >
                   <div className="flex overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl">
                     {/* Navy service-line rail, matching the /services hub's own icons */}
                     <div className="w-[62%] py-4" style={{ backgroundColor: "#081a42" }}>
@@ -257,8 +289,8 @@ export function Navbar() {
             {/* ABOUT */}
             <div
               className="relative"
-              onMouseEnter={() => setActiveMenu("about")}
-              onMouseLeave={() => setActiveMenu(null)}
+              onMouseEnter={() => openMenu("about")}
+              onMouseLeave={scheduleClose}
             >
               <button
                 type="button"
@@ -271,7 +303,11 @@ export function Navbar() {
               </button>
 
               {activeMenu === "about" && (
-                <div className="absolute right-0 top-full z-50 w-[220px] pt-2">
+                <div
+                  className="absolute right-0 top-full z-50 w-[220px] pt-2"
+                  onMouseEnter={cancelClose}
+                  onMouseLeave={scheduleClose}
+                >
                   <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl py-2">
                     {aboutLinks.map((item) => (
                       <Link key={item.label} href={item.href} className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#081a42]">
