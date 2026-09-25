@@ -250,6 +250,7 @@ export default function RootLayout({
       sameAs: [
         "https://www.linkedin.com/company/a-u-corporate/",
         "https://www.instagram.com/aucorporate/",
+        "https://www.facebook.com/profile.php?id=61593816719018",
       ],
     }),
   }}

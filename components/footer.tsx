@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin, Mail, MapPin, Phone } from "lucide-react"
+import { Facebook, Linkedin, Mail, MapPin, Phone } from "lucide-react"
 
 const quickLinks = [
   { label: "Services", href: "/services" },
@@ -40,7 +40,18 @@ export function Footer() {
               Supporting global businesses in establishing and operating in India through expert compliance, taxation, accounting, payroll, and outsourcing solutions.
             </p>
 
-            <div className="flex gap-6 mt-4">
+            <div className="flex flex-wrap gap-6 mt-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=61593816719018"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Visit AU Corporate Facebook Page"
+                className="inline-flex items-center gap-2 text-gray-600 hover:text-gold-dark transition"
+              >
+                <Facebook className="h-5 w-5" />
+                <span className="text-sm">Facebook</span>
+              </a>
+
               <a
                 href="https://www.linkedin.com/company/a-u-corporate/?viewAsMember=true"
                 target="_blank"
