@@ -12,10 +12,15 @@ import {
 } from "lucide-react"
 import { Reveal } from "@/components/Reveal"
 import { ClickableReveal } from "@/components/ClickableReveal"
+import { Breadcrumb } from "@/components/Breadcrumb"
 
 export default function AboutHero() {
   return (
     <div className="min-h-screen pt-16 sm:pt-20">
+
+      <div className="max-w-7xl mx-auto px-4">
+        <Breadcrumb items={[{ label: "About" }]} />
+      </div>
 
       {/* HERO */}
       <section className="py-12 sm:py-24 bg-white">

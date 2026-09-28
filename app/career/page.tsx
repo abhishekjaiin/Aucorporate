@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { InquiryForm } from '@/components/InquiryForm'
 import { HeroBackground } from '@/components/HeroBackground'
+import { Breadcrumb } from '@/components/Breadcrumb'
 import {
   MapPin,
   Clock,
@@ -64,6 +65,10 @@ const benefits = [
 export default function CareerPage() {
   return (
     <div className="min-h-screen pt-20">
+
+      <div className="max-w-7xl mx-auto px-4">
+        <Breadcrumb items={[{ label: "Careers" }]} />
+      </div>
 
       {/* HERO SECTION WITH BACKGROUND IMAGE */}
       <section className="relative py-28 overflow-hidden">
