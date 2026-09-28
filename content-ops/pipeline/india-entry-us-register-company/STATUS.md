@@ -22,8 +22,8 @@ competitor_input: registercompanyinindia.com/company-registration-in-india-from-
 - [x] Stage 4 — content-gap-analyst — 04-content-gap.md (complete)
 - [x] Stage 5 — au-corporate-strategist — 05-au-positioning.md (complete)
 - [x] CHECKPOINT 1 — APPROVED by user 2026-09-28 ("sure pls update sitemap as well and continue adding more pages", in response to being asked explicitly for APPROVED on this checkpoint)
-- [ ] Stage 6 — content-architect — 06-content-architecture.md
-- [ ] CHECKPOINT 2 — pending
+- [x] Stage 6 — content-architect — 06-content-architecture.md (complete; recommends India-entry guide/decision-support pillar page at /india-entry-for-us-companies/register-company-in-india-from-usa, centered on a genuine 5-way entity decision table not yet built anywhere on the site or in the competitive field; explicitly scoped as a thin synthesis/routing layer over the six overlapping sibling pages identified, not a seventh deep page — cannibalization check confirms new page recommended, no topics.csv conflict found)
+- [ ] CHECKPOINT 2 — pending human review of 06-content-architecture.md
 
 ## Scope note (2026-09-28)
 Originally run as /content-brief (stops at Checkpoint 2, no drafting). User's follow-up request ("continue adding more pages" + "update sitemap") implies they want the live page built, not just the brief. Upgrading this pipeline to full /seo-page scope: after Checkpoint 2 is approved, continue to Stage 7 (writer) through Stage 11 (final QC), then implement as a live Next.js page and update sitemap.ts + topics.csv at that point — matching the pattern used for the Branch/Liaison/Project Office/LLP pages.
