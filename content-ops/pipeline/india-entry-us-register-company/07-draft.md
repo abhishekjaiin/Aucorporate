@@ -13,7 +13,7 @@ No tweaks to Stage 6's metadata — used exactly as approved. Confirmed the titl
 
 # How to Register a Company in India from the USA
 
-You've decided to register a company in India — this page is about *how*, not *whether*. If you're still weighing whether India is the right move at all, start with [the full guide to doing business in India as a US company](/india-entry-for-us-companies); everything below assumes you've moved past that question and are now choosing a structure, understanding the filing path it triggers, and getting a realistic read on cost and timeline.
+You've decided to register a company in India from the USA — this page is about *how*, not *whether*. In short: you'll choose a structure (Private Limited subsidiary, LLP, Branch, Liaison, or Project Office), file through the Ministry of Corporate Affairs or the RBI depending on which one, and clear India's resident-director and apostille requirements — typically 4-6 weeks to incorporate and 8-12 weeks to be fully operational. If you're still weighing whether India is the right move at all, start with [the full guide to doing business in India as a US company](/india-entry-for-us-companies); everything below assumes you've moved past that question and are now choosing a structure, understanding the filing path it triggers, and getting a realistic read on cost and timeline.
 
 Five structures are available to a US parent company: a wholly-owned subsidiary (Private Limited Company), an LLP, a Branch Office, a Liaison Office, or a Project Office. Nearly every guide on this topic online defaults straight to "form a Private Limited Company" without walking through why — or without giving the other four options real consideration. That default is right for most US companies planning to actually operate and sell in India, but it isn't right for everyone, and a US parent evaluating a narrower or time-bound presence deserves the same quality of reasoning, not a footnote. That's what the section below does. Our team includes CA and US CPA-qualified professionals, so the entity choice below is framed against both the Indian filing mechanics and how each structure lands on your US tax filings — not just the Indian side in isolation.
 
@@ -99,28 +99,28 @@ One thing worth flagging early rather than after your first year of operations: 
 
 ## Frequently Asked Questions
 
-**Can a US citizen register a company in India?**
+### Can a US citizen register a company in India?
 Yes. A US citizen or US company can hold up to 100% ownership in most of the five structures above under the Automatic Route, without needing prior government approval in the majority of sectors. The mechanism differs by structure — equity ownership for a Private Limited Company or LLP, RBI/AD-bank establishment approval for a Branch, Liaison, or Project Office — but nationality itself isn't a barrier in either case. See the entity-decision section above for which structure actually fits what you're trying to do.
 
-**Do I need an Indian resident director to register a company in India?**
+### Do I need an Indian resident director to register a company in India?
 Yes, for a Private Limited Company — Section 149(3) of the Companies Act, 2013 requires at least one director who has spent 182 days or more in India in the relevant period, regardless of how much of the company is foreign-owned. An LLP has a related but distinct requirement (a resident designated partner, tested at 120 days, not 182). If you don't already have someone who qualifies, see [the full nominee-director resolution](/india-entry-for-us-companies/how-to-incorporate-subsidiary-india-from-us) for the three practical paths US founders use.
 
-**Private limited company vs. LLP vs. branch office — which should a US parent company use?**
+### Private limited company vs. LLP vs. branch office — which should a US parent company use?
 It depends on what you're actually trying to do in India: sell and invoice without restriction (Private Limited Company), run a professional-services partnership with no near-term equity-raise plans (LLP), or operate within a narrower, RBI-approved activity list without a separate legal entity (Branch Office). See the full [5-way entity comparison](#which-entity-should-you-register-the-5-way-decision) above — this is the single most important decision on this page, and it's worth working through the table rather than defaulting to whichever structure is mentioned first on a competitor's page.
 
-**How much does it cost to register a company in India from the USA?**
+### How much does it cost to register a company in India from the USA?
 For a standard Automatic Route Private Limited subsidiary, India-side setup costs typically run roughly ₹55,000 to ₹1,15,000+ (very roughly $650-$1,350+ at typical exchange rates), before US-side apostille costs and ongoing annual compliance. This is not a flat quote — entity structure, sector, and how many directors need apostilled documents all move the number. See our [full cost & timeline breakdown](/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us) for the component-level detail and why we don't publish a single flat fee.
 
-**How long does it take to register a company in India from the USA?**
+### How long does it take to register a company in India from the USA?
 Automatic Route incorporation itself generally clears in 4-6 weeks; the full path to a fully banked, funded, operational entity runs 8-12 weeks end to end. The gap between those two figures is almost always apostille turnaround and resident-director paperwork on the US/founder side, not the Indian filing being slow. See the [full cost & timeline breakdown](/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us) for the phase-by-phase detail.
 
-**What documents does a US parent company need to provide?**
+### What documents does a US parent company need to provide?
 A certificate of incorporation, board resolution, and power of attorney — all notarized in the US and then apostilled, not embassy-legalised — plus ID and address proof for each proposed director and registered-office proof in India. See the Documents section above for the full checklist and why apostille (not embassy legalisation) is the correct authentication path for US-issued documents.
 
-**Is RUN or Form INC-1 still used to reserve a company name in India?**
+### Is RUN or Form INC-1 still used to reserve a company name in India?
 No — SPICe+ Part A now covers name reservation as part of the same integrated filing that carries the rest of incorporation. If a source you're reading describes standalone RUN or Form INC-1 as a separate current step, it's likely describing an earlier version of the process; confirm directly against mca.gov.in's current SPICe+ instructions before relying on any third-party description, including this one.
 
-**Does the registration process differ for a US citizen versus other foreign nationals?**
+### Does the registration process differ for a US citizen versus other foreign nationals?
 Not materially on the Indian filing side — the Companies Act and FEMA mechanics described on this page are largely nationality-agnostic, and the same SPICe+/FC-1 pathways, resident-director rule, and FDI-route framework apply regardless of the investor's home country. What's specifically US-flavored here is the apostille point (which depends on the US being a Hague Convention signatory — some other countries require embassy legalisation instead) and the US-side tax consequence of each entity choice (Form 5471 for a subsidiary, Form 8858 for a branch), not the underlying Indian registration steps themselves.
 
 ## CTA
