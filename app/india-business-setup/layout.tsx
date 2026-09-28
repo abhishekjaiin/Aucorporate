@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "India Business Setup Guide: Company Formation & FDI for Foreign Companies",
+    absolute: "India Business Setup Guide: Company Formation & FDI Routes",
   },
   description:
     "India business setup guide for foreign companies — entity types, FDI routes, formation, compliance, banking and realistic timelines in one place.",
@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-business-setup",
   },
   openGraph: {
-    title: "India Business Setup Guide: Company Formation & FDI for Foreign Companies",
+    title: "India Business Setup Guide: Company Formation & FDI Routes",
     description:
       "India business setup guide for foreign companies — entity types, FDI routes, formation, compliance, banking and realistic timelines in one place.",
     url: "https://www.theaucorp.com/india-business-setup",
   },
   twitter: {
-    title: "India Business Setup Guide: Company Formation & FDI for Foreign Companies",
+    title: "India Business Setup Guide: Company Formation & FDI Routes",
     description:
       "India business setup guide for foreign companies — entity types, FDI routes, formation, compliance, banking and realistic timelines in one place.",
   },

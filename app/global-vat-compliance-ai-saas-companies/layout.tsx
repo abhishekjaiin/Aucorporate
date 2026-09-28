@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
-const title = "Global VAT & Sales Tax Compliance for AI & SaaS Companies (2026 Guide)"
+const title = "Global VAT & Sales Tax Compliance for AI & SaaS Companies"
 const description =
-  "Selling AI or SaaS subscriptions internationally? We handle VAT/GST/sales-tax registration, data sorting, and monthly filing across the US, EU, UK, Japan, and more — zero engineering effort required."
+  "Selling AI or SaaS subscriptions internationally? We handle VAT/GST/sales-tax registration and monthly filing across the US, EU, UK, Japan, and more."
 
 export const metadata: Metadata = {
   title: { absolute: title },

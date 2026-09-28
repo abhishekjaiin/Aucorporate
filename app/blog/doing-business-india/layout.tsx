@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 const title = "Doing Business in India in 2026: What's Actually Changed"
 const description =
-  "GST 2.0, four new Labour Codes, a record FDI year, and a World Bank ranking that's gone stale — a look at what has genuinely changed for foreign companies doing business in India in 2026, and what hasn't."
+  "GST 2.0, four new Labour Codes, a record FDI year, and a stale World Bank ranking — what's genuinely changed for foreign companies in India in 2026."
 
 export const metadata: Metadata = {
   title: { absolute: title },

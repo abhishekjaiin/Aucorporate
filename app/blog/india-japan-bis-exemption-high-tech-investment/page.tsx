@@ -149,9 +149,9 @@ function SakuraBranch({ className = "" }: { className?: string }) {
 }
 
 export const metadata = {
-  title: "India Opens Another Door for Japanese High-Tech Investment: The Proposed BIS Exemption",
+  title: "India's Proposed BIS Exemption for Japanese High-Tech Investment",
   description:
-    "India is developing a framework to exempt high-tech manufacturers from mandatory BIS certification for imported equipment and components — announced by Commerce Minister Piyush Goyal in Tokyo on 25 August 2026. What it means for Japanese semiconductor, electronics, and AI companies evaluating India.",
+    "India is developing a framework to exempt high-tech manufacturers from BIS certification — what it means for Japanese semiconductor and electronics firms.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/india-japan-bis-exemption-high-tech-investment",
   },

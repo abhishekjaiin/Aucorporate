@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
-const title = "Liaison Office in India: RBI Approval, Eligibility & Compliance Guide"
+const title = "Liaison Office in India: RBI Approval & Compliance Guide"
 const description =
-  "A complete guide to Liaison Offices in India — FEMA eligibility, RBI/AD bank approval via Form FNC, permitted activities, PE and GST exposure, AAC compliance, and closure."
+  "A complete guide to Liaison Offices in India — FEMA eligibility, RBI approval via Form FNC, permitted activities, PE/GST exposure, and closure."
 
 export const metadata: Metadata = {
   title: { absolute: title },

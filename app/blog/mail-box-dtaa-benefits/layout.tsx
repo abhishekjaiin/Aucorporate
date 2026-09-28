@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "DTAA & Mailbox Companies in India | Tiger Global Supreme Court 2026",
+    absolute: "Tiger Global Ruling: DTAA & Mailbox Companies in India",
   },
   description:
     "The Tiger Global Supreme Court ruling reshapes DTAA treaty benefits for mailbox companies lacking real substance — what it means for foreign investors and GAAR.",
@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/mail-box-dtaa-benefits",
   },
   openGraph: {
-    title: "DTAA & Mailbox Companies in India | Tiger Global Supreme Court 2026",
+    title: "Tiger Global Ruling: DTAA & Mailbox Companies in India",
     description:
       "The Tiger Global Supreme Court ruling reshapes DTAA treaty benefits for mailbox companies lacking real substance — what it means for foreign investors and GAAR.",
     url: "https://www.theaucorp.com/blog/mail-box-dtaa-benefits",
   },
   twitter: {
-    title: "DTAA & Mailbox Companies in India | Tiger Global Supreme Court 2026",
+    title: "Tiger Global Ruling: DTAA & Mailbox Companies in India",
     description:
       "The Tiger Global Supreme Court ruling reshapes DTAA treaty benefits for mailbox companies lacking real substance — what it means for foreign investors and GAAR.",
   },

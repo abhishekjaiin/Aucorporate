@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
-const title = "LLP Registration in India: Eligibility, Process, FDI and Compliance Guide"
+const title = "LLP Registration in India: Eligibility, Process & Compliance"
 const description =
-  "How to register an LLP in India: the current 120-day resident-partner rule, the FDI automatic-route gate, registration steps, cost, tax treatment and annual compliance — explained by AU Corporate's regulatory practice."
+  "How to register an LLP in India: the 120-day resident-partner rule, the FDI automatic-route gate, registration steps, cost, and annual compliance requirements."
 
 export const metadata: Metadata = {
   title: { absolute: title },

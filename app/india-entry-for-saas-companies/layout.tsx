@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-const title = "India Entry for AI, SaaS and Technology Companies: Entity Setup & Tax Guide (2026)"
+const title = "India Entry for AI, SaaS & Tech Companies: Entity & Tax Guide"
 const description =
   "Deciding whether and how to set up in India as an AI, SaaS or tech company? Entity structure, FEMA/RBI basics, tax treatment and GST after incorporation."
 

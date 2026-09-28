@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-const title = "Project Office in India: RBI Approval, Registration & Compliance Guide (2026)"
+const title = "Project Office in India: RBI Approval & Compliance Guide"
 const description =
   "Project Office in India: FEMA/Regulation 5 eligibility, RBI/AD-bank approval via Form FNC-1, permanent establishment tax exposure, AAC compliance and closure."
 

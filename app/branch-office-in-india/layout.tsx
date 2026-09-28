@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-const title = "Branch Office in India: RBI Approval, Process & Compliance Guide (2026)"
+const title = "Branch Office in India: RBI Approval & Compliance Guide"
 const description =
   "How to set up a Branch Office in India: RBI/FEMA 22(R) eligibility, the Automatic vs Approval route, Form FNC, permitted activities, tax treatment and closure."
 

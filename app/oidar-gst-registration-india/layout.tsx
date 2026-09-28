@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-const title = "GST & OIDAR Registration for Foreign SaaS Companies in India (2026 Guide)"
+const title = "GST & OIDAR Registration for Foreign SaaS Companies in India"
 const description =
   "No Indian entity, but Indian customers? Here's when OIDAR/GST registration is mandatory, the GSTR-5A filing calendar, and what non-compliance actually costs."
 

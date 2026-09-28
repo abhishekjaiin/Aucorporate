@@ -8,7 +8,7 @@ import { FaqAccordion } from "@/components/FaqAccordion"
 export const metadata = {
   title: "India's 2026 Safe Harbour Rules: 15.5% IT Margin Explained",
   description:
-    "Union Budget 2026 and the CBDT's Income-tax Rules, 2026 consolidated IT, ITeS, KPO and contract R&D into a single Safe Harbour category at 15.5% margin, raised the threshold from Rs 300 crore to Rs 2,000 crore, and set a 5-year block period. Eligibility mechanics, rule numbers, and what happens if you don't qualify.",
+    "Union Budget 2026 consolidated IT, ITeS, KPO and contract R&D into a single Safe Harbour category at 15.5% margin, threshold raised to Rs 2,000 crore.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/india-safe-harbour-rules-2026",
   },
