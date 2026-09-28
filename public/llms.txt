@@ -6,6 +6,8 @@ Primary services: India market entry and Global Capability Center (GCC) advisory
 
 Contact: partner@theaucorp.com | +91-9999010513 | New Delhi, India
 
+Full page index (every page on the site, not just the curated list below): https://www.theaucorp.com/llms-full.txt
+
 ## Key Pages
 
 - [Homepage](https://www.theaucorp.com/): Overview of AU Corporate's services and India market entry proposition
@@ -14,12 +16,24 @@ Contact: partner@theaucorp.com | +91-9999010513 | New Delhi, India
 - [Services](https://www.theaucorp.com/services): Full service catalog — taxation, accounting, HR, risk, transaction advisory
 - [Taxation & Regulatory](https://www.theaucorp.com/services/taxation-regulatory): Tax planning, GST compliance, tax audit, transfer pricing
 - [Accounting & Assurance](https://www.theaucorp.com/services/accounting-assurance): Financial statement preparation, IFRS/Ind AS compliance, internal controls
+- [Risk Management & Advisory](https://www.theaucorp.com/services/risk-management): Risk advisory, management assurance, fraud risk management
+- [Transaction & Business Advisory](https://www.theaucorp.com/services/transaction-advisory): Business valuation, M&A support, transaction advisory
+- [Training & Workshops](https://www.theaucorp.com/services/training-workshops): Professional development in taxation, compliance, and business practices
 - [HR Services](https://www.theaucorp.com/hr-services): Payroll, HR compliance, and HR management outsourcing
 - [Outsourcing](https://www.theaucorp.com/outsourcing): Accounting, payroll, and finance function outsourcing
 - [Arbitration Services](https://www.theaucorp.com/arbitration-services): Dispute resolution and legal advisory
 - [About](https://www.theaucorp.com/about): Firm background, team, and credentials
 - [Contact](https://www.theaucorp.com/contact): Contact details and inquiry form
 - [Blog](https://www.theaucorp.com/blog): Regulatory explainers and India business insights
+
+## Doing Business in India — Market Entry Decision Guide
+
+- [Doing Business in India](https://www.theaucorp.com/doing-business-in-india): Overview — market entry through post-incorporation
+- [Why Invest in India](https://www.theaucorp.com/doing-business-in-india/why-india): Market size, growth, talent, and strategic advantages
+- [Pre-Incorporation Planning](https://www.theaucorp.com/doing-business-in-india/pre-incorporation): Feasibility, FDI eligibility, structuring, JV strategy
+- [India Market Entry Process](https://www.theaucorp.com/doing-business-in-india/entry-process): Step-by-step from entity selection through initial compliance
+- [Should You Incorporate in India Now?](https://www.theaucorp.com/doing-business-in-india/incorporation): Strategic timing decision guide
+- [Life After Incorporation](https://www.theaucorp.com/doing-business-in-india/post-incorporation): Priorities and common mistakes as you scale
 
 ## Country-Specific India Entry Guides
 
