@@ -433,6 +433,23 @@ export default function BranchOfficeInIndiaPage() {
           />
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Branch Office in India: RBI Approval & Compliance Guide",
+            description:
+              "How to set up a Branch Office in India: RBI/FEMA 22(R) eligibility, the Automatic vs Approval route, Form FNC, permitted activities, tax treatment and closure.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/branch-office-in-india",
+            areaServed: "India",
+            serviceType: "India Business Setup — Branch Office Registration",
+          }),
+        }}
+      />
     </main>
   )
 }

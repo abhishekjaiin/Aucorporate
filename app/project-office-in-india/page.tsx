@@ -438,6 +438,23 @@ export default function ProjectOfficeInIndiaPage() {
           />
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Project Office in India: RBI Approval & Compliance Guide",
+            description:
+              "Project Office in India: FEMA/Regulation 5 eligibility, RBI/AD-bank approval via Form FNC-1, permanent establishment tax exposure, AAC compliance and closure.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/project-office-in-india",
+            areaServed: "India",
+            serviceType: "India Business Setup — Project Office Registration",
+          }),
+        }}
+      />
     </main>
   )
 }

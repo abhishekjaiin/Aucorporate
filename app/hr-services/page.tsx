@@ -402,6 +402,23 @@ export default function HRServicesPage() {
       >
         📄 <span className="font-medium">View HR Brochure</span>
       </a>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "HR & Payroll Services",
+            description:
+              "Payroll processing, HR compliance, and recruitment support for foreign companies setting up and running operations in India.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/hr-services",
+            areaServed: "India",
+            serviceType: "HR & Payroll",
+          }),
+        }}
+      />
     </div>
   )
 }

@@ -563,6 +563,22 @@ export default function ArbitrationServicesPage() {
         </Button>
       </section>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Arbitration & Dispute Resolution in India",
+            description:
+              "Arbitration, enforcement, and dispute resolution advisory for businesses facing commercial disputes in India.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/arbitration-services",
+            areaServed: "India",
+            serviceType: "Arbitration & Dispute Resolution",
+          }),
+        }}
+      />
     </div>
   )
 }

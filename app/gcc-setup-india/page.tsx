@@ -499,6 +499,23 @@ export default function GCCSetupIndiaPage() {
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "GCC Setup in India: Entity Structure, Compliance, and Costs",
+            description:
+              "How to set up a GCC in India: entity choice, FEMA/RBI filings, safe harbour tax rules, and the compliance calendar after incorporation.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/gcc-setup-india",
+            areaServed: "India",
+            serviceType: "Global Capability Center (GCC) Advisory",
+          }),
+        }}
+      />
     </main>
   )
 }

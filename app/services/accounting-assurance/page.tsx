@@ -333,6 +333,23 @@ export default function Page() {
         </div>
 
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Accounting & Assurance Services in India",
+            description:
+              "Financial statement preparation, Ind AS/IFRS compliance, internal controls assessment, and audit assurance services for businesses in India.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/services/accounting-assurance",
+            areaServed: "India",
+            serviceType: "Accounting & Assurance",
+          }),
+        }}
+      />
     </div>
   )
 }

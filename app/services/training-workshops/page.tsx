@@ -263,6 +263,23 @@ export default function Page() {
           }),
         }}
       />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Training & Workshops",
+            description:
+              "Professional development workshops in taxation, compliance, and business practices delivered by AU Corporate's advisory team.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/services/training-workshops",
+            areaServed: "India",
+            serviceType: "Training & Workshops",
+          }),
+        }}
+      />
     </div>
   )
 }

@@ -354,6 +354,23 @@ export default function CompanyFormationPage() {
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'Company Registration in India: A Complete Guide',
+            description:
+              'Complete guide to company registration in India for foreign investors — entity types, the SPICe+ process, FDI routes, costs and timelines.',
+            provider: { '@type': 'Organization', name: 'AU Corporate', url: 'https://www.theaucorp.com' },
+            url: 'https://www.theaucorp.com/india-business-setup/company-formation',
+            areaServed: 'India',
+            serviceType: 'Company Registration & Incorporation',
+          }),
+        }}
+      />
     </main>
   )
 }

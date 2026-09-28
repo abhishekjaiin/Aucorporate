@@ -377,6 +377,23 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Transaction Advisory Services",
+            description:
+              "Business valuation, transaction advisory, and M&A support services for companies entering or expanding in the Indian market.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/services/transaction-advisory",
+            areaServed: "India",
+            serviceType: "Transaction Advisory",
+          }),
+        }}
+      />
     </div>
   )
 }

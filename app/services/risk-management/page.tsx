@@ -424,6 +424,23 @@ export default function RiskManagementPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Risk Management Services",
+            description:
+              "Risk advisory, management assurance, and fraud risk management services to protect and strengthen your India operations.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/services/risk-management",
+            areaServed: "India",
+            serviceType: "Risk Management",
+          }),
+        }}
+      />
     </div>
   )
 }

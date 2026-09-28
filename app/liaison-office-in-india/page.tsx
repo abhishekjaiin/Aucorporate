@@ -424,6 +424,23 @@ export default function LiaisonOfficeInIndiaPage() {
           />
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Liaison Office in India: RBI Approval & Compliance Guide",
+            description:
+              "A complete guide to Liaison Offices in India — FEMA eligibility, RBI approval via Form FNC, permitted activities, PE/GST exposure, and closure.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/liaison-office-in-india",
+            areaServed: "India",
+            serviceType: "India Business Setup — Liaison Office Registration",
+          }),
+        }}
+      />
     </main>
   )
 }

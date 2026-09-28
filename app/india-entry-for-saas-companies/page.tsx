@@ -392,6 +392,23 @@ export default function IndiaEntryForSaasCompaniesPage() {
           </Button>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "India Entry for AI, SaaS & Tech Companies: Entity & Tax Guide",
+            description:
+              "Deciding whether and how to set up in India as an AI, SaaS or tech company? Entity structure, FEMA/RBI basics, tax treatment and GST after incorporation.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/india-entry-for-saas-companies",
+            areaServed: "India",
+            serviceType: "India Market Entry — AI/SaaS Companies",
+          }),
+        }}
+      />
     </main>
   )
 }

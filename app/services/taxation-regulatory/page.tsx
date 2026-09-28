@@ -416,6 +416,23 @@ export default function Page() {
         </div>
 
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Taxation & Regulatory Services in India",
+            description:
+              "Corporate tax planning, GST compliance, tax audit, transfer pricing, and regulatory advisory for foreign and domestic businesses operating in India.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/services/taxation-regulatory",
+            areaServed: "India",
+            serviceType: "Taxation & Regulatory Services",
+          }),
+        }}
+      />
     </div>
   )
 }

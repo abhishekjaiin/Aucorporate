@@ -416,6 +416,22 @@ export default function IndiaBusinessSetupHub() {
             }),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Service',
+              name: 'India Business Setup Guide: Company Formation & FDI Routes',
+              description:
+                'India business setup guide for foreign companies — entity types, FDI routes, formation, compliance, banking and realistic timelines in one place.',
+              provider: { '@type': 'Organization', name: 'AU Corporate', url: 'https://www.theaucorp.com' },
+              url: 'https://www.theaucorp.com/india-business-setup',
+              areaServed: 'India',
+              serviceType: 'India Business Setup',
+            }),
+          }}
+        />
       </section>
 
       {/* RELATED RESOURCES */}

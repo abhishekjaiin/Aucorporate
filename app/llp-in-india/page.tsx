@@ -497,6 +497,23 @@ export default function LlpInIndiaPage() {
           />
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "LLP Registration in India: Eligibility, Process & Compliance",
+            description:
+              "How to register an LLP in India: the 120-day resident-partner rule, the FDI automatic-route gate, registration steps, cost, and annual compliance requirements.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/llp-in-india",
+            areaServed: "India",
+            serviceType: "India Business Setup — LLP Registration",
+          }),
+        }}
+      />
     </main>
   )
 }

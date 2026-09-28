@@ -82,6 +82,23 @@ export default function RegulatoryCompliancePage() {
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'Regulatory Compliance Framework',
+            description:
+              'The regulatory compliance landscape foreign-owned businesses in India need to navigate — FEMA, RBI, and sector-specific rules.',
+            provider: { '@type': 'Organization', name: 'AU Corporate', url: 'https://www.theaucorp.com' },
+            url: 'https://www.theaucorp.com/india-business-setup/regulatory-compliance',
+            areaServed: 'India',
+            serviceType: 'Regulatory Compliance',
+          }),
+        }}
+      />
     </main>
   )
 }

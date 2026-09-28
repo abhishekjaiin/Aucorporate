@@ -291,6 +291,23 @@ export default function TimelineResourcesPage() {
           </Button>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'India Company Setup Timeline & Budget Breakdown',
+            description:
+              'Realistic timelines and resource planning for foreign companies setting up a business entity in India.',
+            provider: { '@type': 'Organization', name: 'AU Corporate', url: 'https://www.theaucorp.com' },
+            url: 'https://www.theaucorp.com/india-business-setup/timeline-resources',
+            areaServed: 'India',
+            serviceType: 'India Business Setup Planning',
+          }),
+        }}
+      />
     </main>
   )
 }

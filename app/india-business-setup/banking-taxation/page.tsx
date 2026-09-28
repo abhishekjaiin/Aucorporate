@@ -183,6 +183,23 @@ export default function BankingTaxationPage() {
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'Banking & Taxation Setup',
+            description:
+              'How banking and taxation work for a newly-formed Indian entity — account opening, capital inflow, and initial tax registrations.',
+            provider: { '@type': 'Organization', name: 'AU Corporate', url: 'https://www.theaucorp.com' },
+            url: 'https://www.theaucorp.com/india-business-setup/banking-taxation',
+            areaServed: 'India',
+            serviceType: 'Banking & Tax Registration',
+          }),
+        }}
+      />
     </main>
   )
 }

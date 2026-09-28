@@ -347,6 +347,23 @@ export default function FDIChannelsPage() {
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: 'FDI Investment Channels in India: Automatic vs. Government Approval Route',
+            description:
+              'An overview of the Automatic and Government approval routes for foreign direct investment into India, by sector.',
+            provider: { '@type': 'Organization', name: 'AU Corporate', url: 'https://www.theaucorp.com' },
+            url: 'https://www.theaucorp.com/india-business-setup/fdi-channels',
+            areaServed: 'India',
+            serviceType: 'FDI Advisory',
+          }),
+        }}
+      />
     </main>
   )
 }

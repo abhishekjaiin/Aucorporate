@@ -365,6 +365,23 @@ export default function OidarGstRegistrationIndiaPage() {
           </Button>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "GST & OIDAR Registration for Foreign SaaS Companies in India",
+            description:
+              "No Indian entity, but Indian customers? Here's when OIDAR/GST registration is mandatory, the GSTR-5A filing calendar, and what non-compliance actually costs.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/oidar-gst-registration-india",
+            areaServed: "India",
+            serviceType: "OIDAR & GST Registration",
+          }),
+        }}
+      />
     </main>
   )
 }

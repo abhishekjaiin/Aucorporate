@@ -472,6 +472,23 @@ export default function GlobalVatComplianceAiSaasPage() {
           />
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Global VAT & Sales Tax Compliance for AI & SaaS Companies",
+            description:
+              "Selling AI or SaaS subscriptions internationally? We handle VAT/GST/sales-tax registration and monthly filing across the US, EU, UK, Japan, and more.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/global-vat-compliance-ai-saas-companies",
+            areaServed: "Worldwide",
+            serviceType: "Global VAT & Sales Tax Compliance",
+          }),
+        }}
+      />
     </main>
   )
 }

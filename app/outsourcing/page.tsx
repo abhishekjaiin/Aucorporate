@@ -598,6 +598,22 @@ export default function OutsourcingPage() {
         </Button>
       </section>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Accounting & Finance Outsourcing in India",
+            description:
+              "Bookkeeping, payroll, MIS reporting, and Virtual CFO outsourcing services for global businesses with India operations.",
+            provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
+            url: "https://www.theaucorp.com/outsourcing",
+            areaServed: "India",
+            serviceType: "Accounting & Finance Outsourcing",
+          }),
+        }}
+      />
     </div>
   )
 }
