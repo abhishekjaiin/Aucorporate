@@ -36,8 +36,51 @@ export function RegionClusterTemplate({
     'Ongoing Compliance & Scale',
   ]
 
+  // The `region` prop stays short ("US", "UK") for human-facing copy (e.g. the
+  // WhatsApp message below); schema.org areaServed reads better as the full
+  // name, matching how the sitewide Organization/ProfessionalService schema
+  // in app/layout.tsx names the same countries.
+  const regionFullNames: Record<string, string> = {
+    US: 'United States',
+    UK: 'United Kingdom',
+  }
+  const areaServedName = regionFullNames[region] ?? region
+
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: title,
+    description: subtitle,
+    provider: {
+      '@type': 'Organization',
+      name: 'AU Corporate',
+      url: 'https://www.theaucorp.com',
+    },
+    areaServed: areaServedName,
+    serviceType: 'India Market Entry Services',
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'India Market Entry Process',
+      itemListElement: processSteps.map((step) => ({
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: step,
+        },
+      })),
+    },
+  }
+
   return (
     <>
+      {/* SERVICE SCHEMA — this page's own Country x Service entity, built from
+          its real title/subtitle/region props and the process steps shown
+          below, not a generic sitewide claim. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+
       {/* BREADCRUMB — light strip above the dark hero */}
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4">

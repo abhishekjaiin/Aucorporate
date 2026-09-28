@@ -308,6 +308,31 @@ export default function ServicesPage() {
           </Button>
         </div>
       </section>
+
+      {/* SERVICE CATALOG SCHEMA — built from the same `services` array
+          rendered above, so it can't drift from the visible page content. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'AU Corporate Services',
+            itemListElement: services.map((service, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              item: {
+                '@type': 'Service',
+                name: service.title,
+                description: service.description,
+                url: `https://www.theaucorp.com${service.href}`,
+                provider: { '@type': 'Organization', name: 'AU Corporate' },
+                areaServed: 'India',
+              },
+            })),
+          }),
+        }}
+      />
     </div>
   )
 }
