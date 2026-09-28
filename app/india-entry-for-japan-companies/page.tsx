@@ -3,6 +3,33 @@ import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 import { EntitySelectorTool } from '@/components/EntitySelectorTool'
 import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
+const faqs = [
+  {
+    q: 'What is Japan Plus and how does it help Japanese companies entering India?',
+    a: "Japan Plus is a joint facilitation team operated by India's Department for Promotion of Industry and Internal Trade (DPIIT) and Japan's Ministry of Economy, Trade and Industry (METI), operationalized in 2014 and based out of Vigyan Bhawan, New Delhi. It exists specifically to fast-track Japanese FDI proposals, resolve regulatory bottlenecks, and liaise with state governments on Japanese investors' behalf — a facilitation channel most other foreign investors don't have access to.",
+  },
+  {
+    q: 'Should a Japanese company use a joint venture or a wholly-owned subsidiary in India?',
+    a: "There's no statutory minimum paid-up capital for a private limited company in India, so capital rarely tips the decision. What does: IP and process protection (a wholly-owned subsidiary avoids disclosing proprietary production technology to a local partner's board), distribution and land access (a JV partner with existing dealer networks or land relationships can compress market entry), governance speed (a wholly-owned subsidiary's board answers to one shareholder, while a JV needs a shareholders' agreement covering deadlock and exit mechanics before incorporation can begin), and exit optionality (divesting a wholly-owned entity is a straightforward share sale, while unwinding a JV means executing buy-out mechanics negotiated years earlier).",
+  },
+  {
+    q: 'What are Japan Industrial Townships (JITs)?',
+    a: 'Country-dedicated industrial parks reserved for Japanese investors, built since an April 2015 DPIIT-METI action agenda and concentrated along the Delhi-Mumbai and Chennai-Bengaluru Industrial Corridors. Twelve townships now operate across nine states, with Neemrana and Ghiloth in Rajasthan and Sri City in Andhra Pradesh hosting the largest concentrations of tenants — Japan is the only country for which India has negotiated this kind of dedicated industrial zone program, and JIT sites typically carry pre-cleared environmental and land approvals that can shorten a manufacturing entrant\'s site-selection timeline.',
+  },
+  {
+    q: 'How does thin capitalisation affect a Japanese parent funding its Indian subsidiary?',
+    a: 'Under what is currently Section 94B of the Income Tax Act, 1961 (renumbered Section 177 under the Income-tax Act, 2025, effective April 2026), interest paid to a foreign group company is disallowed to the extent it exceeds 30% of EBITDA once net interest expense crosses ₹1 crore — directly relevant to the hybrid debt-plus-equity funding structures common among Japanese manufacturing entrants.',
+  },
+  {
+    q: 'Does India have an Advance Pricing Agreement track record with Japan?',
+    a: "Yes — India's first-ever bilateral APA was signed with a Japanese company, and the two countries' tax authorities have been recognised for efficient joint handling of Mutual Agreement Procedure (MAP) cases, giving Japanese groups a genuine route to certainty on intercompany pricing that isn't available with every treaty partner.",
+  },
+  {
+    q: 'Is a local resident director required to incorporate an Indian subsidiary from Japan?',
+    a: "Yes. Per Section 149(3) of the Companies Act, 2013, at least one director must have stayed in India for 182 days or more in the preceding financial year — a requirement that surprises boards used to an all-Japan-based directorate, and one typically resolved with a resident nominee director rather than relocating staff.",
+  },
+]
+
 export default function IndiaEntryForJapanCompanies() {
   return (
     <RegionClusterTemplate
@@ -100,6 +127,36 @@ export default function IndiaEntryForJapanCompanies() {
       <div className="mb-12">
         <EntitySelectorTool />
       </div>
+
+      {/* FAQ */}
+      <div className="mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-6">
+          {faqs.map((item) => (
+            <div key={item.q} className="border-b border-gray-200 pb-6">
+              <h3 className="font-bold text-lg mb-2 text-[#081a42]">{item.q}</h3>
+              <p className="text-gray-600 leading-relaxed">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((item) => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
+          }),
+        }}
+      />
 
       <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Related Reading</h3>

@@ -3,6 +3,29 @@ import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 import { EntitySelectorTool } from '@/components/EntitySelectorTool'
 import { ArrowRight } from 'lucide-react'
 
+const faqs = [
+  {
+    q: 'Should a US company set up an Indian subsidiary or a branch office?',
+    a: "Most US companies planning to actually sell into the Indian market — not just liaise or test the water — go the wholly-owned subsidiary route: a separate legal entity with liability limited to the subsidiary's own assets, full commercial flexibility, and access to the automatic FDI route in most sectors. A branch office is legally an extension of the US parent, carries joint liability back to it, and needs specific RBI approval before commencing operations — it tends to suit narrower, shorter-term operations. On the US tax side, a subsidiary is reported annually on Form 5471, while a branch's income flows onto the parent's Form 1120 and is disclosed via Form 8858 instead.",
+  },
+  {
+    q: 'What actually slows down incorporating a subsidiary from the US?',
+    a: "Apostille, not the Indian filing itself. The US parent's certificate of incorporation, board resolution, and power of attorney typically need to be notarized in the US and then apostilled, since both countries are Hague Apostille Convention signatories — and that process depends on US notary and Secretary of State turnaround. Starting it in parallel with, not after, Indian name reservation is the most effective way to compress the overall timeline.",
+  },
+  {
+    q: 'What FEMA filings does a US-owned Indian subsidiary need after incorporation?',
+    a: "Three recurring RBI filings under FEMA: Form FC-GPR reports share allotment within 30 days of the FDI coming in, Form FC-TRS reports any later transfer of shares between resident and non-resident, and the annual FLA return is a standing yearly obligation for as long as the entity carries foreign investment — filed regardless of whether any transaction happened that year, which is why it's the filing most foreign-owned subsidiaries forget once initial setup is done.",
+  },
+  {
+    q: 'How does transfer pricing work between a US parent and its Indian subsidiary?',
+    a: "Any transaction between the two — management fees, cost allocations, IP royalties — is reviewed on both sides: Section 482 of the Internal Revenue Code in the US, India's transfer pricing rules (Sections 161-173 under the Income-tax Act, 2025, effective April 2026) on the Indian side. Both require arm's-length pricing, and the real risk isn't aggressive pricing, it's inconsistency between what's reported to Indian authorities and what shows up on Schedule M of the parent's Form 5471. For large, recurring intercompany transactions, a bilateral Advance Pricing Agreement can bind both the CBDT and the IRS to the same figure for up to nine assessment years.",
+  },
+  {
+    q: 'What drives the cost and timeline of setting up in India from the US?',
+    a: 'Entity structure (subsidiary vs. branch carry different registration, audit, and ongoing compliance costs), sector and FDI route (Automatic Route moves faster than Government Route), the number of US-based directors needing apostilled documents (each one adds time more than cost), and whether the engagement is incorporation-only or includes ongoing accounting, payroll, tax, and FEMA compliance. For a standard automatic-route subsidiary, the US-side apostille step is typically the pacing item, not the Indian filing itself.',
+  },
+]
+
 export default function IndiaEntryForUSCompanies() {
   const subPages = [
     {
@@ -159,6 +182,36 @@ export default function IndiaEntryForUSCompanies() {
           ))}
         </div>
       </div>
+
+      {/* FAQ */}
+      <div className="mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-6">
+          {faqs.map((item) => (
+            <div key={item.q} className="border-b border-gray-200 pb-6">
+              <h3 className="font-bold text-lg mb-2 text-[#081a42]">{item.q}</h3>
+              <p className="text-gray-600 leading-relaxed">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((item) => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
+          }),
+        }}
+      />
 
       {/* RELATED SERVICES */}
       <div className="mb-12 p-6 bg-gray-100 rounded-lg">

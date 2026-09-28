@@ -3,6 +3,33 @@ import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 import { EntitySelectorTool } from '@/components/EntitySelectorTool'
 import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
+const faqs = [
+  {
+    q: 'Does Press Note 3 treat Hong Kong the same as mainland China?',
+    a: "Yes for practical purposes. Hong Kong itself doesn't share a land border with India, but Hong Kong-incorporated investors are treated as falling within the China-linked approval framework, and direct investment from a Hong Kong entity still requires prior government approval.",
+  },
+  {
+    q: 'Is Taiwan covered by Press Note 3?',
+    a: "Not automatically — Taiwan isn't one of the countries sharing a land border with India, so a Taiwan-incorporated investor isn't caught by name. But the look-through rule still applies: if the ultimate beneficial owner is a mainland Chinese citizen or entity above the 10% threshold, approval is still triggered. Ownership needs to be mapped, not assumed.",
+  },
+  {
+    q: 'Can a 9% stake avoid approval if it comes with board or veto rights?',
+    a: 'No. The June 2026 amendment closed exactly this gap — any transaction that hands a land-border-country entity control, through board seats, veto rights, or management control, triggers mandatory approval regardless of the percentage of shares changing hands. The 10% figure is a safe harbour for genuinely non-controlling stakes only.',
+  },
+  {
+    q: 'Do investments approved before the 2026 amendments need to be reassessed?',
+    a: "This depends on the specific approval terms and structure involved, and we're not aware of a blanket public clarification on retrospective treatment — it needs to be checked against your original approval conditions rather than assumed either way. Talk to our team about your specific filing history before treating it as settled.",
+  },
+  {
+    q: 'How is beneficial ownership calculated for a fund with Chinese LPs?',
+    a: "Press Note 3 looks through every intermediate holding layer to the ultimate beneficial owner, regardless of how many entities sit in between or where the investing vehicle itself is domiciled. A fund's own jurisdiction doesn't shield an investment if underlying Chinese beneficial ownership crosses the 10% threshold.",
+  },
+  {
+    q: 'Which route applies to a China-linked electronics manufacturer entering India?',
+    a: 'It depends on ownership and control, not sector alone. Genuinely non-controlling Chinese beneficial ownership at or under 10%, in one of the designated priority manufacturing sub-sectors, may qualify for the 60-day fast track. Anything involving control, majority ownership, or a sector outside that list defaults to the standard, uncapped government-approval timeline.',
+  },
+]
+
 export default function IndiaEntryForChinaCompanies() {
   return (
     <RegionClusterTemplate
@@ -101,6 +128,21 @@ export default function IndiaEntryForChinaCompanies() {
           <ClickableInfoCard title="Which route applies to a China-linked electronics manufacturer entering India?" desc="It depends on ownership and control, not sector alone. Genuinely non-controlling Chinese beneficial ownership at or under 10%, in one of the designated priority manufacturing sub-sectors, may qualify for the 60-day fast track. Anything involving control, majority ownership, or a sector outside that list defaults to the standard, uncapped government-approval timeline." />
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((item) => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
+          }),
+        }}
+      />
 
       <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Related Reading</h3>

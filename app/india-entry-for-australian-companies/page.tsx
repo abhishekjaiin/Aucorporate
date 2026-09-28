@@ -4,6 +4,25 @@ import { EntitySelectorTool } from '@/components/EntitySelectorTool'
 import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 import { InlineInquiryCTA } from '@/components/InlineInquiryCTA'
 
+const faqs = [
+  {
+    q: 'Does an Australian parent need a resident director to incorporate an Indian subsidiary?',
+    a: 'Yes. Under Section 149(3) of the Companies Act, 2013, every Indian company — including a wholly foreign-owned subsidiary — must have at least one director who was resident in India for 182 days or more in the preceding calendar year. Australian parents typically meet this with a local hire or a professional resident-director arrangement rather than waiting for an Australian national to relocate.',
+  },
+  {
+    q: "Do Australia's CFC rules apply to an Indian subsidiary?",
+    a: 'Almost always — a wholly or majority Australian-owned Indian subsidiary will typically meet the ownership threshold to be a "controlled foreign company" for Australian tax purposes, so whether any of its income gets attributed back to the Australian parent turns on Part X of the Income Tax Assessment Act 1936\'s active income test rather than on ownership alone.',
+  },
+  {
+    q: "Does the India-Australia DTAA really beat India's domestic withholding rate on everything?",
+    a: 'On dividends and interest, yes — the treaty\'s flat 15% comfortably undercuts India\'s 20%+ domestic rate on non-resident payments. Royalties and fees for technical services are more nuanced: the treaty splits the rate (10% on equipment-related royalties, 15% on others, subject to the "make available" test), and Finance Act 2023 raised India\'s own domestic rate on these categories from 10% to 20% — so the treaty is now clearly favourable across the board, but claiming it still requires a valid Tax Residency Certificate and Form 10F filed before remittance.',
+  },
+  {
+    q: 'Can rotating Australian staff into India for short-term projects create a tax presence?',
+    a: 'It can, though the India-Australia treaty is somewhat more forgiving on this point than others — services furnished through employees or personnel only create a Service Permanent Establishment once the relevant activity exceeds 183 days in any 12-month period, versus a 90-day threshold under some other Indian treaties. That said, poorly structured secondment agreements, invoicing, or on-the-ground supervision arrangements can still trigger PE exposure well before the day count, so it\'s worth reviewing deployment plans before travel begins, not after an assessment starts.',
+  },
+]
+
 export default function IndiaEntryForAustralianCompanies() {
   return (
     <RegionClusterTemplate
@@ -110,6 +129,21 @@ export default function IndiaEntryForAustralianCompanies() {
       <div className="mb-12">
         <EntitySelectorTool />
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((item) => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
+          }),
+        }}
+      />
 
       <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">

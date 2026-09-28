@@ -3,6 +3,25 @@ import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 import { EntitySelectorTool } from '@/components/EntitySelectorTool'
 import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 
+const faqs = [
+  {
+    q: 'Does a German parent need a local director to incorporate an Indian subsidiary?',
+    a: 'Yes. Under Section 149(3) of the Companies Act, 2013, every Indian company — including a wholly foreign-owned one — must have at least one director who was resident in India for 182 days or more in the preceding calendar year. German parents typically meet this by appointing a local hire to the board or engaging a professional resident-director arrangement rather than delaying incorporation until a German national relocates.',
+  },
+  {
+    q: 'Is an Indian Private Limited Company really equivalent to a GmbH?',
+    a: "Functionally, yes — both are limited-liability corporate vehicles with separate legal personality. The mechanics differ: India has no minimum paid-up capital requirement (versus a GmbH's statutory €25,000 floor), but a standard Private Limited Company needs at least two shareholders and two directors, whereas a GmbH can be formed by a single shareholder and a single managing director. There is also no direct Indian equivalent to a hybrid structure like a GmbH & Co. KG — German groups using that structure at home need to pick either a company or an LLP form in India, not a blend of both.",
+  },
+  {
+    q: 'Does the India-Germany DTAA really apply the same 10% rate to interest and royalties as dividends?',
+    a: "Yes — Articles 10, 11, and 12 of the treaty cap dividends, interest, and royalties/fees for technical services at a uniform 10% of the gross amount, well below India's 20% domestic withholding rate on non-resident payments, and surcharge and cess don't apply on top of the treaty rate. The subsidiary still needs the German parent's Tax Residency Certificate and a completed Form 10F on file before applying the reduced rate at source.",
+  },
+  {
+    q: 'Can sending German engineers to India on short assignments create a taxable presence?',
+    a: "It can. Beyond the treaty's service-PE threshold, personnel delivering installation, commissioning, or technical support work in India can trigger a Permanent Establishment even without a fixed office, exposing the German company's India-linked profits to Indian corporate tax. Structuring secondment agreements, invoicing, and travel patterns correctly before deployment — rather than after an assessment starts — is the difference between a routine business trip and a retrospective tax dispute.",
+  },
+]
+
 export default function IndiaEntryForGermanyCompanies() {
   return (
     <RegionClusterTemplate
@@ -97,6 +116,21 @@ export default function IndiaEntryForGermanyCompanies() {
       <div className="mb-12">
         <EntitySelectorTool />
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((item) => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
+          }),
+        }}
+      />
 
       <div className="mb-12 p-6 bg-gray-100 rounded-lg">
         <h3 className="font-bold text-lg mb-4">Related Reading</h3>

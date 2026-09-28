@@ -3,6 +3,29 @@ import { RegionClusterTemplate } from '@/components/RegionClusterTemplate'
 import { EntitySelectorTool } from '@/components/EntitySelectorTool'
 import { ArrowRight } from 'lucide-react'
 
+const faqs = [
+  {
+    q: 'Should a UK company set up an Indian subsidiary or a branch office?',
+    a: 'Most UK companies planning to sell into the Indian market go the wholly-owned subsidiary (Private Limited Company) route — full commercial flexibility, liability limited to the subsidiary\'s own assets, and the automatic FDI route for most sectors, typically clearing in 4-6 weeks against 8-12 weeks under the Government Route. A branch office is legally an extension of the UK parent, requires specific RBI approval before commencing operations, and is taxed as a foreign company\'s permanent establishment — roughly 36-38% effective versus a subsidiary\'s ~25.17% concessional domestic rate.',
+  },
+  {
+    q: 'What actually slows down incorporating from the UK?',
+    a: "FCDO apostille, not the Indian filing itself. The UK parent's certificate of incorporation, board resolution, and any power of attorney need FCDO (Foreign, Commonwealth & Development Office) apostille before Indian authorities will accept them, and that process runs on UK turnaround times independent of anything happening on the Indian side. Starting the apostille process in parallel with, not after, Indian name reservation is what actually compresses the timeline.",
+  },
+  {
+    q: 'How does a UK company claim the India-UK DTAA treaty rate?',
+    a: "The treaty caps withholding well below India's 20% domestic rate: 10% on dividends generally, 10% on interest paid to a bank/financial institution (15% otherwise), and 15% on royalties and fees for technical services (10% for equipment royalties). None of that applies automatically — a valid Tax Residency Certificate from HMRC is mandatory before the Indian payer can apply the treaty rate, alongside a Form 10F self-declaration. The most common way UK companies lose the benefit isn't eligibility, it's timing: if the TRC isn't in place before a payment is processed, the Indian payer defaults to the higher domestic rate.",
+  },
+  {
+    q: 'What FEMA filings does a UK-owned Indian subsidiary need?',
+    a: 'Three recurring RBI filings: Form FC-GPR reports share allotment within 30 days of the investment, Form FC-TRS reports any later transfer between resident and non-resident, and the annual FLA return is a standing yearly obligation regardless of whether any transaction occurred — the filing most foreign-owned subsidiaries forget once initial setup is done.',
+  },
+  {
+    q: 'What drives the cost and timeline for UK companies entering India?',
+    a: 'Entity structure (subsidiary vs. branch carry different registration, audit, and compliance costs), sector and FDI route, the number of UK-based directors needing FCDO apostille (each one adds time more than cost), and whether the engagement is incorporation-only or includes ongoing accounting, payroll, tax, and FEMA/DTAA compliance. For a standard automatic-route subsidiary, the FCDO apostille step is typically the pacing item, not the Indian filing.',
+  },
+]
+
 export default function IndiaEntryForUKCompanies() {
   const subPages = [
     {
@@ -148,6 +171,36 @@ export default function IndiaEntryForUKCompanies() {
           ))}
         </div>
       </div>
+
+      {/* FAQ */}
+      <div className="mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-6">
+          {faqs.map((item) => (
+            <div key={item.q} className="border-b border-gray-200 pb-6">
+              <h3 className="font-bold text-lg mb-2 text-[#081a42]">{item.q}</h3>
+              <p className="text-gray-600 leading-relaxed">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((item) => ({
+              '@type': 'Question',
+              name: item.q,
+              acceptedAnswer: { '@type': 'Answer', text: item.a },
+            })),
+          }),
+        }}
+      />
 
       {/* RELATED SERVICES */}
       <div className="mb-12 p-6 bg-gray-100 rounded-lg">
