@@ -11,7 +11,7 @@ source_research: cross-validated across 3 independent research batches in the US
 pipeline_scope: full /seo-page (Stages 1-11 + implementation), matching upgraded scope for the register-company-in-india-from-usa page
 
 ## Stage log
-- [ ] Stage 1 — seo-researcher — 01-serp-research.md
+- [x] Stage 1 — seo-researcher — 01-serp-research.md (done 2026-09-28; Semrush blocked on no_api_units, WebFetch blocked entirely by network egress proxy in this environment — findings sourced from WebSearch snippets/synthesis only, flagged throughout)
 - [ ] Stage 2 — keyword-intent-analyst — 02-keyword-intent-map.md
 - [ ] Stage 3 — competitor-reverse-engineer — 03-competitor-analysis.md
 - [ ] Stage 4 — content-gap-analyst — 04-content-gap.md
