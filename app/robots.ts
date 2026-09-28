@@ -12,33 +12,27 @@ export default function robots(): MetadataRoute.Robots {
           "/private/",
           "/*.json$",
         ],
-        crawlDelay: 0,
       },
       // Priority search engines - full access
       {
         userAgent: "Googlebot",
         allow: "/",
-        crawlDelay: 0,
       },
       {
         userAgent: "Googlebot-Image",
         allow: "/",
-        crawlDelay: 0,
       },
       {
         userAgent: "Bingbot",
         allow: "/",
-        crawlDelay: 0,
       },
       {
         userAgent: "Slurp",
         allow: "/",
-        crawlDelay: 0,
       },
       {
         userAgent: "DuckDuckBot",
         allow: "/",
-        crawlDelay: 0,
       },
       // AI / LLM crawlers - explicitly allowed for GEO (generative engine optimization)
       {
@@ -90,6 +84,9 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: [
       "https://www.theaucorp.com/sitemap.xml",
     ],
-    host: "https://www.theaucorp.com",
+    // No `host` directive: it's a Yandex-only extension deprecated since
+    // 2018, not part of the robots.txt standard (RFC 9309), and not
+    // recognized by Google/Bing/any current crawler — some validators flag
+    // it as invalid/non-standard syntax for no actual benefit.
   }
 }
