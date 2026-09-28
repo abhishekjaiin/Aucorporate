@@ -19,3 +19,7 @@ node_modules
 .DS_Store
 .vercel
 *.tsbuildinfo
+
+# Claude Code isolated-agent worktrees — transient nested checkouts
+# (each has its own .git), never meant to be committed to the main repo
+.claude/worktrees/
