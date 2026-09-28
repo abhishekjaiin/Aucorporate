@@ -12,7 +12,7 @@ pipeline_scope: full /seo-page (Stages 1-11 + implementation), matching upgraded
 
 ## Stage log
 - [x] Stage 1 — seo-researcher — 01-serp-research.md (done 2026-09-28; Semrush blocked on no_api_units, WebFetch blocked entirely by network egress proxy in this environment — findings sourced from WebSearch snippets/synthesis only, flagged throughout)
-- [ ] Stage 2 — keyword-intent-analyst — 02-keyword-intent-map.md
+- [x] Stage 2 — keyword-intent-analyst — 02-keyword-intent-map.md (done 2026-09-28; Semrush retried and confirmed still blocked on no_api_units — no volume data available, every keyword marked "Search volume not verified"; classification based on WebSearch-derived SERP-title-frequency signal per Stage 1's method, plus 2 additional targeted WebSearches this stage. Primary keyword "permanent establishment risk India US company" confirmed by direct competitor title matches (kaam.work, beaconfiling.com, anjusmriti.com). Foreign/International Framing Check passed with real evidence for "foreign companies" as a natural secondary variant (treelife.in, stratrich.com x2, nexdigm.com) — NOT promoted to primary keyword; "international"/"overseas" found zero evidence and excluded entirely. Flagged an unresolved PE tax-rate figure conflict (40%/43.68% vs 35%/38.22% across sources) for Stage 5/6 to verify against a primary source before publishing either number.)
 - [ ] Stage 3 — competitor-reverse-engineer — 03-competitor-analysis.md
 - [ ] Stage 4 — content-gap-analyst — 04-content-gap.md
 - [ ] Stage 5 — au-corporate-strategist — 05-au-positioning.md
