@@ -17,10 +17,13 @@ competitor_input: registercompanyinindia.com/company-registration-in-india-from-
 
 ## Stage log
 - [x] Stage 1 — seo-researcher — 01-serp-research.md (complete; fetch/Semrush tooling gaps noted above, filled by orchestrator)
-- [ ] Stage 2 — keyword-intent-analyst — 02-keyword-intent-map.md
-- [ ] Stage 3 — competitor-reverse-engineer — 03-competitor-analysis.md
-- [ ] Stage 4 — content-gap-analyst — 04-content-gap.md
-- [ ] Stage 5 — au-corporate-strategist — 05-au-positioning.md
-- [ ] CHECKPOINT 1 — pending
+- [x] Stage 2 — keyword-intent-analyst — 02-keyword-intent-map.md (complete)
+- [x] Stage 3 — competitor-reverse-engineer — 03-competitor-analysis.md (complete)
+- [x] Stage 4 — content-gap-analyst — 04-content-gap.md (complete)
+- [x] Stage 5 — au-corporate-strategist — 05-au-positioning.md (complete)
+- [x] CHECKPOINT 1 — APPROVED by user 2026-09-28 ("sure pls update sitemap as well and continue adding more pages", in response to being asked explicitly for APPROVED on this checkpoint)
 - [ ] Stage 6 — content-architect — 06-content-architecture.md
-- [ ] CHECKPOINT 2 — pending (this is a /content-brief run — stops here, no drafting)
+- [ ] CHECKPOINT 2 — pending
+
+## Scope note (2026-09-28)
+Originally run as /content-brief (stops at Checkpoint 2, no drafting). User's follow-up request ("continue adding more pages" + "update sitemap") implies they want the live page built, not just the brief. Upgrading this pipeline to full /seo-page scope: after Checkpoint 2 is approved, continue to Stage 7 (writer) through Stage 11 (final QC), then implement as a live Next.js page and update sitemap.ts + topics.csv at that point — matching the pattern used for the Branch/Liaison/Project Office/LLP pages.
