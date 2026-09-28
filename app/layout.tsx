@@ -241,6 +241,7 @@ export default function RootLayout({
         "Germany",
         "Japan",
         "China",
+        "United Arab Emirates",
       ],
 
       contactPoint: {
@@ -328,6 +329,7 @@ export default function RootLayout({
         "Germany",
         "Japan",
         "China",
+        "United Arab Emirates",
       ],
 
       serviceType: [

@@ -15,11 +15,13 @@ import {
   ArrowRight,
   CheckCircle2,
   Briefcase,
-  BarChart3,
-  Lock,
   Cpu,
   LineChart,
   GraduationCap,
+  Factory,
+  Truck,
+  ShoppingBag,
+  Rocket,
 } from 'lucide-react'
 
 const services = [
@@ -81,11 +83,17 @@ const services = [
   },
 ]
 
+// Kept in sync with the homepage's industries list (app/page.tsx) — this
+// page previously had a different, shorter list, which meant the site
+// stated two different answers for "which industries does AU Corporate
+// serve" depending on which page you asked.
 const industries = [
-  { icon: Briefcase, name: 'Financial Services' },
-  { icon: BarChart3, name: 'Healthcare & Life Sciences' },
-  { icon: Lock, name: 'Technology & Media' },
-  { icon: Cpu, name: 'Manufacturing' },
+  { icon: Factory, name: 'Manufacturing' },
+  { icon: Cpu, name: 'Technology & GCCs' },
+  { icon: Truck, name: 'Logistics & Supply Chain' },
+  { icon: ShoppingBag, name: 'Consumer & Retail' },
+  { icon: Briefcase, name: 'Professional Services' },
+  { icon: Rocket, name: 'Startups & E-Commerce' },
 ]
 
 const needMap = [
@@ -242,7 +250,7 @@ export default function ServicesPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">Serving Diverse Industries</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Our deep industry knowledge enables us to deliver tailored solutions that address sector-specific challenges and opportunities.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {industries.map((industry) => (
               <ClickableReveal key={industry.name} className="p-6 rounded-xl bg-secondary border border-border text-center hover:border-gold/50 hover:shadow-lg transition-all duration-300 cursor-pointer">
                 <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mx-auto mb-4">
