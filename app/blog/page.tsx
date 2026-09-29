@@ -20,14 +20,6 @@ const categoryStyles: Record<Category, { bg: string; text: string; dot: string }
 
 const blogs: { title: string; desc: string; slug: string; href?: string; category: Category; date: string; featured?: boolean }[] = [
   {
-    title: "Accounting Outsourcing for US CPA Firms: A Practical Guide",
-    desc: "How US CPA firms use India-based accounting outsourcing to handle overflow work, seasonal capacity and back-office bookkeeping — scope, security, and what to check before engaging a partner.",
-    slug: "accounting-outsourcing-firm-for-united-states-cpas-firm",
-    href: "/accounting-outsourcing-firm-for-united-states-cpas-firm",
-    category: "India Entry",
-    date: "14 Sep 2026",
-  },
-  {
     title: "India Opens Another Door for Japanese High-Tech Investment",
     desc: "Commerce Minister Piyush Goyal's proposed BIS certification exemption for high-tech manufacturers, announced in Tokyo on 25 August 2026 — and what it signals for Japanese semiconductor, electronics, and AI companies evaluating India.",
     slug: "india-japan-bis-exemption-high-tech-investment",
