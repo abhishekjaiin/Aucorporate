@@ -311,6 +311,13 @@ export default function EntryProcessPage() {
               <ClickableInfoCard key={r.title} title={r.title} desc={r.desc} />
             ))}
           </div>
+          <p className="text-gray-600 text-center max-w-3xl mx-auto mt-8">
+            On the tax-exposure risk above: see our full{' '}
+            <Link href="/india-entry-for-us-companies/permanent-establishment-risk-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+              permanent establishment risk analysis for US companies
+            </Link>{' '}
+            for the four-way PE typology, current case law, and whether an EOR or subsidiary actually removes the exposure.
+          </p>
         </div>
       </section>
       {/* AU SUPPORT AGAINST ENTRY RISKS */}

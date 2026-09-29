@@ -29,6 +29,11 @@ const faqs = [
 export default function IndiaEntryForUSCompanies() {
   const subPages = [
     {
+      title: 'Permanent Establishment Risk',
+      description: 'The four ways a US company triggers PE in India, current case law, and whether a subsidiary or an EOR actually removes the exposure',
+      href: '/india-entry-for-us-companies/permanent-establishment-risk-india',
+    },
+    {
       title: 'Register a Company from the USA',
       description: 'Compare all five entity options — subsidiary, LLP, branch, liaison, project office — and the registration process, cost and timeline',
       href: '/india-entry-for-us-companies/register-company-in-india-from-usa',
@@ -76,6 +81,19 @@ export default function IndiaEntryForUSCompanies() {
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
           Our team includes CA and US CPA-qualified professionals, giving US clients a direct line to expertise in both Indian statutory requirements and US GAAP/reporting expectations from the other side of the desk.
+        </p>
+      </div>
+
+      {/* PE RISK — comes before entity choice deliberately: PE exposure is a
+          question a US company faces even before it decides on a structure,
+          not a consequence of getting the structure wrong. */}
+      <div className="mb-12">
+        <p className="text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
+          Before you even get to entity choice, it&apos;s worth asking a more fundamental question: does your current India activity already create a taxable presence, with or without an entity? Permanent establishment (PE) risk is a function of what your people and contracts actually do in India, not of whether you&apos;ve incorporated anything — see our full{' '}
+          <Link href="/india-entry-for-us-companies/permanent-establishment-risk-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            permanent establishment risk analysis for US companies
+          </Link>{' '}
+          for the four-way typology, current case law, and whether a subsidiary or an EOR actually removes the exposure.
         </p>
       </div>
 
