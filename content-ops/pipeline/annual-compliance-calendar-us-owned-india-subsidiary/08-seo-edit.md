@@ -1,0 +1,49 @@
+# SEO Edit Notes: Annual Compliance Calendar for Foreign Subsidiary Companies in India
+
+Date: 2026-09-29
+Author: Stage 8 (seo-editor)
+Inputs read in full: STATUS.md, 06-content-architecture.md, 07-draft.md (including Writer's Notes).
+
+## Checklist Results
+
+| Check | Status | Notes |
+|---|---|---|
+| Primary keyword in title | Pass | Title uses "Annual Compliance Calendar for Foreign Subsidiary Companies in India" — a natural word-order/pluralization variant of the resolved primary keyword ("annual compliance for foreign subsidiary company in India"), per Stage 6's deliberate H1-convention decision. Not changed — this is a resolved cross-stage call, not a drafting oversight. |
+| Primary keyword in H1 | Pass | Same phrasing as title, per Stage 6's explicit resolution. No change. |
+| Primary keyword in first ~100 words | Pass (edited) | H1 itself carries the near-exact phrase within the first 10 words. Added the exact phrase "for a foreign subsidiary company in India" to the scope paragraph (~90 words into body copy) for a clean, literal match early in the body — see Edits Made #1. |
+| Primary keyword in at least one H2 | Pass (edited) | No H2 previously contained "foreign subsidiary." Added "Foreign" to the Board/AGM H2 — see Edits Made #2. All other H2s left as-is (architecture's headings are deliberately topic-specific, not keyword-repetitive, and forcing the phrase into headings like "The Annual Filing Calendar" would read as stuffing). |
+| Primary keyword in meta description | Pass (close variant) | Meta uses "foreign-owned subsidiary in India," not the literal string. Within Stage 6's stated ~158-character budget; forcing the exact phrase would require cutting a named form (AOC-4/MGT-7/ADT-1/DIR-3 KYC) that does more click-through work. Left unchanged — flagged, not edited. |
+| Secondary/long-tail keyword coverage | Pass | ROC compliance calendar, AOC-4/MGT-7 due dates, DIR-3 KYC due date for foreign director, ADT-1 filing deadline, board meeting/AGM requirements, and CCFS 2026 are all covered at genuine depth, not force-inserted as bare phrases. "Foreign subsidiary compliance checklist India" has no literal match but is fully covered conceptually (the whole page is that checklist) — not worth shoehorning the bare phrase in. |
+| Search intent satisfaction / order | Pass | Draft follows Stage 6's exact section order: orient on sequence → dated calendar → DIN-holder section → board/AGM → FEMA (thin, cross-linked) → penalties → CCFS (closed-window, honest) → who prepares → FAQ → CTA. Matches Stage 1/2's mixed scan+plan intent read. |
+| Semantic coverage (entities/regs) | Pass | Companies Act 2013 (Sections 92, 96, 137, 139(6)), MCA General Circular 08/2025, FEMA/RBI, DPDP/Labour Codes (cross-linked, not restated), CCFS 2026 all present where relevant. |
+| Heading hierarchy | Fixed | Found one hierarchy skip: an orphan `### Who this page is for` H3 sitting directly under the H1 with no intervening H2 (architecture specifies the intro should carry no heading at all — plain paragraphs only). Converted to a bold lead-in phrase, not a heading — see Edits Made #3. All other headings now nest correctly: single H1 → H2 sections → H3 subsections within DIN-holder and Board/AGM sections only. |
+| Title/meta length & click-worthiness | Flagged, not edited | Title tag is ~83 characters including the "| AU Corporate" suffix — likely to truncate in a standard SERP display. This matches the site's existing convention on sibling pages in this cluster (which also append "| AU Corporate"), so it's a sitewide pattern rather than a draft-specific defect; not unilaterally shortened since that would touch Stage 6's approved metadata over a marginal display concern. Flagged below for optional follow-up. Meta description (~158 chars) is within range and accurate to content. |
+| URL matches Stage 6 | Pass | `/india-entry-for-us-companies/annual-compliance-calendar` — exact match, no change. |
+| Internal links present per Stage 6's plan, non-generic anchors | Pass | All outbound links (hub, FEMA page, incorporation guide, regulatory-compliance, accounting-assurance, taxation-regulatory, transfer-pricing) use descriptive, keyword-relevant anchor text — no "click here"/"read more" anywhere. Inbound links (8 other AU pages Stage 6 specifies should link to this page) are correctly out of scope for this draft file — Stage 7 already flagged this as an implementation-stage task in Writer's Notes #10; not this stage's job to fabricate edits to other pages' live code. |
+| FAQ formatted for FAQ-rich-result eligibility | Pass | Each FAQ entry uses a clear question immediately followed by a direct answer, matching the `FaqAccordion`/FAQPage JSON-LD component pattern described in the architecture. Bold-styled question text (not raw markdown H3/H4) is correct here since the live component, not raw markdown, will render the actual heading/accordion-trigger markup. |
+| Featured snippet opportunity | Partial — flagged, not edited | No single 40-60 word direct-answer paragraph sits near the very top of the page (the page leads with scope/audience framing, appropriate for this content type, not a single question). The best snippet candidate is the "Can the AGM be held virtually..." answer (~76 words, slightly over ideal length) partway down the page, and several FAQ answers are strong candidates but run longer than 40-60 words. Not trimmed — cutting them down risked losing the hedged/practitioner nuance that's this page's actual differentiator. Flagged below as an opportunity, not a defect. |
+| Readability | Pass | Sentence length is on the long side in places (matches the practitioner-guide voice deliberately set by Stage 5/7) but jargon (DSC, apostille, OTP, V3 portal, MGT-7A) is explained inline on first use. Good scannability via table, numbered sequence, bolded list leads, and H3 subsections. |
+| Conversion opportunities | Pass | Single mid-page LeadForm placed after "Who Actually Prepares These Filings," directly after the reader has been walked through the full obligation set and shown who executes it — correct placement (reader is informed enough to want help, not interrupted mid-lookup). No CTA language inside calendar/DIN/CCFS/penalty sections, correctly preserving the CCFS section's credibility per Stage 5/6's hard guardrail. |
+
+## Edits Made
+
+1. **Scope paragraph (intro, second paragraph)** — inserted "for a foreign subsidiary company in India" into the existing sentence ("...the dated Companies Act / MCA-ROC annual filing cycle for a foreign subsidiary company in India — AOC-4, MGT-7..."). Reason: gets the literal primary-keyword phrase into the first ~100 words of body copy naturally — the sentence already named the page's scope, so the phrase slots in without changing its meaning or rhythm.
+2. **H2 heading**: "Board Meetings and the AGM: What a US-Owned Subsidiary Actually Has to Do" → "Board Meetings and the AGM: What a US-Owned Foreign Subsidiary Actually Has to Do". Reason: satisfies the "primary keyword in at least one H2" checklist item with a one-word insertion that reads naturally (the section already discusses a foreign subsidiary's board/AGM obligations).
+3. **Heading hierarchy fix**: converted `### Who this page is for` (an H3 immediately under the H1, with no H2 in between) to a bold lead-in phrase — "**Who this page is for.** This page is for a US parent's Indian subsidiary..." — folded into the paragraph rather than a separate heading. Reason: fixes an H1→H3 hierarchy skip and matches the architecture's own explicit instruction that the intro should carry "no H2" (i.e., no subheading structure at all, plain paragraphs) — the H3 was a drafting deviation from that spec, not a content issue.
+
+No other changes made. The draft was already close to the checklist on nearly every dimension — over-optimizing a page this carefully sequenced across seven prior stages would have been the wrong call.
+
+## Snippet/FAQ Opportunities Identified
+
+- **FAQ #1 (AGM/virtual)** and **FAQ #2 (DIR-3 KYC cadence)** are AU's strongest snippet candidates — both answer a real, previously-unanswered-by-competitors question (per Stage 3/4's gap finding) directly in the opening sentence. Worth monitoring post-publish for snippet capture; no pre-publish action needed.
+- **"Can the AGM be held virtually..." H3 answer** (~76 words) is a good paragraph-snippet candidate but runs slightly long. Not trimmed here since the extra sentence (notice/quorum/minute-keeping still apply) is genuinely useful, not padding — flagging for the writer's discretion only if a future revision wants a tighter opening sentence specifically for snippet targeting.
+- **FAQ #7** ("What compliance does a US parent company need...") is the page's natural "summarize the whole page" entry and a plausible snippet target for the broader, less-specific query, but its answer is long by design (it's meant to orient a skimmer across the whole page). Leave as-is.
+
+## Remaining Issues (send back to writer if needed)
+
+None require the writer. Two items are worth carrying forward, not as defects but as optional follow-ups:
+
+1. **Title tag length (~83 characters with the "| AU Corporate" suffix)** may truncate in some SERP displays. This is a sitewide template convention (matches sibling pages), not unique to this draft — if AU wants to address it, it's a site-template-level decision (e.g., whether the brand suffix should auto-truncate or be dropped on long titles), not a per-page edit. No action taken.
+2. **CCFS circular-number discrepancy and the other hedged facts in Writer's Notes (items 1-8)** remain exactly as Stage 7 shipped them — per this task's explicit instruction, these are fact-check-gate items for Stage 9, not SEO edits, and were not touched.
+
+All other checklist items pass without reservation.

@@ -20,7 +20,7 @@
 
 Last updated: 29 September 2026 — prepared by AU Corporate's taxation and regulatory compliance practice.
 
-The India-US DTAA doesn't change whether a US parent company can move money out of its Indian subsidiary — FEMA already permits that for dividends, royalties and fees as ordinary current-account transactions. What the treaty changes is how much India can withhold on the way out. Left to India's domestic rate, withholding runs at 20% plus surcharge and cess. The treaty caps that materially lower on most payment types, but only if the subsidiary's bank has the right paperwork on file before the payment is processed — the treaty rate is elected, not automatic.
+The India-US DTAA doesn't change whether a US parent company can repatriate profits from its Indian subsidiary — FEMA already permits that, for dividends, royalties and fees, as ordinary current-account transactions. What the treaty changes is how much India can withhold on the way out. Left to India's domestic rate, withholding runs at 20% plus surcharge and cess. The treaty caps that materially lower on most payment types, but only if the subsidiary's bank has the right paperwork on file before the payment is processed — the treaty rate is elected, not automatic.
 
 Section 90(2) of the Income-tax Act, 1961 — carried forward as Section 159 of the Income-tax Act, 2025, effective from the 2026-27 assessment year — is the actual legal basis for that election: a non-resident is taxed at whichever of the domestic rate or the treaty rate is more beneficial. Everything below assumes a US parent company that already has an operating Indian subsidiary and is deciding how, and through which route, to bring profits home this quarter.
 
@@ -64,7 +64,7 @@ The default route for most subsidiaries, and the one the rate table above applie
 
 ### Royalty / Fees for Included Services
 
-Same Article 12 tiers apply — 10–15% depending on whether the payment is a royalty (copyright, patent, trademark, know-how) or a standalone FIS payment, and whether it's ancillary to a royalty. One cost layer worth flagging separately: cross-border royalty and FIS payments to a foreign parent typically attract an 18% GST reverse charge on the Indian subsidiary, on top of the withholding tax discussed here — a real cash-flow cost, though a mechanically distinct one from DTAA withholding. Our [taxation and regulatory guidance](/services/taxation-regulatory) covers the GST reverse-charge mechanics on cross-border payments in more depth; it's not repeated here.
+Same Article 12 tiers apply — 10–15% depending on whether the payment is a royalty (copyright, patent, trademark, know-how) or a standalone FIS payment, and whether it's ancillary to a royalty. One cost layer worth flagging separately: cross-border royalty and FIS payments to a foreign parent typically attract an 18% GST reverse charge on the Indian subsidiary, on top of the withholding tax discussed here — a real cash-flow cost, though a mechanically distinct one from DTAA withholding. Our [GST reverse charge guidance for cross-border payments](/services/taxation-regulatory) covers the mechanics in more depth; it's not repeated here.
 
 ### Management / Service Fees
 

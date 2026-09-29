@@ -15,17 +15,17 @@ URL: /india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-
 
 *A complete guide to choosing and executing the right exit route for US parent companies, from the RBI's remittance-of-assets rules through your Form 5471 deconsolidation.*
 
-If you're a US parent closing an Indian subsidiary, the decision usually isn't whether to exit — that call has already been made upstream — it's how. Indian company law gives you two genuinely different routes to get there: a fast, low-cost strike-off under Section 248 of the Companies Act, or a formal voluntary liquidation under the IBBI's regulations. They aren't interchangeable, and picking the wrong one for your actual situation can cost you months or, worse, leave the entity (and its directors) exposed to restoration later.
+If you're a US parent closing — or winding up — an Indian subsidiary, the decision usually isn't whether to exit — that call has already been made upstream — it's how. Indian company law gives you two genuinely different routes to get there: a fast, low-cost strike-off under Section 248 of the Companies Act, or a formal voluntary liquidation under the IBBI's regulations. They aren't interchangeable, and picking the wrong one for your actual situation can cost you months or, worse, leave the entity (and its directors) exposed to restoration later.
 
 This page is the deep walkthrough of that decision and everything that follows it — the process mechanics for both routes, how the RBI's remittance-of-assets rules actually work when you try to get money back to the US, and what closing the Indian entity means for your US parent's own tax filings. If you haven't yet worked through the initial subsidiary-vs-branch structure question, [our US subsidiary vs branch office comparison](/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india) is where that choice gets framed; this page picks up from there, once a subsidiary already exists and needs to close.
 
-> ### Is This the Right Guide for You?
+> ## Is This the Right Guide for You?
 >
 > This guide covers a foreign — including US — parent company closing its **Indian** subsidiary: an inbound FDI/FEMA matter, governed by the Companies Act strike-off and IBBI voluntary-liquidation rules described below. If instead you're an Indian company closing your own **overseas** subsidiary, the rules run the other direction entirely — different filings, different regulator touchpoints — and none of what follows on this page applies to that scenario.
 >
 > It also matters what kind of Indian presence you actually have. This guide is written for a Private Limited company or LLP subsidiary. If your India presence is a **Branch Office**, **Liaison Office**, or **Project Office**, you're looking at a structurally separate, RBI-regulated closure process — Section 248 and the IBBI's voluntary-liquidation regime don't apply to those structures at all. See our dedicated guides instead: [closing a Branch Office](/branch-office-in-india), [closing a Liaison Office](/liaison-office-in-india), or [closing a Project Office](/project-office-in-india).
 
-## Strike-Off vs Voluntary Liquidation — How to Actually Decide
+## Strike-Off vs Voluntary Liquidation: How to Decide When Closing an Indian Subsidiary
 
 ### The two routes at a glance
 
@@ -207,7 +207,7 @@ No — those are structurally separate, RBI-regulated closure processes, not the
 **I'm an Indian company closing my own overseas subsidiary — is this the right guide?**
 No. This guide covers a foreign parent closing its Indian subsidiary — an inbound matter governed by the Companies Act strike-off and IBBI voluntary-liquidation rules described above. An Indian company closing its own subsidiary abroad follows a different, outbound regulatory pathway entirely, with its own distinct reporting requirements. If that's your situation, the process described on this page does not apply to you.
 
-## CTA
+**CTA section** *(no H2 heading on-page, per Stage 6's architecture — component block only)*
 
 **Not Sure Which Route Fits Your Situation?**
 
@@ -217,7 +217,7 @@ Whether your subsidiary looks like a clean strike-off case or has open obligatio
 
 Related reading: [US Subsidiary vs Branch Office in India](/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india) · [FEMA Compliance for US Companies After Incorporation](/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary) · [Transfer Pricing & Section 482 for US-India Subsidiaries](/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary) · [Doing Business in India: The Complete Guide for US Companies](/india-entry-for-us-companies) (back to hub)
 
-CTA-level link only (not embedded in body content): [/services/taxation-regulatory](/services/taxation-regulatory)
+CTA-level link only (not embedded in body content): [Taxation & Regulatory Services](/services/taxation-regulatory)
 
 ---
 
