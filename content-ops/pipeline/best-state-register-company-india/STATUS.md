@@ -7,11 +7,11 @@ requested_by: user request, 2026-09-29 — "which state is better to register yo
 target_site: theaucorp.com
 target_cluster: /india-business-setup/* or /doing-business-in-india/* — general (not US-specific) since state choice is nationality-agnostic; final placement decided by Stage 5/6
 proposed_url: TBD by Stage 6 pending cluster decision
-source_research: none yet — full fresh research this run
+source_research: Stage 1 complete, 2026-09-29 — see 01-serp-research.md. Preliminary verdict: supports a blog/guide-tier article within an existing cluster, not a new standalone commercial page — no dominant direct competitor found for this exact query, intent reads informational/commercial-investigation not transactional. Note: WebFetch was fully egress-blocked this run (all domains) and Semrush hit no_api_units — findings are search-snippet-based only, not page-fetch-verified; Stage 3 should re-attempt direct fetches of top URLs before deep competitor teardown.
 pipeline_scope: full /seo-page (Stages 1-11 + implementation)
 
 ## Stage log
-- [ ] Stage 1 — seo-researcher — 01-serp-research.md
+- [x] Stage 1 — seo-researcher — 01-serp-research.md (complete 2026-09-29)
 - [ ] Stage 2 — keyword-intent-analyst — 02-keyword-intent-map.md
 - [ ] Stage 3 — competitor-reverse-engineer — 03-competitor-analysis.md
 - [ ] Stage 4 — content-gap-analyst — 04-content-gap.md

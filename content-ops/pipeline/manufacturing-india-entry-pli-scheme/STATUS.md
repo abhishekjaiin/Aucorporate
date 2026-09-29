@@ -11,7 +11,7 @@ source_research: prior workbook flagged this VALIDATE FIRST, not confirmed CREAT
 pipeline_scope: full /seo-page (Stages 1-11 + implementation), matching the other in-flight USA pages
 
 ## Stage log
-- [ ] Stage 1 — seo-researcher — 01-serp-research.md
+- [x] Stage 1 — seo-researcher — 01-serp-research.md — complete 2026-09-29. Verdict: prior "no competitor" claim does NOT fully hold — found a real, active competitor cluster (beaconfiling.com has a dedicated China+1/PLI post AND a USA-audience cluster structurally mirroring AU's own; india-briefing.com/Dezan Shira has a high-authority "India Market Entry Strategy for US Investors" page substantively covering PLI+China+1; KNM India, Tecnova, ASC Group, Ahlawat, MAS LLP, Inaac Advisors all publish 2026-dated adjacent content). But no single competitor combines US-manufacturer framing + PLI eligibility mechanics + China+1 hook + manufacturing-specific entity/FEMA depth in one page the way AU's cluster structure would allow — gap is real but narrower than "zero competition." Confirmed via direct file read that AU's existing /india-entry-for-us-companies/page.tsx has no PLI/manufacturing/China+1 content at all. Semrush unavailable (no_api_units, account-level quota error) — all findings are WebSearch-evidence-only, explicitly marked not verified for traffic/rankings. WebFetch was blocked by egress proxy for every competitor domain attempted. Full detail, verdict reasoning, and open questions in 01-serp-research.md.
 - [ ] Stage 2 — keyword-intent-analyst — 02-keyword-intent-map.md
 - [ ] Stage 3 — competitor-reverse-engineer — 03-competitor-analysis.md
 - [ ] Stage 4 — content-gap-analyst — 04-content-gap.md
