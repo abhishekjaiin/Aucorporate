@@ -1,0 +1,60 @@
+# SEO Edit Notes: Repatriating Profits from Your Indian Subsidiary — DTAA Rates & Withholding Tax Guide (US Parent Companies)
+
+Date: 2026-09-29
+Stage: 8 (seo-editor)
+
+Reviewed against `02-keyword-intent-map.md` and `06-content-architecture.md`. Edited `07-draft.md` in place. Draft was already close to publish-ready — most edits below are small, targeted fixes, not a rewrite. Approved section structure (H2/H3 order, callout content, worked examples, hedged/unverified figures) was left untouched per guardrail.
+
+## Checklist Results
+
+| Check | Status | Notes |
+|---|---|---|
+| Primary keyword in title | Pass | "Repatriating Profits from Your Indian Subsidiary to a US Parent" — exact match to Stage 6's title. |
+| Primary keyword in H1 | Pass | H1 matches title almost verbatim. |
+| Primary keyword in first ~100 words | Fixed | Original opening paragraph used "move money out of" instead of the primary phrase anywhere in the first ~100 words. Edited one clause to "can repatriate profits from its Indian subsidiary" — natural, no keyword stuffing, reads better than the original. |
+| Primary keyword in ≥1 H2 | Partial pass | No H2 contains the full phrase verbatim; "Dividend, Royalty, Management Fee, or Buyback — Comparing the Repatriation Routes" carries the "Repatriation" stem. This exact heading was specified verbatim in Stage 6's brief — did not alter it, per the no-restructuring guardrail and the instruction not to shoehorn keywords into approved headings. Flagged below, not fixed. |
+| Primary keyword in meta description | Pass | "repatriates profits from its Indian subsidiary" — present, natural. |
+| Secondary/long-tail coverage | Pass | All 10 Stage 2 secondary keywords and the question-keyword set are covered somewhere on the page (rate table, route-comparison section, buyback section, TRC section, FAQ) without forced insertion. |
+| Bare "DTAA India US" heading discipline | Pass (verified) | Checked every H1/H2/H3 and every FAQ question on the page individually — none uses a bare, unqualified "DTAA India US" or "dividend withholding tax India US" phrasing. Every heading either names dividends/interest/royalties/FIS directly or is otherwise entity-qualified. This discipline holds throughout the draft, not just in the title/H1 — confirms Stage 2's disambiguation finding was carried through correctly. |
+| Search intent / journey order | Pass | Section order (rates → paperwork rename → PPT-absence → route comparison → buyback → TRC → Form 145/146 → US-side FTC → FAQ) matches Stage 6's H2/H3 outline exactly, which itself was built from Stage 1/2's actual question set. |
+| Semantic coverage (entities/regulations) | Pass | FEMA, Section 90(2)/159, Income-tax Act 2025, Finance Act 2026, GAAR, MLI/PPT, IRC §901/§904/§245A, Form 1118, GST RCM, Section 197, RBI, Companies Act, FC-TRS all present and correctly placed. |
+| Heading hierarchy | Pass | Single H1; H2s used for major sections; H3s correctly nested under their parent H2 (paperwork/PPT callouts under the rate H2; route H3s under the comparison H2; Section 197 under the TRC H2). FAQ questions were bolded text, not real headings — fixed, see Edits Made. |
+| Title length/click-worthiness | Accepted as-is | ~93 characters, will truncate in SERP display. This is a deliberate, documented Stage 6 tradeoff (disambiguation language over strict length) — not overridden. Stage 6's shorter alternate title remains available if a human reviewer wants to revisit this call. |
+| Meta description length | Pass | ~163 characters as drafted — within acceptable SERP display range, accurate to content, leads with the entity-qualified framing. |
+| URL matches Stage 6 | Pass | Exact match: `/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax`. |
+| Internal links present | Fixed (2 issues) | See Edits Made — one missing Related Reading block, one un-hyperlinked Tiger Global mention. All other Stage 6-planned links (FEMA/FC-TRS, TP/arm's-length pricing, taxation-regulatory/GST RCM, PE-risk page) are present in the body. |
+| Internal link anchor text quality | Fixed (1), accepted (2) | Taxation-regulatory anchor tightened (see below). FEMA anchor ("FEMA compliance guide for US companies") and TP anchor ("transfer pricing question") diverge from Stage 6's exact suggested anchors but are still specific and descriptive, not generic "click here"/"read more" — left as-is. |
+| FAQ formatted for rich-result eligibility | Fixed | Questions were bold paragraph text, not headings. Converted all 9 to `###` headings with the answer immediately following, per the checklist's explicit requirement. |
+| Featured snippet opportunity | Pass, no edit needed | FAQ #1's answer opens with a self-contained ~40-word direct-answer sentence (the 15% rate + domestic-default contrast) before adding nuance — already snippet-shaped. No paragraph elsewhere needed shortening to create this. |
+| Readability / scannability | Pass, minor notes | Table, numbered TRC steps, and bulleted buyback timeline all support scannability. A few callout/closing paragraphs (PPT-absence callout, the FTC section's dividend/245A paragraph) run long (~150-200 words) for a single block — flagged below as a soft note, not edited, since breaking them up would mean restructuring approved-section prose for a marginal readability gain, not fixing a genuine SEO defect. |
+| Conversion opportunities / CTA placement | Pass | LeadForm placements (after the buyback section; immediately before FAQ) sit at points where a reader has enough information to act, matching the confirmed PE-risk sibling pattern. No change needed. |
+
+## Edits Made
+
+1. **Primary keyword in first ~100 words** — Changed "a US parent company can move money out of its Indian subsidiary" to "a US parent company can repatriate profits from its Indian subsidiary" in the opening paragraph. Minimal wording change, reads naturally, closes a real gap (the primary keyword phrase did not appear anywhere in the first ~100 words of body copy before this edit).
+
+2. **Internal link anchor text — GST reverse charge** — Changed "Our [taxation and regulatory guidance](/services/taxation-regulatory) covers the GST reverse-charge mechanics on cross-border payments in more depth" to "Our [GST reverse charge guidance for cross-border payments](/services/taxation-regulatory) covers the mechanics in more depth." Brings the anchor text in line with Stage 6's suggested anchor ("GST reverse charge on cross-border payments") instead of the more generic "taxation and regulatory guidance," which named the destination page rather than the reason for the link.
+
+3. **Missing internal link — Tiger Global ruling** — The MLI/PPT-absence callout named "the Supreme Court's Tiger Global ruling on treaty-shopping through a Mauritius conduit structure" as Stage 6's specified optional cross-link, but the text was never actually hyperlinked in the draft — a genuine oversight, not a deliberate omission (Writer's Notes item 11 flagged a different, unrelated omission — the Netherlands buyback case — but not this one). Added the `/blog/mail-box-dtaa-benefits` link to the existing anchor text.
+
+4. **Missing Related Reading block** — Stage 6's H2/H3 outline specifies a fixed-position "Related Reading block" immediately after the FAQ section, matching the convention on all three structural sibling pages (TP, FEMA, UK-DTAA), with two specific links: a two-way cross-link to the India-UK DTAA sibling page and a standard hub back-link. This block was entirely absent from the draft. Added it verbatim per Stage 6's Internal Linking table (anchor text: "India-UK DTAA & Withholding Tax Rates" and "← Back: India Entry for US Companies"), placed between the FAQ and the CTA section. This is a formulaic, plan-specified link list, not new narrative content, so it was added directly rather than flagged back to the writer.
+
+5. **FAQ heading structure** — Converted all 9 FAQ questions from bold paragraph text (`**Question?**` followed immediately by the answer on the next line) to proper `###` headings with a blank line before the answer. Content and answer text unchanged. This directly addresses the checklist requirement ("clear question as heading, direct answer immediately after") and gives implementation a stronger signal to render these as real heading elements (helps both FAQPage schema eligibility and accessibility), rather than only a visual bold treatment.
+
+No factual claims, figures, hedges, or approved section structure/order were changed. No keyword was inserted where it would read as forced — the one keyword-related edit (opening paragraph) replaced an existing verb phrase with a more precise, equally natural one rather than adding a new clause.
+
+## Snippet/FAQ Opportunities Identified
+
+- FAQ #1 ("How much tax does a US company pay repatriating a dividend...") already contains a clean, self-contained ~40-word lead sentence stating the 15%/20%+ contrast — strong candidate for a featured snippet or FAQ rich result as-is, now reinforced by the heading fix above.
+- FAQ #8 (PPT/treaty-shopping question) is a genuine differentiator opportunity: it's a "contrarian" direct-answer format ("No — and this is worth flagging explicitly because it's the opposite of...") that could stand out in an FAQ rich result against competitor content that doesn't cover this angle at all (per Stage 3's finding, only 1/6 competitors touch this).
+- The rate table itself (Dividends/Interest/Royalties/FIS vs. domestic baseline) is a strong candidate for a table-format featured snippet if Google chooses to pull it — no change needed, already clean and scannable.
+
+## Remaining Issues (send back to writer if needed)
+
+1. **No H2 carries the full primary keyword phrase verbatim.** The closest is "Comparing the Repatriation Routes" (stem match only). This heading was specified exactly this way in Stage 6's approved brief, so it was not altered here. If tighter keyword-in-heading coverage is wanted, this would need a Stage 6/7 revisit of that specific H2's wording, not a Stage 8 edit — raising it rather than forcing a change into an approved heading.
+2. **FEMA and TP internal link anchors diverge from Stage 6's exact suggested anchor text** ("the same Form FC-TRS filing already governed by FEMA" and "arm's-length pricing of the underlying management fee" respectively). The draft's actual anchors ("FEMA compliance guide for US companies," "transfer pricing question") are specific and non-generic, so left as-is, but they carry less of the target long-tail phrasing than Stage 6 proposed. Low-priority; flagging for awareness only.
+3. **Long single-paragraph callouts** (PPT-absence callout; the FTC section's dividend/§245A paragraph) run 150–200+ words each. Genuinely dense but accurate and hedged content — a readability nice-to-have, not a defect, and breaking these up would mean restructuring writer-approved prose. Flagging for the writer's discretion on a future pass, not fixed here.
+4. **FAQ component implementation check needed.** The FAQ questions are now marked as `###` headings in the markdown draft, but the live page most likely renders FAQ content through a dedicated component (props-driven, similar to the CTA/LeadForm pattern flagged in the draft's own Writer's Notes) rather than raw markdown. Implementation/Stage 9 should confirm the component actually emits each question as a semantic heading (or equivalent ARIA/schema markup) in the live page, not just visually bolded text, to realize the FAQ rich-result eligibility this fix is aiming at.
+5. **Title length (~93 characters) will truncate in SERP display.** This was a deliberate, explicitly-reasoned Stage 6 tradeoff (disambiguation safety over strict character-count), not an oversight — not overridden here, but noting for the record in case a human reviewer wants to reconsider Stage 6's shorter alternate title at a later stage.
+
+All other checklist items passed without requiring edits — the draft's keyword handling, semantic coverage, heading hierarchy, CTA placement, and readability were already solid coming out of Stage 7.
