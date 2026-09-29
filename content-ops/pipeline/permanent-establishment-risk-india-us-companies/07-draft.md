@@ -2,7 +2,7 @@
 
 ## Metadata
 Title: Permanent Establishment Risk in India for US Companies | AU Corporate
-Meta description: How US companies trigger permanent establishment risk in India — the four PE types, DTAA Article 5 thresholds, key case law, and whether an EOR or subsidiary actually eliminates exposure.
+Meta description: How US companies trigger permanent establishment risk in India — the four PE types, DTAA Article 5, key case law, and whether an EOR eliminates exposure.
 URL: /india-entry-for-us-companies/permanent-establishment-risk-india
 
 (Matches Stage 6's approved title/meta/URL exactly — no tweaks needed.)
@@ -13,7 +13,7 @@ URL: /india-entry-for-us-companies/permanent-establishment-risk-india
 
 # Permanent Establishment Risk in India for US Companies
 
-A US company doesn't need an Indian entity to owe Indian tax. Permanent establishment (PE) exposure is a function of what your people and contracts actually do in India — not whether you've filed a Certificate of Incorporation. It can exist before you've registered anything, and, in a different form, it can survive after you have.
+A US company doesn't need an Indian entity to owe Indian tax. Permanent establishment (PE) risk is a function of what your people and contracts actually do in India — not whether you've filed a Certificate of Incorporation. It can exist before you've registered anything, and, in a different form, it can survive after you have.
 
 That distinction is the reason this page exists separately from our guide to [FEMA compliance for US companies after incorporation](/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary): FEMA compliance is what happens once you have a subsidiary. PE risk is a question you're exposed to whether or not you ever incorporate one, and it doesn't go away just because you eventually do.
 
@@ -29,7 +29,7 @@ The treaty protection is generally narrower and more favorable to you than the d
 
 ## The Four Ways a US Company Can Trigger PE in India
 
-Indian tax authorities and tribunals organize PE exposure into four recognized categories. Each has a different trigger, and each responds to a different kind of mitigation.
+Indian tax authorities and tribunals organize PE exposure into four recognized categories. Each has a different trigger, and each calls for a different way to avoid or mitigate it.
 
 ### Fixed Place PE
 
