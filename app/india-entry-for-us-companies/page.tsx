@@ -29,6 +29,11 @@ const faqs = [
 export default function IndiaEntryForUSCompanies() {
   const subPages = [
     {
+      title: 'Register a Company from the USA',
+      description: 'Compare all five entity options — subsidiary, LLP, branch, liaison, project office — and the registration process, cost and timeline',
+      href: '/india-entry-for-us-companies/register-company-in-india-from-usa',
+    },
+    {
       title: 'US Subsidiary vs Branch Office',
       description: 'Understand the structural differences and tax implications of subsidiary vs branch operations',
       href: '/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india',
