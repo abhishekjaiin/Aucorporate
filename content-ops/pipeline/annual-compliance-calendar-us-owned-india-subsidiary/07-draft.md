@@ -23,11 +23,9 @@ No tweaks to Stage 6's title/meta/URL — shipping as specified.
 
 Last updated: 29 September 2026 — prepared by AU Corporate's regulatory compliance practice. Every date and cadence below is cited to its governing Companies Act section or MCA circular where that citation has been verified; anywhere it hasn't, that's stated explicitly rather than presented as settled.
 
-### Who this page is for
+**Who this page is for.** This page is for a US parent's Indian subsidiary that has already incorporated — not a company still deciding whether to enter India. If you're at that earlier stage, start with our [complete guide to doing business in India for US companies](/india-entry-for-us-companies) instead; everything below assumes a Certificate of Incorporation already exists and the entity is now living inside its first (or fifth) full compliance year.
 
-This page is for a US parent's Indian subsidiary that has already incorporated — not a company still deciding whether to enter India. If you're at that earlier stage, start with our [complete guide to doing business in India for US companies](/india-entry-for-us-companies) instead; everything below assumes a Certificate of Incorporation already exists and the entity is now living inside its first (or fifth) full compliance year.
-
-This page owns one specific thing: the dated Companies Act / MCA-ROC annual filing cycle — AOC-4, MGT-7, ADT-1, DIR-3 KYC, board meetings, and the AGM. FEMA and RBI dates are shown in the same timeline for completeness, each linking to our dedicated [FEMA compliance for US companies](/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary) guide rather than being re-explained here. Labour Codes, the DPDP Act, environmental compliance, and IP filings live on our broader [regulatory compliance framework](/india-business-setup/regulatory-compliance) page — this isn't an entry-stage page, and it isn't a general six-regime overview.
+This page owns one specific thing: the dated Companies Act / MCA-ROC annual filing cycle for a foreign subsidiary company in India — AOC-4, MGT-7, ADT-1, DIR-3 KYC, board meetings, and the AGM. FEMA and RBI dates are shown in the same timeline for completeness, each linking to our dedicated [FEMA compliance for US companies](/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary) guide rather than being re-explained here. Labour Codes, the DPDP Act, environmental compliance, and IP filings live on our broader [regulatory compliance framework](/india-business-setup/regulatory-compliance) page — this isn't an entry-stage page, and it isn't a general six-regime overview.
 
 Our team includes CA and US CPA-qualified professionals, which matters here specifically because the recurring friction on this page's topic isn't usually the Indian rule itself — it's that none of these dates sit on a US corporate calendar, and a US finance team managing India alongside a dozen other jurisdictions needs the sequence explained, not just a form list.
 
@@ -87,7 +85,7 @@ A Digital Signature Certificate has its own renewal cycle, separate from DIR-3 K
 
 MCA's filing infrastructure has moved from the V2 to the V3 portal, and a foreign national completing a filing from outside India should expect the V3 portal's identity-verification steps to take real, non-trivial time relative to a resident filer — plan the KYC/DSC cycle with that lead time in mind rather than assuming it moves as fast as a same-day domestic filing. This is a portal-mechanics observation from the wider compliance-advisory field, not a specific MCA-published timeline; treat it as a planning cushion, not a stated SLA.
 
-## Board Meetings and the AGM: What a US-Owned Subsidiary Actually Has to Do
+## Board Meetings and the AGM: What a US-Owned Foreign Subsidiary Actually Has to Do
 
 ### Board meeting cadence
 
