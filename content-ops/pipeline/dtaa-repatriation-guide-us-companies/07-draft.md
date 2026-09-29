@@ -52,7 +52,7 @@ The Income-tax Act, 2025 replaced the Income-tax Act, 1961 from 1 April 2026, an
 
 ### Why this treaty doesn't carry the treaty-shopping test most of India's others do
 
-The US has not signed the OECD's Multilateral Instrument (MLI) — the mechanism that layers a Principal Purpose Test (PPT) onto many of India's other tax treaties, including India's treaty with the UK. That means the India-US DTAA is **not** modified by a PPT: there's no separate anti-abuse test asking whether obtaining the treaty benefit was a principal purpose of how a structure was set up, the way there is under several of India's other treaty relationships. This is a genuine, non-obvious point of difference — most competing guides on this topic don't cover it, and it's worth flagging explicitly because it cuts the opposite way from what a reader might expect if they've also looked at how India's treaty with a country like the UK works. (For a live example of how much teeth a PPT-style challenge can actually have under a treaty where one does apply, the Supreme Court's Tiger Global ruling on treaty-shopping through a Mauritius conduit structure is a useful contrasting read — a different transaction type from ongoing subsidiary repatriation, but the same underlying anti-abuse logic.) None of this means the India-US treaty is immune from scrutiny generally — a structure with no genuine commercial substance can still be challenged under India's domestic General Anti-Avoidance Rule (GAAR) — but the specific MLI/PPT layer that complicates treaty access elsewhere simply isn't part of this treaty relationship.
+The US has not signed the OECD's Multilateral Instrument (MLI) — the mechanism that layers a Principal Purpose Test (PPT) onto many of India's other tax treaties, including India's treaty with the UK. That means the India-US DTAA is **not** modified by a PPT: there's no separate anti-abuse test asking whether obtaining the treaty benefit was a principal purpose of how a structure was set up, the way there is under several of India's other treaty relationships. This is a genuine, non-obvious point of difference — most competing guides on this topic don't cover it, and it's worth flagging explicitly because it cuts the opposite way from what a reader might expect if they've also looked at how India's treaty with a country like the UK works. (For a live example of how much teeth a PPT-style challenge can actually have under a treaty where one does apply, the Supreme Court's [Tiger Global ruling on treaty-shopping through a Mauritius conduit structure](/blog/mail-box-dtaa-benefits) is a useful contrasting read — a different transaction type from ongoing subsidiary repatriation, but the same underlying anti-abuse logic.) None of this means the India-US treaty is immune from scrutiny generally — a structure with no genuine commercial substance can still be challenged under India's domestic General Anti-Avoidance Rule (GAAR) — but the specific MLI/PPT layer that complicates treaty access elsewhere simply isn't part of this treaty relationship.
 
 ## Dividend, Royalty, Management Fee, or Buyback — Comparing the Repatriation Routes
 
@@ -127,32 +127,48 @@ We don't prepare or file Form 1118 on a US parent's behalf, but our Chartered Ac
 
 ## FAQ
 
-**How much tax does a US company pay repatriating a dividend from its Indian subsidiary?**
+### How much tax does a US company pay repatriating a dividend from its Indian subsidiary?
+
 Before any US-side offset, a US parent holding at least 10% of the Indian subsidiary's voting stock is subject to 15% Indian withholding under the treaty, against a 20%+surcharge+cess domestic default if the TRC and Form 41 aren't on file. That Indian withholding generally isn't the full net cost, though: for a US C-corporation, dividends from a 10%-or-more-owned foreign subsidiary typically qualify for a 100% dividends-received deduction under Section 245A, which usually removes the dividend from US taxable income altogether — meaning the 15% Indian withholding is often close to the actual net cost of the dividend route itself, rather than being layered on top of separate US tax on the same income.
 
-**Is dividend or royalty better for repatriating profits from an Indian subsidiary, tax-efficiency-wise?**
+### Is dividend or royalty better for repatriating profits from an Indian subsidiary, tax-efficiency-wise?
+
 It depends on what the payment actually represents and how the numbers net out on both sides. Dividends carry the more favorable 15% treaty tier (for a ≥10% voting-stock holder) and, for a US C-corporation, are often shielded from further US tax by the Section 245A dividends-received deduction — but a dividend can only be paid out of distributable profits and requires board/shareholder approval. A royalty or FIS payment is taxed at 10–15% depending on category, is fully includible in US taxable income, and generally supports a Section 901/904 foreign tax credit via Form 1118 rather than a deduction — meaning it's taxed once at the higher of the Indian and US rates rather than exempted outright. Neither route is categorically better; the right answer depends on the payment's substance, the subsidiary's distributable profits position, and whether the fee genuinely qualifies as a royalty/FIS payment under the treaty's "make available" standard in the first place.
 
-**Does buyback tax in India for non-resident shareholders compare favorably to dividend repatriation in 2026?**
+### Does buyback tax in India for non-resident shareholders compare favorably to dividend repatriation in 2026?
+
 For a buyback completed on or after 1 April 2026, a non-promoter, non-resident shareholder is taxed on capital gains at 12.5% (for unlisted shares held over 24 months), with the original cost basis deductible against proceeds — a meaningfully different math than the 15% dividend withholding, since the 12.5% rate applies only to the gain portion, not the full proceeds. Whether it's actually more favorable depends on the shareholder's cost basis relative to the buyback price, and buyback carries the added procedural weight of a formal valuation, Companies Act buyback limits, and a Form FC-TRS filing that a dividend doesn't require — it isn't simply a lower-rate substitute for a dividend without those additional steps.
 
-**How does a US company get a tax residency certificate to claim DTAA benefits in India?**
+### How does a US company get a tax residency certificate to claim DTAA benefits in India?
+
 By filing IRS Form 8802 to request Form 6166 (the US residency certification Indian payers and the Indian tax portal treat as the TRC), then filing Form 41 (replacing Form 10F, under Section 159(8) of the Income-tax Act, 2025) electronically on India's e-filing portal once Form 6166 is received. Both need to be renewed annually, tied to the year the specific payment falls in, not obtained once at incorporation and forgotten.
 
-**What is Form 15CA and 15CB (now Form 145 and 146), and who needs to file them for a dividend remittance?**
+### What is Form 15CA and 15CB (now Form 145 and 146), and who needs to file them for a dividend remittance?
+
 Form 145 (formerly 15CA) is a declaration by the remitter — typically the Indian subsidiary's finance team, with its Authorised Dealer bank — confirming the nature of the payment and the tax treatment applied. Above a threshold reported to carry over the ₹5 lakh figure from the old Form 15CB regime (confirm the current figure against the Form 145/146 user manuals before relying on it), Form 146 (formerly 15CB) is also required: a Chartered Accountant's certificate confirming the DTAA and Income-tax Act provisions were correctly applied. Both are filed under Section 393(2) of the Income-tax Act, 2025, and the subsidiary's bank generally won't release the remittance without them.
 
-**Is there a way to reduce withholding tax on a dividend repatriation from India — a lower TDS certificate?**
+### Is there a way to reduce withholding tax on a dividend repatriation from India — a lower TDS certificate?
+
 Section 197 of the Income-tax Act allows an application for a lower or nil withholding certificate where the payer's actual expected Indian tax liability is genuinely below what standard withholding would produce. It's a discretionary, case-specific process rather than a routine filing, and it isn't a substitute for having the TRC and Form 41 in place to access the treaty rate itself — it's a separate route worth exploring only where the underlying facts support a liability below even the treaty rate.
 
-**Can a foreign company repatriate profits from its Indian subsidiary?**
+### Can a foreign company repatriate profits from its Indian subsidiary?
+
 Yes — this entire page describes the mechanics for exactly that: a foreign (in this case, US) parent company moving profits out of an Indian subsidiary via dividend, royalty, management fee, or buyback, subject to DTAA withholding rates, FEMA classification, and the remittance-certification paperwork covered above.
 
-**Does the India-US DTAA carry the same treaty-shopping risk (PPT) as India's other tax treaties?**
+### Does the India-US DTAA carry the same treaty-shopping risk (PPT) as India's other tax treaties?
+
 No — and this is worth flagging explicitly because it's the opposite of what applies to some of India's other treaty partners. The US hasn't signed the OECD's Multilateral Instrument, so the India-US treaty isn't modified by the Principal Purpose Test that applies under several of India's other DTAAs, including its treaty with the UK. A genuine, operating Indian subsidiary with real commercial substance is on solid ground here; India's domestic GAAR remains a separate, general anti-avoidance backstop regardless of treaty, but the specific MLI/PPT layer simply doesn't apply to this treaty relationship.
 
-**Do we need a new tax residency certificate every year?**
+### Do we need a new tax residency certificate every year?
+
 Yes. Form 6166 (and the TRC it represents) is generally issued to cover a specific tax year, and Indian payers want a certificate covering the year the actual payment falls in — building the Form 8802 filing into the subsidiary's annual repatriation planning, rather than treating it as a one-off from incorporation, is what actually keeps the treaty rate available when a payment needs to move.
+
+---
+
+## Related Reading
+
+- [India-UK DTAA & Withholding Tax Rates](/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax) — for a US group with a UK sister entity, or to compare how the two treaties differ
+- [← Back: India Entry for US Companies](/india-entry-for-us-companies)
 
 ---
 
