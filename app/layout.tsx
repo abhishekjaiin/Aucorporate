@@ -171,15 +171,19 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* GA4 (G-V2EZ4HBLZS) is intentionally NOT loaded here as a separate direct
-            gtag.js script. It was previously duplicated alongside GTM below — GTM is
-            already designed to load and configure GA4 itself via a GA4 Configuration
-            tag inside the GTM container, so hardcoding a second, direct gtag.js here
-            was redundant script weight on every page (flagged by PageSpeed Insights'
-            "reduce unused JavaScript" audit). If GA4 property G-V2EZ4HBLZS is not
-            already configured as a tag inside GTM container GTM-N23Z4X6Z, add it there
-            (tagmanager.google.com) rather than restoring this direct script — verify
-            GA4 data continuity in the GA4 Realtime report after this deploys. */}
+        {/* GA4 is intentionally NOT loaded here as a separate direct gtag.js script.
+            It was previously duplicated alongside GTM below — GTM is already designed
+            to load and configure GA4 itself via a GA4 Configuration tag inside the GTM
+            container, so hardcoding a direct gtag.js here is redundant script weight on
+            every page (flagged by PageSpeed Insights' "reduce unused JavaScript" audit).
+
+            2026-09-30: GA4 property switched from G-V2EZ4HBLZS to G-H2TGFPQVVY per
+            explicit instruction. This swap must be made inside the GTM Configuration
+            tag itself (tagmanager.google.com, container GTM-N23Z4X6Z) — update the
+            GA4 Configuration tag's Measurement ID field to G-H2TGFPQVVY, then publish
+            the container version. No code change accomplishes this; nothing in this
+            repo holds the live measurement ID. Verify data is flowing to the new
+            property in its GA4 Realtime report after publishing. */}
 
         {/* BING CLARITY TRACKING — lazyOnload for the same reason */}
         <Script
