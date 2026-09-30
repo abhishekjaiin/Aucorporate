@@ -1,13 +1,13 @@
 # Draft: Manufacturing Plant in India for US Companies — China+1 Strategy, Entity Choice, and the PLI Scheme
 
 ## Metadata
-**Title:** Manufacturing Plant in India for US Companies: China+1 Strategy & PLI Scheme | AU Corporate
+**Title:** Manufacturing Plant in India for US Companies: China+1 & PLI Scheme | AU Corporate
 
 **Meta description:** How US manufacturers evaluate China+1 and set up a plant in India — PLI eligibility, entity choice, the 15% tax-rate stack, GST, FEMA, and Factories Act steps.
 
 **URL:** `/india-entry-for-us-companies/manufacturing-plant-india-china-plus-one-pli-scheme`
 
-No tweaks to Stage 6's title/meta/URL — used exactly as approved.
+Meta and URL used exactly as Stage 6 approved. Title trimmed by one word ("Strategy" removed) at Stage 8 — see 08-seo-edit.md; at 91 characters the original ran meaningfully longer than this cluster's own title convention (e.g. the `permanent-establishment-risk-india` title is 69 characters) and risked SERP truncation. No keyword-bearing word was removed.
 
 ---
 
@@ -19,9 +19,16 @@ No tweaks to Stage 6's title/meta/URL — used exactly as approved.
 
 Last updated: 30 September 2026 — prepared by AU Corporate's India entry and taxation & regulatory practice.
 
-This page is for a CFO, VP Finance, VP Operations, or general counsel at a US manufacturer weighing whether — and how — to add or relocate production capacity to India as part of a China+1 diversification decision. It's written for someone evaluating this before an entity exists, not managing one that's already running.
+This page is for a CFO, VP Finance, VP Operations, or general counsel at a US manufacturer weighing whether — and how — to set up a manufacturing plant in India as part of a China+1 diversification decision. It's written for someone evaluating this before an entity exists, not managing one that's already running.
 
-The path from "we're thinking about India" to "we're running a plant" runs through several decisions that interact with each other more than most guides acknowledge: whether the China+1 case actually holds for your specific product category, which sectors and investment levels qualify for the Production Linked Incentive (PLI) scheme and what that scheme looks like as it transitions in 2026, whether a wholly owned subsidiary or a joint venture fits a manufacturing operation better than it would a services business, and — once the entity exists — what changes on both the Indian and the US side of your tax and compliance picture specifically because you're manufacturing tangible goods rather than delivering services. The Factories Act registration and environmental-clearance steps that actually let you commission a plant sit at the end of that chain, and are covered in the same depth here as the strategic and incentive questions that come before them.
+The path from "we're thinking about India" to "we're running a plant" runs through several decisions that interact with each other more than most guides acknowledge:
+
+- Whether the China+1 case actually holds for your specific product category
+- Which sectors and investment levels qualify for the Production Linked Incentive (PLI) scheme, and what that scheme looks like as it transitions in 2026
+- Whether a wholly owned subsidiary or a joint venture fits a manufacturing operation better than it would a services business
+- Once the entity exists, what changes on both the Indian and the US side of your tax and compliance picture specifically because you're manufacturing tangible goods rather than delivering services
+
+The Factories Act registration and environmental-clearance steps that actually let you commission a plant sit at the end of that chain, and are covered in the same depth here as the strategic and incentive questions that come before them.
 
 A structural note before you read further: AU Corporate already has deep, dedicated coverage of the general mechanics a manufacturing entity shares with any other US-owned Indian subsidiary — FEMA/RBI filings, Section 482 and Form 5471 transfer-pricing exposure, and the subsidiary-vs-branch decision. Rather than repeat that content here, this page covers the delta that's specific to a manufacturing operation and links out to the fuller treatment on each topic. If you're looking for the complete FEMA filing calendar or the full Section 482/Form 5471 documentation requirements, the linked guides below go deeper than this page does on those specific points by design.
 
@@ -65,7 +72,7 @@ Most of AU Corporate's general India-entry content, including our [full subsidia
 
 Manufacturing ventures more often benefit from a local partner than a pure services or software subsidiary does, because land acquisition, labor relationships, and distribution access are all areas where an established Indian partner's existing relationships and local knowledge can meaningfully shorten the path to a running plant. That doesn't make a JV the automatic right answer — a wholly owned subsidiary gives you full operational control, a cleaner IP position, and avoids the governance complexity of a shared-control structure — but it's a genuine, sector-specific consideration that a services-focused entry guide wouldn't need to raise, and worth deciding deliberately rather than defaulting to whichever structure a generic guide recommends first.
 
-On the FDI side, manufacturing sits under the Automatic Route in most categories, meaning 100% foreign ownership is permitted without prior government approval — the investment is made first and reported to the RBI afterward, the same mechanism covered in full on our [FDI Automatic Route vs. Government Approval Route](/india-business-setup/fdi-channels) guide. One narrow caveat worth flagging here and nowhere else on this page: if your China+1 move involves bringing in a Chinese equity or joint-venture partner — as opposed to simply diversifying production away from China — that investment can fall under Press Note 3's land-border-country approval requirement regardless of the manufacturing sector's own FDI status. This is not triggered by a US investor itself; it's specifically about whether a China-linked entity sits anywhere in the ownership chain. See our FDI Channels guide for the full Press Note 3 mechanism and the narrow 2026 relaxation for minority Chinese stakes.
+On the FDI side, manufacturing sits under the Automatic Route in most categories, meaning 100% foreign ownership is permitted without prior government approval — the investment is made first and reported to the RBI afterward, the same mechanism covered in full on our [FDI Automatic Route vs. Government Approval Route](/india-business-setup/fdi-channels) guide. One narrow caveat worth flagging here and nowhere else on this page: if your China+1 move involves bringing in a Chinese equity or joint-venture partner — as opposed to simply diversifying production away from China — that investment can fall under Press Note 3's land-border-country approval requirement regardless of the manufacturing sector's own FDI status. This is not triggered by a US investor itself; it's specifically about whether a China-linked entity sits anywhere in the ownership chain. See our FDI Channels guide for the full [Press Note 3](/india-business-setup/fdi-channels) mechanism and the narrow 2026 relaxation for minority Chinese stakes.
 
 For the general registration process, timeline, and documentation a US parent needs regardless of entity type, see our [full entity-registration process and timeline](/india-entry-for-us-companies/register-company-in-india-from-usa) — that page covers the SPICe+ filing sequence, the resident-director requirement, and apostille mechanics in depth, and we don't repeat that ground here.
 
@@ -175,7 +182,7 @@ Plan around the honest current picture, not the original PLI announcement. Origi
 Generally, no — and this is worth stating plainly because Form 5471 and Form 5472 are sometimes mentioned together as if they apply the same way here. Form 5471 is the correct filing for a US parent's ownership of a foreign (Indian) subsidiary. Form 5472 typically runs the other direction: it applies to a US corporation that is at least 25% foreign-owned, or a foreign corporation engaged in a US trade or business, reporting its own related-party transactions. A standard US-parent-owns-Indian-subsidiary structure doesn't trigger Form 5472 on that basis alone. The exception: if the US-side entity in your structure is itself foreign-owned at the relevant threshold, that's a separate, fact-specific question worth raising directly with your US tax advisor rather than assuming.
 
 **7. Is Press Note 3 relevant to a US manufacturer's India entry?**
-Only if your China+1 move involves a Chinese equity or joint-venture partner somewhere in the ownership chain — not because a US investor itself triggers it. Press Note 3 requires prior government approval for investment originating from, or beneficially owned by an entity in, a country sharing a land border with India, China included. A straightforward US-parent manufacturing entry, with no Chinese ownership link, doesn't fall under Press Note 3's approval requirement. See our FDI Automatic Route vs. Government Approval Route guide for the full mechanism and the narrow 2026 relaxation for minority Chinese stakes.
+Only if your China+1 move involves a Chinese equity or joint-venture partner somewhere in the ownership chain — not because a US investor itself triggers it. Press Note 3 requires prior government approval for investment originating from, or beneficially owned by an entity in, a country sharing a land border with India, China included. A straightforward US-parent manufacturing entry, with no Chinese ownership link, doesn't fall under Press Note 3's approval requirement. See our [FDI Automatic Route vs. Government Approval Route](/india-business-setup/fdi-channels) guide for the full mechanism and the narrow 2026 relaxation for minority Chinese stakes.
 
 ---
 
