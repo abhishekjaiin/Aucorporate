@@ -210,7 +210,10 @@ export default function USSubsidiaryVsBranchPage() {
               Is it harder to close a branch office or wind up a subsidiary?
             </summary>
             <p className="mt-2 text-gray-600">
-              A dormant, debt-free subsidiary can often use the faster ROC strike-off route under Section 248 of the Companies Act; one with ongoing obligations needs a formal voluntary liquidation instead. A branch office closure always requires RBI approval through your Authorised Dealer bank — the original RBI permission letter, an auditor&apos;s certificate confirming all Indian liabilities are settled, ROC closure certificate, and Form 15CA/15CB for the final remittance — which typically adds 2-6 months versus a straightforward company closure.
+              A dormant, debt-free subsidiary can often use the faster ROC strike-off route under Section 248 of the Companies Act; one with ongoing obligations needs a formal voluntary liquidation instead. A branch office closure always requires RBI approval through your Authorised Dealer bank — the original RBI permission letter, an auditor&apos;s certificate confirming all Indian liabilities are settled, ROC closure certificate, and Form 15CA/15CB for the final remittance — which typically adds 2-6 months versus a straightforward company closure. For the full strike-off and voluntary liquidation walkthrough — including the decision framework, RBI remittance-of-assets mechanics, and your Form 5471 deconsolidation — see our{' '}
+              <Link href="/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+                guide to closing an Indian subsidiary
+              </Link>.
             </p>
           </details>
         </div>

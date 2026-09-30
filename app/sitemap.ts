@@ -87,6 +87,7 @@ const pages: Page[] = [
   { path: "/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-14" },
   { path: "/india-entry-for-us-companies/how-to-incorporate-subsidiary-india-from-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
   { path: "/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
+  { path: "/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-30" },
 
   { path: "/india-entry-for-uk-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
   { path: "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },

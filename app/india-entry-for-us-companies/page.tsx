@@ -59,6 +59,11 @@ export default function IndiaEntryForUSCompanies() {
       href: '/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary',
     },
     {
+      title: 'Closing an Indian Subsidiary',
+      description: 'Strike-off vs voluntary liquidation, RBI remittance rules, and Form 5471 deconsolidation for a US parent winding down',
+      href: '/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation',
+    },
+    {
       title: 'Cost & Timeline',
       description: 'Transparent, structure-based fee quotes and realistic timelines for US company setup — no fixed number fits every entity, so we scope it on a short call',
       href: '/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us',

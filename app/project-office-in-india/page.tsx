@@ -338,6 +338,11 @@ export default function ProjectOfficeInIndiaPage() {
           <p className="text-gray-600 leading-relaxed">
             One point of genuine uncertainty is worth flagging rather than glossing over: sources aren&apos;t fully consistent on whether a Project Office&apos;s ROC-closure mechanics follow the identical Form FC-2/Section 380 route used for Branch and Liaison Office closures, or a variant of it specific to project completion. Confirm the exact ROC closure form with your AD bank and company secretary at the time you&apos;re actually closing out, rather than assuming it mirrors the Branch/Liaison Office process without checking.
           </p>
+          <p className="text-gray-600 leading-relaxed mt-4">
+            Closing a Pvt Ltd/LLP subsidiary instead? That&apos;s a structurally separate process — see our{' '}
+            <Link href="/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation" className="text-gold-dark font-semibold hover:underline">subsidiary exit guide</Link>{' '}
+            for strike-off vs voluntary liquidation, RBI remittance-of-assets mechanics, and US-parent Form 5471 deconsolidation.
+          </p>
         </div>
       </section>
 

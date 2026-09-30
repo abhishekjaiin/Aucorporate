@@ -333,6 +333,11 @@ export default function BranchOfficeInIndiaPage() {
             {closureSteps.map((item) => (<li key={item}>{item}</li>))}
           </ol>
           <p className="text-gray-600 leading-relaxed">Each of these steps sits with a different authority, and skipping or misordering one is a common cause of delay at closure.</p>
+          <p className="text-gray-600 leading-relaxed mt-4">
+            Closing a Pvt Ltd/LLP subsidiary instead? That&apos;s a structurally separate process — see our{' '}
+            <Link href="/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation" className="text-gold-dark font-semibold hover:underline">subsidiary exit guide</Link>{' '}
+            for strike-off vs voluntary liquidation, RBI remittance-of-assets mechanics, and US-parent Form 5471 deconsolidation.
+          </p>
         </div>
       </section>
 
