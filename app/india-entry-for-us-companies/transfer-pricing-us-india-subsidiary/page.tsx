@@ -152,6 +152,9 @@ export default function TransferPricingUSIndiaPage() {
           <Link href="/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             US Subsidiary vs Branch Office in India →
           </Link>
+          <Link href="/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+            DTAA & Withholding Tax on Dividends and Royalties →
+          </Link>
           <Link href="/india-entry-for-us-companies" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             ← Back: India Entry for US Companies
           </Link>

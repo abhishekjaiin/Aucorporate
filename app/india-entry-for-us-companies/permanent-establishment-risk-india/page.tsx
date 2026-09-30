@@ -362,6 +362,9 @@ export default function PermanentEstablishmentRiskPage() {
           <Link href="/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             Transfer Pricing &amp; Section 482 for US-India Subsidiaries →
           </Link>
+          <Link href="/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+            DTAA &amp; Withholding Tax Rates for US Parent Companies →
+          </Link>
           <Link href="/doing-business-in-india/incorporation#pe-risk" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             Our Decision Checklist for Whether and When to Incorporate →
           </Link>

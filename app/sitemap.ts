@@ -82,6 +82,7 @@ const pages: Page[] = [
   { path: "/india-entry-for-us-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
   { path: "/india-entry-for-us-companies/register-company-in-india-from-usa", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-29" },
   { path: "/india-entry-for-us-companies/permanent-establishment-risk-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-29" },
+  { path: "/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-30" },
   { path: "/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
   { path: "/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
   { path: "/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-14" },

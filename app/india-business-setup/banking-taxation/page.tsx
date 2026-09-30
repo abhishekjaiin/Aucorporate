@@ -131,8 +131,15 @@ export default function BankingTaxationPage() {
           <p className="text-gray-600 leading-relaxed mb-4">
             Once a subsidiary starts sending money back to its foreign parent — as dividends, royalties, or fees for technical services — that payment attracts withholding tax at source before it leaves India. Domestic law otherwise sets that withholding at 20% (plus surcharge and cess), but where India has a Double Taxation Avoidance Agreement (DTAA) with the parent&apos;s home jurisdiction, that treaty typically caps the rate lower. Claiming the treaty rate isn&apos;t automatic: the recipient generally needs to furnish a Tax Residency Certificate and, in most cases, Form 10F before the payment is made — without that paperwork in hand, the bank will withhold at the higher domestic rate by default and the difference has to be reclaimed later through a tax return.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed mb-4">
             This sits alongside, not instead of, the FEMA/RBI reporting already covered above — a dividend or royalty payment out of India is a tax event and, depending on the payment type, may also carry its own RBI reporting step. Getting the DTAA paperwork in place before the first repatriation is due is generally far simpler than reclaiming over-withheld tax after the fact.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            See our{' '}
+            <Link href="/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+              full India-US DTAA and withholding tax guide for US parent companies
+            </Link>{' '}
+            for sourced treaty rates by income type, the Form 145/146 remittance-certification chain, and what a repatriation costs net of a US foreign tax credit.
           </p>
         </div>
       </section>

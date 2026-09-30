@@ -52,7 +52,7 @@ const setupCostComponents = [
   },
 ]
 
-const usTimelinePhases = [
+const usTimelinePhases: { week: string; title: string; desc: string; descLinkHref?: string; descLinkText?: string }[] = [
   {
     week: 'Weeks 1-2',
     title: 'Entity Setup & US-Side Document Prep',
@@ -77,6 +77,8 @@ const usTimelinePhases = [
     week: 'Weeks 8-12',
     title: 'Fully Operational',
     desc: 'GST registration where applicable, EPFO/ESIC setup, and the annual compliance calendar (RoC filings, the FLA return, board meeting cadence) mapped out before day-to-day operations ramp up.',
+    descLinkHref: '/india-entry-for-us-companies/annual-compliance-calendar',
+    descLinkText: 'annual compliance calendar',
   },
 ]
 
@@ -193,7 +195,19 @@ export default function CostTimelineUSPage() {
               <div className="font-bold text-yellow-600 min-w-fit sm:min-w-[110px]">{item.week}</div>
               <div>
                 <div className="font-semibold text-gray-900 mb-1">{item.title}</div>
-                <p className="text-sm text-gray-700 leading-relaxed">{item.desc}</p>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  {item.descLinkHref && item.descLinkText ? (
+                    <>
+                      {item.desc.split(item.descLinkText)[0]}
+                      <Link href={item.descLinkHref} className="text-yellow-600 hover:text-yellow-700 font-semibold">
+                        {item.descLinkText}
+                      </Link>
+                      {item.desc.split(item.descLinkText)[1]}
+                    </>
+                  ) : (
+                    item.desc
+                  )}
+                </p>
               </div>
             </ClickableReveal>
           ))}

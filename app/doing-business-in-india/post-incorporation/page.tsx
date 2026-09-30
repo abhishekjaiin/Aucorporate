@@ -93,7 +93,7 @@ const postIncorporationFaqs = [
   },
   {
     q: "What compliance obligations from year one repeat every year after incorporation?",
-    a: "The annual FLA return to RBI, the AOC-4 and MGT-7 filings with the Registrar of Companies, and the statutory audit all repeat annually for the life of the entity — see our regulatory compliance framework for the full filing calendar. This page focuses on the strategic decisions layered on top of that recurring baseline.",
+    a: "The annual FLA return to RBI, the AOC-4 and MGT-7 filings with the Registrar of Companies, board meetings, the AGM, and DIR-3 KYC for DIN-holding directors all repeat annually for the life of the entity — see our annual compliance calendar for foreign subsidiary companies for the full dated filing calendar. This page focuses on the strategic decisions layered on top of that recurring baseline.",
   },
 ]
 

@@ -34,6 +34,11 @@ export default function IndiaEntryForUSCompanies() {
       href: '/india-entry-for-us-companies/permanent-establishment-risk-india',
     },
     {
+      title: 'DTAA & Repatriation Tax Guide',
+      description: 'DTAA rates, withholding tax and the repatriation routes available to a US parent — dividend, royalty, management fee, or the 2026 buyback reform',
+      href: '/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax',
+    },
+    {
       title: 'Register a Company from the USA',
       description: 'Compare all five entity options — subsidiary, LLP, branch, liaison, project office — and the registration process, cost and timeline',
       href: '/india-entry-for-us-companies/register-company-in-india-from-usa',
@@ -62,6 +67,11 @@ export default function IndiaEntryForUSCompanies() {
       title: 'Closing an Indian Subsidiary',
       description: 'Strike-off vs voluntary liquidation, RBI remittance rules, and Form 5471 deconsolidation for a US parent winding down',
       href: '/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation',
+    },
+    {
+      title: 'Annual Compliance Calendar',
+      description: 'AOC-4, MGT-7, DIR-3 KYC, board meetings and AGM — the full annual MCA-ROC filing cycle for a US-owned subsidiary, with FEMA dates shown alongside',
+      href: '/india-entry-for-us-companies/annual-compliance-calendar',
     },
     {
       title: 'Cost & Timeline',
@@ -146,10 +156,16 @@ export default function IndiaEntryForUSCompanies() {
         <p className="text-gray-700 mb-4">
           Once the subsidiary is incorporated and receives FDI from the US parent, three RBI filings under FEMA become recurring obligations: Form FC-GPR reports share allotment within 30 days of the FDI coming in, Form FC-TRS reports any later transfer of shares between resident and non-resident, and the annual FLA return is a standing yearly obligation for as long as the entity carries foreign investment — filed regardless of whether any transaction happened that year, which is exactly why it&apos;s the filing most foreign-owned subsidiaries forget once initial setup is done. US corporate calendars and RBI filing calendars don&apos;t align on their own, so this needs active tracking rather than assuming it&apos;ll get flagged automatically.
         </p>
-        <p className="text-gray-700">
+        <p className="text-gray-700 mb-4">
           Full detail on deadlines and filing mechanics: {' '}
           <Link href="/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary" className="text-yellow-600 hover:text-yellow-700 font-semibold">
             FEMA compliance for US companies
+          </Link>.
+        </p>
+        <p className="text-gray-700">
+          For the Companies Act/MCA-ROC side of the annual calendar — AOC-4, MGT-7, DIR-3 KYC, board meetings and the AGM, shown alongside these same FEMA dates — see our{' '}
+          <Link href="/india-entry-for-us-companies/annual-compliance-calendar" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            annual compliance calendar for foreign subsidiaries
           </Link>.
         </p>
       </div>

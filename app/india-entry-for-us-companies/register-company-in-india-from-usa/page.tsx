@@ -352,12 +352,18 @@ export default function RegisterCompanyFromUSPage() {
           </Link>{' '}
           for the full filing calendar and deadlines.
         </p>
-        <p className="text-gray-700">
+        <p className="text-gray-700 mb-4">
           One thing worth flagging early rather than after your first year of operations: once your Indian entity starts transacting with the US parent — management fees, cost allocations, IP royalties — those transactions become related-party dealings reviewed on both sides of the border. See our{' '}
           <Link href="/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary" className="text-yellow-600 hover:text-yellow-700 font-semibold">
             transfer pricing &amp; Section 482 guide
           </Link>{' '}
           when that becomes relevant to your structure.
+        </p>
+        <p className="text-gray-700">
+          And the Companies Act side of the annual cycle — AOC-4, MGT-7, DIR-3 KYC, board meetings and AGM — is covered in full on our{' '}
+          <Link href="/india-entry-for-us-companies/annual-compliance-calendar" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            annual compliance calendar
+          </Link>.
         </p>
       </div>
 

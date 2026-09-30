@@ -202,7 +202,7 @@ export default function Page() {
     },
     {
       title: "DTAA Relief on Repatriation",
-      desc: "Where India has a Double Taxation Avoidance Agreement with the parent's home jurisdiction, that treaty typically caps withholding tax on dividends, royalties and fees for technical services below the domestic rate — claimable with a Tax Residency Certificate and, in most cases, Form 10F. See our banking & taxation guide for the full repatriation and withholding mechanics.",
+      desc: "Where India has a Double Taxation Avoidance Agreement with the parent's home jurisdiction, that treaty typically caps withholding tax on dividends, royalties and fees for technical services below the domestic rate — claimable with a Tax Residency Certificate and, in most cases, Form 10F. See our banking & taxation guide for the full repatriation and withholding mechanics, or our India-US DTAA rate and remittance guide for US parent companies.",
     },
   ]
 
