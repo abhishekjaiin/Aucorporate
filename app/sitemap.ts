@@ -122,6 +122,7 @@ const pages: Page[] = [
   { path: "/blog/tax-loan-waiver-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/blog/wholly-owned-subsidiary", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/blog/india-safe-harbour-rules-2026", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
+  { path: "/blog/best-state-to-register-company-in-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-09-30" },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

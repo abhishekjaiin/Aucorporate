@@ -83,6 +83,13 @@ const blogs: { title: string; desc: string; slug: string; href?: string; categor
     category: "Taxation",
     date: "4 May 2026",
   },
+  {
+    title: "Best State to Register a Company in India: A State-by-State Comparison",
+    desc: "Stamp duty by capital band, professional tax rules, state incentive schemes and where GIFT City fits — what actually varies by state when you're incorporating, and what doesn't.",
+    slug: "best-state-to-register-company-in-india",
+    category: "India Entry",
+    date: "30 Sep 2026",
+  },
 ]
 
 const featuredPost = blogs.find((b) => b.featured)!

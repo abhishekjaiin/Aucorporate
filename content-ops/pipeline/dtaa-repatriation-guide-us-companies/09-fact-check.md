@@ -31,7 +31,9 @@ Method note: WebFetch was blocked (`EGRESS_BLOCKED`) on every primary-source dom
 
 | Claim | Issue |
 |---|---|
-| **Royalty rate table split: "15% — Copyrights (literary, artistic, scientific, film/TV/radio)" vs. "10% — Patents, trademarks, designs, models, secret formulas/processes, know-how"** (current draft table, Article 12 row 3 and 4) | This split does **not** match what independent secondary sources converge on. Across 5+ separate, independently-worded search queries this session, the consistent picture that emerged is: Article 12(2)(a) — taxed at **15%** — covers essentially the *entire* royalty definition together (copyright **and** patent **and** trademark **and** design/model **and** secret formula/process **and** industrial/commercial/scientific know-how, all under sub-paragraph (a)), plus FIS generally. Article 12(2)(b) — taxed at **10%** — applies specifically to royalties for the use of **industrial, commercial, or scientific equipment** (a category the draft's table omits entirely) and to FIS payments ancillary/subsidiary to such a royalty. If this reading is correct, the draft's table currently has patents/trademarks/know-how at the *wrong* rate (10% instead of 15%) and is missing the equipment-royalty category altogether. I could not reach the IRS Treasury Technical Explanation PDF or the Indian Embassy comparison PDF directly (both blocked by the egress proxy) to confirm the exact sub-paragraph text myself, and Stage 3's prior "independent verification" of this table appears — based on this session's fresh research — to not have caught this. **This is the single highest-priority item in this fact-check: it is a rate table on a live tax-advice page, the discrepancy is material (a patent/trademark/know-how royalty payer would be told to withhold 10% when the treaty may actually require 15%), and it must be confirmed against the actual treaty text or Technical Explanation by a qualified professional before publish — do not publish the current table as-is.** |
+| ~~**Royalty rate table split: "15% — Copyrights..." vs. "10% — Patents, trademarks, designs, models, secret formulas/processes, know-how"**~~ | **RESOLVED — see "Stage 9 Re-Verification (2026-09-30)" section below. The writer corrected this per this file's original finding; the correction has now been confirmed accurate and complete on re-check.** |
+
+*(No open MUST-FIX items remain as of the re-verification below.)*
 
 ## Claims Requiring Human Professional Verification
 
@@ -52,7 +54,7 @@ Method note: WebFetch was blocked (`EGRESS_BLOCKED`) on every primary-source dom
 - **One omission worth flagging as potentially misleading by silence**: the draft states the 12.5% LTCG buyback rate for non-promoter non-resident shareholders but is silent on the substantially worse (22%/30%) rate that applies to non-resident **promoter** shareholders — for a reader who is a promoter (plausible for a wholly-owned US-parent structure, depending on how "promoter" is defined for their specific subsidiary), this silence could lead to an inaccurate expectation. Recommend either adding a one-line distinction or explicitly scoping the buyback section to non-promoter shareholders only.
 - **No outdated process is being presented as current** elsewhere on the page that I could identify — Form 197 lower/nil withholding certificate, Section 245A, Form 1118 vs. 1116, and the FEMA current-account/capital-account distinction are all standard, currently-operative mechanisms with no known recent supersession.
 
-## Overall Fact-Check Verdict
+## Overall Fact-Check Verdict (original pass, 2026-09-30)
 
 **Needs writer revision, then needs human professional sign-off before publish.**
 
@@ -60,3 +62,51 @@ Specifically:
 1. The Article 12 royalty rate table (the "15% copyright / 10% patents-trademarks-know-how" split) must be corrected or re-verified against the actual treaty text before this page goes live — this is the one item in this check that reads as a likely factual error, not merely an unconfirmed figure, and it sits in the page's primary rate table.
 2. Once corrected, a qualified AU Corporate tax professional should sign off specifically on: the corrected royalty table, the Business Profits/Article 7 management-fee characterization claim, the Form 8802 fee figure if added (time-sensitive, effective tomorrow relative to today), and the domestic surcharge-driven effective-rate range.
 3. Everything else checked — the dividend/interest rates, the MLI/PPT-absence conclusion, the Tiger Global citation, the Form 145/146/41 renumbering (confirmed real, not fabricated), the buyback timeline and rates, the Section 245A DRD mechanics, the GST RCM rate, the GILTI→NCTI terminology, and the CTA pattern — checks out against convergent independent sourcing and can be treated as publish-ready from a fact standpoint, subject to the standard practice of a professional's final read before a regulated-content page goes live.
+
+---
+
+## Stage 9 Re-Verification (2026-09-30)
+
+**Scope**: targeted re-check of the single MUST-FIX item from the pass above — the Article 12 royalty rate table — after the expert-content-writer corrected `07-draft.md` and logged the fix as Writer's Note #14. This is not a full re-run of the entire fact-check; the "Needs Human Professional Verification" items listed above (Form 8802 fee, Business Profits/Article 7 management-fee characterization, non-resident promoter buyback rate, domestic surcharge rate) were not re-examined and stand as already assessed.
+
+### What was checked
+
+1. **Read the corrected table in `07-draft.md` (lines 38–41)** and the corrected "Royalty / Fees for Included Services" route-comparison prose (lines 67). The table now reads:
+   - Royalties (Article 12(2)(a)) — **15%** — Copyright (literary, artistic, scientific, film/TV/radio), patents, trademarks, designs or models, secret formulas or processes, and industrial/commercial/scientific know-how.
+   - Royalties (Article 12(2)(b)) — **10%** — Use of industrial, commercial, or scientific equipment.
+   - FIS — 15% standard / 10% ancillary-to-royalty (unchanged, previously verified).
+   The prose section mirrors this exactly: "a royalty on copyright, patent, trademark, design, or know-how is taxed at 15%, while a narrower 10% tier applies specifically to equipment royalties... and to a standalone FIS payment that's ancillary or subsidiary to a royalty."
+
+2. **Read the original finding in this file's "Claims That Could Not Be Verified — MUST FIX" table** (now struck through above) and confirmed the writer's correction matches it precisely: Article 12(2)(a) at 15% covering copyright + patent + trademark + design/model + secret formula/process + know-how *together*, and Article 12(2)(b) at 10% covering industrial/commercial/scientific equipment royalties, previously missing from the table entirely and now added.
+
+3. **Read Writer's Note #14** in `07-draft.md` — it accurately restates the original finding, correctly notes the FIS rows were left untouched because they were separately verified as accurate, and correctly flags that this corrected table still needs a qualified tax professional's final confirmation against primary treaty text, since WebFetch remained blocked and this office could not reach the treaty text or Technical Explanation directly.
+
+4. **Fresh sanity-check searches** (new session, independently worded from the original pass, specifically targeting whether this split could now be corroborated more strongly):
+   - Search 1 returned a synthesis consistent with the corrected table: "Article 12 caps source-country withholding at 10% for equipment royalties and ancillary services, and 15% for literary, artistic, scientific, or industrial royalties and other included services," with equipment royalties explicitly identified as falling in "the lower 10% withholding category compared to other types of royalties."
+   - Search 2 surfaced a Tax Notes summary of the **Joint Committee on Taxation's report on the proposed treaty** (a legislative-history source one step closer to primary than the secondary commentary sites used in the original pass): "the proposed treaty limits tax at source on gross royalties to 15 percent for royalties in respect of intellectual or intangible property, including movie royalties, and 10 percent for royalties in respect of industrial, commercial, or scientific equipment," further specifying the 15% tier covers "copyrights, patents, trademarks, designs, plans, trade secrets, and related rights" and the 10% right to tax equipment payments is fixed "during all years for which the Convention has effect."
+   - Search 3 surfaced sortingtax.com's summary quoting the operative structure directly: "royalties referred to in sub-paragraph (a) above... taxable at a rate of 15%... and... royalties referred to in sub-paragraph (b) above... taxable at a rate of 10%," with sub-paragraph (a) covering copyright/patent/trademark/design-model/plan/secret-formula-or-process/industrial-commercial-scientific-experience information, consistent with the corrected table.
+   - Attempted direct WebFetch of the IRS Treasury Technical Explanation PDF (irs.gov/pub/irs-trty/inditech.pdf), the Indian Embassy USA comparison PDF, and a Tax Notes page reproducing the Joint Committee print — **all three were `EGRESS_BLOCKED`**, confirming the persistent, session-wide proxy block flagged by every prior stage still has not lifted. Primary treaty text still could not be reached directly.
+
+### Assessment
+
+The correction accurately and completely reflects the original finding — no discrepancy between what was flagged and what was fixed. Independent re-search in a fresh session, using different query phrasing and surfacing a legislative-history source (the Joint Committee on Taxation's report, via Tax Notes' summary) not seen in the original pass, produced results that are **fully consistent** with the corrected split and found no contradicting result. Confidence in this rate split is now **higher than the original pass's "likely" characterization** — the convergence is broader (more independent, differently-sourced summaries, including one closer to legislative primary source) and no source anywhere in either pass supports the original (pre-correction) "15% copyright / 10% patents-trademarks-know-how" split.
+
+That said, this remains **search-engine-corroborated secondary-source confirmation, not a directly-read primary-source confirmation** — WebFetch access to irs.gov, indianembassyusa.gov.in, and taxnotes.com remained blocked in this session exactly as in the original pass, so the exact sub-paragraph wording of Article 12(2)(a)/(b) itself has still not been read directly by this fact-check. The recommendation that a qualified tax professional give the corrected table a final read against the actual treaty text or the IRS Technical Explanation **before publish** stands — not because the correction is in doubt, but because a rate table on a live tax-advice page touching Income Tax Act withholding obligations warrants that direct-primary-source confirmation as a matter of standing practice for this kind of content, independent of how strong the secondary corroboration is.
+
+### Outcome
+
+- **MUST-FIX item: closed.** The royalty rate table correction is confirmed accurate and complete.
+- **The other "Needs Human Professional Verification" items are unaffected by this re-check and stand as already assessed** in the "Claims Requiring Human Professional Verification" table above (Form 8802 fee, Business Profits/Article 7 management-fee characterization, non-resident promoter buyback rate, domestic surcharge rate).
+- **The human-professional-sign-off recommendation still stands, independent of this re-check's outcome.** Confirming the correction is accurate does not substitute for the qualified-professional review this file has recommended throughout — consistent with how this pipeline has treated every regulated-content page in this cluster (a Stage 9 fact-check, however thorough, cannot itself clear a tax-advice page for publish; a qualified AU Corporate tax professional's sign-off is still the gating step).
+
+### Updated Overall Verdict
+
+**Needs human professional sign-off before publish** (writer-revision step is now complete — the prior "needs writer revision, then..." verdict is resolved on the writer-revision half).
+
+The page is fact-check-clean from this office's perspective: the one item that read as a likely factual error has been corrected and independently re-confirmed, and every other claim checked in the original pass remains verified or appropriately flagged. Before this page goes live, a qualified AU Corporate tax professional should still sign off specifically on:
+1. The corrected Article 12 royalty table, against primary treaty text or the IRS Technical Explanation directly (now well-corroborated, but not yet primary-source-confirmed by this office due to the persistent egress block).
+2. The Business Profits/Article 7 management-fee characterization claim (single-competitor-sourced, real audit exposure if wrong).
+3. The Form 8802 fee figure, if added to the page (effective date is imminent relative to today).
+4. The domestic surcharge-driven effective-rate range (annually-set figure).
+
+This fact-checking function cannot itself approve the page for publication — per this pipeline's standing guardrail, that sign-off must come from a qualified human at AU Corporate.
