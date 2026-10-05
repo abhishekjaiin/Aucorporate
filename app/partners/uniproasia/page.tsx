@@ -366,7 +366,7 @@ export default function UniproAsiaPartnerPage() {
         </div>
       </section>
 
-      {/* OFFICES */}
+      {/* CONTACT */}
       <section aria-labelledby="uniproasia-offices" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <Reveal className="text-center mb-14">
@@ -374,33 +374,34 @@ export default function UniproAsiaPartnerPage() {
               Contact
             </p>
             <h2 id="uniproasia-offices" className="text-3xl font-bold text-[#081a42]">
-              UniproAsia Offices
+              Start With AU Corporate
             </h2>
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+              We coordinate the India side of your plans directly and introduce
+              you to UniproAsia for Hong Kong, Singapore or China — reach out to
+              AU Corporate to get started.
+            </p>
           </Reveal>
           <div className="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Reveal className="p-6 border rounded-xl">
-              <h3 className="font-semibold text-lg mb-3 text-[#081a42]">Hong Kong</h3>
-              <p className="text-sm text-gray-600 mb-1">Unipro Consulting Limited</p>
+              <h3 className="font-semibold text-lg mb-3 text-[#081a42]">India (HQ)</h3>
+              <p className="text-sm text-gray-600 mb-1">AU Corporate</p>
               <p className="text-sm text-gray-600 flex items-start gap-2">
                 <MapPin className="shrink-0 mt-0.5 text-yellow-600" size={16} />
-                Room 409 &amp; Room 4-5 G/F, Beverley Commercial Centre, 87-105 Chatham Road South, Tsim Sha Tsui, Kowloon, Hong Kong SAR, China
+                4O8 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001
               </p>
             </Reveal>
             <Reveal delay={0.1} className="p-6 border rounded-xl">
-              <h3 className="font-semibold text-lg mb-3 text-[#081a42]">Singapore</h3>
-              <p className="text-sm text-gray-600 flex items-start gap-2">
-                <MapPin className="shrink-0 mt-0.5 text-yellow-600" size={16} />
-                183 Jalan Pelikat, #B2-02, The Promenade@Pelikat, Singapore 537643
-              </p>
+              <h3 className="font-semibold text-lg mb-3 text-[#081a42]">Reach Us Directly</h3>
+              <div className="space-y-2">
+                <a href="mailto:partner@theaucorp.com" className="text-sm text-gray-600 flex items-center gap-2 hover:text-yellow-600">
+                  <Mail size={16} className="text-yellow-600 shrink-0" /> partner@theaucorp.com
+                </a>
+                <a href="tel:+919999010513" className="text-sm text-gray-600 flex items-center gap-2 hover:text-yellow-600">
+                  <Phone size={16} className="text-yellow-600 shrink-0" /> +91-9999010513
+                </a>
+              </div>
             </Reveal>
-          </div>
-          <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-gray-600">
-            <a href="mailto:info@uniproasia.com" className="flex items-center gap-2 hover:text-yellow-600">
-              <Mail size={16} className="text-yellow-600" /> info@uniproasia.com
-            </a>
-            <a href="tel:+85231534327" className="flex items-center gap-2 hover:text-yellow-600">
-              <Phone size={16} className="text-yellow-600" /> +852 3153-4327
-            </a>
           </div>
         </div>
       </section>
