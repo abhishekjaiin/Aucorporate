@@ -1,8 +1,6 @@
-"use client"
-
-import { useState } from "react"
 import Image from "next/image"
-import HeroCarousel, { heroSlides } from "@/components/HeroCarousel"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 import { CountUp } from "@/components/CountUp"
 
 const NAVY = "#081A42"
@@ -17,25 +15,16 @@ const stats = [
 ] as const
 
 export default function HeroSection() {
-  const [activeSlide, setActiveSlide] = useState(0)
-
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24"
       style={{ backgroundColor: NAVY }}
     >
-      {/* Only the active slide's image is mounted — with all 3 mounted at
-          once (even at opacity 0), the browser laid out and fetched all 3
-          full-bleed images on first load since they're all positioned in
-          the viewport, which meant the LCP image was competing for
-          bandwidth with two images nobody could see yet. This trades the
-          crossfade transition for a real reduction in initial page weight. */}
       <Image
-        key={heroSlides[activeSlide].image}
-        src={heroSlides[activeSlide].image}
-        alt={heroSlides[activeSlide].imageAlt}
+        src="/images/pexels-pierre-blache-651604-9280877.jpg"
+        alt="View looking up at glass skyscrapers with an airplane overhead, representing global business reach"
         fill
-        priority={activeSlide === 0}
+        priority
         sizes="100vw"
         className="object-cover"
       />
@@ -44,7 +33,33 @@ export default function HeroSection() {
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
 
-        <HeroCarousel onActiveChange={setActiveSlide} />
+        <h1
+          className="mb-5 sm:mb-6 text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.15] tracking-tight [text-shadow:0_2px_16px_rgba(0,0,0,0.7)]"
+          style={{ fontFamily: "var(--font-heading)" }}
+        >
+          Set Up and Run Your India Subsidiary — Incorporation to Annual Compliance
+        </h1>
+
+        <p className="mb-9 sm:mb-10 text-white/85 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto [text-shadow:0_1px_8px_rgba(0,0,0,0.7)]">
+          One partner for your India subsidiary: incorporation, accounting, tax, FEMA, secretarial compliance, audit support and expat services.
+        </p>
+
+        <div className="mb-6 flex flex-col xs:flex-row gap-3 justify-center items-center">
+          <Button
+            asChild
+            className="text-black text-sm sm:text-base font-semibold px-7 py-2.5 sm:py-3 w-full xs:w-auto"
+            style={{ backgroundColor: GOLD }}
+          >
+            <Link href="/contact">Set Up Your Subsidiary</Link>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            className="text-white border-white/50 hover:bg-white/10 text-sm sm:text-base font-semibold px-7 py-2.5 sm:py-3 w-full xs:w-auto bg-transparent"
+          >
+            <Link href="/india-business-setup">See Entity Options</Link>
+          </Button>
+        </div>
 
         <p className="mb-9 sm:mb-10 text-xs sm:text-sm font-medium tracking-wide text-gold">
           India Market Entry &nbsp;•&nbsp; Corporate Advisory &nbsp;•&nbsp; Tax &nbsp;•&nbsp; Accounting &nbsp;•&nbsp; Compliance &nbsp;•&nbsp; HR &amp; Payroll
