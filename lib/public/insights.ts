@@ -82,3 +82,19 @@ export async function getPublishedSlugs() {
   const rows = await db.select({ slug: insights.slug }).from(insights).where(inArray(insights.status, PUBLIC_STATUSES))
   return rows.map((r) => r.slug)
 }
+
+/**
+ * Single indexed existence check, used by proxy.ts to decide — before any
+ * page rendering happens — whether a request for /insights/[slug] should
+ * be allowed through or rewritten to a genuinely unmatched path. Kept
+ * separate from getPublishedInsightBySlug() because the caller only needs
+ * a boolean, not the full row.
+ */
+export async function isSlugPublic(slug: string): Promise<boolean> {
+  const [row] = await db
+    .select({ id: insights.id })
+    .from(insights)
+    .where(and(eq(insights.slug, slug), inArray(insights.status, PUBLIC_STATUSES)))
+    .limit(1)
+  return Boolean(row)
+}
