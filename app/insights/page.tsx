@@ -3,8 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 import { Breadcrumb } from "@/components/Breadcrumb"
-import { getAllInsightPosts } from "@/sanity/lib/queries"
-import { urlForImage } from "@/sanity/lib/image"
+import { getPublishedInsights } from "@/lib/public/insights"
 
 const NAVY = "#081a42"
 const GOLD = "#facc15"
@@ -23,7 +22,7 @@ export const metadata: Metadata = {
 }
 
 export default async function InsightsIndexPage() {
-  const posts = await getAllInsightPosts()
+  const posts = await getPublishedInsights()
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -58,49 +57,47 @@ export default async function InsightsIndexPage() {
           </p>
         ) : (
           <div className="grid md:grid-cols-3 gap-6">
-            {posts.map((post) => {
-              const img = urlForImage(post.featuredImage)
-              return (
-                <Link
-                  key={post._id}
-                  href={`/insights/${post.slug}`}
-                  className="group flex h-full flex-col rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all overflow-hidden"
-                >
-                  {img && (
-                    <div className="relative h-44 w-full">
-                      <Image
-                        src={img.width(800).height(450).url()}
-                        alt={post.featuredImage?.alt || post.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
+            {posts.map((post) => (
+              <Link
+                key={post.id}
+                href={`/insights/${post.slug}`}
+                className="group flex h-full flex-col rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all overflow-hidden"
+              >
+                {post.featuredImage && (
+                  <div className="relative h-44 w-full">
+                    <Image
+                      src={post.featuredImage}
+                      alt={post.imageAlt || post.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+                <div className="p-6 flex flex-col flex-1">
+                  {post.categoryName && (
+                    <span className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold w-fit mb-3 bg-blue-50 text-blue-700">
+                      {post.categoryName}
+                    </span>
                   )}
-                  <div className="p-6 flex flex-col flex-1">
-                    {post.category && (
-                      <span className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold w-fit mb-3 bg-blue-50 text-blue-700">
-                        {post.category}
-                      </span>
-                    )}
-                    <h2 className="font-semibold mb-2 group-hover:text-[#081a42] line-clamp-2">
-                      {post.title}
-                    </h2>
-                    {post.excerpt && (
-                      <p className="text-sm text-gray-500 mb-4 line-clamp-3 flex-1">{post.excerpt}</p>
-                    )}
-                    <div className="flex items-center justify-between mt-auto pt-2">
-                      <span className="text-xs text-gray-400">
-                        {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                  <h2 className="font-semibold mb-2 group-hover:text-[#081a42] line-clamp-2">
+                    {post.title}
+                  </h2>
+                  {post.excerpt && (
+                    <p className="text-sm text-gray-500 mb-4 line-clamp-3 flex-1">{post.excerpt}</p>
+                  )}
+                  <div className="flex items-center justify-between mt-auto pt-2">
+                    <span className="text-xs text-gray-400">
+                      {post.publishedAt &&
+                        new Date(post.publishedAt).toLocaleDateString("en-US", {
                           day: "numeric",
                           month: "short",
                           year: "numeric",
                         })}
-                      </span>
-                    </div>
+                    </span>
                   </div>
-                </Link>
-              )
-            })}
+                </div>
+              </Link>
+            ))}
           </div>
         )}
       </div>

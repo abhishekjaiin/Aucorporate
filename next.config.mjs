@@ -1,21 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // Every image on existing pages is still self-hosted from
-    // public/images/ or CSS/SVG — that lockdown (added 2026-09-21 after
-    // hotlinked Unsplash images 404'd in production) stays in force. The
-    // one exception, added for the Sanity-backed /insights system
-    // (approved 2026-10-06), is cdn.sanity.io, which hosts images
-    // uploaded through Sanity Studio — a managed, stable asset host, not
-    // an ad hoc hotlink. Do not add any other external image host
-    // without the same explicit confirmation.
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "cdn.sanity.io",
-        pathname: "/images/**",
-      },
-    ],
+    // No remotePatterns: every image on the public site — including new
+    // Insights managed through the Postgres-backed dashboard — is
+    // self-hosted from public/images/ or CSS/SVG. This lockdown was added
+    // 2026-09-21 after hotlinked Unsplash images 404'd in production.
+    // Sanity's cdn.sanity.io exception (added 2026-10-06) was removed when
+    // Sanity was decommissioned in favor of the custom dashboard — do not
+    // re-add an external image host without the same explicit
+    // confirmation that exception required.
     formats: ["image/avif", "image/webp"],
 
     minimumCacheTTL: 60 * 60 * 24 * 365,
