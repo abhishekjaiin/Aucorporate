@@ -1,0 +1,109 @@
+import type { Metadata } from "next"
+import Link from "next/link"
+import Image from "next/image"
+
+import { Breadcrumb } from "@/components/Breadcrumb"
+import { getAllInsightPosts } from "@/sanity/lib/queries"
+import { urlForImage } from "@/sanity/lib/image"
+
+const NAVY = "#081a42"
+const GOLD = "#facc15"
+
+export const revalidate = 60
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Insights | AU Corporate",
+  },
+  description:
+    "Articles and updates from AU Corporate on India market entry, taxation, compliance, and global business advisory.",
+  alternates: {
+    canonical: "https://www.theaucorp.com/insights",
+  },
+}
+
+export default async function InsightsIndexPage() {
+  const posts = await getAllInsightPosts()
+
+  return (
+    <div className="min-h-screen bg-gray-100">
+      <div className="bg-white border-b">
+        <div className="max-w-7xl mx-auto px-4">
+          <Breadcrumb items={[{ label: "Insights" }]} />
+        </div>
+      </div>
+
+      <section
+        className="relative overflow-hidden py-16 sm:py-20"
+        style={{ background: `linear-gradient(135deg, ${NAVY} 0%, #0d2a5c 100%)` }}
+      >
+        <div className="relative z-10 max-w-7xl mx-auto px-4">
+          <span
+            className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white"
+            style={{ backgroundColor: "rgba(255,255,255,0.1)", border: `1px solid ${GOLD}` }}
+          >
+            Insights
+          </span>
+          <h1 className="mt-5 text-4xl sm:text-5xl font-bold text-white">Insights</h1>
+          <p className="mt-3 text-white/70 text-lg max-w-2xl">
+            Articles and updates from AU Corporate.
+          </p>
+        </div>
+      </section>
+
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        {posts.length === 0 ? (
+          <p className="text-center text-gray-400 py-16">
+            No insights published yet — check back soon.
+          </p>
+        ) : (
+          <div className="grid md:grid-cols-3 gap-6">
+            {posts.map((post) => {
+              const img = urlForImage(post.featuredImage)
+              return (
+                <Link
+                  key={post._id}
+                  href={`/insights/${post.slug}`}
+                  className="group flex h-full flex-col rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all overflow-hidden"
+                >
+                  {img && (
+                    <div className="relative h-44 w-full">
+                      <Image
+                        src={img.width(800).height(450).url()}
+                        alt={post.featuredImage?.alt || post.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
+                  <div className="p-6 flex flex-col flex-1">
+                    {post.category && (
+                      <span className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold w-fit mb-3 bg-blue-50 text-blue-700">
+                        {post.category}
+                      </span>
+                    )}
+                    <h2 className="font-semibold mb-2 group-hover:text-[#081a42] line-clamp-2">
+                      {post.title}
+                    </h2>
+                    {post.excerpt && (
+                      <p className="text-sm text-gray-500 mb-4 line-clamp-3 flex-1">{post.excerpt}</p>
+                    )}
+                    <div className="flex items-center justify-between mt-auto pt-2">
+                      <span className="text-xs text-gray-400">
+                        {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                          day: "numeric",
+                          month: "short",
+                          year: "numeric",
+                        })}
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
