@@ -3,7 +3,7 @@
 import { desc, eq, sql } from "drizzle-orm"
 
 import { db } from "@/lib/db/client"
-import { insights, authors, categories } from "@/lib/db/schema"
+import { blogs, authors, categories } from "@/lib/db/schema"
 import { auth } from "@/lib/auth"
 import { PermissionError } from "@/lib/auth/permissions"
 
@@ -13,35 +13,35 @@ export async function getDashboardStats() {
 
   const [statusCounts, avgScoreRow, needsRefreshRow, recentlyUpdated, recentDrafts, pendingReview] = await Promise.all([
     db
-      .select({ status: insights.status, count: sql<number>`count(*)` })
-      .from(insights)
-      .groupBy(insights.status),
-    db.select({ avg: sql<number>`avg(${insights.seoScore})` }).from(insights).where(sql`${insights.seoScore} is not null`),
-    db.select({ count: sql<number>`count(*)` }).from(insights).where(eq(insights.needsRefresh, true)),
+      .select({ status: blogs.status, count: sql<number>`count(*)` })
+      .from(blogs)
+      .groupBy(blogs.status),
+    db.select({ avg: sql<number>`avg(${blogs.seoScore})` }).from(blogs).where(sql`${blogs.seoScore} is not null`),
+    db.select({ count: sql<number>`count(*)` }).from(blogs).where(eq(blogs.needsRefresh, true)),
     db
-      .select({ id: insights.id, title: insights.title, status: insights.status, updatedAt: insights.updatedAt })
-      .from(insights)
-      .orderBy(desc(insights.updatedAt))
+      .select({ id: blogs.id, title: blogs.title, status: blogs.status, updatedAt: blogs.updatedAt })
+      .from(blogs)
+      .orderBy(desc(blogs.updatedAt))
       .limit(5),
     db
-      .select({ id: insights.id, title: insights.title, updatedAt: insights.updatedAt })
-      .from(insights)
-      .where(eq(insights.status, "DRAFT"))
-      .orderBy(desc(insights.updatedAt))
+      .select({ id: blogs.id, title: blogs.title, updatedAt: blogs.updatedAt })
+      .from(blogs)
+      .where(eq(blogs.status, "DRAFT"))
+      .orderBy(desc(blogs.updatedAt))
       .limit(5),
     db
       .select({
-        id: insights.id,
-        title: insights.title,
+        id: blogs.id,
+        title: blogs.title,
         authorName: authors.name,
         categoryName: categories.name,
-        updatedAt: insights.updatedAt,
+        updatedAt: blogs.updatedAt,
       })
-      .from(insights)
-      .leftJoin(authors, eq(insights.authorId, authors.id))
-      .leftJoin(categories, eq(insights.categoryId, categories.id))
-      .where(eq(insights.status, "INTERNAL_REVIEW"))
-      .orderBy(desc(insights.updatedAt))
+      .from(blogs)
+      .leftJoin(authors, eq(blogs.authorId, authors.id))
+      .leftJoin(categories, eq(blogs.categoryId, categories.id))
+      .where(eq(blogs.status, "INTERNAL_REVIEW"))
+      .orderBy(desc(blogs.updatedAt))
       .limit(10),
   ])
 
