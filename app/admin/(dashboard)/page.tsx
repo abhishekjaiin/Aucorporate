@@ -54,7 +54,7 @@ export default async function AdminDashboardPage() {
               <ul className="space-y-3">
                 {stats.recentlyUpdated.map((item) => (
                   <li key={item.id} className="flex items-center justify-between gap-3 text-sm">
-                    <Link href={`/admin/insights/${item.id}`} className="truncate font-medium text-gray-700 hover:text-[#081a42]">
+                    <Link href={`/admin/blogs/${item.id}`} className="truncate font-medium text-gray-700 hover:text-[#081a42]">
                       {item.title}
                     </Link>
                     <StatusBadge status={item.status} />
@@ -76,7 +76,7 @@ export default async function AdminDashboardPage() {
               <ul className="space-y-3">
                 {stats.pendingReview.map((item) => (
                   <li key={item.id} className="text-sm">
-                    <Link href={`/admin/insights/${item.id}`} className="font-medium text-gray-700 hover:text-[#081a42]">
+                    <Link href={`/admin/blogs/${item.id}`} className="font-medium text-gray-700 hover:text-[#081a42]">
                       {item.title}
                     </Link>
                     <p className="text-xs text-gray-400">
@@ -100,7 +100,7 @@ export default async function AdminDashboardPage() {
               <ul className="space-y-3">
                 {stats.recentDrafts.map((item) => (
                   <li key={item.id} className="text-sm">
-                    <Link href={`/admin/insights/${item.id}`} className="font-medium text-gray-700 hover:text-[#081a42]">
+                    <Link href={`/admin/blogs/${item.id}`} className="font-medium text-gray-700 hover:text-[#081a42]">
                       {item.title}
                     </Link>
                   </li>
