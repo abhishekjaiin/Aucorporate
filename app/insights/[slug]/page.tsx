@@ -9,7 +9,7 @@ import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
 import { InquiryForm } from "@/components/InquiryForm"
 import { TableOfContents } from "@/components/insights/TableOfContents"
-import { getPublishedInsightBySlug, getRelatedInsightsByTopicCluster } from "@/lib/public/insights"
+import { getPublishedInsightBySlug, getRelatedBlogByTopicCluster } from "@/lib/public/insights"
 import { renderInsightContent } from "@/lib/tiptap/renderToHtml"
 import { extractFaqSection } from "@/lib/content/faq"
 import { extractToc, injectHeadingIds, estimateReadingTime } from "@/lib/content/toc"
@@ -112,9 +112,9 @@ export default async function InsightArticlePage({ params }: Props) {
   const html = injectHeadingIds(renderInsightContent(bodyContent), toc)
   const readingTime = estimateReadingTime(fullContent)
 
-  let relatedInsights = post.related
-  if (relatedInsights.length === 0 && post.topicClusterId) {
-    relatedInsights = await getRelatedInsightsByTopicCluster(post.topicClusterId, post.id)
+  let relatedBlog = post.related
+  if (relatedBlog.length === 0 && post.topicClusterId) {
+    relatedBlog = await getRelatedBlogByTopicCluster(post.topicClusterId, post.id)
   }
 
   const serviceLink = post.serviceSlug ? SERVICE_LINKS[post.serviceSlug] : undefined
@@ -170,7 +170,7 @@ export default async function InsightArticlePage({ params }: Props) {
     <div className="min-h-screen bg-white">
       <div className="bg-white border-b">
         <div className="max-w-5xl mx-auto px-4">
-          <Breadcrumb items={[{ label: "Insights", href: "/insights" }, { label: post.title }]} />
+          <Breadcrumb items={[{ label: "Blog", href: "/insights" }, { label: post.title }]} />
         </div>
       </div>
 
@@ -285,11 +285,11 @@ export default async function InsightArticlePage({ params }: Props) {
           </section>
         )}
 
-        {relatedInsights.length > 0 && (
+        {relatedBlog.length > 0 && (
           <RelatedResources
-            title="Related Insights"
+            title="Related Blog"
             showCta={relatedServiceLinks.length === 0}
-            links={relatedInsights.map((r) => ({
+            links={relatedBlog.map((r) => ({
               label: r.title,
               href: `/insights/${r.slug}`,
               description: r.excerpt || "",
@@ -303,7 +303,7 @@ export default async function InsightArticlePage({ params }: Props) {
 
         <p className="mt-10 pt-6 text-sm">
           <Link href="/insights" className="text-gold-dark font-semibold hover:underline">
-            &larr; Back to Insights
+            &larr; Back to Blog
           </Link>
         </p>
       </div>
