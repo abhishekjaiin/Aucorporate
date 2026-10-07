@@ -50,11 +50,15 @@ export async function getPublishedInsightBySlug(slug: string) {
       authorName: authors.name,
       authorBio: authors.bio,
       authorDesignation: authors.designation,
+      authorImage: authors.image,
       metaTitle: insights.metaTitle,
       metaDescription: insights.metaDescription,
       canonicalUrl: insights.canonicalUrl,
       publishedAt: insights.publishedAt,
       updatedAt: insights.updatedAt,
+      topicClusterId: insights.topicClusterId,
+      serviceSlug: insights.serviceSlug,
+      jurisdictionSlug: insights.jurisdictionSlug,
     })
     .from(insights)
     .leftJoin(categories, eq(insights.categoryId, categories.id))
@@ -76,6 +80,37 @@ export async function getPublishedInsightBySlug(slug: string) {
     .where(and(eq(relatedInsights.insightId, row.id), inArray(insights.status, PUBLIC_STATUSES)))
 
   return { ...row, related }
+}
+
+/**
+ * Fallback for the "Related Insights" section when an article has no
+ * manually curated relations yet: other published articles in the same
+ * topic cluster. This is a real topical relationship already captured by
+ * the existing schema (topicClusterId), not a random "recent posts" list —
+ * it simply isn't picked unless the curated `related` list is empty.
+ */
+export async function getRelatedInsightsByTopicCluster(
+  topicClusterId: string,
+  excludeInsightId: string,
+  limit = 3
+) {
+  return db
+    .select({
+      id: insights.id,
+      title: insights.title,
+      slug: insights.slug,
+      excerpt: insights.excerpt,
+    })
+    .from(insights)
+    .where(
+      and(
+        eq(insights.topicClusterId, topicClusterId),
+        inArray(insights.status, PUBLIC_STATUSES)
+      )
+    )
+    .orderBy(desc(insights.publishedAt))
+    .limit(limit + 1)
+    .then((rows) => rows.filter((r) => r.id !== excludeInsightId).slice(0, limit))
 }
 
 export async function getPublishedSlugs() {
