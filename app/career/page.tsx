@@ -192,8 +192,10 @@ export default function CareerPage() {
               title="Tell Us About Yourself"
               description="Share your resume and the role you're interested in, and our team will get back to you."
               checklist={['Article Trainee — Articleship program', 'Open to other roles? Mention it in your message', 'We review every application']}
-              footerNote={<>Mention the position you&apos;re applying for in your message.</>}
             />
+            <p className="mt-3 text-xs text-muted-foreground">
+              Mention the position you&apos;re applying for in your message.
+            </p>
           </div>
         </div>
       </section>
