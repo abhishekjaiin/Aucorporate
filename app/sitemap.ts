@@ -67,8 +67,7 @@ const pages: Page[] = [
   { path: "/branch-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-21" },
   { path: "/liaison-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-21" },
   { path: "/project-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-22" },
-  // LLP is included only when the public route exists. Keep the sitemap free
-  // of planned-but-unpublished URLs; a 404 in the sitemap is a crawl-quality signal.
+  { path: "/llp-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-28" },
 
 
   // AI/SaaS Tax Compliance & India Entry Pair
@@ -85,7 +84,7 @@ const pages: Page[] = [
 
   // Regional India Entry Clusters
   { path: "/india-entry-for-us-companies", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-07" },
-  { path: "/register-company-in-india-from-usa", priority: 0.95, changeFrequency: "monthly", lastModified: "2026-09-29" },
+  { path: "/india-entry-for-us-companies/register-company-in-india-from-usa", priority: 0.95, changeFrequency: "monthly", lastModified: "2026-09-29" },
   { path: "/india-entry-for-us-companies/permanent-establishment-risk-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-29" },
   { path: "/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-30" },
   { path: "/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
