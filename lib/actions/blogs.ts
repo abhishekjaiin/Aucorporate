@@ -181,7 +181,7 @@ export async function updateBlog(id: string, input: BlogInput) {
 
   if (existing.status === "PUBLISHED") {
     revalidatePath(`/blog/${row.slug}`)
-    revalidatePath("/blogs")
+    revalidatePath("/blog")
   }
   return row
 }
@@ -226,7 +226,7 @@ export async function publishBlog(id: string) {
 
   await computeAndStoreScore(id)
   revalidatePath(`/blog/${row.slug}`)
-  revalidatePath("/blogs")
+  revalidatePath("/blog")
   revalidatePath("/sitemap.xml")
   return row
 }
@@ -240,7 +240,7 @@ export async function unpublishBlog(id: string) {
     .where(eq(blogs.id, id))
     .returning()
   revalidatePath(`/blog/${row.slug}`)
-  revalidatePath("/blogs")
+  revalidatePath("/blog")
   revalidatePath("/sitemap.xml")
   return row
 }
@@ -267,7 +267,7 @@ export async function deleteBlog(id: string, confirmed: boolean) {
 
   if (existing?.status === "PUBLISHED") {
     revalidatePath(`/blog/${existing.slug}`)
-    revalidatePath("/blogs")
+    revalidatePath("/blog")
     revalidatePath("/sitemap.xml")
   }
 }
