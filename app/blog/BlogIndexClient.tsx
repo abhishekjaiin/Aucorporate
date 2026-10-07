@@ -139,11 +139,11 @@ export default function BlogIndexClient({ cmsBlogs = [] }: { cmsBlogs?: CmsBlogC
               className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white"
               style={{ backgroundColor: "rgba(255,255,255,0.1)", border: `1px solid ${GOLD}` }}
             >
-              <Sparkles size={12} style={{ color: GOLD }} /> Insights &amp; Updates
+              <Sparkles size={12} style={{ color: GOLD }} /> Blog &amp; Updates
             </span>
             <h1 className="mt-5 text-4xl sm:text-5xl font-bold text-white">Our Blog</h1>
             <p className="mt-3 text-white/70 text-lg">
-              Insights on taxation, compliance, arbitration, and global business in India.
+              Articles on taxation, compliance, arbitration, and global business in India.
             </p>
           </Reveal>
         </div>
