@@ -19,7 +19,7 @@ import { cn } from "@/lib/utils"
 
 const navItems = [
   { label: "Dashboard", href: "/admin", icon: LayoutDashboard },
-  { label: "Blog Posts", href: "/admin/insights", icon: FileText },
+  { label: "Blog", href: "/admin/blog", icon: FileText },
   { label: "Authors", href: "/admin/authors", icon: Users },
   { label: "Categories", href: "/admin/categories", icon: FolderTree },
   { label: "Keywords", href: "/admin/keywords", icon: KeyRound },
