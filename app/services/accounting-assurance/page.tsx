@@ -330,6 +330,10 @@ export default function Page() {
             <h3 className="mb-2 font-semibold text-[#081a42]">Global Support Services</h3>
             <p className="text-sm text-gray-600">Back-office and finance &amp; accounting outsourcing</p>
           </Link>
+          <Link href="/india-entry-for-us-companies" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+            <h3 className="mb-2 font-semibold text-[#081a42]">India Entry for US Companies</h3>
+            <p className="text-sm text-gray-600">Entity choice, FEMA compliance, and transfer pricing for a US-owned subsidiary</p>
+          </Link>
         </div>
 
       </div>
