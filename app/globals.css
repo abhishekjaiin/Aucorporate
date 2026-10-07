@@ -9,8 +9,8 @@
 
 :root {
   /* Brand Colors */
-  --gold: #facc15;
-  --gold-light: #fde047;
+  --gold: #FFD21F;
+  --gold-light: #FFE66B;
   /* Matches --gold on explicit user instruction (2026-09-25): text using
      --gold-dark should render the same bright yellow as the site's icons.
      Note this reopens the WCAG AA contrast failure the darker value fixed —
@@ -18,8 +18,8 @@
      4.5:1 — flagged and accepted as a known, deliberate trade-off. */
   --gold-dark: var(--gold);
 
-  --blue: #081a42;
-  --blue-light: #102a66;
+  --blue: #0E1B4D;
+  --blue-light: #142A6B;
 
   --gray-dark: #111827;
   --gray-light: #E5E7EB;
@@ -34,7 +34,7 @@
   --popover: #ffffff;
   --popover-foreground: #111827;
 
-  --primary: #FFD700;
+  --primary: #FFD21F;
   --primary-foreground: #111827;
 
   --secondary: #f3f4f6;
@@ -43,7 +43,7 @@
   --muted: #f3f4f6;
   --muted-foreground: #6b7280;
 
-  --accent: #FFD700;
+  --accent: #FFD21F;
   --accent-foreground: #111827;
 
   --destructive: #ef4444;
@@ -51,7 +51,7 @@
 
   --border: #E5E7EB;
   --input: #E5E7EB;
-  --ring: #FFD700;
+  --ring: #FFD21F;
 
   --radius: 0.5rem;
 }
@@ -103,17 +103,17 @@
      line, applies everywhere those classes are already used — instead of
      hand-editing every file, which would be slower and far more error-prone
      for the same visual result. */
-  --color-yellow-50: var(--gold-light);
-  --color-yellow-100: var(--gold-light);
-  --color-yellow-200: var(--gold-light);
-  --color-yellow-300: var(--gold);
-  --color-yellow-400: var(--gold);
-  --color-yellow-500: var(--gold);
-  --color-yellow-600: var(--gold);
-  --color-yellow-700: var(--gold);
-  --color-yellow-800: var(--gold);
-  --color-yellow-900: var(--gold);
-  --color-yellow-950: var(--gold);
+  --color-yellow-50: #FFF9DB;
+  --color-yellow-100: #FFF4B8;
+  --color-yellow-200: #FFE98A;
+  --color-yellow-300: #FFD21F;
+  --color-yellow-400: #FFD21F;
+  --color-yellow-500: #FFD21F;
+  --color-yellow-600: #F2B705;
+  --color-yellow-700: #D9A400;
+  --color-yellow-800: #B88900;
+  --color-yellow-900: #8F6B00;
+  --color-yellow-950: #6B5000;
 }
 
 @layer base {
