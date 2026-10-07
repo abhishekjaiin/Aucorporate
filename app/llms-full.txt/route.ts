@@ -45,7 +45,7 @@ const sectionRules: SectionRule[] = [
   { test: (p) => p.startsWith("/services") || ["/hr-services", "/outsourcing", "/arbitration-services"].includes(p), section: "Services" },
   { test: (p) => p.startsWith("/partners"), section: "Partners" },
   { test: (p) => p.startsWith("/blog"), section: "Blog & Regulatory Explainers" },
-  { test: (p) => p.startsWith("/blogs"), section: "Blogs" },
+  { test: (p) => p.startsWith("/blogs"), section: "Blog & Regulatory Explainers" },
 ]
 
 const sectionOrder = [
@@ -101,7 +101,7 @@ export async function GET() {
   try {
     const blogs = await getPublishedBlogs()
     blogLines = blogs.map(
-      (blog) => `- [${blog.title}](${baseUrl}/blogs/${blog.slug})${blog.excerpt ? `: ${blog.excerpt}` : ""}`
+      (blog) => `- [${blog.title}](${baseUrl}/blog/${blog.slug})${blog.excerpt ? `: ${blog.excerpt}` : ""}`
     )
   } catch (err) {
     console.error("[llms-full.txt] failed to load published Blogs, continuing without them:", err)
@@ -110,9 +110,9 @@ export async function GET() {
   const sections: string[] = []
   for (const name of sectionOrder) {
     const pages = bySection.get(name)
-    if (!pages?.length && !(name === "Blogs" && blogLines.length)) continue
+    if (!pages?.length && !(name === "Blog & Regulatory Explainers" && blogLines.length)) continue
     const lines = (pages ?? []).map(renderLine)
-    if (name === "Blogs") lines.push(...blogLines)
+    if (name === "Blog & Regulatory Explainers") lines.push(...blogLines)
     sections.push(`## ${name}\n\n${lines.join("\n")}`)
   }
 
