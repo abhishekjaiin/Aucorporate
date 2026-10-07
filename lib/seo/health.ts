@@ -6,7 +6,7 @@
  * Health" everywhere it's shown. Every check below is a plain boolean
  * computed from data already on the record; nothing here is AI-judged or
  * fuzzy. Modular by design: add a new entry to CHECKS and it's picked up
- * by scoreInsight() automatically.
+ * by scoreBlog() automatically.
  */
 
 import type { JSONContent } from "@tiptap/core"
@@ -83,7 +83,7 @@ function countLinks(content: JSONContent | null, kind: "internal" | "external"):
   return count
 }
 
-export function scoreInsight(input: HealthCheckInput): SeoHealthReport {
+export function scoreBlog(input: HealthCheckInput): SeoHealthReport {
   const wordCount = countWords(input.content)
   const internalLinks = countLinks(input.content, "internal")
   const externalLinks = countLinks(input.content, "external")
