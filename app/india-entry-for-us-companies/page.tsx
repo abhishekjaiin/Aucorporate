@@ -26,59 +26,106 @@ const faqs = [
   },
 ]
 
+const journeyStages = [
+  {
+    stage: 'Stage 1',
+    name: 'Decide',
+    description: 'Work out which entity actually fits your plans in India.',
+    pages: [
+      {
+        title: 'US Subsidiary vs Branch Office',
+        description: 'Understand the structural differences and tax implications of subsidiary vs branch operations',
+        href: '/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india',
+      },
+    ],
+  },
+  {
+    stage: 'Stage 2',
+    name: 'Set Up',
+    description: 'Incorporate, register, and plan the cost and timeline from the US side.',
+    pages: [
+      {
+        title: 'Register a Company from the USA',
+        description: 'Compare all five entity options — subsidiary, LLP, branch, liaison, project office — and the registration process, cost and timeline',
+        href: '/india-entry-for-us-companies/register-company-in-india-from-usa',
+      },
+      {
+        title: 'How to Incorporate a Subsidiary',
+        description: 'Step-by-step process for incorporating a subsidiary from the US with apostille requirements',
+        href: '/india-entry-for-us-companies/how-to-incorporate-subsidiary-india-from-us',
+      },
+      {
+        title: 'Cost & Timeline',
+        description: 'Transparent, structure-based fee quotes and realistic timelines for US company setup — no fixed number fits every entity, so we scope it on a short call',
+        href: '/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us',
+      },
+    ],
+  },
+  {
+    stage: 'Stage 3',
+    name: 'Get Compliant',
+    description: 'Stay current on the recurring FEMA, RBI, and Companies Act filings a US-owned subsidiary owes every year.',
+    pages: [
+      {
+        title: 'FEMA Compliance',
+        description: 'FC-GPR, FC-TRS and annual FLA return filings, with deadline tracking for US-owned Indian subsidiaries',
+        href: '/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary',
+      },
+      {
+        title: 'Annual Compliance Calendar',
+        description: 'AOC-4, MGT-7, DIR-3 KYC, board meetings and AGM — the full annual MCA-ROC filing cycle for a US-owned subsidiary, with FEMA dates shown alongside',
+        href: '/india-entry-for-us-companies/annual-compliance-calendar',
+      },
+    ],
+  },
+  {
+    stage: 'Stage 4',
+    name: 'Manage Tax Risk',
+    description: 'Keep US and Indian filings reconciled on intercompany pricing, assess permanent establishment exposure, and plan how profits come back to the parent.',
+    pages: [
+      {
+        title: 'Transfer Pricing & Section 482',
+        description: 'Section 482 transfer pricing and Form 5471 implications for US parent companies',
+        href: '/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary',
+      },
+      {
+        title: 'Permanent Establishment Risk',
+        description: 'The four ways a US company triggers PE in India, current case law, and whether a subsidiary or an EOR actually removes the exposure',
+        href: '/india-entry-for-us-companies/permanent-establishment-risk-india',
+      },
+      {
+        title: 'DTAA & Repatriation Tax Guide',
+        description: 'DTAA rates, withholding tax and the repatriation routes available to a US parent — dividend, royalty, management fee, or the 2026 buyback reform',
+        href: '/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax',
+      },
+    ],
+  },
+  {
+    stage: 'Stage 5',
+    name: 'Operate, Grow, or Exit',
+    description: 'Run the finance function, scale toward a captive center, or wind the entity down cleanly.',
+    pages: [
+      {
+        title: 'Accounting & Assurance',
+        description: 'Statutory audit, financial reporting, and Ind AS/IFRS reconciliation support once the subsidiary is operating',
+        href: '/services/accounting-assurance',
+      },
+      {
+        title: 'Outsourced Finance & Virtual CFO',
+        description: 'One option for running day-to-day bookkeeping, payroll, and MIS reporting without building a full in-house India finance team from day one',
+        href: '/outsourcing',
+      },
+      {
+        title: 'Closing an Indian Subsidiary',
+        description: 'Strike-off vs voluntary liquidation, RBI remittance rules, and Form 5471 deconsolidation for a US parent winding down',
+        href: '/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation',
+      },
+    ],
+  },
+]
+
 export default function IndiaEntryForUSCompanies() {
-  const subPages = [
-    {
-      title: 'Permanent Establishment Risk',
-      description: 'The four ways a US company triggers PE in India, current case law, and whether a subsidiary or an EOR actually removes the exposure',
-      href: '/india-entry-for-us-companies/permanent-establishment-risk-india',
-    },
-    {
-      title: 'DTAA & Repatriation Tax Guide',
-      description: 'DTAA rates, withholding tax and the repatriation routes available to a US parent — dividend, royalty, management fee, or the 2026 buyback reform',
-      href: '/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax',
-    },
-    {
-      title: 'Register a Company from the USA',
-      description: 'Compare all five entity options — subsidiary, LLP, branch, liaison, project office — and the registration process, cost and timeline',
-      href: '/india-entry-for-us-companies/register-company-in-india-from-usa',
-    },
-    {
-      title: 'US Subsidiary vs Branch Office',
-      description: 'Understand the structural differences and tax implications of subsidiary vs branch operations',
-      href: '/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india',
-    },
-    {
-      title: 'How to Incorporate a Subsidiary',
-      description: 'Step-by-step process for incorporating a subsidiary from the US with apostille requirements',
-      href: '/india-entry-for-us-companies/how-to-incorporate-subsidiary-india-from-us',
-    },
-    {
-      title: 'FEMA Compliance',
-      description: 'FC-GPR, FC-TRS and annual FLA return filings, with deadline tracking for US-owned Indian subsidiaries',
-      href: '/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary',
-    },
-    {
-      title: 'Transfer Pricing & Section 482',
-      description: 'Section 482 transfer pricing and Form 5471 implications for US parent companies',
-      href: '/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary',
-    },
-    {
-      title: 'Closing an Indian Subsidiary',
-      description: 'Strike-off vs voluntary liquidation, RBI remittance rules, and Form 5471 deconsolidation for a US parent winding down',
-      href: '/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation',
-    },
-    {
-      title: 'Annual Compliance Calendar',
-      description: 'AOC-4, MGT-7, DIR-3 KYC, board meetings and AGM — the full annual MCA-ROC filing cycle for a US-owned subsidiary, with FEMA dates shown alongside',
-      href: '/india-entry-for-us-companies/annual-compliance-calendar',
-    },
-    {
-      title: 'Cost & Timeline',
-      description: 'Transparent, structure-based fee quotes and realistic timelines for US company setup — no fixed number fits every entity, so we scope it on a short call',
-      href: '/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us',
-    },
-  ]
+  const subPages = journeyStages.flatMap((s) => s.pages)
 
   return (
     <RegionClusterTemplate
@@ -86,30 +133,46 @@ export default function IndiaEntryForUSCompanies() {
       subtitle="AU Corporate helps US companies establish, scale, and optimize their Indian operations with expertise in GAAP to Ind AS reconciliation, transfer pricing, and Section 482 compliance."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies" },
             ]}
     >
       {/* INTRO & OVERVIEW */}
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">
-          Expanding into India presents significant opportunities for US companies, but requires navigating regulatory, tax, and compliance frameworks that don&apos;t map cleanly onto US structures. This page walks through the full journey — entity choice, incorporation, ongoing FEMA compliance, and the transfer pricing mechanics that connect your US and Indian filings — with links to the full depth on each step below.
+          <strong>Who this is for:</strong> US companies considering, establishing, operating, or expanding an Indian presence. <strong>What it covers:</strong> deciding on the right Indian structure, incorporation and setup, FEMA/RBI and corporate compliance, transfer pricing and permanent establishment risk, DTAA and repatriation, and the ongoing operations, growth, or exit that follow — the full lifecycle, in one connected guide.
+        </p>
+        <p className="text-lg text-gray-700 mb-6">
+          This builds on the general framework in{' '}
+          <Link href="/doing-business-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            Doing Business in India
+          </Link>{' '}
+          — that page covers the strategic questions every foreign company faces; this one covers what's specific to doing it from the US, including the regulatory, tax, and compliance frameworks that don&apos;t map cleanly onto US structures.
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
           Our team includes CA and US CPA-qualified professionals, giving US clients a direct line to expertise in both Indian statutory requirements and US GAAP/reporting expectations from the other side of the desk.
         </p>
       </div>
 
-      {/* PE RISK — comes before entity choice deliberately: PE exposure is a
-          question a US company faces even before it decides on a structure,
-          not a consequence of getting the structure wrong. */}
-      <div className="mb-12">
-        <p className="text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
-          Before you even get to entity choice, it&apos;s worth asking a more fundamental question: does your current India activity already create a taxable presence, with or without an entity? Permanent establishment (PE) risk is a function of what your people and contracts actually do in India, not of whether you&apos;ve incorporated anything — see our full{' '}
-          <Link href="/india-entry-for-us-companies/permanent-establishment-risk-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
-            permanent establishment risk analysis for US companies
-          </Link>{' '}
-          for the four-way typology, current case law, and whether a subsidiary or an EOR actually removes the exposure.
-        </p>
+      {/* JOURNEY MAP — the five stages this page is organized around */}
+      <div className="mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-5 gap-3">
+          {journeyStages.map((s, i) => (
+            <a
+              key={s.stage}
+              href={`#stage-${i + 1}`}
+              className="p-4 rounded-lg border-2 border-yellow-300 bg-white hover:bg-yellow-50 hover:shadow-md transition text-center"
+            >
+              <div className="text-xs font-semibold text-yellow-600 uppercase tracking-wide mb-1">{s.stage}</div>
+              <div className="font-bold text-sm text-[#081a42]">{s.name}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* STAGE 1 — DECIDE */}
+      <div id="stage-1" className="mb-6 scroll-mt-24">
+        <span className="text-xs font-bold uppercase tracking-wide text-yellow-600">Stage 1 of 5 — Decide</span>
       </div>
 
       {/* ENTITY CHOICE */}
@@ -131,6 +194,11 @@ export default function IndiaEntryForUSCompanies() {
         <EntitySelectorTool />
       </div>
 
+      {/* STAGE 2 — SET UP */}
+      <div id="stage-2" className="mb-6 scroll-mt-24">
+        <span className="text-xs font-bold uppercase tracking-wide text-yellow-600">Stage 2 of 5 — Set Up</span>
+      </div>
+
       {/* INCORPORATION PROCESS */}
       <div className="mb-12">
         <h2 className="text-2xl sm:text-3xl font-bold mb-6">Incorporating From the US: What Actually Slows Things Down</h2>
@@ -148,6 +216,23 @@ export default function IndiaEntryForUSCompanies() {
           </Link>{' '}
           for the general (non-US-specific) mechanics.
         </p>
+      </div>
+
+      {/* COST AND TIMELINE — grouped into Set Up, since it's a setup-decision
+          input, not an ongoing-operations topic. */}
+      <div className="mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">Cost and Timeline: What Actually Drives It</h2>
+        <p className="text-gray-700">
+          Any single flat number quoted online for India entry is a rough average dressed up as precision. The real drivers are entity structure (subsidiary vs. branch carry different registration, audit, and ongoing compliance costs), sector and FDI route (Automatic Route moves faster and cheaper than Government Route), the number of US-based directors needing apostilled documents (each one adds time, usually more than cost), and whether the engagement is incorporation-only or includes ongoing accounting, payroll, tax, and FEMA compliance. For a standard automatic-route subsidiary with straightforward documentation, the US-side apostille step is typically the pacing item, not the Indian filing itself. See our{' '}
+          <Link href="/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            full cost and timeline breakdown
+          </Link>.
+        </p>
+      </div>
+
+      {/* STAGE 3 — GET COMPLIANT */}
+      <div id="stage-3" className="mb-6 scroll-mt-24">
+        <span className="text-xs font-bold uppercase tracking-wide text-yellow-600">Stage 3 of 5 — Get Compliant</span>
       </div>
 
       {/* FEMA COMPLIANCE */}
@@ -168,6 +253,11 @@ export default function IndiaEntryForUSCompanies() {
             annual compliance calendar for foreign subsidiaries
           </Link>.
         </p>
+      </div>
+
+      {/* STAGE 4 — MANAGE TAX RISK */}
+      <div id="stage-4" className="mb-6 scroll-mt-24">
+        <span className="text-xs font-bold uppercase tracking-wide text-yellow-600">Stage 4 of 5 — Manage Tax Risk</span>
       </div>
 
       {/* TRANSFER PRICING */}
@@ -192,37 +282,99 @@ export default function IndiaEntryForUSCompanies() {
         </p>
       </div>
 
-      {/* COST AND TIMELINE */}
+      {/* PERMANENT ESTABLISHMENT RISK */}
       <div className="mb-12">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6">Cost and Timeline: What Actually Drives It</h2>
-        <p className="text-gray-700">
-          Any single flat number quoted online for India entry is a rough average dressed up as precision. The real drivers are entity structure (subsidiary vs. branch carry different registration, audit, and ongoing compliance costs), sector and FDI route (Automatic Route moves faster and cheaper than Government Route), the number of US-based directors needing apostilled documents (each one adds time, usually more than cost), and whether the engagement is incorporation-only or includes ongoing accounting, payroll, tax, and FEMA compliance. For a standard automatic-route subsidiary with straightforward documentation, the US-side apostille step is typically the pacing item, not the Indian filing itself. See our{' '}
-          <Link href="/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us" className="text-yellow-600 hover:text-yellow-700 font-semibold">
-            full cost and timeline breakdown
-          </Link>.
+        <p className="text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
+          A related question on the tax-risk side: does your current India activity already create a taxable presence, with or without an entity? Permanent establishment (PE) risk is a function of what your people and contracts actually do in India, not of whether you&apos;ve incorporated anything — see our full{' '}
+          <Link href="/india-entry-for-us-companies/permanent-establishment-risk-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            permanent establishment risk analysis for US companies
+          </Link>{' '}
+          for the four-way typology, current case law, and whether a subsidiary or an EOR actually removes the exposure.
         </p>
       </div>
 
-      {/* SUB-PAGES GRID */}
+      {/* REPATRIATION / DTAA */}
       <div className="mb-12">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-8">
-          Explore Our US India-Entry Services
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">Repatriating Profits: Dividend, Royalty, or Buyback</h2>
+        <p className="text-gray-700">
+          Once the subsidiary is profitable, the India-US DTAA sets the withholding tax rate on whichever route moves money back to the parent — dividend, royalty, or management fee each carry different rates and documentation, and the 2026 buyback reform changed how that route is taxed on the Indian side. See our full{' '}
+          <Link href="/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            DTAA &amp; repatriation tax guide
+          </Link>{' '}
+          for the rates and the route-by-route comparison.
+        </p>
+      </div>
+
+      {/* STAGE 5 — OPERATE, GROW, OR EXIT */}
+      <div id="stage-5" className="mb-6 scroll-mt-24">
+        <span className="text-xs font-bold uppercase tracking-wide text-yellow-600">Stage 5 of 5 — Operate, Grow, or Exit</span>
+      </div>
+      <div className="mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6">Running the Entity Once It&apos;s Live</h2>
+        <p className="text-gray-700 mb-4">
+          Once the subsidiary is incorporated and the compliance calendar is running, the ongoing decision is how to resource the finance function — not whether to resource it. Most US parents start with the recurring bookkeeping, payroll, and statutory filings handled by{' '}
+          <Link href="/services/accounting-assurance" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            accounting and assurance support
+          </Link>{' '}
+          on the India side, with{' '}
+          <Link href="/outsourcing" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            outsourced bookkeeping and Virtual CFO support
+          </Link>{' '}
+          available as one option for running day-to-day finance work without building a full in-house India team from day one — useful in the early years, but a scale decision to revisit rather than a default that fits every subsidiary indefinitely.
+        </p>
+        <p className="text-gray-700 mb-4">
+          As the India presence grows, some US parents evolve the subsidiary into a captive{' '}
+          <Link href="/gcc-setup-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            Global Capability Center
+          </Link>{' '}
+          rather than a standard operating entity. And if the actual need is narrower — specifically outsourcing accounting or tax-preparation work rather than running a subsidiary — our separate look at{' '}
+          <Link href="/accounting-outsourcing-firm-for-united-states-cpas-firm" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            accounting outsourcing to India for US businesses and CPA firms
+          </Link>{' '}
+          covers how to evaluate that as a standalone decision.
+        </p>
+        <p className="text-gray-700">
+          On the other end, if the entity no longer fits the business, see our guide to{' '}
+          <Link href="/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            closing an Indian subsidiary
+          </Link>{' '}
+          — strike-off vs. voluntary liquidation, RBI remittance rules, and Form 5471 deconsolidation for the US parent.
+        </p>
+      </div>
+
+      {/* SUB-PAGES GRID — grouped by journey stage, not a flat list */}
+      <div className="mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+          Every Page in This Journey, by Stage
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {subPages.map((page) => (
-            <Link
-              key={page.href}
-              href={page.href}
-              className="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition group"
-            >
-              <h3 className="font-bold text-lg mb-2 group-hover:text-yellow-600 flex items-center gap-2">
-                {page.title}
-                <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition" />
+        <p className="text-gray-600 mb-8">
+          The full depth behind each stage above, grouped the same way.
+        </p>
+        <div className="space-y-10">
+          {journeyStages.map((s, i) => (
+            <div key={s.stage}>
+              <h3 className="text-sm font-bold uppercase tracking-wide text-yellow-600 mb-1">
+                {s.stage}: {s.name}
               </h3>
-              <p className="text-gray-600 text-sm">
-                {page.description}
-              </p>
-            </Link>
+              <p className="text-gray-600 text-sm mb-4">{s.description}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {s.pages.map((page) => (
+                  <Link
+                    key={page.href}
+                    href={page.href}
+                    className="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition group"
+                  >
+                    <h4 className="font-bold text-lg mb-2 group-hover:text-yellow-600 flex items-center gap-2">
+                      {page.title}
+                      <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition" />
+                    </h4>
+                    <p className="text-gray-600 text-sm">
+                      {page.description}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
@@ -282,16 +434,22 @@ export default function IndiaEntryForUSCompanies() {
             Accounting Services →
           </Link>
           <Link
-            href="/outsourcing"
-            className="text-sm text-yellow-600 hover:text-yellow-700 font-semibold"
-          >
-            Accounting Outsourcing →
-          </Link>
-          <Link
             href="/gcc-setup-india"
             className="text-sm text-yellow-600 hover:text-yellow-700 font-semibold"
           >
             GCC Setup in India →
+          </Link>
+          <Link
+            href="/accounting-outsourcing-firm-for-united-states-cpas-firm"
+            className="text-sm text-yellow-600 hover:text-yellow-700 font-semibold"
+          >
+            Evaluating Accounting Outsourcing to India? →
+          </Link>
+          <Link
+            href="/outsourcing"
+            className="text-sm text-yellow-600 hover:text-yellow-700 font-semibold"
+          >
+            Outsourced Finance Support →
           </Link>
         </div>
       </div>

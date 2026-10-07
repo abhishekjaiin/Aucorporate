@@ -122,7 +122,7 @@ const faqs = [
   },
   {
     q: "I'm a foreign company setting up in India — where should I start?",
-    a: 'Start with entity structuring and incorporation under India Business Setup, then bring in accounting, tax, and payroll support once you are operational. Most of our India-entry clients engage us for both in a single coordinated engagement.',
+    a: 'Start with entity structuring and incorporation under India Business Setup, then bring in accounting, tax, and payroll support once you are operational. Most of our India-entry clients engage us for both in a single coordinated engagement. If you\'re coming from the US specifically, our India Entry for US Companies guide walks through that full lifecycle in one place.',
   },
   {
     q: 'Can I engage AU Corporate for a single service, or does everything come as a bundle?',
@@ -183,7 +183,11 @@ export default function ServicesPage() {
             AU Corporate is a multidisciplinary consultancy founded in 2016, with teams based in New Delhi and Gurugram and a client base spanning both foreign companies entering India and domestic businesses scaling their operations here. Our team brings together Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, lawyers, ex-bankers, and industry specialists under one roof, so a single engagement can cover incorporation, accounting, tax, compliance, and advisory without you coordinating across multiple vendors.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            The eight service areas below make up our core practice — each with its own dedicated page covering the full scope of what we do, who it&apos;s for, and how an engagement typically works. This page is the starting point: a map of what AU Corporate covers, so you can go straight to the service that matches what you need. If you&apos;re not sure which one fits, the &quot;Not Sure Where to Start&quot; guide further down maps common business needs directly to the right team.
+            For a foreign company, each service below is really a capability your India entity needs at some point in its lifecycle — FEMA/RBI and tax compliance once you&apos;re incorporated, accounting and payroll to run the entity, transaction advisory if you later restructure or acquire. See our{' '}
+            <Link href="/doing-business-in-india" className="text-blue hover:underline font-medium">India entry framework</Link>{' '}
+            (or the{' '}
+            <Link href="/india-entry-for-us-companies" className="text-blue hover:underline font-medium">US-specific version</Link>{' '}
+            if you&apos;re coming from the US) for how these fit together. The eight service areas below make up our core practice — each with its own dedicated page covering the full scope of what we do, who it&apos;s for, and how an engagement typically works. If you&apos;re not sure which one fits, the &quot;Not Sure Where to Start&quot; guide further down maps common business needs directly to the right team.
           </p>
         </div>
       </section>

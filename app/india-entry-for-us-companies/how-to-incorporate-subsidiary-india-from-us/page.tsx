@@ -100,6 +100,7 @@ export default function HowToIncorporateFromUSPage() {
       subtitle="The step-by-step process — entity prerequisites, the documents checklist, the resident-director requirement, and the apostille/notarization steps specific to US-originated documents."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
               { label: "How to Incorporate a Subsidiary in India from the US" },
             ]}

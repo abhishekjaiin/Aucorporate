@@ -337,7 +337,10 @@ export default function Page() {
             Transfer Pricing, Safe Harbour & DTAA Relief
           </h2>
           <p className="text-gray-600 max-w-4xl leading-relaxed mb-8">
-            Almost every foreign-owned Indian entity has international related-party transactions with its parent — management fees, software licences, cost recharges, intercompany services — and those transactions carry their own compliance regime, separate from ordinary corporate tax and GST:
+            Almost every foreign-owned Indian entity has international related-party transactions with its parent — management fees, software licences, cost recharges, intercompany services — and those transactions carry their own compliance regime, separate from ordinary corporate tax and GST. For the US-parent-specific version of this — Section 482, Form 5471, and keeping both countries&apos; filings reconciled — see our{' '}
+            <Link href="/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary" className="text-yellow-700 font-semibold hover:underline">
+              transfer pricing guide for US-owned subsidiaries
+            </Link>:
           </p>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {transferPricingPoints.map((item) => (

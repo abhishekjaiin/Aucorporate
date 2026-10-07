@@ -42,6 +42,7 @@ export default function TransferPricingUSIndiaPage() {
       subtitle="How Section 482 on the US side and India's transfer pricing rules interact once your subsidiary starts transacting with its US parent."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
               { label: "Transfer Pricing & Section 482 for US-India Subsidiaries" },
             ]}

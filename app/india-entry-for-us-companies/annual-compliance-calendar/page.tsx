@@ -60,6 +60,7 @@ export default function AnnualComplianceCalendarPage() {
       subtitle="The AOC-4, MGT-7, ADT-1, DIR-3 KYC, board meeting and AGM deadlines a US-owned Indian subsidiary has to track every year — with FEMA/RBI dates shown alongside, and a dedicated section for your parent's own DIN-holding, non-resident directors."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
               { label: "Annual Compliance Calendar" },
             ]}

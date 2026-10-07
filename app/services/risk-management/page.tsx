@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { Reveal } from "@/components/Reveal"
@@ -275,7 +276,8 @@ export default function RiskManagementPage() {
           whether a joint-venture partner&rsquo;s reported numbers can be trusted, or whether the
           company is ready for a lender- or regulator-directed review. That is where enterprise
           risk management, forensic services, and special audits come in — and where we typically
-          get called in:
+          get called in. For a US parent, this risk oversight sits alongside the Operate stage of
+          our <Link href="/india-entry-for-us-companies" className="text-yellow-600 hover:text-yellow-700 font-semibold">India entry guide for US companies</Link>:
         </p>
 
         <ul className="list-disc pl-6 mb-10 max-w-3xl text-gray-600 space-y-1.5 leading-relaxed">

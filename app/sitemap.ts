@@ -1,4 +1,15 @@
 import { MetadataRoute } from "next"
+import { getPublishedInsights } from "@/lib/public/insights"
+
+// Without this, a route that queries the database at request time still
+// gets frozen as fully static at build time (confirmed live: a sitemap
+// built with zero published Insights stayed stuck at zero forever under
+// `next start`, never re-querying). This ISR window is the safety net;
+// publishInsight()/unpublishInsight() additionally call
+// revalidatePath("/sitemap.xml") for near-immediate updates on actual
+// publish/unpublish actions, so this interval rarely needs to fire on its
+// own.
+export const revalidate = 3600
 
 const baseUrl = "https://www.theaucorp.com"
 
@@ -79,7 +90,7 @@ const pages: Page[] = [
   { path: "/india-business-setup/timeline-resources", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
 
   // Regional India Entry Clusters
-  { path: "/india-entry-for-us-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
+  { path: "/india-entry-for-us-companies", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-07" },
   { path: "/india-entry-for-us-companies/register-company-in-india-from-usa", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-29" },
   { path: "/india-entry-for-us-companies/permanent-establishment-risk-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-29" },
   { path: "/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-30" },
@@ -91,7 +102,7 @@ const pages: Page[] = [
   { path: "/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-30" },
   { path: "/india-entry-for-us-companies/annual-compliance-calendar", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-30" },
 
-  { path: "/india-entry-for-uk-companies", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
+  { path: "/india-entry-for-uk-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-08-31" },
   { path: "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-23" },
   { path: "/india-entry-for-uk-companies/how-to-incorporate-subsidiary-india-from-uk", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
@@ -126,13 +137,38 @@ const pages: Page[] = [
   { path: "/blog/wholly-owned-subsidiary", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/blog/india-safe-harbour-rules-2026", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/blog/best-state-to-register-company-in-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-09-30" },
+
+  // Insights Hub (Postgres-backed) — individual published Insight URLs are
+  // appended below, fetched live. The index page itself is static here
+  // since it exists regardless of how many Insights are published.
+  { path: "/insights", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-10-06" },
 ]
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  return pages.map((page) => ({
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const staticEntries = pages.map((page) => ({
     url: `${baseUrl}${page.path}`,
     lastModified: page.lastModified,
     changeFrequency: page.changeFrequency,
     priority: page.priority,
   }))
+
+  // A database outage must never take down the sitemap for the other ~85
+  // static routes above — degrade to zero Insight entries instead of
+  // throwing. Only PUBLISHED rows are ever returned by this query (see
+  // lib/public/insights.ts), so draft/review/approved content can never
+  // leak into the public sitemap.
+  let insightEntries: MetadataRoute.Sitemap = []
+  try {
+    const insights = await getPublishedInsights()
+    insightEntries = insights.map((insight) => ({
+      url: `${baseUrl}/insights/${insight.slug}`,
+      lastModified: insight.publishedAt ?? new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    }))
+  } catch (err) {
+    console.error("[sitemap] failed to load published Insights, continuing without them:", err)
+  }
+
+  return [...staticEntries, ...insightEntries]
 }

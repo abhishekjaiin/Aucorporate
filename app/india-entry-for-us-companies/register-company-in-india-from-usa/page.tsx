@@ -152,6 +152,7 @@ export default function RegisterCompanyFromUSPage() {
       subtitle="Compare entity options, the resident-director rule, and the real registration process, cost and timeline for a US parent company."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
               { label: "Register a Company in India from the USA" },
             ]}

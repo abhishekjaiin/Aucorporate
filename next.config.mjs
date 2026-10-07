@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // No remotePatterns: every image on this site is self-hosted from
-    // public/images/ or CSS/SVG. Hotlinked Unsplash images previously
-    // 404'd in production and were removed sitewide (2026-09-21) — do not
-    // re-add an external image host without confirming it's reliable.
+    // No remotePatterns: every image on the public site — including new
+    // Insights managed through the Postgres-backed dashboard — is
+    // self-hosted from public/images/ or CSS/SVG. This lockdown was added
+    // 2026-09-21 after hotlinked Unsplash images 404'd in production.
+    // Sanity's cdn.sanity.io exception (added 2026-10-06) was removed when
+    // Sanity was decommissioned in favor of the custom dashboard — do not
+    // re-add an external image host without the same explicit
+    // confirmation that exception required.
     formats: ["image/avif", "image/webp"],
 
     minimumCacheTTL: 60 * 60 * 24 * 365,

@@ -53,16 +53,16 @@ const services = [
     href: "/hr-services",
   },
   {
-    icon: Landmark,
-    title: "Global Support & Outsourcing",
-    description: "Scalable accounting, tax, and back-office outsourcing to run your India operations without building it alone.",
-    href: "/outsourcing",
-  },
-  {
     icon: Scale,
     title: "Arbitration & Dispute Resolution",
     description: "Professional dispute resolution and legal advisory for commercial disputes in India.",
     href: "/arbitration-services",
+  },
+  {
+    icon: Landmark,
+    title: "Global Support & Outsourcing",
+    description: "Scalable accounting, tax, and back-office outsourcing to support India operations when needed.",
+    href: "/outsourcing",
   },
 ]
 
@@ -199,7 +199,7 @@ const process = [
 const lifecycle = [
   { title: "Enter", description: "Market entry & structuring", href: "/doing-business-in-india" },
   { title: "Establish", description: "Company formation & registrations", href: "/india-business-setup/company-formation" },
-  { title: "Operate", description: "Accounting, tax & payroll", href: "/outsourcing" },
+  { title: "Operate", description: "Accounting, tax & payroll", href: "/services/accounting-assurance" },
   { title: "Comply", description: "Corporate & regulatory compliance", href: "/india-business-setup/regulatory-compliance" },
   { title: "Grow", description: "Advisory & strategic support", href: "/services" },
 ]
@@ -523,7 +523,9 @@ export default function HomePage() {
           </div>
 
           <div className="mb-10">
-            <p className="text-white/70 text-sm mb-4">Entering from:</p>
+            <p className="text-white/70 text-sm mb-4">
+              Entering from: our most developed guide is for US companies, alongside dedicated guides for each country below.
+            </p>
             <div className="flex flex-wrap gap-3 justify-center">
               {[
                 { href: "/india-entry-for-us-companies", label: "US Companies" },

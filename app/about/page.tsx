@@ -9,6 +9,7 @@ import {
   Users,
   Building,
   Globe,
+  MapPin,
 } from "lucide-react"
 import { Reveal } from "@/components/Reveal"
 import { ClickableReveal } from "@/components/ClickableReveal"
@@ -41,7 +42,7 @@ export default function AboutHero() {
             </p>
 
             <p className="text-gray-500 text-sm sm:text-base mb-6">
-              Established in 2016, we provide innovative solutions to complex business challenges and act as a catalyst for the business growth of our clients across India and globally.
+              Established in 2016, we work extensively with foreign companies entering and operating in India — across market entry, FEMA/RBI compliance, taxation, accounting, and payroll — alongside Indian businesses that need the same regulatory and advisory support.
             </p>
 
             <Link href="/contact">
@@ -93,6 +94,40 @@ export default function AboutHero() {
             />
           </Reveal>
 
+        </div>
+      </section>
+
+      {/* WHO WE WORK WITH — foreign companies entering India, by source country */}
+      <section className="py-12 sm:py-24 bg-white">
+        <div className="mx-auto max-w-6xl px-4">
+          <Reveal>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
+              Who We Work With
+            </h2>
+            <p className="text-gray-500 text-sm sm:text-base max-w-2xl mx-auto text-center mb-10">
+              We work extensively with foreign companies entering and operating in India — structuring the right entity, staying compliant with FEMA and RBI reporting, and keeping home-country and Indian filings reconciled on tax. Our most developed guidance is for US companies, alongside dedicated guidance for companies entering from:
+            </p>
+          </Reveal>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+            {[
+              { label: "United States", href: "/india-entry-for-us-companies" },
+              { label: "United Kingdom", href: "/india-entry-for-uk-companies" },
+              { label: "Singapore", href: "/india-entry-for-singapore-companies" },
+              { label: "Australia", href: "/india-entry-for-australian-companies" },
+              { label: "Germany", href: "/india-entry-for-german-companies" },
+              { label: "Japan", href: "/india-entry-for-japan-companies" },
+              { label: "China", href: "/india-entry-for-china-companies" },
+            ].map((c) => (
+              <Link
+                key={c.href}
+                href={c.href}
+                className="flex items-center gap-2 p-4 border rounded-xl hover:shadow-lg hover:border-gold/50 bg-white transition justify-center text-center"
+              >
+                <MapPin className="text-gold w-4 h-4 shrink-0" />
+                <span className="font-medium text-sm">{c.label}</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

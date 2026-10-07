@@ -66,6 +66,12 @@ export default function AccountingOutsourcingIndiaBlogPage() {
       <p className="mb-6">
         Where firms run into trouble is treating this as a pure price comparison. The cheapest quote often comes from a provider with the thinnest review process, and a bookkeeping error or a missed tax deadline costs far more than whatever was saved on the hourly rate. The providers worth evaluating seriously are the ones that can speak specifically to US accounting standards, your software stack, and how they actually catch mistakes before work reaches you — not just the ones with the lowest number on the quote.
       </p>
+      <p className="mb-6 text-sm text-gray-600 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
+        This page is specifically about outsourcing a defined scope of accounting or tax-preparation work to an India-based provider. If your business is instead setting up its own Indian subsidiary or GCC — a separate decision, with its own entity, compliance, and tax-filing obligations — see our full{' '}
+        <Link href="/india-entry-for-us-companies" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+          guide to India entry for US companies
+        </Link>, which covers that journey from entity choice through ongoing compliance and transfer pricing.
+      </p>
       </section>
 
       <section aria-labelledby="providers">
@@ -184,6 +190,7 @@ export default function AccountingOutsourcingIndiaBlogPage() {
 
       <RelatedResources
         links={[
+          { label: "India Entry for US Companies", href: "/india-entry-for-us-companies", description: "Setting up and running a US-owned Indian subsidiary — entity choice, FEMA, and transfer pricing." },
           { label: "Accounting & Assurance Services", href: "/services/accounting-assurance", description: "Bookkeeping, statutory audit, and financial reporting support." },
           { label: "Outsourced Finance & Virtual CFO", href: "/outsourcing", description: "Finance function support for companies operating in India." },
           { label: "Taxation & Regulatory Services", href: "/services/taxation-regulatory", description: "Corporate tax, GST, and regulatory compliance." },

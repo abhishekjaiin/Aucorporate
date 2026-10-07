@@ -47,7 +47,7 @@ const offices = [
   {
     region: "India (HQ)",
     city: "New Delhi",
-    address: "4O8 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001",
+    address: "408 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001",
   },
   {
     region: "India (Satellite)",
