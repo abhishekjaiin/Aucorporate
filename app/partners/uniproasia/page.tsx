@@ -388,7 +388,7 @@ export default function UniproAsiaPartnerPage() {
               <p className="text-sm text-gray-600 mb-1">AU Corporate</p>
               <p className="text-sm text-gray-600 flex items-start gap-2">
                 <MapPin className="shrink-0 mt-0.5 text-yellow-600" size={16} />
-                4O8 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001
+                408 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001
               </p>
             </Reveal>
             <Reveal delay={0.1} className="p-6 border rounded-xl">
