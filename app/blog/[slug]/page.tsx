@@ -8,7 +8,7 @@ import { Breadcrumb } from "@/components/Breadcrumb"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
 import { InquiryForm } from "@/components/InquiryForm"
-import { TableOfContents } from "@/components/blogs/TableOfContents"
+import { TableOfContents } from "@/components/blog/TableOfContents"
 import { getPublishedBlogBySlug, getRelatedBlogByTopicCluster } from "@/lib/public/blogs"
 import { renderBlogContent } from "@/lib/tiptap/renderToHtml"
 import { extractFaqSection } from "@/lib/content/faq"
@@ -24,7 +24,7 @@ import { extractToc, injectHeadingIds, estimateReadingTime } from "@/lib/content
 // this class of issue, not a bug worked around by dynamic export flags.
 export const dynamic = "force-dynamic"
 
-// Known service/jurisdiction slugs an editor can set on an Blog (see
+// Known service/jurisdiction slugs an editor can set on a Blog (see
 // components/admin/BlogForm.tsx), mapped to the existing public pages
 // they correspond to. Deliberately small and static — this links into
 // existing pages only, it never creates new ones.
@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = post.metaTitle || post.title
   const description = post.metaDescription || post.excerpt || undefined
-  const canonical = post.canonicalUrl || `https://www.theaucorp.com/blogs/${post.slug}`
+  const canonical = post.canonicalUrl || `https://www.theaucorp.com/blog/${post.slug}`
 
   return {
     title: {
@@ -101,7 +101,7 @@ export default async function BlogArticlePage({ params }: Props) {
   // hidden" branch to accidentally leak.
   if (!post) notFound()
 
-  const canonical = post.canonicalUrl || `https://www.theaucorp.com/blogs/${post.slug}`
+  const canonical = post.canonicalUrl || `https://www.theaucorp.com/blog/${post.slug}`
   const fullContent = post.content as JSONContent | null
 
   // Lift an author-written "## Frequently Asked Questions" section out of
@@ -170,7 +170,7 @@ export default async function BlogArticlePage({ params }: Props) {
     <div className="min-h-screen bg-white">
       <div className="bg-white border-b">
         <div className="max-w-5xl mx-auto px-4">
-          <Breadcrumb items={[{ label: "Blog", href: "/blogs" }, { label: post.title }]} />
+          <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: post.title }]} />
         </div>
       </div>
 
@@ -291,7 +291,7 @@ export default async function BlogArticlePage({ params }: Props) {
             showCta={relatedServiceLinks.length === 0}
             links={relatedBlog.map((r) => ({
               label: r.title,
-              href: `/blogs/${r.slug}`,
+              href: `/blog/${r.slug}`,
               description: r.excerpt || "",
             }))}
           />
@@ -302,7 +302,7 @@ export default async function BlogArticlePage({ params }: Props) {
         )}
 
         <p className="mt-10 pt-6 text-sm">
-          <Link href="/blogs" className="text-gold-dark font-semibold hover:underline">
+          <Link href="/blog" className="text-gold-dark font-semibold hover:underline">
             &larr; Back to Blog
           </Link>
         </p>
