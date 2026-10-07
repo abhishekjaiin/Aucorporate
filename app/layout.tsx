@@ -35,18 +35,11 @@ export const metadata: Metadata = {
   description:
     "AU Corporate — a New Delhi-based advisory firm (est. 2016) helping foreign companies enter India with entity setup, tax, GST, FEMA compliance and payroll.",
 
+  // AU Corporate currently publishes one English-language site, not separate
+  // regional/language variants. Do not emit hreflang alternates that all point
+  // to the homepage; that creates false regional signals for search engines.
   alternates: {
     canonical: "https://www.theaucorp.com",
-    languages: {
-      "en": "https://www.theaucorp.com",
-      "en-US": "https://www.theaucorp.com",
-      "en-GB": "https://www.theaucorp.com",
-      "en-AU": "https://www.theaucorp.com",
-      "en-SG": "https://www.theaucorp.com",
-      "en-IN": "https://www.theaucorp.com",
-      "en-AE": "https://www.theaucorp.com",
-      "x-default": "https://www.theaucorp.com",
-    },
   },
 
   authors: [
@@ -253,6 +246,12 @@ export default function RootLayout({
         contactType: "sales",
         telephone: "+91-9999010513",
         email: "partner@theaucorp.com",
+      },
+
+      employee: {
+        "@type": "Person",
+        name: "Abhishek Jaiin",
+        jobTitle: "Director & Chartered Accountant (India)",
       },
 
       sameAs: [
