@@ -1,4 +1,6 @@
-import Link from 'next/link'
+"use client"
+
+import { openInquiryModal } from '@/lib/inquiry-modal'
 
 export function InquiryForm({
   title = "Tell us your plan. We'll map your India path.",
@@ -56,12 +58,13 @@ export function InquiryForm({
             >
               Chat on WhatsApp
             </a>
-            <Link
-              href="/contact"
+            <button
+              type="button"
+              onClick={openInquiryModal}
               className="flex w-full items-center justify-center rounded-lg border border-[#d6dce6] bg-white px-4 py-2.5 text-center text-sm font-semibold text-[#243047] transition hover:border-[#0E1B4D] hover:text-[#0E1B4D]"
             >
               Send Us a Message
-            </Link>
+            </button>
           </div>
 
           <p className="mt-4 text-xs leading-relaxed text-[#6b7280]">
