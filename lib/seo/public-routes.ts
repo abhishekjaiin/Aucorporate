@@ -134,5 +134,4 @@ export const publicPages: PublicPage[] = [
   // fetched live by each consumer (see getPublishedBlogs()). The index
   // page itself is static here since it exists regardless of how many
   // Blogs are published.
-  { path: "/blogs", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-10-06" },
 ]
