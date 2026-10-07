@@ -108,6 +108,9 @@ export default function BankingTaxationPage() {
               <ClickableInfoCard key={item.title} title={item.title} desc={item.description} />
             ))}
           </div>
+          <p className="mt-8 max-w-4xl leading-relaxed text-gray-600 text-sm">
+            This page covers the one-time setup — opening the account, registering for GST and PAN/TAN. Once the entity is operating, the ongoing bookkeeping, statutory audit and payroll runs off this same setup; see <Link href="/services/accounting-assurance" className="text-yellow-600 hover:text-yellow-700 font-semibold">Accounting &amp; Assurance</Link>, or <Link href="/outsourcing" className="text-yellow-600 hover:text-yellow-700 font-semibold">Finance &amp; Accounting Outsourcing</Link> if you&apos;d rather run it as an outsourced function.
+          </p>
         </div>
       </section>
 

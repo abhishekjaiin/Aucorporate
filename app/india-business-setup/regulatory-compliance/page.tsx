@@ -69,7 +69,15 @@ export default function RegulatoryCompliancePage() {
             <Link href="/india-entry-for-us-companies/annual-compliance-calendar" className="text-yellow-700 font-semibold hover:underline">
               annual compliance calendar for foreign subsidiary companies
             </Link>{' '}
-            for the dated, foreign-subsidiary-specific breakdown, including DIR-3 KYC and ADT-1.
+            for the dated, foreign-subsidiary-specific breakdown, including DIR-3 KYC and ADT-1. The bookkeeping and statutory audit behind most of these filings is covered on our{' '}
+            <Link href="/services/accounting-assurance" className="text-yellow-700 font-semibold hover:underline">
+              Accounting &amp; Assurance
+            </Link>{' '}
+            page, with{' '}
+            <Link href="/outsourcing" className="text-yellow-700 font-semibold hover:underline">
+              outsourced finance and accounting support
+            </Link>{' '}
+            as one option for running it.
           </p>
         </div>
       </section>

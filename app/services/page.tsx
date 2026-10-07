@@ -27,9 +27,9 @@ import {
 const services = [
   {
     icon: Building2,
-    title: 'Global Support Services',
-    description: 'Scalable business support and outsourcing solutions designed to optimize operations, reduce cost, and improve efficiency.',
-    features: ['Finance & Accounting Support', 'Back-office Operations', 'Process Outsourcing', 'Customer Support Solutions', 'Operational Optimization'],
+    title: 'Accounting & Finance Outsourcing',
+    description: 'Outsourced bookkeeping, monthly accounting, GST/TDS accounting support, and MIS/parent-company reporting for foreign companies and their Indian subsidiaries.',
+    features: ['Bookkeeping & Monthly Accounting', 'GST & TDS Accounting Support', 'MIS & Foreign Parent Reporting', 'Payroll Support', 'Audit Support'],
     href: '/outsourcing',
   },
   {
@@ -105,7 +105,7 @@ const needMap = [
   { need: 'Resolve a commercial dispute without going to court', href: '/arbitration-services', label: 'Arbitration & Dispute Resolution' },
   { need: 'Run payroll or manage HR and labour law compliance', href: '/hr-services', label: 'HR & Payroll Solutions' },
   { need: 'Train your in-house finance, audit, or compliance team', href: '/services/training-workshops', label: 'Training & Workshops' },
-  { need: 'Outsource back-office finance or accounting operations at scale', href: '/outsourcing', label: 'Global Support Services' },
+  { need: 'Outsource your India bookkeeping, monthly accounting, or finance function', href: '/outsourcing', label: 'Accounting & Finance Outsourcing' },
 ]
 
 const engagementSteps = [
