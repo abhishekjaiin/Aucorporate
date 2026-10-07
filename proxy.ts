@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 import { auth } from "@/lib/auth"
-import { isSlugPublic } from "@/lib/public/insights"
+import { isSlugPublic } from "@/lib/public/blogs"
 
 // Next.js 16's Proxy convention (the renamed middleware.ts) always runs on
 // the Node.js runtime now — no separate opt-in needed (an explicit
@@ -15,9 +15,9 @@ import { isSlugPublic } from "@/lib/public/insights"
 // pipeline is confirmed working correctly; the problem this file works
 // around is specific to notFound() calls deep inside a page that has
 // already started streaming a response (see the comment on
-// handleInsightSlug below) — routing to a path with no match sidesteps
+// handleBlogSlug below) — routing to a path with no match sidesteps
 // that entirely instead of fighting it from inside the page.
-const NOT_FOUND_REWRITE_PREFIX = "/__insights_not_found__"
+const NOT_FOUND_REWRITE_PREFIX = "/__blog_not_found__"
 
 /**
  * This site's root app/loading.tsx wraps every route in an automatic
@@ -27,7 +27,7 @@ const NOT_FOUND_REWRITE_PREFIX = "/__insights_not_found__"
  * with a 200 status before a notFound() call deep in the page body
  * resolves — confirmed with a minimal, zero-logic reproduction containing
  * nothing but `notFound()` in a bare page component, so this is not
- * specific to the Insights feature's own code.
+ * specific to the Blog feature's own code.
  *
  * The fix happens here, before any React rendering starts: look up
  * whether the slug is public, and if not, rewrite to a path with no
@@ -35,8 +35,8 @@ const NOT_FOUND_REWRITE_PREFIX = "/__insights_not_found__"
  * "no route matched" behavior handles it instead of the page's own
  * notFound() call ever running.
  */
-async function handleInsightSlug(req: NextRequest): Promise<NextResponse | null> {
-  const match = req.nextUrl.pathname.match(/^\/insights\/([^/]+)$/)
+async function handleBlogSlug(req: NextRequest): Promise<NextResponse | null> {
+  const match = req.nextUrl.pathname.match(/^\/blogs\/([^/]+)$/)
   if (!match) return null
 
   const slug = decodeURIComponent(match[1])
@@ -55,9 +55,9 @@ async function handleInsightSlug(req: NextRequest): Promise<NextResponse | null>
 export default auth(async (req: NextRequest & { auth: unknown }) => {
   const { pathname } = req.nextUrl
 
-  if (pathname.startsWith("/insights/")) {
-    const insightResult = await handleInsightSlug(req)
-    if (insightResult) return insightResult
+  if (pathname.startsWith("/blog/")) {
+    const blogResult = await handleBlogSlug(req)
+    if (blogResult) return blogResult
     return NextResponse.next()
   }
 
@@ -74,5 +74,5 @@ export default auth(async (req: NextRequest & { auth: unknown }) => {
 })
 
 export const config = {
-  matcher: ["/admin/:path*", "/insights/:slug"],
+  matcher: ["/admin/:path*", "/blog/:slug"],
 }
