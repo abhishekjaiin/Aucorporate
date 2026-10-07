@@ -284,7 +284,7 @@ export function Navbar() {
               )}
             </div>
 
-            <Link href="/blog" className="px-3 py-2 text-sm text-gray-700 hover:text-black">Insights</Link>
+            <Link href="/blog" className="px-3 py-2 text-sm text-gray-700 hover:text-black">Blog</Link>
 
             {/* ABOUT */}
             <div
