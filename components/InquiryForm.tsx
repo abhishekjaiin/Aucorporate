@@ -29,7 +29,7 @@ export function InquiryForm({
       </div>
 
       <div className="px-6 pt-6 lg:px-7">
-      <div className="mb-5 grid gap-2 text-sm text-muted-foreground sm:grid-cols-2 lg:grid-cols-1">
+        <div className="mb-5 grid gap-2 text-sm text-muted-foreground sm:grid-cols-2 lg:grid-cols-1">
         {checklist.map((item) => (
           <div key={item} className="flex items-start gap-2">
             <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#FFD21F]" />
@@ -43,6 +43,7 @@ export function InquiryForm({
       <p className="mt-4 pb-6 flex items-center justify-center gap-1 text-center text-xs text-muted-foreground">
         {footerNote}
       </p>
+        </div>
       </div>
     </div>
   )
