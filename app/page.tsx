@@ -1,4 +1,5 @@
 import Link from "next/link"
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import HeroSection from "@/components/HeroSection"
 import { FaqAccordion } from "@/components/FaqAccordion"
@@ -240,6 +241,12 @@ const faqs = [
     a: "Cost depends on entity structure, sector, number of directors, and ongoing service scope — we scope this precisely on a short consultation rather than quoting a flat number that may not fit your situation.",
   },
 ]
+
+export const metadata: Metadata = {
+  title: "Indian Subsidiary Registration & Compliance Expert | AU Corporate",
+  description:
+    "AU Corporate supports foreign-owned Indian subsidiaries from incorporation through accounting, tax, FEMA, secretarial compliance, audit support and ongoing operations.",
+}
 
 export default function HomePage() {
   return (
