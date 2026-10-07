@@ -43,7 +43,7 @@ export default async function EditBlogPage({ params }: { params: Promise<{ id: s
             <h1 className="text-2xl font-bold text-[#081a42]">{blog.title}</h1>
             <div className="mt-1 flex items-center gap-2">
               <StatusBadge status={blog.status} />
-              <span className="text-xs text-gray-400">/blogs/{blog.slug}</span>
+              <span className="text-xs text-gray-400">/blog/{blog.slug}</span>
             </div>
           </div>
         </div>
