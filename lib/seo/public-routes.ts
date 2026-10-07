@@ -130,7 +130,7 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/india-safe-harbour-rules-2026", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/blog/best-state-to-register-company-in-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-09-30" },
 
-  // Blogs Hub (Postgres-backed) — individual published Blog URLs are
+  // Blog Hub (Postgres-backed) — individual published Blog URLs are
   // fetched live by each consumer (see getPublishedBlogs()). The index
   // page itself is static here since it exists regardless of how many
   // Blogs are published.
