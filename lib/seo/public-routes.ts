@@ -10,7 +10,7 @@
  *
  * This array intentionally contains ONLY genuinely public, indexable
  * pages — never /admin, /api, or anything disallowed in robots.txt.
- * Published Insights are not listed here: they come from Postgres and are
+ * Published Blogs are not listed here: they come from Postgres and are
  * fetched separately (with the same safe empty-array fallback) by both
  * consumers, exactly as sitemap.ts already did before this refactor.
  */
@@ -130,9 +130,9 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/india-safe-harbour-rules-2026", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/blog/best-state-to-register-company-in-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-09-30" },
 
-  // Insights Hub (Postgres-backed) — individual published Insight URLs are
-  // fetched live by each consumer (see getPublishedInsights()). The index
+  // Blogs Hub (Postgres-backed) — individual published Blog URLs are
+  // fetched live by each consumer (see getPublishedBlogs()). The index
   // page itself is static here since it exists regardless of how many
-  // Insights are published.
-  { path: "/insights", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-10-06" },
+  // Blogs are published.
+  { path: "/blogs", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-10-06" },
 ]
