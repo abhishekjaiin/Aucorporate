@@ -45,7 +45,6 @@ const sectionRules: SectionRule[] = [
   { test: (p) => p.startsWith("/services") || ["/hr-services", "/outsourcing", "/arbitration-services"].includes(p), section: "Services" },
   { test: (p) => p.startsWith("/partners"), section: "Partners" },
   { test: (p) => p.startsWith("/blog"), section: "Blog & Regulatory Explainers" },
-  { test: (p) => p.startsWith("/blogs"), section: "Blog & Regulatory Explainers" },
 ]
 
 const sectionOrder = [
@@ -59,7 +58,6 @@ const sectionOrder = [
   "Services",
   "Partners",
   "Blog & Regulatory Explainers",
-  "Blogs",
   "Compliance Resources",
   "Other Pages",
 ]
