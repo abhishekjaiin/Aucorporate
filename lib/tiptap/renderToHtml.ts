@@ -26,7 +26,7 @@ const extensions = [
   TableCell,
 ]
 
-export function renderInsightContent(content: JSONContent | null | undefined): string {
+export function renderBlogContent(content: JSONContent | null | undefined): string {
   if (!content) return ""
   try {
     return generateHTML(content, extensions)
