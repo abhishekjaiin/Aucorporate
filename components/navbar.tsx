@@ -284,7 +284,7 @@ export function Navbar() {
               )}
             </div>
 
-            <Link href="/blog" className="px-3 py-2 text-sm text-gray-700 hover:text-black">Insights</Link>
+            <Link href="/blog" className="px-3 py-2 text-sm text-gray-700 hover:text-black">Blogs</Link>
 
             {/* ABOUT */}
             <div
@@ -378,7 +378,7 @@ export function Navbar() {
               </Link>
             </MobileGroup>
 
-            <Link href="/blog" onClick={closeMobile} className="block border-b py-4 text-base font-semibold">Insights</Link>
+            <Link href="/blog" onClick={closeMobile} className="block border-b py-4 text-base font-semibold">Blogs</Link>
 
             <MobileGroup label="About" open={mobileMenu === "about"} onToggle={() => setMobileMenu(mobileMenu === "about" ? null : "about")}>
               {aboutLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
