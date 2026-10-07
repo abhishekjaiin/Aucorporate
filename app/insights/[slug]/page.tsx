@@ -170,7 +170,7 @@ export default async function InsightArticlePage({ params }: Props) {
     <div className="min-h-screen bg-white">
       <div className="bg-white border-b">
         <div className="max-w-5xl mx-auto px-4">
-          <Breadcrumb items={[{ label: "Insights", href: "/insights" }, { label: post.title }]} />
+          <Breadcrumb items={[{ label: "Blog", href: "/insights" }, { label: post.title }]} />
         </div>
       </div>
 
@@ -287,7 +287,7 @@ export default async function InsightArticlePage({ params }: Props) {
 
         {relatedInsights.length > 0 && (
           <RelatedResources
-            title="Related Insights"
+            title="Related Blog Posts"
             showCta={relatedServiceLinks.length === 0}
             links={relatedInsights.map((r) => ({
               label: r.title,
@@ -303,7 +303,7 @@ export default async function InsightArticlePage({ params }: Props) {
 
         <p className="mt-10 pt-6 text-sm">
           <Link href="/insights" className="text-gold-dark font-semibold hover:underline">
-            &larr; Back to Insights
+            &larr; Back to Blog
           </Link>
         </p>
       </div>

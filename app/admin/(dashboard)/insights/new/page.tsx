@@ -11,7 +11,7 @@ export default async function NewInsightPage() {
   return (
     <div className="max-w-3xl space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-[#081a42]">New Insight</h1>
+        <h1 className="text-2xl font-bold text-[#081a42]">New Blog Post</h1>
         <p className="mt-1 text-sm text-gray-500">Starts as a draft. Nothing here is public until it's approved and published.</p>
       </div>
 

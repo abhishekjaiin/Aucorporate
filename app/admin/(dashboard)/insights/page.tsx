@@ -34,11 +34,11 @@ export default async function InsightsListPage({
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-[#081a42]">Insights</h1>
+          <h1 className="text-2xl font-bold text-[#081a42]">Blog Posts</h1>
           <p className="mt-1 text-sm text-gray-500">{total} total</p>
         </div>
         <Button asChild>
-          <Link href="/admin/insights/new">New Insight</Link>
+          <Link href="/admin/insights/new">New Blog Post</Link>
         </Button>
       </div>
 

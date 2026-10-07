@@ -28,7 +28,7 @@ export default async function SeoHealthPage() {
       <div>
         <h1 className="text-2xl font-bold text-[#081a42]">SEO Health</h1>
         <p className="mt-1 text-sm text-gray-500">
-          Lowest-scoring Insights first — an internal content/SEO checklist score, not a Google ranking signal.
+          Lowest-scoring blog posts first — an internal content/SEO checklist score, not a Google ranking signal.
         </p>
       </div>
 
@@ -39,7 +39,7 @@ export default async function SeoHealthPage() {
           </TableHeader>
           <TableBody>
             {rows.length === 0 ? (
-              <TableRow><TableCell colSpan={4} className="py-8 text-center text-gray-400">No insights yet.</TableCell></TableRow>
+              <TableRow><TableCell colSpan={4} className="py-8 text-center text-gray-400">No blog posts yet.</TableCell></TableRow>
             ) : (
               rows.map((r) => (
                 <TableRow key={r.id}>

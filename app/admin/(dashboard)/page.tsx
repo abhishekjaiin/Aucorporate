@@ -7,7 +7,7 @@ export default async function AdminDashboardPage() {
   const stats = await getDashboardStats()
 
   const statTiles = [
-    { label: "Total Insights", value: stats.total },
+    { label: "Total Blog Posts", value: stats.total },
     { label: "Drafts", value: stats.draft },
     { label: "Internal Review", value: stats.internalReview },
     { label: "Approved", value: stats.approved },
@@ -19,7 +19,7 @@ export default async function AdminDashboardPage() {
     <div className="space-y-8">
       <div>
         <h1 className="text-2xl font-bold text-[#081a42]">Dashboard</h1>
-        <p className="mt-1 text-sm text-gray-500">Content &amp; SEO overview for AU Corporate Insights.</p>
+        <p className="mt-1 text-sm text-gray-500">Content &amp; SEO overview for the AU Corporate Blog.</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
@@ -49,7 +49,7 @@ export default async function AdminDashboardPage() {
           </CardHeader>
           <CardContent>
             {stats.recentlyUpdated.length === 0 ? (
-              <p className="text-sm text-gray-400">No insights yet.</p>
+              <p className="text-sm text-gray-400">No blog posts yet.</p>
             ) : (
               <ul className="space-y-3">
                 {stats.recentlyUpdated.map((item) => (

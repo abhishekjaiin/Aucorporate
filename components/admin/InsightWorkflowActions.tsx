@@ -100,10 +100,10 @@ export function InsightWorkflowActions({ id, status, role }: { id: string; statu
             </Button>
             <DialogContent>
               <DialogHeader>
-                <DialogTitle>Delete this insight?</DialogTitle>
+                <DialogTitle>Delete this blog post?</DialogTitle>
                 <DialogDescription>
                   {status === "PUBLISHED"
-                    ? "This insight is currently published — deleting it will immediately remove its public page. This cannot be undone."
+                    ? "This blog post is currently published — deleting it will immediately remove its public page. This cannot be undone."
                     : "This cannot be undone."}
                 </DialogDescription>
               </DialogHeader>
