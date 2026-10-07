@@ -19,10 +19,10 @@ export const dynamic = "force-dynamic"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Blog | AU Corporate",
+    absolute: "Insights | AU Corporate",
   },
   description:
-    "Articles and updates from AU Corporate on India market entry, taxation, compliance, and global business advisory.",
+    "Expert insights and analysis from AU Corporate on India market entry, taxation, compliance, and global business advisory.",
   alternates: {
     canonical: "https://www.theaucorp.com/insights",
   },
@@ -35,7 +35,7 @@ export default async function InsightsIndexPage() {
     <div className="min-h-screen bg-gray-100">
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4">
-          <Breadcrumb items={[{ label: "Blog" }]} />
+          <Breadcrumb items={[{ label: "Insights" }]} />
         </div>
       </div>
 
@@ -50,9 +50,9 @@ export default async function InsightsIndexPage() {
           >
             Blog
           </span>
-          <h1 className="mt-5 text-4xl sm:text-5xl font-bold text-white">Blog</h1>
+          <h1 className="mt-5 text-4xl sm:text-5xl font-bold text-white">Insights</h1>
           <p className="mt-3 text-white/70 text-lg max-w-2xl">
-            Articles and updates from AU Corporate.
+            Expert insights and analysis from AU Corporate.
           </p>
         </div>
       </section>
