@@ -21,8 +21,8 @@ export function RegionClusterTemplate({
 }: RegionClusterTemplateProps) {
   // Reusable stats (same across all pages)
   const stats = [
-    { value: '30+', label: 'Years Collective Experience' },
-    { value: '10+', label: 'Countries Served' },
+    { value: '2016', label: 'Established' },
+    { value: '7', label: 'Country Entry Guides' },
     { value: 'End-to-End', label: 'India Entry & Compliance Support' },
     { value: 'New Delhi', label: 'Based, Serving Global Clients' },
   ]
