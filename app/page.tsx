@@ -168,44 +168,6 @@ const pillars = [
   },
 ]
 
-/* HOW WE WORK — 5 STEPS */
-const process = [
-  {
-    step: "01",
-    title: "Understand",
-    description: "We understand your business, objectives, and specific India requirements before recommending anything.",
-  },
-  {
-    step: "02",
-    title: "Advise",
-    description: "We identify the right entity structure and scope of services for your situation — with a clear timeline and fee structure.",
-  },
-  {
-    step: "03",
-    title: "Implement",
-    description: "Our team coordinates incorporation, registrations, and documentation end to end.",
-  },
-  {
-    step: "04",
-    title: "Operate",
-    description: "We support accounting, taxation, payroll, and day-to-day compliance once you're up and running.",
-  },
-  {
-    step: "05",
-    title: "Grow",
-    description: "We stay engaged as your India business evolves — ongoing advisory, not a one-time engagement.",
-  },
-]
-
-/* LIFECYCLE */
-const lifecycle = [
-  { title: "Enter", description: "Market entry & structuring", href: "/doing-business-in-india" },
-  { title: "Establish", description: "Company formation & registrations", href: "/india-business-setup/company-formation" },
-  { title: "Operate", description: "Accounting, tax & payroll", href: "/services/accounting-assurance" },
-  { title: "Comply", description: "Corporate & regulatory compliance", href: "/india-business-setup/regulatory-compliance" },
-  { title: "Grow", description: "Advisory & strategic support", href: "/services" },
-]
-
 /* FAQ */
 const faqs = [
   {
