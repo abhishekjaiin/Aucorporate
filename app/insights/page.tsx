@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 import { Breadcrumb } from "@/components/Breadcrumb"
-import { getPublishedInsights } from "@/lib/public/insights"
+import { getPublishedBlog } from "@/lib/public/insights"
 
 const NAVY = "#081a42"
 const GOLD = "#facc15"
@@ -19,7 +19,7 @@ export const dynamic = "force-dynamic"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Insights | AU Corporate",
+    absolute: "Blog | AU Corporate",
   },
   description:
     "Expert insights and analysis from AU Corporate on India market entry, taxation, compliance, and global business advisory.",
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
   },
 }
 
-export default async function InsightsIndexPage() {
-  const posts = await getPublishedInsights()
+export default async function BlogIndexPage() {
+  const posts = await getPublishedBlog()
 
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4">
-          <Breadcrumb items={[{ label: "Insights" }]} />
+          <Breadcrumb items={[{ label: "Blog" }]} />
         </div>
       </div>
 
@@ -50,7 +50,7 @@ export default async function InsightsIndexPage() {
           >
             Blog
           </span>
-          <h1 className="mt-5 text-4xl sm:text-5xl font-bold text-white">Insights</h1>
+          <h1 className="mt-5 text-4xl sm:text-5xl font-bold text-white">Blog</h1>
           <p className="mt-3 text-white/70 text-lg max-w-2xl">
             Expert insights and analysis from AU Corporate.
           </p>
