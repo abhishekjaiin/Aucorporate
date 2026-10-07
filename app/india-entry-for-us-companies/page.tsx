@@ -30,13 +30,8 @@ const journeyStages = [
   {
     stage: 'Stage 1',
     name: 'Decide',
-    description: 'Work out whether your India activity already creates exposure, and which entity actually fits your plans.',
+    description: 'Work out which entity actually fits your plans in India.',
     pages: [
-      {
-        title: 'Permanent Establishment Risk',
-        description: 'The four ways a US company triggers PE in India, current case law, and whether a subsidiary or an EOR actually removes the exposure',
-        href: '/india-entry-for-us-companies/permanent-establishment-risk-india',
-      },
       {
         title: 'US Subsidiary vs Branch Office',
         description: 'Understand the structural differences and tax implications of subsidiary vs branch operations',
@@ -86,12 +81,17 @@ const journeyStages = [
   {
     stage: 'Stage 4',
     name: 'Manage Tax Risk',
-    description: 'Keep US and Indian filings reconciled on intercompany pricing, and plan how profits come back to the parent.',
+    description: 'Keep US and Indian filings reconciled on intercompany pricing, assess permanent establishment exposure, and plan how profits come back to the parent.',
     pages: [
       {
         title: 'Transfer Pricing & Section 482',
         description: 'Section 482 transfer pricing and Form 5471 implications for US parent companies',
         href: '/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary',
+      },
+      {
+        title: 'Permanent Establishment Risk',
+        description: 'The four ways a US company triggers PE in India, current case law, and whether a subsidiary or an EOR actually removes the exposure',
+        href: '/india-entry-for-us-companies/permanent-establishment-risk-india',
       },
       {
         title: 'DTAA & Repatriation Tax Guide',
@@ -114,11 +114,6 @@ const journeyStages = [
         title: 'Outsourced Finance & Virtual CFO',
         description: 'One option for running day-to-day bookkeeping, payroll, and MIS reporting without building a full in-house India finance team from day one',
         href: '/outsourcing',
-      },
-      {
-        title: 'GCC Setup in India',
-        description: 'If the India presence is scaling toward a captive Global Capability Center rather than staying a standard subsidiary',
-        href: '/gcc-setup-india',
       },
       {
         title: 'Closing an Indian Subsidiary',
@@ -167,20 +162,9 @@ export default function IndiaEntryForUSCompanies() {
         </div>
       </div>
 
-      {/* STAGE 1 — DECIDE. PE exposure is a question a US company faces even
-          before it decides on a structure, not a consequence of getting the
-          structure wrong, so it leads this stage. */}
+      {/* STAGE 1 — DECIDE */}
       <div id="stage-1" className="mb-6 scroll-mt-24">
         <span className="text-xs font-bold uppercase tracking-wide text-yellow-600">Stage 1 of 5 — Decide</span>
-      </div>
-      <div className="mb-12">
-        <p className="text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
-          Before you even get to entity choice, it&apos;s worth asking a more fundamental question: does your current India activity already create a taxable presence, with or without an entity? Permanent establishment (PE) risk is a function of what your people and contracts actually do in India, not of whether you&apos;ve incorporated anything — see our full{' '}
-          <Link href="/india-entry-for-us-companies/permanent-establishment-risk-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
-            permanent establishment risk analysis for US companies
-          </Link>{' '}
-          for the four-way typology, current case law, and whether a subsidiary or an EOR actually removes the exposure.
-        </p>
       </div>
 
       {/* ENTITY CHOICE */}
@@ -287,6 +271,17 @@ export default function IndiaEntryForUSCompanies() {
             Advance Pricing Agreement (APA)
           </Link>{' '}
           can bind both the CBDT and the IRS to the same figure for up to nine assessment years, though it&apos;s slower and more resource-intensive to negotiate than annual Form 3CEB compliance.
+        </p>
+      </div>
+
+      {/* PERMANENT ESTABLISHMENT RISK */}
+      <div className="mb-12">
+        <p className="text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
+          A related question on the tax-risk side: does your current India activity already create a taxable presence, with or without an entity? Permanent establishment (PE) risk is a function of what your people and contracts actually do in India, not of whether you&apos;ve incorporated anything — see our full{' '}
+          <Link href="/india-entry-for-us-companies/permanent-establishment-risk-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            permanent establishment risk analysis for US companies
+          </Link>{' '}
+          for the four-way typology, current case law, and whether a subsidiary or an EOR actually removes the exposure.
         </p>
       </div>
 
