@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "audit:seo": "node scripts/seo-audit.mjs",
     "audit:overflow": "node scripts/mobile-overflow.mjs",
-    "indexnow:submit": "node scripts/indexnow-submit.mjs"
+    "indexnow:submit": "node scripts/indexnow-submit.mjs",
+    "validate:llms": "node scripts/validate-llms.mjs"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.2.0",

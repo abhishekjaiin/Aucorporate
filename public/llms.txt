@@ -24,7 +24,9 @@ Full page index (every page on the site, not just the curated list below): https
 - [Arbitration Services](https://www.theaucorp.com/arbitration-services): Dispute resolution and legal advisory
 - [About](https://www.theaucorp.com/about): Firm background, team, and credentials
 - [Contact](https://www.theaucorp.com/contact): Contact details and inquiry form
-- [Blog](https://www.theaucorp.com/blog): Regulatory explainers and India business insights
+- [Compliance Calendar](https://www.theaucorp.com/compliance-calendar): Monthly, quarterly, annual and event-based filing calendar for a foreign-owned Indian subsidiary
+- [Blog](https://www.theaucorp.com/blog): Regulatory explainers and India business guides
+- [Insights](https://www.theaucorp.com/insights): AU Corporate's published regulatory and compliance insights
 
 ## Doing Business in India — Market Entry Decision Guide
 
@@ -44,6 +46,22 @@ Full page index (every page on the site, not just the curated list below): https
 - [For German Companies](https://www.theaucorp.com/india-entry-for-german-companies)
 - [For Japanese Companies](https://www.theaucorp.com/india-entry-for-japan-companies)
 - [For Chinese Companies](https://www.theaucorp.com/india-entry-for-china-companies)
+
+## USA → India — Full Resource List
+
+The US is AU Corporate's most developed country-entry guide, with a dedicated sub-page for most steps of the subsidiary lifecycle:
+
+- [India Entry for US Companies](https://www.theaucorp.com/india-entry-for-us-companies): Overview — subsidiary vs branch structuring, FEMA compliance, and transfer pricing
+- [Register a Company in India from the USA](https://www.theaucorp.com/india-entry-for-us-companies/register-company-in-india-from-usa): Entity comparison, resident-director rule, process, cost and timeline
+- [How to Incorporate a Subsidiary from the US](https://www.theaucorp.com/india-entry-for-us-companies/how-to-incorporate-subsidiary-india-from-us): Step-by-step incorporation walkthrough
+- [Cost & Timeline from the US](https://www.theaucorp.com/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us): Realistic cost and timeline for incorporating from the US
+- [US Subsidiary vs Branch Office](https://www.theaucorp.com/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india): Entity choice comparison
+- [FEMA Compliance for US Companies](https://www.theaucorp.com/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary): FEMA/RBI reporting obligations
+- [Transfer Pricing & Section 482](https://www.theaucorp.com/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary): Form 5471 and transfer pricing
+- [Permanent Establishment Risk in India](https://www.theaucorp.com/india-entry-for-us-companies/permanent-establishment-risk-india): PE risk for a US parent operating in India
+- [Repatriating Profits — DTAA & Withholding Tax](https://www.theaucorp.com/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax): India-US DTAA rates and withholding tax
+- [Annual Compliance Calendar (US-Owned Subsidiary)](https://www.theaucorp.com/india-entry-for-us-companies/annual-compliance-calendar): The dated AOC-4, MGT-7, ADT-1 and DIR-3 KYC calendar
+- [Closing an Indian Subsidiary](https://www.theaucorp.com/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation): Strike-off vs. voluntary liquidation
 
 ## India Business Setup — Entity Types & Process
 
