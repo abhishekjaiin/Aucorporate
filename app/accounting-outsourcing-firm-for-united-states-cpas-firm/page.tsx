@@ -44,7 +44,12 @@ export default function AccountingOutsourcingIndiaBlogPage() {
         datePublished="2026-09-14"
         dateModified="2026-09-14"
       />
-      <Breadcrumb items={[{ label: "Accounting Outsourcing to India for US Businesses" }]} />
+      <Breadcrumb
+        items={[
+          { label: "Accounting & Assurance", href: "/services/accounting-assurance" },
+          { label: "Accounting Outsourcing to India for US Businesses" },
+        ]}
+      />
 
       <h1 className="text-4xl font-bold mb-6">
         Accounting Outsourcing to India for US Businesses: How to Choose the Right Partner
@@ -85,7 +90,7 @@ export default function AccountingOutsourcingIndiaBlogPage() {
       <div className="my-8 p-6 border border-gray-200 rounded-xl">
         <h3 className="font-bold text-lg mb-2">AU Corporate</h3>
         <p className="text-gray-700 text-sm mb-3">
-          AU Corporate is a New Delhi-based advisory and compliance firm working primarily with foreign companies operating in or entering India. Our accounting outsourcing practice covers bookkeeping, accounts payable/receivable, payroll processing, statutory compliance, and Virtual CFO-style support for companies that need an India-based finance function without building one in-house from scratch. Where we differ from a generalist outsourcing shop is that most of our engagements sit alongside India-specific regulatory work — FEMA/RBI reporting, GST, and Companies Act compliance — for clients who also have an Indian subsidiary or GCC, so the accounting work is handled by a team already fluent in the compliance context around it.
+          AU Corporate is a New Delhi-based advisory and compliance firm working primarily with foreign companies operating in or entering India. For a US CPA firm specifically, the relationship is straightforward: your firm stays the CPA of record for your client, and AU Corporate handles the India-side accounting, finance and compliance work — bookkeeping, accounts payable/receivable, payroll processing, statutory compliance, and Virtual CFO-style support — for clients that need an India-based finance function without building one in-house from scratch. Where we differ from a generalist outsourcing shop is that most of our engagements sit alongside India-specific regulatory work — FEMA/RBI reporting, GST, and Companies Act compliance — for clients who also have an Indian subsidiary or GCC, so the accounting work is handled by a team already fluent in the compliance context around it.
         </p>
         <p className="text-gray-700 text-sm">
           See our <Link href="/services/accounting-assurance" className="text-yellow-600 hover:text-yellow-700 font-semibold">accounting and assurance services</Link> or <Link href="/outsourcing" className="text-yellow-600 hover:text-yellow-700 font-semibold">outsourced finance and Virtual CFO support</Link> for more detail.

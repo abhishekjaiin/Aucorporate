@@ -376,8 +376,8 @@ export default function HRServicesPage() {
               <p className="text-sm text-gray-600">Building a captive delivery or R&amp;D team? Start here</p>
             </Link>
             <Link href="/outsourcing" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
-              <h3 className="mb-2 font-semibold">Business Process Outsourcing</h3>
-              <p className="text-sm text-gray-600">Finance, accounting and back-office support beyond HR</p>
+              <h3 className="mb-2 font-semibold">Accounting &amp; Finance Outsourcing</h3>
+              <p className="text-sm text-gray-600">Bookkeeping, reporting and compliance support alongside payroll</p>
             </Link>
             <Link href="/contact" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
               <h3 className="mb-2 font-semibold">Talk to Our HR Team</h3>

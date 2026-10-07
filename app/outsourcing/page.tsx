@@ -2,111 +2,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Reveal } from '@/components/Reveal'
-import { ClickableReveal } from '@/components/ClickableReveal'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { ClickableInfoCard } from '@/components/ClickableInfoCard'
 import { TabbedComparison } from '@/components/TabbedComparison'
+import { LeadForm } from '@/components/LeadForm'
 import { RelatedResources } from '@/components/RelatedResources'
 
-import {
-  ArrowRight,
-  Calculator,
-  Headphones,
-  Database,
-  TrendingUp,
-  CheckCircle2,
-  Globe,
-  Clock,
-  Users,
-  Zap,
-  BarChart3
-} from 'lucide-react'
-
-const services = [
-  {
-    icon: Calculator,
-    title: 'Finance & Accounting BPO',
-    description: 'Complete finance and accounting outsourcing from bookkeeping to financial analysis.',
-    features: [
-      'Accounts payable/receivable',
-      'Financial reporting',
-      'Reconciliation services',
-      'Month-end close support',
-      'Financial analysis',
-    ],
-  },
-  {
-    icon: Database,
-    title: 'Back Office Operations',
-    description: 'Streamlined back-office services to enhance operational efficiency.',
-    features: [
-      'Data entry and management',
-      'Document processing',
-      'Records management',
-      'Administrative support',
-      'Order processing',
-    ],
-  },
-  {
-    icon: Headphones,
-    title: 'Customer Support',
-    description: 'Multi-channel customer support services to enhance customer experience.',
-    features: [
-      'Inbound/outbound support',
-      'Technical helpdesk',
-      'Email support',
-      'Chat support',
-      'Social media management',
-    ],
-  },
-  {
-    icon: Zap,
-    title: 'Process Optimization',
-    description: 'Business process reengineering and optimization for maximum efficiency.',
-    features: [
-      'Process assessment',
-      'Workflow automation',
-      'Quality assurance',
-      'Continuous improvement',
-      'Performance monitoring',
-    ],
-  },
-]
-
-const benefits = [
-  {
-    icon: TrendingUp,
-    title: 'Cost Efficiency',
-    value: '40-60%',
-    description: 'Reduce operational costs while maintaining quality standards.',
-  },
-  {
-    icon: Clock,
-    title: '24/7 Operations',
-    value: '24/7',
-    description: 'Round-the-clock operations for continuous business support.',
-  },
-  {
-    icon: Users,
-    title: 'Skilled Workforce',
-    value: '500+',
-    description: 'Access to trained professionals across various domains.',
-  },
-  {
-    icon: BarChart3,
-    title: 'Scalability',
-    value: '3x',
-    description: 'Flexible scaling to meet your business demands.',
-  },
-]
-
-const industries = [
-  'Financial Services',
-  'Healthcare',
-  'Retail & E-commerce',
-  'Technology',
-  'Manufacturing',
-]
+import { ArrowRight } from 'lucide-react'
 
 const software = [
   { name: "QuickBooks" },
@@ -119,25 +21,50 @@ const software = [
 
 const outsourcedFunctions = [
   {
-    title: 'Bookkeeping & Accounts Payable/Receivable',
-    desc: 'Day-to-day transaction recording, vendor and customer ledger management, bank reconciliation, and month-end close — the base layer every other finance function depends on.',
+    title: 'Accounting & Bookkeeping',
+    desc: 'Day-to-day transaction recording, vendor and customer ledger management, and bank reconciliation — the base layer every other finance function depends on.',
   },
   {
-    title: 'Payroll Processing & Statutory Contributions',
-    desc: 'Monthly payroll runs, TDS on salaries, and Provident Fund/ESI contributions once headcount crosses the applicable thresholds. Full payroll compliance detail sits under our dedicated HR & payroll practice.',
+    title: 'Monthly Accounting & Closing',
+    desc: 'A fixed monthly close — reconciliations, accruals and review — so your books are current every month rather than reconstructed at year-end.',
   },
   {
-    title: 'GST & TDS Compliance and Return Filing',
-    desc: 'GST registration where applicable, monthly/quarterly return filing, and TDS deposits and returns on salary and vendor payments — kept current against the filing calendar so nothing slips.',
+    title: 'MIS Reporting & Reporting to the Foreign Parent',
+    desc: 'Management reports in the format your global finance team actually needs — budget-vs-actual tracking, cash flow visibility, and board-ready packs that feed your parent company’s own reporting cycle.',
   },
   {
-    title: 'Virtual CFO & Financial Controllership',
-    desc: 'MIS reporting in the format your global finance team actually needs, budget-vs-actual tracking, cash flow visibility, and board-ready financial packs — without carrying a full-time CFO headcount before your India entity is at the scale that justifies one.',
+    title: 'GST & TDS Accounting Support',
+    desc: 'GST registration where applicable, monthly/quarterly return filing, and TDS deposits and returns on salary and vendor payments — kept current against the filing calendar.',
   },
   {
-    title: 'Statutory Audit Coordination & Annual Filings',
-    desc: "Coordinating the annual statutory audit, AOC-4/MGT-7 filings with the Registrar of Companies, and — for foreign-invested entities — RBI's annual FLA return alongside any other FEMA reporting the entity is due to make.",
+    title: 'Payroll Support',
+    desc: 'Payroll accounting and statutory contribution entries coordinated with your monthly close. Full payroll processing and HR compliance sit under our dedicated HR & payroll practice.',
   },
+  {
+    title: 'Intercompany Accounting',
+    desc: 'Recording and reconciling transactions between your Indian entity and its foreign parent or group companies — intercompany invoices, cost allocations and balances kept consistent on both sides.',
+  },
+  {
+    title: 'Audit Support & Ongoing Compliance',
+    desc: "Preparing schedules and supporting documentation for the annual statutory audit, coordinating with your appointed independent auditor, and carrying the resulting numbers through to AOC-4/MGT-7 and — for foreign-invested entities — RBI's annual FLA return.",
+  },
+]
+
+const whoWeWorkWith = [
+  'Foreign companies operating in India',
+  'Foreign-owned Indian subsidiaries',
+  'US companies with Indian subsidiaries',
+  'Newly incorporated Indian subsidiaries',
+  'Foreign parent companies establishing or growing their India operations',
+  'Companies that need India accounting and finance support without immediately building a large local finance team',
+]
+
+const howItWorks = [
+  { step: 'Understand', desc: 'We review your entity structure, parent-reporting needs, and current finance setup.' },
+  { step: 'Set Up', desc: 'Chart of accounts, systems and the compliance calendar are mapped to your entity before the first month runs.' },
+  { step: 'Record', desc: 'Bookkeeping, reconciliations and payroll entries are processed on a fixed monthly cycle.' },
+  { step: 'Report', desc: 'MIS and reporting packs go to your India team and your foreign parent on a schedule they can plan around.' },
+  { step: 'Comply', desc: 'GST, TDS, RoC and RBI filings are tracked against the compliance calendar and the annual statutory audit.' },
 ]
 
 const outsourcingComparisons = [
@@ -154,7 +81,7 @@ const outsourcingComparisons = [
 const outsourcingFaqs = [
   {
     q: 'What accounting and finance functions can a foreign company outsource in India?',
-    a: "Most commonly: bookkeeping and accounts payable/receivable, monthly payroll processing and statutory contributions, GST and TDS compliance and return filing, MIS reporting and Virtual CFO support, and coordination of the annual statutory audit and RoC/RBI filings. Which mix makes sense depends on your entity's size and how much you want to run through a local finance lead versus an outsourced provider.",
+    a: "Most commonly: bookkeeping and the monthly close, GST and TDS compliance and return filing, MIS and parent-company reporting, intercompany accounting, payroll support, and coordination of the annual statutory audit and RoC/RBI filings. Which mix makes sense depends on your entity's size and how much you want to run through a local finance lead versus an outsourced provider.",
   },
   {
     q: 'What is a Virtual CFO, and does my India entity need one?',
@@ -166,7 +93,11 @@ const outsourcingFaqs = [
   },
   {
     q: 'Does outsourcing cover statutory compliance — GST, TDS, FEMA/RBI reporting — or just bookkeeping?',
-    a: "Both, when it's structured properly. Our outsourcing engagements typically combine the transactional work (bookkeeping, payroll, AP/AR) with the compliance calendar it feeds — GST and TDS returns, PF/ESI, and, for foreign-invested entities, RBI reporting including the annual FLA return. Bookkeeping without the compliance layer on top of it leaves exactly the gap that tends to cause a missed deadline.",
+    a: "Both, when it's structured properly. Our outsourcing engagements typically combine the transactional work (bookkeeping, payroll support, intercompany accounting) with the compliance calendar it feeds — GST and TDS returns, and, for foreign-invested entities, RBI reporting including the annual FLA return. Bookkeeping without the compliance layer on top of it leaves exactly the gap that tends to cause a missed deadline.",
+  },
+  {
+    q: 'How is intercompany accounting handled between our Indian subsidiary and the parent?',
+    a: "We record and reconcile transactions between your Indian entity and its foreign parent or group companies — intercompany invoices, cost allocations, and balances — so both sides of the relationship stay consistent and the numbers feed cleanly into your parent's own consolidation.",
   },
   {
     q: 'Which accounting software do you work with?',
@@ -190,15 +121,23 @@ export default function OutsourcingPage() {
   return (
     <div className="min-h-screen pt-20">
 
-      <div className="max-w-7xl mx-auto px-4"><Breadcrumb items={[{ label: "Global Support" }]} /></div>
+      <div className="max-w-7xl mx-auto px-4">
+        <Breadcrumb
+          items={[
+            { label: "Services", href: "/services" },
+            { label: "Accounting & Assurance", href: "/services/accounting-assurance" },
+            { label: "Outsourcing" },
+          ]}
+        />
+      </div>
 
-            {/* HERO */}
-      <section className="relative py-24 min-h-[80vh] flex items-center overflow-hidden">
+      {/* HERO */}
+      <section className="relative py-24 min-h-[70vh] flex items-center overflow-hidden">
 
         <div className="absolute inset-0">
           <Image
             src="/images/pexels-pixabay-164606.jpg"
-            alt="Singapore skyline at dusk with business professionals walking, representing global outsourcing support"
+            alt="Business professionals at work, representing outsourced finance and accounting support"
             fill
             priority
             sizes="100vw"
@@ -210,101 +149,66 @@ export default function OutsourcingPage() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-white">
           <Reveal>
             <span className="text-gold-dark text-sm font-semibold uppercase">
-              Finance, Accounting & Compliance
+              Accounting & Finance
             </span>
 
-            <h1 className="text-5xl font-bold mt-4 mb-6">
-              Accounting & Finance <span className="text-gold-dark">Outsourcing</span> in India
+            <h1 className="text-4xl sm:text-5xl font-bold mt-4 mb-6 max-w-3xl">
+              Finance & Accounting Outsourcing for Foreign Companies in India
             </h1>
 
+            <p className="text-white/80 mb-4 max-w-2xl">
+              Foreign companies and their Indian subsidiaries don&apos;t always need a full in-house finance team from day one. AU Corporate supports the accounting, reporting and ongoing compliance work your India entity needs — bookkeeping, monthly closing, GST/TDS accounting, MIS and parent-company reporting, intercompany accounting, and audit support — so you have a reliable finance function without building one from scratch.
+            </p>
             <p className="text-white/80 mb-8 max-w-2xl">
-              Outsourced bookkeeping, payroll, statutory compliance and Virtual CFO support for foreign companies operating in India — a scalable finance function that reduces cost without requiring you to build an in-house India team before your entity is ready for one.
+              This is particularly useful for a newly incorporated subsidiary, or a growing India operation that isn&apos;t yet at the scale that justifies a full local finance department.
             </p>
 
             <div className="flex gap-4">
               <Button asChild className="bg-gold text-black">
-                <Link href="/contact">Start Outsourcing</Link>
+                <Link href="/contact">Talk to Us</Link>
               </Button>
 
-              <Button asChild className="bg-gold text-black">
-                <Link href="/doing-business-in-india/why-india">Why India</Link>
+              <Button asChild variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white/10">
+                <Link href="/services/accounting-assurance">Accounting & Assurance</Link>
               </Button>
             </div>
           </Reveal>
         </div>
-
-      </section> {/* ✅ HERO CLOSED HERE */}
-
-
-      {/* WHY CHOOSE US */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-
-          <Reveal>
-            <h2 className="text-3xl font-bold mb-12">
-              Why Choose AU Corporate
-            </h2>
-          </Reveal>
-
-          <div className="grid md:grid-cols-3 gap-8">
-
-            {[
-              {
-                title: "Domain Expertise",
-                desc: "Deep specialization across finance, tax, and operations.",
-              },
-              {
-                title: "Global Delivery",
-                desc: "Consistent execution across time zones and geographies.",
-              },
-              {
-                title: "Technology Driven",
-                desc: "Automation-first approach using modern tools.",
-              },
-            ].map((item, i) => (
-              <ClickableReveal
-                key={item.title}
-                delay={i * 0.2}
-                className="p-6 border rounded-xl hover:shadow-lg hover:border-gold/50 transition cursor-pointer"
-              >
-                <h3 className="font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
-              </ClickableReveal>
-            ))}
-
-          </div>
-        </div>
       </section>
 
-      {/* BENEFITS */}
-      <section className="py-16 bg-secondary/50">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
-
-          {benefits.map((b, i) => (
-            <ClickableReveal
-              key={b.title}
-              delay={i * 0.1}
-              className="p-6 bg-white border rounded-xl text-center hover:shadow-lg hover:border-gold/50 transition cursor-pointer"
+      {/* QUICK NAV */}
+      <div className="max-w-7xl mx-auto px-4 pt-10">
+        <div className="flex gap-4 flex-wrap">
+          {[
+            { href: "#what-we-support", label: "What We Support" },
+            { href: "#how-it-works", label: "How It Works" },
+            { href: "#who-we-work-with", label: "Who We Work With" },
+            { href: "#alternatives", label: "Outsourcing vs. Alternatives" },
+            { href: "#faqs", label: "FAQs" },
+          ].map((nav) => (
+            <a
+              key={nav.href}
+              href={nav.href}
+              className="px-5 py-2 border rounded-full text-sm font-medium bg-white hover:bg-yellow-400 hover:text-black transition shadow-sm"
             >
-              <b.icon className="text-gold mx-auto mb-3" />
-              <div className="text-2xl font-bold text-gold-dark">{b.value}</div>
-              <div>{b.title}</div>
-              <p className="text-xs text-muted-foreground">{b.description}</p>
-            </ClickableReveal>
+              {nav.label}
+            </a>
           ))}
-
         </div>
-      </section>
+        <p className="mt-4 text-sm text-gray-500">
+          Last updated: 7 October 2026 — prepared by AU Corporate&apos;s accounting and finance practice.
+        </p>
+      </div>
 
-      {/* WHAT YOU CAN OUTSOURCE */}
-      <section className="py-24 bg-white">
+      {/* WHAT WE SUPPORT */}
+      <section id="what-we-support" className="py-20 bg-white scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4">
           <Reveal>
             <h2 className="text-3xl font-bold text-center mb-4">
-              What Foreign Companies Outsource in India
+              What We Support
             </h2>
             <p className="text-muted-foreground max-w-3xl mx-auto text-center mb-12">
-              Most foreign parents don&apos;t outsource &ldquo;accounting&rdquo; as one undifferentiated task — they outsource a specific set of finance, payroll and compliance functions that would otherwise mean building an in-house India finance team from scratch. Here&apos;s what that typically covers.
+              Foreign parents don&apos;t usually outsource &ldquo;accounting&rdquo; as one undifferentiated task — they outsource a specific set of finance, reporting and compliance functions that would otherwise mean building an in-house India finance team from scratch. Here&apos;s what that typically covers.
             </p>
           </Reveal>
 
@@ -316,8 +220,44 @@ export default function OutsourcingPage() {
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
+      <section id="how-it-works" className="py-20 bg-secondary/50 scroll-mt-24">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+
+          <h2 className="text-3xl font-bold mb-4">How It Works</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-12">
+            A straightforward process, not an elaborate framework.
+          </p>
+
+          <div className="grid md:grid-cols-5 gap-6">
+            {howItWorks.map((item, i) => (
+              <div key={item.step} className="p-5 bg-white border rounded-xl">
+                <div className="text-gold-dark font-bold text-lg mb-2">0{i + 1}</div>
+                <h3 className="font-semibold mb-2">{item.step}</h3>
+                <p className="text-sm text-muted-foreground">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHO WE WORK WITH */}
+      <section id="who-we-work-with" className="py-20 bg-white scroll-mt-24">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Who We Work With</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            {whoWeWorkWith.map((item) => (
+              <div key={item} className="flex items-start gap-3 p-4 border rounded-lg bg-secondary/40">
+                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-dark" />
+                <span className="text-sm text-gray-700">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* OUTSOURCING VS ALTERNATIVES */}
-      <section className="py-24 bg-secondary/50">
+      <section id="alternatives" className="py-20 bg-secondary/50 scroll-mt-24">
         <div className="max-w-5xl mx-auto px-4">
           <Reveal>
             <h2 className="text-3xl font-bold text-center mb-4">
@@ -336,193 +276,38 @@ export default function OutsourcingPage() {
         </div>
       </section>
 
-      {/* HOW WE WORK */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-
-          <h2 className="text-3xl font-bold mb-12">How We Work</h2>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              "Understand Requirements",
-              "Design Process",
-              "Execute & Manage",
-              "Optimize Continuously"
-            ].map((step, i) => (
-              <ClickableReveal key={step} delay={i * 0.2} className="cursor-pointer">
-                <div className="text-gold-dark font-bold text-lg mb-2">
-                  0{i + 1}
-                </div>
-                <p>{step}</p>
-                <p className="mt-2 text-xs font-semibold text-gold-dark">Talk to an expert &rarr;</p>
-              </ClickableReveal>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* SERVICES */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-
-          <h2 className="text-3xl font-bold text-center mb-16">
-            Comprehensive Outsourcing Services
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-
-            {services.map((s, i) => (
-              <ClickableReveal
-                key={s.title}
-                delay={i * 0.1}
-                className="p-8 border rounded-xl bg-secondary hover:shadow-lg hover:border-gold/50 transition cursor-pointer"
-              >
-                <s.icon className="text-gold mb-4" />
-
-                <h3 className="text-xl font-semibold">{s.title}</h3>
-
-                <p className="text-sm text-muted-foreground mb-4">
-                  {s.description}
-                </p>
-
-                <ul className="space-y-2 text-sm">
-                  {s.features.map(f => (
-                    <li key={f} className="flex gap-2">
-                      <CheckCircle2 className="text-gold w-4 h-4 mt-1" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-              </ClickableReveal>
-            ))}
-
-          </div>
-        </div>
-      </section>
-      {/* DELIVERY MODEL */}
-<section className="py-24 bg-secondary/50">
-  <div className="max-w-7xl mx-auto px-4 text-center">
-
-    <Reveal>
-      <h2 className="text-3xl font-bold mb-12">
-        Our Delivery Model
-      </h2>
-    </Reveal>
-
-    <div className="grid md:grid-cols-3 gap-8">
-
-      {[
-        "Strategy & Consulting",
-        "Execution & Processing",
-        "Monitoring & Optimization",
-      ].map((step, i) => (
-        <ClickableReveal
-          key={step}
-          delay={i * 0.2}
-          className="p-8 bg-white border rounded-xl hover:shadow-lg hover:border-gold/50 transition cursor-pointer"
-        >
-          <div className="text-gold-dark font-bold text-xl mb-2">
-            0{i + 1}
-          </div>
-          <p>{step}</p>
-        </ClickableReveal>
-      ))}
-
-    </div>
-  </div>
-</section>
-
-      {/* SOFTWARE EXPERTISE */}
-      <section className="py-24 bg-white">
+      {/* SOFTWARE */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
 
-          <h2 className="text-3xl font-bold mb-6">
-            Accounting & Tax Software Expertise
+          <h2 className="text-2xl font-bold mb-4">
+            Accounting Software We Work With
           </h2>
 
-          <p className="text-muted-foreground max-w-2xl mx-auto mb-12">
-            We work with the accounting and tax platforms your finance team already uses, so compliance and reporting stay in sync.
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-10">
+            We work with the platforms your finance team already uses, so compliance and reporting stay in sync.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
-
-            {software.map((s, i) => (
-              <ClickableReveal
+            {software.map((s) => (
+              <div
                 key={s.name}
-                delay={(i % 6) * 0.08}
-                className="p-4 bg-gray-100 border rounded-xl flex items-center justify-center hover:shadow-md hover:border-gold/50 transition cursor-pointer"
+                className="p-4 bg-gray-100 border rounded-xl flex items-center justify-center"
               >
                 <span className="font-semibold text-gray-700 text-sm sm:text-base text-center">
                   {s.name}
                 </span>
-              </ClickableReveal>
+              </div>
             ))}
-
           </div>
-
         </div>
       </section>
-
-      {/* INDUSTRIES */}
-      <section className="py-24 bg-secondary/50">
-        <div className="max-w-7xl mx-auto px-4">
-
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Industries We Serve
-          </h2>
-
-          <div className="grid md:grid-cols-5 gap-4 text-center">
-
-            {industries.map(i => (
-              <ClickableReveal key={i} className="p-4 bg-white border rounded-lg hover:shadow-md hover:border-gold/50 transition cursor-pointer">
-                <Globe className="mx-auto text-gold mb-2" />
-                {i}
-              </ClickableReveal>
-            ))}
-
-          </div>
-
-        </div>
-      </section>
-{/* RESULTS */}
-<section className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-4 text-center">
-
-    <Reveal>
-      <h2 className="text-3xl font-bold mb-12">
-        Proven Results
-      </h2>
-    </Reveal>
-
-    <div className="grid md:grid-cols-3 gap-8">
-
-      {[
-        { value: "60%", label: "Cost Reduction" },
-        { value: "3x", label: "Efficiency Increase" },
-        { value: "99%", label: "Accuracy" },
-      ].map((item, i) => (
-        <ClickableReveal
-          key={item.label}
-          delay={i * 0.2}
-          className="p-8 border rounded-xl hover:shadow-lg hover:border-gold/50 transition cursor-pointer"
-        >
-          <div className="text-3xl font-bold text-gold-dark mb-2">
-            {item.value}
-          </div>
-          <p>{item.label}</p>
-        </ClickableReveal>
-      ))}
-
-    </div>
-  </div>
-</section>
 
       {/* GLOBAL PARTNER NETWORK */}
-      <section className="py-24 bg-secondary/50">
+      <section className="py-20 bg-secondary/50">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <Reveal>
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4">
               Expanding Beyond India Too?
             </h2>
             <p className="text-muted-foreground mb-8">
@@ -539,8 +324,18 @@ export default function OutsourcingPage() {
         </div>
       </section>
 
+      {/* MID-PAGE LEAD FORM */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <LeadForm
+            title="Need an Outsourced Finance Function for Your India Entity?"
+            description="Tell us about your Indian subsidiary or India operations and our accounting and finance team will get in touch."
+          />
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="py-24 bg-white">
+      <section id="faqs" className="py-20 bg-white scroll-mt-24">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
           <div className="space-y-8">
@@ -573,27 +368,28 @@ export default function OutsourcingPage() {
       <section className="py-16 bg-secondary/50">
         <div className="max-w-5xl mx-auto px-4">
           <RelatedResources
+            title="Related Services"
             links={[
+              { label: 'Accounting & Assurance', href: '/services/accounting-assurance', description: 'Statutory audit, bookkeeping, and financial statement preparation.' },
+              { label: 'HR & Payroll Services', href: '/hr-services', description: 'Payroll processing and HR statutory compliance in depth.' },
+              { label: 'Taxation & Regulatory Services', href: '/services/taxation-regulatory', description: 'GST, TDS, FEMA and direct tax compliance in full.' },
+              { label: 'India Entry for US Companies', href: '/india-entry-for-us-companies', description: 'Entity choice, FEMA and transfer pricing for a US-owned subsidiary.' },
               { label: 'Life After Incorporation', href: '/doing-business-in-india/post-incorporation', description: 'The build-vs-outsource decision as your India finance function scales.' },
               { label: 'GCC Setup in India', href: '/gcc-setup-india', description: 'Outsourcing vs. building a captive Global Capability Center.' },
-              { label: 'HR & Payroll Services', href: '/hr-services', description: 'Payroll processing and HR statutory compliance in depth.' },
-              { label: 'Accounting & Assurance', href: '/services/accounting-assurance', description: 'Statutory audit, MIS reporting, and financial statement preparation.' },
-              { label: 'Taxation & Regulatory Services', href: '/services/taxation-regulatory', description: 'GST, TDS, FEMA and direct tax compliance in full.' },
-              { label: 'Regulatory Compliance Requirements', href: '/india-business-setup/regulatory-compliance', description: 'The full compliance framework for a foreign-owned Indian entity.' },
             ]}
           />
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-24 text-center">
+      <section className="py-20 text-center">
         <h2 className="text-3xl font-bold mb-4">
-          Ready to Optimize Your Operations?
+          Ready to Set Up Your India Finance Function?
         </h2>
 
         <Button asChild className="bg-gold text-black">
           <Link href="/contact">
-            Get Started <ArrowRight className="ml-2" />
+            Talk to Us <ArrowRight className="ml-2" />
           </Link>
         </Button>
       </section>
@@ -604,13 +400,13 @@ export default function OutsourcingPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            name: "Accounting & Finance Outsourcing in India",
+            name: "Finance & Accounting Outsourcing for Foreign Companies in India",
             description:
-              "Bookkeeping, payroll, MIS reporting, and Virtual CFO outsourcing services for global businesses with India operations.",
+              "Outsourced bookkeeping, monthly accounting, GST/TDS accounting support, MIS and parent-company reporting, intercompany accounting, and audit support for foreign companies and their Indian subsidiaries.",
             provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
             url: "https://www.theaucorp.com/outsourcing",
             areaServed: "India",
-            serviceType: "Accounting & Finance Outsourcing",
+            serviceType: "Finance & Accounting Outsourcing",
           }),
         }}
       />

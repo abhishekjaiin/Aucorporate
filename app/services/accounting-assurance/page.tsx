@@ -279,6 +279,9 @@ export default function Page() {
           <p className="text-gray-600 max-w-4xl leading-relaxed">
             In practice that means books built from month one to support the audit, the tax return, and the RBI/RoC filings that draw on them, rather than three separate vendors reconciling after the fact; Ind AS/IFRS-literate reporting where your Indian entity needs to feed into a parent-company consolidation on a different GAAP; and a compliance calendar tracked against your actual incorporation date and AGM date, not a generic reminder list.
           </p>
+          <p className="text-gray-600 max-w-4xl leading-relaxed mt-4">
+            If you&apos;d rather have this run as an ongoing outsourced function — monthly bookkeeping, payroll support, and compliance handled on a fixed cadence rather than as a one-time audit engagement — see <Link href="/outsourcing" className="text-yellow-700 font-semibold hover:underline">Finance &amp; Accounting Outsourcing for Foreign Companies</Link>.
+          </p>
         </Reveal>
         </section>
 
@@ -327,8 +330,8 @@ export default function Page() {
             <p className="text-sm text-gray-600">Direct tax, GST, transfer pricing and FEMA compliance</p>
           </Link>
           <Link href="/outsourcing" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
-            <h3 className="mb-2 font-semibold text-[#081a42]">Global Support Services</h3>
-            <p className="text-sm text-gray-600">Back-office and finance &amp; accounting outsourcing</p>
+            <h3 className="mb-2 font-semibold text-[#081a42]">Outsourced Finance &amp; Accounting</h3>
+            <p className="text-sm text-gray-600">Ongoing bookkeeping, payroll support and compliance for foreign companies</p>
           </Link>
           <Link href="/india-entry-for-us-companies" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
             <h3 className="mb-2 font-semibold text-[#081a42]">India Entry for US Companies</h3>

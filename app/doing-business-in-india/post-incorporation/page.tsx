@@ -134,7 +134,15 @@ export default function PostIncorporationPage() {
       <section className="py-20 bg-gray-100">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-2xl font-semibold text-[#081a42] mb-2">Building vs. Outsourcing Your Finance Function</h2>
-          <p className="text-gray-600 mb-8">There's no fixed rule here — it's a scale decision that should track headcount, transaction volume, and regulatory complexity, not a default made at incorporation and never revisited.</p>
+          <p className="text-gray-600 mb-8">
+            There&apos;s no fixed rule here — it&apos;s a scale decision that should track headcount, transaction volume, and regulatory complexity, not a default made at incorporation and never revisited. Whichever stage you&apos;re at, the recurring bookkeeping, tax and statutory audit work is covered under{' '}
+            <Link href="/services/accounting-assurance" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+              Accounting &amp; Assurance
+            </Link>, and the outsourced delivery model itself is covered under{' '}
+            <Link href="/outsourcing" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+              Finance &amp; Accounting Outsourcing
+            </Link>.
+          </p>
           <div className="grid gap-6">
             {financeFunction.map((f) => (
               <ClickableInfoCard key={f.title} title={f.title} desc={f.desc} />
