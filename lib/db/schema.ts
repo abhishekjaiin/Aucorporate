@@ -15,11 +15,11 @@ import { relations } from "drizzle-orm"
 /**
  * Phase 1 schema for the AU Corporate content/SEO dashboard.
  *
- * Only `insights` is a fully-managed content type with admin UI in Phase 1.
+ * Only `blogs` is a fully-managed content type with admin UI in Phase 1.
  * `services`, `jurisdictions`, `industries`, `caseStudies`, `resources`,
  * `faqs` are deliberately NOT created here yet (per explicit Phase 1 scope —
  * the existing public pages for these stay hardcoded .tsx files). The
- * foreign-key columns on `insights` (serviceSlug, jurisdictionSlug,
+ * foreign-key columns on `blogs` (serviceSlug, jurisdictionSlug,
  * industrySlug) are plain text columns, not FKs to tables that don't exist
  * yet, so those relationships can be added later (Phase 2+) by creating the
  * referenced tables and converting these to real foreign keys — without a
@@ -28,7 +28,7 @@ import { relations } from "drizzle-orm"
 
 export const userRoleEnum = pgEnum("user_role", ["ADMIN", "EDITOR", "AUTHOR"])
 
-export const insightStatusEnum = pgEnum("insight_status", [
+export const blogStatusEnum = pgEnum("blog_status", [
   "DRAFT",
   "INTERNAL_REVIEW",
   "APPROVED",
@@ -107,7 +107,7 @@ export const keywords = pgTable("keywords", {
   slugIdx: uniqueIndex("keywords_slug_idx").on(table.slug),
 }))
 
-export const insights = pgTable("insights", {
+export const blogs = pgTable("blogs", {
   id: uuid("id").primaryKey().defaultRandom(),
 
   title: varchar("title", { length: 255 }).notNull(),
@@ -117,13 +117,13 @@ export const insights = pgTable("insights", {
   // HTML), rendered to safe HTML on read via @tiptap/html's generateHTML.
   content: jsonb("content"),
 
-  status: insightStatusEnum("status").notNull().default("DRAFT"),
+  status: blogStatusEnum("status").notNull().default("DRAFT"),
 
   authorId: uuid("author_id").references(() => authors.id, { onDelete: "set null" }),
   categoryId: uuid("category_id").references(() => categories.id, { onDelete: "set null" }),
   topicClusterId: uuid("topic_cluster_id").references(() => topicClusters.id, { onDelete: "set null" }),
 
-  // Plain text, not FKs — see file header note. Lets an Insight record
+  // Plain text, not FKs — see file header note. Lets an Blog record
   // which service/jurisdiction/industry it supports today, ready to become
   // a real foreign key once those tables exist, without re-keying data.
   serviceSlug: varchar("service_slug", { length: 255 }),
@@ -150,39 +150,39 @@ export const insights = pgTable("insights", {
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
 }, (table) => ({
-  slugIdx: uniqueIndex("insights_slug_idx").on(table.slug),
+  slugIdx: uniqueIndex("blogs_slug_idx").on(table.slug),
 }))
 
-export const insightKeywords = pgTable("insight_keywords", {
-  insightId: uuid("insight_id").notNull().references(() => insights.id, { onDelete: "cascade" }),
+export const blogKeywords = pgTable("blog_keywords", {
+  blogId: uuid("blog_id").notNull().references(() => blogs.id, { onDelete: "cascade" }),
   keywordId: uuid("keyword_id").notNull().references(() => keywords.id, { onDelete: "cascade" }),
   isPrimary: boolean("is_primary").notNull().default(false),
 }, (table) => ({
-  pk: uniqueIndex("insight_keywords_pk").on(table.insightId, table.keywordId),
+  pk: uniqueIndex("blog_keywords_pk").on(table.blogId, table.keywordId),
 }))
 
-// Self-referencing many-to-many for "related insights" (Section 15 —
+// Self-referencing many-to-many for "related blogs" (Section 15 —
 // manual selection in Phase 1; this table is what a future automated
 // suggestion engine would also write into).
-export const relatedInsights = pgTable("related_insights", {
-  insightId: uuid("insight_id").notNull().references(() => insights.id, { onDelete: "cascade" }),
-  relatedInsightId: uuid("related_insight_id").notNull().references(() => insights.id, { onDelete: "cascade" }),
+export const relatedBlogs = pgTable("related_blogs", {
+  blogId: uuid("blog_id").notNull().references(() => blogs.id, { onDelete: "cascade" }),
+  relatedBlogId: uuid("related_blog_id").notNull().references(() => blogs.id, { onDelete: "cascade" }),
 }, (table) => ({
-  pk: uniqueIndex("related_insights_pk").on(table.insightId, table.relatedInsightId),
+  pk: uniqueIndex("related_blogs_pk").on(table.blogId, table.relatedBlogId),
 }))
 
 export const usersRelations = relations(users, () => ({}))
 
 export const authorsRelations = relations(authors, ({ many }) => ({
-  insights: many(insights),
+  blogs: many(blogs),
 }))
 
 export const categoriesRelations = relations(categories, ({ many }) => ({
-  insights: many(insights),
+  blogs: many(blogs),
 }))
 
 export const topicClustersRelations = relations(topicClusters, ({ many }) => ({
-  insights: many(insights),
+  blogs: many(blogs),
   keywords: many(keywords),
 }))
 
@@ -191,18 +191,18 @@ export const keywordsRelations = relations(keywords, ({ one, many }) => ({
     fields: [keywords.topicClusterId],
     references: [topicClusters.id],
   }),
-  insightKeywords: many(insightKeywords),
+  blogKeywords: many(blogKeywords),
 }))
 
-export const insightsRelations = relations(insights, ({ one, many }) => ({
-  author: one(authors, { fields: [insights.authorId], references: [authors.id] }),
-  category: one(categories, { fields: [insights.categoryId], references: [categories.id] }),
-  topicCluster: one(topicClusters, { fields: [insights.topicClusterId], references: [topicClusters.id] }),
-  insightKeywords: many(insightKeywords),
-  relatedFrom: many(relatedInsights, { relationName: "insightRelated" }),
+export const blogsRelations = relations(blogs, ({ one, many }) => ({
+  author: one(authors, { fields: [blogs.authorId], references: [authors.id] }),
+  category: one(categories, { fields: [blogs.categoryId], references: [categories.id] }),
+  topicCluster: one(topicClusters, { fields: [blogs.topicClusterId], references: [topicClusters.id] }),
+  blogKeywords: many(blogKeywords),
+  relatedFrom: many(relatedBlogs, { relationName: "blogRelated" }),
 }))
 
-export const insightKeywordsRelations = relations(insightKeywords, ({ one }) => ({
-  insight: one(insights, { fields: [insightKeywords.insightId], references: [insights.id] }),
-  keyword: one(keywords, { fields: [insightKeywords.keywordId], references: [keywords.id] }),
+export const blogKeywordsRelations = relations(blogKeywords, ({ one }) => ({
+  blog: one(blogs, { fields: [blogKeywords.blogId], references: [blogs.id] }),
+  keyword: one(keywords, { fields: [blogKeywords.keywordId], references: [keywords.id] }),
 }))
