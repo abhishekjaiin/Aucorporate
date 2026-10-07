@@ -230,7 +230,7 @@ export default async function InsightArticlePage({ params }: Props) {
       )}
 
       {/* MAIN AREA — article + inquiry form */}
-      <div className="max-w-5xl mx-auto px-4 grid lg:grid-cols-[1fr_320px] gap-10 items-start">
+      <div className="max-w-6xl mx-auto px-4 grid lg:grid-cols-[minmax(0,1fr)_360px] gap-10 xl:gap-12 items-start">
         <article className="min-w-0">
           <TableOfContents items={toc} />
 
