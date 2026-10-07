@@ -79,7 +79,7 @@ export function BlogForm({
         canonicalUrl: canonicalUrl || null,
       })
       if (result?.id && !initial?.id) {
-        router.push(`/admin/blogs/${result.id}`)
+        router.push(`/admin/blog/${result.id}`)
       } else {
         router.refresh()
       }
@@ -110,7 +110,7 @@ export function BlogForm({
               setSlugTouched(true)
             }}
           />
-          <p className="text-xs text-gray-400">Public URL: /blogs/{slug || "…"}</p>
+          <p className="text-xs text-gray-400">Public URL: /blog/{slug || "…"}</p>
         </div>
 
         <div className="space-y-1.5 sm:col-span-2">
@@ -197,7 +197,7 @@ export function BlogForm({
           <Textarea id="metaDescription" value={metaDescription} onChange={(e) => setMetaDescription(e.target.value)} rows={2} maxLength={160} />
         </div>
         <div className="space-y-1.5">
-          <Label htmlFor="canonicalUrl">Canonical URL (leave blank to auto-use /blogs/{slug || "…"})</Label>
+          <Label htmlFor="canonicalUrl">Canonical URL (leave blank to auto-use /blog/{slug || "…"})</Label>
           <Input id="canonicalUrl" value={canonicalUrl} onChange={(e) => setCanonicalUrl(e.target.value)} />
         </div>
       </div>
