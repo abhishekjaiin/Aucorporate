@@ -1,7 +1,7 @@
 export type Role = "ADMIN" | "EDITOR" | "AUTHOR"
 
 /**
- * Centralized permission matrix for the Insight workflow. Every mutating
+ * Centralized permission matrix for the Blog workflow. Every mutating
  * server action checks against this — never the UI alone — since role
  * checks must hold even if someone calls the action directly.
  *
@@ -10,7 +10,7 @@ export type Role = "ADMIN" | "EDITOR" | "AUTHOR"
  * APPROVED -> PUBLISHED: ADMIN only (the one real "make it public" gate)
  * PUBLISHED -> NEEDS_REFRESH: EDITOR or ADMIN
  * Delete: ADMIN only
- * Edit someone else's insight: EDITOR or ADMIN (AUTHOR edits only their own)
+ * Edit someone else's blog post: EDITOR or ADMIN (AUTHOR edits only their own)
  */
 export const permissions = {
   canSubmitForReview: (role: Role) => role === "ADMIN" || role === "EDITOR" || role === "AUTHOR",

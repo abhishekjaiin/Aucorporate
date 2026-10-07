@@ -83,7 +83,7 @@ export function TiptapEditor({
   if (!editor) return <div className="h-64 rounded-md border bg-gray-50" />
 
   const addLink = () => {
-    const url = window.prompt("Link URL (use a relative path like /insights/other-article for internal links):")
+    const url = window.prompt("Link URL (use a relative path like /blog/other-article for internal links):")
     if (!url) return
     editor.chain().focus().extendMarkRange("link").setLink({ href: url }).run()
   }

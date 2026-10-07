@@ -2,7 +2,7 @@ import Link from "next/link"
 import { asc } from "drizzle-orm"
 
 import { db } from "@/lib/db/client"
-import { insights } from "@/lib/db/schema"
+import { blogs } from "@/lib/db/schema"
 import { auth } from "@/lib/auth"
 import { PermissionError } from "@/lib/auth/permissions"
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@/components/ui/table"
@@ -14,14 +14,14 @@ export default async function SeoHealthPage() {
 
   const rows = await db
     .select({
-      id: insights.id,
-      title: insights.title,
-      status: insights.status,
-      seoScore: insights.seoScore,
-      needsRefresh: insights.needsRefresh,
+      id: blogs.id,
+      title: blogs.title,
+      status: blogs.status,
+      seoScore: blogs.seoScore,
+      needsRefresh: blogs.needsRefresh,
     })
-    .from(insights)
-    .orderBy(asc(insights.seoScore))
+    .from(blogs)
+    .orderBy(asc(blogs.seoScore))
 
   return (
     <div className="space-y-6">
@@ -44,7 +44,7 @@ export default async function SeoHealthPage() {
               rows.map((r) => (
                 <TableRow key={r.id}>
                   <TableCell>
-                    <Link href={`/admin/insights/${r.id}`} className="font-medium text-[#081a42] hover:underline">{r.title}</Link>
+                    <Link href={`/admin/blog/${r.id}`} className="font-medium text-[#081a42] hover:underline">{r.title}</Link>
                   </TableCell>
                   <TableCell><StatusBadge status={r.status} /></TableCell>
                   <TableCell className={r.seoScore !== null && r.seoScore < 50 ? "font-semibold text-red-600" : ""}>

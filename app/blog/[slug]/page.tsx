@@ -9,7 +9,7 @@ import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
 import { InquiryForm } from "@/components/InquiryForm"
 import { TableOfContents } from "@/components/blog/TableOfContents"
-import { getPublishedBlogBySlug, getRelatedBlogByTopicCluster } from "@/lib/public/blogs"
+import { getPublishedBlogBySlug, getRelatedBlogsByTopicCluster } from "@/lib/public/blogs"
 import { renderBlogContent } from "@/lib/tiptap/renderToHtml"
 import { extractFaqSection } from "@/lib/content/faq"
 import { extractToc, injectHeadingIds, estimateReadingTime } from "@/lib/content/toc"
@@ -114,7 +114,7 @@ export default async function BlogArticlePage({ params }: Props) {
 
   let relatedBlog = post.related
   if (relatedBlog.length === 0 && post.topicClusterId) {
-    relatedBlog = await getRelatedBlogByTopicCluster(post.topicClusterId, post.id)
+    relatedBlog = await getRelatedBlogsByTopicCluster(post.topicClusterId, post.id)
   }
 
   const serviceLink = post.serviceSlug ? SERVICE_LINKS[post.serviceSlug] : undefined

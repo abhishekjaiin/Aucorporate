@@ -11,7 +11,7 @@ import {
   categoryInputSchema,
   keywordInputSchema,
   topicClusterInputSchema,
-} from "@/lib/validation/insight"
+} from "@/lib/validation/blog"
 
 async function requireTaxonomyPermission() {
   const user = await getSessionUser()

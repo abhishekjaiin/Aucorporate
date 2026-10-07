@@ -92,21 +92,24 @@ const blogs: { title: string; desc: string; slug: string; href?: string; categor
   },
 ]
 
-const mergedBlogs = [...blogs, ...cmsBlogs.filter((cms) => !blogs.some((existing) => existing.slug === cms.slug))]
-const featuredPost = mergedBlogs.find((b) => b.featured) ?? mergedBlogs[0]
-const restPosts = mergedBlogs.filter((b) => !b.featured || b.slug !== featuredPost.slug)
-const categories: ("All" | Category)[] = ["All", ...Array.from(new Set(mergedBlogs.map((b) => b.category)))]
-
 export type CmsBlogCard = {
   title: string
   desc: string
   slug: string
   category: Category
   date: string
+  href?: string
+  featured?: boolean
 }
 
 export default function BlogIndexClient({ cmsBlogs = [] }: { cmsBlogs?: CmsBlogCard[] }) {
   const [active, setActive] = useState<"All" | Category>("All")
+
+  const mergedBlogs = [...blogs, ...cmsBlogs.filter((cms) => !blogs.some((existing) => existing.slug === cms.slug))]
+  const featuredPost = mergedBlogs.find((b) => b.featured) ?? mergedBlogs[0]
+  const restPosts = mergedBlogs.filter((b) => !b.featured || b.slug !== featuredPost.slug)
+  const categories: ("All" | Category)[] = ["All", ...Array.from(new Set(mergedBlogs.map((b) => b.category)))]
+
   const filtered = active === "All" ? restPosts : restPosts.filter((b) => b.category === active)
 
   return (

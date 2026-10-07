@@ -1,6 +1,6 @@
 {
-  "id": "fb65667b-e626-43c9-9335-6c8a2bb4181c",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "32ad928b-999e-428c-8cea-da57f9a1f0ee",
+  "prevId": "fb65667b-e626-43c9-9335-6c8a2bb4181c",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -165,12 +165,12 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.insight_keywords": {
-      "name": "insight_keywords",
+    "public.blog_keywords": {
+      "name": "blog_keywords",
       "schema": "",
       "columns": {
-        "insight_id": {
-          "name": "insight_id",
+        "blog_id": {
+          "name": "blog_id",
           "type": "uuid",
           "primaryKey": false,
           "notNull": true
@@ -190,11 +190,11 @@
         }
       },
       "indexes": {
-        "insight_keywords_pk": {
-          "name": "insight_keywords_pk",
+        "blog_keywords_pk": {
+          "name": "blog_keywords_pk",
           "columns": [
             {
-              "expression": "insight_id",
+              "expression": "blog_id",
               "isExpression": false,
               "asc": true,
               "nulls": "last"
@@ -213,12 +213,12 @@
         }
       },
       "foreignKeys": {
-        "insight_keywords_insight_id_insights_id_fk": {
-          "name": "insight_keywords_insight_id_insights_id_fk",
-          "tableFrom": "insight_keywords",
-          "tableTo": "insights",
+        "blog_keywords_blog_id_blogs_id_fk": {
+          "name": "blog_keywords_blog_id_blogs_id_fk",
+          "tableFrom": "blog_keywords",
+          "tableTo": "blogs",
           "columnsFrom": [
-            "insight_id"
+            "blog_id"
           ],
           "columnsTo": [
             "id"
@@ -226,9 +226,9 @@
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
-        "insight_keywords_keyword_id_keywords_id_fk": {
-          "name": "insight_keywords_keyword_id_keywords_id_fk",
-          "tableFrom": "insight_keywords",
+        "blog_keywords_keyword_id_keywords_id_fk": {
+          "name": "blog_keywords_keyword_id_keywords_id_fk",
+          "tableFrom": "blog_keywords",
           "tableTo": "keywords",
           "columnsFrom": [
             "keyword_id"
@@ -246,8 +246,8 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.insights": {
-      "name": "insights",
+    "public.blogs": {
+      "name": "blogs",
       "schema": "",
       "columns": {
         "id": {
@@ -283,7 +283,7 @@
         },
         "status": {
           "name": "status",
-          "type": "insight_status",
+          "type": "blog_status",
           "typeSchema": "public",
           "primaryKey": false,
           "notNull": true,
@@ -402,8 +402,8 @@
         }
       },
       "indexes": {
-        "insights_slug_idx": {
-          "name": "insights_slug_idx",
+        "blogs_slug_idx": {
+          "name": "blogs_slug_idx",
           "columns": [
             {
               "expression": "slug",
@@ -419,9 +419,9 @@
         }
       },
       "foreignKeys": {
-        "insights_author_id_authors_id_fk": {
-          "name": "insights_author_id_authors_id_fk",
-          "tableFrom": "insights",
+        "blogs_author_id_authors_id_fk": {
+          "name": "blogs_author_id_authors_id_fk",
+          "tableFrom": "blogs",
           "tableTo": "authors",
           "columnsFrom": [
             "author_id"
@@ -432,9 +432,9 @@
           "onDelete": "set null",
           "onUpdate": "no action"
         },
-        "insights_category_id_categories_id_fk": {
-          "name": "insights_category_id_categories_id_fk",
-          "tableFrom": "insights",
+        "blogs_category_id_categories_id_fk": {
+          "name": "blogs_category_id_categories_id_fk",
+          "tableFrom": "blogs",
           "tableTo": "categories",
           "columnsFrom": [
             "category_id"
@@ -445,9 +445,9 @@
           "onDelete": "set null",
           "onUpdate": "no action"
         },
-        "insights_topic_cluster_id_topic_clusters_id_fk": {
-          "name": "insights_topic_cluster_id_topic_clusters_id_fk",
-          "tableFrom": "insights",
+        "blogs_topic_cluster_id_topic_clusters_id_fk": {
+          "name": "blogs_topic_cluster_id_topic_clusters_id_fk",
+          "tableFrom": "blogs",
           "tableTo": "topic_clusters",
           "columnsFrom": [
             "topic_cluster_id"
@@ -560,35 +560,35 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.related_insights": {
-      "name": "related_insights",
+    "public.related_blogs": {
+      "name": "related_blogs",
       "schema": "",
       "columns": {
-        "insight_id": {
-          "name": "insight_id",
+        "blog_id": {
+          "name": "blog_id",
           "type": "uuid",
           "primaryKey": false,
           "notNull": true
         },
-        "related_insight_id": {
-          "name": "related_insight_id",
+        "related_blog_id": {
+          "name": "related_blog_id",
           "type": "uuid",
           "primaryKey": false,
           "notNull": true
         }
       },
       "indexes": {
-        "related_insights_pk": {
-          "name": "related_insights_pk",
+        "related_blogs_pk": {
+          "name": "related_blogs_pk",
           "columns": [
             {
-              "expression": "insight_id",
+              "expression": "blog_id",
               "isExpression": false,
               "asc": true,
               "nulls": "last"
             },
             {
-              "expression": "related_insight_id",
+              "expression": "related_blog_id",
               "isExpression": false,
               "asc": true,
               "nulls": "last"
@@ -601,12 +601,12 @@
         }
       },
       "foreignKeys": {
-        "related_insights_insight_id_insights_id_fk": {
-          "name": "related_insights_insight_id_insights_id_fk",
-          "tableFrom": "related_insights",
-          "tableTo": "insights",
+        "related_blogs_blog_id_blogs_id_fk": {
+          "name": "related_blogs_blog_id_blogs_id_fk",
+          "tableFrom": "related_blogs",
+          "tableTo": "blogs",
           "columnsFrom": [
-            "insight_id"
+            "blog_id"
           ],
           "columnsTo": [
             "id"
@@ -614,12 +614,12 @@
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
-        "related_insights_related_insight_id_insights_id_fk": {
-          "name": "related_insights_related_insight_id_insights_id_fk",
-          "tableFrom": "related_insights",
-          "tableTo": "insights",
+        "related_blogs_related_blog_id_blogs_id_fk": {
+          "name": "related_blogs_related_blog_id_blogs_id_fk",
+          "tableFrom": "related_blogs",
+          "tableTo": "blogs",
           "columnsFrom": [
-            "related_insight_id"
+            "related_blog_id"
           ],
           "columnsTo": [
             "id"
@@ -786,8 +786,8 @@
     }
   },
   "enums": {
-    "public.insight_status": {
-      "name": "insight_status",
+    "public.blog_status": {
+      "name": "blog_status",
       "schema": "public",
       "values": [
         "DRAFT",

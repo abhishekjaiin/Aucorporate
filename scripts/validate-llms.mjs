@@ -42,7 +42,6 @@ const MUST_INCLUDE_IN_LLMS_TXT = [
   "/india-entry-for-us-companies/annual-compliance-calendar",
   "/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation",
   "/blog",
-  "/insights",
 ]
 
 // Utility/meta files that are legitimately cross-referenced from llms.txt
@@ -93,11 +92,11 @@ async function main() {
   // Check 3: every sitemap URL is represented in llms-full.txt. This is
   // the main drift check — if this ever fails, the shared publicPages
   // array and the route handler have gone out of sync somehow (expected
-  // to never happen in practice, since both read the same array; Insight
+  // to never happen in practice, since both read the same array; CMS Blog
   // article URLs are database-driven and intentionally excluded from this
   // check since they aren't in publicPages either).
   for (const path of sitemapPaths) {
-    if (path.startsWith("/insights/")) continue
+    if (path.startsWith("/blog/")) continue
     if (!llmsFullPaths.has(path)) {
       errors.push(`sitemap.xml has ${path}, but llms-full.txt does not link to it`)
     }
