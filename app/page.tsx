@@ -5,6 +5,7 @@ import { FaqAccordion } from "@/components/FaqAccordion"
 import { InquiryForm } from "@/components/InquiryForm"
 import { ClickableReveal } from "@/components/ClickableReveal"
 import { InquiryCard } from "@/components/InquiryCard"
+import { ComplianceCalendarCTA } from "@/components/ComplianceCalendarCTA"
 
 import {
   Calculator,
@@ -247,64 +248,56 @@ export default function HomePage() {
       {/* ================= HERO ================= */}
       <HeroSection />
 
-      {/* ================= TRUST STRIP ================= */}
-      <section className="py-10 border-b bg-gray-100">
-        <div className="max-w-6xl mx-auto px-4">
-          <p className="text-center text-sm font-semibold mb-6 text-gray-500">
-            HELPING BUSINESSES NAVIGATE INDIA WITH CONFIDENCE
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { icon: Building2, label: "India Market Entry" },
-              { icon: ShieldCheck, label: "Corporate Compliance" },
-              { icon: Calculator, label: "Tax & Accounting" },
-              { icon: Users, label: "HR & Payroll" },
-              { icon: Globe2, label: "International Advisory" },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="flex items-center gap-2 px-4 py-2 bg-white border rounded-full text-sm font-semibold shadow-sm"
-                style={{ color: NAVY }}
-              >
-                <item.icon size={16} className="text-yellow-500" />
-                {item.label}
-              </div>
-            ))}
-          </div>
+      {/* ================= SUBSIDIARY STATS ================= */}
+      <section className="border-b bg-white py-8 sm:py-10">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-gray-200 sm:grid-cols-4">
+          {[
+            ["150+", "Subsidiaries incorporated"],
+            ["150+", "Regular clients"],
+            ["10+", "Parent countries"],
+            ["30+", "Years of combined experience"],
+          ].map(([value, label]) => (
+            <div key={label} className="px-3 text-center sm:px-6">
+              <div className="font-heading text-2xl font-bold text-[#0E1B4D] sm:text-3xl">{value}</div>
+              <div className="mt-1 text-xs leading-5 text-gray-500 sm:text-sm">{label}</div>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* ================= VALUE PROP / LIFECYCLE ================= */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 font-heading text-blue">
-            India Is Full of Opportunity. We Make It Easier to Navigate.
-          </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto mb-4">
-            India offers enormous opportunity for international and domestic businesses — but establishing and operating a business here means navigating corporate law, taxation, accounting, FEMA/FDI regulation, payroll, and ongoing statutory compliance.
-          </p>
-          <p className="font-semibold mb-14" style={{ color: ROYAL_BLUE }}>
-            AU Corporate brings these services together under one roof — one partner, multiple business needs.
-          </p>
+      {/* ================= SUBSIDIARY LIFECYCLE ================= */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="font-heading text-3xl font-bold text-[#0E1B4D] sm:text-4xl">
+              Your India Subsidiary, Handled at Every Stage
+            </h2>
+            <p className="mt-4 text-gray-600">
+              From the board resolution in your home country to every annual filing in India.
+            </p>
+          </div>
 
-          <div className="flex flex-wrap justify-center items-stretch gap-4">
-            {lifecycle.map((l, i) => (
-              <div key={l.title} className="flex items-center gap-4">
-                <Link
-                  href={l.href}
-                  className="w-32 p-4 rounded-xl border border-gray-200 block hover:shadow-md hover:border-yellow-300 transition"
-                >
-                  <h3 className="font-bold mb-1 font-heading" style={{ color: ROYAL_BLUE }}>
-                    {l.title}
-                  </h3>
-                  <p className="text-xs text-gray-500">{l.description}</p>
-                </Link>
-                {i < lifecycle.length - 1 && (
-                  <ArrowRight className="hidden sm:block shrink-0" size={18} style={{ color: GOLD }} />
-                )}
+          <div className="relative mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="pointer-events-none absolute left-[10%] right-[10%] top-7 hidden h-0.5 bg-[#FFD21F] lg:block" aria-hidden="true" />
+            {[
+              ["01", "Plan", "Before incorporation", "Entity choice, FDI route, parent documents"],
+              ["02", "Incorporate", "Weeks 1–5", "Name approval, incorporation, PAN/TAN, bank account"],
+              ["03", "Post-incorporation", "First 180 days", "FC-GPR, share certificates, first auditor, commencement of business"],
+              ["04", "Operate", "Every month", "Accounting, GST, TDS, payroll, reporting to the parent"],
+              ["05", "Comply", "Every year, in date order", "FLA return, audit support, AGM, ROC returns, transfer pricing report and income tax return"],
+            ].map(([number, title, timing, description]) => (
+              <div key={number} className="relative z-10 flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#FFD21F] bg-[#0E1B4D] font-heading text-sm font-bold text-white">
+                  {number}
+                </div>
+                <h3 className="font-heading text-lg font-bold text-[#0E1B4D]">{title}</h3>
+                <p className="mt-2 text-xs font-bold uppercase tracking-wide text-[#8F6B00]">{timing}</p>
+                <p className="mt-4 text-sm leading-6 text-gray-600">{description}</p>
               </div>
             ))}
           </div>
+
+          <ComplianceCalendarCTA />
         </div>
       </section>
 
@@ -447,45 +440,6 @@ export default function HomePage() {
                 }
               />
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ================= HOW WE WORK ================= */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
-            A Simple, Structured Approach
-          </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-14">
-            From first conversation to fully operational in India — our process removes uncertainty at every stage.
-          </p>
-
-          <div className="relative grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
-            <div className="hidden lg:block absolute top-6 left-[10%] right-[10%] h-px bg-gray-200" aria-hidden="true" />
-            {process.map((item) => (
-              <ClickableReveal key={item.step} className="relative cursor-pointer">
-                <div
-                  className="relative z-10 w-12 h-12 rounded-full flex items-center justify-center font-bold mb-4 bg-white border-2"
-                  style={{ color: NAVY, borderColor: GOLD, fontFamily: "var(--font-heading)" }}
-                >
-                  {item.step}
-                </div>
-                <h3 className="font-semibold text-lg mb-2 font-heading">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-gray-500">
-                  {item.description}
-                </p>
-                <p className="mt-2 text-xs font-semibold text-gold-dark">Talk to an expert &rarr;</p>
-              </ClickableReveal>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button asChild style={{ backgroundColor: GOLD }} className="text-black">
-              <Link href="/contact">Start a Conversation</Link>
-            </Button>
           </div>
         </div>
       </section>
