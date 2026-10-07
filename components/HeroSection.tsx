@@ -1,70 +1,76 @@
 "use client"
 
-import { useState } from "react"
-import Image from "next/image"
-import HeroCarousel, { heroSlides } from "@/components/HeroCarousel"
-import { CountUp } from "@/components/CountUp"
+import Link from "next/link"
+import { Building2, Calculator, FileCheck, Landmark, ShieldCheck, Users } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 const NAVY = "#0E1B4D"
 const GOLD = "#FFD21F"
 
-/* STATS — real, already-established figures */
-const stats = [
-  { text: "End-to-End", label: "India Entry & Compliance Support" },
-  { value: 2016, suffix: "", label: "Established" },
-  { value: 7, suffix: "", label: "Country Entry Guides" },
-  { text: "New Delhi", label: "Based, Serving Global Clients" },
-] as const
+const partnerServices = [
+  "Incorporation",
+  "Monthly accounting and reporting",
+  "FEMA compliance",
+  "Secretarial compliance",
+  "Tax compliance",
+  "Services for expats",
+  "Annual audit support and filings",
+]
 
 export default function HeroSection() {
-  const [activeSlide, setActiveSlide] = useState(0)
-
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-24"
+      className="relative overflow-hidden px-4 pb-12 pt-14 sm:px-6 sm:pb-16 sm:pt-16 lg:pt-20"
       style={{ backgroundColor: NAVY }}
     >
-      {/* Only the active slide's image is mounted — with all 3 mounted at
-          once (even at opacity 0), the browser laid out and fetched all 3
-          full-bleed images on first load since they're all positioned in
-          the viewport, which meant the LCP image was competing for
-          bandwidth with two images nobody could see yet. This trades the
-          crossfade transition for a real reduction in initial page weight. */}
-      <Image
-        key={heroSlides[activeSlide].image}
-        src={heroSlides[activeSlide].image}
-        alt={heroSlides[activeSlide].imageAlt}
-        fill
-        priority={activeSlide === 0}
-        sizes="100vw"
-        className="object-cover"
-      />
-      <div className="absolute inset-0" style={{ backgroundColor: NAVY, opacity: 0.72 }} />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0E1B4D] via-[#0E1B4D]/60 to-transparent" />
+      <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.15fr_.85fr] lg:gap-14">
+        <div className="text-left">
+          <p className="mb-4 text-sm font-semibold tracking-wide text-[#FFD21F]">
+            For Indian subsidiaries of foreign companies
+          </p>
 
-      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+          <h1 className="max-w-3xl font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-[3.45rem]">
+            Indian Subsidiary Incorporation to Ongoing Compliance — AU Corporate Handles It All
+          </h1>
 
-        <HeroCarousel onActiveChange={setActiveSlide} />
+          <p className="mt-6 max-w-2xl text-base leading-7 text-white/75 sm:text-lg">
+            One partner for your India subsidiary: incorporation, accounting, tax, FEMA, secretarial compliance, audit support and expat services.
+          </p>
 
-        <p className="mb-9 sm:mb-10 text-xs sm:text-sm font-medium tracking-wide text-gold">
-          India Market Entry &nbsp;•&nbsp; Corporate Advisory &nbsp;•&nbsp; Tax &nbsp;•&nbsp; Accounting &nbsp;•&nbsp; Compliance &nbsp;•&nbsp; HR &amp; Payroll
-        </p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Button asChild style={{ backgroundColor: GOLD }} className="font-bold text-[#0E1B4D] hover:bg-[#F2B705]">
+              <Link href="https://cal.com/abhishekjaiin-ybbklq/30min" target="_blank" rel="noreferrer">
+                Book consultation with an expert
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white/10">
+              <Link href="/india-business-setup">
+                See entity options
+              </Link>
+            </Button>
+          </div>
+        </div>
 
-        {/* STATS */}
-        <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4">
-          {stats.map((stat) => (
-            <div key={stat.label} className="flex flex-col items-center">
-              <div
-                className="flex items-center justify-center min-h-[1.75rem] sm:min-h-[2rem] md:min-h-[2.25rem] text-xl sm:text-2xl md:text-3xl font-bold"
-                style={{ color: GOLD, fontFamily: "var(--font-heading)" }}
-              >
-                {"value" in stat ? <CountUp value={stat.value} suffix={stat.suffix} /> : stat.text}
-              </div>
-              <div className="min-h-[2rem] sm:min-h-[2.5rem] text-white/70 text-xs sm:text-sm">
-                {stat.label}
-              </div>
+        <div className="rounded-2xl border border-white/10 bg-white p-6 shadow-2xl sm:p-8">
+          <div className="mb-5 flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#FFF4B8]">
+              <Building2 size={20} style={{ color: NAVY }} />
             </div>
-          ))}
+            <h2 className="font-heading text-xl font-bold text-[#0E1B4D]">
+              One partner for
+            </h2>
+          </div>
+
+          <ul className="space-y-3">
+            {partnerServices.map((service) => (
+              <li key={service} className="flex items-start gap-3 text-sm font-medium text-[#243047]">
+                <span className="mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#FFD21F] text-[10px] font-bold text-[#0E1B4D]">
+                  ✓
+                </span>
+                {service}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
