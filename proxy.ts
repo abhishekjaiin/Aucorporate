@@ -35,18 +35,32 @@ const NOT_FOUND_REWRITE_PREFIX = "/__blog_not_found__"
  * "no route matched" behavior handles it instead of the page's own
  * notFound() call ever running.
  */
+const LEGACY_BLOG_SLUGS = new Set([
+  "india-japan-bis-exemption-high-tech-investment",
+  "india-safe-harbour-rules-2026",
+  "construction-arbitration-india",
+  "arbitration-enforcement-india",
+  "doing-business-india",
+  "fdi-green-vs-brown-channel",
+  "wholly-owned-subsidiary",
+  "mail-box-dtaa-benefits",
+  "tax-loan-waiver-india",
+  "best-state-to-register-company-in-india",
+])
+
 async function handleBlogSlug(req: NextRequest): Promise<NextResponse | null> {
-  const match = req.nextUrl.pathname.match(/^\/blogs\/([^/]+)$/)
+  const match = req.nextUrl.pathname.match(/^\/blog\/([^/]+)$/)
   if (!match) return null
 
   const slug = decodeURIComponent(match[1])
+  if (LEGACY_BLOG_SLUGS.has(slug)) return null
+
   const isPublic = await isSlugPublic(slug)
   if (isPublic) return null
 
   const notFoundUrl = new URL(`${NOT_FOUND_REWRITE_PREFIX}/${encodeURIComponent(slug)}`, req.url)
   return NextResponse.rewrite(notFoundUrl)
 }
-
 /**
  * Server-side gate for every /admin/* route except the login page itself.
  * This is the actual authorization boundary — page-level checks are a UX
