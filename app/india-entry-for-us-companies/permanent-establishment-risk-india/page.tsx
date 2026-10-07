@@ -58,6 +58,7 @@ export default function PermanentEstablishmentRiskPage() {
       subtitle="The four ways a US company triggers PE in India, the current case law, and whether a subsidiary or an EOR actually removes the exposure."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
               { label: "Permanent Establishment Risk in India" },
             ]}

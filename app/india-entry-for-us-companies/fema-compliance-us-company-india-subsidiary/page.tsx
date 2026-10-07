@@ -38,6 +38,7 @@ export default function FemaComplianceUSCompanyPage() {
       subtitle="The recurring RBI and FEMA filings a US parent's Indian subsidiary needs to stay compliant after incorporation."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
               { label: "FEMA Compliance for US Companies in India" },
             ]}

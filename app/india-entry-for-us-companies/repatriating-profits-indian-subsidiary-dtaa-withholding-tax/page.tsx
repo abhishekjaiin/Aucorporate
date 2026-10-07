@@ -85,6 +85,7 @@ export default function RepatriatingProfitsDTAAPage() {
       subtitle="DTAA rates on dividends, interest and royalties, the Finance Act 2026 buyback rules, and the Form 145/146 remittance chain — sourced to the IRS treaty text and the Indian government's own rate comparison, with what it costs a US parent net of a foreign tax credit."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
               { label: "Repatriating Profits: DTAA & Withholding Tax" },
             ]}

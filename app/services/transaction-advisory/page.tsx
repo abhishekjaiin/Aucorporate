@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { Reveal } from "@/components/Reveal"
 import { ClickableInfoCard } from "@/components/ClickableInfoCard"
@@ -180,7 +181,7 @@ export default function Page() {
 
         {/* DESCRIPTION */}
         <p className="text-gray-600 max-w-3xl mb-10 leading-relaxed">
-          For a foreign company evaluating an acquisition, joint venture, or fundraising round in India, the deal itself is often the easier half of the transaction — the harder half is structuring it to survive due diligence, Companies Act and FEMA scrutiny, and, above certain thresholds, a Competition Commission of India (CCI) review, without eroding value along the way. We support businesses and investors through the full transaction lifecycle — due diligence, valuation, deal structuring, M&amp;A and JV advisory, debt and equity fundraising, corporate restructuring, and IPO readiness on both the SME and main board platforms. The sections below cover what a due diligence review in India actually tests, how share purchases, asset purchases, slump sales and mergers differ in tax and stamp-duty terms, how valuation works under the Companies Act and FEMA, and what separates an SME listing from a main board one.
+          For a foreign company evaluating an acquisition, joint venture, or fundraising round in India, the deal itself is often the easier half of the transaction — the harder half is structuring it to survive due diligence, Companies Act and FEMA scrutiny, and, above certain thresholds, a Competition Commission of India (CCI) review, without eroding value along the way. We support businesses and investors through the full transaction lifecycle — due diligence, valuation, deal structuring, M&amp;A and JV advisory, debt and equity fundraising, corporate restructuring, and IPO readiness on both the SME and main board platforms. The sections below cover what a due diligence review in India actually tests, how share purchases, asset purchases, slump sales and mergers differ in tax and stamp-duty terms, how valuation works under the Companies Act and FEMA, and what separates an SME listing from a main board one. If this follows an existing US-owned subsidiary rather than a fresh entry, see the Operate/Grow stage of our <Link href="/india-entry-for-us-companies" className="text-yellow-600 hover:text-yellow-700 font-semibold">India entry guide for US companies</Link>.
         </p>
 
         {/* QUICK FACTS */}

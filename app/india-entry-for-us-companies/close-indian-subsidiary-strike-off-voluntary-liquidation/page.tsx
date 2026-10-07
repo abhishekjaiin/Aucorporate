@@ -107,6 +107,7 @@ export default function CloseIndianSubsidiaryPage() {
       subtitle="A complete guide to choosing and executing the right exit route for US parent companies, from the RBI's remittance-of-assets rules through your Form 5471 deconsolidation."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
               { label: "Closing an Indian Subsidiary" },
             ]}

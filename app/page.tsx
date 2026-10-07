@@ -523,7 +523,9 @@ export default function HomePage() {
           </div>
 
           <div className="mb-10">
-            <p className="text-white/70 text-sm mb-4">Entering from:</p>
+            <p className="text-white/70 text-sm mb-4">
+              Entering from: our most developed guide is for US companies, alongside dedicated guides for each country below.
+            </p>
             <div className="flex flex-wrap gap-3 justify-center">
               {[
                 { href: "/india-entry-for-us-companies", label: "US Companies" },

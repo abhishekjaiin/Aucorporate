@@ -105,7 +105,7 @@ export default function AboutHero() {
               Who We Work With
             </h2>
             <p className="text-gray-500 text-sm sm:text-base max-w-2xl mx-auto text-center mb-10">
-              We work extensively with foreign companies entering and operating in India — structuring the right entity, staying compliant with FEMA and RBI reporting, and keeping home-country and Indian filings reconciled on tax. We maintain dedicated guidance for companies entering from:
+              We work extensively with foreign companies entering and operating in India — structuring the right entity, staying compliant with FEMA and RBI reporting, and keeping home-country and Indian filings reconciled on tax. Our most developed guidance is for US companies, alongside dedicated guidance for companies entering from:
             </p>
           </Reveal>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">

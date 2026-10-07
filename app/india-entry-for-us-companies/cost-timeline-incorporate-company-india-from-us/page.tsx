@@ -120,6 +120,7 @@ export default function CostTimelineUSPage() {
       subtitle="What actually drives the cost and timeline of an India entry — and why a single flat number rarely fits."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
               { label: "Cost & Timeline: Incorporating a Company in India from the US" },
             ]}

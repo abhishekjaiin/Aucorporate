@@ -10,6 +10,7 @@ export default function USSubsidiaryVsBranchPage() {
       subtitle="Understanding entity structure options and their tax, liability, and compliance implications for US parent companies."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
               { label: "US Subsidiary vs Branch Office in India" },
             ]}

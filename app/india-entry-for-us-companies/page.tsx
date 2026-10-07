@@ -133,13 +133,21 @@ export default function IndiaEntryForUSCompanies() {
       subtitle="AU Corporate helps US companies establish, scale, and optimize their Indian operations with expertise in GAAP to Ind AS reconciliation, transfer pricing, and Section 482 compliance."
       region="US"
       breadcrumbItems={[
+              { label: "Doing Business in India", href: "/doing-business-in-india" },
               { label: "India Entry for US Companies" },
             ]}
     >
       {/* INTRO & OVERVIEW */}
       <div className="mb-12">
         <p className="text-lg text-gray-700 mb-6">
-          Expanding into India presents significant opportunities for US companies, but requires navigating regulatory, tax, and compliance frameworks that don&apos;t map cleanly onto US structures. This page walks through the full journey — entity choice, incorporation, ongoing FEMA compliance, and the transfer pricing mechanics that connect your US and Indian filings — with links to the full depth on each step below.
+          <strong>Who this is for:</strong> US companies considering, establishing, operating, or expanding an Indian presence. <strong>What it covers:</strong> deciding on the right Indian structure, incorporation and setup, FEMA/RBI and corporate compliance, transfer pricing and permanent establishment risk, DTAA and repatriation, and the ongoing operations, growth, or exit that follow — the full lifecycle, in one connected guide.
+        </p>
+        <p className="text-lg text-gray-700 mb-6">
+          This builds on the general framework in{' '}
+          <Link href="/doing-business-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            Doing Business in India
+          </Link>{' '}
+          — that page covers the strategic questions every foreign company faces; this one covers what's specific to doing it from the US, including the regulatory, tax, and compliance frameworks that don&apos;t map cleanly onto US structures.
         </p>
         <p className="text-lg text-gray-700 bg-yellow-50 p-4 rounded border-l-4 border-yellow-400">
           Our team includes CA and US CPA-qualified professionals, giving US clients a direct line to expertise in both Indian statutory requirements and US GAAP/reporting expectations from the other side of the desk.

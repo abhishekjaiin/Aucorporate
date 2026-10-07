@@ -231,7 +231,7 @@ export default function HRServicesPage() {
             <Reveal delay={0.15}>
               <h2 className="text-3xl font-bold mb-4">Payroll & HR Outsourcing</h2>
               <p className="text-yellow-500 font-semibold mb-4">Streamlining HR Operations</p>
-              <p className="text-gray-600 mb-4">Accurate payroll, compliance, and HR lifecycle management solutions tailored for business growth. This is the core of what we do for an already-incorporated subsidiary: your entity stays the legal employer, and we run the monthly payroll cycle, statutory filings and employee lifecycle administration behind it — see the compliance breakdown and process below for exactly what that covers.</p>
+              <p className="text-gray-600 mb-4">Accurate payroll, compliance, and HR lifecycle management solutions tailored for business growth. This is the core of what we do for an already-incorporated subsidiary: your entity stays the legal employer, and we run the monthly payroll cycle, statutory filings and employee lifecycle administration behind it — see the compliance breakdown and process below for exactly what that covers. If you&apos;re a US company operating an Indian subsidiary, this is part of the Operate stage of our <Link href="/india-entry-for-us-companies" className="text-yellow-600 hover:text-yellow-700 font-semibold">India entry guide for US companies</Link>.</p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>✔ Payroll processing</li>
                 <li>✔ Compliance</li>
