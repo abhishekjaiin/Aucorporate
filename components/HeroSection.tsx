@@ -5,8 +5,8 @@ import Image from "next/image"
 import HeroCarousel, { heroSlides } from "@/components/HeroCarousel"
 import { CountUp } from "@/components/CountUp"
 
-const NAVY = "#081A42"
-const GOLD = "#facc15"
+const NAVY = "#0E1B4D"
+const GOLD = "#FFD21F"
 
 /* STATS — real, already-established figures */
 const stats = [
@@ -40,7 +40,7 @@ export default function HeroSection() {
         className="object-cover"
       />
       <div className="absolute inset-0" style={{ backgroundColor: NAVY, opacity: 0.72 }} />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#081A42] via-[#081A42]/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0E1B4D] via-[#0E1B4D]/60 to-transparent" />
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
 
