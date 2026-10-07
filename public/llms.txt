@@ -26,7 +26,6 @@ Full page index (every page on the site, not just the curated list below): https
 - [Contact](https://www.theaucorp.com/contact): Contact details and inquiry form
 - [Compliance Calendar](https://www.theaucorp.com/compliance-calendar): Monthly, quarterly, annual and event-based filing calendar for a foreign-owned Indian subsidiary
 - [Blog](https://www.theaucorp.com/blog): Regulatory explainers and India business guides
-- [Insights](https://www.theaucorp.com/insights): AU Corporate's published regulatory and compliance insights
 
 ## Doing Business in India — Market Entry Decision Guide
 
