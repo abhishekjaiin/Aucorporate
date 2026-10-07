@@ -2,7 +2,7 @@ import type { JSONContent } from "@tiptap/core"
 
 /**
  * Table-of-contents extraction and heading-id injection for rendered
- * Insight articles. Operates on the stored Tiptap JSON (headings are always
+ * Blog articles. Operates on the stored Tiptap JSON (headings are always
  * top-level nodes in a ProseMirror doc, never nested inside another block),
  * so no DOM parser is needed — this is pure data walking plus one
  * string-level pass over the already-rendered HTML to attach matching ids.
