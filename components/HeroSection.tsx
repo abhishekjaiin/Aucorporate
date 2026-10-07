@@ -11,8 +11,8 @@ const GOLD = "#FFD21F"
 /* STATS — real, already-established figures */
 const stats = [
   { text: "End-to-End", label: "India Entry & Compliance Support" },
-  { value: 30, suffix: "+", label: "Years Collective Experience" },
-  { value: 10, suffix: "+", label: "Countries Served" },
+  { value: 2016, suffix: "", label: "Established" },
+  { value: 7, suffix: "", label: "Country Entry Guides" },
   { text: "New Delhi", label: "Based, Serving Global Clients" },
 ] as const
 
