@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import { publicPages, type PublicPage } from "@/lib/seo/public-routes"
 import { pageMeta } from "@/lib/seo/llms-page-descriptions"
-import { getPublishedInsights } from "@/lib/public/insights"
+import { getPublishedBlogs } from "@/lib/public/blogs"
 
 // Generated at request time from the same publicPages array app/sitemap.ts
 // reads — not a second hand-maintained list — so a page added there (which
@@ -45,7 +45,7 @@ const sectionRules: SectionRule[] = [
   { test: (p) => p.startsWith("/services") || ["/hr-services", "/outsourcing", "/arbitration-services"].includes(p), section: "Services" },
   { test: (p) => p.startsWith("/partners"), section: "Partners" },
   { test: (p) => p.startsWith("/blog"), section: "Blog & Regulatory Explainers" },
-  { test: (p) => p.startsWith("/insights"), section: "Insights" },
+  { test: (p) => p.startsWith("/blogs"), section: "Blogs" },
 ]
 
 const sectionOrder = [
@@ -59,7 +59,7 @@ const sectionOrder = [
   "Services",
   "Partners",
   "Blog & Regulatory Explainers",
-  "Insights",
+  "Blogs",
   "Compliance Resources",
   "Other Pages",
 ]
@@ -95,24 +95,24 @@ export async function GET() {
   }
 
   // Same safe-degrade pattern as app/sitemap.ts: a database outage must
-  // never take this route down, just omit the Insights lines for that
+  // never take this route down, just omit the Blogs lines for that
   // request.
-  let insightLines: string[] = []
+  let blogLines: string[] = []
   try {
-    const insights = await getPublishedInsights()
-    insightLines = insights.map(
-      (insight) => `- [${insight.title}](${baseUrl}/insights/${insight.slug})${insight.excerpt ? `: ${insight.excerpt}` : ""}`
+    const blogs = await getPublishedBlogs()
+    blogLines = blogs.map(
+      (blog) => `- [${blog.title}](${baseUrl}/blogs/${blog.slug})${blog.excerpt ? `: ${blog.excerpt}` : ""}`
     )
   } catch (err) {
-    console.error("[llms-full.txt] failed to load published Insights, continuing without them:", err)
+    console.error("[llms-full.txt] failed to load published Blogs, continuing without them:", err)
   }
 
   const sections: string[] = []
   for (const name of sectionOrder) {
     const pages = bySection.get(name)
-    if (!pages?.length && !(name === "Insights" && insightLines.length)) continue
+    if (!pages?.length && !(name === "Blogs" && blogLines.length)) continue
     const lines = (pages ?? []).map(renderLine)
-    if (name === "Insights") lines.push(...insightLines)
+    if (name === "Blogs") lines.push(...blogLines)
     sections.push(`## ${name}\n\n${lines.join("\n")}`)
   }
 
