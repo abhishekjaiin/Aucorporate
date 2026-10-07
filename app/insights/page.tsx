@@ -8,7 +8,14 @@ import { getPublishedInsights } from "@/lib/public/insights"
 const NAVY = "#081a42"
 const GOLD = "#facc15"
 
-export const revalidate = 60
+// Same reasoning as app/insights/[slug]/page.tsx: this page reads live
+// Postgres data, so it cannot be statically prerendered at build time —
+// `next build` has no database connection available, and a previous
+// `revalidate = 60` export still left Next attempting one eager static
+// render during the build itself (ISR renders once at build, then
+// revalidates), which is what broke the Vercel build. force-dynamic skips
+// that build-time render entirely; every request runs the query live.
+export const dynamic = "force-dynamic"
 
 export const metadata: Metadata = {
   title: {
