@@ -7,7 +7,7 @@ import { getStoredAttribution } from "@/lib/attribution"
 const WEB3FORMS_ACCESS_KEY = "7f7b220d-2540-451d-88ba-6b6f878ec151"
 
 const inputClass =
-  "w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-900 focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
+  "w-full rounded-lg border border-[#d6dce6] bg-white px-4 py-3 text-sm text-gray-900 shadow-sm transition placeholder:text-gray-400 focus:border-[#0E1B4D] focus:outline-none focus:ring-2 focus:ring-[#FFD21F]/40"
 
 export function Web3Form({ compact = false }: { compact?: boolean } = {}) {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle")
@@ -55,7 +55,7 @@ export function Web3Form({ compact = false }: { compact?: boolean } = {}) {
 
       <div className={compact ? "space-y-4" : "grid gap-4 sm:grid-cols-2"}>
         <div>
-          <label htmlFor="name" className="mb-1 block text-sm font-medium text-gray-700">Name*</label>
+          <label htmlFor="name" className="mb-1.5 block text-sm font-semibold text-[#243047]">Name*</label>
           <input id="name" type="text" name="name" required className={inputClass} />
         </div>
 
@@ -96,7 +96,7 @@ export function Web3Form({ compact = false }: { compact?: boolean } = {}) {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="w-full rounded-lg bg-gold px-6 py-3 text-sm font-semibold text-black transition hover:bg-yellow-500 disabled:opacity-60"
+        className="w-full rounded-lg bg-[#FFD21F] px-6 py-3.5 text-sm font-bold text-[#0E1B4D] shadow-sm transition hover:bg-[#F2B705] hover:shadow-md disabled:cursor-not-allowed disabled:opacity-60"
       >
         {status === "submitting" ? "Sending…" : "Submit"}
       </button>
