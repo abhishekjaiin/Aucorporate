@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { CheckCircle2, X } from "lucide-react"
 
-const CALENDAR_URL = "https://claude.ai/code/artifact/ba257bd0-11e1-4bff-8244-4a19094d6f08"
+const CALENDAR_URL = "/compliance-calendar"
 const ACCESS_KEY = "7f7b220d-2540-451d-88ba-6b6f878ec151"
 
 export function ComplianceCalendarCTA() {

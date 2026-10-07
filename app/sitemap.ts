@@ -49,6 +49,7 @@ const pages: Page[] = [
   { path: "/about", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
   { path: "/contact", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
   { path: "/career", priority: 0.75, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/compliance-calendar", priority: 0.8, changeFrequency: "yearly", lastModified: "2026-10-07" },
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-07-30" },
   { path: "/terms", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-07-30" },
 
