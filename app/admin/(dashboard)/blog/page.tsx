@@ -38,7 +38,7 @@ export default async function BlogsListPage({
           <p className="mt-1 text-sm text-gray-500">{total} total</p>
         </div>
         <Button asChild>
-          <Link href="/admin/blogs/new">New Blog Post</Link>
+          <Link href="/admin/blog/new">New Blog Post</Link>
         </Button>
       </div>
 
@@ -68,7 +68,7 @@ export default async function BlogsListPage({
               rows.map((row) => (
                 <TableRow key={row.id}>
                   <TableCell>
-                    <Link href={`/admin/blogs/${row.id}`} className="font-medium text-[#081a42] hover:underline">
+                    <Link href={`/admin/blog/${row.id}`} className="font-medium text-[#081a42] hover:underline">
                       {row.title}
                     </Link>
                   </TableCell>
