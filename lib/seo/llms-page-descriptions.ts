@@ -103,5 +103,4 @@ export const pageMeta: Record<string, PageMeta> = {
   "/blog/india-safe-harbour-rules-2026": { title: "India's 2026 Safe Harbour Rules", description: "15.5% IT margin explained" },
   "/blog/best-state-to-register-company-in-india": { title: "Best State to Register a Company in India", description: "Comparing Indian states for company registration" },
 
-  "/insights": { title: "Insights", description: "Index of AU Corporate's published regulatory and compliance insights" },
 }
