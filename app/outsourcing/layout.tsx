@@ -1,24 +1,25 @@
 import type { Metadata } from "next"
 
+const title = "Finance & Accounting Outsourcing for Foreign Companies in India | AU Corporate"
+const description =
+  "Outsourced bookkeeping, monthly accounting, GST/TDS accounting support, MIS and parent-company reporting, and audit support for foreign companies and their Indian subsidiaries."
+
 export const metadata: Metadata = {
   title: {
-    absolute: "Accounting & Finance Outsourcing in India | AU Corporate",
+    absolute: title,
   },
-  description:
-    "Bookkeeping, payroll, MIS reporting, and Virtual CFO outsourcing services for global businesses with India operations.",
+  description,
   alternates: {
     canonical: "https://www.theaucorp.com/outsourcing",
   },
   openGraph: {
-    title: "Accounting & Finance Outsourcing in India | AU Corporate",
-    description:
-      "Bookkeeping, payroll, MIS reporting, and Virtual CFO outsourcing services for global businesses with India operations.",
+    title,
+    description,
     url: "https://www.theaucorp.com/outsourcing",
   },
   twitter: {
-    title: "Accounting & Finance Outsourcing in India | AU Corporate",
-    description:
-      "Bookkeeping, payroll, MIS reporting, and Virtual CFO outsourcing services for global businesses with India operations.",
+    title,
+    description,
   },
 }
 
