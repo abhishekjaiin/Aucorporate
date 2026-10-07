@@ -252,7 +252,7 @@ export default function CompanyFormationPage() {
             ))}
           </div>
           <p className="mt-8 max-w-4xl leading-relaxed text-gray-600">
-            This is the exact sequence our <Link href="/india-business-setup/regulatory-compliance" className="text-yellow-700 font-semibold hover:underline">full regulatory compliance framework</Link> and <Link href="/india-business-setup/banking-taxation" className="text-yellow-700 font-semibold hover:underline">banking and tax setup guide</Link> pages cover in detail — including the other five compliance regimes (labour, environmental, data protection, IP) beyond FEMA and corporate filings — worth reading in full once incorporation is underway rather than at the point a deadline is already close.
+            This is the exact sequence our <Link href="/india-business-setup/regulatory-compliance" className="text-yellow-700 font-semibold hover:underline">full regulatory compliance framework</Link> and <Link href="/india-business-setup/banking-taxation" className="text-yellow-700 font-semibold hover:underline">banking and tax setup guide</Link> pages cover in detail — including the other five compliance regimes (labour, environmental, data protection, IP) beyond FEMA and corporate filings — worth reading in full once incorporation is underway rather than at the point a deadline is already close. Running the books and filings behind this roadmap is covered on our <Link href="/services/accounting-assurance" className="text-yellow-700 font-semibold hover:underline">Accounting &amp; Assurance</Link> page, with <Link href="/outsourcing" className="text-yellow-700 font-semibold hover:underline">outsourced finance and accounting support</Link> as an option for a newly incorporated subsidiary that isn&apos;t ready to build an in-house finance team yet.
           </p>
         </div>
       </section>
@@ -342,6 +342,10 @@ export default function CompanyFormationPage() {
             <Link href="/india-business-setup/banking-taxation" className="rounded-lg border p-6 transition hover:shadow-md">
               <h3 className="mb-2 font-semibold">Banking &amp; Taxation</h3>
               <p className="text-sm text-gray-600">Bank account sequencing, GST, and tax registration</p>
+            </Link>
+            <Link href="/services/accounting-assurance" className="rounded-lg border p-6 transition hover:shadow-md">
+              <h3 className="mb-2 font-semibold">Accounting &amp; Assurance</h3>
+              <p className="text-sm text-gray-600">Bookkeeping, statutory audit, and financial reporting once operating</p>
             </Link>
             <Link href="/india-business-setup/timeline-resources" className="rounded-lg border p-6 transition hover:shadow-md">
               <h3 className="mb-2 font-semibold">Timeline &amp; Resources</h3>

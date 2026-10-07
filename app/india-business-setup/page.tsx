@@ -460,6 +460,13 @@ export default function IndiaBusinessSetupHub() {
                 Financial reporting and IFRS compliance services
               </p>
             </Link>
+
+            <Link href="/outsourcing" className="p-6 border rounded-lg hover:shadow-md transition">
+              <h3 className="font-semibold mb-2 hover:text-yellow-600">Accounting &amp; Finance Outsourcing</h3>
+              <p className="text-sm text-gray-600">
+                Bookkeeping, monthly accounting and compliance for a newly incorporated subsidiary
+              </p>
+            </Link>
           </div>
         </div>
       </section>
