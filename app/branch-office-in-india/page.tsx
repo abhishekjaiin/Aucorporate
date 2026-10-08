@@ -190,7 +190,8 @@ export default function BranchOfficeInIndiaPage() {
             If a Branch Office looks too commercially active for what you actually need — pure market research or coordination, with no revenue in India at all — see the full{" "}
             <Link href="/liaison-office-in-india" className="text-gold-dark font-semibold hover:underline">Liaison Office in India guide</Link>{" "}
             for the lighter-touch alternative. If instead you&apos;ve already secured a specific, time-bound contract rather than needing an ongoing commercial presence, see the{" "}
-            <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office in India guide</Link>.
+            <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office in India guide</Link>. And if you need a full operating presence that can invoice, hire and hold assets in its own name, see our{" "}
+            <Link href="/india-business-setup/foreign-subsidiary-india" className="text-gold-dark font-semibold hover:underline">Foreign Subsidiary / WOS guide</Link>.
           </p>
           <p className="text-gray-600 leading-relaxed">
             If your parent company is based in Australia, the UK, or the US, the decision between a subsidiary and a Branch Office also carries home-country tax consequences — CFC rules, DTAA treatment, and (for US groups) specific US filing obligations — that this page deliberately does not cover, because they differ by jurisdiction. For an Australian parent, see the{" "}

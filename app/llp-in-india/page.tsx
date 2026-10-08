@@ -406,7 +406,13 @@ export default function LlpInIndiaPage() {
             </table>
           </div>
           <p className="text-gray-600 leading-relaxed">
-            In practice, an LLP tends to make more sense for a professional-services partnership, a joint venture between a small number of known partners, or a structure where the partners specifically don&apos;t want or need to raise equity capital from outside investors. A foreign parent planning a standard FDI-funded operating business — one that expects to hire at scale, raise further capital, or eventually bring in institutional investors — is usually better served by a Private Limited Company/wholly owned subsidiary, both because of the broader FDI-route eligibility and because equity instruments simply aren&apos;t available inside an LLP structure. Neither is a wrong choice in the abstract; the right one depends on what the entity is actually there to do.
+            In practice, an LLP tends to make more sense for a professional-services partnership, a joint venture between a small number of known partners, or a structure where the partners specifically don&apos;t want or need to raise equity capital from outside investors. A foreign parent planning a standard FDI-funded operating business — one that expects to hire at scale, raise further capital, or eventually bring in institutional investors — is usually better served by a Private Limited Company/wholly owned subsidiary, both because of the broader FDI-route eligibility and because equity instruments simply aren&apos;t available inside an LLP structure. Neither is a wrong choice in the abstract; the right one depends on what the entity is actually there to do — see our{" "}
+            <Link href="/india-business-setup/foreign-subsidiary-india" className="text-gold-dark font-semibold hover:underline">Foreign Subsidiary / WOS guide</Link>{" "}
+            for that structure&apos;s setup and ongoing operations, or our{" "}
+            <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch</Link>,{" "}
+            <Link href="/liaison-office-in-india" className="text-gold-dark font-semibold hover:underline">Liaison</Link> and{" "}
+            <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office</Link>{" "}
+            guides for the narrower, non-equity alternatives.
           </p>
         </div>
       </section>

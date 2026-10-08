@@ -214,7 +214,10 @@ export default function IndiaEntryForUSCompanies() {
           <Link href="/india-business-setup/company-formation" className="text-yellow-600 hover:text-yellow-700 font-semibold">
             company registration guide
           </Link>{' '}
-          for the general (non-US-specific) mechanics.
+          for the general (non-US-specific) mechanics. For the structure and ongoing-operations picture once incorporated, see our{' '}
+          <Link href="/india-business-setup/foreign-subsidiary-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            Foreign Subsidiary / WOS guide
+          </Link>.
         </p>
       </div>
 

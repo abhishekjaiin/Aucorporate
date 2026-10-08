@@ -9,6 +9,7 @@ import { getSessionUser } from "@/lib/auth/session"
 import { permissions, PermissionError } from "@/lib/auth/permissions"
 import { insightInputSchema, type InsightInput } from "@/lib/validation/insight"
 import { scoreInsight } from "@/lib/seo/health"
+import { notifyIndexNow } from "@/lib/seo/indexnow"
 import type { JSONContent } from "@tiptap/core"
 
 async function requireSession() {
@@ -182,6 +183,7 @@ export async function updateInsight(id: string, input: InsightInput) {
   if (existing.status === "PUBLISHED") {
     revalidatePath(`/insights/${row.slug}`)
     revalidatePath("/insights")
+    void notifyIndexNow([`/insights/${row.slug}`])
   }
   return row
 }
@@ -228,6 +230,7 @@ export async function publishInsight(id: string) {
   revalidatePath(`/insights/${row.slug}`)
   revalidatePath("/insights")
   revalidatePath("/sitemap.xml")
+  void notifyIndexNow([`/insights/${row.slug}`])
   return row
 }
 
@@ -242,6 +245,7 @@ export async function unpublishInsight(id: string) {
   revalidatePath(`/insights/${row.slug}`)
   revalidatePath("/insights")
   revalidatePath("/sitemap.xml")
+  void notifyIndexNow([`/insights/${row.slug}`])
   return row
 }
 
@@ -269,6 +273,7 @@ export async function deleteInsight(id: string, confirmed: boolean) {
     revalidatePath(`/insights/${existing.slug}`)
     revalidatePath("/insights")
     revalidatePath("/sitemap.xml")
+    void notifyIndexNow([`/insights/${existing.slug}`])
   }
 }
 

@@ -321,6 +321,10 @@ export default function Page() {
             <h3 className="mb-2 font-semibold text-[#081a42]">Company Registration</h3>
             <p className="text-sm text-gray-600">Incorporation and the post-incorporation compliance roadmap</p>
           </Link>
+          <Link href="/india-business-setup/foreign-subsidiary-india" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+            <h3 className="mb-2 font-semibold text-[#081a42]">Foreign Subsidiary / WOS</h3>
+            <p className="text-sm text-gray-600">Structure, FDI/FEMA, and ongoing operations in one guide</p>
+          </Link>
           <Link href="/india-business-setup/banking-taxation" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
             <h3 className="mb-2 font-semibold text-[#081a42]">Banking &amp; Taxation</h3>
             <p className="text-sm text-gray-600">Bank account sequencing, GST, and tax registration</p>

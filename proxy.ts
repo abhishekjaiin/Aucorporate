@@ -48,12 +48,32 @@ async function handleInsightSlug(req: NextRequest): Promise<NextResponse | null>
 }
 
 /**
+ * IndexNow key verification file, served at /<INDEXNOW_KEY>.txt with the
+ * key itself as the exact body, per the IndexNow protocol. The key lives
+ * only in this Vercel project's INDEXNOW_KEY environment variable — never
+ * committed to the repo or hardcoded here — so this is the only place
+ * that needs it. Any other *.txt path (robots.txt, llms.txt, ...) simply
+ * doesn't match and falls through to its own existing route unaffected.
+ */
+function handleIndexNowKeyFile(req: NextRequest): NextResponse | null {
+  const key = process.env.INDEXNOW_KEY
+  if (!key) return null
+  if (req.nextUrl.pathname !== `/${key}.txt`) return null
+  return new NextResponse(key, {
+    headers: { "Content-Type": "text/plain; charset=utf-8" },
+  })
+}
+
+/**
  * Server-side gate for every /admin/* route except the login page itself.
  * This is the actual authorization boundary — page-level checks are a UX
  * nicety, this is what makes unauthenticated access impossible.
  */
 export default auth(async (req: NextRequest & { auth: unknown }) => {
   const { pathname } = req.nextUrl
+
+  const indexNowResult = handleIndexNowKeyFile(req)
+  if (indexNowResult) return indexNowResult
 
   if (pathname.startsWith("/insights/")) {
     const insightResult = await handleInsightSlug(req)
@@ -74,5 +94,5 @@ export default auth(async (req: NextRequest & { auth: unknown }) => {
 })
 
 export const config = {
-  matcher: ["/admin/:path*", "/insights/:slug"],
+  matcher: ["/admin/:path*", "/insights/:slug", "/:file.txt"],
 }

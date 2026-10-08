@@ -5,20 +5,20 @@ export const metadata: Metadata = {
     absolute: "Contact AU Corporate | India Entry & Advisory Team",
   },
   description:
-    "Get in touch with AU Corporate for India market entry, tax, compliance, and Virtual CFO advisory. New Delhi-based, serving clients across 10+ countries.",
+    "Get in touch with AU Corporate for India market entry, tax, compliance, and Virtual CFO advisory. New Delhi-based, serving foreign companies entering and operating in India.",
   alternates: {
     canonical: "https://www.theaucorp.com/contact",
   },
   openGraph: {
     title: "Contact AU Corporate | India Entry & Advisory Team",
     description:
-      "Get in touch with AU Corporate for India market entry, tax, compliance, and Virtual CFO advisory. New Delhi-based, serving clients across 10+ countries.",
+      "Get in touch with AU Corporate for India market entry, tax, compliance, and Virtual CFO advisory. New Delhi-based, serving foreign companies entering and operating in India.",
     url: "https://www.theaucorp.com/contact",
   },
   twitter: {
     title: "Contact AU Corporate | India Entry & Advisory Team",
     description:
-      "Get in touch with AU Corporate for India market entry, tax, compliance, and Virtual CFO advisory. New Delhi-based, serving clients across 10+ countries.",
+      "Get in touch with AU Corporate for India market entry, tax, compliance, and Virtual CFO advisory. New Delhi-based, serving foreign companies entering and operating in India.",
   },
 }
 

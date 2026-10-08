@@ -25,10 +25,6 @@ export default function HeroSection() {
     >
       <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.15fr_.85fr] lg:gap-14">
         <div className="text-left">
-          <p className="mb-4 text-sm font-semibold tracking-wide text-[#FFD21F]">
-            For Indian subsidiaries of foreign companies
-          </p>
-
           <h1 className="max-w-3xl font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-[3.45rem]">
             Indian Subsidiary Incorporation to Ongoing Compliance — AU Corporate Handles It All
           </h1>
