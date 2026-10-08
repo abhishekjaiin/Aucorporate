@@ -15,6 +15,8 @@
  * consumers, exactly as sitemap.ts already did before this refactor.
  */
 
+import { caseStudies } from "@/lib/case-studies"
+
 export type PublicPage = {
   path: string
   priority: number
@@ -135,4 +137,19 @@ export const publicPages: PublicPage[] = [
   // page itself is static here since it exists regardless of how many
   // Insights are published.
   { path: "/insights", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-10-06" },
+
+  // Case Studies — the index and each individual case study only appear
+  // here once real entries exist in lib/case-studies.ts; an empty listing
+  // page isn't worth indexing, and there is nothing to list yet.
+  ...(caseStudies.length > 0
+    ? [
+        { path: "/case-studies", priority: 0.8, changeFrequency: "monthly" as const, lastModified: "2026-10-08" },
+        ...caseStudies.map((c) => ({
+          path: `/case-studies/${c.slug}`,
+          priority: 0.75,
+          changeFrequency: "yearly" as const,
+          lastModified: "2026-10-08",
+        })),
+      ]
+    : []),
 ]

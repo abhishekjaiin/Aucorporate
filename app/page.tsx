@@ -7,6 +7,7 @@ import { InquiryForm } from "@/components/InquiryForm"
 import { ClickableReveal } from "@/components/ClickableReveal"
 import { InquiryCard } from "@/components/InquiryCard"
 import { ComplianceCalendarCTA } from "@/components/ComplianceCalendarCTA"
+import { caseStudies } from "@/lib/case-studies"
 
 import {
   Calculator,
@@ -202,6 +203,54 @@ const faqs = [
     q: "What does it cost to establish a business in India?",
     a: "Cost depends on entity structure, sector, number of directors, and ongoing service scope — we scope this precisely on a short consultation rather than quoting a flat number that may not fit your situation.",
   },
+  {
+    q: "What is the minimum capital required to register a company in India?",
+    a: "There is no statutory minimum paid-up capital requirement for a Private Limited Company — you can incorporate with a nominal amount of share capital, set based on what the business needs to fund its initial operations.",
+  },
+  {
+    q: "How long does company registration in India actually take?",
+    a: "The Automatic Route typically clears in 4-6 weeks and the Government Approval Route in 8-12 weeks, with the full path to an operational, banked entity generally taking 8-12 weeks overall.",
+  },
+  {
+    q: "What sectors allow 100% foreign investment under the automatic route?",
+    a: "Most sectors — including manufacturing, most services, IT and software, and infrastructure — allow 100% foreign investment with no prior government approval. A shorter list of sensitive sectors requires Government Route approval instead.",
+  },
+  {
+    q: "How can profits be repatriated from an Indian subsidiary to the parent?",
+    a: "The main routes are dividends, a share buyback, and a capital reduction — each taxed differently, and each affected by the DTAA (if any) between India and the parent's home jurisdiction.",
+  },
+  {
+    q: "What is the Annual FLA Return?",
+    a: "Any Indian entity holding foreign investment on its books must file the Annual Return on Foreign Liabilities and Assets (FLA) with RBI every year, regardless of whether any transaction happened that year.",
+  },
+  {
+    q: "What is Form FC-GPR and when is it filed?",
+    a: "FC-GPR reports the allotment of shares to a foreign investor to RBI via the FIRMS portal, within a defined window from the allotment date — it's the filing that formally records the foreign investment on RBI's books.",
+  },
+  {
+    q: "Is GST registration mandatory immediately after incorporation?",
+    a: "No — GST registration is triggered by crossing the applicable turnover threshold (Rs 20 lakh for services, Rs 40 lakh for goods), not by incorporation itself. Many foreign-owned entities register earlier anyway, voluntarily.",
+  },
+  {
+    q: "What happens if we miss the FC-GPR filing deadline?",
+    a: "A late filing isn't resolved by simply paying a fee — it goes through RBI's compounding process under FEMA, where a compounding amount is calculated and the case is formally closed once it's paid.",
+  },
+  {
+    q: "Can AU Corporate take over compliance for an already-incorporated subsidiary?",
+    a: "Yes — including a review of past filings, so nothing is missed in the handover before we take on the ongoing compliance calendar.",
+  },
+  {
+    q: "Does India's tax treaty network reduce withholding tax on repatriation?",
+    a: "Where India has a Double Taxation Avoidance Agreement with the parent's home jurisdiction, that treaty typically caps the withholding tax rate on dividends, interest, royalties and fees for technical services — the exact rate varies by treaty.",
+  },
+  {
+    q: "What's the difference between a Wholly Owned Subsidiary and a GCC?",
+    a: "Every GCC is legally a subsidiary (or branch, or JV) — \"GCC\" describes the purpose and scale of intent (a captive delivery center for the parent), not a separate legal entity type.",
+  },
+  {
+    q: "How is an Indian subsidiary closed if it's no longer needed?",
+    a: "An entity with no liabilities and limited activity can generally be struck off through a fast-track exit process; a more complex entity with liabilities, employees, or litigation to settle generally needs a formal voluntary liquidation instead.",
+  },
 ]
 
 export const metadata: Metadata = {
@@ -337,6 +386,49 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ================= CASE STUDIES ================= */}
+      {caseStudies.length > 0 && (
+        <section className="py-20 bg-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
+              Subsidiaries We&apos;ve Set Up and Run
+            </h2>
+            <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">
+              How foreign companies set up and run their Indian subsidiaries with AU Corporate.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+              {caseStudies.slice(0, 3).map((c) => (
+                <Link
+                  key={c.slug}
+                  href={`/case-studies/${c.slug}`}
+                  className="border rounded-xl p-6 flex flex-col gap-3 hover:shadow-lg transition"
+                >
+                  <span className="self-start rounded px-2 py-0.5 text-xs font-semibold text-[#713f12]" style={{ backgroundColor: "#fef9c3" }}>
+                    {c.country} · {c.industry}
+                  </span>
+                  <h3 className="font-semibold font-heading text-blue">{c.clientDescription}</h3>
+                  <p className="text-sm text-gray-500">{c.challenge}</p>
+                  <div className="border-t pt-3 mt-auto flex gap-6">
+                    {c.stats.map((s) => (
+                      <div key={s.label}>
+                        <p className="font-heading font-bold text-lg text-blue">{s.value}</p>
+                        <p className="text-xs text-gray-500">{s.label}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <span className="text-sm font-semibold text-blue">Read the case study →</span>
+                </Link>
+              ))}
+            </div>
+            <div className="text-center">
+              <Button asChild variant="outline" className="border-blue text-blue bg-transparent hover:bg-gray-50">
+                <Link href="/case-studies">View All Case Studies</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ================= INDUSTRIES ================= */}
       <section className="py-20 bg-gray-100">
@@ -487,11 +579,14 @@ export default function HomePage() {
 
       {/* ================= FAQ ================= */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 font-heading text-blue">
             Frequently Asked Questions
           </h2>
-          <FaqAccordion faqs={faqs} />
+          <div className="grid gap-x-10 md:grid-cols-2">
+            <FaqAccordion faqs={faqs.slice(0, 10)} compact />
+            <FaqAccordion faqs={faqs.slice(10, 20)} compact />
+          </div>
         </div>
 
         <script
