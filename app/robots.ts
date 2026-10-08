@@ -10,10 +10,10 @@ export default function robots(): MetadataRoute.Robots {
           "/api/",
           "/admin/",
           "/private/",
-          "/*.json$",
         ],
       },
-      // Priority search engines - full access
+
+      // Major search engines
       {
         userAgent: "Googlebot",
         allow: "/",
@@ -34,7 +34,17 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "DuckDuckBot",
         allow: "/",
       },
-      // AI / LLM crawlers - explicitly allowed for GEO (generative engine optimization)
+
+      // AI / LLM crawlers
+      // Keep public AU Corporate content accessible for AI search/discovery.
+      {
+        userAgent: "OAI-SearchBot",
+        allow: "/",
+      },
+      {
+        userAgent: "OAI-AdsBot",
+        allow: "/",
+      },
       {
         userAgent: "GPTBot",
         allow: "/",
@@ -45,10 +55,6 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: "ClaudeBot",
-        allow: "/",
-      },
-      {
-        userAgent: "OAI-SearchBot",
         allow: "/",
       },
       {
@@ -75,7 +81,9 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "CCBot",
         allow: "/",
       },
-      // Block aggressive SEO crawlers to preserve crawl budget
+
+      // Block aggressive SEO crawlers to preserve crawl budget.
+      // This does not block search engines or AI crawlers.
       {
         userAgent: "AhrefsBot",
         disallow: "/",
@@ -96,9 +104,5 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: [
       "https://www.theaucorp.com/sitemap.xml",
     ],
-    // No `host` directive: it's a Yandex-only extension deprecated since
-    // 2018, not part of the robots.txt standard (RFC 9309), and not
-    // recognized by Google/Bing/any current crawler — some validators flag
-    // it as invalid/non-standard syntax for no actual benefit.
   }
 }
