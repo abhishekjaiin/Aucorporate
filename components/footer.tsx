@@ -1,16 +1,28 @@
 import Link from "next/link"
 import { Facebook, Linkedin, Mail, MapPin, Phone } from "lucide-react"
 
-const quickLinks = [
-  { label: "Services", href: "/services" },
-  { label: "Why India", href: "/doing-business-in-india" },
-  { label: "Arbitration Services", href: "/arbitration-services" },
-  { label: "HR Services", href: "/hr-services" },
-  { label: "Global Support", href: "/outsourcing" },
+const indiaEntryLinks = [
+  { label: "Doing Business in India", href: "/doing-business-in-india" },
+  { label: "Company Registration", href: "/india-business-setup/company-formation" },
+  { label: "Foreign Subsidiary / WOS", href: "/blog/wholly-owned-subsidiary" },
+  { label: "FDI, FEMA & RBI", href: "/india-business-setup/fdi-channels" },
+  { label: "Branch Office", href: "/branch-office-in-india" },
+  { label: "US Companies", href: "/india-entry-for-us-companies" },
+]
+
+const serviceLinks = [
+  { label: "Taxation & Regulatory", href: "/services/taxation-regulatory" },
+  { label: "Accounting & Assurance", href: "/services/accounting-assurance" },
+  { label: "HR & Payroll", href: "/hr-services" },
+  { label: "Risk Management", href: "/services/risk-management" },
+  { label: "Transaction Advisory", href: "/services/transaction-advisory" },
+  { label: "All Services", href: "/services" },
 ]
 
 const companyLinks = [
-  { label: "About Us", href: "/about" },
+  { label: "About AU Corporate", href: "/about" },
+  { label: "Insights", href: "/blog" },
+  { label: "Partners", href: "/partners/uniproasia" },
   { label: "Careers", href: "/career" },
   { label: "Contact", href: "/contact" },
 ]
@@ -21,7 +33,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
 
         {/* TOP GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 sm:gap-12">
 
           {/* BRAND */}
           <div className="sm:col-span-2 lg:col-span-1">
@@ -79,19 +91,27 @@ export function Footer() {
 
           </div>
 
-          {/* QUICK LINKS */}
+          {/* INDIA ENTRY */}
           <div>
-            <h3 className="text-gold-dark font-semibold mb-4 text-sm sm:text-base">
-              Quick Links
-            </h3>
-
+            <h3 className="text-gold-dark font-semibold mb-4 text-sm sm:text-base">India Entry</h3>
             <ul className="space-y-2 sm:space-y-3">
-              {quickLinks.map((link) => (
+              {indiaEntryLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-600 hover:text-gold-dark text-sm transition"
-                  >
+                  <Link href={link.href} className="text-gray-600 hover:text-gold-dark text-sm transition">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* SERVICES */}
+          <div>
+            <h3 className="text-gold-dark font-semibold mb-4 text-sm sm:text-base">Services</h3>
+            <ul className="space-y-2 sm:space-y-3">
+              {serviceLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-gray-600 hover:text-gold-dark text-sm transition">
                     {link.label}
                   </Link>
                 </li>
@@ -101,17 +121,11 @@ export function Footer() {
 
           {/* COMPANY */}
           <div>
-            <h3 className="text-gold-dark font-semibold mb-4 text-sm sm:text-base">
-              Company
-            </h3>
-
+            <h3 className="text-gold-dark font-semibold mb-4 text-sm sm:text-base">Company</h3>
             <ul className="space-y-2 sm:space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-600 hover:text-gold-dark text-sm transition"
-                  >
+                  <Link href={link.href} className="text-gray-600 hover:text-gold-dark text-sm transition">
                     {link.label}
                   </Link>
                 </li>
