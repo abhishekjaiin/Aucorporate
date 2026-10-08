@@ -260,7 +260,7 @@ export default function Page() {
           For the full entity lifecycle, see our <Link href="/india-business-setup/foreign-subsidiary-india" className="font-semibold text-yellow-700 hover:underline">foreign subsidiary and WOS guide</Link>, then follow the relevant FDI, transfer-pricing, DTAA and ongoing compliance resources.
         </p>
 
-        {/* QUICK FACTS */>
+        {/* QUICK FACTS */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 mb-10">
           {[
             { icon: Percent, value: "22%", label: "Concessional Corporate Tax Rate" },
