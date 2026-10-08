@@ -74,7 +74,7 @@ const nextConfig = {
       },
       {
         source: "/blog/accounting-outsourcing-india-us-businesses",
-        destination: "/accounting-outsourcing-firm-for-united-states-cpas-firm",
+        destination: "/services/accounting-assurance",
         permanent: true,
       },
     ]
