@@ -141,7 +141,11 @@ export default function DoingBusinessInIndiaPage() {
             <Link href="/india-business-setup/company-formation" className="underline hover:text-white">
               complete company registration guide
             </Link>{" "}
-            instead.
+            instead. If you already know a foreign-owned subsidiary is the likely route, see our{" "}
+            <Link href="/india-business-setup/foreign-subsidiary-india" className="underline hover:text-white">
+              foreign subsidiary and WOS guide
+            </Link>.
+
           </p>
         </Reveal>
       </section>
