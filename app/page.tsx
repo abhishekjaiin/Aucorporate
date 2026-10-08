@@ -23,10 +23,10 @@ import {
   Layers,
 } from "lucide-react"
 
-/* NAVY / GOLD DESIGN SYSTEM — matches registercompanyinindia.com */
-const NAVY = "#081A42"
-const ROYAL_BLUE = "#1e3a8a"
-const GOLD = "#facc15"
+/* Matches the sitewide --blue / --gold design tokens defined in globals.css */
+const NAVY = "#0E1B4D"
+const ROYAL_BLUE = NAVY
+const GOLD = "#FFD21F"
 
 /* SERVICES */
 const services = [
@@ -260,7 +260,7 @@ export default function HomePage() {
                   {number}
                 </div>
                 <h3 className="font-heading text-lg font-bold text-[#0E1B4D]">{title}</h3>
-                <p className="mt-2 text-xs font-bold uppercase tracking-wide text-[#8F6B00]">{timing}</p>
+                <span className="mt-2 self-start rounded px-2 py-0.5 text-xs font-semibold text-[#713f12]" style={{ backgroundColor: "#fef9c3" }}>{timing}</span>
                 <p className="mt-4 text-sm leading-6 text-gray-600">{description}</p>
               </div>
             ))}
@@ -286,7 +286,7 @@ export default function HomePage() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="flex flex-col p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
                   <service.icon size={20} style={{ color: GOLD }} />
@@ -294,9 +294,10 @@ export default function HomePage() {
                 <h3 className="font-semibold font-heading">
                   {service.title}
                 </h3>
-                <p className="text-sm text-gray-500 mt-2">
+                <p className="text-sm text-gray-500 mt-2 flex-1">
                   {service.description}
                 </p>
+                <span className="text-sm font-semibold mt-4 text-blue">Learn more →</span>
               </Link>
             ))}
           </div>
@@ -318,12 +319,13 @@ export default function HomePage() {
               <Link
                 key={s.title}
                 href={s.href}
-                className="block p-6 border rounded-xl hover:shadow-lg hover:border-yellow-300 transition-all duration-300"
+                className="flex flex-col p-6 border rounded-xl hover:shadow-lg hover:border-yellow-300 transition-all duration-300"
               >
                 <h3 className="font-semibold mb-2 font-heading text-blue">
                   {s.title}
                 </h3>
-                <p className="text-sm text-gray-500">{s.description}</p>
+                <p className="text-sm text-gray-500 flex-1">{s.description}</p>
+                <span className="text-sm font-semibold mt-4 text-blue">See details →</span>
               </Link>
             ))}
           </div>
