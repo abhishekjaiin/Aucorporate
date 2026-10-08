@@ -78,7 +78,7 @@ const structures = [
   {
     title: "Wholly Owned Subsidiary",
     description: "For foreign companies seeking full control over their Indian operations, with limited liability and access to the automatic FDI route in most sectors.",
-    href: "/blog/wholly-owned-subsidiary",
+    href: "/india-business-setup/foreign-subsidiary-india",
   },
   {
     title: "Branch Office",
@@ -221,10 +221,10 @@ export default function HomePage() {
       <section className="border-b bg-white py-8 sm:py-10">
         <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-gray-200 sm:grid-cols-4">
           {[
-            ["150+", "Subsidiaries incorporated"],
-            ["150+", "Regular clients"],
-            ["10+", "Parent countries"],
-            ["30+", "Years of combined experience"],
+            ["Foreign", "Company India Entry"],
+            ["Subsidiary", "WOS & India Operations"],
+            ["FDI / FEMA", "Investment & Compliance"],
+            ["Ongoing", "Tax, Finance & Compliance"],
           ].map(([value, label]) => (
             <div key={label} className="px-3 text-center sm:px-6">
               <div className="font-heading text-2xl font-bold text-[#0E1B4D] sm:text-3xl">{value}</div>
@@ -267,6 +267,16 @@ export default function HomePage() {
           </div>
 
           <ComplianceCalendarCTA />
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/india-business-setup/foreign-subsidiary-india"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#0E1B4D] hover:text-yellow-700"
+            >
+              See the complete foreign subsidiary and WOS journey
+              <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </section>
 
