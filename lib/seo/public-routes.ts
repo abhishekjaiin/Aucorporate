@@ -118,7 +118,6 @@ export const publicPages: PublicPage[] = [
 
   // Blog Hub + Articles
   { path: "/blog", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-08-26" },
-  { path: "/accounting-outsourcing-firm-for-united-states-cpas-firm", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-14" },
   { path: "/blog/india-japan-bis-exemption-high-tech-investment", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-31" },
   { path: "/blog/arbitration-enforcement-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/blog/construction-arbitration-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-09-15" },
