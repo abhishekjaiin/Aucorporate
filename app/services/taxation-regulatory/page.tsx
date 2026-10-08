@@ -256,7 +256,11 @@ export default function Page() {
           For a foreign-owned company operating in India, taxation and regulatory compliance isn&apos;t one filing — it&apos;s four largely independent workstreams running in parallel for the life of the entity: direct tax (corporate income tax, TDS, tax audit, transfer pricing), GST (registration, returns, e-invoicing, refunds), sector- and activity-specific regulatory registrations (FEMA, FCRA, FSSAI, MSME, IEC), and corporate secretarial and legal compliance under the Companies Act. We provide end-to-end advisory and compliance execution across all four, built around what a foreign parent&apos;s Indian subsidiary actually has to file, when, and under which law — not a generic checklist. The sections below cover what each workstream involves, the recurring compliance calendar behind it, and how transfer pricing and DTAA relief specifically affect a foreign-owned entity.
         </p>
 
-        {/* QUICK FACTS */}
+        <p className="mb-8 text-sm text-gray-600">
+          For the full entity lifecycle, see our <Link href="/india-business-setup/foreign-subsidiary-india" className="font-semibold text-yellow-700 hover:underline">foreign subsidiary and WOS guide</Link>, then follow the relevant FDI, transfer-pricing, DTAA and ongoing compliance resources.
+        </p>
+
+        {/* QUICK FACTS */>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 mb-10">
           {[
             { icon: Percent, value: "22%", label: "Concessional Corporate Tax Rate" },
