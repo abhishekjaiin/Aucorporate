@@ -10,6 +10,9 @@ export default function robots(): MetadataRoute.Robots {
           "/api/",
           "/admin/",
           "/private/",
+          // Cloudflare-managed endpoints are not site content and can produce
+          // crawler-only errors (including email-protection URLs).
+          "/cdn-cgi/",
         ],
       },
 
