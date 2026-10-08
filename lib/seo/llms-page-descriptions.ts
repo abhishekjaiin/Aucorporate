@@ -91,7 +91,6 @@ export const pageMeta: Record<string, PageMeta> = {
   "/partners/uniproasia": { title: "UniproAsia Partnership", description: "Expansion support into Hong Kong, Singapore and Mainland China alongside AU Corporate's India services" },
 
   "/blog": { title: "Blog", description: "Index of regulatory explainers and India business guides" },
-  "/accounting-outsourcing-firm-for-united-states-cpas-firm": { title: "Accounting Outsourcing for US Businesses", description: "How US businesses and CPA firms should evaluate India accounting outsourcing providers" },
   "/blog/india-japan-bis-exemption-high-tech-investment": { title: "India's Proposed BIS Exemption for Japanese High-Tech Investment", description: "" },
   "/blog/arbitration-enforcement-india": { title: "Arbitration Enforcement in India", description: "" },
   "/blog/construction-arbitration-india": { title: "Construction Arbitration in India", description: "Claims to enforcing awards" },
