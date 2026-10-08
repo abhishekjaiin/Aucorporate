@@ -33,6 +33,11 @@ const journeyStages = [
     description: 'Work out which entity actually fits your plans in India.',
     pages: [
       {
+        title: 'Foreign Subsidiary / WOS in India',
+        description: 'Start with the broader subsidiary lifecycle before moving into the US-specific incorporation and compliance guides',
+        href: '/india-business-setup/foreign-subsidiary-india',
+      },
+      {
         title: 'US Subsidiary vs Branch Office',
         description: 'Understand the structural differences and tax implications of subsidiary vs branch operations',
         href: '/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india',
