@@ -142,7 +142,7 @@ export default function Page() {
           If you are establishing or already operating a foreign-owned Indian entity, see our <Link href="/india-business-setup/foreign-subsidiary-india" className="font-semibold text-yellow-700 hover:underline">foreign subsidiary and WOS lifecycle guide</Link> for the connected setup, FEMA, tax and ongoing-compliance path.
         </p>
 
-        {/* QUICK FACTS */>
+        {/* QUICK FACTS */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 mb-10">
           {[
             { icon: ShieldCheck, value: "Every company", label: "No turnover exemption from statutory audit" },
