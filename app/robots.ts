@@ -78,19 +78,19 @@ export default function robots(): MetadataRoute.Robots {
       // Block aggressive SEO crawlers to preserve crawl budget
       {
         userAgent: "AhrefsBot",
-        disallow: "/",
+        allow: "/",
       },
       {
         userAgent: "SemrushBot",
-        disallow: "/",
+        allow: "/",
       },
       {
         userAgent: "MJ12bot",
-        disallow: "/",
+        allow: "/",
       },
       {
         userAgent: "DotBot",
-        disallow: "/",
+        allow: "/",
       },
     ],
     sitemap: [
