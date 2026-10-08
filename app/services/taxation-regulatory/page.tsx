@@ -416,6 +416,22 @@ export default function Page() {
             <h3 className="mb-2 font-semibold text-[#081a42]">Accounting &amp; Assurance</h3>
             <p className="text-sm text-gray-600">The books and statutory audit behind every filing on this page</p>
           </Link>
+          <Link href="/india-business-setup/foreign-subsidiary-india" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+            <h3 className="mb-2 font-semibold text-[#081a42]">Foreign Subsidiary / WOS</h3>
+            <p className="text-sm text-gray-600">Structure, FDI/FEMA, and ongoing operations in one guide</p>
+          </Link>
+          <Link href="/india-business-setup/fdi-channels" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+            <h3 className="mb-2 font-semibold text-[#081a42]">FDI Channels</h3>
+            <p className="text-sm text-gray-600">Automatic and government approval routes for foreign investment</p>
+          </Link>
+          <Link href="/india-entry-for-us-companies/permanent-establishment-risk-india" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+            <h3 className="mb-2 font-semibold text-[#081a42]">Permanent Establishment Risk</h3>
+            <p className="text-sm text-gray-600">Managing PE exposure for the foreign parent</p>
+          </Link>
+          <Link href="/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+            <h3 className="mb-2 font-semibold text-[#081a42]">DTAA &amp; Repatriation</h3>
+            <p className="text-sm text-gray-600">Withholding tax and profit repatriation under India&apos;s treaty network</p>
+          </Link>
         </div>
 
       </div>

@@ -188,7 +188,8 @@ export default function LiaisonOfficeInIndiaPage() {
             <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office guide</Link>{" "}
             if a Liaison Office turns out to be too restrictive for what you actually intend to do, or the{" "}
             <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office in India guide</Link>{" "}
-            if you&apos;ve already secured a specific, time-bound contract rather than needing ongoing representation.
+            if you&apos;ve already secured a specific, time-bound contract rather than needing ongoing representation. For a full operating presence instead, see our{" "}
+            <Link href="/india-business-setup/foreign-subsidiary-india" className="text-gold-dark font-semibold hover:underline">Foreign Subsidiary / WOS guide</Link>.
           </p>
           <p className="text-gray-600 leading-relaxed">
             If your parent company is based in Australia, the UK, or the US, the decision between a subsidiary and a lighter-touch structure also carries home-country tax consequences — CFC rules, DTAA treatment, and (for US groups) specific US filing obligations — that this page deliberately doesn&apos;t cover, because they differ by jurisdiction. For an Australian parent, see the{" "}

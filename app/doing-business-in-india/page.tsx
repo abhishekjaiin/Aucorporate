@@ -184,7 +184,11 @@ export default function DoingBusinessInIndiaPage() {
               lives on our{" "}
               <Link href="/india-business-setup/company-formation" className="text-yellow-600 hover:text-yellow-700 font-semibold">
                 complete company registration guide
-              </Link>. What follows here is the strategic layer: the questions worth
+              </Link>, and if you&apos;ve already settled on a Wholly Owned Subsidiary specifically, our{" "}
+              <Link href="/india-business-setup/foreign-subsidiary-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+                Foreign Subsidiary / WOS guide
+              </Link>{" "}
+              covers that structure&apos;s setup and ongoing operations in one place. What follows here is the strategic layer: the questions worth
               answering before, during, and after that process, and which of the five
               pages below actually answers the question you have right now.
             </p>
@@ -331,8 +335,8 @@ export default function DoingBusinessInIndiaPage() {
           Expand Your Business in India with Confidence
         </h2>
         <p className="max-w-2xl mx-auto text-white/80 mb-6">
-          AU Corporate provides end-to-end advisory and compliance support for
-          entry and growth in India.
+          AU Corporate provides advisory and compliance support across the full
+          entry and growth journey in India.
         </p>
 
         <Link

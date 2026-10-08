@@ -78,7 +78,7 @@ const structures = [
   {
     title: "Wholly Owned Subsidiary",
     description: "For foreign companies seeking full control over their Indian operations, with limited liability and access to the automatic FDI route in most sectors.",
-    href: "/blog/wholly-owned-subsidiary",
+    href: "/india-business-setup/foreign-subsidiary-india",
   },
   {
     title: "Branch Office",
@@ -217,17 +217,17 @@ export default function HomePage() {
       {/* ================= HERO ================= */}
       <HeroSection />
 
-      {/* ================= SUBSIDIARY STATS ================= */}
+      {/* ================= TRUST SIGNALS ================= */}
       <section className="border-b bg-white py-8 sm:py-10">
         <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-gray-200 sm:grid-cols-4">
           {[
-            ["150+", "Subsidiaries incorporated"],
-            ["150+", "Regular clients"],
-            ["10+", "Parent countries"],
-            ["30+", "Years of combined experience"],
+            ["Since 2016", "New Delhi & Gurugram"],
+            ["One Team", "CAs, CPAs, Company Secretaries & Lawyers"],
+            ["Full Lifecycle", "Incorporation through ongoing compliance"],
+            ["FEMA · RBI · GST · ROC", "Regulatory filings we manage"],
           ].map(([value, label]) => (
             <div key={label} className="px-3 text-center sm:px-6">
-              <div className="font-heading text-2xl font-bold text-[#0E1B4D] sm:text-3xl">{value}</div>
+              <div className="font-heading text-xl font-bold text-[#0E1B4D] sm:text-2xl">{value}</div>
               <div className="mt-1 text-xs leading-5 text-gray-500 sm:text-sm">{label}</div>
             </div>
           ))}

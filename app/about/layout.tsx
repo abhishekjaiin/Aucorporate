@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About AU Corporate | India Entry & Compliance Advisory Firm",
     description:
-      "Learn about AU Corporate's team, credentials, and 30+ years of collective experience helping foreign companies enter and operate in India.",
+      "Learn about AU Corporate's team, credentials, and experience helping foreign companies enter and operate in India.",
     url: "https://www.theaucorp.com/about",
   },
   twitter: {
     title: "About AU Corporate | India Entry & Compliance Advisory Firm",
     description:
-      "Learn about AU Corporate's team, credentials, and 30+ years of collective experience helping foreign companies enter and operate in India.",
+      "Learn about AU Corporate's team, credentials, and experience helping foreign companies enter and operate in India.",
   },
 }
 

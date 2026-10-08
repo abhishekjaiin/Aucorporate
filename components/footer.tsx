@@ -4,10 +4,11 @@ import { Facebook, Linkedin, Mail, MapPin, Phone } from "lucide-react"
 const indiaEntryLinks = [
   { label: "Doing Business in India", href: "/doing-business-in-india" },
   { label: "Company Registration", href: "/india-business-setup/company-formation" },
-  { label: "Foreign Subsidiary / WOS", href: "/blog/wholly-owned-subsidiary" },
+  { label: "Foreign Subsidiary / WOS", href: "/india-business-setup/foreign-subsidiary-india" },
   { label: "FDI, FEMA & RBI", href: "/india-business-setup/fdi-channels" },
   { label: "Branch Office", href: "/branch-office-in-india" },
   { label: "US Companies", href: "/india-entry-for-us-companies" },
+  { label: "UK Companies", href: "/india-entry-for-uk-companies" },
 ]
 
 const serviceLinks = [
