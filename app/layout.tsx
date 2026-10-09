@@ -28,12 +28,12 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "AU Corporate | CA-Led India Entry, Tax & Compliance",
+      "AU Corporate | India Business Setup & Compliance",
     template: "AU Corporate | %s",
   },
 
   description:
-    "AU Corporate is an India-based, CA-led professional services firm supporting foreign companies with India entry, subsidiary setup, tax and ongoing compliance.",
+    "AU Corporate is a CA-led team that helps foreign companies set up and run businesses in India, with support for tax, accounting and ongoing compliance.",
 
   // AU Corporate currently publishes one English-language site, not separate
   // regional/language variants. Do not emit hreflang alternates that all point
@@ -85,10 +85,10 @@ export const metadata: Metadata = {
     siteName: "AU Corporate",
 
     title:
-      "AU Corporate | CA-Led India Entry, Tax & Compliance",
+      "AU Corporate | India Business Setup & Compliance",
 
     description:
-      "AU Corporate is an India-based, CA-led professional services firm supporting foreign companies with India entry, subsidiary setup, tax and ongoing compliance.",
+      "AU Corporate is a CA-led team that helps foreign companies set up and run businesses in India, with support for tax, accounting and ongoing compliance.",
 
     images: [
       {
@@ -104,10 +104,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "AU Corporate | CA-Led India Entry, Tax & Compliance",
+      "AU Corporate | India Business Setup & Compliance",
 
     description:
-      "AU Corporate is an India-based, CA-led professional services firm supporting foreign companies with India entry, subsidiary setup, tax and ongoing compliance.",
+      "AU Corporate is a CA-led team that helps foreign companies set up and run businesses in India, with support for tax, accounting and ongoing compliance.",
 
     images: ["https://www.theaucorp.com/og-image.png"],
   },
