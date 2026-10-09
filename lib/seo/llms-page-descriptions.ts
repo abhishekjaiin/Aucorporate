@@ -54,7 +54,7 @@ export const pageMeta: Record<string, PageMeta> = {
 
   "/india-business-setup/fdi-channels": { title: "FDI Channels & Investment Routes", description: "Automatic vs. Government approval route by sector" },
   "/india-business-setup/company-formation": { title: "Company Registration in India", description: "SPICe+ incorporation process, entity types, FDI routes, documents, cost and timelines" },
-  "/india-business-setup/foreign-subsidiary-india": { title: "Foreign Subsidiary / Wholly Owned Subsidiary in India", description: "Foreign-company subsidiary lifecycle covering structure, FDI/FEMA, incorporation, banking, tax, accounting, compliance and exit" },
+  "/india-business-setup/foreign-subsidiary-india": { title: "Foreign Subsidiary in India (WOS)", description: "Choosing a structure, FDI/FEMA/RBI, incorporation, post-incorporation filings, ongoing operations, and repatriation or exit" },
   "/india-business-setup/regulatory-compliance": { title: "Regulatory Compliance Framework", description: "FEMA, RBI, and sector-specific rules for foreign-owned businesses" },
   "/india-business-setup/banking-taxation": { title: "Banking & Taxation Setup", description: "Bank account opening, capital inflow, and initial tax registrations" },
   "/india-business-setup/timeline-resources": { title: "Timeline & Resources", description: "Realistic setup timelines and resource planning" },
