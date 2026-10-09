@@ -35,13 +35,6 @@ export const metadata: Metadata = {
   description:
     "AU Corporate is a CA-led team that helps foreign companies set up and run businesses in India, with support for tax, accounting and ongoing compliance.",
 
-  // AU Corporate currently publishes one English-language site, not separate
-  // regional/language variants. Do not emit hreflang alternates that all point
-  // to the homepage; that creates false regional signals for search engines.
-  alternates: {
-    canonical: "https://www.theaucorp.com",
-  },
-
   authors: [
     {
       name: "AU Corporate",
