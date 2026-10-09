@@ -26,11 +26,11 @@ export default function HeroSection() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.15fr_.85fr] lg:gap-14">
         <div className="text-left">
           <h1 className="max-w-3xl font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-[3.45rem]">
-            Indian Subsidiary Incorporation to Ongoing Compliance — AU Corporate Handles It All
+            CA-Led India Entry, Tax & Compliance for International Businesses
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-white/75 sm:text-lg">
-            One partner for your India subsidiary: incorporation, accounting, tax, FEMA, secretarial compliance, audit support and expat services.
+            An India-based, CA-led professional services firm supporting foreign companies with market entry, subsidiary setup and ongoing operations in India.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

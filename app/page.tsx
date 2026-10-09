@@ -253,9 +253,9 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "Indian Subsidiary Registration & Compliance Expert | AU Corporate",
+  title: "CA-Led India Entry, Tax & Compliance | AU Corporate",
   description:
-    "AU Corporate supports foreign-owned Indian subsidiaries from incorporation through accounting, tax, FEMA, secretarial compliance, audit support and ongoing operations.",
+    "AU Corporate is an India-based, CA-led professional services firm supporting foreign companies with India entry, subsidiary setup, tax and ongoing compliance.",
 }
 
 export default function HomePage() {
@@ -270,7 +270,7 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-gray-200 sm:grid-cols-4">
           {[
             ["Since 2016", "New Delhi & Gurugram"],
-            ["One Team", "CAs, CPAs, Company Secretaries & Lawyers"],
+            ["CA-Led Team", "Chartered Accountants & multidisciplinary specialists"],
             ["Full Lifecycle", "Incorporation through ongoing compliance"],
             ["FEMA · RBI · GST · ROC", "Regulatory filings we manage"],
           ].map(([value, label]) => (
@@ -507,7 +507,7 @@ export default function HomePage() {
               Growing Together. Building Value.
             </h2>
             <p className="text-gray-600 mb-4">
-              AU Corporate is a multidisciplinary consultancy firm based in New Delhi, with a diversified team of Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, Lawyers, Industry Specialists, Ex-Bankers, and MBAs.
+              AU Corporate is a CA-led, multidisciplinary professional services firm based in New Delhi, with a team of Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, Lawyers, Industry Specialists, Ex-Bankers, and MBAs.
             </p>
             <p className="text-gray-600 mb-6">
               Established in 2016, we provide innovative solutions to complex business challenges and act as a catalyst for the growth of our clients across India and globally.
@@ -532,7 +532,7 @@ export default function HomePage() {
             Why Foreign Companies Choose AU Corporate
           </h2>
           <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
-            AU Corporate is a multidisciplinary firm based in New Delhi, with a team of Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, Lawyers, Industry Specialists, Ex-Bankers and MBAs.
+            AU Corporate is a CA-led, multidisciplinary professional services firm based in New Delhi, with a team of Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, Lawyers, Industry Specialists, Ex-Bankers and MBAs.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
