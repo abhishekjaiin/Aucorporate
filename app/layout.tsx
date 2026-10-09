@@ -192,260 +192,51 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* ORGANIZATION SCHEMA — plain script tag, not next/script: this is inert
-    JSON-LD data with no executable logic, so it doesn't need (and
-    shouldn't use) a hydration-blocking loading strategy. */}
-<script
-  id="organization-schema"
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
+        {/* SITEWIDE ORGANIZATION + WEBSITE SCHEMA
+            Keep global structured data intentionally small and valid. Page-specific
+            schemas (BreadcrumbList, FAQPage, Article, Service, etc.) belong on the
+            relevant page/layout instead of being emitted on every URL. */}
+        <script
+          id="site-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.theaucorp.com/#organization",
+                  name: "AU Corporate",
+                  url: "https://www.theaucorp.com",
+                  logo: "https://www.theaucorp.com/logo.png",
+                  foundingDate: "2016",
+                  sameAs: [
+                    "https://www.linkedin.com/company/a-u-corporate/",
+                    "https://www.instagram.com/aucorporate/",
+                    "https://www.facebook.com/profile.php?id=61593816719018",
+                  ],
+                  contactPoint: {
+                    "@type": "ContactPoint",
+                    contactType: "customer service",
+                    telephone: "+91-9999010513",
+                    email: "partner@theaucorp.com",
+                  },
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.theaucorp.com/#website",
+                  name: "AU Corporate",
+                  url: "https://www.theaucorp.com",
+                  inLanguage: "en-IN",
+                  publisher: {
+                    "@id": "https://www.theaucorp.com/#organization",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
 
-      name: "AU Corporate",
-
-      url: "https://www.theaucorp.com",
-
-      logo: "https://www.theaucorp.com/logo.png",
-
-      foundingDate: "2016",
-
-      description:
-        "AU Corporate provides comprehensive business advisory services: India Entry, GCC Advisory, Business Setup, Accounting, Payroll, Tax, Transfer Pricing, Virtual CFO, HR Outsourcing, and Compliance for global businesses.",
-
-      knowsAbout: [
-        "India Entry Strategy",
-        "GCC Advisory Services",
-        "Business Setup in India",
-        "Accounting Outsourcing",
-        "Payroll Management",
-        "Transfer Pricing",
-        "International Taxation",
-        "Virtual CFO Services",
-        "HR Outsourcing",
-        "FEMA Compliance",
-        "GST Advisory",
-        "Regulatory Compliance",
-      ],
-
-      areaServed: [
-        "India",
-        "United States",
-        "United Kingdom",
-        "Singapore",
-        "Australia",
-        "Germany",
-        "Japan",
-        "China",
-        "United Arab Emirates",
-      ],
-
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        telephone: "+91-9999010513",
-        email: "partner@theaucorp.com",
-      },
-
-      employee: {
-        "@type": "Person",
-        name: "Abhishek Jaiin",
-        jobTitle: "Director & Chartered Accountant (India)",
-      },
-
-      sameAs: [
-        "https://www.linkedin.com/company/a-u-corporate/",
-        "https://www.instagram.com/aucorporate/",
-        "https://www.facebook.com/profile.php?id=61593816719018",
-      ],
-    }),
-  }}
-/>
-
-{/* WEBSITE SCHEMA — plain script tag, see note above */}
-<script
-  id="website-schema"
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-
-      name: "AU Corporate",
-
-      url: "https://www.theaucorp.com",
-
-      inLanguage: "en-IN",
-
-      publisher: {
-        "@type": "Organization",
-        name: "AU Corporate",
-        url: "https://www.theaucorp.com",
-      },
-    }),
-  }}
-/>
-
-{/* PROFESSIONAL SERVICE SCHEMA — plain script tag, see note above */}
-<script
-  id="professional-service-schema"
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-
-      name: "AU Corporate",
-
-      image: "https://www.theaucorp.com/logo.png",
-
-      url: "https://www.theaucorp.com",
-
-      telephone: "+91-9999010513",
-
-      email: "partner@theaucorp.com",
-
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress: "408 Surya Kiran Building, 19 KG Marg",
-          addressLocality: "New Delhi",
-          addressRegion: "Delhi",
-          postalCode: "110001",
-          addressCountry: "IN",
-        },
-        {
-          "@type": "PostalAddress",
-          addressLocality: "Gurugram",
-          addressRegion: "Haryana",
-          addressCountry: "IN",
-        },
-      ],
-
-      areaServed: [
-        "India",
-        "United States",
-        "United Kingdom",
-        "Singapore",
-        "Australia",
-        "Germany",
-        "Japan",
-        "China",
-        "United Arab Emirates",
-      ],
-
-      serviceType: [
-        "India Entry Services",
-        "GCC Advisory Services",
-        "Business Setup Services",
-        "Accounting Services",
-        "Payroll Services",
-        "Tax Advisory Services",
-        "Transfer Pricing Advisory",
-        "Virtual CFO Services",
-        "HR Outsourcing Services",
-        "Compliance Services",
-      ],
-    }),
-  }}
-/>
-
-      {/* SERVICE CATALOG SCHEMA - 10 Core Services — plain script tag, see note above */}
-      <script
-        id="service-catalog-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            name: "AU Corporate - 10 Core Service Pillars",
-            description: "Comprehensive business advisory services covering all aspects of international business operations",
-            itemListElement: [
-              {
-                "@type": "Service",
-                name: "India Entry Services",
-                description: "Strategic entry planning and market analysis for foreign companies entering India",
-                provider: { "@type": "Organization", name: "AU Corporate" },
-                url: "https://www.theaucorp.com/india-business-setup",
-                areaServed: "India",
-              },
-              {
-                "@type": "Service",
-                name: "GCC Advisory Services",
-                description: "Global coordination center advisory and management services",
-                provider: { "@type": "Organization", name: "AU Corporate" },
-                url: "https://www.theaucorp.com/gcc-setup-india",
-                areaServed: "India",
-              },
-              {
-                "@type": "Service",
-                name: "Business Setup Services",
-                description: "End-to-end business incorporation and entity establishment",
-                provider: { "@type": "Organization", name: "AU Corporate" },
-                url: "https://www.theaucorp.com/india-business-setup/company-formation",
-                areaServed: "India",
-              },
-              {
-                "@type": "Service",
-                name: "Accounting Services",
-                description: "Accounting outsourcing and bookkeeping services",
-                provider: { "@type": "Organization", name: "AU Corporate" },
-                url: "https://www.theaucorp.com/services/accounting-assurance",
-                areaServed: "India",
-              },
-              {
-                "@type": "Service",
-                name: "Payroll Services",
-                description: "Comprehensive payroll processing and HR management",
-                provider: { "@type": "Organization", name: "AU Corporate" },
-                url: "https://www.theaucorp.com/hr-services",
-                areaServed: "India",
-              },
-              {
-                "@type": "Service",
-                name: "Tax Advisory Services",
-                description: "International tax planning and compliance advisory",
-                provider: { "@type": "Organization", name: "AU Corporate" },
-                url: "https://www.theaucorp.com/services/taxation-regulatory",
-                areaServed: "India",
-              },
-              {
-                "@type": "Service",
-                name: "Transfer Pricing Services",
-                description: "Transfer pricing documentation and compliance support",
-                provider: { "@type": "Organization", name: "AU Corporate" },
-                url: "https://www.theaucorp.com/services/taxation-regulatory",
-                areaServed: "India",
-              },
-              {
-                "@type": "Service",
-                name: "Virtual CFO Services",
-                description: "Remote Chief Financial Officer and financial consulting services",
-                provider: { "@type": "Organization", name: "AU Corporate" },
-                url: "https://www.theaucorp.com/services/accounting-assurance",
-                areaServed: "India",
-              },
-              {
-                "@type": "Service",
-                name: "HR Outsourcing Services",
-                description: "Human resources management and employee services outsourcing",
-                provider: { "@type": "Organization", name: "AU Corporate" },
-                url: "https://www.theaucorp.com/hr-services",
-                areaServed: "India",
-              },
-              {
-                "@type": "Service",
-                name: "Compliance Services",
-                description: "Regulatory compliance and legal advisory services",
-                provider: { "@type": "Organization", name: "AU Corporate" },
-                url: "https://www.theaucorp.com/services/taxation-regulatory",
-                areaServed: "India",
-              },
-            ],
-          }),
-        }}
-      />
     </head>
 
     <body

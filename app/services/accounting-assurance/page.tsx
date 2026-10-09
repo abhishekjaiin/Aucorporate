@@ -138,6 +138,10 @@ export default function Page() {
           For a foreign parent running an Indian subsidiary, accounting isn&apos;t a back-office task to tidy up once a year — it&apos;s the record a statutory auditor has to sign off on annually under the Companies Act, 2013, the source data behind your GST and income-tax filings, and very often the same numbers your parent company&apos;s own group auditor relies on for consolidation. We provide end-to-end bookkeeping, MIS reporting, Ind AS/IFRS-aligned financial statement preparation, monthly payroll, and statutory audit support built around that reality, kept audit- and compliance-ready throughout the year rather than assembled at the last minute. The sections below cover what statutory audit actually requires, how it differs from tax audit and internal audit, when Ind AS applies versus regular Indian GAAP, and the recurring filing calendar that good bookkeeping feeds into.
         </p>
 
+        <p className="mb-8 text-sm text-gray-600">
+          If you are establishing or already operating a foreign-owned Indian entity, see our <Link href="/india-business-setup/foreign-subsidiary-india" className="font-semibold text-yellow-700 hover:underline">foreign subsidiary and WOS lifecycle guide</Link> for the connected setup, FEMA, tax and ongoing-compliance path.
+        </p>
+
         {/* QUICK FACTS */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 mb-10">
           {[

@@ -104,6 +104,13 @@ export default function CompanyFormationPage() {
             <Link href="/india-business-setup/regulatory-compliance">Next: Regulatory Compliance <ArrowRight className="ml-2 h-4 w-4" /></Link>
           </Button>
 
+          <div className="mt-8 rounded-xl border border-yellow-200 bg-yellow-50 p-5">
+            <p className="font-semibold text-[#081a42]">Planning a foreign-owned subsidiary?</p>
+            <p className="mt-1 text-sm leading-6 text-gray-600">
+              Our dedicated <Link href="/india-business-setup/foreign-subsidiary-india" className="font-semibold text-yellow-700 hover:underline">foreign subsidiary and WOS guide</Link> connects incorporation with FDI, banking, tax, accounting, ongoing compliance and eventual exit.
+            </p>
+          </div>
+
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {[
               { icon: Timer, value: '4-6 weeks', label: 'Automatic Route' },
