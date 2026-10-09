@@ -27,37 +27,37 @@ const services = [
   {
     icon: Building2,
     title: "India Subsidiary Registration",
-    description: "Incorporation of your wholly owned subsidiary or joint venture, including name approval, PAN and TAN, bank account opening, share issue to the parent and FC-GPR filing.",
+    description: "We help set up your Indian subsidiary or joint venture, including name approval, PAN and TAN, bank account support, share issue and required RBI filings.",
     href: "/india-business-setup/foreign-subsidiary-india",
   },
   {
     icon: FileCheck,
     title: "Accounting, Reporting and Audit Support",
-    description: "Monthly bookkeeping, MIS and reporting packs for the parent in US GAAP or IFRS, plus statutory audit coordination.",
+    description: "Monthly bookkeeping and financial reports for your parent company, prepared to US GAAP or IFRS where needed, plus support with the statutory audit.",
     href: "/services/accounting-assurance",
   },
   {
     icon: Landmark,
     title: "FEMA and RBI Compliance",
-    description: "FC-GPR, FC-TRS, the annual FLA return, ECB reporting for parent loans, and repatriation of funds.",
+    description: "We help with required RBI filings, annual foreign investment reporting, reporting for overseas loans and moving funds between India and the parent company.",
     href: "/india-business-setup/fdi-channels",
   },
   {
     icon: Calculator,
     title: "Corporate Tax, GST and Transfer Pricing",
-    description: "Corporate tax returns, advance tax, TDS, GST registration and returns, tax audit, and transfer pricing for intercompany transactions.",
+    description: "Support with company tax returns, advance tax, TDS, GST registration and returns, tax audits, and pricing for transactions between related companies.",
     href: "/services/taxation-regulatory",
   },
   {
     icon: Scale,
     title: "Secretarial and ROC Compliance",
-    description: "Board meetings, AGM, annual ROC filings, director KYC, statutory registers, and resident director and registered office support.",
+    description: "Support with board meetings, annual general meetings, company filings, director KYC, company records, and resident director and registered office needs.",
     href: "/india-business-setup/regulatory-compliance",
   },
   {
     icon: Users,
     title: "Payroll and Expat Services",
-    description: "Payroll processing, PF and ESI, employment contracts, and tax and social security compliance for expats working in India.",
+    description: "We manage payroll, provident fund and ESI filings, employment contracts, and tax and social security matters for employees moving to India.",
     href: "/hr-services",
   },
 ]
@@ -66,32 +66,32 @@ const services = [
 const structures = [
   {
     title: "Private Limited Company",
-    description: "For entrepreneurs, startups, and businesses operating commercially in India. The most common structure for genuine India operations.",
+    description: "A common choice for businesses that want to operate and sell in India.",
     href: "/india-business-setup/company-formation",
   },
   {
     title: "Wholly Owned Subsidiary",
-    description: "For foreign companies seeking full control over their Indian operations, with limited liability and access to the automatic FDI route in most sectors.",
+    description: "For a foreign company that wants to own and manage its Indian business. Foreign investment rules depend on the industry.",
     href: "/india-business-setup/foreign-subsidiary-india",
   },
   {
     title: "Branch Office",
-    description: "For eligible foreign companies carrying out permitted representative or specific commercial activities in India, subject to RBI approval.",
+    description: "For eligible foreign companies that want to carry out approved activities in India. RBI approval may be required.",
     href: "/branch-office-in-india",
   },
   {
     title: "Liaison Office",
-    description: "For foreign companies establishing an initial representative presence in India, with restrictions on commercial activity.",
+    description: "For foreign companies that want a representative office in India. It cannot carry out regular sales or other commercial activities.",
     href: "/liaison-office-in-india",
   },
   {
     title: "Project Office",
-    description: "For foreign companies executing a specific, time-bound project in India.",
+    description: "For a foreign company working on a specific project in India.",
     href: "/project-office-in-india",
   },
   {
     title: "LLP",
-    description: "For businesses where a Limited Liability Partnership structure suits the ownership and operating model.",
+    description: "For businesses that want a partnership structure with limited liability.",
     href: "/llp-in-india",
   },
 ]
