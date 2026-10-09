@@ -85,10 +85,10 @@ export const metadata: Metadata = {
     siteName: "AU Corporate",
 
     title:
-      "AU Corporate | India Business Setup, Tax & Compliance Firm",
+      "AU Corporate | CA-Led India Entry, Tax & Compliance",
 
     description:
-      "AU Corporate — a New Delhi-based advisory firm (est. 2016) helping foreign companies enter India with entity setup, tax, GST, FEMA compliance and payroll.",
+      "AU Corporate is an India-based, CA-led professional services firm supporting foreign companies with India entry, subsidiary setup, tax and ongoing compliance.",
 
     images: [
       {
@@ -104,10 +104,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "AU Corporate | India Business Setup, Tax & Compliance Firm",
+      "AU Corporate | CA-Led India Entry, Tax & Compliance",
 
     description:
-      "AU Corporate — a New Delhi-based advisory firm (est. 2016) helping foreign companies enter India with entity setup, tax, GST, FEMA compliance and payroll.",
+      "AU Corporate is an India-based, CA-led professional services firm supporting foreign companies with India entry, subsidiary setup, tax and ongoing compliance.",
 
     images: ["https://www.theaucorp.com/og-image.png"],
   },
