@@ -30,18 +30,18 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-white/75 sm:text-lg">
-            An India-based, CA-led professional services firm supporting foreign companies with market entry, subsidiary setup and ongoing operations in India.
+            We are a CA-led team that helps foreign companies set up and run their businesses in India. We support company setup, tax, accounting and ongoing compliance.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild style={{ backgroundColor: GOLD }} className="font-bold text-[#0E1B4D] hover:bg-[#F2B705]">
               <Link href="https://cal.com/abhishekjaiin-ybbklq/30min" target="_blank" rel="noreferrer">
-                Book consultation with an expert
+                Book a consultation
               </Link>
             </Button>
             <Button asChild variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white/10">
               <Link href="/india-business-setup">
-                See entity options
+                Explore company options
               </Link>
             </Button>
           </div>

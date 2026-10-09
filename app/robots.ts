@@ -85,8 +85,8 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
 
-      // Block aggressive SEO crawlers to preserve crawl budget.
-      // This does not block search engines or AI crawlers.
+      // These SEO crawlers are currently allowed. Change this only if there
+      // is a deliberate decision to restrict their access.
       {
         userAgent: "AhrefsBot",
         allow: "/",

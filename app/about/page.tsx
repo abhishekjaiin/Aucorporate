@@ -38,11 +38,11 @@ export default function AboutHero() {
             </h1>
 
             <p className="text-gray-500 text-sm sm:text-base mb-4">
-              AU Corporate is a CA-led, multidisciplinary professional services firm based in New Delhi and Gurugram, with a team of Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, Lawyers, Industry Specialists, Ex-Bankers, and MBAs.
+              AU Corporate is a CA-led professional services firm based in New Delhi and Gurugram. Our team includes Chartered Accountants, CPAs, Company Secretaries, lawyers and other business specialists.
             </p>
 
             <p className="text-gray-500 text-sm sm:text-base mb-6">
-              Established in 2016, we work extensively with foreign companies entering and operating in India — across market entry, FEMA/RBI compliance, taxation, accounting, and payroll — alongside Indian businesses that need the same regulatory and advisory support.
+              Since 2016, we have helped foreign companies set up and run their businesses in India. Our work includes company setup, FEMA and RBI compliance, tax, accounting and payroll. We also support Indian businesses with tax and compliance.
             </p>
 
             <Link href="/contact">
@@ -76,11 +76,11 @@ export default function AboutHero() {
             </h2>
 
             <p className="text-gray-500 text-sm sm:text-base mb-4">
-              AU Corporate was established with a vision to provide innovative, practical, and result-oriented solutions to businesses facing complex regulatory and operational challenges.
+              AU Corporate helps businesses manage the rules and day-to-day work involved in setting up and running a business in India.
             </p>
 
             <p className="text-gray-500 text-sm sm:text-base">
-              With deep domain expertise and a client-first approach, we serve as a strategic partner for businesses looking to establish, operate, and scale in India.
+              We work with companies entering India and support them as they grow, with practical advice and ongoing help.
             </p>
           </Reveal>
 
@@ -105,7 +105,7 @@ export default function AboutHero() {
               Who We Work With
             </h2>
             <p className="text-gray-500 text-sm sm:text-base max-w-2xl mx-auto text-center mb-10">
-              We work extensively with foreign companies entering and operating in India — structuring the right entity, staying compliant with FEMA and RBI reporting, and keeping home-country and Indian filings reconciled on tax. Our most developed guidance is for US companies, alongside dedicated guidance for companies entering from:
+              We support foreign companies that want to set up or run a business in India. This includes choosing a suitable business structure, meeting FEMA and RBI reporting requirements, and keeping Indian tax filings aligned with home-country records. Our guidance is especially developed for US companies, and we also support companies from:
             </p>
           </Reveal>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
@@ -139,17 +139,17 @@ export default function AboutHero() {
             {
               icon: Eye,
               title: "Our Vision",
-              text: "Our Vision is to fulfil client requirements with tailored solutions while maintaining ethical practices and continuous growth."
+              text: "Help clients meet their business needs with practical advice, ethical work and long-term support."
             },
             {
               icon: Target,
               title: "Our Mission",
-              text: "Maximize client value through quality service, ethics, and long-term relationships."
+              text: "Provide reliable services, act ethically and build lasting client relationships."
             },
             {
               icon: Award,
               title: "Why AU?",
-              text: "Integrity, independence, confidentiality, and expert-driven execution define our approach."
+              text: "We work with integrity, protect client information and focus on careful, practical work."
             }
           ].map((item, i) => (
             <ClickableReveal
@@ -174,7 +174,7 @@ export default function AboutHero() {
       <section className="py-12 sm:py-24 bg-gray-100">
         <div className="mx-auto max-w-7xl px-4 mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-4">Our Service Pillars</h2>
-          <p className="text-gray-500 text-center text-sm sm:text-base max-w-2xl mx-auto">AU Corporate specializes in 10 core service areas to support your business growth</p>
+          <p className="text-gray-500 text-center text-sm sm:text-base max-w-2xl mx-auto">We provide support across 10 core service areas.</p>
         </div>
         <div className="mx-auto max-w-7xl px-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-6">
 
@@ -210,16 +210,16 @@ export default function AboutHero() {
       <section className="py-16 sm:py-24 bg-white text-center px-4">
 
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-          Let’s Build Your India Presence
+          Support for Your Business in India
         </h2>
 
         <p className="text-gray-500 mb-8 max-w-xl mx-auto text-sm sm:text-base">
-          Talk to AU Corporate about advisory, compliance, and execution support for your India operations.
+          Talk to AU Corporate about business setup, tax, compliance and ongoing support in India.
         </p>
 
         <Link href="/contact">
           <Button className="bg-gold text-black px-6 py-3">
-            Get Started <ArrowRight className="ml-2" />
+            Contact Us <ArrowRight className="ml-2" />
           </Button>
         </Link>
 
