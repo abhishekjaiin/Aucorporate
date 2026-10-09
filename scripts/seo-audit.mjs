@@ -5,6 +5,7 @@
 //   - exactly one <h1> per page, no skipped heading levels
 //   - <title> and meta description present and within safe SERP display length
 //   - every application/ld+json block parses as valid JSON
+//   - canonical URLs are present and do not point at another route
 //   - no duplicate titles/descriptions across pages
 //
 // Usage:
@@ -17,6 +18,17 @@
 // Routine/CI job that just needs a pass/fail signal.
 
 const BASE = process.argv[2] || "http://localhost:3000"
+const CANONICAL_BASE = process.env.SEO_CANONICAL_BASE || "https://www.theaucorp.com"
+
+function normalizedUrl(value) {
+  try {
+    const url = new URL(value)
+    const pathname = url.pathname.replace(/\/$/, "") || "/"
+    return `${url.origin}${pathname}`
+  } catch {
+    return null
+  }
+}
 
 async function getRoutes() {
   const res = await fetch(`${BASE}/sitemap.xml`)
@@ -57,6 +69,9 @@ async function main() {
     const h1s = headings.filter((h) => h.level === 1)
     const titleMatch = html.match(/<title>([^<]*)<\/title>/)
     const descMatch = html.match(/<meta[^>]+name="description"[^>]+content="([^"]*)"/)
+    const canonicalMatch =
+      html.match(/<link[^>]*rel="canonical"[^>]*href="([^"]+)"/i) ||
+      html.match(/<link[^>]*href="([^"]+)"[^>]*rel="canonical"/i)
 
     let runningMax = 0
     const skips = []
@@ -83,6 +98,7 @@ async function main() {
       h1Count: h1s.length,
       title: titleMatch?.[1] ?? null,
       desc: descMatch?.[1] ?? null,
+      canonical: canonicalMatch?.[1] ?? null,
       skips,
     })
   }
@@ -95,6 +111,12 @@ async function main() {
   const badDescLen = results.filter((r) => r.desc && (r.desc.length < 50 || r.desc.length > 165))
   const skipIssues = results.filter((r) => r.skips.length)
   const badStatus = results.filter((r) => r.status !== 200)
+  const missingCanonical = results.filter((r) => !r.canonical)
+  const wrongCanonical = results.filter((r) => {
+    if (!r.canonical) return false
+    const expected = `${CANONICAL_BASE}${r.route === "/" ? "" : r.route}`
+    return normalizedUrl(r.canonical) !== normalizedUrl(expected)
+  })
 
   const titleCounts = {}
   const descCounts = {}
@@ -116,6 +138,8 @@ async function main() {
   section("MULTIPLE H1", multiH1)
   section("NO TITLE", noTitle)
   section("NO META DESCRIPTION", noDesc)
+  section("MISSING CANONICAL (warning)", missingCanonical)
+  section("CANONICAL DOES NOT MATCH ROUTE", wrongCanonical, (r) => `${r.route} -> ${r.canonical}`)
   section("TITLE LENGTH OUT OF RANGE (<10 or >65 chars)", badTitleLen, (r) => `${r.route} (${r.title.length}) ${r.title}`)
   section("META DESC LENGTH OUT OF RANGE (<50 or >165 chars)", badDescLen, (r) => `${r.route} (${r.desc.length})`)
   section("HEADING LEVEL SKIPS", skipIssues, (r) => `${r.route} ${JSON.stringify(r.skips)}`)
@@ -128,7 +152,7 @@ async function main() {
     console.log(`  ${String(c).padStart(3)}  ${t}`)
   }
 
-  const failed = badStatus.length || noH1.length || multiH1.length || noTitle.length || noDesc.length || jsonLdInvalid
+  const failed = badStatus.length || noH1.length || multiH1.length || noTitle.length || noDesc.length || wrongCanonical.length || jsonLdInvalid
   if (failed) {
     console.log("\nFAILED — see issues above.")
     process.exit(1)
