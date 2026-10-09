@@ -353,7 +353,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= BUSINESS STRUCTURE ================= */}
-      <section className="py-20 bg-white">
+      <section id="entity-options" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
             What's the Right Structure for Your India Business?
@@ -387,47 +387,67 @@ export default function HomePage() {
       </section>
 
       {/* ================= CASE STUDIES ================= */}
-      {caseStudies.length > 0 && (
-        <section className="py-20 bg-white">
-          <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
-              Subsidiaries We&apos;ve Set Up and Run
-            </h2>
-            <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">
-              How foreign companies set up and run their Indian subsidiaries with AU Corporate.
-            </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-              {caseStudies.slice(0, 3).map((c) => (
-                <Link
-                  key={c.slug}
-                  href={`/case-studies/${c.slug}`}
-                  className="border rounded-xl p-6 flex flex-col gap-3 hover:shadow-lg transition"
-                >
-                  <span className="self-start rounded px-2 py-0.5 text-xs font-semibold text-[#713f12]" style={{ backgroundColor: "#fef9c3" }}>
-                    {c.country} · {c.industry}
-                  </span>
-                  <h3 className="font-semibold font-heading text-blue">{c.clientDescription}</h3>
-                  <p className="text-sm text-gray-500">{c.challenge}</p>
-                  <div className="border-t pt-3 mt-auto flex gap-6">
-                    {c.stats.map((s) => (
-                      <div key={s.label}>
-                        <p className="font-heading font-bold text-lg text-blue">{s.value}</p>
-                        <p className="text-xs text-gray-500">{s.label}</p>
-                      </div>
-                    ))}
-                  </div>
-                  <span className="text-sm font-semibold text-blue">Read the case study →</span>
-                </Link>
-              ))}
+      <section id="case-studies" className="py-20 bg-white scroll-mt-24">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
+            Subsidiaries We&apos;ve Set Up and Run
+          </h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            How foreign companies set up and run their Indian subsidiaries with AU Corporate.
+          </p>
+          {caseStudies.length > 0 ? (
+            <>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+                {caseStudies.slice(0, 3).map((c) => (
+                  <Link
+                    key={c.slug}
+                    href={`/case-studies/${c.slug}`}
+                    className="border rounded-xl p-6 flex flex-col gap-3 hover:shadow-lg transition"
+                  >
+                    <span className="self-start rounded px-2 py-0.5 text-xs font-semibold text-[#713f12]" style={{ backgroundColor: "#fef9c3" }}>
+                      {c.country} · {c.industry}
+                    </span>
+                    <h3 className="font-semibold font-heading text-blue">{c.clientDescription}</h3>
+                    <p className="text-sm text-gray-500">{c.challenge}</p>
+                    <div className="border-t pt-3 mt-auto flex gap-6">
+                      {c.stats.map((s) => (
+                        <div key={s.label}>
+                          <p className="font-heading font-bold text-lg text-blue">{s.value}</p>
+                          <p className="text-xs text-gray-500">{s.label}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <span className="text-sm font-semibold text-blue">Read the case study →</span>
+                  </Link>
+                ))}
+              </div>
+              <div className="text-center mb-10">
+                <Button asChild variant="outline" className="border-blue text-blue bg-transparent hover:bg-gray-50">
+                  <Link href="/case-studies">View all case studies</Link>
+                </Button>
+              </div>
+            </>
+          ) : (
+            <div className="mx-auto max-w-3xl rounded-2xl border border-gray-200 bg-gray-50 p-8 text-center sm:p-10">
+              <h3 className="font-heading text-xl font-semibold text-blue">
+                Practical support beyond incorporation
+              </h3>
+              <p className="mt-3 leading-7 text-gray-600">
+                Our work can span entity setup and the ongoing accounting, tax, FEMA, payroll and company-law compliance of an Indian subsidiary. We are preparing client case studies for publication; we do not publish client names or performance figures without verified details and approval.
+              </p>
+              <Link href="/contact" className="mt-5 inline-flex text-sm font-semibold text-blue hover:underline">
+                Discuss your India setup →
+              </Link>
             </div>
-            <div className="text-center">
-              <Button asChild variant="outline" className="border-blue text-blue bg-transparent hover:bg-gray-50">
-                <Link href="/case-studies">View All Case Studies</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
-      )}
+          )}
+          <p className="mt-10 text-center text-sm text-gray-600">
+            Not ready for a subsidiary? We also support{" "}
+            <Link href="/branch-office-in-india" className="font-semibold text-blue underline underline-offset-4">Branch Offices</Link>,{" "}
+            <Link href="/liaison-office-in-india" className="font-semibold text-blue underline underline-offset-4">Liaison Offices</Link> and{" "}
+            <Link href="/project-office-in-india" className="font-semibold text-blue underline underline-offset-4">Project Offices</Link>.
+          </p>
+        </div>
+      </section>
 
       {/* ================= WHO WE WORK WITH ================= */}
       <section className="py-20 bg-gray-100">
