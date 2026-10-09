@@ -253,9 +253,9 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "CA-Led India Entry, Tax & Compliance | AU Corporate",
+  title: "India Business Setup & Compliance | AU Corporate",
   description:
-    "AU Corporate is an India-based, CA-led professional services firm supporting foreign companies with India entry, subsidiary setup, tax and ongoing compliance.",
+    "AU Corporate is a CA-led team that helps foreign companies set up and run businesses in India, with support for tax, accounting and ongoing compliance.",
 }
 
 export default function HomePage() {
