@@ -26,7 +26,7 @@ export default function HeroSection() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.15fr_.85fr] lg:gap-14">
         <div className="text-left">
           <h1 className="max-w-3xl font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-[3.45rem]">
-            CA-Led India Entry, Tax & Compliance for International Businesses
+            Indian Subsidiary Incorporation to Ongoing Compliance — AU Corporate Handles It All
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-white/75 sm:text-lg">
