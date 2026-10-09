@@ -28,12 +28,12 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "AU Corporate | India Business Setup, Tax & Compliance Firm",
+      "AU Corporate | CA-Led India Entry, Tax & Compliance",
     template: "AU Corporate | %s",
   },
 
   description:
-    "AU Corporate — a New Delhi-based advisory firm (est. 2016) helping foreign companies enter India with entity setup, tax, GST, FEMA compliance and payroll.",
+    "AU Corporate is an India-based, CA-led professional services firm supporting foreign companies with India entry, subsidiary setup, tax and ongoing compliance.",
 
   // AU Corporate currently publishes one English-language site, not separate
   // regional/language variants. Do not emit hreflang alternates that all point
