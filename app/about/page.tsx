@@ -38,11 +38,11 @@ export default function AboutHero() {
             </h1>
 
             <p className="text-gray-500 text-sm sm:text-base mb-4">
-              AU Corporate is a CA-led, multidisciplinary professional services firm based in New Delhi and Gurugram, with a team of Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, Lawyers, Industry Specialists, Ex-Bankers, and MBAs.
+              AU Corporate is a CA-led professional services firm based in New Delhi and Gurugram. Our team includes Chartered Accountants, CPAs, Company Secretaries, lawyers and other business specialists.
             </p>
 
             <p className="text-gray-500 text-sm sm:text-base mb-6">
-              Established in 2016, we work extensively with foreign companies entering and operating in India — across market entry, FEMA/RBI compliance, taxation, accounting, and payroll — alongside Indian businesses that need the same regulatory and advisory support.
+              Since 2016, we have helped foreign companies set up and run their businesses in India. Our work includes company setup, FEMA and RBI compliance, tax, accounting and payroll. We also support Indian businesses with tax and compliance.
             </p>
 
             <Link href="/contact">
