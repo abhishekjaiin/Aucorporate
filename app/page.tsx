@@ -7,6 +7,7 @@ import { InquiryForm } from "@/components/InquiryForm"
 import { ClickableReveal } from "@/components/ClickableReveal"
 import { InquiryCard } from "@/components/InquiryCard"
 import { ComplianceCalendarCTA } from "@/components/ComplianceCalendarCTA"
+import { caseStudies } from "@/lib/case-studies"
 
 import {
   Calculator,
@@ -14,57 +15,50 @@ import {
   Scale,
   Users,
   Building2,
-  ArrowRight,
-  Compass,
   Landmark,
-  ShieldCheck,
-  Globe2,
-  MessageCircle,
-  Layers,
 } from "lucide-react"
 
-/* NAVY / GOLD DESIGN SYSTEM — matches registercompanyinindia.com */
-const NAVY = "#081A42"
-const ROYAL_BLUE = "#1e3a8a"
-const GOLD = "#facc15"
+/* Matches the sitewide --blue / --gold design tokens defined in globals.css */
+const NAVY = "#0E1B4D"
+const GOLD = "#FFD21F"
 
 /* SERVICES */
 const services = [
   {
     icon: Building2,
-    title: "India Business Setup",
-    description: "Entity selection, incorporation, and registration for foreign and domestic companies entering India.",
-    href: "/india-business-setup",
+    title: "India Subsidiary Registration",
+    description: "Incorporation of your wholly owned subsidiary or joint venture, including name approval, PAN and TAN, bank account opening, share issue to the parent and FC-GPR filing.",
+    href: "/india-business-setup/foreign-subsidiary-india",
   },
   {
     icon: FileCheck,
-    title: "Accounting & Assurance",
-    description: "Bookkeeping, financial reporting, and audit support to keep your India finance function running.",
+    title: "Accounting, Reporting and Audit Support",
+    description: "Monthly bookkeeping, MIS and reporting packs for the parent in US GAAP or IFRS, plus statutory audit coordination.",
     href: "/services/accounting-assurance",
   },
   {
+    icon: Landmark,
+    title: "FEMA and RBI Compliance",
+    description: "FC-GPR, FC-TRS, the annual FLA return, ECB reporting for parent loans, and repatriation of funds.",
+    href: "/india-business-setup/fdi-channels",
+  },
+  {
     icon: Calculator,
-    title: "Taxation & Regulatory",
-    description: "Corporate tax, GST, transfer pricing, and regulatory compliance for businesses operating in India.",
+    title: "Corporate Tax, GST and Transfer Pricing",
+    description: "Corporate tax returns, advance tax, TDS, GST registration and returns, tax audit, and transfer pricing for intercompany transactions.",
     href: "/services/taxation-regulatory",
   },
   {
-    icon: Users,
-    title: "HR & Payroll",
-    description: "Payroll processing, statutory compliance, and HR administration for your India team.",
-    href: "/hr-services",
-  },
-  {
     icon: Scale,
-    title: "Arbitration & Dispute Resolution",
-    description: "Professional dispute resolution and legal advisory for commercial disputes in India.",
-    href: "/arbitration-services",
+    title: "Secretarial and ROC Compliance",
+    description: "Board meetings, AGM, annual ROC filings, director KYC, statutory registers, and resident director and registered office support.",
+    href: "/india-business-setup/regulatory-compliance",
   },
   {
-    icon: Landmark,
-    title: "Global Support & Outsourcing",
-    description: "Scalable accounting, tax, and back-office outsourcing to support India operations when needed.",
-    href: "/outsourcing",
+    icon: Users,
+    title: "Payroll and Expat Services",
+    description: "Payroll processing, PF and ESI, employment contracts, and tax and social security compliance for expats working in India.",
+    href: "/hr-services",
   },
 ]
 
@@ -102,14 +96,34 @@ const structures = [
   },
 ]
 
+/* PARENT COMPANY COUNTRIES — only linked where AU has a dedicated country guide;
+   the rest are shown as plain badges rather than linked to a page that doesn't exist. */
+const parentCountries = [
+  { label: "USA", href: "/india-entry-for-us-companies" },
+  { label: "UK", href: "/india-entry-for-uk-companies" },
+  { label: "Singapore", href: "/india-entry-for-singapore-companies" },
+  { label: "Australia", href: "/india-entry-for-australian-companies" },
+  { label: "Germany", href: "/india-entry-for-german-companies" },
+  { label: "Japan", href: "/india-entry-for-japan-companies" },
+  { label: "China", href: "/india-entry-for-china-companies" },
+  { label: "Hong Kong" },
+  { label: "Spain" },
+  { label: "France" },
+  { label: "UAE" },
+]
+
 /* INDUSTRIES — broad support framing, not claiming deep specialist certification */
-const industries = [
-  "Manufacturing",
-  "Technology & GCCs",
-  "Logistics & Supply Chain",
-  "Consumer & Retail",
-  "Professional Services",
-  "Startups & E-Commerce",
+const industryDetails = [
+  { name: "Technology, SaaS and GCCs", description: "Captive engineering centres, Safe Harbour transfer pricing" },
+  { name: "AI Companies", description: "India R&D teams, data protection compliance, transfer pricing for model development" },
+  { name: "Electronics Manufacturing", description: "Factory setup, import and customs registrations, incentive scheme support" },
+  { name: "Manufacturing", description: "Plant setup, import and customs registrations, related-party purchases" },
+  { name: "Infrastructure", description: "Subsidiaries and JVs for long-term projects, multi-state GST, contract accounting" },
+  { name: "Education", description: "EdTech and training businesses, and the right structure for academic activities" },
+  { name: "Trading and Distribution", description: "Importing the parent's products, GST and pricing on resale" },
+  { name: "Logistics and Supply Chain", description: "Warehousing, freight and multi-state GST registrations" },
+  { name: "Professional Services", description: "India delivery teams billing the parent" },
+  { name: "Startups", description: "Foreign startups setting up their first India team, with lean compliance" },
 ]
 
 /* FEATURED INSIGHTS — real published posts, no fabricated articles */
@@ -134,37 +148,23 @@ const featuredInsights = [
   },
 ]
 
-/* WHY AU CORPORATE — 6 PILLARS */
+/* WHY FOREIGN COMPANIES CHOOSE AU CORPORATE */
 const pillars = [
   {
-    icon: Layers,
-    title: "One Trusted Partner",
-    description: "Company setup, finance, tax, compliance, and HR — brought together instead of coordinated across five different providers.",
+    title: "Tax, law and banking in one team",
+    description: "CAs, Company Secretaries, lawyers and ex-bankers in-house, so nothing is handed off to another firm.",
   },
   {
-    icon: Compass,
-    title: "India Expertise",
-    description: "Direct experience with India's regulatory and commercial environment — not a generic global platform layered onto local rules.",
+    title: "Reporting your parent understands",
+    description: "Monthly packs in US GAAP or IFRS, with both sides of intercompany transactions reconciled.",
   },
   {
-    icon: Globe2,
-    title: "International Perspective",
-    description: "Built for businesses operating across borders, with a team that understands how foreign parent-company reporting maps onto Indian requirements.",
+    title: "One point of contact",
+    description: "A named manager for your subsidiary who knows your filings, deadlines and history.",
   },
   {
-    icon: MessageCircle,
-    title: "Practical Advice",
-    description: "Complex regulatory requirements explained in plain business language, not dense legal or accounting jargon.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Responsive Support",
-    description: "Organised, accessible communication — you always know who to reach and where things stand.",
-  },
-  {
-    icon: ArrowRight,
-    title: "Long-Term Partnership",
-    description: "Support that continues well past incorporation — accounting, tax, and compliance for as long as you operate in India.",
+    title: "Since 2016",
+    description: "Offices in New Delhi and Gurugram, serving foreign parent companies across multiple countries.",
   },
 ]
 
@@ -202,6 +202,54 @@ const faqs = [
     q: "What does it cost to establish a business in India?",
     a: "Cost depends on entity structure, sector, number of directors, and ongoing service scope — we scope this precisely on a short consultation rather than quoting a flat number that may not fit your situation.",
   },
+  {
+    q: "What is the minimum capital required to register a company in India?",
+    a: "There is no statutory minimum paid-up capital requirement for a Private Limited Company — you can incorporate with a nominal amount of share capital, set based on what the business needs to fund its initial operations.",
+  },
+  {
+    q: "How long does company registration in India actually take?",
+    a: "The Automatic Route typically clears in 4-6 weeks and the Government Approval Route in 8-12 weeks, with the full path to an operational, banked entity generally taking 8-12 weeks overall.",
+  },
+  {
+    q: "What sectors allow 100% foreign investment under the automatic route?",
+    a: "Most sectors — including manufacturing, most services, IT and software, and infrastructure — allow 100% foreign investment with no prior government approval. A shorter list of sensitive sectors requires Government Route approval instead.",
+  },
+  {
+    q: "How can profits be repatriated from an Indian subsidiary to the parent?",
+    a: "The main routes are dividends, a share buyback, and a capital reduction — each taxed differently, and each affected by the DTAA (if any) between India and the parent's home jurisdiction.",
+  },
+  {
+    q: "What is the Annual FLA Return?",
+    a: "Any Indian entity holding foreign investment on its books must file the Annual Return on Foreign Liabilities and Assets (FLA) with RBI every year, regardless of whether any transaction happened that year.",
+  },
+  {
+    q: "What is Form FC-GPR and when is it filed?",
+    a: "FC-GPR reports the allotment of shares to a foreign investor to RBI via the FIRMS portal, within a defined window from the allotment date — it's the filing that formally records the foreign investment on RBI's books.",
+  },
+  {
+    q: "Is GST registration mandatory immediately after incorporation?",
+    a: "No — GST registration is triggered by crossing the applicable turnover threshold (Rs 20 lakh for services, Rs 40 lakh for goods), not by incorporation itself. Many foreign-owned entities register earlier anyway, voluntarily.",
+  },
+  {
+    q: "What happens if we miss the FC-GPR filing deadline?",
+    a: "A late filing isn't resolved by simply paying a fee — it goes through RBI's compounding process under FEMA, where a compounding amount is calculated and the case is formally closed once it's paid.",
+  },
+  {
+    q: "Can AU Corporate take over compliance for an already-incorporated subsidiary?",
+    a: "Yes — including a review of past filings, so nothing is missed in the handover before we take on the ongoing compliance calendar.",
+  },
+  {
+    q: "Does India's tax treaty network reduce withholding tax on repatriation?",
+    a: "Where India has a Double Taxation Avoidance Agreement with the parent's home jurisdiction, that treaty typically caps the withholding tax rate on dividends, interest, royalties and fees for technical services — the exact rate varies by treaty.",
+  },
+  {
+    q: "What's the difference between a Wholly Owned Subsidiary and a GCC?",
+    a: "Every GCC is legally a subsidiary (or branch, or JV) — \"GCC\" describes the purpose and scale of intent (a captive delivery center for the parent), not a separate legal entity type.",
+  },
+  {
+    q: "How is an Indian subsidiary closed if it's no longer needed?",
+    a: "An entity with no liabilities and limited activity can generally be struck off through a fast-track exit process; a more complex entity with liabilities, employees, or litigation to settle generally needs a formal voluntary liquidation instead.",
+  },
 ]
 
 export const metadata: Metadata = {
@@ -217,17 +265,17 @@ export default function HomePage() {
       {/* ================= HERO ================= */}
       <HeroSection />
 
-      {/* ================= SUBSIDIARY STATS ================= */}
+      {/* ================= TRUST SIGNALS ================= */}
       <section className="border-b bg-white py-8 sm:py-10">
         <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-gray-200 sm:grid-cols-4">
           {[
-            ["Foreign", "Company India Entry"],
-            ["Subsidiary", "WOS & India Operations"],
-            ["FDI / FEMA", "Investment & Compliance"],
-            ["Ongoing", "Tax, Finance & Compliance"],
+            ["Since 2016", "New Delhi & Gurugram"],
+            ["One Team", "CAs, CPAs, Company Secretaries & Lawyers"],
+            ["Full Lifecycle", "Incorporation through ongoing compliance"],
+            ["FEMA · RBI · GST · ROC", "Regulatory filings we manage"],
           ].map(([value, label]) => (
             <div key={label} className="px-3 text-center sm:px-6">
-              <div className="font-heading text-2xl font-bold text-[#0E1B4D] sm:text-3xl">{value}</div>
+              <div className="font-heading text-xl font-bold text-[#0E1B4D] sm:text-2xl">{value}</div>
               <div className="mt-1 text-xs leading-5 text-gray-500 sm:text-sm">{label}</div>
             </div>
           ))}
@@ -260,23 +308,13 @@ export default function HomePage() {
                   {number}
                 </div>
                 <h3 className="font-heading text-lg font-bold text-[#0E1B4D]">{title}</h3>
-                <p className="mt-2 text-xs font-bold uppercase tracking-wide text-[#8F6B00]">{timing}</p>
+                <span className="mt-2 self-start rounded px-2 py-0.5 text-xs font-semibold text-[#713f12]" style={{ backgroundColor: "#fef9c3" }}>{timing}</span>
                 <p className="mt-4 text-sm leading-6 text-gray-600">{description}</p>
               </div>
             ))}
           </div>
 
           <ComplianceCalendarCTA />
-
-          <div className="mt-10 text-center">
-            <Link
-              href="/india-business-setup/foreign-subsidiary-india"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-[#0E1B4D] hover:text-yellow-700"
-            >
-              See the complete foreign subsidiary and WOS journey
-              <ArrowRight size={16} />
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -285,10 +323,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4">
 
           <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
-            Complete Business Support for India
+            Complete Services for Your India Subsidiary
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            From setting up your Indian entity to managing ongoing operations, our services support your business at every stage.
+            Everything a foreign company needs to set up, run and stay compliant with its Indian subsidiary, under one team.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -296,7 +334,7 @@ export default function HomePage() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="flex flex-col p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
                   <service.icon size={20} style={{ color: GOLD }} />
@@ -304,9 +342,10 @@ export default function HomePage() {
                 <h3 className="font-semibold font-heading">
                   {service.title}
                 </h3>
-                <p className="text-sm text-gray-500 mt-2">
+                <p className="text-sm text-gray-500 mt-2 flex-1">
                   {service.description}
                 </p>
+                <span className="text-sm font-semibold mt-4 text-blue">Learn more →</span>
               </Link>
             ))}
           </div>
@@ -328,12 +367,13 @@ export default function HomePage() {
               <Link
                 key={s.title}
                 href={s.href}
-                className="block p-6 border rounded-xl hover:shadow-lg hover:border-yellow-300 transition-all duration-300"
+                className="flex flex-col p-6 border rounded-xl hover:shadow-lg hover:border-yellow-300 transition-all duration-300"
               >
                 <h3 className="font-semibold mb-2 font-heading text-blue">
                   {s.title}
                 </h3>
-                <p className="text-sm text-gray-500">{s.description}</p>
+                <p className="text-sm text-gray-500 flex-1">{s.description}</p>
+                <span className="text-sm font-semibold mt-4 text-blue">See details →</span>
               </Link>
             ))}
           </div>
@@ -346,24 +386,94 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ================= INDUSTRIES ================= */}
+      {/* ================= CASE STUDIES ================= */}
+      {caseStudies.length > 0 && (
+        <section className="py-20 bg-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
+              Subsidiaries We&apos;ve Set Up and Run
+            </h2>
+            <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">
+              How foreign companies set up and run their Indian subsidiaries with AU Corporate.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+              {caseStudies.slice(0, 3).map((c) => (
+                <Link
+                  key={c.slug}
+                  href={`/case-studies/${c.slug}`}
+                  className="border rounded-xl p-6 flex flex-col gap-3 hover:shadow-lg transition"
+                >
+                  <span className="self-start rounded px-2 py-0.5 text-xs font-semibold text-[#713f12]" style={{ backgroundColor: "#fef9c3" }}>
+                    {c.country} · {c.industry}
+                  </span>
+                  <h3 className="font-semibold font-heading text-blue">{c.clientDescription}</h3>
+                  <p className="text-sm text-gray-500">{c.challenge}</p>
+                  <div className="border-t pt-3 mt-auto flex gap-6">
+                    {c.stats.map((s) => (
+                      <div key={s.label}>
+                        <p className="font-heading font-bold text-lg text-blue">{s.value}</p>
+                        <p className="text-xs text-gray-500">{s.label}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <span className="text-sm font-semibold text-blue">Read the case study →</span>
+                </Link>
+              ))}
+            </div>
+            <div className="text-center">
+              <Button asChild variant="outline" className="border-blue text-blue bg-transparent hover:bg-gray-50">
+                <Link href="/case-studies">View All Case Studies</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ================= WHO WE WORK WITH ================= */}
       <section className="py-20 bg-gray-100">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 font-heading text-blue">
-            Industries We Work With
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
+            Who We Work With
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-            Our services support businesses across a range of sectors operating in India.
+          <p className="text-gray-600 text-center mb-10">
+            Foreign parent companies running Indian subsidiaries across sectors.
           </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {industries.map((ind) => (
-              <span
-                key={ind}
-                className="px-5 py-2.5 bg-white border rounded-full text-sm font-semibold"
-                style={{ color: NAVY }}
-              >
-                {ind}
-              </span>
+
+          <h3 className="text-center text-sm font-semibold uppercase tracking-wide text-gray-500 mb-4">
+            Parent companies from
+          </h3>
+          <div className="flex flex-wrap justify-center gap-2.5 mb-14">
+            {parentCountries.map((c) =>
+              c.href ? (
+                <Link
+                  key={c.label}
+                  href={c.href}
+                  className="px-4 py-2.5 bg-white border rounded-full text-sm font-semibold hover:border-yellow-300 transition"
+                  style={{ color: NAVY }}
+                >
+                  {c.label}
+                </Link>
+              ) : (
+                <span
+                  key={c.label}
+                  className="px-4 py-2.5 bg-white border rounded-full text-sm font-semibold"
+                  style={{ color: NAVY }}
+                >
+                  {c.label}
+                </span>
+              )
+            )}
+          </div>
+
+          <h3 className="text-center text-sm font-semibold uppercase tracking-wide text-gray-500 mb-6">
+            Industries
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+            {industryDetails.map((ind) => (
+              <div key={ind.name} className="bg-white border rounded-xl p-4">
+                <p className="font-semibold text-sm mb-1.5" style={{ color: NAVY }}>{ind.name}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{ind.description}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -395,30 +505,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ================= WHY AU CORPORATE ================= */}
-      <section className="py-20 bg-gray-100">
+      {/* ================= WHY FOREIGN COMPANIES CHOOSE AU CORPORATE ================= */}
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 font-heading text-blue">
-            Why Businesses Choose AU Corporate
+          <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
+            Why Foreign Companies Choose AU Corporate
           </h2>
+          <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+            AU Corporate is a multidisciplinary firm based in New Delhi, with a team of Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, Lawyers, Industry Specialists, Ex-Bankers and MBAs.
+          </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {pillars.map((p) => (
               <InquiryCard
                 key={p.title}
                 title={p.title}
                 description={p.description}
-                className="block p-6 bg-white border rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="block p-6 bg-gray-100 rounded-xl transition-all duration-300 hover:shadow-md"
                 titleClassName="font-semibold mb-2"
                 titleStyle={{ fontFamily: "var(--font-heading)" }}
                 descriptionClassName="text-sm text-gray-500"
-                icon={
-                  <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4 bg-yellow-50">
-                    <p.icon size={20} style={{ color: ROYAL_BLUE }} />
-                  </div>
-                }
               />
             ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link href="/about" className="text-sm font-semibold text-blue hover:underline">
+              Know more about us →
+            </Link>
           </div>
         </div>
       </section>
@@ -495,11 +609,14 @@ export default function HomePage() {
 
       {/* ================= FAQ ================= */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 font-heading text-blue">
             Frequently Asked Questions
           </h2>
-          <FaqAccordion faqs={faqs} />
+          <div className="grid gap-x-10 md:grid-cols-2">
+            <FaqAccordion faqs={faqs.slice(0, 10)} compact />
+            <FaqAccordion faqs={faqs.slice(10, 20)} compact />
+          </div>
         </div>
 
         <script
@@ -633,33 +750,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ================= INQUIRY FORM ================= */}
-      <section id="inquiry-form" className="py-20 bg-gray-100 scroll-mt-24">
-        <div className="max-w-2xl mx-auto px-4">
+      {/* ================= CONTACT / INQUIRY ================= */}
+      <section id="inquiry-form" className="py-20 bg-blue scroll-mt-24">
+        <div className="max-w-6xl mx-auto px-4 grid lg:grid-cols-[1fr_1.1fr] gap-12 items-start">
+          <div className="text-white">
+            <h2 className="text-3xl font-bold mb-4 font-heading">
+              Ready to Build Your Business in India?
+            </h2>
+            <p className="text-white/70 mb-6">
+              Whether you&apos;re entering India for the first time or already operating here, share a few details and our team will get back to you within 24 hours.
+            </p>
+            <div className="text-white/80 text-sm leading-7">
+              +91-9999010513
+              <br />
+              408 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001
+              <br />
+              &amp; Gurugram, India
+            </div>
+          </div>
           <InquiryForm
             title="Tell Us What You Need Help With"
             description="Share a few details and our team will get back to you within 24 hours."
           />
-        </div>
-      </section>
-
-      {/* ================= FINAL CTA ================= */}
-      <section className="py-20 text-center text-white bg-blue">
-        <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4 font-heading">
-            Ready to Build Your Business in India?
-          </h2>
-          <p className="text-white/70 mb-8">
-            Whether you're entering India for the first time or already operating here, AU Corporate can help you navigate the next step.
-          </p>
-          <div className="flex flex-col xs:flex-row gap-3 justify-center">
-            <Button asChild style={{ backgroundColor: GOLD }} className="text-black">
-              <Link href="/contact">Talk to an AU Corporate Expert</Link>
-            </Button>
-            <Button asChild variant="outline" className="text-white border-white/40 hover:bg-white/10 bg-transparent">
-              <Link href="/services">Explore Our Services</Link>
-            </Button>
-          </div>
         </div>
       </section>
 
