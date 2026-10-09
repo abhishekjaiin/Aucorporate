@@ -256,6 +256,9 @@ export const metadata: Metadata = {
   title: "India Business Setup & Compliance | AU Corporate",
   description:
     "AU Corporate is a CA-led team that helps foreign companies set up and run businesses in India, with support for tax, accounting and ongoing compliance.",
+  alternates: {
+    canonical: "https://www.theaucorp.com",
+  },
 }
 
 export default function HomePage() {
