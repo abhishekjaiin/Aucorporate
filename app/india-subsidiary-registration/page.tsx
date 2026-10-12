@@ -1,8 +1,16 @@
 import Link from "next/link"
+import { Check, ArrowRight } from "lucide-react"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
+
+const heroFacts = [
+  { title: "Fixed Fee", body: "USD 750–1,000 all-inclusive" },
+  { title: "4–6 Weeks Timeline", body: "From signed documents to FC-GPR" },
+  { title: "Resident Director Service", body: "A professional resident director, if you need one" },
+  { title: "Registered Office Service", body: "An Indian registered address, if you don't have one" },
+]
 
 const youGet = [
   "A registered Indian private limited company with its Certificate of Incorporation",
@@ -50,6 +58,15 @@ const countryGuides = [
   { label: "China", href: "/india-entry-for-china-companies" },
 ]
 
+const afterLinks = [
+  { label: "Accounting and Reporting", href: "/accounting-reporting-audit-support" },
+  { label: "FEMA and RBI Compliance", href: "/fema-rbi-compliance" },
+  { label: "Tax and Transfer Pricing", href: "/corporate-tax-gst-transfer-pricing" },
+  { label: "Secretarial Compliance", href: "/secretarial-roc-compliance" },
+  { label: "Payroll and Expat Services", href: "/payroll-expat-services" },
+  { label: "Foreign Subsidiary in India — Full Guide", href: "/india-business-setup/foreign-subsidiary-india" },
+]
+
 const faqs = [
   { q: "How much does it cost to register a subsidiary in India?", a: "Registering a subsidiary in India with AU Corporate costs USD 750–1,000, all-inclusive. The fee covers government fees and our professional fees for a subsidiary with INR 10 lakh share capital. Larger share capital or some states cost more, and we confirm a fixed quote before we start." },
   { q: "How long does it take to register a subsidiary in India?", a: "Registering a subsidiary in India typically takes 4–6 weeks from the day we receive your signed and authenticated documents. Notarising and apostilling documents in your own country is usually the longest step, so we prepare the Indian filings in parallel." },
@@ -72,6 +89,8 @@ const faqs = [
   { q: "Can AU Corporate run the subsidiary after incorporation?", a: "AU Corporate can run your Indian subsidiary after incorporation, including accounting, payroll, GST, TDS, FEMA filings, transfer pricing, audit support and annual returns. Most of our clients stay with us, so they have one team from setup onwards." },
   { q: "Can AU Corporate take over compliance for an existing Indian subsidiary?", a: "AU Corporate can take over compliance for a foreign company's existing Indian subsidiary. We start by reviewing past filings, fix any gaps, and then manage the monthly and annual compliance going forward." },
 ]
+const faqsLeft = faqs.slice(0, Math.ceil(faqs.length / 2))
+const faqsRight = faqs.slice(Math.ceil(faqs.length / 2))
 
 export default function IndiaSubsidiaryRegistrationPage() {
   return (
@@ -79,69 +98,84 @@ export default function IndiaSubsidiaryRegistrationPage() {
       <Breadcrumb items={[{ label: "Foreign Subsidiary in India", href: "/india-business-setup/foreign-subsidiary-india" }, { label: "India Subsidiary Registration" }]} />
 
       {/* HERO */}
-      <section className="py-20 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-yellow-400">Foreign Subsidiary in India</span>
-          <h1 className="mb-6 mt-3 text-4xl font-bold md:text-5xl">
-            India Subsidiary Registration for Foreign Companies
-          </h1>
-          <p className="mb-4 text-xl leading-relaxed text-white/85">
-            Incorporation of your wholly owned subsidiary or joint venture, including name approval, PAN and TAN, bank account opening, share issue to the parent and FC-GPR filing.
-          </p>
-          <p className="text-white/70 leading-relaxed">
-            150+ subsidiaries incorporated for parent companies from 10+ countries, since 2016. We handle the whole registration from India: structure, filings, bank account, share issue and the RBI reporting — you sign a handful of documents in your own country, and we do the rest.
-          </p>
-        </div>
-      </section>
-
-      {/* TRUST STRIP */}
-      <section className="py-12 bg-gray-100 border-y">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-            {[
-              { value: "USD 750–1,000", label: "All-inclusive registration fee" },
-              { value: "4–6 Weeks", label: "From signed documents to FC-GPR" },
-              { value: "150+", label: "Subsidiaries incorporated" },
-              { value: "Since 2016", label: "Serving foreign parent companies" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-yellow-600 mb-1">{stat.value}</div>
-                <p className="text-xs sm:text-sm text-gray-600">{stat.label}</p>
+      <section className="bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white py-14 md:py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row gap-10 lg:items-center">
+            <div className="flex-[1.4] min-w-0">
+              <span className="text-sm font-semibold uppercase tracking-wider text-gold">Foreign Subsidiary in India</span>
+              <h1 className="mb-5 mt-3 text-4xl font-bold md:text-5xl leading-tight">
+                India Subsidiary Registration for Foreign Companies
+              </h1>
+              <p className="mb-6 text-xl leading-relaxed text-white/85 max-w-2xl">
+                Incorporation of your wholly owned subsidiary or joint venture, including name approval, PAN and TAN, bank account opening, share issue to the parent and FC-GPR filing.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <a href="https://cal.com/abhishek-jaiin-ybbklq/30min" className="inline-block px-5 py-3 rounded-lg font-bold text-sm bg-gold text-[#081a42] hover:bg-gold-dark transition">Book Consultation with an Expert</a>
+                <a href="#contact" className="inline-block px-5 py-3 rounded-lg font-bold text-sm border-2 border-white text-white hover:bg-white/10 transition">Get a Fixed Quote</a>
               </div>
-            ))}
+              <p className="text-sm text-white/70">150+ Subsidiaries Incorporated &middot; Parent Companies from 10+ Countries &middot; Since 2016</p>
+            </div>
+            <aside className="flex-1 min-w-[280px] rounded-2xl border border-white/20 bg-white/5 p-6 md:p-7" aria-label="Package summary">
+              <ul className="space-y-5">
+                {heroFacts.map((f) => (
+                  <li key={f.title} className="flex gap-3">
+                    <span className="mt-0.5 flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-gold">
+                      <Check size={13} strokeWidth={3} className="text-[#081a42]" />
+                    </span>
+                    <div>
+                      <strong className="block text-white font-bold">{f.title}</strong>
+                      <span className="block text-sm text-white/70">{f.body}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
 
       {/* INTRO */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">We Set Up Your Indian Subsidiary, End to End</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            An Indian subsidiary is a private limited company owned by your parent company. It can hire staff, sign contracts, invoice customers and bill your parent, with its liability kept separate from yours. For the full step-by-step incorporation process and FDI eligibility rules, see our{" "}
-            <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">company registration guide</Link>.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            AU Corporate handles the whole registration from India: structure, filings, bank account, share issue and the RBI reporting. You sign a handful of documents in your own country, and we do the rest.
-          </p>
-          <h3 className="text-xl font-bold text-gray-900 mb-4">You Get</h3>
-          <ul className="list-disc pl-6 space-y-2 text-gray-600">
-            {youGet.map((item) => (<li key={item}>{item}</li>))}
-          </ul>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-10">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">We Set Up Your Indian Subsidiary, End to End</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                An Indian subsidiary is a private limited company owned by your parent company. It can hire staff, sign contracts, invoice customers and bill your parent, with its liability kept separate from yours. For the full step-by-step incorporation process and FDI eligibility rules, see our{" "}
+                <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">company registration guide</Link>.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                AU Corporate handles the whole registration from India: structure, filings, bank account, share issue and the RBI reporting. You sign a handful of documents in your own country, and we do the rest.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">You Get</h3>
+              <ul className="space-y-3">
+                {youGet.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1 flex h-[18px] w-[18px] flex-shrink-0 items-center justify-center rounded-full bg-gold">
+                      <Check size={11} strokeWidth={3} className="text-[#081a42]" />
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* WHAT WE NEED FROM YOU */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Need from You</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
             Six things from the parent company. We send a checklist for your country, so documents are authenticated correctly the first time.
           </p>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4">
             {needFromYou.map((item) => (
-              <div key={item.title} className="p-6 bg-white border rounded-lg">
-                <div className="w-8 h-8 rounded-full bg-[#081a42] text-yellow-400 font-bold text-sm flex items-center justify-center mb-3">{item.n}</div>
+              <div key={item.title} className="p-5 bg-white border border-gray-200 rounded-xl">
+                <div className="w-8 h-8 rounded-full bg-[#081a42] text-gold font-bold text-sm flex items-center justify-center mb-3">{item.n}</div>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
               </div>
@@ -152,7 +186,7 @@ export default function IndiaSubsidiaryRegistrationPage() {
 
       {/* FIVE STEPS */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">How AU Helps, in Five Steps</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
             We prepare the Indian filings while your documents are being authenticated, so the two don&apos;t hold each other up.
@@ -171,15 +205,15 @@ export default function IndiaSubsidiaryRegistrationPage() {
 
       {/* WHAT'S INCLUDED */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What&apos;s Included in the Package</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
-            One all-inclusive price of USD 750–1,000, with a fixed quote confirmed before we start.
+            One all-inclusive price of USD 750&ndash;1,000, with a fixed quote confirmed before we start.
           </p>
           <div className="grid sm:grid-cols-2 gap-3 mb-6">
             {included.map((item) => (
-              <div key={item} className="flex items-start gap-3 bg-white border rounded-lg p-4">
-                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#081a42] text-yellow-400 text-xs font-bold flex items-center justify-center mt-0.5">✓</span>
+              <div key={item} className="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-4">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#081a42] text-gold text-xs font-bold flex items-center justify-center mt-0.5">&#10003;</span>
                 <span className="text-sm text-gray-700">{item}</span>
               </div>
             ))}
@@ -192,19 +226,20 @@ export default function IndiaSubsidiaryRegistrationPage() {
 
       {/* SETTING UP FROM YOUR COUNTRY */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Setting Up from Your Country</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
             Documents, authentication, tax treaties and reporting differ by country. Choose yours for a detailed guide.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {countryGuides.map((c) => (
               <Link
                 key={c.href}
                 href={c.href}
-                className="px-4 py-2 bg-secondary/50 hover:bg-secondary border border-gray-200 rounded-lg text-sm font-semibold text-gray-700 hover:text-gold-dark transition"
+                className="flex items-center justify-between gap-2 bg-white border border-gray-200 rounded-lg px-4 py-4 font-bold text-[#081a42] hover:border-gold-dark hover:shadow-sm transition"
               >
-                {c.label} Guide →
+                {c.label}
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-gold-dark">Guide <ArrowRight size={14} /></span>
               </Link>
             ))}
           </div>
@@ -213,26 +248,40 @@ export default function IndiaSubsidiaryRegistrationPage() {
 
       {/* AFTER SETUP */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">After Setup, We Can Run It for You</h2>
-          <p className="text-gray-600 leading-relaxed mb-6">
-            Accounting, payroll, GST, TDS, FEMA filings, transfer pricing, secretarial compliance and audit support, from the same team that set up your Indian subsidiary.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/accounting-reporting-audit-support" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Accounting and Reporting</Link>
-            <Link href="/fema-rbi-compliance" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">FEMA and RBI Compliance</Link>
-            <Link href="/corporate-tax-gst-transfer-pricing" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Tax and Transfer Pricing</Link>
-            <Link href="/secretarial-roc-compliance" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Secretarial Compliance</Link>
-            <Link href="/payroll-expat-services" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Payroll and Expat Services</Link>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="flex flex-wrap gap-8 items-center justify-between border border-gray-200 rounded-2xl p-8 bg-white">
+            <div className="flex-1 min-w-[280px]">
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">After Setup, We Can Run It for You</h2>
+              <p className="text-gray-600">
+                Accounting, payroll, GST, TDS, FEMA filings, transfer pricing, secretarial compliance and audit support, from the same team that set up your Indian subsidiary.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {afterLinks.map((l) => (
+                <Link key={l.href} href={l.href} className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">
+                  {l.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
-          <FaqAccordion faqs={faqs} />
+      <section className="py-20 bg-white" id="faq">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-2 text-gray-900">Questions Before You Start</h2>
+          <p className="text-gray-600 mb-6">For detailed rules, see the guide for your country above.</p>
+          <p className="text-sm text-gray-600 mb-1">
+            Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+          </p>
+          <p className="text-sm text-gray-500 mb-10">
+            This is general guidance based on Indian law and practice as at the date above. It is not advice for your specific case, and rules can change.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-x-10">
+            <FaqAccordion faqs={faqsLeft} />
+            <FaqAccordion faqs={faqsRight} />
+          </div>
         </div>
       </section>
 
@@ -252,7 +301,7 @@ export default function IndiaSubsidiaryRegistrationPage() {
       />
 
       {/* LEAD FORM */}
-      <section className="py-16 bg-secondary/50">
+      <section className="py-16 bg-secondary/50" id="contact">
         <div className="max-w-5xl mx-auto px-4">
           <LeadForm
             title="Ready to Register Your Indian Subsidiary?"

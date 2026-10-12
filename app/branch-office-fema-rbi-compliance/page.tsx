@@ -1,8 +1,22 @@
 import Link from "next/link"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
-import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
+
+const heroChecklist = [
+  { title: "Every RBI Date Tracked", body: "One clear calendar" },
+  { title: "Annual Activity Certificate", body: "Prepared with the auditor" },
+  { title: "Profit Remittance", body: "Certificates and bank paperwork" },
+  { title: "Multiple Countries Covered", body: "USA, UK, Singapore, Australia, Germany, Japan and China" },
+]
+
+const youGet = [
+  "Annual Activity Certificate filed every year",
+  "Profit remittances cleared with the right paperwork",
+  "Remittance records for each year",
+  "Additional office applications prepared",
+  "A filing register for banks and auditors",
+]
 
 const handledFilings = [
   { tag: "Before You Start", title: "Form FNC Application", body: "Eligibility check, Form FNC and documents for the AD bank or RBI, and the UIN." },
@@ -24,11 +38,11 @@ const needFromYou = [
 ]
 
 const calendar = [
-  { when: "Before setting up", what: "Form FNC and approval" },
-  { when: "After approval", what: "UIN recorded and bank account opened" },
-  { when: "Each remittance", what: "Inward remittance records; profit remittance paperwork" },
-  { when: "By 30 September", what: "Annual Activity Certificate with audited accounts" },
-  { when: "When an office is added", what: "Fresh Form FNC" },
+  { when: "Before setting up", what: "Form FNC and approval", help: "Prepared and filed" },
+  { when: "After approval", what: "UIN recorded and bank account opened", help: "Coordinated" },
+  { when: "Each remittance", what: "Inward remittance records; profit remittance paperwork", help: "Prepared" },
+  { when: "By 30 September", what: "Annual Activity Certificate with audited accounts", help: "Prepared and filed" },
+  { when: "When an office is added", what: "Fresh Form FNC", help: "Prepared and filed" },
 ]
 
 const included = [
@@ -40,6 +54,15 @@ const included = [
   "Forms 15CA and 15CB",
   "Compounding Applications",
   "A FEMA Calendar with Reminders",
+]
+
+const afterLinks = [
+  { label: "Branch Office in India (Complete Guide)", href: "/branch-office-in-india" },
+  { label: "Branch Office Registration", href: "/branch-office-registration" },
+  { label: "Branch Office Accounting, Reporting and Audit", href: "/branch-office-accounting-audit" },
+  { label: "Branch Office Tax, GST and Transfer Pricing", href: "/branch-office-tax-gst-transfer-pricing" },
+  { label: "ROC Compliance for Foreign Companies (FC Forms)", href: "/foreign-company-roc-compliance" },
+  { label: "Branch Office Payroll and Labour Law Compliance", href: "/branch-office-payroll-compliance" },
 ]
 
 const faqs = [
@@ -59,60 +82,102 @@ const faqs = [
   { q: "Can AU Corporate take over FEMA compliance for my existing branch office?", a: "Yes. AU Corporate reviews your approval letter, UIN, remittances and past certificates, fixes any gaps, and then runs the annual calendar. AU Corporate handles this for foreign companies from more than 10 countries, including the USA, UK, Singapore, Australia, Germany, Japan and China. We also handle compounding where earlier filings were missed." },
 ]
 
+const faqsCol1 = faqs.slice(0, Math.ceil(faqs.length / 2))
+const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
+
 export default function BranchOfficeFemaRbiCompliancePage() {
   return (
     <main className="min-h-screen bg-white">
       <Breadcrumb items={[{ label: "Branch Office in India", href: "/branch-office-in-india" }, { label: "FEMA and RBI Compliance" }]} />
 
       {/* HERO */}
-      <section className="py-20 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-yellow-400">Branch Office in India</span>
-          <h1 className="mb-6 mt-3 text-4xl font-bold md:text-5xl">
-            FEMA and RBI Compliance for Your India Branch Office
-          </h1>
-          <p className="mb-4 text-xl leading-relaxed text-white/85">
-            Form FNC, UIN, Annual Activity Certificate, profit remittance, compounding and closure for the branch office of your foreign company.
-          </p>
-          <p className="text-white/70 leading-relaxed">
-            A branch office in India operates under FEMA and the RBI-approved terms of its Form FNC. It must receive funds through banking channels, stay within permitted activities, file an Annual Activity Certificate from a Chartered Accountant with its AD bank each year, and remit profit only after tax with the proper certificates.
-          </p>
+      <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid lg:grid-cols-[1.3fr_1fr] gap-10 items-center">
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-wider text-gold">Branch Office in India</span>
+              <h1 className="mb-4 mt-3 text-4xl font-bold md:text-5xl leading-tight">
+                FEMA and RBI Compliance for Your India Branch Office
+              </h1>
+              <p className="mb-6 text-xl leading-relaxed text-white/85 max-w-2xl">
+                Form FNC, UIN, Annual Activity Certificate, profit remittance, compounding and closure for the branch office of your foreign company.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <Link href="https://cal.com/abhishek-jaiin-ybbklq/30min" target="_blank" rel="noreferrer" className="inline-block rounded-lg bg-gold px-6 py-3 font-bold text-[#081a42] hover:bg-gold-dark transition-colors">
+                  Book Consultation with an Expert
+                </Link>
+                <Link href="#contact" className="inline-block rounded-lg border-2 border-white px-6 py-3 font-bold text-white hover:bg-white/10 transition-colors">
+                  Get a Quote
+                </Link>
+              </div>
+              <p className="text-sm text-white/70">150+ Regular Clients · Chartered Accountants and Company Secretaries · Since 2016</p>
+            </div>
+            <aside className="rounded-2xl border border-white/20 bg-white/10 p-6">
+              <ul className="space-y-4">
+                {heroChecklist.map((item) => (
+                  <li key={item.title} className="flex gap-3">
+                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold text-[10px] font-bold text-[#081a42]">✓</span>
+                    <div>
+                      <strong className="block text-white">{item.title}</strong>
+                      <span className="block text-sm text-white/70">{item.body}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          </div>
         </div>
       </section>
 
-      {/* INTRO */}
+      {/* QUICK ANSWER + INTRO */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">FEMA Compliance Without the Penalties</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            FEMA compliance is separate from company law and tax. A missed certificate or an improper remittance can lead to compounding and delay later transactions. See the{" "}
-            <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>{" "}
-            for the eligibility and approval framework this ongoing compliance sits on top of.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            AU Corporate keeps a live record of your approval, remittances and filings, and prepares every certificate before it is due.
-          </p>
-          <h3 className="text-xl font-bold text-gray-900 mb-4">What You Get</h3>
-          <ul className="list-disc pl-6 space-y-2 text-gray-600">
-            <li>Annual Activity Certificate filed every year</li>
-            <li>Profit remittances cleared with the right paperwork</li>
-            <li>Remittance records for each year</li>
-            <li>Additional office applications prepared</li>
-            <li>A filing register for banks and auditors</li>
-          </ul>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="rounded-r-xl border-l-4 border-gold bg-[#fffbe6] p-6 mb-12">
+            <h2 className="text-xl font-bold text-gray-900 mb-2">FEMA and RBI Compliance for a Branch Office: The Short Answer</h2>
+            <p className="text-gray-700 leading-relaxed">
+              A branch office in India operates under FEMA and the RBI-approved terms of its Form FNC. It must receive funds through banking channels, stay within permitted activities, file an Annual Activity Certificate from a Chartered Accountant with its AD bank each year, and remit profit only after tax with the proper certificates. AU Corporate, a New Delhi firm of Chartered Accountants and Company Secretaries, prepares and files all of this at reasonable fees.
+            </p>
+            <p className="mt-3 text-sm text-gray-500">
+              Written and reviewed by <strong className="text-gray-700">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) · Last reviewed: 9 October 2026
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-10">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">FEMA Compliance Without the Penalties</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                FEMA compliance is separate from company law and tax. A missed certificate or an improper remittance can lead to compounding and delay later transactions. See the{" "}
+                <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>{" "}
+                for the eligibility and approval framework this ongoing compliance sits on top of.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                AU Corporate keeps a live record of your approval, remittances and filings, and prepares every certificate before it is due.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">What You Get</h3>
+              <ul className="space-y-3">
+                {youGet.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-gold" />
+                    <span className="text-gray-600">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* FILINGS */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">What We Handle, Filing by Filing</h2>
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Handle, Filing by Filing</h2>
           <p className="text-gray-600 leading-relaxed mb-8">The FEMA and RBI work a branch office needs, in the order it arises.</p>
           <div className="grid sm:grid-cols-2 gap-6">
             {handledFilings.map((item) => (
               <div key={item.title} className="p-6 bg-white border rounded-lg">
-                <span className="text-xs font-bold uppercase tracking-wider text-gold-dark">{item.tag}</span>
-                <h3 className="font-bold text-gray-900 mt-1 mb-2">{item.title}</h3>
+                <span className="inline-block text-xs font-bold uppercase tracking-wider text-[#7a5c00] bg-[#fffbe6] px-2 py-0.5 rounded mb-3">{item.tag}</span>
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
               </div>
             ))}
@@ -128,6 +193,7 @@ export default function BranchOfficeFemaRbiCompliancePage() {
           <div className="grid sm:grid-cols-2 gap-6">
             {needFromYou.map((item) => (
               <div key={item.n} className="p-6 bg-secondary/20 border rounded-lg">
+                <span className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#081a42] text-sm font-bold text-gold">{item.n}</span>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
               </div>
@@ -138,15 +204,16 @@ export default function BranchOfficeFemaRbiCompliancePage() {
 
       {/* CALENDAR */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">The FEMA and RBI Calendar for a Branch Office</h2>
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">The FEMA and RBI Calendar for a Branch Office</h2>
           <p className="text-gray-600 leading-relaxed mb-8">What is due, and when. Dates can change by notification, so we confirm those that apply to your branch office.</p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-gray-300 bg-white">
-              <thead className="bg-gray-100">
+              <thead className="bg-[#081a42] text-white">
                 <tr>
                   <th className="border border-gray-300 p-4 text-left font-bold">When</th>
                   <th className="border border-gray-300 p-4 text-left font-bold">What</th>
+                  <th className="border border-gray-300 p-4 text-left font-bold">How AU Helps</th>
                 </tr>
               </thead>
               <tbody>
@@ -154,6 +221,7 @@ export default function BranchOfficeFemaRbiCompliancePage() {
                   <tr key={row.when} className={i % 2 === 1 ? "bg-gray-50" : undefined}>
                     <td className="border border-gray-300 p-4 font-semibold text-sm whitespace-nowrap">{row.when}</td>
                     <td className="border border-gray-300 p-4 text-sm">{row.what}</td>
+                    <td className="border border-gray-300 p-4 text-sm">{row.help}</td>
                   </tr>
                 ))}
               </tbody>
@@ -165,12 +233,13 @@ export default function BranchOfficeFemaRbiCompliancePage() {
       {/* INCLUDED */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">What&apos;s Included</h2>
-          <p className="text-gray-600 leading-relaxed mb-6">Reasonable fees, confirmed in writing before work starts.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What&apos;s Included in the Package</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">Reasonable fees, confirmed in writing before we start.</p>
           <ul className="grid sm:grid-cols-2 gap-3 text-gray-700 mb-6">
             {included.map((item) => (
-              <li key={item} className="flex items-start gap-2 bg-secondary/20 border rounded-lg p-3 text-sm">
-                <span className="text-gold-dark font-bold">✓</span> {item}
+              <li key={item} className="flex items-start gap-3 bg-secondary/20 border rounded-lg p-3 text-sm">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#081a42] text-xs font-bold text-gold">✓</span>
+                <span className="pt-0.5">{item}</span>
               </li>
             ))}
           </ul>
@@ -183,11 +252,38 @@ export default function BranchOfficeFemaRbiCompliancePage() {
         </div>
       </section>
 
+      {/* AFTER / CROSS-LINKS */}
+      <section className="py-16 bg-secondary/30">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="rounded-2xl border border-gray-200 bg-white p-8 flex flex-wrap items-center justify-between gap-6">
+            <div className="flex-1 min-w-[260px]">
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">One Team for the Rest of Your Branch Office Compliance</h2>
+              <p className="text-gray-600">Your branch office accounts, tax returns, RBI filings and ROC forms must agree with each other. The same team handles each of them.</p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {afterLinks.map((link) => (
+                <Link key={link.href} href={link.href} className="inline-block rounded-full border border-[#081a42] px-5 py-2.5 text-sm font-semibold text-[#081a42] hover:bg-[#081a42] hover:text-white transition-colors">
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
-          <FaqAccordion faqs={faqs} />
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">Questions Before You Start</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-2">Straight answers to the questions foreign finance teams ask most about a branch office in India.</p>
+          <p className="text-sm text-gray-500 text-center">
+            Written and reviewed by <strong className="text-gray-700">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) · Last reviewed: 9 October 2026
+          </p>
+          <p className="text-sm text-gray-500 text-center mb-10">This is general guidance based on Indian law and practice as at the date above. It is not advice for your specific case, and rules can change.</p>
+          <div className="grid sm:grid-cols-2 gap-x-10">
+            <FaqAccordion faqs={faqsCol1} />
+            <FaqAccordion faqs={faqsCol2} />
+          </div>
         </div>
       </section>
 
@@ -207,56 +303,11 @@ export default function BranchOfficeFemaRbiCompliancePage() {
       />
 
       {/* LEAD FORM */}
-      <section className="py-16 bg-secondary/50">
+      <section className="py-16 bg-secondary/50" id="contact">
         <div className="max-w-5xl mx-auto px-4">
           <LeadForm
             title="Need Ongoing FEMA and RBI Compliance for Your Branch Office?"
             description="Tell us about your branch office's approval date and remittance history, and our team will confirm the Annual Activity Certificate and filing calendar for your situation."
-          />
-        </div>
-      </section>
-
-      {/* RELATED */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <RelatedResources
-            links={[
-              {
-                label: "Branch Office in India (Complete Guide)",
-                href: "/branch-office-in-india",
-                description: "The full hub guide to RBI approval, eligibility, permitted activities, tax and closure.",
-              },
-              {
-                label: "Branch Office Registration",
-                href: "/branch-office-registration",
-                description: "Form FNC, RBI/AD-bank approval, UIN and ROC Form FC-1 for setting up a new branch office.",
-              },
-              {
-                label: "Branch Office Tax, GST and Transfer Pricing",
-                href: "/branch-office-tax-gst-transfer-pricing",
-                description: "Foreign-company tax rate, advance tax, TDS, GST and transfer pricing for the branch.",
-              },
-              {
-                label: "Branch Office Accounting, Reporting and Audit",
-                href: "/branch-office-accounting-audit",
-                description: "Monthly bookkeeping, head office account reconciliation and audit support.",
-              },
-              {
-                label: "ROC Compliance for Foreign Companies (FC Forms)",
-                href: "/foreign-company-roc-compliance",
-                description: "Form FC-1 registration, FC-2 changes, FC-3 accounts and FC-4 annual return.",
-              },
-              {
-                label: "Branch Office Payroll and Labour Law Compliance",
-                href: "/branch-office-payroll-compliance",
-                description: "Payroll, EPF/ESIC, professional tax, Labour Codes compliance and FRRO support for expats.",
-              },
-              {
-                label: "Ongoing Regulatory Compliance",
-                href: "/india-business-setup/regulatory-compliance",
-                description: "The broader FEMA/FDI compliance landscape for entities carrying foreign investment.",
-              },
-            ]}
           />
         </div>
       </section>
