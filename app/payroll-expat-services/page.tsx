@@ -1,8 +1,21 @@
 import Link from "next/link"
+import { Check } from "lucide-react"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
+
+const heroFacts = [
+  { title: "Reasonable Monthly Fees", body: "A clear written quote before we start" },
+  { title: "On-Time Payroll", body: "Salary, PF, ESI and tax paid on the due dates" },
+  { title: "Expat Tax and Social Security", body: "For employees posted to India from abroad" },
+  { title: "Take Over Existing Payroll", body: "Start from any month" },
+]
+
+const quickAnswer = {
+  heading: "Payroll and Expat Services for an Indian Subsidiary: The Short Answer",
+  text: "An Indian subsidiary must pay salaries on time, deduct income tax at source, and register for and pay provident fund (PF), employee state insurance (ESI) and state-level taxes. Employees posted from abroad have extra rules on tax residence and social security. AU Corporate, a New Delhi firm of Chartered Accountants and Company Secretaries serving foreign parents since 2016, runs payroll, social security compliance (PF and ESI), professional tax, labour law compliance, recruitment and FRRO registration for expats at reasonable monthly fees.",
+}
 
 const youGet = [
   "Monthly payroll with payslips and a payroll summary for the parent",
@@ -34,6 +47,14 @@ const needFromYou = [
   { n: "5", title: "Earlier Payroll Records", body: "Past payslips, returns and tax certificates for an existing payroll." },
 ]
 
+const workSteps = [
+  { wk: "Days 1-3", title: "Inputs", body: "You share attendance and pay changes." },
+  { wk: "Days 3-5", title: "Calculate", body: "We calculate pay, tax and statutory deductions." },
+  { wk: "Days 5-6", title: "Approve", body: "You approve the payroll summary." },
+  { wk: "Last Working Days", title: "Pay", body: "Salary is paid and payslips are sent." },
+  { wk: "By the 15th", title: "Comply", body: "PF, ESI and tax are paid and returns filed." },
+]
+
 const included = [
   "Recruitment Support",
   "Employment Contracts and HR Policies",
@@ -58,6 +79,15 @@ const calendar = [
   { when: "Before the visa expires", what: "Visa extension through the FRRO", how: "Application prepared and filed" },
   { when: "Quarterly", what: "TDS returns on salary", how: "Prepared and filed" },
   { when: "By 15 June", what: "Annual tax certificate for each employee", how: "Prepared and issued" },
+]
+
+const afterLinks = [
+  { label: "Accounting, Reporting and Audit Support", href: "/accounting-reporting-audit-support" },
+  { label: "Corporate Tax, GST and Transfer Pricing", href: "/corporate-tax-gst-transfer-pricing" },
+  { label: "Secretarial and ROC Compliance", href: "/secretarial-roc-compliance" },
+  { label: "FEMA and RBI Compliance", href: "/fema-rbi-compliance" },
+  { label: "India Subsidiary Registration", href: "/india-subsidiary-registration" },
+  { label: "Foreign Subsidiary in India — Full Guide", href: "/india-business-setup/foreign-subsidiary-india" },
 ]
 
 const faqs = [
@@ -96,6 +126,8 @@ const faqs = [
   { q: "What is gratuity and when must an Indian subsidiary pay it?", a: "In India, gratuity is a lump sum paid to an employee on leaving after a minimum period of service, calculated from the last salary and the years of service, in covered establishments. AU Corporate works out the amount for exits and the yearly provision in the books." },
   { q: "Can AU Corporate handle payroll for an expat from my country?", a: "AU Corporate handles payroll and expat compliance for employees from more than 10 countries, including the USA, UK, Singapore, Australia, Germany, Japan, China, Hong Kong, Spain, France and the UAE. We explain how Indian tax and social security interact with your home-country payroll." },
 ]
+const faqsLeft = faqs.slice(0, Math.ceil(faqs.length / 2))
+const faqsRight = faqs.slice(Math.ceil(faqs.length / 2))
 
 export default function PayrollExpatServicesPage() {
   return (
@@ -103,65 +135,87 @@ export default function PayrollExpatServicesPage() {
       <Breadcrumb items={[{ label: "Foreign Subsidiary in India", href: "/india-business-setup/foreign-subsidiary-india" }, { label: "Payroll and Expat Services" }]} />
 
       {/* HERO */}
-      <section className="py-20 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-yellow-400">Foreign Subsidiary in India</span>
-          <h1 className="mb-6 mt-3 text-4xl font-bold md:text-5xl">
-            Payroll and Expat Services for Your India Subsidiary
-          </h1>
-          <p className="mb-4 text-xl leading-relaxed text-white/85">
-            Payroll processing, PF and ESI, employment contracts, and tax and social security compliance for expats working in India, so your team in India is paid correctly and on time.
-          </p>
-          <p className="text-white/70 leading-relaxed">
-            An Indian subsidiary must pay salaries on time, deduct income tax at source, and register for and pay provident fund, employee state insurance and state-level taxes. Employees posted from abroad have extra rules on tax residence and social security — we explain the position before the employee arrives.
-          </p>
-        </div>
-      </section>
-
-      {/* TRUST STRIP */}
-      <section className="py-12 bg-gray-100 border-y">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-            {[
-              { value: "12%", label: "Standard PF contribution rate" },
-              { value: "20+", label: "Employee threshold for mandatory PF" },
-              { value: "14 Days", label: "FRRO registration window on arrival" },
-              { value: "150+", label: "Regular clients since 2016" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-yellow-600 mb-1">{stat.value}</div>
-                <p className="text-xs sm:text-sm text-gray-600">{stat.label}</p>
+      <section className="bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white py-14 md:py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row gap-10 lg:items-center">
+            <div className="flex-[1.4] min-w-0">
+              <span className="text-sm font-semibold uppercase tracking-wider text-gold">Foreign Subsidiary in India</span>
+              <h1 className="mb-5 mt-3 text-4xl font-bold md:text-5xl leading-tight">
+                Payroll and Expat Services for Your India Subsidiary
+              </h1>
+              <p className="mb-6 text-xl leading-relaxed text-white/85 max-w-2xl">
+                Payroll processing, PF and ESI, employment contracts, and tax and social security compliance for expats working in India, so your team in India is paid correctly and on time.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <a href="https://cal.com/abhishek-jaiin-ybbklq/30min" className="inline-block px-5 py-3 rounded-lg font-bold text-sm bg-gold text-[#081a42] hover:bg-gold-dark transition">Book Consultation with an Expert</a>
+                <a href="#contact" className="inline-block px-5 py-3 rounded-lg font-bold text-sm border-2 border-white text-white hover:bg-white/10 transition">Get a Quote</a>
               </div>
-            ))}
+              <p className="text-sm text-white/70">150+ Subsidiaries Incorporated &middot; 150+ Regular Clients &middot; Since 2016</p>
+            </div>
+            <aside className="flex-1 min-w-[280px] rounded-2xl border border-white/20 bg-white/5 p-6 md:p-7" aria-label="Service summary">
+              <ul className="space-y-5">
+                {heroFacts.map((f) => (
+                  <li key={f.title} className="flex gap-3">
+                    <span className="mt-0.5 flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-gold">
+                      <Check size={13} strokeWidth={3} className="text-[#081a42]" />
+                    </span>
+                    <div>
+                      <strong className="block text-white font-bold">{f.title}</strong>
+                      <span className="block text-sm text-white/70">{f.body}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
 
-      {/* INTRO */}
+      {/* QUICK ANSWER + INTRO */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pay Your India Team Correctly, from the First Month</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Indian payroll involves several registrations, monthly payments and yearly returns, and each state has its own rules. Mistakes show up in employees&apos; pay, in tax notices and in provident fund records that are hard to correct later.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            AU Corporate processes your payroll, makes the statutory payments, issues payslips and tax certificates, and prepares the employment documents. For expats, we explain the tax and social security position before the employee arrives.
-          </p>
-          <h3 className="text-xl font-bold text-gray-900 mb-4">You Get</h3>
-          <ul className="list-disc pl-6 space-y-2 text-gray-600">
-            {youGet.map((item) => (<li key={item}>{item}</li>))}
-          </ul>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="mb-14 rounded-r-xl border-l-4 border-gold bg-[#fffbe6] p-6 md:p-7">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">{quickAnswer.heading}</h2>
+            <p className="text-gray-700 leading-relaxed mb-3">{quickAnswer.text}</p>
+            <p className="text-sm text-gray-600">
+              Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-10">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Pay Your India Team Correctly, from the First Month</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Indian payroll involves several registrations, monthly payments and yearly returns, and each state has its own rules. Mistakes show up in employees&apos; pay, in tax notices and in provident fund records that are hard to correct later.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                AU Corporate processes your payroll, makes the statutory payments, issues payslips and tax certificates, and prepares the employment documents. For expats, we explain the tax and social security position before the employee arrives.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">You Get</h3>
+              <ul className="space-y-3">
+                {youGet.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1 flex h-[18px] w-[18px] flex-shrink-0 items-center justify-center rounded-full bg-gold">
+                      <Check size={11} strokeWidth={3} className="text-[#081a42]" />
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* STEP BY STEP */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Handle, Step by Step</h2>
           <p className="text-gray-600 leading-relaxed mb-8">The payroll and expat work an Indian subsidiary needs, in the order it arises.</p>
           <div className="grid sm:grid-cols-2 gap-5">
             {stepByStep.map((item) => (
-              <div key={item.title} className="p-6 bg-white border rounded-lg">
+              <div key={item.title} className="p-6 bg-white border border-gray-200 rounded-lg">
                 <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">{item.tag}</span>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
@@ -173,13 +227,13 @@ export default function PayrollExpatServicesPage() {
 
       {/* WHAT WE NEED */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Need from You</h2>
           <p className="text-gray-600 leading-relaxed mb-8">Five items to begin. For an existing payroll we start from your latest payslips and returns.</p>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4">
             {needFromYou.map((item) => (
-              <div key={item.title} className="p-6 bg-secondary/30 border rounded-lg">
-                <div className="w-8 h-8 rounded-full bg-[#081a42] text-yellow-400 font-bold text-sm flex items-center justify-center mb-3">{item.n}</div>
+              <div key={item.title} className="p-5 bg-secondary/30 border border-gray-200 rounded-xl">
+                <div className="w-8 h-8 rounded-full bg-[#081a42] text-gold font-bold text-sm flex items-center justify-center mb-3">{item.n}</div>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
               </div>
@@ -188,15 +242,32 @@ export default function PayrollExpatServicesPage() {
         </div>
       </section>
 
-      {/* WHAT'S INCLUDED */}
+      {/* HOW MONTHLY PAYROLL WORKS */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">How the Monthly Payroll Works</h2>
+          <p className="text-gray-600 leading-relaxed mb-8">The same steps every month, so your employees always know when they will be paid.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {workSteps.map((step) => (
+              <div key={step.title} className="border-t-4 border-gold bg-white rounded-b-lg p-4 shadow-sm">
+                <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">{step.wk}</span>
+                <h3 className="font-bold text-gray-900 mb-1">{step.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{step.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT'S INCLUDED */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What&apos;s Included in the Package</h2>
           <p className="text-gray-600 leading-relaxed mb-8">Reasonable monthly fees, confirmed in writing before we start.</p>
           <div className="grid sm:grid-cols-2 gap-3 mb-6">
             {included.map((item) => (
-              <div key={item} className="flex items-start gap-3 bg-white border rounded-lg p-4">
-                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#081a42] text-yellow-400 text-xs font-bold flex items-center justify-center mt-0.5">✓</span>
+              <div key={item} className="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-4">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#081a42] text-gold text-xs font-bold flex items-center justify-center mt-0.5">&#10003;</span>
                 <span className="text-sm text-gray-700">{item}</span>
               </div>
             ))}
@@ -208,11 +279,11 @@ export default function PayrollExpatServicesPage() {
       </section>
 
       {/* CALENDAR */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-secondary/30">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">The Payroll Compliance Calendar</h2>
           <p className="text-gray-600 leading-relaxed mb-8">What is due, and when, for an Indian subsidiary. We track every date for you.</p>
-          <div className="overflow-x-auto bg-secondary/30 border rounded-lg">
+          <div className="overflow-x-auto bg-white border border-gray-200 rounded-lg">
             <table className="w-full text-sm">
               <thead className="bg-[#081a42] text-white">
                 <tr>
@@ -237,24 +308,39 @@ export default function PayrollExpatServicesPage() {
       </section>
 
       {/* AFTER SETUP */}
-      <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">One Team for the Rest of Your Compliance</h2>
-          <p className="text-gray-600 leading-relaxed mb-6">Payroll figures must agree with your books, tax returns and statutory records. The same team handles each of them.</p>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/accounting-reporting-audit-support" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Accounting, Reporting and Audit Support</Link>
-            <Link href="/corporate-tax-gst-transfer-pricing" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Corporate Tax, GST and Transfer Pricing</Link>
-            <Link href="/secretarial-roc-compliance" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Secretarial and ROC Compliance</Link>
-            <Link href="/fema-rbi-compliance" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">FEMA and RBI Compliance</Link>
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="flex flex-wrap gap-8 items-center justify-between border border-gray-200 rounded-2xl p-8 bg-secondary/30">
+            <div className="flex-1 min-w-[280px]">
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">One Team for the Rest of Your Compliance</h2>
+              <p className="text-gray-600">Payroll figures must agree with your books, tax returns and statutory records. The same team handles each of them.</p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {afterLinks.map((l) => (
+                <Link key={l.href} href={l.href} className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">
+                  {l.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
-          <FaqAccordion faqs={faqs} />
+      <section className="py-20 bg-secondary/30" id="faq">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-2 text-gray-900">Questions Before You Start</h2>
+          <p className="text-gray-600 mb-6">Straight answers to the questions foreign finance teams ask most. Can&apos;t find yours? Ask us in the form below.</p>
+          <p className="text-sm text-gray-600 mb-1">
+            Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+          </p>
+          <p className="text-sm text-gray-500 mb-10">
+            This is general guidance based on Indian law and practice as at the date above. It is not advice for your specific case, and rules can change.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-x-10">
+            <FaqAccordion faqs={faqsLeft} />
+            <FaqAccordion faqs={faqsRight} />
+          </div>
         </div>
       </section>
 
@@ -274,7 +360,7 @@ export default function PayrollExpatServicesPage() {
       />
 
       {/* LEAD FORM */}
-      <section className="py-16 bg-secondary/50">
+      <section className="py-16 bg-white" id="contact">
         <div className="max-w-5xl mx-auto px-4">
           <LeadForm
             title="Need Payroll or Expat Support for Your India Team?"
@@ -283,7 +369,7 @@ export default function PayrollExpatServicesPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-4">
           <RelatedResources
             links={[

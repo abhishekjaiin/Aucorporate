@@ -1,8 +1,21 @@
 import Link from "next/link"
+import { Check } from "lucide-react"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
+
+const heroFacts = [
+  { title: "From USD 240 per Month", body: "Monthly accounting and bookkeeping, fixed fee" },
+  { title: "3-Day Onboarding", body: "Simple set-up, then a fixed monthly calendar" },
+  { title: "US GAAP or IFRS Reporting", body: "In the format your parent consolidates" },
+  { title: "Audit Support Every Year", body: "We coordinate your statutory auditor end to end" },
+]
+
+const quickAnswer = {
+  heading: "Accounting, Reporting and Audit Support for an Indian Subsidiary: The Short Answer",
+  text: "An Indian subsidiary of a foreign company needs monthly bookkeeping under Indian accounting standards, bank and party reconciliations, a fixed asset register, TDS and GST workings, a monthly reporting pack for the parent in US GAAP or IFRS, and a statutory audit every year. AU Corporate, a New Delhi firm of Chartered Accountants and CPAs serving foreign parents since 2016, handles the seven monthly steps for a fixed monthly fee starting at USD 240, from bookkeeping and reconciliations to TDS and GST workings and parent reporting, with onboarding in 3 days.",
+}
 
 const youGet = [
   "Books written up, with bank, vendor and customer balances reconciled",
@@ -37,6 +50,16 @@ const onboarding = [
   { wk: "Day 3", title: "Go-Live", body: "We confirm your named manager, the monthly closing calendar and the document checklist, and the first month's cycle starts." },
 ]
 
+const monthlyCycle = [
+  { wk: "Days 1–4", title: "1. Book", body: "Record the month's transactions in the books." },
+  { wk: "Days 3–5", title: "2. Bank", body: "Reconcile every bank account." },
+  { wk: "Days 4–6", title: "3. Vendors and Customers", body: "Reconcile balances, where required." },
+  { wk: "Days 5–6", title: "4. Fixed Assets", body: "Update the register and depreciation." },
+  { wk: "Days 6–7", title: "5. TDS", body: "Calculate the withholding tax liability." },
+  { wk: "Days 6–8", title: "6. GST", body: "Calculate the net GST liability." },
+  { wk: "Days 8–10", title: "7. Report", body: "Send the MIS and parent pack." },
+]
+
 const included = [
   "Monthly Accounting and Bookkeeping",
   "Bank Reconciliation",
@@ -57,6 +80,31 @@ const calendar = [
   { when: "April–August", what: "Statutory audit", how: "Schedules, working papers, auditor queries" },
   { when: "By 30 September", what: "Financial statements adopted at the AGM", how: "Finalised accounts, support for the AGM and ROC filing" },
   { when: "Following the audit", what: "Income tax return and transfer pricing", how: "Audited accounts handed over to the tax team" },
+]
+
+const reportingFrameworks = [
+  { tag: "US Parents", title: "US GAAP", body: "Books kept under Indian standards, with the monthly pack restated to US GAAP and reconciled to the statutory numbers." },
+  { tag: "Most Other Parents", title: "IFRS", body: "For parents that consolidate under IFRS or IFRS-based standards, with the pack mapped to your group's chart of accounts and template." },
+  { tag: "Local Frameworks", title: "Other Group Frameworks", body: "If your parent uses a local framework, such as Japanese or Chinese standards, tell us at the start and we confirm what we can support." },
+  { tag: "Every Parent", title: "Your Group Calendar", body: "Closing dates, reporting currency and review calls set to your parent's consolidation deadlines and time zone." },
+]
+
+const countryGuides = [
+  { label: "USA", href: "/india-entry-for-us-companies" },
+  { label: "UK", href: "/india-entry-for-uk-companies" },
+  { label: "Singapore", href: "/india-entry-for-singapore-companies" },
+  { label: "Australia", href: "/india-entry-for-australian-companies" },
+  { label: "Germany", href: "/india-entry-for-german-companies" },
+  { label: "Japan", href: "/india-entry-for-japan-companies" },
+  { label: "China", href: "/india-entry-for-china-companies" },
+]
+
+const afterLinks = [
+  { label: "Corporate Tax, GST and TDS", href: "/corporate-tax-gst-transfer-pricing" },
+  { label: "FEMA and RBI Compliance", href: "/fema-rbi-compliance" },
+  { label: "Payroll and Expat Services", href: "/payroll-expat-services" },
+  { label: "Secretarial and ROC", href: "/secretarial-roc-compliance" },
+  { label: "Foreign Subsidiary in India — Full Guide", href: "/india-business-setup/foreign-subsidiary-india" },
 ]
 
 const faqs = [
@@ -88,6 +136,8 @@ const faqs = [
   { q: "How does AU Corporate keep my financial data secure?", a: "AU Corporate uses access-controlled cloud tools, restricts client files to the engagement team and works under a confidentiality agreement. You keep ownership of the books and the software access at all times, and you can ask for a complete export of your data whenever you want." },
   { q: "Who will manage my accounts in India, and who reviews the work?", a: "Every subsidiary gets a named manager at AU Corporate who knows your books, your deadlines and your parent's reporting requirements. Chartered Accountants and CPAs on the team review the monthly close and the reporting pack before they reach your parent, so you have one contact and reviewed numbers." },
 ]
+const faqsLeft = faqs.slice(0, Math.ceil(faqs.length / 2))
+const faqsRight = faqs.slice(Math.ceil(faqs.length / 2))
 
 export default function AccountingReportingAuditSupportPage() {
   return (
@@ -95,67 +145,89 @@ export default function AccountingReportingAuditSupportPage() {
       <Breadcrumb items={[{ label: "Foreign Subsidiary in India", href: "/india-business-setup/foreign-subsidiary-india" }, { label: "Accounting, Reporting and Audit Support" }]} />
 
       {/* HERO */}
-      <section className="py-20 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-yellow-400">Foreign Subsidiary in India</span>
-          <h1 className="mb-6 mt-3 text-4xl font-bold md:text-5xl">
-            Accounting, Reporting and Audit Support for Your India Subsidiary
-          </h1>
-          <p className="mb-4 text-xl leading-relaxed text-white/85">
-            Monthly accounting, reconciliations, fixed assets, TDS and GST workings and reporting for the parent in US GAAP or IFRS, plus audit support, with onboarding in 3 days.
-          </p>
-          <p className="text-white/70 leading-relaxed">
-            150+ subsidiaries incorporated, 150+ regular clients, since 2016. Chartered Accountants and CPAs review the work, so your finance team abroad gets numbers it can rely on.
-          </p>
-        </div>
-      </section>
-
-      {/* TRUST STRIP */}
-      <section className="py-12 bg-gray-100 border-y">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-            {[
-              { value: "USD 240/mo", label: "Starting fixed monthly fee" },
-              { value: "3 Days", label: "Onboarding to go-live" },
-              { value: "US GAAP / IFRS", label: "Reporting formats supported" },
-              { value: "150+", label: "Regular clients" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-yellow-600 mb-1">{stat.value}</div>
-                <p className="text-xs sm:text-sm text-gray-600">{stat.label}</p>
+      <section className="bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white py-14 md:py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row gap-10 lg:items-center">
+            <div className="flex-[1.4] min-w-0">
+              <span className="text-sm font-semibold uppercase tracking-wider text-gold">Foreign Subsidiary in India</span>
+              <h1 className="mb-5 mt-3 text-4xl font-bold md:text-5xl leading-tight">
+                Accounting, Reporting and Audit Support for Your India Subsidiary
+              </h1>
+              <p className="mb-6 text-xl leading-relaxed text-white/85 max-w-2xl">
+                Monthly accounting, reconciliations, fixed assets, TDS and GST workings and reporting for the parent in US GAAP or IFRS, plus audit support, with onboarding in 3 days.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <a href="https://cal.com/abhishek-jaiin-ybbklq/30min" className="inline-block px-5 py-3 rounded-lg font-bold text-sm bg-gold text-[#081a42] hover:bg-gold-dark transition">Book Consultation with an Expert</a>
+                <a href="#contact" className="inline-block px-5 py-3 rounded-lg font-bold text-sm border-2 border-white text-white hover:bg-white/10 transition">Get a Fixed Quote</a>
               </div>
-            ))}
+              <p className="text-sm text-white/70">150+ Subsidiaries Incorporated &middot; 150+ Regular Clients &middot; Since 2016</p>
+            </div>
+            <aside className="flex-1 min-w-[280px] rounded-2xl border border-white/20 bg-white/5 p-6 md:p-7" aria-label="Service summary">
+              <ul className="space-y-5">
+                {heroFacts.map((f) => (
+                  <li key={f.title} className="flex gap-3">
+                    <span className="mt-0.5 flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-gold">
+                      <Check size={13} strokeWidth={3} className="text-[#081a42]" />
+                    </span>
+                    <div>
+                      <strong className="block text-white font-bold">{f.title}</strong>
+                      <span className="block text-sm text-white/70">{f.body}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
 
-      {/* INTRO */}
+      {/* QUICK ANSWER + INTRO */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Clean Books in India, Reporting Your Parent Understands</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            An Indian subsidiary has to keep books under Indian law, close them every month for the group, and have them audited every year. Doing this with a part-time bookkeeper usually means late packs, reconciliation gaps and last-minute audit queries.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            AU Corporate runs the whole cycle for you: bookkeeping, month-end close, reporting to the parent and audit coordination. Chartered Accountants and CPAs review the work, so your finance team abroad gets numbers it can rely on.
-          </p>
-          <h3 className="text-xl font-bold text-gray-900 mb-4">You Get</h3>
-          <ul className="list-disc pl-6 space-y-2 text-gray-600">
-            {youGet.map((item) => (<li key={item}>{item}</li>))}
-          </ul>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="mb-14 rounded-r-xl border-l-4 border-gold bg-[#fffbe6] p-6 md:p-7">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">{quickAnswer.heading}</h2>
+            <p className="text-gray-700 leading-relaxed mb-3">{quickAnswer.text}</p>
+            <p className="text-sm text-gray-600">
+              Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-10">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Clean Books in India, Reporting Your Parent Understands</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                An Indian subsidiary has to keep books under Indian law, close them every month for the group, and have them audited every year. Doing this with a part-time bookkeeper usually means late packs, reconciliation gaps and last-minute audit queries.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                AU Corporate runs the whole cycle for you: bookkeeping, month-end close, reporting to the parent and audit coordination. Chartered Accountants and CPAs review the work, so your finance team abroad gets numbers it can rely on.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">You Get</h3>
+              <ul className="space-y-3">
+                {youGet.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1 flex h-[18px] w-[18px] flex-shrink-0 items-center justify-center rounded-full bg-gold">
+                      <Check size={11} strokeWidth={3} className="text-[#081a42]" />
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* STEP BY STEP */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Do for You, Step by Step</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
             Seven services in the order they happen each month, plus audit support once a year. Each one feeds the next, so the numbers reaching your parent are already reconciled.
           </p>
           <div className="grid sm:grid-cols-2 gap-5">
             {monthlySteps.map((step) => (
-              <div key={step.title} className="p-6 bg-white border rounded-lg">
+              <div key={step.title} className="p-6 bg-white border border-gray-200 rounded-lg">
                 <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">{step.tag}</span>
                 <h3 className="font-bold text-gray-900 mb-2">{step.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{step.body}</p>
@@ -167,13 +239,13 @@ export default function AccountingReportingAuditSupportPage() {
 
       {/* WHAT WE NEED */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Need from You</h2>
           <p className="text-gray-600 leading-relaxed mb-8">Five things to get started. Share them on day 1 and we complete the set-up in 3 days.</p>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4">
             {needFromYou.map((item) => (
-              <div key={item.title} className="p-6 bg-secondary/30 border rounded-lg">
-                <div className="w-8 h-8 rounded-full bg-[#081a42] text-yellow-400 font-bold text-sm flex items-center justify-center mb-3">{item.n}</div>
+              <div key={item.title} className="p-5 bg-secondary/30 border border-gray-200 rounded-xl">
+                <div className="w-8 h-8 rounded-full bg-[#081a42] text-gold font-bold text-sm flex items-center justify-center mb-3">{item.n}</div>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
               </div>
@@ -184,7 +256,7 @@ export default function AccountingReportingAuditSupportPage() {
 
       {/* ONBOARDING */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Simple Onboarding in 3 Days</h2>
           <p className="text-gray-600 leading-relaxed mb-8">You share access and documents, and we do the set-up. By day 3 your subsidiary is on a fixed monthly calendar.</p>
           <div className="grid sm:grid-cols-3 gap-4">
@@ -199,17 +271,34 @@ export default function AccountingReportingAuditSupportPage() {
         </div>
       </section>
 
-      {/* WHAT'S INCLUDED */}
+      {/* MONTHLY CYCLE */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">How the Monthly Cycle Works</h2>
+          <p className="text-gray-600 leading-relaxed mb-8">The same seven steps every month, so your parent always knows when to expect the numbers.</p>
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+            {monthlyCycle.map((step) => (
+              <div key={step.title} className="border-t-4 border-gold bg-white rounded-b-lg p-4 shadow-sm border border-gray-100">
+                <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">{step.wk}</span>
+                <h3 className="font-bold text-gray-900 mb-1 text-sm">{step.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{step.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT'S INCLUDED */}
+      <section className="py-20 bg-secondary/30">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What&apos;s Included in the Package</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
             Monthly accounting and bookkeeping starts at USD 240 per month. The final fixed fee depends on your volumes and the services you add, and we confirm it in writing before we start.
           </p>
           <div className="grid sm:grid-cols-2 gap-3 mb-6">
             {included.map((item) => (
-              <div key={item} className="flex items-start gap-3 bg-secondary/30 border rounded-lg p-4">
-                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#081a42] text-yellow-400 text-xs font-bold flex items-center justify-center mt-0.5">✓</span>
+              <div key={item} className="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-4">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#081a42] text-gold text-xs font-bold flex items-center justify-center mt-0.5">&#10003;</span>
                 <span className="text-sm text-gray-700">{item}</span>
               </div>
             ))}
@@ -221,11 +310,11 @@ export default function AccountingReportingAuditSupportPage() {
       </section>
 
       {/* CALENDAR */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">The Yearly Accounting and Audit Calendar</h2>
           <p className="text-gray-600 leading-relaxed mb-8">What is due, and when, for an Indian subsidiary with a 1 April to 31 March financial year. We track every date for you.</p>
-          <div className="overflow-x-auto bg-white border rounded-lg">
+          <div className="overflow-x-auto bg-white border border-gray-200 rounded-lg">
             <table className="w-full text-sm">
               <thead className="bg-[#081a42] text-white">
                 <tr>
@@ -250,56 +339,66 @@ export default function AccountingReportingAuditSupportPage() {
       </section>
 
       {/* REPORTING FRAMEWORKS */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+      <section className="py-20 bg-secondary/30">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Reporting in Your Parent&apos;s Framework</h2>
           <p className="text-gray-600 leading-relaxed mb-8">What changes from one parent company to the next is the reporting framework, not the Indian books. Tell us what your group uses and we set the pack up that way.</p>
-          <div className="grid sm:grid-cols-2 gap-5">
-            <div className="p-6 bg-secondary/30 border rounded-lg">
-              <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">US Parents</span>
-              <h3 className="font-bold text-gray-900 mb-2">US GAAP</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">Books kept under Indian standards, with the monthly pack restated to US GAAP and reconciled to the statutory numbers.</p>
-            </div>
-            <div className="p-6 bg-secondary/30 border rounded-lg">
-              <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">Most Other Parents</span>
-              <h3 className="font-bold text-gray-900 mb-2">IFRS</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">For parents that consolidate under IFRS or IFRS-based standards, with the pack mapped to your group&apos;s chart of accounts and template.</p>
-            </div>
-            <div className="p-6 bg-secondary/30 border rounded-lg">
-              <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">Local Frameworks</span>
-              <h3 className="font-bold text-gray-900 mb-2">Other Group Frameworks</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">If your parent uses a local framework, such as Japanese or Chinese standards, tell us at the start and we confirm what we can support.</p>
-            </div>
-            <div className="p-6 bg-secondary/30 border rounded-lg">
-              <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">Every Parent</span>
-              <h3 className="font-bold text-gray-900 mb-2">Your Group Calendar</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">Closing dates, reporting currency and review calls set to your parent&apos;s consolidation deadlines and time zone.</p>
-            </div>
+          <div className="grid sm:grid-cols-2 gap-5 mb-8">
+            {reportingFrameworks.map((item) => (
+              <div key={item.title} className="p-6 bg-white border border-gray-200 rounded-lg">
+                <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">{item.tag}</span>
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-gray-600 mb-3">Planning your India entry? See our guides by country:</p>
+          <div className="flex flex-wrap gap-3">
+            {countryGuides.map((c) => (
+              <Link key={c.href} href={c.href} className="px-4 py-2 bg-white hover:bg-secondary border border-gray-200 rounded-full text-sm font-semibold text-gray-700 hover:text-gold-dark transition">
+                {c.label}
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       {/* AFTER SETUP */}
-      <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">One Team for the Rest of Your Compliance</h2>
-          <p className="text-gray-600 leading-relaxed mb-6">
-            Your books are only as good as the filings that sit on them. The same team handles GST, TDS, payroll, FEMA, transfer pricing and secretarial compliance, so everything agrees.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/corporate-tax-gst-transfer-pricing" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Corporate Tax, GST and TDS</Link>
-            <Link href="/fema-rbi-compliance" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">FEMA and RBI Compliance</Link>
-            <Link href="/payroll-expat-services" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Payroll and Expat Services</Link>
-            <Link href="/secretarial-roc-compliance" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Secretarial and ROC</Link>
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="flex flex-wrap gap-8 items-center justify-between border border-gray-200 rounded-2xl p-8 bg-secondary/30">
+            <div className="flex-1 min-w-[280px]">
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">One Team for the Rest of Your Compliance</h2>
+              <p className="text-gray-600">
+                Your books are only as good as the filings that sit on them. The same team handles GST, TDS, payroll, FEMA, transfer pricing and secretarial compliance, so everything agrees.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {afterLinks.map((l) => (
+                <Link key={l.href} href={l.href} className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">
+                  {l.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
-          <FaqAccordion faqs={faqs} />
+      <section className="py-20 bg-secondary/30" id="faq">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-2 text-gray-900">Questions Before You Start</h2>
+          <p className="text-gray-600 mb-6">Straight answers to the questions foreign finance teams ask most. Can&apos;t find yours? Ask us in the form below.</p>
+          <p className="text-sm text-gray-600 mb-1">
+            Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+          </p>
+          <p className="text-sm text-gray-500 mb-10">
+            This is general guidance based on Indian law and practice as at the date above. It is not advice for your specific case, and rules can change.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-x-10">
+            <FaqAccordion faqs={faqsLeft} />
+            <FaqAccordion faqs={faqsRight} />
+          </div>
         </div>
       </section>
 
@@ -319,7 +418,7 @@ export default function AccountingReportingAuditSupportPage() {
       />
 
       {/* LEAD FORM */}
-      <section className="py-16 bg-secondary/50">
+      <section className="py-16 bg-white" id="contact">
         <div className="max-w-5xl mx-auto px-4">
           <LeadForm
             title="Need Monthly Accounting and Reporting for Your India Subsidiary?"
@@ -328,7 +427,7 @@ export default function AccountingReportingAuditSupportPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-4">
           <RelatedResources
             links={[

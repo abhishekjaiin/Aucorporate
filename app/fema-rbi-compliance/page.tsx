@@ -1,8 +1,21 @@
 import Link from "next/link"
+import { Check } from "lucide-react"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
+
+const heroFacts = [
+  { title: "Reasonable Fees", body: "A clear written quote before we start" },
+  { title: "Every RBI Deadline Tracked", body: "Reminders well before each due date" },
+  { title: "Works with Your Bank", body: "We coordinate with your authorised dealer bank" },
+  { title: "Take Over Existing Filings", body: "We review past reporting and fix gaps" },
+]
+
+const quickAnswer = {
+  heading: "FEMA and RBI Compliance for an Indian Subsidiary: The Short Answer",
+  text: "An Indian company with foreign shareholders or foreign loans must report each share issue, share transfer, loan and its year-end foreign assets and liabilities to the Reserve Bank of India under the Foreign Exchange Management Act, 1999 (FEMA). AU Corporate, a New Delhi firm of Chartered Accountants, Company Secretaries and lawyers serving foreign parents since 2016, prepares and files these reports at reasonable fees and tracks every deadline.",
+}
 
 const youGet = [
   "Share issues to the parent reported on time",
@@ -31,6 +44,14 @@ const needFromYou = [
   { n: "5", title: "Bank Access", body: "Your authorised dealer bank contact and the account used for foreign remittances." },
 ]
 
+const workSteps = [
+  { wk: "Week 1", title: "Review", body: "Check past filings, the share register and loans for gaps or late reports." },
+  { wk: "Week 1", title: "Prepare", body: "Draft the forms and gather the supporting certificates." },
+  { wk: "Week 2", title: "Certify", body: "Arrange the valuation report and company secretary certificate where needed." },
+  { wk: "Week 2", title: "File", body: "Submit through the authorised dealer bank and the RBI portal." },
+  { wk: "Ongoing", title: "Track", body: "Keep a calendar and reminders for every future due date." },
+]
+
 const included = [
   "Review of Past FEMA Filings",
   "FDI Route Check and Approval Application",
@@ -53,6 +74,15 @@ const calendar = [
   { when: "Before each remittance abroad", what: "Tax certificates and bank declarations", how: "Prepared for the bank and the accountant" },
   { when: "By 15 July each year", what: "Annual return on foreign liabilities and assets", how: "Built from audited accounts and filed" },
   { when: "Within 30 days of a downstream investment", what: "Downstream investment report", how: "Prepared and filed" },
+]
+
+const afterLinks = [
+  { label: "Accounting, Reporting and Audit Support", href: "/accounting-reporting-audit-support" },
+  { label: "Corporate Tax, GST and Transfer Pricing", href: "/corporate-tax-gst-transfer-pricing" },
+  { label: "Secretarial and ROC Compliance", href: "/secretarial-roc-compliance" },
+  { label: "Payroll and Expat Services", href: "/payroll-expat-services" },
+  { label: "India Subsidiary Registration", href: "/india-subsidiary-registration" },
+  { label: "Foreign Subsidiary in India — Full Guide", href: "/india-business-setup/foreign-subsidiary-india" },
 ]
 
 const faqs = [
@@ -79,6 +109,8 @@ const faqs = [
   { q: "Which complex transactions need RBI approval through the AD bank in India?", a: "In India, some transactions need approval from the RBI, usually through your authorised dealer (AD) bank, such as external borrowings outside the standard limits, extension of time to receive export payment, write-off of dues, conversion of loans into equity and regularising past remittances. AU Corporate prepares the request, and we confirm which ones apply to you." },
   { q: "Can AU Corporate handle FEMA filings for a parent company from my country?", a: "AU Corporate handles FEMA and RBI filings for parent companies from more than 10 countries, including the USA, UK, Singapore, Australia, Germany, Japan, China, Hong Kong, Spain, France and the UAE. The RBI rules are the same for every foreign investor, and we adjust the documents to match your home-country records." },
 ]
+const faqsLeft = faqs.slice(0, Math.ceil(faqs.length / 2))
+const faqsRight = faqs.slice(Math.ceil(faqs.length / 2))
 
 export default function FemaRbiCompliancePage() {
   return (
@@ -86,66 +118,88 @@ export default function FemaRbiCompliancePage() {
       <Breadcrumb items={[{ label: "Foreign Subsidiary in India", href: "/india-business-setup/foreign-subsidiary-india" }, { label: "FEMA and RBI Compliance" }]} />
 
       {/* HERO */}
-      <section className="py-20 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-yellow-400">Foreign Subsidiary in India</span>
-          <h1 className="mb-6 mt-3 text-4xl font-bold md:text-5xl">
-            FEMA and RBI Compliance for Your India Subsidiary
-          </h1>
-          <p className="mb-4 text-xl leading-relaxed text-white/85">
-            FC-GPR, FC-TRS, the annual FLA return, ECB reporting for parent loans and repatriation of funds, handled by one team so every foreign investment filing reaches the RBI on time.
-          </p>
-          <p className="text-white/70 leading-relaxed">
-            An Indian company with foreign shareholders or foreign loans must report each share issue, share transfer, loan and its year-end foreign assets and liabilities to the RBI under FEMA, 1999. AU Corporate keeps a live record of every foreign investment in your subsidiary and tracks every deadline.
-          </p>
-        </div>
-      </section>
-
-      {/* TRUST STRIP */}
-      <section className="py-12 bg-gray-100 border-y">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-            {[
-              { value: "30 Days", label: "FC-GPR filing window from allotment" },
-              { value: "60 Days", label: "FC-TRS filing window from transfer" },
-              { value: "15 July", label: "Annual FLA return deadline" },
-              { value: "150+", label: "Subsidiaries served since 2016" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-yellow-600 mb-1">{stat.value}</div>
-                <p className="text-xs sm:text-sm text-gray-600">{stat.label}</p>
+      <section className="bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white py-14 md:py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row gap-10 lg:items-center">
+            <div className="flex-[1.4] min-w-0">
+              <span className="text-sm font-semibold uppercase tracking-wider text-gold">Foreign Subsidiary in India</span>
+              <h1 className="mb-5 mt-3 text-4xl font-bold md:text-5xl leading-tight">
+                FEMA and RBI Compliance for Your India Subsidiary
+              </h1>
+              <p className="mb-6 text-xl leading-relaxed text-white/85 max-w-2xl">
+                FC-GPR, FC-TRS, the annual FLA return, ECB reporting for parent loans and repatriation of funds, handled by one team so every foreign investment filing reaches the RBI on time.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <a href="https://cal.com/abhishek-jaiin-ybbklq/30min" className="inline-block px-5 py-3 rounded-lg font-bold text-sm bg-gold text-[#081a42] hover:bg-gold-dark transition">Book Consultation with an Expert</a>
+                <a href="#contact" className="inline-block px-5 py-3 rounded-lg font-bold text-sm border-2 border-white text-white hover:bg-white/10 transition">Get a Quote</a>
               </div>
-            ))}
+              <p className="text-sm text-white/70">150+ Subsidiaries Incorporated &middot; 150+ Regular Clients &middot; Since 2016</p>
+            </div>
+            <aside className="flex-1 min-w-[280px] rounded-2xl border border-white/20 bg-white/5 p-6 md:p-7" aria-label="Service summary">
+              <ul className="space-y-5">
+                {heroFacts.map((f) => (
+                  <li key={f.title} className="flex gap-3">
+                    <span className="mt-0.5 flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-gold">
+                      <Check size={13} strokeWidth={3} className="text-[#081a42]" />
+                    </span>
+                    <div>
+                      <strong className="block text-white font-bold">{f.title}</strong>
+                      <span className="block text-sm text-white/70">{f.body}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
 
-      {/* INTRO */}
+      {/* QUICK ANSWER + INTRO */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Foreign Investment Reporting, Without the Penalties</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            FEMA reporting is separate from company law and tax filings, and a missed RBI deadline attracts late submission fees that grow with the delay. Many subsidiaries find this out only when a bank or an auditor asks for proof of a filing made years earlier.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            AU Corporate keeps a live record of every foreign investment in your subsidiary, prepares each report with the supporting certificates and files it through your authorised dealer bank. Your finance team abroad sees one clear calendar instead of a set of RBI forms. For how incoming equity is itself reported after incorporation, see our{" "}
-            <Link href="/india-subsidiary-registration" className="text-gold-dark font-semibold hover:underline">India subsidiary registration guide</Link>.
-          </p>
-          <h3 className="text-xl font-bold text-gray-900 mb-4">You Get</h3>
-          <ul className="list-disc pl-6 space-y-2 text-gray-600">
-            {youGet.map((item) => (<li key={item}>{item}</li>))}
-          </ul>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="mb-14 rounded-r-xl border-l-4 border-gold bg-[#fffbe6] p-6 md:p-7">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">{quickAnswer.heading}</h2>
+            <p className="text-gray-700 leading-relaxed mb-3">{quickAnswer.text}</p>
+            <p className="text-sm text-gray-600">
+              Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-10">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Foreign Investment Reporting, Without the Penalties</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                FEMA reporting is separate from company law and tax filings, and a missed RBI deadline attracts late submission fees that grow with the delay. Many subsidiaries find this out only when a bank or an auditor asks for proof of a filing made years earlier.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                AU Corporate keeps a live record of every foreign investment in your subsidiary, prepares each report with the supporting certificates and files it through your authorised dealer bank. Your finance team abroad sees one clear calendar instead of a set of RBI forms. For how incoming equity is itself reported after incorporation, see our{" "}
+                <Link href="/india-subsidiary-registration" className="text-gold-dark font-semibold hover:underline">India subsidiary registration guide</Link>.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">You Get</h3>
+              <ul className="space-y-3">
+                {youGet.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1 flex h-[18px] w-[18px] flex-shrink-0 items-center justify-center rounded-full bg-gold">
+                      <Check size={11} strokeWidth={3} className="text-[#081a42]" />
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* FILING BY FILING */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Handle, Filing by Filing</h2>
           <p className="text-gray-600 leading-relaxed mb-8">The RBI filings an Indian subsidiary of a foreign company is most likely to need, in the order they usually arise.</p>
           <div className="grid sm:grid-cols-2 gap-5">
             {filings.map((item) => (
-              <div key={item.title} className="p-6 bg-white border rounded-lg">
+              <div key={item.title} className="p-6 bg-white border border-gray-200 rounded-lg">
                 <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">{item.tag}</span>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
@@ -157,13 +211,13 @@ export default function FemaRbiCompliancePage() {
 
       {/* WHAT WE NEED */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Need from You</h2>
           <p className="text-gray-600 leading-relaxed mb-8">Five items to begin. For an existing subsidiary we start with a review of what has already been filed.</p>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4">
             {needFromYou.map((item) => (
-              <div key={item.title} className="p-6 bg-secondary/30 border rounded-lg">
-                <div className="w-8 h-8 rounded-full bg-[#081a42] text-yellow-400 font-bold text-sm flex items-center justify-center mb-3">{item.n}</div>
+              <div key={item.title} className="p-5 bg-secondary/30 border border-gray-200 rounded-xl">
+                <div className="w-8 h-8 rounded-full bg-[#081a42] text-gold font-bold text-sm flex items-center justify-center mb-3">{item.n}</div>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
               </div>
@@ -172,15 +226,32 @@ export default function FemaRbiCompliancePage() {
         </div>
       </section>
 
-      {/* WHAT'S INCLUDED */}
+      {/* HOW WE WORK */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">How We Work, in Five Steps</h2>
+          <p className="text-gray-600 leading-relaxed mb-8">We prepare each filing while the bank and the valuer complete their part, so nothing waits on anything else.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {workSteps.map((step) => (
+              <div key={step.title} className="border-t-4 border-gold bg-white rounded-b-lg p-4 shadow-sm">
+                <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">{step.wk}</span>
+                <h3 className="font-bold text-gray-900 mb-1">{step.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{step.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT'S INCLUDED */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What&apos;s Included in the Package</h2>
           <p className="text-gray-600 leading-relaxed mb-8">Reasonable fees, confirmed in writing before we start.</p>
           <div className="grid sm:grid-cols-2 gap-3 mb-6">
             {included.map((item) => (
-              <div key={item} className="flex items-start gap-3 bg-white border rounded-lg p-4">
-                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#081a42] text-yellow-400 text-xs font-bold flex items-center justify-center mt-0.5">✓</span>
+              <div key={item} className="flex items-start gap-3 bg-secondary/30 border border-gray-200 rounded-lg p-4">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#081a42] text-gold text-xs font-bold flex items-center justify-center mt-0.5">&#10003;</span>
                 <span className="text-sm text-gray-700">{item}</span>
               </div>
             ))}
@@ -192,11 +263,11 @@ export default function FemaRbiCompliancePage() {
       </section>
 
       {/* CALENDAR */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-secondary/30">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">The FEMA and RBI Filing Calendar</h2>
           <p className="text-gray-600 leading-relaxed mb-8">What is due, and when, for an Indian subsidiary with foreign investment. We track every date for you.</p>
-          <div className="overflow-x-auto bg-white border rounded-lg">
+          <div className="overflow-x-auto bg-white border border-gray-200 rounded-lg">
             <table className="w-full text-sm">
               <thead className="bg-[#081a42] text-white">
                 <tr>
@@ -221,25 +292,39 @@ export default function FemaRbiCompliancePage() {
       </section>
 
       {/* AFTER SETUP */}
-      <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">One Team for the Rest of Your Compliance</h2>
-          <p className="text-gray-600 leading-relaxed mb-6">FEMA reports must agree with your books, your tax filings and your company records. The same team handles all of them, so the numbers match everywhere.</p>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/accounting-reporting-audit-support" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Accounting, Reporting and Audit Support</Link>
-            <Link href="/corporate-tax-gst-transfer-pricing" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Corporate Tax, GST and Transfer Pricing</Link>
-            <Link href="/secretarial-roc-compliance" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Secretarial and ROC Compliance</Link>
-            <Link href="/payroll-expat-services" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Payroll and Expat Services</Link>
-            <Link href="/india-subsidiary-registration" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">India Subsidiary Registration</Link>
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="flex flex-wrap gap-8 items-center justify-between border border-gray-200 rounded-2xl p-8 bg-secondary/30">
+            <div className="flex-1 min-w-[280px]">
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">One Team for the Rest of Your Compliance</h2>
+              <p className="text-gray-600">FEMA reports must agree with your books, your tax filings and your company records. The same team handles all of them, so the numbers match everywhere.</p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {afterLinks.map((l) => (
+                <Link key={l.href} href={l.href} className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">
+                  {l.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
-          <FaqAccordion faqs={faqs} />
+      <section className="py-20 bg-secondary/30" id="faq">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-2 text-gray-900">Questions Before You Start</h2>
+          <p className="text-gray-600 mb-6">Straight answers to the questions foreign finance teams ask most. Can&apos;t find yours? Ask us in the form below.</p>
+          <p className="text-sm text-gray-600 mb-1">
+            Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+          </p>
+          <p className="text-sm text-gray-500 mb-10">
+            This is general guidance based on Indian law and practice as at the date above. It is not advice for your specific case, and rules can change.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-x-10">
+            <FaqAccordion faqs={faqsLeft} />
+            <FaqAccordion faqs={faqsRight} />
+          </div>
         </div>
       </section>
 
@@ -259,7 +344,7 @@ export default function FemaRbiCompliancePage() {
       />
 
       {/* LEAD FORM */}
-      <section className="py-16 bg-secondary/50">
+      <section className="py-16 bg-white" id="contact">
         <div className="max-w-5xl mx-auto px-4">
           <LeadForm
             title="Need Your FEMA and RBI Filings Reviewed or Taken Over?"
@@ -268,7 +353,7 @@ export default function FemaRbiCompliancePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-4">
           <RelatedResources
             links={[

@@ -1,8 +1,22 @@
 import Link from "next/link"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
-import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
+
+const heroChecklist = [
+  { title: "Registration in 30 Days", body: "Form FC-1 filed on time" },
+  { title: "Annual FC-3 and FC-4", body: "Prepared and filed" },
+  { title: "Authorised Representative", body: "Support if you need one" },
+  { title: "Multiple Countries Covered", body: "USA, UK, Singapore, Australia, Germany, Japan and China" },
+]
+
+const youGet = [
+  "Form FC-1 filed on time",
+  "Annual FC-3 and FC-4 filed",
+  "Changes reported in Form FC-2",
+  "Authorised representative service if needed",
+  "A yearly ROC calendar",
+]
 
 const handledSteps = [
   { tag: "Within 30 Days", title: "Registration (Form FC-1)", body: "Charter documents, directors, Indian address and authorised representative." },
@@ -23,11 +37,11 @@ const needFromYou = [
 ]
 
 const calendar = [
-  { when: "Within 30 days of setting up", what: "Form FC-1 registration" },
-  { when: "On change", what: "Form FC-2 for changes in particulars" },
-  { when: "Within 6 months of year end", what: "Form FC-3 financial statements" },
-  { when: "Within 60 days of year end", what: "Form FC-4 annual return" },
-  { when: "When a charge is created", what: "Charge registration" },
+  { when: "Within 30 days of setting up", what: "Form FC-1 registration", help: "Prepared and filed" },
+  { when: "On change", what: "Form FC-2 for changes in particulars", help: "Prepared and filed" },
+  { when: "Within 6 months of year end", what: "Form FC-3 financial statements", help: "Prepared and filed" },
+  { when: "Within 60 days of year end", what: "Form FC-4 annual return", help: "Prepared and filed" },
+  { when: "When a charge is created", what: "Charge registration", help: "Prepared and filed" },
 ]
 
 const included = [
@@ -39,6 +53,15 @@ const included = [
   "CSR Applicability Check",
   "Replies to ROC Notices",
   "A Yearly ROC Calendar",
+]
+
+const afterLinks = [
+  { label: "Branch Office in India (Complete Guide)", href: "/branch-office-in-india" },
+  { label: "Branch Office Registration", href: "/branch-office-registration" },
+  { label: "Branch Office FEMA and RBI Compliance", href: "/branch-office-fema-rbi-compliance" },
+  { label: "Branch Office Tax, GST and Transfer Pricing", href: "/branch-office-tax-gst-transfer-pricing" },
+  { label: "Branch Office Accounting, Reporting and Audit", href: "/branch-office-accounting-audit" },
+  { label: "Branch Office Payroll and Labour Law Compliance", href: "/branch-office-payroll-compliance" },
 ]
 
 const faqs = [
@@ -57,60 +80,102 @@ const faqs = [
   { q: "Can AU Corporate take over ROC compliance for my existing branch office?", a: "Yes. AU Corporate reviews your earlier FC forms and ROC records, files anything overdue, and then runs the yearly calendar. AU Corporate handles this for foreign companies from more than 10 countries, including the USA, UK, Singapore, Australia, Germany, Japan and China. We prepare country-specific documents for FC-1 and for later changes." },
 ]
 
+const faqsCol1 = faqs.slice(0, Math.ceil(faqs.length / 2))
+const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
+
 export default function ForeignCompanyRocCompliancePage() {
   return (
     <main className="min-h-screen bg-white">
       <Breadcrumb items={[{ label: "Branch Office in India", href: "/branch-office-in-india" }, { label: "ROC Compliance for Foreign Companies" }]} />
 
       {/* HERO */}
-      <section className="py-20 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-yellow-400">Branch Office in India</span>
-          <h1 className="mb-6 mt-3 text-4xl font-bold md:text-5xl">
-            ROC Compliance for the India Branch Office of a Foreign Company
-          </h1>
-          <p className="mb-4 text-xl leading-relaxed text-white/85">
-            Form FC-1 registration, annual accounts (FC-3), annual return (FC-4), changes and authorised representative for foreign companies in India.
-          </p>
-          <p className="text-white/70 leading-relaxed">
-            A foreign company that sets up a branch office in India must file Form FC-1 with the Registrar of Companies within 30 days, name an authorised representative resident in India, and then file its financial statements in Form FC-3 within six months and its annual return in Form FC-4 within 60 days of its year end.
-          </p>
+      <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid lg:grid-cols-[1.3fr_1fr] gap-10 items-center">
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-wider text-gold">Branch Office in India</span>
+              <h1 className="mb-4 mt-3 text-4xl font-bold md:text-5xl leading-tight">
+                ROC Compliance for the India Branch Office of a Foreign Company
+              </h1>
+              <p className="mb-6 text-xl leading-relaxed text-white/85 max-w-2xl">
+                Form FC-1 registration, annual accounts (FC-3), annual return (FC-4), changes and authorised representative for foreign companies in India.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <Link href="https://cal.com/abhishek-jaiin-ybbklq/30min" target="_blank" rel="noreferrer" className="inline-block rounded-lg bg-gold px-6 py-3 font-bold text-[#081a42] hover:bg-gold-dark transition-colors">
+                  Book Consultation with an Expert
+                </Link>
+                <Link href="#contact" className="inline-block rounded-lg border-2 border-white px-6 py-3 font-bold text-white hover:bg-white/10 transition-colors">
+                  Get a Quote
+                </Link>
+              </div>
+              <p className="text-sm text-white/70">150+ Regular Clients · Chartered Accountants and Company Secretaries · Since 2016</p>
+            </div>
+            <aside className="rounded-2xl border border-white/20 bg-white/10 p-6">
+              <ul className="space-y-4">
+                {heroChecklist.map((item) => (
+                  <li key={item.title} className="flex gap-3">
+                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold text-[10px] font-bold text-[#081a42]">✓</span>
+                    <div>
+                      <strong className="block text-white">{item.title}</strong>
+                      <span className="block text-sm text-white/70">{item.body}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          </div>
         </div>
       </section>
 
-      {/* INTRO */}
+      {/* QUICK ANSWER + INTRO */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Company Law Compliance for a Foreign Company, Handled from India</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            A branch office has no Indian board meetings or AGM, but it has a short list of fixed filings with the ROC, and missing them leads to fines. See the{" "}
-            <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>{" "}
-            for how ROC registration under Section 380 fits alongside the separate RBI/AD-bank approval.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            AU Corporate prepares each form, keeps your records and tracks every date. Your directors abroad review and sign.
-          </p>
-          <h3 className="text-xl font-bold text-gray-900 mb-4">What You Get</h3>
-          <ul className="list-disc pl-6 space-y-2 text-gray-600">
-            <li>Form FC-1 filed on time</li>
-            <li>Annual FC-3 and FC-4 filed</li>
-            <li>Changes reported in Form FC-2</li>
-            <li>Authorised representative service if needed</li>
-            <li>A yearly ROC calendar</li>
-          </ul>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="rounded-r-xl border-l-4 border-gold bg-[#fffbe6] p-6 mb-12">
+            <h2 className="text-xl font-bold text-gray-900 mb-2">ROC Compliance for a Branch Office: The Short Answer</h2>
+            <p className="text-gray-700 leading-relaxed">
+              A foreign company that sets up a branch office in India must file Form FC-1 with the Registrar of Companies within 30 days, name an authorised representative resident in India, and then file its financial statements in Form FC-3 within six months and its annual return in Form FC-4 within 60 days of its year end. AU Corporate, a New Delhi firm of Company Secretaries and Chartered Accountants, runs all of this.
+            </p>
+            <p className="mt-3 text-sm text-gray-500">
+              Written and reviewed by <strong className="text-gray-700">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) · Last reviewed: 9 October 2026
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-10">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Company Law Compliance for a Foreign Company, Handled from India</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                A branch office has no Indian board meetings or AGM, but it has a short list of fixed filings with the ROC, and missing them leads to fines. See the{" "}
+                <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>{" "}
+                for how ROC registration under Section 380 fits alongside the separate RBI/AD-bank approval.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                AU Corporate prepares each form, keeps your records and tracks every date. Your directors abroad review and sign.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">What You Get</h3>
+              <ul className="space-y-3">
+                {youGet.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-gold" />
+                    <span className="text-gray-600">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* STEPS */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">What We Handle, Step by Step</h2>
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Handle, Step by Step</h2>
           <p className="text-gray-600 leading-relaxed mb-8">The ROC work a foreign company&apos;s branch office needs through its life.</p>
           <div className="grid sm:grid-cols-2 gap-6">
             {handledSteps.map((item) => (
               <div key={item.title} className="p-6 bg-white border rounded-lg">
-                <span className="text-xs font-bold uppercase tracking-wider text-gold-dark">{item.tag}</span>
-                <h3 className="font-bold text-gray-900 mt-1 mb-2">{item.title}</h3>
+                <span className="inline-block text-xs font-bold uppercase tracking-wider text-[#7a5c00] bg-[#fffbe6] px-2 py-0.5 rounded mb-3">{item.tag}</span>
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
               </div>
             ))}
@@ -126,6 +191,7 @@ export default function ForeignCompanyRocCompliancePage() {
           <div className="grid sm:grid-cols-2 gap-6">
             {needFromYou.map((item) => (
               <div key={item.n} className="p-6 bg-secondary/20 border rounded-lg">
+                <span className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#081a42] text-sm font-bold text-gold">{item.n}</span>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
               </div>
@@ -136,15 +202,16 @@ export default function ForeignCompanyRocCompliancePage() {
 
       {/* CALENDAR */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">The ROC Calendar for a Branch Office</h2>
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">The ROC Calendar for a Branch Office</h2>
           <p className="text-gray-600 leading-relaxed mb-8">What is due, and when. Dates can change by notification, so we confirm those that apply to your branch office.</p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-gray-300 bg-white">
-              <thead className="bg-gray-100">
+              <thead className="bg-[#081a42] text-white">
                 <tr>
                   <th className="border border-gray-300 p-4 text-left font-bold">When</th>
                   <th className="border border-gray-300 p-4 text-left font-bold">What</th>
+                  <th className="border border-gray-300 p-4 text-left font-bold">How AU Helps</th>
                 </tr>
               </thead>
               <tbody>
@@ -152,6 +219,7 @@ export default function ForeignCompanyRocCompliancePage() {
                   <tr key={row.when} className={i % 2 === 1 ? "bg-gray-50" : undefined}>
                     <td className="border border-gray-300 p-4 font-semibold text-sm whitespace-nowrap">{row.when}</td>
                     <td className="border border-gray-300 p-4 text-sm">{row.what}</td>
+                    <td className="border border-gray-300 p-4 text-sm">{row.help}</td>
                   </tr>
                 ))}
               </tbody>
@@ -163,12 +231,13 @@ export default function ForeignCompanyRocCompliancePage() {
       {/* INCLUDED */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">What&apos;s Included</h2>
-          <p className="text-gray-600 leading-relaxed mb-6">Reasonable fees, confirmed in writing before work starts.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What&apos;s Included in the Package</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">Reasonable fees, confirmed in writing before we start.</p>
           <ul className="grid sm:grid-cols-2 gap-3 text-gray-700 mb-6">
             {included.map((item) => (
-              <li key={item} className="flex items-start gap-2 bg-secondary/20 border rounded-lg p-3 text-sm">
-                <span className="text-gold-dark font-bold">✓</span> {item}
+              <li key={item} className="flex items-start gap-3 bg-secondary/20 border rounded-lg p-3 text-sm">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#081a42] text-xs font-bold text-gold">✓</span>
+                <span className="pt-0.5">{item}</span>
               </li>
             ))}
           </ul>
@@ -178,11 +247,38 @@ export default function ForeignCompanyRocCompliancePage() {
         </div>
       </section>
 
+      {/* AFTER / CROSS-LINKS */}
+      <section className="py-16 bg-secondary/30">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="rounded-2xl border border-gray-200 bg-white p-8 flex flex-wrap items-center justify-between gap-6">
+            <div className="flex-1 min-w-[260px]">
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">One Team for the Rest of Your Branch Office Compliance</h2>
+              <p className="text-gray-600">Your branch office accounts, tax returns, RBI filings and ROC forms must agree with each other. The same team handles each of them.</p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {afterLinks.map((link) => (
+                <Link key={link.href} href={link.href} className="inline-block rounded-full border border-[#081a42] px-5 py-2.5 text-sm font-semibold text-[#081a42] hover:bg-[#081a42] hover:text-white transition-colors">
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
-          <FaqAccordion faqs={faqs} />
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">Questions Before You Start</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-2">Straight answers to the questions foreign finance teams ask most about a branch office in India.</p>
+          <p className="text-sm text-gray-500 text-center">
+            Written and reviewed by <strong className="text-gray-700">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) · Last reviewed: 9 October 2026
+          </p>
+          <p className="text-sm text-gray-500 text-center mb-10">This is general guidance based on Indian law and practice as at the date above. It is not advice for your specific case, and rules can change.</p>
+          <div className="grid sm:grid-cols-2 gap-x-10">
+            <FaqAccordion faqs={faqsCol1} />
+            <FaqAccordion faqs={faqsCol2} />
+          </div>
         </div>
       </section>
 
@@ -202,56 +298,11 @@ export default function ForeignCompanyRocCompliancePage() {
       />
 
       {/* LEAD FORM */}
-      <section className="py-16 bg-secondary/50">
+      <section className="py-16 bg-secondary/50" id="contact">
         <div className="max-w-5xl mx-auto px-4">
           <LeadForm
             title="Need ROC Compliance for Your Foreign Company's Branch Office?"
             description="Tell us when your branch office was set up and its financial year end, and our team will confirm the FC-1, FC-3 and FC-4 filing calendar for your situation."
-          />
-        </div>
-      </section>
-
-      {/* RELATED */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <RelatedResources
-            links={[
-              {
-                label: "Branch Office in India (Complete Guide)",
-                href: "/branch-office-in-india",
-                description: "The full hub guide to RBI approval, eligibility, permitted activities, tax and closure.",
-              },
-              {
-                label: "Branch Office Registration",
-                href: "/branch-office-registration",
-                description: "Form FNC, RBI/AD-bank approval, UIN and ROC Form FC-1 for setting up a new branch office.",
-              },
-              {
-                label: "Branch Office FEMA and RBI Compliance",
-                href: "/branch-office-fema-rbi-compliance",
-                description: "Annual Activity Certificate, profit remittance, additional offices, compounding and closure.",
-              },
-              {
-                label: "Branch Office Tax, GST and Transfer Pricing",
-                href: "/branch-office-tax-gst-transfer-pricing",
-                description: "Foreign-company tax rate, advance tax, TDS, GST and transfer pricing for the branch.",
-              },
-              {
-                label: "Branch Office Accounting, Reporting and Audit",
-                href: "/branch-office-accounting-audit",
-                description: "Monthly bookkeeping, head office account reconciliation and audit support.",
-              },
-              {
-                label: "Branch Office Payroll and Labour Law Compliance",
-                href: "/branch-office-payroll-compliance",
-                description: "Payroll, EPF/ESIC, professional tax, Labour Codes compliance and FRRO support for expats.",
-              },
-              {
-                label: "Liaison Office in India",
-                href: "/liaison-office-in-india",
-                description: "The lighter-touch, non-revenue-generating alternative structure, which files FC-1 but not FC-3/FC-4 in the same way.",
-              },
-            ]}
           />
         </div>
       </section>
