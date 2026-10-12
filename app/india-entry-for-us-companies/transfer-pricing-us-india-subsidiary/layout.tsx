@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Transfer Pricing & Section 482 for US-India Subsidiaries",
     description:
       "How Section 482 and India's transfer pricing rules interact for related-party transactions between a US parent and Indian subsidiary.",

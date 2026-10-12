@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/doing-business-in-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Doing Business in India | Guide for Foreign Companies",
     description:
       "A practical guide to entering and operating in India — market entry routes, incorporation, compliance, and post-setup requirements.",

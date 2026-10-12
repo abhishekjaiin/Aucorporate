@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/about",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "About AU Corporate | India Entry & Compliance Advisory Firm",
     description:
       "Learn about AU Corporate's team, credentials, and experience helping foreign companies enter and operate in India.",

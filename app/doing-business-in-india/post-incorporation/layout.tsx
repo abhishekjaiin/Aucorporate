@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/doing-business-in-india/post-incorporation",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Life After Incorporation: Priorities as You Scale in India",
     description:
       "The strategic decisions that follow incorporating in India — build vs. outsource finance, governance as you scale, and common second-year mistakes.",

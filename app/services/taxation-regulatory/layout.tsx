@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/services/taxation-regulatory",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Taxation & Regulatory Services in India | AU Corporate",
     description:
       "Corporate tax planning, GST compliance, tax audit, transfer pricing, and regulatory advisory for foreign and domestic businesses operating in India.",

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/mail-box-dtaa-benefits",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Tiger Global Ruling: DTAA & Mailbox Companies in India",
     description:
       "The Tiger Global Supreme Court ruling reshapes DTAA treaty benefits for mailbox companies lacking real substance — what it means for foreign investors and GAAR.",

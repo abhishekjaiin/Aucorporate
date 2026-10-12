@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/partners/uniproasia",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "UniproAsia Partnership: Expand into Hong Kong, Singapore & China",
     description:
       "AU Corporate partners with UniproAsia to help clients expand beyond India into Hong Kong, Singapore and China — formation, tax and compliance in one engagement.",

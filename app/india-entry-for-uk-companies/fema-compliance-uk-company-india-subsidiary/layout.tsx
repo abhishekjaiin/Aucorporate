@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-uk-companies/fema-compliance-uk-company-india-subsidiary",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "FEMA Compliance for UK Companies in India",
     description:
       "The FC-GPR, FC-TRS, and FLA return filings a UK parent's Indian subsidiary needs for ongoing FEMA compliance.",

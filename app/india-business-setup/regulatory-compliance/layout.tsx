@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-business-setup/regulatory-compliance",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Regulatory Compliance for India Business Setup",
     description:
       "The regulatory compliance landscape foreign-owned businesses in India need to navigate — FEMA, RBI, and sector-specific rules.",

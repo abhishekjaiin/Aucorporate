@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-business-setup/company-formation",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Company Registration in India: A Complete Guide (2026)",
     description:
       "Complete guide to company registration in India for foreign investors — entity types, the SPICe+ process, FDI routes, costs and timelines.",

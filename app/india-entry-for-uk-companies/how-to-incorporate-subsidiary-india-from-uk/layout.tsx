@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-uk-companies/how-to-incorporate-subsidiary-india-from-uk",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "How to Incorporate a Subsidiary in India from the UK",
     description:
       "Step-by-step process for UK companies incorporating an Indian subsidiary, including document authentication requirements.",

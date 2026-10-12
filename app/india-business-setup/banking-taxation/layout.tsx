@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-business-setup/banking-taxation",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Banking & Taxation for India Business Setup",
     description:
       "How banking and taxation work for a newly-formed Indian entity — account opening, capital inflow, and initial tax registrations.",

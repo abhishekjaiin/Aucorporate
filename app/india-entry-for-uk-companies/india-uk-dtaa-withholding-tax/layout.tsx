@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "India-UK DTAA & Withholding Tax Rates Explained",
     description:
       "India-UK DTAA withholding tax rates on dividends, interest, and royalties, with treaty article citations and how to claim treaty benefits.",

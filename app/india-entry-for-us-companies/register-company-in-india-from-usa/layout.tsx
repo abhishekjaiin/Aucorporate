@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-us-companies/register-company-in-india-from-usa",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Register a Company in India from the USA | AU Corporate",
     description:
       "How to register a company in India from the USA: compare entity options, the resident-director rule, and the real registration process, cost and timeline.",

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/compliance-calendar",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title,
     description,
     url: "https://www.theaucorp.com/compliance-calendar",

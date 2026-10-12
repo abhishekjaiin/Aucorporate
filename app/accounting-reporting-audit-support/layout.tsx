@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/accounting-reporting-audit-support",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Accounting, Reporting & Audit Support for Indian Subsidiaries",
     description:
       "Monthly accounting, reconciliations, fixed assets, TDS and GST workings and US GAAP / IFRS reporting for your India subsidiary, plus audit support. From USD 240 per month, 3-day onboarding.",

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-singapore-companies",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "India Entry for Singapore Companies | Subsidiary Setup Guide",
     description:
       "How Singapore-based companies — India's largest FDI source for seven straight years — structure India entry: DTAA benefits, substance tests, FEMA compliance.",

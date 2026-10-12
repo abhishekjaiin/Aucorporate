@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-business-setup/foreign-subsidiary-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Foreign Subsidiary in India | Wholly Owned Subsidiary Setup Guide",
     description:
       "How a foreign company sets up and runs a wholly owned subsidiary in India: structure, FDI/FEMA/RBI, incorporation, post-incorporation filings, ongoing operations, and repatriation or exit.",

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Cost & Timeline: India Setup from the US | AU Corporate",
     description:
       "What drives the cost and timeline of incorporating an Indian subsidiary for a US parent company.",

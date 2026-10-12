@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/foreign-company-roc-compliance",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "ROC Compliance for Foreign Companies in India: Forms FC-1, FC-3, FC-4",
     description:
       "Form FC-1 registration, FC-2 changes, FC-3 accounts, FC-4 annual return, authorised representative and CSR check for the India branch office of a foreign company.",

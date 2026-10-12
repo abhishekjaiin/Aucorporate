@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "US Subsidiary vs Branch Office in India | Comparison Guide",
     description:
       "Comparing subsidiary and branch office structures for US companies entering India, including US tax reporting implications.",

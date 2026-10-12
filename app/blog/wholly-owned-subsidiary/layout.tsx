@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/wholly-owned-subsidiary",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Wholly Owned Subsidiary in India | Setup & Compliance Guide",
     description:
       "Step-by-step guide for foreign companies setting up a wholly owned subsidiary in India — incorporation process, FEMA compliance, and regulatory requirements.",

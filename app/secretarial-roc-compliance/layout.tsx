@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/secretarial-roc-compliance",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Secretarial and ROC Compliance for Indian Subsidiaries",
     description:
       "Board meetings, AGM, ROC filings, registered office shifting, MCA notices (Section 206), mergers, winding up, resident director and registered office for your Indian subsidiary.",

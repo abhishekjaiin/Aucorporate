@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/construction-arbitration-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Construction Arbitration in India: Claims to Enforcing Awards",
     description:
       "How construction disputes reach arbitration in India, the claim types that dominate the docket, and what happens between a favourable award and enforcement.",

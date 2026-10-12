@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/doing-business-in-india/incorporation",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Should You Incorporate in India Now? A Strategic Decision Guide",
     description:
       "When incorporating in India actually makes sense versus other routes to market, the timing mistakes to avoid, and what changes once you commit.",

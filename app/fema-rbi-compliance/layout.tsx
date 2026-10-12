@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/fema-rbi-compliance",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "FEMA and RBI Compliance for Indian Subsidiaries | FC-GPR, FLA, ECB",
     description:
       "FC-GPR, FC-TRS, FLA return, ECB, FDI approvals, compounding and RBI approvals for your Indian subsidiary. Reasonable fees, every RBI deadline tracked by AU Corporate.",

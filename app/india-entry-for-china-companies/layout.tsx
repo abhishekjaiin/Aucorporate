@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-china-companies",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "India Entry for Chinese Companies | Press Note 3 Guide",
     description:
       "Navigate India's Press Note 3 approval framework for China-linked FDI — the March 2026 amendment, beneficial ownership rules, and compliant entry structuring.",

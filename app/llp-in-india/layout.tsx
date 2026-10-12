@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/llp-in-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title,
     description,
     url: "https://www.theaucorp.com/llp-in-india",

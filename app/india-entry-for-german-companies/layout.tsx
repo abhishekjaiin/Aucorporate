@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-german-companies",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "India Entry for German Companies | DTAA & Subsidiary Guide",
     description:
       "How German manufacturing and engineering companies set up an Indian subsidiary — DTAA's flat 10% rate, entity structuring, and FEMA compliance.",

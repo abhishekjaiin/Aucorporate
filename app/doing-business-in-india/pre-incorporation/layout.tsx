@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/doing-business-in-india/pre-incorporation",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Pre-Incorporation Planning for India Entry | AU Corporate",
     description:
       "What to plan before incorporating in India — market feasibility, FDI eligibility, tax-efficient structuring, JV strategy, and location planning.",

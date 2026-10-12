@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-business-setup",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "India Business Setup Guide: Company Formation & FDI Routes",
     description:
       "India business setup guide for foreign companies — entity types, FDI routes, formation, compliance, banking and realistic timelines in one place.",
