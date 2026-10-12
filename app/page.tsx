@@ -28,37 +28,37 @@ const services = [
     icon: Building2,
     title: "India Subsidiary Registration",
     description: "Incorporation of your wholly owned subsidiary or joint venture, including name approval, PAN and TAN, bank account opening, share issue to the parent and FC-GPR filing.",
-    href: "/india-business-setup/foreign-subsidiary-india",
+    href: "/india-subsidiary-registration",
   },
   {
     icon: FileCheck,
     title: "Accounting, Reporting and Audit Support",
     description: "Monthly bookkeeping, MIS and reporting packs for the parent in US GAAP or IFRS, plus statutory audit coordination.",
-    href: "/services/accounting-assurance",
+    href: "/accounting-reporting-audit-support",
   },
   {
     icon: Landmark,
     title: "FEMA and RBI Compliance",
     description: "FC-GPR, FC-TRS, the annual FLA return, ECB reporting for parent loans, and repatriation of funds.",
-    href: "/india-business-setup/fdi-channels",
+    href: "/fema-rbi-compliance",
   },
   {
     icon: Calculator,
     title: "Corporate Tax, GST and Transfer Pricing",
     description: "Corporate tax returns, advance tax, TDS, GST registration and returns, tax audit, and transfer pricing for intercompany transactions.",
-    href: "/services/taxation-regulatory",
+    href: "/corporate-tax-gst-transfer-pricing",
   },
   {
     icon: Scale,
     title: "Secretarial and ROC Compliance",
     description: "Board meetings, AGM, annual ROC filings, director KYC, statutory registers, and resident director and registered office support.",
-    href: "/india-business-setup/regulatory-compliance",
+    href: "/secretarial-roc-compliance",
   },
   {
     icon: Users,
     title: "Payroll and Expat Services",
     description: "Payroll processing, PF and ESI, employment contracts, and tax and social security compliance for expats working in India.",
-    href: "/hr-services",
+    href: "/payroll-expat-services",
   },
 ]
 
