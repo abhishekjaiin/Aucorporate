@@ -1,8 +1,21 @@
 import Link from "next/link"
+import { Check } from "lucide-react"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
+
+const heroFacts = [
+  { title: "Reasonable Fees", body: "A clear written quote before we start" },
+  { title: "Every Tax Deadline Tracked", body: "Income tax, TDS, GST and transfer pricing" },
+  { title: "Transfer Pricing In-House", body: "Report and documentation with the parent in mind" },
+  { title: "One-Stop Tax Team", body: "From returns to appeals, under one roof" },
+]
+
+const quickAnswer = {
+  heading: "Corporate Tax, GST and Transfer Pricing for an Indian Subsidiary: The Short Answer",
+  text: "An Indian subsidiary of a foreign company pays income tax at an effective rate of about 25.17 percent under the concessional regime (22 percent tax, 10 percent surcharge and 4 percent cess), deducts and deposits TDS on its payments, registers for and files GST returns, and, if it deals with its parent or group companies, prepares a transfer pricing report showing those dealings are at arm's length. AU Corporate, a New Delhi firm of Chartered Accountants serving foreign parents since 2016, prepares and files all of these, and also represents the subsidiary in tax and GST disputes, refund claims and advance rulings, at reasonable fees.",
+}
 
 const youGet = [
   "Corporate income tax return filed on time",
@@ -44,6 +57,14 @@ const needFromYou = [
   { n: "5", title: "Payment Records", body: "Details of payments to vendors, professionals, landlords and employees for TDS. Only if AU Corporate does not keep your books." },
 ]
 
+const workSteps = [
+  { wk: "Week 1", title: "Review", body: "Check registrations, past returns, notices and open tax positions." },
+  { wk: "Ongoing", title: "Calculate", body: "Work out monthly TDS and GST and quarterly advance tax from the books." },
+  { wk: "Ongoing", title: "File", body: "Prepare and file returns before each due date." },
+  { wk: "After Year End", title: "Report", body: "Prepare the income tax return, tax audit schedules and transfer pricing report." },
+  { wk: "Always", title: "Advise", body: "Flag tax risks and savings in your parent's transactions." },
+]
+
 const included = [
   "Corporate Income Tax Return",
   "Advance Tax Calculation",
@@ -76,6 +97,15 @@ const calendar = [
   { when: "Generally 30 days from an assessment order", what: "Appeal to the CIT(A)", how: "Appeal and grounds prepared and filed" },
   { when: "Generally 60 days from the CIT(A) order", what: "Appeal to the ITAT", how: "Appeal and paper book prepared and filed" },
   { when: "Generally three months from a GST order", what: "First appeal against a GST order", how: "Appeal prepared with the pre-deposit" },
+]
+
+const afterLinks = [
+  { label: "Accounting, Reporting and Audit Support", href: "/accounting-reporting-audit-support" },
+  { label: "FEMA and RBI Compliance", href: "/fema-rbi-compliance" },
+  { label: "Secretarial and ROC Compliance", href: "/secretarial-roc-compliance" },
+  { label: "Payroll and Expat Services", href: "/payroll-expat-services" },
+  { label: "India Subsidiary Registration", href: "/india-subsidiary-registration" },
+  { label: "Foreign Subsidiary in India — Full Guide", href: "/india-business-setup/foreign-subsidiary-india" },
 ]
 
 const faqs = [
@@ -113,6 +143,8 @@ const faqs = [
   { q: "Can AU Corporate take over tax compliance for my existing Indian subsidiary?", a: "AU Corporate can take over tax, GST and transfer pricing compliance for an existing subsidiary. We review earlier returns, notices and the transfer pricing file, fix any gaps, and then run the monthly and annual tax calendar from an agreed start date." },
   { q: "Can AU Corporate handle Indian tax for a parent company from my country?", a: "AU Corporate handles tax, GST and transfer pricing for Indian subsidiaries of parent companies from more than 10 countries, including the USA, UK, Singapore, Australia, Germany, Japan, China, Hong Kong, Spain, France and the UAE. We also explain how the Indian tax position affects your group's tax return." },
 ]
+const faqsLeft = faqs.slice(0, Math.ceil(faqs.length / 2))
+const faqsRight = faqs.slice(Math.ceil(faqs.length / 2))
 
 export default function CorporateTaxGstTransferPricingPage() {
   return (
@@ -120,67 +152,89 @@ export default function CorporateTaxGstTransferPricingPage() {
       <Breadcrumb items={[{ label: "Foreign Subsidiary in India", href: "/india-business-setup/foreign-subsidiary-india" }, { label: "Corporate Tax, GST and Transfer Pricing" }]} />
 
       {/* HERO */}
-      <section className="py-20 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-yellow-400">Foreign Subsidiary in India</span>
-          <h1 className="mb-6 mt-3 text-4xl font-bold md:text-5xl">
-            Corporate Tax, GST and Transfer Pricing for Your India Subsidiary
-          </h1>
-          <p className="mb-4 text-xl leading-relaxed text-white/85">
-            Corporate tax returns, advance tax, TDS, GST registration and returns, tax audit, and transfer pricing for transactions with your parent, from one team of Chartered Accountants.
-          </p>
-          <p className="text-white/70 leading-relaxed">
-            An Indian subsidiary pays income tax at an effective rate of about 25.17 percent under the concessional regime, deducts and deposits TDS, registers for and files GST returns, and, if it deals with its parent or group companies, prepares a transfer pricing report showing those dealings are at arm&apos;s length.
-          </p>
-        </div>
-      </section>
-
-      {/* TRUST STRIP */}
-      <section className="py-12 bg-gray-100 border-y">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-            {[
-              { value: "~25.17%", label: "Effective concessional tax rate" },
-              { value: "31 Oct", label: "Transfer pricing report deadline" },
-              { value: "30 Nov", label: "ITR deadline, transfer pricing cases" },
-              { value: "150+", label: "Regular clients since 2016" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-yellow-600 mb-1">{stat.value}</div>
-                <p className="text-xs sm:text-sm text-gray-600">{stat.label}</p>
+      <section className="bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white py-14 md:py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row gap-10 lg:items-center">
+            <div className="flex-[1.4] min-w-0">
+              <span className="text-sm font-semibold uppercase tracking-wider text-gold">Foreign Subsidiary in India</span>
+              <h1 className="mb-5 mt-3 text-4xl font-bold md:text-5xl leading-tight">
+                Corporate Tax, GST and Transfer Pricing for Your India Subsidiary
+              </h1>
+              <p className="mb-6 text-xl leading-relaxed text-white/85 max-w-2xl">
+                Corporate tax returns, advance tax, TDS, GST registration and returns, tax audit, and transfer pricing for transactions with your parent, from one team of Chartered Accountants.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <a href="https://cal.com/abhishek-jaiin-ybbklq/30min" className="inline-block px-5 py-3 rounded-lg font-bold text-sm bg-gold text-[#081a42] hover:bg-gold-dark transition">Book Consultation with an Expert</a>
+                <a href="#contact" className="inline-block px-5 py-3 rounded-lg font-bold text-sm border-2 border-white text-white hover:bg-white/10 transition">Get a Quote</a>
               </div>
-            ))}
+              <p className="text-sm text-white/70">150+ Subsidiaries Incorporated &middot; 150+ Regular Clients &middot; Since 2016</p>
+            </div>
+            <aside className="flex-1 min-w-[280px] rounded-2xl border border-white/20 bg-white/5 p-6 md:p-7" aria-label="Service summary">
+              <ul className="space-y-5">
+                {heroFacts.map((f) => (
+                  <li key={f.title} className="flex gap-3">
+                    <span className="mt-0.5 flex h-[22px] w-[22px] flex-shrink-0 items-center justify-center rounded-full bg-gold">
+                      <Check size={13} strokeWidth={3} className="text-[#081a42]" />
+                    </span>
+                    <div>
+                      <strong className="block text-white font-bold">{f.title}</strong>
+                      <span className="block text-sm text-white/70">{f.body}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
 
-      {/* INTRO */}
+      {/* QUICK ANSWER + INTRO */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Tax Compliance That Matches Your Parent&apos;s Expectations</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Indian tax has many dates and many forms, and the penalties for a mistake fall on the subsidiary and its directors. Transfer pricing matters most because tax officers examine dealings between the subsidiary and its foreign parent closely.
-          </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            AU Corporate prepares the tax workings directly from your books, so the return, the audit report and the transfer pricing report all agree. You receive a single calendar and clear summaries your finance team abroad can follow — see our{" "}
-            <Link href="/accounting-reporting-audit-support" className="text-gold-dark font-semibold hover:underline">accounting, reporting and audit support</Link>{" "}
-            for how those books are kept in step.
-          </p>
-          <h3 className="text-xl font-bold text-gray-900 mb-4">You Get</h3>
-          <ul className="list-disc pl-6 space-y-2 text-gray-600">
-            {youGet.map((item) => (<li key={item}>{item}</li>))}
-          </ul>
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="mb-14 rounded-r-xl border-l-4 border-gold bg-[#fffbe6] p-6 md:p-7">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">{quickAnswer.heading}</h2>
+            <p className="text-gray-700 leading-relaxed mb-3">{quickAnswer.text}</p>
+            <p className="text-sm text-gray-600">
+              Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-10">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Tax Compliance That Matches Your Parent&apos;s Expectations</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Indian tax has many dates and many forms, and the penalties for a mistake fall on the subsidiary and its directors. Transfer pricing matters most because tax officers examine dealings between the subsidiary and its foreign parent closely.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                AU Corporate prepares the tax workings directly from your books, so the return, the audit report and the transfer pricing report all agree. You receive a single calendar and clear summaries your finance team abroad can follow &mdash; see our{" "}
+                <Link href="/accounting-reporting-audit-support" className="text-gold-dark font-semibold hover:underline">accounting, reporting and audit support</Link>{" "}
+                for how those books are kept in step.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">You Get</h3>
+              <ul className="space-y-3">
+                {youGet.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1 flex h-[18px] w-[18px] flex-shrink-0 items-center justify-center rounded-full bg-gold">
+                      <Check size={11} strokeWidth={3} className="text-[#081a42]" />
+                    </span>
+                    <span className="text-gray-600 leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* TAX BY TAX */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Handle, Tax by Tax</h2>
           <p className="text-gray-600 leading-relaxed mb-8">The tax areas an Indian subsidiary deals with most often.</p>
           <div className="grid sm:grid-cols-2 gap-5">
             {taxByTax.map((item) => (
-              <div key={item.title} className="p-6 bg-white border rounded-lg">
+              <div key={item.title} className="p-6 bg-white border border-gray-200 rounded-lg">
                 <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">{item.tag}</span>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
@@ -191,13 +245,13 @@ export default function CorporateTaxGstTransferPricingPage() {
       </section>
 
       {/* TAX RATE */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+      <section className="py-20 bg-secondary/30">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Income Tax Rate for an Indian Subsidiary</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
             Most Indian subsidiaries pay tax under the concessional regime for domestic companies. This is how the effective rate is built up.
           </p>
-          <div className="overflow-x-auto bg-secondary/30 border rounded-lg">
+          <div className="overflow-x-auto bg-white border border-gray-200 rounded-lg">
             <table className="w-full text-sm">
               <thead className="bg-[#081a42] text-white">
                 <tr>
@@ -230,13 +284,13 @@ export default function CorporateTaxGstTransferPricingPage() {
 
       {/* WHAT WE NEED */}
       <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Need from You</h2>
           <p className="text-gray-600 leading-relaxed mb-8">If AU Corporate keeps your books, we already hold your accounts and need only the other items. If another provider keeps them, we need the first and last items as well.</p>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4">
             {needFromYou.map((item) => (
-              <div key={item.title} className="p-6 bg-white border rounded-lg">
-                <div className="w-8 h-8 rounded-full bg-[#081a42] text-yellow-400 font-bold text-sm flex items-center justify-center mb-3">{item.n}</div>
+              <div key={item.title} className="p-5 bg-white border border-gray-200 rounded-xl">
+                <div className="w-8 h-8 rounded-full bg-[#081a42] text-gold font-bold text-sm flex items-center justify-center mb-3">{item.n}</div>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
               </div>
@@ -245,15 +299,32 @@ export default function CorporateTaxGstTransferPricingPage() {
         </div>
       </section>
 
-      {/* WHAT'S INCLUDED */}
+      {/* HOW WE WORK */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">How We Work, in Five Steps</h2>
+          <p className="text-gray-600 leading-relaxed mb-8">We keep the tax calendar running all year, so the annual return is not a scramble.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {workSteps.map((step) => (
+              <div key={step.title} className="border-t-4 border-gold bg-white rounded-b-lg p-4 shadow-sm border border-gray-100">
+                <span className="inline-block text-xs font-bold uppercase tracking-wide text-yellow-700 bg-yellow-50 px-2 py-0.5 rounded mb-2">{step.wk}</span>
+                <h3 className="font-bold text-gray-900 mb-1">{step.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{step.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT'S INCLUDED */}
+      <section className="py-20 bg-secondary/30">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">What&apos;s Included in the Package</h2>
           <p className="text-gray-600 leading-relaxed mb-8">Reasonable fees, confirmed in writing before we start.</p>
           <div className="grid sm:grid-cols-2 gap-3 mb-6">
             {included.map((item) => (
-              <div key={item} className="flex items-start gap-3 bg-secondary/30 border rounded-lg p-4">
-                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#081a42] text-yellow-400 text-xs font-bold flex items-center justify-center mt-0.5">✓</span>
+              <div key={item} className="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-4">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#081a42] text-gold text-xs font-bold flex items-center justify-center mt-0.5">&#10003;</span>
                 <span className="text-sm text-gray-700">{item}</span>
               </div>
             ))}
@@ -265,11 +336,11 @@ export default function CorporateTaxGstTransferPricingPage() {
       </section>
 
       {/* CALENDAR */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">The Corporate Tax Calendar for an Indian Subsidiary</h2>
           <p className="text-gray-600 leading-relaxed mb-8">What is due, and when, for an Indian subsidiary with a 1 April to 31 March year. We track every date for you.</p>
-          <div className="overflow-x-auto bg-white border rounded-lg">
+          <div className="overflow-x-auto bg-white border border-gray-200 rounded-lg">
             <table className="w-full text-sm">
               <thead className="bg-[#081a42] text-white">
                 <tr>
@@ -294,24 +365,39 @@ export default function CorporateTaxGstTransferPricingPage() {
       </section>
 
       {/* AFTER SETUP */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">One Team for the Rest of Your Compliance</h2>
-          <p className="text-gray-600 leading-relaxed mb-6">Tax is only as good as the books behind it. The same team handles your accounts, FEMA filings and secretarial compliance.</p>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/accounting-reporting-audit-support" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Accounting, Reporting and Audit Support</Link>
-            <Link href="/fema-rbi-compliance" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">FEMA and RBI Compliance</Link>
-            <Link href="/secretarial-roc-compliance" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Secretarial and ROC Compliance</Link>
-            <Link href="/payroll-expat-services" className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">Payroll and Expat Services</Link>
+      <section className="py-20 bg-secondary/30">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="flex flex-wrap gap-8 items-center justify-between border border-gray-200 rounded-2xl p-8 bg-white">
+            <div className="flex-1 min-w-[280px]">
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">One Team for the Rest of Your Compliance</h2>
+              <p className="text-gray-600">Tax is only as good as the books behind it. The same team handles your accounts, FEMA filings and secretarial compliance.</p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {afterLinks.map((l) => (
+                <Link key={l.href} href={l.href} className="px-4 py-2 border border-[#081a42] text-[#081a42] rounded-full text-sm font-semibold hover:bg-[#081a42] hover:text-white transition">
+                  {l.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Frequently Asked Questions</h2>
-          <FaqAccordion faqs={faqs} />
+      <section className="py-20 bg-white" id="faq">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-2 text-gray-900">Questions Before You Start</h2>
+          <p className="text-gray-600 mb-6">Straight answers to the questions foreign finance teams ask most. Can&apos;t find yours? Ask us in the form below.</p>
+          <p className="text-sm text-gray-600 mb-1">
+            Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+          </p>
+          <p className="text-sm text-gray-500 mb-10">
+            This is general guidance based on Indian law and practice as at the date above. It is not advice for your specific case, and rules can change.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-x-10">
+            <FaqAccordion faqs={faqsLeft} />
+            <FaqAccordion faqs={faqsRight} />
+          </div>
         </div>
       </section>
 
@@ -331,7 +417,7 @@ export default function CorporateTaxGstTransferPricingPage() {
       />
 
       {/* LEAD FORM */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-secondary/30" id="contact">
         <div className="max-w-5xl mx-auto px-4">
           <LeadForm
             title="Need Corporate Tax, GST or Transfer Pricing Support?"
@@ -340,7 +426,7 @@ export default function CorporateTaxGstTransferPricingPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-secondary/30">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <RelatedResources
             links={[
