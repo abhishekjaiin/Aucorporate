@@ -37,6 +37,39 @@ const structureOptions = [
   },
 ]
 
+const subsidiaryServices = [
+  {
+    title: "India Subsidiary Registration",
+    body: "Incorporation of your wholly owned subsidiary or joint venture, including name approval, PAN and TAN, bank account opening, share issue to the parent and FC-GPR filing.",
+    href: "/india-subsidiary-registration",
+  },
+  {
+    title: "Accounting, Reporting and Audit Support",
+    body: "Monthly bookkeeping, MIS and reporting packs for the parent in US GAAP or IFRS, plus statutory audit coordination.",
+    href: "/accounting-reporting-audit-support",
+  },
+  {
+    title: "FEMA and RBI Compliance",
+    body: "FC-GPR, FC-TRS, the annual FLA return, ECB reporting for parent loans, and repatriation of funds.",
+    href: "/fema-rbi-compliance",
+  },
+  {
+    title: "Corporate Tax, GST and Transfer Pricing",
+    body: "Corporate tax returns, advance tax, TDS, GST registration and returns, tax audit, and transfer pricing for intercompany transactions.",
+    href: "/corporate-tax-gst-transfer-pricing",
+  },
+  {
+    title: "Secretarial and ROC Compliance",
+    body: "Board meetings, AGM, annual ROC filings, director KYC, statutory registers, and resident director and registered office support.",
+    href: "/secretarial-roc-compliance",
+  },
+  {
+    title: "Payroll and Expat Services",
+    body: "Payroll processing, PF and ESI, employment contracts, and tax and social security compliance for expats working in India.",
+    href: "/payroll-expat-services",
+  },
+]
+
 const operateLinks = [
   { label: "Accounting & Assurance", href: "/services/accounting-assurance", body: "Bookkeeping, financial reporting, and statutory audit support for the subsidiary's finance function." },
   { label: "Taxation & Regulatory", href: "/services/taxation-regulatory", body: "Corporate tax, GST, advance tax, and TDS compliance for the entity." },
@@ -115,6 +148,29 @@ export default function ForeignSubsidiaryIndiaPage() {
             </Link>{" "}
             guide instead.
           </p>
+        </div>
+      </section>
+
+      {/* COMPLETE SERVICES FOR YOUR INDIA SUBSIDIARY */}
+      <section className="py-20 bg-secondary/30">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Complete Services for Your India Subsidiary</h2>
+          <p className="text-gray-600 leading-relaxed mb-10 text-center max-w-2xl mx-auto">
+            Everything a foreign company needs to set up, run and stay compliant with its Indian subsidiary, under one team.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {subsidiaryServices.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="flex flex-col bg-white p-6 rounded-xl border hover:shadow-lg hover:border-gold/50 transition"
+              >
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed mb-3 flex-grow">{item.body}</p>
+                <span className="text-sm font-semibold text-gold-dark">Learn more →</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -67,6 +67,12 @@ export const publicPages: PublicPage[] = [
 
   // Entity-Type Pages
   { path: "/branch-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-21" },
+  { path: "/branch-office-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
+  { path: "/branch-office-fema-rbi-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
+  { path: "/foreign-company-roc-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
+  { path: "/branch-office-tax-gst-transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
+  { path: "/branch-office-accounting-audit", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
+  { path: "/branch-office-payroll-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/liaison-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-21" },
   { path: "/project-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-22" },
   { path: "/llp-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-28" },
@@ -79,7 +85,13 @@ export const publicPages: PublicPage[] = [
   // India Business Setup Cluster
   { path: "/india-business-setup/fdi-channels", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
   { path: "/india-business-setup/company-formation", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
-  { path: "/india-business-setup/foreign-subsidiary-india", priority: 0.93, changeFrequency: "weekly", lastModified: "2026-10-08" },
+  { path: "/india-business-setup/foreign-subsidiary-india", priority: 0.93, changeFrequency: "weekly", lastModified: "2026-10-12" },
+  { path: "/india-subsidiary-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
+  { path: "/accounting-reporting-audit-support", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
+  { path: "/fema-rbi-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
+  { path: "/corporate-tax-gst-transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
+  { path: "/secretarial-roc-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
+  { path: "/payroll-expat-services", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/india-business-setup/regulatory-compliance", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-20" },
   { path: "/india-business-setup/banking-taxation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-14" },
   { path: "/india-business-setup/timeline-resources", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },

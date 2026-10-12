@@ -309,7 +309,8 @@ export default function BranchOfficeInIndiaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Ongoing Compliance: The Annual Activity Certificate (AAC)</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             A Branch Office&apos;s central recurring compliance obligation is the <strong>Annual Activity Certificate (AAC)</strong> — an annual filing, certified by a chartered accountant, confirming that the Branch Office&apos;s activities during the year stayed within the scope RBI originally approved. This is separate from — and should not be confused with — the FC-GPR/FC-TRS/FLA reporting stack that applies to an Indian company carrying foreign equity investment on its books; a Branch Office doesn&apos;t have equity shareholding in the same sense, so it doesn&apos;t file those returns. See{" "}
-            <Link href="/india-business-setup/regulatory-compliance" className="text-gold-dark font-semibold hover:underline">ongoing regulatory compliance</Link> for how that separate reporting stack works for entities that do carry foreign investment.
+            <Link href="/india-business-setup/regulatory-compliance" className="text-gold-dark font-semibold hover:underline">ongoing regulatory compliance</Link> for how that separate reporting stack works for entities that do carry foreign investment. For the fuller FEMA/RBI picture specific to a Branch Office — Form FNC, UIN, the AAC itself, profit remittance, opening additional offices, compounding and closure — see our dedicated{" "}
+            <Link href="/branch-office-fema-rbi-compliance" className="text-gold-dark font-semibold hover:underline">FEMA and RBI Compliance for Branch Offices</Link> guide.
           </p>
           <p className="text-gray-600 leading-relaxed mb-8">
             The AAC is filed annually, following the close of the financial year, and is routed to <strong>two</strong> authorities in parallel: the AD Category-I bank through which the Branch Office was approved, and the <strong>Directorate General of Income Tax (International Taxation)</strong>. This dual-authority routing — one channel confirming the activity stayed within the FEMA-approved scope, the other feeding the tax administration&apos;s own record of the branch&apos;s operations — is a detail worth understanding precisely rather than treating as a single generic &quot;annual filing.&quot;
@@ -348,6 +349,15 @@ export default function BranchOfficeInIndiaPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">How AU Corporate Supports Branch Office Registration and Compliance</h2>
           <p className="text-gray-600 leading-relaxed mb-6">
             Setting up and running a Branch Office involves coordinating four separate authorities that don&apos;t share a single application or filing system: RBI (which grants establishment approval), the AD Category-I bank (the channel through which the application is filed and the AAC is later routed), the ROC/MCA (which separately registers the branch as a foreign company under Section 380 and later issues the closure certificate), and the Directorate General of Income Tax, International Taxation (the second AAC-routing destination, and the authority relevant to the PE tax position). AU Corporate coordinates this sequence end to end — preparing and filing Form FNC through the AD bank, managing the parallel Form FC-1/ROC registration, handling the annual AAC filing and its dual routing, and advising on the PE tax and profit-attribution position — so the RBI, banking, company-law, and tax threads stay aligned rather than being managed as four disconnected filings.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            Our support breaks down into dedicated guides for each piece of that sequence:{" "}
+            <Link href="/branch-office-registration" className="text-gold-dark font-semibold hover:underline">registration and RBI/AD-bank approval</Link>,{" "}
+            <Link href="/branch-office-fema-rbi-compliance" className="text-gold-dark font-semibold hover:underline">FEMA and RBI compliance</Link>,{" "}
+            <Link href="/foreign-company-roc-compliance" className="text-gold-dark font-semibold hover:underline">ROC compliance (Forms FC-1, FC-3, FC-4)</Link>,{" "}
+            <Link href="/branch-office-tax-gst-transfer-pricing" className="text-gold-dark font-semibold hover:underline">tax, GST and transfer pricing</Link>,{" "}
+            <Link href="/branch-office-accounting-audit" className="text-gold-dark font-semibold hover:underline">accounting, reporting and audit support</Link>, and{" "}
+            <Link href="/branch-office-payroll-compliance" className="text-gold-dark font-semibold hover:underline">payroll, social security and FRRO for expats</Link>.
           </p>
           <p className="text-gray-600 leading-relaxed">
             If a Branch Office looks like the right structure for your India presence, our team can walk through the RBI approval and AD-bank process for your specific situation —{" "}
@@ -400,6 +410,36 @@ export default function BranchOfficeInIndiaPage() {
         <div className="max-w-7xl mx-auto px-4">
           <RelatedResources
             links={[
+              {
+                label: "Branch Office Registration: Full Process",
+                href: "/branch-office-registration",
+                description: "Form FNC, RBI and AD bank approval, UIN, ROC Form FC-1, PAN and TAN — eligibility, documents and timeline.",
+              },
+              {
+                label: "FEMA and RBI Compliance for Branch Offices",
+                href: "/branch-office-fema-rbi-compliance",
+                description: "The AAC, profit remittance, additional offices, compounding and closure in full depth.",
+              },
+              {
+                label: "ROC Compliance: Forms FC-1, FC-3, FC-4",
+                href: "/foreign-company-roc-compliance",
+                description: "Registration, changes, accounts and annual return filings with the Registrar of Companies.",
+              },
+              {
+                label: "Tax, GST and Transfer Pricing for Branch Offices",
+                href: "/branch-office-tax-gst-transfer-pricing",
+                description: "Foreign company tax rate, advance tax, TDS, GST, transfer pricing and permanent establishment.",
+              },
+              {
+                label: "Accounting, Reporting and Audit Support",
+                href: "/branch-office-accounting-audit",
+                description: "Monthly accounting, head office reconciliation, TDS/GST workings, US GAAP/IFRS reporting and audit support.",
+              },
+              {
+                label: "Payroll, Social Security and FRRO for Expats",
+                href: "/branch-office-payroll-compliance",
+                description: "Payroll, PF/ESI, professional tax, Labour Codes compliance and FRRO registration for expat staff.",
+              },
               {
                 label: "Company Registration in India",
                 href: "/india-business-setup/company-formation",
