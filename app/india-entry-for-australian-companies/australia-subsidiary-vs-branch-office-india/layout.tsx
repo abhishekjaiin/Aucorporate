@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Australia Subsidiary vs Branch Office in India | Comparison Guide",
     description:
       "Comparing subsidiary and branch office structures for Australian companies entering India, including CFC attribution rules and DTAA withholding treatment.",

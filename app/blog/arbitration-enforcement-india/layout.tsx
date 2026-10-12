@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/arbitration-enforcement-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Arbitration Enforcement in India | AU Corporate Blog",
     description:
       "How arbitration awards are enforced in India, and what foreign companies should know about the enforcement process.",

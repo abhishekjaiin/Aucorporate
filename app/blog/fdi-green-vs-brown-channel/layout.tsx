@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/fdi-green-vs-brown-channel",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "FDI in India: Green Channel vs Brown Channel | AU Corporate",
     description:
       "FDI in India explained: the regulatory framework, automatic vs. government route, and how Green Channel and Brown Channel approvals differ.",

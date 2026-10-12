@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/tax-loan-waiver-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Tax Treatment of Loan Waiver in India | Supreme Court Ruling",
     description:
       "How Indian courts settled the tax treatment of loan waivers — from T.V. Sundaram Iyengar to the Supreme Court's final word on Sections 28(iv) and 41(1).",

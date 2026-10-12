@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/global-vat-compliance-ai-saas-companies",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title,
     description,
     url: "https://www.theaucorp.com/global-vat-compliance-ai-saas-companies",

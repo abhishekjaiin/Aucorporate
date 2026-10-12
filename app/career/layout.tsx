@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/career",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Careers at AU Corporate | Join Our Advisory Team",
     description:
       "Explore career opportunities at AU Corporate, a professional services firm specializing in India entry, taxation, and regulatory advisory.",

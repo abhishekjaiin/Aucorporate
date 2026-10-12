@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/oidar-gst-registration-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title,
     description,
     url: "https://www.theaucorp.com/oidar-gst-registration-india",

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Repatriating Profits from Your Indian Subsidiary to a US Parent: DTAA & Withholding Tax Rates | AU Corporate",
     description:
       "How a US parent company repatriates profits from its Indian subsidiary under the India-US DTAA: sourced treaty rates, the 2026 buyback rules, and net FTC cost.",

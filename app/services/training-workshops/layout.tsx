@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/services/training-workshops",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Training & Workshops | AU Corporate",
     description:
       "Professional development workshops in taxation, compliance, and business practices delivered by AU Corporate's advisory team.",

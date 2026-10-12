@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "UK Subsidiary vs Branch Office in India | Comparison Guide",
     description:
       "Branch vs subsidiary in India for UK companies: RBI approval timelines, permitted activities, corporate tax rates, and DTAA withholding differences.",

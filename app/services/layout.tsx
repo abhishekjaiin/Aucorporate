@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/services",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Our Services | India Entry, Tax & Advisory | AU Corporate",
     description:
       "Explore AU Corporate's full service range: India entry, GCC advisory, taxation, accounting, HR outsourcing, risk management, and Virtual CFO services.",

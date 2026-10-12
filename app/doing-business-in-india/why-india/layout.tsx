@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/doing-business-in-india/why-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Why Invest in India | Doing Business in India Guide",
     description:
       "Key reasons global companies are choosing India — market size, growth rate, talent, and strategic advantages for foreign investors.",

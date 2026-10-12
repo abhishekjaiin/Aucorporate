@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/corporate-tax-gst-transfer-pricing",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Corporate Tax, GST and Transfer Pricing in India for Subsidiaries",
     description:
       "Corporate tax at 25.17%, GST, transfer pricing, DTAA, repatriation tax, expat taxation, tax litigation and GST refunds for Indian subsidiaries. Reasonable fees.",

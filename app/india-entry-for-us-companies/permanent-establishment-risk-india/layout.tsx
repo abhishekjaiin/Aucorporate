@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-us-companies/permanent-establishment-risk-india",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Permanent Establishment Risk in India for US Companies | AU Corporate",
     description:
       "How US companies trigger permanent establishment risk in India — the four PE types, DTAA Article 5, key case law, and whether an EOR eliminates exposure.",

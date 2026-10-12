@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/services/accounting-assurance",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Accounting & Assurance Services | AU Corporate",
     description:
       "Financial statement preparation, Ind AS/IFRS compliance, internal controls assessment, and audit assurance services for businesses in India.",

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/contact",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Contact AU Corporate | India Entry & Advisory Team",
     description:
       "Get in touch with AU Corporate for India market entry, tax, compliance, and Virtual CFO advisory. New Delhi-based, serving foreign companies entering and operating in India.",

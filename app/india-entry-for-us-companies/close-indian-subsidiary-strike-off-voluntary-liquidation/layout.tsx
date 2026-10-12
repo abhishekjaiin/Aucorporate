@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Closing an Indian Subsidiary: Strike-Off vs Voluntary Liquidation Guide | AU Corporate",
     description:
       "How to close an Indian subsidiary: choosing between Section 248 strike-off and IBBI voluntary liquidation, RBI remittance-of-assets rules, and what it means for your US parent's Form 5471 filing.",

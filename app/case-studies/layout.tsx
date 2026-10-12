@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/case-studies",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Case Studies | AU Corporate",
     description:
       "How foreign companies have set up and run their Indian subsidiaries with AU Corporate.",

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-australian-companies",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "India Entry for Australian Companies | ECTA Guide",
     description:
       "How Australian companies enter India under ECTA — entity structuring, DTAA royalty rates, and FEMA/RBI compliance for Indian subsidiaries.",

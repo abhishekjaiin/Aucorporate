@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/branch-office-registration",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "Branch Office Registration in India for Foreign Companies",
     description:
       "Register a branch office of your foreign company in India: Form FNC, RBI and AD bank approval, UIN, ROC Form FC-1, PAN and TAN. Eligibility, FAQs and fixed-fee quote.",

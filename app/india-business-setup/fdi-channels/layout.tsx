@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-business-setup/fdi-channels",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "FDI Channels & Investment Routes in India",
     description:
       "An overview of the Automatic and Government approval routes for foreign direct investment into India, by sector.",

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-entry-for-us-companies",
   },
   openGraph: {
+    siteName: "AU Corporate",
     title: "India Entry for US Companies | Subsidiary Setup & Compliance",
     description:
       "How US companies enter India — subsidiary vs branch structuring, FEMA compliance, transfer pricing, and incorporation support.",
