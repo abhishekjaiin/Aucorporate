@@ -62,40 +62,6 @@ const services = [
   },
 ]
 
-/* BUSINESS STRUCTURES */
-const structures = [
-  {
-    title: "Private Limited Company",
-    description: "For entrepreneurs, startups, and businesses operating commercially in India. The most common structure for genuine India operations.",
-    href: "/india-business-setup/company-formation",
-  },
-  {
-    title: "Wholly Owned Subsidiary",
-    description: "For foreign companies seeking full control over their Indian operations, with limited liability and access to the automatic FDI route in most sectors.",
-    href: "/india-business-setup/foreign-subsidiary-india",
-  },
-  {
-    title: "Branch Office",
-    description: "For eligible foreign companies carrying out permitted representative or specific commercial activities in India, subject to RBI approval.",
-    href: "/branch-office-in-india",
-  },
-  {
-    title: "Liaison Office",
-    description: "For foreign companies establishing an initial representative presence in India, with restrictions on commercial activity.",
-    href: "/liaison-office-in-india",
-  },
-  {
-    title: "Project Office",
-    description: "For foreign companies executing a specific, time-bound project in India.",
-    href: "/project-office-in-india",
-  },
-  {
-    title: "LLP",
-    description: "For businesses where a Limited Liability Partnership structure suits the ownership and operating model.",
-    href: "/llp-in-india",
-  },
-]
-
 /* PARENT COMPANY COUNTRIES — only linked where AU has a dedicated country guide;
    the rest are shown as plain badges rather than linked to a page that doesn't exist. */
 const parentCountries = [
@@ -348,40 +314,6 @@ export default function HomePage() {
                 <span className="text-sm font-semibold mt-4 text-blue">Learn more →</span>
               </Link>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ================= BUSINESS STRUCTURE ================= */}
-      <section id="entity-options" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4 font-heading text-blue">
-            What's the Right Structure for Your India Business?
-          </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            The right structure depends on your activities, ownership, sector, and applicable regulations — here's a starting point.
-          </p>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-            {structures.map((s) => (
-              <Link
-                key={s.title}
-                href={s.href}
-                className="flex flex-col p-6 border rounded-xl hover:shadow-lg hover:border-yellow-300 transition-all duration-300"
-              >
-                <h3 className="font-semibold mb-2 font-heading text-blue">
-                  {s.title}
-                </h3>
-                <p className="text-sm text-gray-500 flex-1">{s.description}</p>
-                <span className="text-sm font-semibold mt-4 text-blue">See details →</span>
-              </Link>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <Button asChild style={{ backgroundColor: GOLD }} className="text-black">
-              <Link href="/contact">Not Sure Which Structure Is Right? Talk to Us</Link>
-            </Button>
           </div>
         </div>
       </section>
