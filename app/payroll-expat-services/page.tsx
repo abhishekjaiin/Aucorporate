@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { InquiryTrigger } from "@/components/InquiryTrigger"
 import { Check } from "lucide-react"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
@@ -148,7 +149,7 @@ export default function PayrollExpatServicesPage() {
               </p>
               <div className="flex flex-wrap gap-3 mb-6">
                 <a href="https://cal.com/abhishek-jaiin-ybbklq/30min" className="inline-block px-5 py-3 rounded-lg font-bold text-sm bg-gold text-[#081a42] hover:bg-gold-dark transition">Book Consultation with an Expert</a>
-                <a href="#contact" className="inline-block px-5 py-3 rounded-lg font-bold text-sm border-2 border-white text-white hover:bg-white/10 transition">Get a Quote</a>
+                <InquiryTrigger className="inline-block px-5 py-3 rounded-lg font-bold text-sm border-2 border-white text-white hover:bg-white/10 transition">Get a Quote</InquiryTrigger>
               </div>
               <p className="text-sm text-white/70">150+ Subsidiaries Incorporated &middot; 150+ Regular Clients &middot; Since 2016</p>
             </div>
