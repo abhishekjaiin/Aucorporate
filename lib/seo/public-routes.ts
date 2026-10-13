@@ -66,7 +66,6 @@ export const publicPages: PublicPage[] = [
   { path: "/gcc-setup-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-23" },
 
   // Entity-Type Pages
-  { path: "/branch-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-21" },
   { path: "/branch-office-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/branch-office-fema-rbi-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/foreign-company-roc-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },

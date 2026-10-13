@@ -57,7 +57,6 @@ const included = [
 ]
 
 const afterLinks = [
-  { label: "Branch Office in India (Complete Guide)", href: "/branch-office-in-india" },
   { label: "Branch Office Registration", href: "/branch-office-registration" },
   { label: "Branch Office Accounting, Reporting and Audit", href: "/branch-office-accounting-audit" },
   { label: "Branch Office Tax, GST and Transfer Pricing", href: "/branch-office-tax-gst-transfer-pricing" },
@@ -88,7 +87,7 @@ const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
 export default function BranchOfficeFemaRbiCompliancePage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Branch Office in India", href: "/branch-office-in-india" }, { label: "FEMA and RBI Compliance" }]} />
+      <Breadcrumb items={[{ label: "FEMA and RBI Compliance" }]} />
 
       {/* HERO */}
       <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
@@ -146,7 +145,7 @@ export default function BranchOfficeFemaRbiCompliancePage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">FEMA Compliance Without the Penalties</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 FEMA compliance is separate from company law and tax. A missed certificate or an improper remittance can lead to compounding and delay later transactions. See the{" "}
-                <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>{" "}
+                <Link href="/branch-office-registration" className="text-gold-dark font-semibold hover:underline">Branch Office Registration guide</Link>{" "}
                 for the eligibility and approval framework this ongoing compliance sits on top of.
               </p>
               <p className="text-gray-600 leading-relaxed">

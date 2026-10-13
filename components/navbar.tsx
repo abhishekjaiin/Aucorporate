@@ -28,7 +28,7 @@ const dbiColumns = [
     heading: "Entity Types & Setup",
     items: [
       { label: "Wholly Owned Subsidiary", href: "/india-business-setup/foreign-subsidiary-india" },
-      { label: "Branch Office", href: "/branch-office-in-india" },
+      { label: "Branch Office", href: "/branch-office-registration" },
       { label: "Liaison Office", href: "/liaison-office-in-india" },
       { label: "Project Office", href: "/project-office-in-india" },
       { label: "LLP", href: "/llp-in-india" },

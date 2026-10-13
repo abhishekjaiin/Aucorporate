@@ -65,7 +65,6 @@ const countryGuides = [
 ]
 
 const afterLinks = [
-  { label: "Branch Office in India (Complete Guide)", href: "/branch-office-in-india" },
   { label: "Branch Office FEMA and RBI Compliance", href: "/branch-office-fema-rbi-compliance" },
   { label: "Branch Office Tax, GST and Transfer Pricing", href: "/branch-office-tax-gst-transfer-pricing" },
   { label: "Branch Office Accounting, Reporting and Audit", href: "/branch-office-accounting-audit" },
@@ -97,7 +96,7 @@ const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
 export default function BranchOfficeRegistrationPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Branch Office in India", href: "/branch-office-in-india" }, { label: "Branch Office Registration" }]} />
+      <Breadcrumb items={[{ label: "Branch Office Registration" }]} />
 
       {/* HERO */}
       <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
@@ -154,8 +153,7 @@ export default function BranchOfficeRegistrationPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">We Set Up Your Branch Office, End to End</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                A branch office is the foreign company itself operating in India, so it needs RBI/AD-bank approval, ROC registration and ongoing filings, but no separate Indian company. For the full eligibility, permitted-activity and tax framework behind this process, see the{" "}
-                <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>.
+                A branch office is the foreign company itself operating in India, so it needs RBI/AD-bank approval, ROC registration and ongoing filings, but no separate Indian company.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 AU Corporate handles the application, the approvals and the registrations from India. You review and sign the documents from your own country.
