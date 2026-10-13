@@ -634,12 +634,12 @@ export default function HomePage() {
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link href="/services/taxation-regulatory" className="p-6 border rounded-lg hover:shadow-md transition group">
+            <Link href="/corporate-tax-gst-transfer-pricing" className="p-6 border rounded-lg hover:shadow-md transition group">
               <h3 className="font-semibold mb-2 font-heading">
-                Taxation &amp; Regulatory Services
+                Corporate Tax, GST and Transfer Pricing
               </h3>
               <p className="text-sm text-gray-600">
-                Expert guidance on tax planning, compliance frameworks, and regulatory requirements for businesses in India.
+                Corporate tax returns, advance tax, TDS, GST registration and returns, tax audit, and transfer pricing for your India subsidiary.
               </p>
             </Link>
 
@@ -652,12 +652,12 @@ export default function HomePage() {
               </p>
             </Link>
 
-            <Link href="/services/accounting-assurance" className="p-6 border rounded-lg hover:shadow-md transition group">
+            <Link href="/accounting-reporting-audit-support" className="p-6 border rounded-lg hover:shadow-md transition group">
               <h3 className="font-semibold mb-2 font-heading">
-                Accounting &amp; Assurance Services
+                Accounting, Reporting and Audit Support
               </h3>
               <p className="text-sm text-gray-600">
-                Comprehensive financial reporting, IFRS compliance, and assurance services for growing businesses.
+                Monthly bookkeeping, MIS and reporting packs for the parent in US GAAP or IFRS, plus statutory audit coordination.
               </p>
             </Link>
 
