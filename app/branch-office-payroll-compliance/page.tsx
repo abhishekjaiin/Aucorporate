@@ -59,7 +59,6 @@ const included = [
 ]
 
 const afterLinks = [
-  { label: "Branch Office in India (Complete Guide)", href: "/branch-office-in-india" },
   { label: "Branch Office Registration", href: "/branch-office-registration" },
   { label: "Branch Office Accounting, Reporting and Audit", href: "/branch-office-accounting-audit" },
   { label: "Branch Office FEMA and RBI Compliance", href: "/branch-office-fema-rbi-compliance" },
@@ -91,7 +90,7 @@ const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
 export default function BranchOfficePayrollCompliancePage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Branch Office in India", href: "/branch-office-in-india" }, { label: "Payroll and Labour Law Compliance" }]} />
+      <Breadcrumb items={[{ label: "Payroll and Labour Law Compliance" }]} />
 
       {/* HERO */}
       <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
@@ -149,7 +148,7 @@ export default function BranchOfficePayrollCompliancePage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Pay Your Branch Office Team Correctly, from the First Month</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Indian payroll has several registrations, monthly payments and yearly returns, and each state has its own rules. A branch office is part of the foreign company, so its payroll errors fall on the parent — see the{" "}
-                <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>{" "}
+                <Link href="/branch-office-registration" className="text-gold-dark font-semibold hover:underline">Branch Office Registration guide</Link>{" "}
                 for the structure this sits inside.
               </p>
               <p className="text-gray-600 leading-relaxed">

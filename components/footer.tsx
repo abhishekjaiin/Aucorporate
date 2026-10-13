@@ -6,7 +6,7 @@ const indiaEntryLinks = [
   { label: "Company Registration", href: "/india-business-setup/company-formation" },
   { label: "Foreign Subsidiary / WOS", href: "/india-business-setup/foreign-subsidiary-india" },
   { label: "FDI, FEMA & RBI", href: "/india-business-setup/fdi-channels" },
-  { label: "Branch Office", href: "/branch-office-in-india" },
+  { label: "Branch Office", href: "/branch-office-registration" },
   { label: "US Companies", href: "/india-entry-for-us-companies" },
   { label: "UK Companies", href: "/india-entry-for-uk-companies" },
 ]

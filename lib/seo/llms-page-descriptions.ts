@@ -43,7 +43,6 @@ export const pageMeta: Record<string, PageMeta> = {
 
   "/gcc-setup-india": { title: "GCC Setup in India", description: "Global Capability Center entity choice, FEMA/RBI filings, and safe harbour rules" },
 
-  "/branch-office-in-india": { title: "Branch Office in India", description: "RBI/FEMA 22(R) eligibility, Automatic vs Approval route, Form FNC" },
   "/branch-office-registration": { title: "Branch Office Registration", description: "Form FNC, RBI/AD bank approval, UIN, ROC Form FC-1, PAN and TAN for a foreign company's India branch office" },
   "/branch-office-fema-rbi-compliance": { title: "FEMA & RBI Compliance for Branch Offices", description: "Form FNC, UIN, Annual Activity Certificate, profit remittance, additional offices, compounding and closure" },
   "/foreign-company-roc-compliance": { title: "ROC Compliance for Foreign Companies", description: "Forms FC-1, FC-2, FC-3 and FC-4 for a branch office's registration, changes, accounts and annual return" },

@@ -242,7 +242,7 @@ export default function RegisterCompanyFromUSPage() {
         </div>
         <p className="text-gray-700 mb-4">
           See the full{' '}
-          <Link href="/branch-office-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+          <Link href="/branch-office-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold">
             Branch Office in India: RBI approval, setup and compliance
           </Link>
           ,{' '}
@@ -410,7 +410,7 @@ export default function RegisterCompanyFromUSPage() {
           <Link href="/llp-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             LLP Registration in India →
           </Link>
-          <Link href="/branch-office-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+          <Link href="/branch-office-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             Branch Office in India →
           </Link>
           <Link href="/liaison-office-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">

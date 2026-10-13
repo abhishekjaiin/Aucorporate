@@ -54,7 +54,7 @@ export default function CaseStudiesPage() {
 
           <p className="bg-gray-100 rounded-lg px-5 py-4 text-center text-gray-600 text-sm">
             Not ready for a subsidiary? We also set up{" "}
-            <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">
+            <Link href="/branch-office-registration" className="text-gold-dark font-semibold hover:underline">
               Branch Offices
             </Link>
             ,{" "}

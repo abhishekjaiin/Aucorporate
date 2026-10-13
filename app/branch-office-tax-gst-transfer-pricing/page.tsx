@@ -56,7 +56,6 @@ const included = [
 ]
 
 const afterLinks = [
-  { label: "Branch Office in India (Complete Guide)", href: "/branch-office-in-india" },
   { label: "Branch Office Registration", href: "/branch-office-registration" },
   { label: "Branch Office FEMA and RBI Compliance", href: "/branch-office-fema-rbi-compliance" },
   { label: "Branch Office Accounting, Reporting and Audit", href: "/branch-office-accounting-audit" },
@@ -88,7 +87,7 @@ const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
 export default function BranchOfficeTaxGstTransferPricingPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Branch Office in India", href: "/branch-office-in-india" }, { label: "Tax, GST and Transfer Pricing" }]} />
+      <Breadcrumb items={[{ label: "Tax, GST and Transfer Pricing" }]} />
 
       {/* HERO */}
       <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
@@ -146,7 +145,7 @@ export default function BranchOfficeTaxGstTransferPricingPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Tax Compliance That Matches Your Head Office Expectations</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 A branch office pays more tax than a subsidiary and has its own rules on head office expenses and GST — see the{" "}
-                <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>{" "}
+                <Link href="/branch-office-registration" className="text-gold-dark font-semibold hover:underline">Branch Office Registration guide</Link>{" "}
                 for how the PE tax position fits the wider structure. Mistakes fall on the foreign company directly.
               </p>
               <p className="text-gray-600 leading-relaxed">

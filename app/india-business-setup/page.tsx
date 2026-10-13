@@ -196,7 +196,7 @@ export default function IndiaBusinessSetupHub() {
               Company Formation
             </Link>{' '}
             page, or the dedicated{' '}
-            <Link href="/branch-office-in-india" className="text-yellow-700 font-semibold hover:underline">
+            <Link href="/branch-office-registration" className="text-yellow-700 font-semibold hover:underline">
               Branch Office registration guide
             </Link>{' '}
             <Link href="/liaison-office-in-india" className="text-yellow-700 font-semibold hover:underline">

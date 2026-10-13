@@ -56,7 +56,6 @@ const included = [
 ]
 
 const afterLinks = [
-  { label: "Branch Office in India (Complete Guide)", href: "/branch-office-in-india" },
   { label: "Branch Office Registration", href: "/branch-office-registration" },
   { label: "Branch Office Tax, GST and Transfer Pricing", href: "/branch-office-tax-gst-transfer-pricing" },
   { label: "Branch Office FEMA and RBI Compliance", href: "/branch-office-fema-rbi-compliance" },
@@ -87,7 +86,7 @@ const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
 export default function BranchOfficeAccountingAuditPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Branch Office in India", href: "/branch-office-in-india" }, { label: "Accounting, Reporting and Audit" }]} />
+      <Breadcrumb items={[{ label: "Accounting, Reporting and Audit" }]} />
 
       {/* HERO */}
       <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
@@ -145,7 +144,7 @@ export default function BranchOfficeAccountingAuditPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Clean Books in India, Reporting Your Head Office Understands</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 A branch office has no share capital, so its books centre on the head office account and the Indian taxes it must follow — see the{" "}
-                <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>{" "}
+                <Link href="/branch-office-registration" className="text-gold-dark font-semibold hover:underline">Branch Office Registration guide</Link>{" "}
                 for how this fits into the wider compliance picture. Part-time bookkeeping often leaves gaps.
               </p>
               <p className="text-gray-600 leading-relaxed">

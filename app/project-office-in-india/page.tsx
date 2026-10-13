@@ -181,7 +181,7 @@ export default function ProjectOfficeInIndiaPage() {
           </div>
           <p className="text-gray-600 leading-relaxed">
             If a Project Office turns out to be too narrow for what you actually intend to do — an ongoing commercial presence beyond a single contract — see the full{" "}
-            <Link href="/branch-office-in-india" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>. If what you actually need is a pure, non-revenue representative presence rather than contract execution, see the{" "}
+            <Link href="/branch-office-registration" className="text-gold-dark font-semibold hover:underline">Branch Office in India guide</Link>. If what you actually need is a pure, non-revenue representative presence rather than contract execution, see the{" "}
             <Link href="/liaison-office-in-india" className="text-gold-dark font-semibold hover:underline">Liaison Office in India guide</Link>. If the work will extend beyond a single contract, see our{" "}
             <Link href="/india-business-setup/foreign-subsidiary-india" className="text-gold-dark font-semibold hover:underline">Foreign Subsidiary / WOS guide</Link>.
           </p>
@@ -446,7 +446,7 @@ export default function ProjectOfficeInIndiaPage() {
               },
               {
                 label: "Branch Office in India",
-                href: "/branch-office-in-india",
+                href: "/branch-office-registration",
                 description: "The more commercially active alternative, for readers whose activity goes beyond a single contract.",
               },
               {

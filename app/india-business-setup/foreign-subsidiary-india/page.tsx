@@ -14,7 +14,7 @@ const structureOptions = [
   {
     title: "Branch Office",
     body: "An extension of the foreign parent — not a separate Indian entity — permitted only for specified activities and subject to RBI approval. Suits a narrower, defined presence rather than full commercial operations.",
-    href: "/branch-office-in-india",
+    href: "/branch-office-registration",
     cta: "Branch Office rules",
   },
   {
