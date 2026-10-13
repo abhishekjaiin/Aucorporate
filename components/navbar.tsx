@@ -28,14 +28,16 @@ type DbiItem = { label: string; href?: string }
 const dbiColumns: { heading: string; items: DbiItem[] }[] = [
   {
     heading: "Entity Types & Setup",
-    // Deliberately unlinked for now (plain labels, no href) while the
-    // page for each entity type is being finalized. Add the href back
-    // once the corresponding page is ready to send people to.
     items: [
-      { label: "Subsidiary" },
-      { label: "Branch Office" },
-      { label: "Liaison Office" },
-      { label: "Project Office" },
+      // Deliberately points at a URL that doesn't exist yet — 404s on
+      // click until the new Subsidiary page is built and this href is
+      // updated to it.
+      { label: "Subsidiary", href: "/subsidiary-in-india" },
+      { label: "Branch Office", href: "/branch-office-registration" },
+      // Same deliberate 404 placeholder as Subsidiary, above — no
+      // Liaison Office page exists yet.
+      { label: "Liaison Office", href: "/liaison-office-in-india" },
+      { label: "Project Office", href: "/project-office-registration" },
     ],
   },
   {
