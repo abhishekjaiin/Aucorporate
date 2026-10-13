@@ -88,7 +88,7 @@ export const publicPages: PublicPage[] = [
   // India Business Setup Cluster
   { path: "/india-business-setup/fdi-channels", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
   { path: "/india-business-setup/company-formation", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
-  { path: "/india-business-setup/foreign-subsidiary-india", priority: 0.93, changeFrequency: "weekly", lastModified: "2026-10-12" },
+  { path: "/india-business-setup/foreign-subsidiary-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/india-subsidiary-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/accounting-reporting-audit-support", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/fema-rbi-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
