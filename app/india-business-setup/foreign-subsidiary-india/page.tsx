@@ -18,15 +18,9 @@ const structureOptions = [
     cta: "Branch Office rules",
   },
   {
-    title: "Liaison Office",
-    body: "A representative, non-revenue-generating presence used for market research or coordinating with Indian counterparts, with no commercial activity permitted.",
-    href: "/liaison-office-in-india",
-    cta: "Liaison Office rules",
-  },
-  {
     title: "Project Office",
     body: "A temporary presence set up to execute one specific, time-bound contract or project in India, and wound up once that project ends.",
-    href: "/project-office-in-india",
+    href: "/project-office-registration",
     cta: "Project Office rules",
   },
   {

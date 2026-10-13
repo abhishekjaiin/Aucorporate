@@ -74,7 +74,6 @@ const countryGuides = [
 ]
 
 const afterLinks = [
-  { label: "Project Office in India (Complete Guide)", href: "/project-office-in-india" },
   { label: "Project Office Payroll and Labour Law Compliance", href: "/project-office-payroll-compliance" },
   { label: "Project Office FEMA and RBI Compliance", href: "/project-office-fema-rbi-compliance" },
   { label: "ROC Compliance for a Project Office (FC Forms)", href: "/project-office-roc-compliance" },
@@ -106,7 +105,7 @@ const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
 export default function ProjectOfficeRegistrationPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Project Office in India", href: "/project-office-in-india" }, { label: "Project Office Registration" }]} />
+      <Breadcrumb items={[{ label: "Project Office Registration" }]} />
 
       {/* HERO */}
       <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
@@ -163,8 +162,7 @@ export default function ProjectOfficeRegistrationPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">We Set Up Your Project Office, End to End</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                A project office is the foreign company itself executing one Indian contract, so it needs RBI/AD-bank approval, ROC registration and ongoing filings, but no separate Indian company. For the full eligibility, activity and tax framework behind this process, see the{" "}
-                <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office in India guide</Link>.
+                A project office is the foreign company itself executing one Indian contract, so it needs RBI/AD-bank approval, ROC registration and ongoing filings, but no separate Indian company.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 AU Corporate handles the application, the approvals and the registrations from India. You review and sign the documents from your own country.
@@ -214,8 +212,7 @@ export default function ProjectOfficeRegistrationPage() {
             </table>
           </div>
           <p className="text-sm text-gray-500 mt-4">
-            A project office suits a foreign company with one awarded Indian contract. For the full comparison against a Wholly Owned Subsidiary as well, see the{" "}
-            <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office in India guide</Link>.
+            A project office suits a foreign company with one awarded Indian contract.
           </p>
         </div>
       </section>

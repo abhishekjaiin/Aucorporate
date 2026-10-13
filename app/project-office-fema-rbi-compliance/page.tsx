@@ -56,7 +56,6 @@ const included = [
 ]
 
 const afterLinks = [
-  { label: "Project Office in India (Complete Guide)", href: "/project-office-in-india" },
   { label: "Project Office Registration", href: "/project-office-registration" },
   { label: "Project Office Accounting, Reporting and Audit", href: "/project-office-accounting-audit" },
   { label: "Project Office Tax, GST and Transfer Pricing", href: "/project-office-tax-gst-transfer-pricing" },
@@ -86,7 +85,7 @@ const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
 export default function ProjectOfficeFemaRbiCompliancePage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Project Office in India", href: "/project-office-in-india" }, { label: "Project Office FEMA and RBI Compliance" }]} />
+      <Breadcrumb items={[{ label: "Project Office FEMA and RBI Compliance" }]} />
 
       {/* HERO */}
       <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
@@ -144,7 +143,7 @@ export default function ProjectOfficeFemaRbiCompliancePage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">FEMA Compliance Through to Final Remittance</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 A missed certificate or an improper remittance can lead to compounding and delay the final remittance when the project ends. See the{" "}
-                <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office in India guide</Link>{" "}
+                <Link href="/project-office-registration" className="text-gold-dark font-semibold hover:underline">Project Office Registration guide</Link>{" "}
                 for the eligibility and approval framework this ongoing compliance sits on top of.
               </p>
               <p className="text-gray-600 leading-relaxed">

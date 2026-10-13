@@ -56,7 +56,6 @@ const included = [
 ]
 
 const afterLinks = [
-  { label: "Project Office in India (Complete Guide)", href: "/project-office-in-india" },
   { label: "Project Office Registration", href: "/project-office-registration" },
   { label: "Project Office FEMA and RBI Compliance", href: "/project-office-fema-rbi-compliance" },
   { label: "Project Office Tax, GST and Transfer Pricing", href: "/project-office-tax-gst-transfer-pricing" },
@@ -87,7 +86,7 @@ const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
 export default function ProjectOfficeRocCompliancePage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Project Office in India", href: "/project-office-in-india" }, { label: "ROC Compliance for a Project Office" }]} />
+      <Breadcrumb items={[{ label: "ROC Compliance for a Project Office" }]} />
 
       {/* HERO */}
       <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
@@ -145,7 +144,7 @@ export default function ProjectOfficeRocCompliancePage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Company Law Compliance for a Foreign Company, Handled from India</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 A project office has no Indian board meetings or AGM, but it has a short list of fixed filings with the ROC, and missing them leads to fines. See the{" "}
-                <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office in India guide</Link>{" "}
+                <Link href="/project-office-registration" className="text-gold-dark font-semibold hover:underline">Project Office Registration guide</Link>{" "}
                 for how ROC registration under Section 380 fits alongside the separate RBI/AD-bank approval.
               </p>
               <p className="text-gray-600 leading-relaxed">

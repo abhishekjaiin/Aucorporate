@@ -72,8 +72,6 @@ export const publicPages: PublicPage[] = [
   { path: "/branch-office-tax-gst-transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/branch-office-accounting-audit", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/branch-office-payroll-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
-  { path: "/liaison-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-21" },
-  { path: "/project-office-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-13" },
   { path: "/project-office-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-13" },
   { path: "/project-office-fema-rbi-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-13" },
   { path: "/project-office-roc-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-13" },

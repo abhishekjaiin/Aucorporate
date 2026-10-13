@@ -245,12 +245,8 @@ export default function RegisterCompanyFromUSPage() {
           <Link href="/branch-office-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold">
             Branch Office in India: RBI approval, setup and compliance
           </Link>
-          ,{' '}
-          <Link href="/liaison-office-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
-            Liaison Office in India: RBI approval, eligibility and compliance
-          </Link>
           , and{' '}
-          <Link href="/project-office-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+          <Link href="/project-office-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold">
             Project Office in India: RBI approval, registration and compliance
           </Link>{' '}
           guides for the full mechanics of each.
@@ -413,10 +409,7 @@ export default function RegisterCompanyFromUSPage() {
           <Link href="/branch-office-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             Branch Office in India →
           </Link>
-          <Link href="/liaison-office-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
-            Liaison Office in India →
-          </Link>
-          <Link href="/project-office-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+          <Link href="/project-office-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             Project Office in India →
           </Link>
           <Link href="/india-business-setup/fdi-channels" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
