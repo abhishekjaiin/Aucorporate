@@ -27,12 +27,11 @@ const dbiColumns = [
   {
     heading: "Entity Types & Setup",
     items: [
-      { label: "Wholly Owned Subsidiary", href: "/blog/wholly-owned-subsidiary" },
+      { label: "Wholly Owned Subsidiary", href: "/india-business-setup/foreign-subsidiary-india" },
       { label: "Branch Office", href: "/branch-office-in-india" },
       { label: "Liaison Office", href: "/liaison-office-in-india" },
       { label: "Project Office", href: "/project-office-in-india" },
       { label: "LLP", href: "/llp-in-india" },
-      { label: "FDI Channels (Automatic vs Government)", href: "/india-business-setup/fdi-channels" },
     ],
   },
   {
