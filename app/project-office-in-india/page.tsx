@@ -354,9 +354,18 @@ export default function ProjectOfficeInIndiaPage() {
           <p className="text-gray-600 leading-relaxed mb-6">
             Running a Project Office end to end means coordinating four separate authorities that don&apos;t share a single filing system: the AD Category-I bank (the channel through which Form FNC-1 is filed and the AAC is later routed), the ROC/MCA (which separately registers the Project Office under Form FC-1 and later processes its closure), the Directorate General of Income Tax, International Taxation (the second AAC-routing destination, and the authority relevant to the PE tax position), and — because a Project Office is the one structure in this set that routinely creates real India tax exposure — a PE and profit-attribution assessment specific to the underlying contract. AU Corporate coordinates this sequence end to end: preparing and filing Form FNC-1 through the AD bank, managing the parallel Form FC-1/ROC registration and PAN/TAN allotment, handling the annual AAC filing and its dual routing, assessing the construction/installation PE and profit-attribution position against the applicable DTAA, and managing the closure sequence once the project completes — so the RBI, banking, company-law, and tax threads stay aligned rather than being managed as four disconnected filings.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed mb-6">
             If a Project Office looks like the right structure for the contract you&apos;ve secured in India, our team can walk through the Regulation 5 eligibility position, the RBI/AD-bank approval process, and the PE tax exposure for your specific situation —{" "}
             <Link href="/contact" className="text-gold-dark font-semibold hover:underline">get in touch</Link> to start that conversation.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Our support breaks down into dedicated guides for each piece of that sequence:{" "}
+            <Link href="/project-office-registration" className="text-gold-dark font-semibold hover:underline">registration and RBI/AD-bank approval</Link>,{" "}
+            <Link href="/project-office-fema-rbi-compliance" className="text-gold-dark font-semibold hover:underline">FEMA and RBI compliance</Link>,{" "}
+            <Link href="/project-office-roc-compliance" className="text-gold-dark font-semibold hover:underline">ROC compliance (Forms FC-1, FC-3, FC-4)</Link>,{" "}
+            <Link href="/project-office-tax-gst-transfer-pricing" className="text-gold-dark font-semibold hover:underline">tax, GST and transfer pricing</Link>,{" "}
+            <Link href="/project-office-accounting-audit" className="text-gold-dark font-semibold hover:underline">accounting, reporting and audit support</Link>, and{" "}
+            <Link href="/project-office-payroll-compliance" className="text-gold-dark font-semibold hover:underline">payroll, social security and FRRO for expats</Link>.
           </p>
         </div>
       </section>
@@ -405,6 +414,36 @@ export default function ProjectOfficeInIndiaPage() {
         <div className="max-w-7xl mx-auto px-4">
           <RelatedResources
             links={[
+              {
+                label: "Project Office Registration: Full Process",
+                href: "/project-office-registration",
+                description: "General permission under Regulation 5, Form FNC-1, ROC Form FC-1, PAN and TAN — eligibility, documents and timeline.",
+              },
+              {
+                label: "FEMA and RBI Compliance for Project Offices",
+                href: "/project-office-fema-rbi-compliance",
+                description: "The AAC, contract changes, surplus remittance on completion, compounding and closure in full depth.",
+              },
+              {
+                label: "ROC Compliance: Forms FC-1, FC-3, FC-4",
+                href: "/project-office-roc-compliance",
+                description: "Registration, changes, accounts and annual return filings with the Registrar of Companies.",
+              },
+              {
+                label: "Tax, GST and Transfer Pricing for Project Offices",
+                href: "/project-office-tax-gst-transfer-pricing",
+                description: "Foreign company tax rate, permanent establishment, lower deduction certificate, presumptive tax and treaty relief.",
+              },
+              {
+                label: "Accounting, Reporting and Audit Support",
+                href: "/project-office-accounting-audit",
+                description: "Project-wise accounting, head office reconciliation, retention and WIP, TDS/GST workings and audit support.",
+              },
+              {
+                label: "Payroll, Social Security and FRRO for Expats",
+                href: "/project-office-payroll-compliance",
+                description: "Payroll, PF/ESI, professional tax, Labour Codes, contract labour and FRRO registration for expat staff.",
+              },
               {
                 label: "Branch Office in India",
                 href: "/branch-office-in-india",

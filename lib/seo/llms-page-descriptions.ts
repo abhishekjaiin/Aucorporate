@@ -52,6 +52,12 @@ export const pageMeta: Record<string, PageMeta> = {
   "/branch-office-payroll-compliance": { title: "Payroll & FRRO for Branch Offices", description: "Payroll, social security, professional tax, Labour Codes compliance and FRRO support for expats" },
   "/liaison-office-in-india": { title: "Liaison Office in India", description: "FEMA eligibility, RBI approval via Form FNC, permitted activities" },
   "/project-office-in-india": { title: "Project Office in India", description: "FEMA/Regulation 5 eligibility, RBI/AD-bank approval via Form FNC-1" },
+  "/project-office-registration": { title: "Project Office Registration", description: "General permission under Regulation 5, Form FNC-1, ROC Form FC-1, PAN and TAN for a foreign company's India project office" },
+  "/project-office-fema-rbi-compliance": { title: "FEMA & RBI Compliance for Project Offices", description: "Form FNC, Annual Activity Certificate, contract changes, surplus remittance, compounding and closure" },
+  "/project-office-roc-compliance": { title: "ROC Compliance for Project Offices", description: "Forms FC-1, FC-2, FC-3 and FC-4 for a project office's registration, changes, accounts and annual return" },
+  "/project-office-tax-gst-transfer-pricing": { title: "Tax, GST & Transfer Pricing for Project Offices", description: "Foreign company tax rate, permanent establishment, lower deduction certificate, presumptive tax, GST and treaty relief" },
+  "/project-office-accounting-audit": { title: "Accounting & Audit Support for Project Offices", description: "Project-wise accounting, head office reconciliation, retention and WIP, TDS/GST workings and audit support" },
+  "/project-office-payroll-compliance": { title: "Payroll & FRRO for Project Offices", description: "Payroll, social security, professional tax, Labour Codes, contract labour and FRRO support for expats" },
   "/llp-in-india": { title: "LLP Registration in India", description: "The 120-day resident-partner rule, FDI automatic-route gate, registration and compliance" },
 
   "/oidar-gst-registration-india": { title: "OIDAR & GST Registration for Foreign SaaS Companies", description: "When OIDAR/GST registration is mandatory, and the GSTR-5A filing calendar" },

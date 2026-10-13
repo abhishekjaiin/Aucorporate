@@ -22,23 +22,11 @@ import {
 import { Button } from "@/components/ui/button"
 import { WhatsAppIcon } from "@/components/WhatsAppIcon"
 
-// ── Doing Business in India — mega menu, 4 columns ──────────────────────────
+// ── Foreign Company — mega menu, 3 columns ──────────────────────────────────
 const dbiColumns = [
-  {
-    heading: "India Entry Basics",
-    hub: { label: "Doing Business in India — Overview", href: "/doing-business-in-india" },
-    items: [
-      { label: "Why India", href: "/doing-business-in-india/why-india" },
-      { label: "Entry Process", href: "/doing-business-in-india/entry-process" },
-      { label: "Pre-Incorporation", href: "/doing-business-in-india/pre-incorporation" },
-      { label: "Incorporation", href: "/doing-business-in-india/incorporation" },
-      { label: "Post-Incorporation", href: "/doing-business-in-india/post-incorporation" },
-    ],
-  },
   {
     heading: "Entity Types & Setup",
     items: [
-      { label: "Company Registration / Incorporation", href: "/india-business-setup/company-formation" },
       { label: "Wholly Owned Subsidiary", href: "/blog/wholly-owned-subsidiary" },
       { label: "Branch Office", href: "/branch-office-in-india" },
       { label: "Liaison Office", href: "/liaison-office-in-india" },
@@ -48,7 +36,7 @@ const dbiColumns = [
     ],
   },
   {
-    heading: "Compliance & Specialized Entry",
+    heading: "Post Incorporation",
     items: [
       { label: "Regulatory Compliance", href: "/india-business-setup/regulatory-compliance" },
       { label: "Banking & Taxation", href: "/india-business-setup/banking-taxation" },
@@ -67,7 +55,6 @@ const dbiColumns = [
       { label: "Germany", href: "/india-entry-for-german-companies" },
       { label: "Japan", href: "/india-entry-for-japan-companies" },
       { label: "China", href: "/india-entry-for-china-companies" },
-      { label: "Via Our Partners (HK / Singapore / China)", href: "/partners/uniproasia" },
     ],
   },
 ]
@@ -166,25 +153,20 @@ export function Navbar() {
                 aria-haspopup="true"
                 aria-expanded={activeMenu === "dbi"}
               >
-                Doing Business in India <ChevronDown className="h-4 w-4" aria-hidden="true" />
+                Foreign Company <ChevronDown className="h-4 w-4" aria-hidden="true" />
               </button>
 
               {activeMenu === "dbi" && (
                 <div
-                  className="fixed left-1/2 top-20 z-50 w-[min(1040px,calc(100vw-2rem))] -translate-x-1/2"
+                  className="fixed left-1/2 top-20 z-50 w-[min(800px,calc(100vw-2rem))] -translate-x-1/2"
                   onMouseEnter={cancelClose}
                   onMouseLeave={scheduleClose}
                 >
                   <div className="overflow-hidden rounded-2xl border bg-white shadow-2xl">
-                    <div className="grid grid-cols-4 gap-0 p-6">
+                    <div className="grid grid-cols-3 gap-0 p-6">
                       {dbiColumns.map((col, i) => (
                         <div key={col.heading} className={i > 0 ? "border-l pl-5 ml-5" : ""}>
                           <h3 className="mb-3 text-sm font-semibold text-[#081a42]">{col.heading}</h3>
-                          {col.hub && (
-                            <Link href={col.hub.href} className="mb-2 block text-xs font-semibold text-gold-dark hover:underline">
-                              {col.hub.label} →
-                            </Link>
-                          )}
                           <div className="space-y-0.5">
                             {col.items.map((item) => (
                               <Link key={item.label} href={item.href} className="block py-1.5 text-sm leading-snug text-gray-700 hover:text-gold-dark">
@@ -328,10 +310,7 @@ export function Navbar() {
 
         {isOpen && (
           <div id="mobile-navigation" className="absolute left-0 top-16 h-[calc(100dvh-4rem)] w-full overflow-y-auto border-t bg-white px-5 py-6 shadow-lg sm:top-20 sm:h-[calc(100dvh-5rem)]">
-            <MobileGroup label="Doing Business in India" open={mobileMenu === "dbi"} onToggle={() => setMobileMenu(mobileMenu === "dbi" ? null : "dbi")}>
-              <Link href="/doing-business-in-india" onClick={closeMobile} className="mb-2 block text-sm font-semibold text-gold-dark">
-                Doing Business in India — Overview
-              </Link>
+            <MobileGroup label="Foreign Company" open={mobileMenu === "dbi"} onToggle={() => setMobileMenu(mobileMenu === "dbi" ? null : "dbi")}>
               {dbiColumns.map((col) => {
                 const subOpen = mobileDbiSub === col.heading
                 return (
