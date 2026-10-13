@@ -56,7 +56,6 @@ const included = [
 ]
 
 const afterLinks = [
-  { label: "Project Office in India (Complete Guide)", href: "/project-office-in-india" },
   { label: "Project Office Registration", href: "/project-office-registration" },
   { label: "Project Office Tax, GST and Transfer Pricing", href: "/project-office-tax-gst-transfer-pricing" },
   { label: "Project Office FEMA and RBI Compliance", href: "/project-office-fema-rbi-compliance" },
@@ -87,7 +86,7 @@ const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
 export default function ProjectOfficeAccountingAuditPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Project Office in India", href: "/project-office-in-india" }, { label: "Project Office Accounting, Reporting and Audit" }]} />
+      <Breadcrumb items={[{ label: "Project Office Accounting, Reporting and Audit" }]} />
 
       {/* HERO */}
       <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
@@ -145,7 +144,7 @@ export default function ProjectOfficeAccountingAuditPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Clean Project Books in India, Reporting Your Head Office Understands</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 A project office accounts for one contract, so costs, milestones, retention and tax must be tracked per project, and completion accounts are needed to remit the surplus — see the{" "}
-                <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office in India guide</Link>{" "}
+                <Link href="/project-office-registration" className="text-gold-dark font-semibold hover:underline">Project Office Registration guide</Link>{" "}
                 for how this fits into the wider compliance picture.
               </p>
               <p className="text-gray-600 leading-relaxed">

@@ -199,10 +199,7 @@ export default function IndiaBusinessSetupHub() {
             <Link href="/branch-office-registration" className="text-yellow-700 font-semibold hover:underline">
               Branch Office registration guide
             </Link>{' '}
-            <Link href="/liaison-office-in-india" className="text-yellow-700 font-semibold hover:underline">
-              Liaison Office guide
-            </Link>{' '}
-            <Link href="/project-office-in-india" className="text-yellow-700 font-semibold hover:underline">
+            <Link href="/project-office-registration" className="text-yellow-700 font-semibold hover:underline">
               Project Office guide
             </Link>{' '}
             or{' '}

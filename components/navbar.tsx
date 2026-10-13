@@ -29,7 +29,6 @@ const dbiColumns = [
     items: [
       { label: "Subsidiary", href: "/india-business-setup/foreign-subsidiary-india" },
       { label: "Branch Office", href: "/branch-office-registration" },
-      { label: "Liaison Office", href: "/liaison-office-in-india" },
       { label: "Project Office", href: "/project-office-registration" },
       { label: "LLP", href: "/llp-in-india" },
     ],

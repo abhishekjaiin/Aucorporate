@@ -49,8 +49,6 @@ export const pageMeta: Record<string, PageMeta> = {
   "/branch-office-tax-gst-transfer-pricing": { title: "Tax, GST & Transfer Pricing for Branch Offices", description: "Foreign company tax rate, advance tax, TDS, GST, transfer pricing, permanent establishment and treaty relief" },
   "/branch-office-accounting-audit": { title: "Accounting & Audit Support for Branch Offices", description: "Monthly accounting, head office reconciliation, TDS/GST workings, US GAAP/IFRS reporting and audit support" },
   "/branch-office-payroll-compliance": { title: "Payroll & FRRO for Branch Offices", description: "Payroll, social security, professional tax, Labour Codes compliance and FRRO support for expats" },
-  "/liaison-office-in-india": { title: "Liaison Office in India", description: "FEMA eligibility, RBI approval via Form FNC, permitted activities" },
-  "/project-office-in-india": { title: "Project Office in India", description: "FEMA/Regulation 5 eligibility, RBI/AD-bank approval via Form FNC-1" },
   "/project-office-registration": { title: "Project Office Registration", description: "General permission under Regulation 5, Form FNC-1, ROC Form FC-1, PAN and TAN for a foreign company's India project office" },
   "/project-office-fema-rbi-compliance": { title: "FEMA & RBI Compliance for Project Offices", description: "Form FNC, Annual Activity Certificate, contract changes, surplus remittance, compounding and closure" },
   "/project-office-roc-compliance": { title: "ROC Compliance for Project Offices", description: "Forms FC-1, FC-2, FC-3 and FC-4 for a project office's registration, changes, accounts and annual return" },

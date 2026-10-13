@@ -59,7 +59,6 @@ const included = [
 ]
 
 const afterLinks = [
-  { label: "Project Office in India (Complete Guide)", href: "/project-office-in-india" },
   { label: "Project Office Registration", href: "/project-office-registration" },
   { label: "Project Office FEMA and RBI Compliance", href: "/project-office-fema-rbi-compliance" },
   { label: "ROC Compliance for a Project Office (FC Forms)", href: "/project-office-roc-compliance" },
@@ -91,7 +90,7 @@ const faqsCol2 = faqs.slice(Math.ceil(faqs.length / 2))
 export default function ProjectOfficePayrollCompliancePage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Project Office in India", href: "/project-office-in-india" }, { label: "Project Office Payroll and Labour Law Compliance" }]} />
+      <Breadcrumb items={[{ label: "Project Office Payroll and Labour Law Compliance" }]} />
 
       {/* HERO */}
       <section className="py-16 bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white">
@@ -149,7 +148,7 @@ export default function ProjectOfficePayrollCompliancePage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Pay Your Project Team Correctly, Through to Project End</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Project teams are hired fast, are often on fixed-term contracts and may include contract labour and expats. A project office is part of the foreign company, so payroll errors fall on the parent — see the{" "}
-                <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">Project Office in India guide</Link>{" "}
+                <Link href="/project-office-registration" className="text-gold-dark font-semibold hover:underline">Project Office Registration guide</Link>{" "}
                 for the structure this sits inside.
               </p>
               <p className="text-gray-600 leading-relaxed">

@@ -145,9 +145,8 @@ export default function CloseIndianSubsidiaryPage() {
         </p>
         <p className="text-gray-700">
           It also matters what kind of Indian presence you actually have. This guide is written for a Private Limited company or LLP subsidiary. If your India presence is a <strong>Branch Office</strong>, <strong>Liaison Office</strong>, or <strong>Project Office</strong>, you&apos;re looking at a structurally separate, RBI-regulated closure process — Section 248 and the IBBI&apos;s voluntary-liquidation regime don&apos;t apply to those structures at all. See our dedicated guides instead:{' '}
-          <Link href="/branch-office-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold">closing a Branch Office</Link>,{' '}
-          <Link href="/liaison-office-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">closing a Liaison Office</Link>, or{' '}
-          <Link href="/project-office-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">closing a Project Office</Link>.
+          <Link href="/branch-office-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold">closing a Branch Office</Link> or{' '}
+          <Link href="/project-office-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold">closing a Project Office</Link>.
         </p>
       </div>
 
@@ -419,10 +418,7 @@ export default function CloseIndianSubsidiaryPage() {
           <Link href="/branch-office-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             Closing a Branch Office in India →
           </Link>
-          <Link href="/liaison-office-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
-            Closing a Liaison Office in India →
-          </Link>
-          <Link href="/project-office-in-india" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+          <Link href="/project-office-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             Closing a Project Office in India →
           </Link>
           <Link href="/services/taxation-regulatory" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">

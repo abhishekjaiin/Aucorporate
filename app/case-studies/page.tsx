@@ -56,13 +56,9 @@ export default function CaseStudiesPage() {
             Not ready for a subsidiary? We also set up{" "}
             <Link href="/branch-office-registration" className="text-gold-dark font-semibold hover:underline">
               Branch Offices
-            </Link>
-            ,{" "}
-            <Link href="/liaison-office-in-india" className="text-gold-dark font-semibold hover:underline">
-              Liaison Offices
             </Link>{" "}
             and{" "}
-            <Link href="/project-office-in-india" className="text-gold-dark font-semibold hover:underline">
+            <Link href="/project-office-registration" className="text-gold-dark font-semibold hover:underline">
               Project Offices
             </Link>
             .

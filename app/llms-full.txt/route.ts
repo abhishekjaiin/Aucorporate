@@ -35,7 +35,7 @@ const sectionRules: SectionRule[] = [
   { test: (p) => p === "/compliance-calendar", section: "Compliance Resources" },
   { test: (p) => p.startsWith("/doing-business-in-india"), section: "Doing Business in India (market-entry decision guide)" },
   { test: (p) => p.startsWith("/india-business-setup"), section: "India Business Setup (formation mechanics)" },
-  { test: (p) => ["/liaison-office-in-india", "/project-office-in-india", "/llp-in-india"].includes(p), section: "Entity-Type Guides" },
+  { test: (p) => ["/llp-in-india"].includes(p), section: "Entity-Type Guides" },
   // Explicit industry-specific matches must be checked before the
   // generic country-prefix rule below — /india-entry-for-saas-companies
   // is an industry guide, not a geographic country-entry guide, even
