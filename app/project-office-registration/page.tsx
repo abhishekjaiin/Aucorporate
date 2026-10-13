@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { InquiryTrigger } from "@/components/InquiryTrigger"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
 import { FaqAccordion } from "@/components/FaqAccordion"
@@ -123,9 +124,9 @@ export default function ProjectOfficeRegistrationPage() {
                 <Link href="https://cal.com/abhishek-jaiin-ybbklq/30min" target="_blank" rel="noreferrer" className="inline-block rounded-lg bg-gold px-6 py-3 font-bold text-[#081a42] hover:bg-gold-dark transition-colors">
                   Book Consultation with an Expert
                 </Link>
-                <Link href="#contact" className="inline-block rounded-lg border-2 border-white px-6 py-3 font-bold text-white hover:bg-white/10 transition-colors">
+                <InquiryTrigger className="inline-block rounded-lg border-2 border-white px-6 py-3 font-bold text-white hover:bg-white/10 transition-colors">
                   Get a Quote
-                </Link>
+                </InquiryTrigger>
               </div>
               <p className="text-sm text-white/70">150+ Regular Clients · Chartered Accountants and Company Secretaries · Since 2016</p>
             </div>

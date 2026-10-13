@@ -23,14 +23,19 @@ import { Button } from "@/components/ui/button"
 import { WhatsAppIcon } from "@/components/WhatsAppIcon"
 
 // ── Foreign Company — mega menu, 3 columns ──────────────────────────────────
-const dbiColumns = [
+type DbiItem = { label: string; href?: string }
+
+const dbiColumns: { heading: string; items: DbiItem[] }[] = [
   {
     heading: "Entity Types & Setup",
+    // Deliberately unlinked for now (plain labels, no href) while the
+    // page for each entity type is being finalized. Add the href back
+    // once the corresponding page is ready to send people to.
     items: [
-      { label: "Subsidiary", href: "/india-business-setup/foreign-subsidiary-india" },
-      { label: "Branch Office", href: "/branch-office-registration" },
-      { label: "Project Office", href: "/project-office-registration" },
-      { label: "LLP", href: "/llp-in-india" },
+      { label: "Subsidiary" },
+      { label: "Branch Office" },
+      { label: "Liaison Office" },
+      { label: "Project Office" },
     ],
   },
   {
@@ -166,11 +171,17 @@ export function Navbar() {
                         <div key={col.heading} className={i > 0 ? "border-l pl-5 ml-5" : ""}>
                           <h3 className="mb-3 text-sm font-semibold text-[#081a42]">{col.heading}</h3>
                           <div className="space-y-0.5">
-                            {col.items.map((item) => (
-                              <Link key={item.label} href={item.href} className="block py-1.5 text-sm leading-snug text-gray-700 hover:text-gold-dark">
-                                {item.label}
-                              </Link>
-                            ))}
+                            {col.items.map((item) =>
+                              item.href ? (
+                                <Link key={item.label} href={item.href} className="block py-1.5 text-sm leading-snug text-gray-700 hover:text-gold-dark">
+                                  {item.label}
+                                </Link>
+                              ) : (
+                                <span key={item.label} className="block py-1.5 text-sm leading-snug text-gray-400">
+                                  {item.label}
+                                </span>
+                              )
+                            )}
                           </div>
                         </div>
                       ))}
@@ -324,7 +335,13 @@ export function Navbar() {
                     </button>
                     {subOpen && (
                       <div className="pb-2">
-                        {col.items.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-1.5 pl-2 text-sm text-gray-600">{item.label}</Link>)}
+                        {col.items.map((item) =>
+                          item.href ? (
+                            <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-1.5 pl-2 text-sm text-gray-600">{item.label}</Link>
+                          ) : (
+                            <span key={item.label} className="block py-1.5 pl-2 text-sm text-gray-400">{item.label}</span>
+                          )
+                        )}
                       </div>
                     )}
                   </div>
