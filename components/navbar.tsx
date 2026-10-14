@@ -38,11 +38,6 @@ const dbiColumns: { heading: string; items: DbiItem[] }[] = [
   {
     heading: "Post Incorporation",
     items: [
-      { label: "Regulatory Compliance", href: "/india-business-setup/regulatory-compliance" },
-      { label: "Banking & Taxation", href: "/india-business-setup/banking-taxation" },
-      { label: "Timeline & Resources", href: "/india-business-setup/timeline-resources" },
-      { label: "Global Capability Center (GCC) Setup", href: "/gcc-setup-india" },
-      { label: "India Entry for SaaS/AI Companies", href: "/india-entry-for-saas-companies" },
       { label: "Accounting, Reporting and Audit Support", href: "/accounting-reporting-audit-support" },
       { label: "FEMA and RBI Compliance", href: "/fema-rbi-compliance" },
       { label: "Corporate Tax, GST and Transfer Pricing", href: "/corporate-tax-gst-transfer-pricing" },
