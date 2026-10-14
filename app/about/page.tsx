@@ -181,7 +181,7 @@ export default function AboutHero() {
           {[
             { icon: Building, title: "India Entry", href: "/doing-business-in-india" },
             { icon: Globe, title: "GCC Advisory", href: "/gcc-setup-india" },
-            { icon: Building, title: "Business Setup", href: "/india-business-setup" },
+            { icon: Building, title: "Business Setup", href: "/india-business-setup/company-formation" },
             { icon: Users, title: "Accounting", href: "/services/accounting-assurance" },
             { icon: Users, title: "Payroll", href: "/hr-services" },
             { icon: Award, title: "Tax", href: "/services/taxation-regulatory" },

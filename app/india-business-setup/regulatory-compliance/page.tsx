@@ -34,7 +34,7 @@ const complianceAreas = [
 export default function RegulatoryCompliancePage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "India Business Setup", href: "/india-business-setup" }, { label: "Regulatory Compliance" }]} />
+      <Breadcrumb items={[{ label: "Regulatory Compliance" }]} />
 
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4">

@@ -223,7 +223,7 @@ export default function BlogPage() {
       <RelatedResources
         links={[
           { label: "Doing Business in India", href: "/doing-business-in-india", description: "The complete strategic guide to entering the Indian market." },
-          { label: "India Business Setup", href: "/india-business-setup", description: "Entity selection, incorporation, and registration." },
+          { label: "India Business Setup", href: "/india-business-setup/company-formation", description: "Entity selection, incorporation, and registration." },
           { label: "FDI in India: Green Channel vs Brown Channel", href: "/blog/fdi-green-vs-brown-channel", description: "How the FDI approval routes actually work." },
           { label: "India's 2026 Safe Harbour Rules", href: "/blog/india-safe-harbour-rules-2026", description: "What changed in transfer pricing for GCCs and IT services subsidiaries." },
         ]}

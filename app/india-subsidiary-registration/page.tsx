@@ -65,7 +65,6 @@ const afterLinks = [
   { label: "Tax and Transfer Pricing", href: "/corporate-tax-gst-transfer-pricing" },
   { label: "Secretarial Compliance", href: "/secretarial-roc-compliance" },
   { label: "Payroll and Expat Services", href: "/payroll-expat-services" },
-  { label: "Foreign Subsidiary in India — Full Guide", href: "/india-business-setup/foreign-subsidiary-india" },
 ]
 
 const faqs = [
@@ -96,7 +95,7 @@ const faqsRight = faqs.slice(Math.ceil(faqs.length / 2))
 export default function IndiaSubsidiaryRegistrationPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Foreign Subsidiary in India", href: "/india-business-setup/foreign-subsidiary-india" }, { label: "India Subsidiary Registration" }]} />
+      <Breadcrumb items={[{ label: "India Subsidiary Registration" }]} />
 
       {/* HERO */}
       <section className="bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white py-14 md:py-16">
@@ -315,11 +314,6 @@ export default function IndiaSubsidiaryRegistrationPage() {
         <div className="max-w-7xl mx-auto px-4">
           <RelatedResources
             links={[
-              {
-                label: "Foreign Subsidiary in India — Full Guide",
-                href: "/india-business-setup/foreign-subsidiary-india",
-                description: "The complete lifecycle hub this registration guide sits under: structure, FDI/FEMA, incorporation, operation and exit.",
-              },
               {
                 label: "Accounting, Reporting and Audit Support",
                 href: "/accounting-reporting-audit-support",

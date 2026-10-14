@@ -55,7 +55,7 @@ const faqs = [
 export default function IndiaEntryForSaasCompaniesPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "India Business Setup", href: "/india-business-setup" }, { label: "India Entry for AI, SaaS and Technology Companies" }]} />
+      <Breadcrumb items={[{ label: "India Entry for AI, SaaS and Technology Companies" }]} />
 
       {/* HERO */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
