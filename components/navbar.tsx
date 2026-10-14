@@ -29,12 +29,9 @@ const dbiColumns: { heading: string; items: DbiItem[] }[] = [
   {
     heading: "Entity Types & Setup",
     items: [
-      // Deliberately points at a URL that doesn't exist yet — 404s on
-      // click until the new Subsidiary page is built and this href is
-      // updated to it.
-      { label: "Subsidiary", href: "/subsidiary-in-india" },
+      { label: "Subsidiary", href: "/india-subsidiary-registration" },
       { label: "Branch Office", href: "/branch-office-registration" },
-      // Same deliberate 404 placeholder as Subsidiary, above — no
+      // Same deliberate 404 placeholder as Subsidiary was, above — no
       // Liaison Office page exists yet.
       { label: "Liaison Office", href: "/liaison-office-in-india" },
       { label: "Project Office", href: "/project-office-registration" },
@@ -48,6 +45,11 @@ const dbiColumns: { heading: string; items: DbiItem[] }[] = [
       { label: "Timeline & Resources", href: "/india-business-setup/timeline-resources" },
       { label: "Global Capability Center (GCC) Setup", href: "/gcc-setup-india" },
       { label: "India Entry for SaaS/AI Companies", href: "/india-entry-for-saas-companies" },
+      { label: "Accounting, Reporting and Audit Support", href: "/accounting-reporting-audit-support" },
+      { label: "FEMA and RBI Compliance", href: "/fema-rbi-compliance" },
+      { label: "Corporate Tax, GST and Transfer Pricing", href: "/corporate-tax-gst-transfer-pricing" },
+      { label: "Secretarial and ROC Compliance", href: "/secretarial-roc-compliance" },
+      { label: "Payroll and Expat Services", href: "/payroll-expat-services" },
     ],
   },
   {
