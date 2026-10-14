@@ -100,7 +100,7 @@ const faqs = [
 ]
 
 const regionLinks = [
-  { label: 'US', href: '/india-entry-for-us-companies' },
+  { label: 'US', href: '/blog/usa-to-india' },
   { label: 'UK', href: '/india-entry-for-uk-companies' },
   { label: 'Singapore', href: '/india-entry-for-singapore-companies' },
   { label: 'Australia', href: '/india-entry-for-australian-companies' },

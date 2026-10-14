@@ -186,7 +186,7 @@ export default function ServicesPage() {
             For a foreign company, each service below is really a capability your India entity needs at some point in its lifecycle — FEMA/RBI and tax compliance once you&apos;re incorporated, accounting and payroll to run the entity, transaction advisory if you later restructure or acquire. See our{' '}
             <Link href="/doing-business-in-india" className="text-blue hover:underline font-medium">India entry framework</Link>{' '}
             (or the{' '}
-            <Link href="/india-entry-for-us-companies" className="text-blue hover:underline font-medium">US-specific version</Link>{' '}
+            <Link href="/blog/usa-to-india" className="text-blue hover:underline font-medium">US-specific version</Link>{' '}
             if you&apos;re coming from the US) for how these fit together. The eight service areas below make up our core practice — each with its own dedicated page covering the full scope of what we do, who it&apos;s for, and how an engagement typically works. If you&apos;re not sure which one fits, the &quot;Not Sure Where to Start&quot; guide further down maps common business needs directly to the right team.
           </p>
         </div>

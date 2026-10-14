@@ -66,7 +66,7 @@ export default function RegulatoryCompliancePage() {
           </div>
           <p className="text-gray-600 mt-8 max-w-3xl leading-relaxed">
             For the Corporate Governance card above — AOC-4, MGT-7, board meetings and the AGM — see our full{' '}
-            <Link href="/india-entry-for-us-companies/annual-compliance-calendar" className="text-yellow-700 font-semibold hover:underline">
+            <Link href="/blog/usa-to-india/compliance-calendar" className="text-yellow-700 font-semibold hover:underline">
               annual compliance calendar for foreign subsidiary companies
             </Link>{' '}
             for the dated, foreign-subsidiary-specific breakdown, including DIR-3 KYC and ADT-1. The bookkeeping and statutory audit behind most of these filings is covered on our{' '}

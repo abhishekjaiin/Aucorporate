@@ -342,7 +342,7 @@ export default function Page() {
           </h2>
           <p className="text-gray-600 max-w-4xl leading-relaxed mb-8">
             Almost every foreign-owned Indian entity has international related-party transactions with its parent — management fees, software licences, cost recharges, intercompany services — and those transactions carry their own compliance regime, separate from ordinary corporate tax and GST. For the US-parent-specific version of this — Section 482, Form 5471, and keeping both countries&apos; filings reconciled — see our{' '}
-            <Link href="/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary" className="text-yellow-700 font-semibold hover:underline">
+            <Link href="/blog/usa-to-india/transfer-pricing" className="text-yellow-700 font-semibold hover:underline">
               transfer pricing guide for US-owned subsidiaries
             </Link>:
           </p>
@@ -428,11 +428,11 @@ export default function Page() {
             <h3 className="mb-2 font-semibold text-[#081a42]">FDI Channels</h3>
             <p className="text-sm text-gray-600">Automatic and government approval routes for foreign investment</p>
           </Link>
-          <Link href="/india-entry-for-us-companies/permanent-establishment-risk-india" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+          <Link href="/blog/usa-to-india/dtaa-pe-risk" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
             <h3 className="mb-2 font-semibold text-[#081a42]">Permanent Establishment Risk</h3>
             <p className="text-sm text-gray-600">Managing PE exposure for the foreign parent</p>
           </Link>
-          <Link href="/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+          <Link href="/blog/usa-to-india/repatriating-profits" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
             <h3 className="mb-2 font-semibold text-[#081a42]">DTAA &amp; Repatriation</h3>
             <p className="text-sm text-gray-600">Withholding tax and profit repatriation under India&apos;s treaty network</p>
           </Link>

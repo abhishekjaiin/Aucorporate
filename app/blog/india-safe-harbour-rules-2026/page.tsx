@@ -248,7 +248,7 @@ export default function BlogPage() {
       <RelatedResources
         links={[
           { label: "Taxation & Regulatory Services", href: "/services/taxation-regulatory", description: "Corporate tax, GST, transfer pricing, and regulatory support." },
-          { label: "Transfer Pricing for US-India Subsidiaries", href: "/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary", description: "How transfer pricing applies to your structure." },
+          { label: "Transfer Pricing for US-India Subsidiaries", href: "/blog/usa-to-india/transfer-pricing", description: "How transfer pricing applies to your structure." },
           { label: "GCC Setup in India", href: "/gcc-setup-india", description: "Entity structure and compliance for Global Capability Centres." },
         ]}
       />

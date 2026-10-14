@@ -42,8 +42,8 @@ const SERVICE_LINKS: Record<string, { label: string; href: string }> = {
 }
 
 const JURISDICTION_LINKS: Record<string, { label: string; href: string }> = {
-  usa: { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
-  us: { label: "India Entry for US Companies", href: "/india-entry-for-us-companies" },
+  usa: { label: "India Entry for US Companies", href: "/blog/usa-to-india" },
+  us: { label: "India Entry for US Companies", href: "/blog/usa-to-india" },
   uk: { label: "India Entry for UK Companies", href: "/india-entry-for-uk-companies" },
   singapore: { label: "India Entry for Singapore Companies", href: "/india-entry-for-singapore-companies" },
   australia: { label: "India Entry for Australian Companies", href: "/india-entry-for-australian-companies" },

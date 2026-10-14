@@ -65,7 +65,7 @@ const services = [
 /* PARENT COMPANY COUNTRIES — only linked where AU has a dedicated country guide;
    the rest are shown as plain badges rather than linked to a page that doesn't exist. */
 const parentCountries = [
-  { label: "USA", href: "/india-entry-for-us-companies" },
+  { label: "USA", href: "/blog/usa-to-india" },
   { label: "UK", href: "/india-entry-for-uk-companies" },
   { label: "Singapore", href: "/india-entry-for-singapore-companies" },
   { label: "Australia", href: "/india-entry-for-australian-companies" },

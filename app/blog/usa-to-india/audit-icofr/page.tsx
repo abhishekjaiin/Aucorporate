@@ -1,0 +1,229 @@
+import Link from "next/link"
+import { Breadcrumb } from "@/components/Breadcrumb"
+import { GuideHero } from "@/components/guide/GuideHero"
+import { GuideAnswerBox } from "@/components/guide/GuideAnswerBox"
+import { GuideTOC } from "@/components/guide/GuideTOC"
+import { GuideFaqList } from "@/components/guide/GuideFaqList"
+import { GuideRelatedCards } from "@/components/guide/GuideRelatedCards"
+import { GuideCTA } from "@/components/guide/GuideCTA"
+import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
+import { GuideSources } from "@/components/guide/GuideSources"
+import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+
+const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/audit-icofr"
+const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+
+const toc = [
+  { id: "types", label: "The audits an Indian subsidiary may face" },
+  { id: "statutory", label: "The statutory audit step by step" },
+  { id: "icofr", label: "Internal controls over financial reporting" },
+  { id: "prepare", label: "How to prepare for audit" },
+  { id: "us-parent", label: "What this means for a US parent" },
+  { id: "mistakes", label: "Mistakes to avoid" },
+  { id: "how-we-help", label: "How AU Corporate handles this" },
+  { id: "faqs", label: "Frequently asked questions" },
+]
+
+const faqs = [
+  { q: "Is audit mandatory for a small Indian subsidiary?", a: "Yes. Every company must have its financial statements audited each year, whatever its size." },
+  { q: "When must the first auditor be appointed?", a: "Within 30 days of incorporation." },
+  { q: "Does India require internal controls reporting?", a: "Yes. The auditor of the company reports on internal financial controls for most companies. A US parent's ICOFR requirement is separate." },
+  { q: "Can the same firm do the books and the audit?", a: "No. The auditor must be independent of the accounting work." },
+  { q: "Can you prepare a US GAAP package?", a: "Yes. We prepare reporting packages from the Indian books in the format your group needs." },
+]
+
+const relatedCards = [
+  { title: "Compliance Calendar for an Indian Subsidiary: What Is Due and When", desc: "The recurring compliance of an Indian subsidiary: monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law.", href: "/blog/usa-to-india/compliance-calendar" },
+  { title: "US Parent Obligations When You Own an Indian Subsidiary", desc: "US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams.", href: "/blog/usa-to-india/us-parent-obligations" },
+  { title: "Ten Mistakes US Companies Make When Setting Up in India, and How to Avoid Them", desc: "The ten most common and costly mistakes US companies make when setting up an Indian subsidiary, and how to avoid each. Includes a pre-filing checklist.", href: "/blog/usa-to-india/common-mistakes" },
+  { title: "Transfer Pricing in India: A Guide for US Parents and Their Indian Subsidiaries", desc: "How transfer pricing works for an Indian subsidiary of a US company: arm's length pricing, documentation, Form 48, methods, safe harbour and audits.", href: "/blog/usa-to-india/transfer-pricing" },
+]
+
+export default function AuditIcofrPage() {
+  return (
+    <main className="min-h-screen bg-white">
+      <GuideArticleSchema
+        url={PAGE_URL}
+        headline="Audit and Internal Controls for an Indian Subsidiary of a US Group"
+        description="Statutory audit, tax audit, GST audit and internal controls over financial reporting for an Indian subsidiary of a US group. What to expect and how to prepare."
+        datePublished="2026-10-07"
+        dateModified="2026-10-07"
+        isPartOfUrl={HUB_URL}
+      />
+
+      <Breadcrumb
+        items={[
+          { label: "Blog", href: "/blog" },
+          { label: "How to Set Up a Subsidiary in India from the USA", href: "/blog/usa-to-india" },
+          { label: "Audit and ICOFR for Indian Subsidiaries of US Companies" },
+        ]}
+      />
+
+      <GuideHero
+        eyebrow="Assure: audit and controls"
+        title="Audit and Internal Controls for an Indian Subsidiary of a US Group"
+        updated="7 October 2026"
+      />
+
+      <article className="max-w-4xl mx-auto px-4 py-14">
+        <GuideAnswerBox title="Short answer">
+          An Indian subsidiary must have its financial statements audited each year by an independent chartered
+          accountant. Depending on size and activity, it may also need a tax audit, GST audit and internal audit. If
+          your US group is listed or follows SOX, the subsidiary is usually part of your internal controls over
+          financial reporting (ICOFR) scope as well.
+        </GuideAnswerBox>
+
+        <GuideTOC items={toc} />
+
+        <p className="mb-8">
+          <Link href="/blog/usa-to-india" className="text-blue-800 font-semibold hover:underline">
+            &larr; Back to the complete guide: How to Set Up a Subsidiary in India from the USA
+          </Link>
+        </p>
+
+        <h2 id="key-facts" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Key facts</h2>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full border-collapse border border-gray-300 text-sm">
+            <tbody>
+              {[
+                ["Statutory audit", "Required for every company; the first auditor is appointed within 30 days of incorporation"],
+                ["Auditor", "An independent chartered accountant or firm; rotation and independence rules apply"],
+                ["Tax audit", "Where turnover or other thresholds are met, reported in Form 26 (previously Forms 3CA/3CB and 3CD)"],
+                ["GST audit and reconciliation", "As required by current GST law"],
+                ["Internal audit", "Mandatory for certain classes of company; recommended for US group subsidiaries"],
+                ["Group audit support", "Information for the US auditors of the consolidated financials"],
+              ].map(([k, v]) => (
+                <tr key={k} className="odd:bg-secondary/30">
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>
+                  <td className="border border-gray-300 p-3 align-top">{v}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="types" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The audits an Indian subsidiary may face</h2>
+        <div className="overflow-x-auto mb-10">
+          <table className="w-full border-collapse border border-gray-300 text-sm">
+            <thead className="bg-[#081a42] text-white">
+              <tr>
+                <th scope="col" className="border border-gray-300 p-3 text-left">Audit</th>
+                <th scope="col" className="border border-gray-300 p-3 text-left">Purpose</th>
+                <th scope="col" className="border border-gray-300 p-3 text-left">Who</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Statutory audit", "Opinion on the annual financial statements under the Companies Act", "Independent chartered accountant"],
+                ["Tax audit", "Report to the tax authority on books and tax positions where thresholds apply", "Chartered accountant"],
+                ["GST audit and reconciliation", "Checks GST returns against books where required", "As the GST law prescribes"],
+                ["Transfer pricing certificate", "Accountant's report in Form 48 (previously Form 3CEB)", "Chartered accountant"],
+                ["Internal audit", "Independent review of processes and controls", "Internal or outsourced"],
+                ["Group reporting audit", "Reporting package or review for the US parent's auditors", "Local or group auditor"],
+              ].map((row, i) => (
+                <tr key={row[0]} className={i % 2 === 1 ? "bg-gray-50" : undefined}>
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">{row[0]}</th>
+                  <td className="border border-gray-300 p-3">{row[1]}</td>
+                  <td className="border border-gray-300 p-3">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="statutory" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The statutory audit step by step</h2>
+        <ol className="list-decimal pl-6 space-y-3 text-gray-700 mb-4">
+          <li>Appoint the auditor and file the appointment with the Registrar.</li>
+          <li>Close the books and prepare the financial statements under Indian accounting standards.</li>
+          <li>Auditor reviews, raises queries and finalizes the report.</li>
+          <li>Board approves the accounts and the AGM adopts them.</li>
+          <li>File Form AOC-4 and Form MGT-7 with the Registrar.</li>
+        </ol>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Indian subsidiaries report under Indian accounting standards. Your US group may also need a US GAAP or
+          IFRS reporting package, which we prepare from the Indian books.
+        </p>
+
+        <h2 id="icofr" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Internal controls over financial reporting</h2>
+        <p className="text-gray-600 leading-relaxed mb-4">
+          A US-listed parent must assess controls over financial reporting for material subsidiaries. For an Indian
+          subsidiary this usually means documenting key processes (payroll, procure-to-pay, revenue, close), testing
+          the controls and fixing gaps. India has its own requirement for internal financial controls to be reported
+          by the auditor of the company.
+        </p>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Define the processes and risks in scope with your US controllers.</li>
+          <li>Segregate duties among preparation, approval and payment.</li>
+          <li>Keep evidence of review and approval for key controls.</li>
+          <li>Test controls on a schedule and track remediation.</li>
+        </ul>
+
+        <h2 id="prepare" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How to prepare for audit</h2>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Maintain monthly closes with reconciled bank, payroll, tax and intercompany balances.</li>
+          <li>Keep invoices, contracts and approvals in an organized file.</li>
+          <li>Share the audit calendar with your US team and auditors.</li>
+          <li>Resolve prior-year points before the next cycle starts.</li>
+        </ul>
+
+        <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Tell us early if your group needs a reporting package or SOX testing in India, so the process is built in rather than added in the last month.</li>
+          <li>Choose an auditor for the Indian company that is independent of the team doing the bookkeeping.</li>
+        </ul>
+
+        <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Appointing the first auditor late.</li>
+          <li>Using the same team for bookkeeping and audit.</li>
+          <li>Leaving internal controls undocumented until the US auditors ask.</li>
+          <li>Not agreeing the timeline between the Indian and group audits.</li>
+        </ul>
+
+        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
+        <p className="text-gray-600 leading-relaxed mb-2">
+          We support audits and assurance: statutory and tax audit coordination, internal audit, ICOFR and reporting
+          packages for US groups.
+        </p>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Related services:{" "}
+          <Link href="/services/accounting-assurance" className="text-blue-800 font-semibold hover:underline">Accounting and assurance</Link>
+        </p>
+
+        <GuideCTA
+          title="You focus on your business. We handle India."
+          description="Tell us your plan and we will map the next steps on a call."
+        />
+
+        <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
+        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+
+        <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
+        <div className="mb-10">
+          <GuideRelatedCards cards={relatedCards} />
+        </div>
+
+        <h2 id="sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Sources</h2>
+        <GuideSources
+          sources={[
+            { label: "Ministry of Corporate Affairs", href: "https://www.mca.gov.in" },
+            { label: "Institute of Chartered Accountants of India", href: "https://www.icai.org" },
+            { label: "Income Tax Department", href: "https://www.incometax.gov.in" },
+          ]}
+        />
+
+        <p className="mt-6">
+          <Link href="/blog/usa-to-india" className="text-blue-800 font-semibold hover:underline">
+            &larr; Back to the complete guide
+          </Link>
+        </p>
+
+        <GuideAuthorBio />
+        <p className="text-sm text-gray-500 mt-6">
+          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          confirm current requirements before acting.
+        </p>
+      </article>
+    </main>
+  )
+}

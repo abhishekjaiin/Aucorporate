@@ -110,7 +110,7 @@ export default function AboutHero() {
           </Reveal>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
-              { label: "United States", href: "/india-entry-for-us-companies" },
+              { label: "United States", href: "/blog/usa-to-india" },
               { label: "United Kingdom", href: "/india-entry-for-uk-companies" },
               { label: "Singapore", href: "/india-entry-for-singapore-companies" },
               { label: "Australia", href: "/india-entry-for-australian-companies" },

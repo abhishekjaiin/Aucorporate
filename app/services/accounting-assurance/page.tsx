@@ -237,7 +237,7 @@ export default function Page() {
             The Accounting & Filing Calendar Behind the Numbers
           </h2>
           <p className="text-gray-600 max-w-4xl leading-relaxed mb-8">
-            Good bookkeeping isn&apos;t a once-a-year exercise — it&apos;s what makes the recurring filing calendar below possible without a scramble each time it comes around. This sits alongside the one-time, incorporation-linked filing (FC-GPR) covered in our <Link href="/india-business-setup/company-formation" className="text-yellow-700 font-semibold hover:underline">company registration compliance roadmap</Link> — the annual FLA return and AOC-4/MGT-7 below are recurring, not one-time. For the dated, foreign-subsidiary-specific version of this calendar, including DIR-3 KYC and board/AGM timing, see our <Link href="/india-entry-for-us-companies/annual-compliance-calendar" className="text-yellow-700 font-semibold hover:underline">annual compliance calendar</Link>:
+            Good bookkeeping isn&apos;t a once-a-year exercise — it&apos;s what makes the recurring filing calendar below possible without a scramble each time it comes around. This sits alongside the one-time, incorporation-linked filing (FC-GPR) covered in our <Link href="/india-business-setup/company-formation" className="text-yellow-700 font-semibold hover:underline">company registration compliance roadmap</Link> — the annual FLA return and AOC-4/MGT-7 below are recurring, not one-time. For the dated, foreign-subsidiary-specific version of this calendar, including DIR-3 KYC and board/AGM timing, see our <Link href="/blog/usa-to-india/compliance-calendar" className="text-yellow-700 font-semibold hover:underline">annual compliance calendar</Link>:
           </p>
           <div className="grid gap-4 md:grid-cols-3">
             {calendarItems.map((item) => (
@@ -341,7 +341,7 @@ export default function Page() {
             <h3 className="mb-2 font-semibold text-[#081a42]">Outsourced Finance &amp; Accounting</h3>
             <p className="text-sm text-gray-600">Ongoing bookkeeping, payroll support and compliance for foreign companies</p>
           </Link>
-          <Link href="/india-entry-for-us-companies" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+          <Link href="/blog/usa-to-india" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
             <h3 className="mb-2 font-semibold text-[#081a42]">India Entry for US Companies</h3>
             <p className="text-sm text-gray-600">Entity choice, FEMA compliance, and transfer pricing for a US-owned subsidiary</p>
           </Link>

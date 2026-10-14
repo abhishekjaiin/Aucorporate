@@ -1,0 +1,244 @@
+import Link from "next/link"
+import { Breadcrumb } from "@/components/Breadcrumb"
+import { GuideHero } from "@/components/guide/GuideHero"
+import { GuideAnswerBox } from "@/components/guide/GuideAnswerBox"
+import { GuideTOC } from "@/components/guide/GuideTOC"
+import { GuideFaqList } from "@/components/guide/GuideFaqList"
+import { GuideRelatedCards } from "@/components/guide/GuideRelatedCards"
+import { GuideCTA } from "@/components/guide/GuideCTA"
+import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
+import { GuideSources } from "@/components/guide/GuideSources"
+import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+
+const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/hiring-and-payroll"
+const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+
+const toc = [
+  { id: "before", label: "Before the first hire" },
+  { id: "contract", label: "What an Indian employment contract should cover" },
+  { id: "benefits", label: "Statutory benefits and deductions" },
+  { id: "payroll", label: "The monthly payroll cycle" },
+  { id: "codes", label: "India's labour codes" },
+  { id: "us-parent", label: "What this means for a US parent" },
+  { id: "mistakes", label: "Mistakes to avoid" },
+  { id: "how-we-help", label: "How AU Corporate handles this" },
+  { id: "faqs", label: "Frequently asked questions" },
+]
+
+const faqs = [
+  { q: "What is the notice period in India?", a: "It is set by the employment contract, commonly one to three months for professional roles. State and statutory rules also apply, so write it clearly into each contract." },
+  { q: "Do we have to register for provident fund?", a: "Establishments above the prescribed employee limit must register, and many companies register earlier. Confirm the position for your headcount and state." },
+  { q: "Can we use US-style at-will employment?", a: "No. Employment in India is contract based, and termination must follow the contract and applicable law." },
+  { q: "What is gratuity?", a: "A lump sum paid to an employee on leaving after the qualifying period of service, typically five years. The rules are being consolidated in the labour codes, so confirm the current position." },
+]
+
+const relatedCards = [
+  { title: "Employer of Record vs. Subsidiary in India: When to Use Each", desc: "Compare an Employer of Record with your own Indian subsidiary: speed, control, compliance, tax presence and when to convert. A guide for US companies.", href: "/blog/usa-to-india/eor-vs-subsidiary" },
+  { title: "Sending a US Executive to India: Visa, Housing, Banking and Tax", desc: "How to relocate a US executive to India: employment visa, FRRO registration, housing, banking, tax residency and permanent establishment risk for the parent.", href: "/blog/usa-to-india/expat-visa" },
+  { title: "Compliance Calendar for an Indian Subsidiary: What Is Due and When", desc: "The recurring compliance of an Indian subsidiary: monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law.", href: "/blog/usa-to-india/compliance-calendar" },
+  { title: "ESOPs for Indian Employees of a US Parent: FEMA, Tax and Cost Recharge", desc: "How ESOPs and RSUs work for employees of an Indian subsidiary: FEMA reporting, employee tax, valuation, cost recharge and transfer pricing for a US parent.", href: "/blog/usa-to-india/esop" },
+]
+
+export default function HiringAndPayrollPage() {
+  return (
+    <main className="min-h-screen bg-white">
+      <GuideArticleSchema
+        url={PAGE_URL}
+        headline="Hiring and Payroll in India for US Companies: Contracts, PF, ESI and Gratuity"
+        description="How US companies hire in India: employment contracts, provident fund, ESI, gratuity, professional tax, payroll steps and India's labour codes."
+        datePublished="2026-10-07"
+        dateModified="2026-10-07"
+        isPartOfUrl={HUB_URL}
+      />
+
+      <Breadcrumb
+        items={[
+          { label: "Blog", href: "/blog" },
+          { label: "How to Set Up a Subsidiary in India from the USA", href: "/blog/usa-to-india" },
+          { label: "Hiring in India: Contracts, Payroll and Statutory Compliance" },
+        ]}
+      />
+
+      <GuideHero
+        eyebrow="Launch: people and payroll"
+        title="Hiring and Payroll in India for US Companies: Contracts, PF, ESI and Gratuity"
+        updated="7 October 2026"
+      />
+
+      <article className="max-w-4xl mx-auto px-4 py-14">
+        <GuideAnswerBox title="Short answer">
+          To hire in India, the Indian company (or an Employer of Record) issues employment contracts, registers
+          for provident fund, ESI where applicable and professional tax, runs payroll with Withholding Tax on
+          salary, and files the periodic returns. Gratuity, bonus and leave rules also apply, and India&apos;s
+          labour codes are consolidating several of these rules, so confirm the current position for your state
+          and headcount.
+        </GuideAnswerBox>
+
+        <GuideTOC items={toc} />
+
+        <p className="mb-8">
+          <Link href="/blog/usa-to-india" className="text-blue-800 font-semibold hover:underline">
+            &larr; Back to the complete guide: How to Set Up a Subsidiary in India from the USA
+          </Link>
+        </p>
+
+        <h2 id="key-facts" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Key facts</h2>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full border-collapse border border-gray-300 text-sm">
+            <tbody>
+              {[
+                ["Registrations", "Provident fund (EPFO), ESI where applicable, professional tax and state shops and establishment registration"],
+                ["Monthly", "Salary, Withholding Tax on salary, provident fund and ESI contributions"],
+                ["Withholding Tax on salary", "Deposited by the 7th of the following month"],
+                ["Quarterly statement", "Form 138 (previously Form 24Q) for salary Withholding Tax"],
+                ["Employment model", "Contract-based; there is no at-will employment in India"],
+                ["Post-employment non-compete", "Generally not enforceable in India"],
+              ].map(([k, v]) => (
+                <tr key={k} className="odd:bg-secondary/30">
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>
+                  <td className="border border-gray-300 p-3 align-top">{v}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="before" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Before the first hire</h2>
+        <ol className="list-decimal pl-6 space-y-3 text-gray-700 mb-10">
+          <li>Decide the employer: your subsidiary or an Employer of Record.</li>
+          <li>Register the company for provident fund, ESI (where applicable), professional tax and the state
+            establishment registration.
+          </li>
+          <li>Prepare an employment contract and a policy handbook that fit Indian law.</li>
+          <li>Set up payroll, the salary structure and the company&apos;s bank arrangements.</li>
+          <li>Agree IP assignment and confidentiality terms in every contract.</li>
+        </ol>
+
+        <h2 id="contract" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What an Indian employment contract should cover</h2>
+        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+          <li>Designation, place of work, probation and confirmation.</li>
+          <li>Compensation structure and benefits, stated as cost to company with its components.</li>
+          <li>Notice period and termination terms. Termination follows the contract and the law; the US at-will
+            model does not apply.
+          </li>
+          <li>Confidentiality, IP assignment and data protection duties.</li>
+          <li>Restrictions after employment. Non-compete clauses that apply after employment are generally
+            unenforceable in India, so protect the business through confidentiality, IP and non-solicitation
+            drafting.
+          </li>
+        </ul>
+
+        <h2 id="benefits" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Statutory benefits and deductions</h2>
+        <div className="overflow-x-auto mb-10">
+          <table className="w-full border-collapse border border-gray-300 text-sm">
+            <thead className="bg-[#081a42] text-white">
+              <tr>
+                <th scope="col" className="border border-gray-300 p-3 text-left">Item</th>
+                <th scope="col" className="border border-gray-300 p-3 text-left">What it is</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Provident fund", "Retirement savings contributed by employer and employee, administered by the EPFO"],
+                ["ESI", "Medical and cash benefit insurance for employees whose wages are within the prescribed ceiling"],
+                ["Gratuity", "Lump sum paid on leaving after the qualifying period of service, which is typically five years"],
+                ["Bonus", "Statutory bonus applies to eligible employees under the prescribed wage limits"],
+                ["Professional tax", "A state-level tax on employment, deducted by the employer where the state levies it"],
+                ["Leave and holidays", "Governed by state establishment law and the company's policy"],
+                ["Withholding Tax on salary", "Deducted from salary each month and deposited with the government"],
+              ].map((row, i) => (
+                <tr key={row[0]} className={i % 2 === 1 ? "bg-gray-50" : undefined}>
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">{row[0]}</th>
+                  <td className="border border-gray-300 p-3">{row[1]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="payroll" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The monthly payroll cycle</h2>
+        <ol className="list-decimal pl-6 space-y-3 text-gray-700 mb-10">
+          <li>Collect attendance, leave and changes to pay.</li>
+          <li>Compute salary, statutory deductions and Withholding Tax.</li>
+          <li>Pay salaries and issue payslips.</li>
+          <li>Deposit Withholding Tax by the 7th of the next month and provident fund and ESI by the 15th.</li>
+          <li>File the quarterly Withholding Tax statement and the periodic statutory returns.</li>
+        </ol>
+
+        <h2 id="codes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">India&apos;s labour codes</h2>
+        <div className="bg-secondary/40 border-l-4 border-blue-800 rounded-lg p-4 mb-10 text-sm text-gray-700">
+          India has consolidated many central labour laws into four labour codes covering wages, industrial
+          relations, social security and occupational safety. The codes have been brought into force in phases and
+          state rules vary, so we confirm the current position for each state and headcount before drafting
+          contracts.
+        </div>
+
+        <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
+        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+          <li>Do not copy a US offer letter. Indian contracts need notice periods, statutory benefits and IP
+            clauses written for Indian law.
+          </li>
+          <li>If you offer equity to Indian employees, see{" "}
+            <Link href="/blog/usa-to-india/esop" className="text-blue-800 font-semibold hover:underline">ESOPs for Indian employees of a US parent</Link>.
+          </li>
+          <li>Personal data of Indian employees is subject to India&apos;s data protection law, so agree how HR
+            data is shared with the US team.
+          </li>
+        </ul>
+
+        <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Hiring people as consultants when they are in substance employees, which creates statutory exposure.</li>
+          <li>Starting work before provident fund, ESI and professional tax registrations are in place.</li>
+          <li>Copying a US at-will contract that does not work under Indian law.</li>
+          <li>Leaving out IP assignment and confidentiality clauses.</li>
+          <li>Ignoring state-level registrations and professional tax.</li>
+        </ul>
+
+        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
+        <p className="text-gray-600 leading-relaxed mb-2">
+          We run HR services, payroll and Employer of Record arrangements for foreign companies in India.
+        </p>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Related services:{" "}
+          <Link href="/hr-services" className="text-blue-800 font-semibold hover:underline">HR and payroll</Link>
+        </p>
+
+        <GuideCTA
+          title="You focus on your business. We handle India."
+          description="Tell us your plan and we will map the next steps on a call."
+        />
+
+        <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
+        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+
+        <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
+        <div className="mb-10">
+          <GuideRelatedCards cards={relatedCards} />
+        </div>
+
+        <h2 id="sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Sources</h2>
+        <GuideSources
+          sources={[
+            { label: "Employees' Provident Fund Organisation", href: "https://www.epfindia.gov.in" },
+            { label: "Employees' State Insurance Corporation", href: "https://www.esic.gov.in" },
+            { label: "Ministry of Labour and Employment", href: "https://labour.gov.in" },
+            { label: "Income Tax Department", href: "https://www.incometax.gov.in" },
+          ]}
+        />
+
+        <p className="mt-6">
+          <Link href="/blog/usa-to-india" className="text-blue-800 font-semibold hover:underline">
+            &larr; Back to the complete guide
+          </Link>
+        </p>
+
+        <GuideAuthorBio />
+        <p className="text-sm text-gray-500 mt-6">
+          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          confirm current requirements before acting.
+        </p>
+      </article>
+    </main>
+  )
+}

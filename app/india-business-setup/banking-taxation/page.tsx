@@ -139,7 +139,7 @@ export default function BankingTaxationPage() {
           </p>
           <p className="text-gray-600 leading-relaxed">
             See our{' '}
-            <Link href="/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            <Link href="/blog/usa-to-india/repatriating-profits" className="text-yellow-600 hover:text-yellow-700 font-semibold">
               full India-US DTAA and withholding tax guide for US parent companies
             </Link>{' '}
             for sourced treaty rates by income type, the Form 145/146 remittance-certification chain, and what a repatriation costs net of a US foreign tax credit.

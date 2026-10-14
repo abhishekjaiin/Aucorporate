@@ -8,7 +8,7 @@ import { ScenarioSelector } from "@/components/ScenarioSelector"
 import { ArrowRight } from "lucide-react"
 
 const countryLinks = [
-  { label: "US", href: "/india-entry-for-us-companies" },
+  { label: "US", href: "/blog/usa-to-india" },
   { label: "UK", href: "/india-entry-for-uk-companies" },
   { label: "Singapore", href: "/india-entry-for-singapore-companies" },
   { label: "Germany", href: "/india-entry-for-german-companies" },
