@@ -327,8 +327,7 @@ export default function BlogPage() {
       <RelatedResources
         links={[
           { label: "Taxation & Regulatory Services", href: "/services/taxation-regulatory", description: "Corporate tax, GST, and regulatory support." },
-          { label: "India-UK DTAA & Withholding Tax", href: "/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax", description: "DTAA rates and treaty benefits explained." },
-          { label: "India Entry for Singapore Companies", href: "/india-entry-for-singapore-companies", description: "Structuring considerations for Singapore-based investors and subsidiaries." },
+          { label: "Repatriating Profits from India to the US", href: "/blog/usa-to-india/repatriating-profits", description: "DTAA rates, withholding tax, and treaty-benefit documentation explained." },
         ]}
       />
 

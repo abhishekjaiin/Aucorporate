@@ -101,12 +101,6 @@ const faqs = [
 
 const regionLinks = [
   { label: 'US', href: '/blog/usa-to-india' },
-  { label: 'UK', href: '/india-entry-for-uk-companies' },
-  { label: 'Singapore', href: '/india-entry-for-singapore-companies' },
-  { label: 'Australia', href: '/india-entry-for-australian-companies' },
-  { label: 'Germany', href: '/india-entry-for-german-companies' },
-  { label: 'Japan', href: '/india-entry-for-japan-companies' },
-  { label: 'China', href: '/india-entry-for-china-companies' },
 ]
 
 export default function GCCSetupIndiaPage() {
@@ -338,7 +332,7 @@ export default function GCCSetupIndiaPage() {
 
           <h3 className="text-xl font-semibold text-gray-900 mb-3">DTAA Relief on Cross-Charges to the Parent</h3>
           <p className="text-gray-600 leading-relaxed">
-            Where a GCC makes payments to its parent (management fees, royalties for shared IP or software, reimbursements) or the parent receives dividend or service income from the GCC, the applicable Double Taxation Avoidance Agreement between India and the parent&apos;s home jurisdiction can reduce withholding tax rates, provided substance and documentation requirements are met. Rates vary by treaty partner, so see our region-specific guides — for example, <Link href="/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax" className="text-gold-dark font-semibold hover:underline">India-UK DTAA withholding rates</Link> — and our note on <Link href="/blog/mail-box-dtaa-benefits" className="text-gold-dark font-semibold hover:underline">treaty-benefit substance requirements</Link>.
+            Where a GCC makes payments to its parent (management fees, royalties for shared IP or software, reimbursements) or the parent receives dividend or service income from the GCC, the applicable Double Taxation Avoidance Agreement between India and the parent&apos;s home jurisdiction can reduce withholding tax rates, provided substance and documentation requirements are met. Rates vary by treaty partner, so see our note on <Link href="/blog/mail-box-dtaa-benefits" className="text-gold-dark font-semibold hover:underline">treaty-benefit substance requirements</Link>, and confirm the current rate for your specific jurisdiction with our team.
           </p>
         </div>
       </section>

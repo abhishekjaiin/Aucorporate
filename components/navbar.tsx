@@ -49,12 +49,15 @@ const dbiColumns: { heading: string; items: DbiItem[] }[] = [
     heading: "By Country",
     items: [
       { label: "USA", href: "/blog/usa-to-india" },
-      { label: "UK", href: "/india-entry-for-uk-companies" },
-      { label: "Singapore", href: "/india-entry-for-singapore-companies" },
-      { label: "Australia", href: "/india-entry-for-australian-companies" },
-      { label: "Germany", href: "/india-entry-for-german-companies" },
-      { label: "Japan", href: "/india-entry-for-japan-companies" },
-      { label: "China", href: "/india-entry-for-china-companies" },
+      // Unlinked until each country's own guide cluster is rebuilt in the
+      // new /blog format (same treatment as USA) — no dead links to the
+      // deleted pages in the meantime.
+      { label: "UK" },
+      { label: "Singapore" },
+      { label: "Australia" },
+      { label: "Germany" },
+      { label: "Japan" },
+      { label: "China" },
     ],
   },
 ]

@@ -38,13 +38,7 @@ const complianceRoadmap = [
 ]
 
 const countryPages = [
-  { label: 'Australia', href: '/india-entry-for-australian-companies' },
   { label: 'United States', href: '/blog/usa-to-india' },
-  { label: 'United Kingdom', href: '/india-entry-for-uk-companies' },
-  { label: 'Singapore', href: '/india-entry-for-singapore-companies' },
-  { label: 'Germany', href: '/india-entry-for-german-companies' },
-  { label: 'Japan', href: '/india-entry-for-japan-companies' },
-  { label: 'China', href: '/india-entry-for-china-companies' },
 ]
 
 const faqs = [
@@ -151,7 +145,7 @@ export default function CompanyFormationPage() {
             ))}
           </div>
           <p className="mt-8 max-w-4xl leading-relaxed text-gray-600">
-            The right choice usually comes down to what the entity is actually there to do. A business that wants to operate, invoice, hire and hold assets in its own name in India needs a full operating entity — almost always a Private Limited Company/WOS. A parent that only wants to test the market, liaise with local partners, or run a single time-limited project is usually better served by a Liaison Office or <Link href="/project-office-registration" className="text-yellow-700 font-semibold hover:underline">Project Office</Link>, which carry far lighter compliance but also cannot generate India-side revenue. A Branch Office sits in between — more operational latitude than a Liaison Office, but still legally the foreign company itself rather than an independent Indian entity, and RBI-approval-gated. A founder or JV partner who wants limited liability without a full company structure — and doesn&apos;t need to raise equity capital — may instead be better served by an LLP; see our <Link href="/llp-in-india" className="text-yellow-700 font-semibold hover:underline">LLP registration in India guide</Link> for the eligibility, FDI and tax picture. For the fuller decision framework and a country-specific comparison, see our <Link href="/india-subsidiary-registration" className="text-yellow-700 font-semibold hover:underline">Foreign Subsidiary / WOS guide</Link>, the <Link href="/branch-office-registration" className="text-yellow-700 font-semibold hover:underline">Branch Office registration and compliance guide</Link>, the <Link href="/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp" className="text-yellow-700 font-semibold hover:underline">US subsidiary vs. branch office comparison</Link> and the <Link href="/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india" className="text-yellow-700 font-semibold hover:underline">UK subsidiary vs. branch office comparison</Link>.
+            The right choice usually comes down to what the entity is actually there to do. A business that wants to operate, invoice, hire and hold assets in its own name in India needs a full operating entity — almost always a Private Limited Company/WOS. A parent that only wants to test the market, liaise with local partners, or run a single time-limited project is usually better served by a Liaison Office or <Link href="/project-office-registration" className="text-yellow-700 font-semibold hover:underline">Project Office</Link>, which carry far lighter compliance but also cannot generate India-side revenue. A Branch Office sits in between — more operational latitude than a Liaison Office, but still legally the foreign company itself rather than an independent Indian entity, and RBI-approval-gated. A founder or JV partner who wants limited liability without a full company structure — and doesn&apos;t need to raise equity capital — may instead be better served by an LLP; see our <Link href="/llp-in-india" className="text-yellow-700 font-semibold hover:underline">LLP registration in India guide</Link> for the eligibility, FDI and tax picture. For the fuller decision framework and a country-specific comparison, see our <Link href="/india-subsidiary-registration" className="text-yellow-700 font-semibold hover:underline">Foreign Subsidiary / WOS guide</Link>, the <Link href="/branch-office-registration" className="text-yellow-700 font-semibold hover:underline">Branch Office registration and compliance guide</Link>, the <Link href="/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp" className="text-yellow-700 font-semibold hover:underline">US subsidiary vs. branch office comparison</Link>.
           </p>
 
           <div className="mt-10 rounded-xl border-l-4 border-yellow-400 bg-white p-6">

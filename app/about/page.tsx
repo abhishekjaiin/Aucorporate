@@ -111,22 +111,32 @@ export default function AboutHero() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[
               { label: "United States", href: "/blog/usa-to-india" },
-              { label: "United Kingdom", href: "/india-entry-for-uk-companies" },
-              { label: "Singapore", href: "/india-entry-for-singapore-companies" },
-              { label: "Australia", href: "/india-entry-for-australian-companies" },
-              { label: "Germany", href: "/india-entry-for-german-companies" },
-              { label: "Japan", href: "/india-entry-for-japan-companies" },
-              { label: "China", href: "/india-entry-for-china-companies" },
-            ].map((c) => (
-              <Link
-                key={c.href}
-                href={c.href}
-                className="flex items-center gap-2 p-4 border rounded-xl hover:shadow-lg hover:border-gold/50 bg-white transition justify-center text-center"
-              >
-                <MapPin className="text-gold w-4 h-4 shrink-0" />
-                <span className="font-medium text-sm">{c.label}</span>
-              </Link>
-            ))}
+              { label: "United Kingdom" },
+              { label: "Singapore" },
+              { label: "Australia" },
+              { label: "Germany" },
+              { label: "Japan" },
+              { label: "China" },
+            ].map((c) =>
+              c.href ? (
+                <Link
+                  key={c.label}
+                  href={c.href}
+                  className="flex items-center gap-2 p-4 border rounded-xl hover:shadow-lg hover:border-gold/50 bg-white transition justify-center text-center"
+                >
+                  <MapPin className="text-gold w-4 h-4 shrink-0" />
+                  <span className="font-medium text-sm">{c.label}</span>
+                </Link>
+              ) : (
+                <span
+                  key={c.label}
+                  className="flex items-center gap-2 p-4 border rounded-xl bg-white justify-center text-center text-gray-400"
+                >
+                  <MapPin className="w-4 h-4 shrink-0" />
+                  <span className="font-medium text-sm">{c.label}</span>
+                </span>
+              )
+            )}
           </div>
         </div>
       </section>
