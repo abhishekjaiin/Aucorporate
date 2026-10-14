@@ -25,11 +25,17 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "Is audit mandatory for a small Indian subsidiary?", a: "Yes. Every company must have its financial statements audited each year, whatever its size." },
-  { q: "When must the first auditor be appointed?", a: "Within 30 days of incorporation." },
-  { q: "Does India require internal controls reporting?", a: "Yes. The auditor of the company reports on internal financial controls for most companies. A US parent's ICOFR requirement is separate." },
-  { q: "Can the same firm do the books and the audit?", a: "No. The auditor must be independent of the accounting work." },
-  { q: "Can you prepare a US GAAP package?", a: "Yes. We prepare reporting packages from the Indian books in the format your group needs." },
+  { q: "Is audit mandatory for a small Indian subsidiary?", a: "Audit is mandatory for a small Indian subsidiary, because every company must have its financial statements audited each year, whatever its size (Section 139 of the Companies Act, 2013)." },
+  { q: "When must the first Auditor be appointed?", a: "Within 30 days of incorporation." },
+  { q: "Does India require internal controls reporting?", a: "India requires internal controls reporting: the Auditor of the company reports on internal financial controls for most companies (Section 143(3)(i) of the Companies Act, 2013). A US parent's ICOFR requirement under the Sarbanes-Oxley Act is separate." },
+  { q: "Can the same firm do the books and the audit?", a: "The same firm cannot do the books and the audit of a company, because the Auditor must be independent of the accounting work." },
+  { q: "Can a US GAAP reporting package be prepared from the Indian books?", a: "A US GAAP reporting package can be prepared from the Indian books in the format the group needs." },
+  { q: "Does the subsidiary need a statutory audit?", a: "An Indian subsidiary needs a statutory audit, because every company must have its accounts audited by a Chartered Accountant appointed as Statutory Auditor, regardless of turnover (Section 139 of the Companies Act, 2013). The audited financial statements are approved at the AGM and filed with the Registrar." },
+  { q: "Is a statutory audit mandatory for an Indian subsidiary?", a: "A statutory audit is mandatory for every company in India under Section 139 of the Companies Act, 2013, irrespective of turnover. The first Auditor is appointed by the board within 30 days of incorporation (Section 139(6)), and later Auditors are appointed by shareholders." },
+  { q: "What is ICOFR and does the India subsidiary need it?", a: "ICOFR is internal control over financial reporting, which a US-listed parent must assess under the Sarbanes-Oxley Act. Material subsidiaries are often brought into scope, so the Indian entity may need documented controls and testing. Indian company law also has its own internal financial controls reporting by the Auditor." },
+  { q: "What annual compliance does the subsidiary have?", a: "Statutory audit, an AGM, filing financial statements and the annual return with the Registrar, income tax return and advance tax, GST and Withholding Tax filings, payroll returns, the FLA return to the RBI, and transfer pricing reporting where applicable." },
+  { q: "Is an internal audit mandatory for an Indian subsidiary?", a: "An internal audit is mandatory under Section 138 of the Companies Act, 2013 for a private company with turnover of ₹200 crore or more or outstanding borrowings above ₹100 crore from banks or financial institutions. The internal Auditor can be an employee but cannot be the Statutory Auditor." },
+  { q: "Does the Auditor have to report on internal financial controls for a small private company?", a: "A private company is exempt from the Auditor's internal financial controls report under Section 143(3)(i) of the Companies Act, 2013 if its turnover is below ₹50 crore and its borrowings are below ₹25 crore, with no default in filing. The Board must still maintain internal financial controls." },
 ]
 
 const relatedCards = [
@@ -47,7 +53,7 @@ export default function AuditIcofrPage() {
         headline="Audit and Internal Controls for an Indian Subsidiary of a US Group"
         description="Statutory audit, tax audit, GST audit and internal controls over financial reporting for an Indian subsidiary of a US group. What to expect and how to prepare."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -62,13 +68,13 @@ export default function AuditIcofrPage() {
       <GuideHero
         eyebrow="Assure: audit and controls"
         title="Audit and Internal Controls for an Indian Subsidiary of a US Group"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
-          An Indian subsidiary must have its financial statements audited each year by an independent chartered
-          accountant. Depending on size and activity, it may also need a tax audit, GST audit and internal audit. If
+          An Indian subsidiary must have its financial statements audited each year by an independent Chartered
+          Accountant. Depending on size and activity, it may also need a tax audit, GST audit and internal audit. If
           your US group is listed or follows SOX, the subsidiary is usually part of your internal controls over
           financial reporting (ICOFR) scope as well.
         </GuideAnswerBox>
@@ -86,12 +92,14 @@ export default function AuditIcofrPage() {
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <tbody>
               {[
-                ["Statutory audit", "Required for every company; the first auditor is appointed within 30 days of incorporation"],
-                ["Auditor", "An independent chartered accountant or firm; rotation and independence rules apply"],
-                ["Tax audit", "Where turnover or other thresholds are met, reported in Form 26 (previously Forms 3CA/3CB and 3CD)"],
+                ["Statutory audit", "Required for every company; the first Auditor is appointed within 30 days of incorporation"],
+                ["Auditor", "An independent Chartered Accountant or firm appointed under Section 139 of the Companies Act, 2013; the first Auditor is appointed within 30 days of incorporation"],
+                ["Tax audit", "Where turnover exceeds ₹1 crore (₹10 crore where cash receipts and payments are each within 5%), reported in Form 26 (previously Forms 3CA/3CB and 3CD)"],
+                ["Internal financial controls report", "The Auditor reports on internal financial controls (Section 143(3)(i) of the Companies Act, 2013) unless the private company has turnover below ₹50 crore and borrowings below ₹25 crore with no default in filing; the Board must maintain the controls regardless"],
+                ["CARO 2020", "Applies to all companies; the exemption is limited to small private companies (revenue up to ₹10 crore and borrowings up to ₹1 crore, among other conditions) that are not a holding or subsidiary of a public company"],
                 ["GST audit and reconciliation", "As required by current GST law"],
-                ["Internal audit", "Mandatory for certain classes of company; recommended for US group subsidiaries"],
-                ["Group audit support", "Information for the US auditors of the consolidated financials"],
+                ["Internal audit", "Mandatory under Section 138 of the Companies Act, 2013 for a private company with turnover of ₹200 crore or more or borrowings above ₹100 crore; recommended for US group subsidiaries below that"],
+                ["Group audit support", "Information for the US Auditors of the consolidated financials"],
               ].map(([k, v]) => (
                 <tr key={k} className="odd:bg-secondary/30">
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>

@@ -47,7 +47,7 @@ export default function RestructuringAndExitPage() {
         headline="Restructuring, Mergers and Exit: Your Options for an Indian Subsidiary"
         description="Options to restructure, sell, merge or close an Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation, with tax and RBI steps."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -62,7 +62,7 @@ export default function RestructuringAndExitPage() {
       <GuideHero
         eyebrow="Scale and exit"
         title="Restructuring, Mergers and Exit: Your Options for an Indian Subsidiary"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
@@ -90,7 +90,7 @@ export default function RestructuringAndExitPage() {
                 ["Slump sale", "The business is sold as a going concern for a lump sum"],
                 ["Merger or demerger", "Through a scheme approved by the tribunal; a fast-track route exists for a holding company and its wholly owned subsidiary"],
                 ["Buyback or capital reduction", "Returns cash to the parent within company-law limits"],
-                ["Strike-off", "For a company that has not carried on business; removed by the registrar"],
+                ["Strike-off", "For a company with no business for two financial years or none started within a year; special resolution with 75% member consent; Form STK-2 with a ₹10,000 fee; typically 3 to 6 months (Section 248 of the Companies Act, 2013)"],
                 ["Voluntary liquidation", "For a solvent company; wound up under the insolvency code"],
               ].map(([k, v]) => (
                 <tr key={k} className="odd:bg-secondary/30">
@@ -114,7 +114,7 @@ export default function RestructuringAndExitPage() {
             </thead>
             <tbody>
               {[
-                ["Share sale", "The parent sells shares of the Indian company to a buyer", "FEMA pricing and reporting; capital gains tax; treaty relief; buyer's due diligence"],
+                ["Share sale", "The parent sells shares of the Indian company to a buyer", "FEMA pricing and Form FC-TRS within 60 days; long-term capital gains at 12.5% where the shares are held more than 24 months; treaty relief; buyer's due diligence"],
                 ["Slump sale", "Sale of an undertaking as a going concern for a lump sum", "Capital gains on net worth; contracts, employees and licences transfer by agreement; stamp duty"],
                 ["Merger or demerger", "Combining or splitting companies through a scheme", "Tribunal process; valuation; tax neutrality conditions; fast track for holding and wholly owned subsidiary"],
                 ["Buyback", "Company buys back its own shares from the parent", "Limits on size and frequency; tax treatment has changed recently, so check the cost"],
@@ -160,7 +160,7 @@ export default function RestructuringAndExitPage() {
           <li>Decide the route: strike-off for a dormant company or voluntary liquidation for a solvent company with operations.</li>
           <li>Settle liabilities, employee dues, taxes and statutory filings.</li>
           <li>Close the bank accounts and finalize the accounts.</li>
-          <li>Obtain the approvals and file the closure forms with the registrar.</li>
+          <li>Obtain the approvals and file the closure forms with the Registrar.</li>
           <li>Remit surplus funds to the US parent through the bank with the required certificates, and report the closure to the RBI.</li>
         </ol>
 
@@ -192,6 +192,15 @@ export default function RestructuringAndExitPage() {
           <Link href="/services/transaction-advisory" className="text-blue-800 font-semibold hover:underline">Transaction advisory</Link>{" "}
           &middot;{" "}
           <Link href="/india-business-setup/company-formation" className="text-blue-800 font-semibold hover:underline">India business setup</Link>
+        </p>
+
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA

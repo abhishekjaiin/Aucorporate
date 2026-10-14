@@ -26,10 +26,15 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "Can Indian employees receive US parent shares?", a: "Yes, under the parent's plan, subject to FEMA overseas investment rules and reporting. The tax and withholding treatment needs to be set up in advance." },
+  { q: "Can Indian employees receive US parent shares?", a: "Indian employees can receive US parent shares under the parent's plan, subject to FEMA overseas investment rules and reporting. The tax and withholding treatment needs to be set up in advance." },
   { q: "When are ESOPs taxed in India?", a: "Twice. The benefit is taxed as salary at exercise or vesting, and capital gains tax applies when the shares are sold." },
-  { q: "Does the subsidiary pay for the parent's ESOP cost?", a: "Often, through a cost recharge under an agreement. Deductibility and Withholding Tax on the recharge are frequently disputed, so document it from the start." },
+  { q: "Does the subsidiary pay for the parent's ESOP cost?", a: "An Indian subsidiary often pays for the parent's ESOP cost through a cost recharge under an agreement. Deductibility and Withholding Tax on the recharge are frequently disputed, so it should be documented from the start." },
   { q: "Can the Indian company issue its own ESOPs?", a: "Yes, under the Companies Act with a special resolution and a scheme. A valuation is needed and FEMA conditions apply where non-residents are involved." },
+  { q: "How do ESOPs for Indian employees of a US parent work?", a: "The US parent grants options or restricted stock units to employees of the Indian subsidiary under its plan. FEMA overseas investment rules and reporting apply to the employees, and tax arises on exercise or vesting as salary, with Withholding Tax, and again as capital gains on sale." },
+  { q: "Does the subsidiary reimburse the parent for ESOP costs?", a: "An Indian subsidiary often reimburses the parent for ESOP costs through a cost recharge under an agreement. Deductibility, transfer pricing and Withholding Tax on these recharges are frequently disputed, so the arrangement should be documented carefully from the start." },
+  { q: "Is an LLP cheaper than a private limited company?", a: "Compliance for an LLP can be lighter, but eligibility for foreign investment, funding options and US tax treatment usually matter more for a US parent than compliance cost." },
+  { q: "How is an ESOP taxed for employees in India?", a: "An Indian employee is taxed on ESOP shares twice: as salary on the fair market value at exercise less the exercise price (for RSUs, at vesting), with tax withheld by the employer, and as capital gains on sale, where the long-term rate is 12.5% for shares held more than 24 months. Employees must disclose foreign shares in Schedule FA and can claim foreign tax credit using Form 67." },
+  { q: "What are the Companies Act conditions for ESOPs in India?", a: "An Indian company issues ESOPs under Section 62(1)(b) of the Companies Act, 2013 and Rule 12 of the Companies (Share Capital and Debentures) Rules, 2014, which require a special resolution of shareholders (filed in Form MGT-14 within 30 days) and a minimum of one year between grant and vesting." },
 ]
 
 const relatedCards = [
@@ -47,7 +52,7 @@ export default function EsopPage() {
         headline="ESOPs for Indian Employees of a US Parent: FEMA, Tax and Cost Recharge"
         description="How ESOPs and RSUs work for employees of an Indian subsidiary: FEMA reporting, employee tax, valuation, cost recharge and transfer pricing for a US parent."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -62,7 +67,7 @@ export default function EsopPage() {
       <GuideHero
         eyebrow="Scale: equity for employees"
         title="ESOPs for Indian Employees of a US Parent: FEMA, Tax and Cost Recharge"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
@@ -89,10 +94,11 @@ export default function EsopPage() {
               {[
                 ["Route 1", "Employees receive options or RSUs of the US parent under its plan"],
                 ["Route 2", "The Indian company issues its own ESOPs under the Companies Act"],
-                ["Employee tax, first event", "On exercise or vesting, the benefit is taxed as salary and the employer withholds tax"],
-                ["Employee tax, second event", "On sale of the shares, capital gains tax applies"],
-                ["Foreign assets", "Employees must disclose foreign assets, including foreign shares, in their Indian return"],
+                ["Employee tax, first event", "For an ESOP, fair market value on the exercise date less the exercise price is taxed as salary at exercise (for RSUs, at vesting), and the Indian employer withholds tax"],
+                ["Employee tax, second event", "On sale of the shares, capital gains tax applies; the long-term rate is 12.5% for shares held more than 24 months"],
+                ["Foreign assets", "Employees must disclose foreign shares in Schedule FA of their Indian return and can claim foreign tax credit through Form 67"],
                 ["Cost recharge", "The parent often recharges the cost to the subsidiary; it needs an agreement and transfer pricing support"],
+                ["Companies Act conditions", "A special resolution of shareholders (filed in Form MGT-14 within 30 days) and a minimum of one year between grant and vesting"],
               ].map(([k, v]) => (
                 <tr key={k} className="odd:bg-secondary/30">
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>
