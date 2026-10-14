@@ -24,10 +24,15 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "Who can issue the valuation certificate?", a: "An eligible professional as defined in the FEMA rules, such as a chartered accountant or a merchant banker, depending on the transaction." },
-  { q: "Is a valuation needed for a wholly owned subsidiary at incorporation?", a: "Yes, for shares issued to the foreign parent, the pricing must comply, and the filing is supported by a certificate." },
-  { q: "Can shares be issued at a premium?", a: "Yes. The price cannot be below fair value, but it can be higher." },
+  { q: "Who can issue the valuation certificate?", a: "An eligible professional as defined in the FEMA rules, such as a Chartered Accountant or a merchant banker, depending on the transaction." },
+  { q: "Is a valuation needed for a wholly owned subsidiary at incorporation?", a: "A valuation is needed for a wholly owned subsidiary at incorporation for shares issued to the foreign parent, because the pricing must comply with the valuation rules and the filing is supported by a certificate." },
+  { q: "Can shares be issued at a premium?", a: "Shares can be issued at a premium in India. The price cannot be below fair value, but it can be higher." },
   { q: "How long is a valuation valid?", a: "There is no single validity that fits every case, so obtain one close to the transaction date." },
+  { q: "What is Form FC-GPR and when is it due?", a: "Form FC-GPR is the report an Indian company files with the RBI after issuing shares to a foreign investor. It must be filed within 30 days of the share allotment through the RBI's FIRMS portal, with supporting valuation and Company Secretary certificates. Late filing attracts a Late Submission Fee or compounding." },
+  { q: "What is a valuation certificate and when is it required?", a: "Shares issued to a non-resident cannot be priced below fair value. A Chartered Accountant or other eligible professional certifies the value using an internationally accepted method. It supports the FC-GPR filing and later share issues and transfers." },
+  { q: "What is Form FC-GPR?", a: "The report an Indian company files with the RBI after issuing shares to a foreign investor, within 30 days of the allotment, through the FIRMS portal." },
+  { q: "What is the FIRMS portal?", a: "The FIRMS portal is the RBI's Foreign Investment Reporting and Management System, where Indian companies file foreign investment reports such as FC-GPR through the Single Master Form. The company needs portal access and supporting certificates from a Company Secretary or Chartered Accountant." },
+  { q: "How old can a valuation certificate be for FEMA filings?", a: "A valuation certificate for FEMA filings should not be more than 90 days old at the time of the transaction or filing. It is issued by a Chartered Accountant or a SEBI-registered merchant banker." },
 ]
 
 const relatedCards = [
@@ -45,7 +50,7 @@ export default function ShareValuationPage() {
         headline="Share Valuation for Foreign Investment: Pricing Rules and Certificates"
         description="Why shares issued to a US parent need a valuation, who can certify it, the pricing floor under FEMA, and when you need a fresh valuation."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -60,12 +65,12 @@ export default function ShareValuationPage() {
       <GuideHero
         eyebrow="Fund: valuation"
         title="Share Valuation for Foreign Investment: Pricing Rules and Certificates"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
-          Shares issued to a non-resident cannot be priced below fair value. A chartered accountant or other
+          Shares issued to a non-resident cannot be priced below fair value. A Chartered Accountant or other
           eligible professional certifies the value using an internationally accepted pricing method, and the
           certificate supports the FC-GPR filing. Valuation is also needed for later issues, share transfers,
           conversions and ESOPs.
@@ -84,12 +89,12 @@ export default function ShareValuationPage() {
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <tbody>
               {[
-                ["Pricing rule", "Shares issued to a non-resident: not below fair value"],
-                ["Who certifies", "Eligible professional such as a chartered accountant or merchant banker, as the rules prescribe"],
+                ["Pricing rule", "Shares issued or sold to a non-resident: not below fair value; shares bought from a non-resident by a resident: not above fair value"],
+                ["Who certifies", "A Chartered Accountant or SEBI-registered merchant banker for FEMA purposes; a registered valuer where company law requires one"],
                 ["Methods", "Internationally accepted methods such as discounted cash flow, net asset value and comparables"],
                 ["When needed", "Share issue, capital increase, share transfer, loan conversion, ESOP"],
-                ["Linked filings", "Form FC-GPR for issues; Form FC-TRS for certain transfers"],
-                ["Freshness", "Obtain a valuation close to the transaction date"],
+                ["Linked filings", "Form FC-GPR within 30 days of allotment for issues; Form FC-TRS within 60 days of transfer or receipt of consideration, whichever is earlier, for transfers between residents and non-residents"],
+                ["Freshness", "The valuation certificate should not be more than 90 days old at the time of the transaction or filing"],
               ].map(([k, v]) => (
                 <tr key={k} className="odd:bg-secondary/30">
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>
@@ -150,6 +155,15 @@ export default function ShareValuationPage() {
           <Link href="/services/transaction-advisory" className="text-blue-800 font-semibold hover:underline">Transaction advisory</Link>
         </p>
 
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+        </p>
+
         <GuideCTA
           title="You focus on your business. We handle India."
           description="Tell us your plan and we will map the next steps on a call."
@@ -179,7 +193,7 @@ export default function ShareValuationPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

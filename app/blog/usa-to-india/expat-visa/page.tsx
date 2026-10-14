@@ -25,10 +25,17 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "Can a US executive work on a business visa?", a: "No. A business visa is for meetings and similar activities. Working for an Indian company needs an employment visa." },
+  { q: "Can a US executive work on a business visa?", a: "A US executive cannot work in India on a business visa. A business visa is for meetings and similar activities, and working for an Indian company needs an employment visa." },
   { q: "Who sponsors the visa?", a: "The Indian company that will employ or host the executive sponsors the application. Conditions such as minimum salary can apply." },
   { q: "Do expats pay Indian income tax?", a: "Income earned for work done in India is taxable in India. The treatment of other income depends on tax residency and the India-US tax treaty." },
-  { q: "Does sending an executive create a permanent establishment?", a: "It can, particularly if the executive negotiates or concludes contracts for the US company. Review the structure before the move." },
+  { q: "Does sending an executive create a permanent establishment?", a: "Sending an executive to India can create a permanent establishment, particularly if the executive negotiates or concludes contracts for the US company. The structure should be reviewed before the move." },
+  { q: "What visa does a US executive need?", a: "A US executive needs an employment visa to work in India, because a business visa suits only short meetings. An employment visa typically has a minimum salary condition, and longer stays require registration with the Foreigners Regional Registration Office." },
+  { q: "Can EOR employees move into the subsidiary later?", a: "EOR employees can move into the subsidiary later with planning. Employees must agree to the transfer, their service history and benefits such as gratuity and provident fund should carry over, and contracts and notice periods need to be handled, with timing planned so that there is no gap in employment." },
+  { q: "How do ESOPs for Indian employees of a US parent work?", a: "The US parent grants options or restricted stock units to employees of the Indian subsidiary under its plan. FEMA overseas investment rules and reporting apply to the employees, and tax arises on exercise or vesting as salary, with Withholding Tax, and again as capital gains on sale." },
+  { q: "Does the US parent have to travel to India?", a: "A US parent does not have to travel to India to set up a subsidiary. Incorporation can be completed online using apostilled documents and digital signatures. Banks set their own KYC rules, so the bank's verification requirements should be confirmed early." },
+  { q: "What statutory benefits apply to employees in India?", a: "Employees in India typically receive provident fund, ESI for eligible wages, gratuity after the qualifying service period, bonus where applicable, professional tax in some states, and leave benefits. India's labour codes are consolidating these, so the current position for the state and headcount should be confirmed." },
+  { q: "Can Indian employees receive US parent shares?", a: "Indian employees can receive US parent shares under the parent's plan, subject to FEMA overseas investment rules and reporting. The tax and withholding treatment needs to be set up in advance." },
+  { q: "What is the minimum salary for an Indian employment visa?", a: "An Indian employment visa generally needs the foreign national to earn at least USD 25,000 a year, with limited exceptions. A foreigner staying more than 180 days must register with the FRRO within 14 days of arrival." },
 ]
 
 const relatedCards = [
@@ -46,7 +53,7 @@ export default function ExpatVisaPage() {
         headline="Sending a US Executive to India: Visa, Housing, Banking and Tax"
         description="How to relocate a US executive to India: employment visa, FRRO registration, housing, banking, tax residency and permanent establishment risk for the parent."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -61,7 +68,7 @@ export default function ExpatVisaPage() {
       <GuideHero
         eyebrow="Mobilize: expats"
         title="Sending a US Executive to India: Visa, Housing, Banking and Tax"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
@@ -85,9 +92,9 @@ export default function ExpatVisaPage() {
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <tbody>
               {[
-                ["Right visa", "A business visa is for meetings. Working in India needs an employment visa"],
-                ["Registration", "Foreigners on longer stays register with the FRRO within the prescribed period"],
-                ["Tax residency", "Based on days of presence in India; it decides how much income is taxable in India"],
+                ["Right visa", "A business visa is for meetings. Working in India needs an employment visa, generally for a salary of at least USD 25,000 a year"],
+                ["Registration", "Foreigners on stays of more than 180 days register with the FRRO within 14 days of arrival"],
+                ["Tax residency", "Resident if present in India for 182 days or more in the year, or for 60 days in the year and 365 days in the preceding four years; this decides how much income is taxable in India"],
                 ["Social security", "India and the US do not have a social security agreement, so provident fund can apply to foreign workers"],
                 ["Parent's risk", "Seconded staff can create a permanent establishment for the US company"],
               ].map(([k, v]) => (
@@ -188,6 +195,15 @@ export default function ExpatVisaPage() {
           <Link href="/hr-services" className="text-blue-800 font-semibold hover:underline">HR and payroll</Link>
         </p>
 
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+        </p>
+
         <GuideCTA
           title="You focus on your business. We handle India."
           description="Tell us your plan and we will map the next steps on a call."
@@ -218,7 +234,7 @@ export default function ExpatVisaPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

@@ -27,9 +27,15 @@ const toc = [
 
 const faqs = [
   { q: "What is a slump sale?", a: "The transfer of an undertaking as a going concern for a lump sum, without values assigned to individual assets and liabilities. The gain is taxed as capital gains on the net worth transferred." },
-  { q: "Can we merge the Indian subsidiary into another group company?", a: "Yes. A merger is done through a scheme, and a fast-track route exists for a holding company and its wholly owned subsidiary." },
-  { q: "How is a dormant Indian company closed?", a: "By applying to the registrar for strike-off after clearing dues and filing pending returns, if the company has not carried on business for the relevant period." },
-  { q: "How do we send the surplus to the US on closure?", a: "After liabilities and taxes are settled, surplus funds are remitted through the bank with the required certificates, and the closure is reported to the RBI." },
+  { q: "Can the Indian subsidiary be merged into another group company?", a: "The Indian subsidiary can be merged into another group company through a scheme, and a fast-track route exists for a holding company and its wholly owned subsidiary (Section 233 of the Companies Act, 2013)." },
+  { q: "How is a dormant Indian company closed?", a: "A dormant Indian company is closed by applying to the Registrar for strike-off under Section 248 of the Companies Act, 2013, after clearing dues and filing pending returns, if the company has not carried on business for the relevant period." },
+  { q: "How is the surplus sent to the US on closure?", a: "On closure, after liabilities and taxes are settled, surplus funds are remitted through the bank with the required certificates, and the closure is reported to the RBI." },
+  { q: "How does an acquisition of an Indian company by the US group work?", a: "A US group acquires an Indian company by conducting due diligence, valuing the target, following FEMA pricing and reporting rules for the share purchase, checking approvals such as competition filings above thresholds, and planning stamp duty and tax. The acquirer is often the Indian subsidiary or the US parent directly." },
+  { q: "How are residual funds sent to the US on closure?", a: "Residual funds are sent to the US on closure after liabilities and taxes are settled and accounts are finalized. The surplus is distributed to the parent through the bank with the closing certificates and remittance forms (Forms 145 and 146, previously Forms 15CA and 15CB), and the closure is then reported to the RBI." },
+  { q: "What happens if the subsidiary stops filing or misses deadlines?", a: "If a subsidiary stops filing or misses deadlines, late fees accrue daily, directors can be disqualified after continued non-filing, the Registrar can strike the company off, and FEMA defaults need compounding with the RBI. Regularizing a lapsed company is possible but costs more than staying current, so a compliance calendar helps." },
+  { q: "What is the reverse charge?", a: "A mechanism where the business customer, not the seller, accounts for VAT on a cross-border supply." },
+  { q: "What are the fee and time to strike off an Indian company?", a: "Striking off an Indian company under Section 248 of the Companies Act, 2013 uses Form STK-2 with a government fee of ₹10,000 and typically takes 3 to 6 months. The company must have carried on no business for the two preceding financial years, or not started within a year, and have no liabilities." },
+  { q: "What tax applies when selling the shares of an Indian subsidiary?", a: "Long-term capital gains on unlisted shares of an Indian subsidiary are taxed at 12.5% where the shares are held for more than 24 months, plus surcharge and cess, subject to treaty relief. A sale between a resident and a non-resident is reported in Form FC-TRS within 60 days." },
 ]
 
 const relatedCards = [
@@ -234,7 +240,7 @@ export default function RestructuringAndExitPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

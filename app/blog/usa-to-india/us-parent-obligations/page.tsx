@@ -46,7 +46,7 @@ export default function UsParentObligationsPage() {
         headline="US Parent Obligations When You Own an Indian Subsidiary"
         description="US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -61,7 +61,7 @@ export default function UsParentObligationsPage() {
       <GuideHero
         eyebrow="US side: reporting"
         title="US Parent Obligations When You Own an Indian Subsidiary"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
@@ -86,7 +86,8 @@ export default function UsParentObligationsPage() {
             <tbody>
               {[
                 ["Form 5471", "Information return for US persons with an interest in a foreign corporation, filed with the US income tax return"],
-                ["FBAR (FinCEN Form 114)", "Report of foreign financial accounts above the threshold"],
+                ["FBAR (FinCEN Form 114)", "Report of foreign financial accounts whose combined value exceeds $10,000 at any time in the year; due 15 April with an automatic extension to 15 October; up to $10,000 penalty for a non-willful failure"],
+                ["Form 5471 penalty", "$10,000 per foreign corporation per year, plus $10,000 for each 30 days of continued failure beyond 90 days after IRS notice, up to $50,000 more"],
                 ["Form 8938", "Statement of specified foreign financial assets, where thresholds are met"],
                 ["International tax regimes", "Rules that can tax a foreign subsidiary's income in the US currently; review with a US adviser"],
                 ["Who advises", "Your US CPA or tax counsel; AU Corporate provides the Indian financial data in the required form"],
@@ -177,6 +178,15 @@ export default function UsParentObligationsPage() {
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/services" className="text-blue-800 font-semibold hover:underline">USA accounting and tax</Link>
+        </p>
+
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA

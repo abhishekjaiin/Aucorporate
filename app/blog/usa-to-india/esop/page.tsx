@@ -122,7 +122,7 @@ export default function EsopPage() {
             <tbody>
               {[
                 ["Shares issued", "US parent shares", "Indian subsidiary shares"],
-                ["Main law", "FEMA overseas investment rules and the parent's plan", "Companies Act and FEMA, where non-residents are involved"],
+                ["Main law", "Overseas Investment Rules, 2022 (parent shares are treated as overseas portfolio investment) and the parent's plan", "Section 62(1)(b) of the Companies Act, 2013 with Rule 12, and FEMA where non-residents are involved"],
                 ["Valuation", "Fair market value of the parent's shares on the relevant date", "Valuation of the Indian company's shares"],
                 ["Typical use", "Venture-backed and listed US groups", "Indian-owned companies or where local equity is wanted"],
               ].map((row, i) => (
@@ -165,7 +165,7 @@ export default function EsopPage() {
           <li>The company adopts a scheme by special resolution that sets out eligibility, vesting and exercise.</li>
           <li>A valuation supports the exercise price and the tax computation.</li>
           <li>FEMA conditions apply if employees or shareholders are non-residents.</li>
-          <li>Reporting to the registrar and the RBI follows the issue of shares.</li>
+          <li>Reporting to the Registrar and the RBI follows the issue of shares.</li>
         </ul>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
@@ -179,7 +179,7 @@ export default function EsopPage() {
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
-          <li>Not withholding tax at exercise or vesting.</li>
+          <li>Not Withholding Tax at exercise or vesting.</li>
           <li>Using the US plan unchanged, with no India addendum.</li>
           <li>Overlooking FEMA reporting and employees&apos; foreign asset disclosures.</li>
           <li>Recharging costs to the subsidiary without an agreement.</li>
@@ -195,6 +195,15 @@ export default function EsopPage() {
           <Link href="/services/transaction-advisory" className="text-blue-800 font-semibold hover:underline">Transaction advisory and valuation</Link>
           {" "}&middot;{" "}
           <Link href="/services/taxation-regulatory" className="text-blue-800 font-semibold hover:underline">Taxation and regulatory</Link>
+        </p>
+
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -227,7 +236,7 @@ export default function EsopPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

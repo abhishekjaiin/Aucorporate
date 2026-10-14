@@ -122,12 +122,12 @@ export default function AuditIcofrPage() {
             </thead>
             <tbody>
               {[
-                ["Statutory audit", "Opinion on the annual financial statements under the Companies Act", "Independent chartered accountant"],
-                ["Tax audit", "Report to the tax authority on books and tax positions where thresholds apply", "Chartered accountant"],
+                ["Statutory audit", "Opinion on the annual financial statements under the Companies Act", "Independent Chartered Accountant"],
+                ["Tax audit", "Report to the tax authority on books and tax positions where thresholds apply", "Chartered Accountant"],
                 ["GST audit and reconciliation", "Checks GST returns against books where required", "As the GST law prescribes"],
-                ["Transfer pricing certificate", "Accountant's report in Form 48 (previously Form 3CEB)", "Chartered accountant"],
+                ["Transfer pricing certificate", "Accountant's report in Form 48 (previously Form 3CEB)", "Chartered Accountant"],
                 ["Internal audit", "Independent review of processes and controls", "Internal or outsourced"],
-                ["Group reporting audit", "Reporting package or review for the US parent's auditors", "Local or group auditor"],
+                ["Group reporting audit", "Reporting package or review for the US parent's Auditors", "Local or group Auditor"],
               ].map((row, i) => (
                 <tr key={row[0]} className={i % 2 === 1 ? "bg-gray-50" : undefined}>
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">{row[0]}</th>
@@ -141,7 +141,7 @@ export default function AuditIcofrPage() {
 
         <h2 id="statutory" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The statutory audit step by step</h2>
         <ol className="list-decimal pl-6 space-y-3 text-gray-700 mb-4">
-          <li>Appoint the auditor and file the appointment with the Registrar.</li>
+          <li>Appoint the Auditor and file the appointment with the Registrar.</li>
           <li>Close the books and prepare the financial statements under Indian accounting standards.</li>
           <li>Auditor reviews, raises queries and finalizes the report.</li>
           <li>Board approves the accounts and the AGM adopts them.</li>
@@ -157,7 +157,7 @@ export default function AuditIcofrPage() {
           A US-listed parent must assess controls over financial reporting for material subsidiaries. For an Indian
           subsidiary this usually means documenting key processes (payroll, procure-to-pay, revenue, close), testing
           the controls and fixing gaps. India has its own requirement for internal financial controls to be reported
-          by the auditor of the company.
+          by the Auditor of the company.
         </p>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Define the processes and risks in scope with your US controllers.</li>
@@ -170,21 +170,21 @@ export default function AuditIcofrPage() {
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Maintain monthly closes with reconciled bank, payroll, tax and intercompany balances.</li>
           <li>Keep invoices, contracts and approvals in an organized file.</li>
-          <li>Share the audit calendar with your US team and auditors.</li>
+          <li>Share the audit calendar with your US team and Auditors.</li>
           <li>Resolve prior-year points before the next cycle starts.</li>
         </ul>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Tell us early if your group needs a reporting package or SOX testing in India, so the process is built in rather than added in the last month.</li>
-          <li>Choose an auditor for the Indian company that is independent of the team doing the bookkeeping.</li>
+          <li>Choose an Auditor for the Indian company that is independent of the team doing the bookkeeping.</li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
-          <li>Appointing the first auditor late.</li>
+          <li>Appointing the first Auditor late.</li>
           <li>Using the same team for bookkeeping and audit.</li>
-          <li>Leaving internal controls undocumented until the US auditors ask.</li>
+          <li>Leaving internal controls undocumented until the US Auditors ask.</li>
           <li>Not agreeing the timeline between the Indian and group audits.</li>
         </ul>
 
@@ -196,6 +196,15 @@ export default function AuditIcofrPage() {
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/services/accounting-assurance" className="text-blue-800 font-semibold hover:underline">Accounting and assurance</Link>
+        </p>
+
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -228,7 +237,7 @@ export default function AuditIcofrPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

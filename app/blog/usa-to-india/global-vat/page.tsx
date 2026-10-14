@@ -25,10 +25,17 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "Does a US company without an overseas office need to register for VAT?", a: "Often yes, if it supplies taxable goods or services to customers there. The rules and thresholds vary by country." },
+  { q: "Does a US company without an overseas office need to register for VAT?", a: "A US company without an overseas office often needs to register for VAT if it supplies taxable goods or services to customers there. The rules and thresholds vary by country." },
   { q: "What is the reverse charge?", a: "A mechanism where the business customer, not the seller, accounts for VAT on a cross-border supply." },
   { q: "Is there a single registration for EU digital sales?", a: "The EU offers one-stop schemes that let eligible sellers report VAT on B2C digital sales through one return." },
   { q: "Is GST in India the same as VAT?", a: "They are similar consumption taxes, but they are separate regimes with separate registration and returns." },
+  { q: "What are the GST rates in India, and which rate applies to an Indian subsidiary?", a: "GST in India has rates of 5%, 18% and 40%, plus 0% for exempt items, under the CGST Act, 2017 and IGST Act, 2017. Since 22 September 2025 the earlier 12% and 28% slabs have been largely removed. Most business services supplied by an Indian subsidiary, including IT and most professional services, attract the standard rate of 18%. Services exported to the US parent can be zero-rated if the conditions are met, such as the recipient being outside India and the payment arriving in foreign exchange." },
+  { q: "What is the difference between a private and a public limited company?", a: "A private company restricts the transfer of its shares, needs at least two directors and two members, and has lighter compliance. A public company needs at least three directors and seven members and faces more compliance. Most wholly owned subsidiaries use the private form." },
+  { q: "When does the subsidiary need to register for GST?", a: "An Indian subsidiary needs to register for GST when its aggregate turnover crosses ₹20 lakh for services (₹10 lakh in special category states), or earlier for certain supplies, or voluntarily (Section 22 of the CGST Act, 2017). Companies exporting services to a US parent often register early so they can claim input tax credit and refunds under the zero-rated export route." },
+  { q: "How does GST apply to services the subsidiary provides to the US parent?", a: "GST applies to services an Indian subsidiary provides to its US parent as zero-rated exports if the conditions are met (Section 16 of the IGST Act, 2017), such as the recipient being outside India and the payment arriving in foreign exchange. The subsidiary can supply under a letter of undertaking without paying GST and claim refunds of related input credit. Intermediary services are treated differently." },
+  { q: "Why does a private company need two shareholders, and how does a wholly owned subsidiary meet this?", a: "A private limited company must have at least two members. In a wholly owned subsidiary, the second share is usually held by a nominee or another group entity on behalf of the parent, and the beneficial ownership is declared as the Companies Act requires." },
+  { q: "What registrations does the company need after incorporation?", a: "Depending on the business: GST, provident fund, ESI, professional tax, state shops and establishment registration, and an import-export code if you trade goods. Some can be applied for through SPICe+, and others follow once you hire or start billing." },
+  { q: "What are the VAT registration thresholds for selling services abroad from India?", a: "The UK threshold is £90,000 for UK-established businesses but none for non-UK businesses, and the EU €10,000 micro-threshold applies to EU-established sellers only. Australia is AUD 75,000, Canada is CAD 30,000, Singapore is SGD 1 million (plus SGD 100,000 of B2C sales for overseas vendors), and the UAE is AED 375,000 for resident businesses with no threshold for foreign businesses." },
 ]
 
 const relatedCards = [
@@ -45,7 +52,7 @@ export default function GlobalVatPage() {
         headline="Global VAT for US Companies: Registration, Filing and Compliance"
         description="How VAT works for US companies selling digital services and goods into Europe, the UK and beyond: registration, B2B and B2C rules and compliance."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -60,7 +67,7 @@ export default function GlobalVatPage() {
       <GuideHero
         eyebrow="Beyond India: VAT"
         title="Global VAT for US Companies: Registration, Filing and Compliance"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
@@ -89,7 +96,7 @@ export default function GlobalVatPage() {
                 ["Consumer customers (B2C)", "Seller commonly charges local VAT; digital services may use one-stop schemes in the EU"],
                 ["Compliance", "Registration, invoicing rules, periodic returns and record keeping"],
                 ["India link", "Our teams support VAT from India alongside accounting and tax"],
-                ["Thresholds", "Set by each country and updated often; always confirm before relying on them"],
+                ["Thresholds", "UK £90,000 for UK-established businesses and none for non-UK businesses; EU €10,000 micro-threshold for EU-established sellers only; Australia AUD 75,000; Canada CAD 30,000; Singapore SGD 1 million (overseas vendors also SGD 100,000 of B2C sales in Singapore); UAE AED 375,000 for resident businesses and none for foreign businesses. Thresholds change, so confirm before relying on them"],
               ].map(([k, v]) => (
                 <tr key={k} className="odd:bg-secondary/30">
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>
@@ -175,6 +182,15 @@ export default function GlobalVatPage() {
           <Link href="/blog/usa-to-india/global-vat" className="text-blue-800 font-semibold hover:underline">Global VAT services</Link>
         </p>
 
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+        </p>
+
         <GuideCTA
           title="You focus on your business. We handle India."
           description="Tell us your plan and we will map the next steps on a call."
@@ -205,7 +221,7 @@ export default function GlobalVatPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

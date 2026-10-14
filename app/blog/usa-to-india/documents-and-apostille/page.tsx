@@ -26,9 +26,16 @@ const toc = [
 
 const faqs = [
   { q: "What is an apostille?", a: "A certificate that makes a public document from one Hague Convention country valid in another. It replaces consular legalization." },
-  { q: "Are India and the US both members of the Hague Apostille Convention?", a: "Yes. Documents apostilled in the US are accepted in India without further consular legalization." },
+  { q: "Are India and the US both members of the Hague Apostille Convention?", a: "India and the US are both members of the Hague Apostille Convention. Documents apostilled in the US are accepted in India without further consular legalization." },
   { q: "Can documents be signed and apostilled electronically?", a: "Some states offer remote notarization and electronic apostilles, but acceptance of electronic versions varies, so confirm with your adviser first." },
-  { q: "How long does an apostille take?", a: "It depends on the state and the service level chosen, from a few days to a few weeks. This is usually the main variable in the overall timeline." },
+  { q: "How long does an apostille take?", a: "An apostille takes from a few days to a few weeks, depending on the state and the service level chosen. This is usually the main variable in the overall incorporation timeline." },
+  { q: "What documents does the US parent need to provide?", a: "A US parent typically provides its Certificate of Incorporation and good standing, a board resolution, identity and address proofs of the signatory and directors, and its charter documents. Foreign documents are notarized and apostilled. The exact checklist depends on the parent's entity type." },
+  { q: "What is the time period for registering a company in India?", a: "Registering a company in India typically takes 4 to 6 weeks from receipt of complete documents. The MCA incorporation itself is usually the shortest step, and the main variable is how quickly the apostilled US parent documents are ready. Name approval and digital signatures can run in parallel." },
+  { q: "Does the US parent have to travel to India?", a: "A US parent does not have to travel to India to set up a subsidiary. Incorporation can be completed online using apostilled documents and digital signatures. Banks set their own KYC rules, so the bank's verification requirements should be confirmed early." },
+  { q: "What documents are needed to remit dividends?", a: "Board and shareholder approvals, the audited accounts showing distributable profits, a Withholding Tax computation with treaty documents (Tax Residency Certificate and Form 41, previously Form 10F), and Form 145 and, where required, Form 146 (previously Forms 15CA and 15CB)." },
+  { q: "How long does incorporation take?", a: "Incorporation of an Indian subsidiary typically takes 4 to 6 weeks from receipt of complete documents. The main variable is how quickly the apostilled US documents are ready." },
+  { q: "What is the cost of incorporating a subsidiary company in India?", a: "The cost of incorporating a subsidiary in India has three parts: government fees (MCA filing fees and state stamp duty, which depend on the authorized capital and the state), the cost of notarizing and apostilling US documents, and professional fees. AU Corporate's indicative setup fee is USD 750 to USD 1,000 for share capital up to ₹10 lakh (about USD 10,300). Annual running costs are additional." },
+  { q: "What does an apostille cost in the US?", a: "A US state apostille typically costs $10 to $20 per document (for example $15 in Texas, $20 in California and $10 in New York), and a federal document costs $20 at the US Department of State. Processing ranges from same-day at some state counters to 20 or more business days by mail." },
 ]
 
 const relatedCards = [
@@ -46,7 +53,7 @@ export default function DocumentsAndApostillePage() {
         headline="Documents Required from the US Parent, and How to Get Them Apostilled"
         description="Which documents a US parent must prepare to incorporate an Indian subsidiary, and how notarization and apostille work for US state and federal documents."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -61,12 +68,12 @@ export default function DocumentsAndApostillePage() {
       <GuideHero
         eyebrow="Enter: documents"
         title="Documents Required from the US Parent, and How to Get Them Apostilled"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
-          A US parent typically provides its certificate of incorporation and good standing, a board resolution,
+          A US parent typically provides its Certificate of Incorporation and good standing, a board resolution,
           charter documents and identity and address proofs of its signatory and directors. These foreign documents
           are notarized and apostilled before use in India. Apostille preparation is usually the longest part of
           the timeline, so start it first.
