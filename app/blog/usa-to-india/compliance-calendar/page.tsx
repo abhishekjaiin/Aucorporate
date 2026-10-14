@@ -26,11 +26,18 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "What is the first compliance after incorporation?", a: "Appointing the first auditor within 30 days, filing the commencement declaration (INC-20A) within 180 days, and reporting the received funds (FC-GPR) within 30 days of allotment." },
+  { q: "What is the first compliance after incorporation?", a: "Appointing the first Auditor within 30 days, filing the commencement declaration (INC-20A) within 180 days, and reporting the received funds (FC-GPR) within 30 days of allotment." },
   { q: "When is the annual return due?", a: "Form MGT-7 is due within 60 days of the AGM. Form AOC-4 for financial statements is due within 30 days of the AGM." },
-  { q: "When must the FLA return be filed?", a: "By 15 July each year, on the RBI portal." },
-  { q: "What happens if we miss a deadline?", a: "Late fees, penalties and, for some company filings, director disqualification can follow. Regular compliance avoids all of these." },
-  { q: "Do the new tax forms change due dates?", a: "The names and numbers change. We confirm the notified due dates for each tax year." },
+  { q: "When must the FLA return be filed?", a: "The FLA return must be filed by 15 July each year on the RBI portal." },
+  { q: "What happens if a filing deadline is missed?", a: "Late fees, penalties and, for some company filings, director disqualification can follow. Regular compliance avoids all of these." },
+  { q: "Do the new tax forms change due dates?", a: "The new tax forms change the names and numbers, and the notified due dates should be confirmed for each tax year." },
+  { q: "What annual compliance does the subsidiary have?", a: "Statutory audit, an AGM, filing financial statements and the annual return with the Registrar, income tax return and advance tax, GST and Withholding Tax filings, payroll returns, the FLA return to the RBI, and transfer pricing reporting where applicable." },
+  { q: "What is the annual compliance cost of an Indian subsidiary?", a: "The annual compliance cost of an Indian subsidiary depends on its size and scope. It covers bookkeeping, statutory audit, income tax and ROC filings, GST returns, payroll compliance, RBI reporting and, where there are transactions with the US parent, a transfer pricing report. Pricing a fixed annual scope up front is practical, because missed filings cost more than staying current." },
+  { q: "What happens if the subsidiary stops filing or misses deadlines?", a: "If a subsidiary stops filing or misses deadlines, late fees accrue daily, directors can be disqualified after continued non-filing, the Registrar can strike the company off, and FEMA defaults need compounding with the RBI. Regularizing a lapsed company is possible but costs more than staying current, so a compliance calendar helps." },
+  { q: "What are AOC-4 and MGT-7?", a: "AOC-4 is the form for filing the company's financial statements with the Registrar, and MGT-7 is the annual return of shareholders, directors and other details. Both are due after the AGM, and late filing attracts additional fees per day." },
+  { q: "What are the AGM requirements?", a: "The first AGM must be held within nine months of the first financial year-end and later ones within six months of each year-end. The AGM approves the audited accounts and other annual business. Shorter notice is possible with member consent." },
+  { q: "What is the FLA return?", a: "The Annual Return on Foreign Liabilities and Assets is filed online with the RBI by 15 July each year by Indian companies that have received foreign investment or hold overseas assets. It reports the company's foreign investment holdings and related details." },
+  { q: "What are the monthly due dates for GST, Withholding Tax, PF and ESI in India?", a: "For regular monthly filers, GSTR-1 is due by the 11th and GSTR-3B by the 20th of the following month, Withholding Tax is deposited by the 7th, and PF and ESI contributions are paid by the 15th." },
 ]
 
 const relatedCards = [
@@ -48,7 +55,7 @@ export default function ComplianceCalendarPage() {
         headline="Compliance Calendar for an Indian Subsidiary: What Is Due and When"
         description="The recurring compliance of an Indian subsidiary: monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -63,7 +70,7 @@ export default function ComplianceCalendarPage() {
       <GuideHero
         eyebrow="Operate: compliance"
         title="Compliance Calendar for an Indian Subsidiary: What Is Due and When"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
@@ -89,11 +96,11 @@ export default function ComplianceCalendarPage() {
             <tbody>
               {[
                 ["Financial year", "1 April to 31 March"],
-                ["Annual general meeting", "Within six months of the financial year end for most companies"],
+                ["Annual general meeting", "By 30 September for a 31 March year end (Section 96 of the Companies Act, 2013)"],
                 ["Financial statements to Registrar", "Form AOC-4, within 30 days of the AGM"],
                 ["Annual return to Registrar", "Form MGT-7, within 60 days of the AGM"],
                 ["Foreign liabilities and assets return", "Annually by 15 July"],
-                ["Withholding Tax and payroll", "Deposits monthly, statements quarterly"],
+                ["Withholding Tax and payroll", "Withholding Tax deposited by the 7th and PF and ESI by the 15th of the following month; GST returns monthly (GSTR-1 by the 11th, GSTR-3B by the 20th for regular monthly filers); Withholding Tax statements quarterly"],
               ].map(([k, v]) => (
                 <tr key={k} className="odd:bg-secondary/30">
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>
@@ -132,16 +139,17 @@ export default function ComplianceCalendarPage() {
             </thead>
             <tbody>
               {[
-                ["Statutory audit", "Before the AGM", "Appoint the first auditor within 30 days of incorporation"],
+                ["Statutory audit", "Before the AGM", "Appoint the first Auditor within 30 days of incorporation (Section 139(6) of the Companies Act, 2013) and file Form ADT-1 within 15 days of appointment"],
                 ["Annual general meeting", "Within 6 months of year end", "Adopt financial statements"],
                 ["Form AOC-4", "30 days after the AGM", "Financial statements to the Registrar"],
                 ["Form MGT-7", "60 days after the AGM", "Annual return"],
-                ["Income tax return", "As notified for the tax year", "The new Act changes names and some timelines; we confirm"],
-                ["Form 48 (previously Form 3CEB)", "As notified", "If there are international transactions"],
-                ["Tax audit report in Form 26 (previously Forms 3CA/3CB and 3CD)", "As notified", "If the tax audit thresholds apply"],
+                ["Income tax return", "31 October after the tax year for companies; 30 November where Form 48 is required", "Tax year 2026-27 is the first year under the Income-tax Act, 2025; the previous year's return continues under the 1961 Act"],
+                ["Advance tax", "15 June, 15 September, 15 December and 15 March (Section 408 of the Income-tax Act, 2025, previously Section 211 of the Income-tax Act, 1961)", "15%, 45%, 75% and 100% of the estimated tax for the year; interest on a shortfall under Section 425 (previously Section 234C)"],
+                ["Form 48 (previously Form 3CEB)", "31 October after the tax year", "Required for any international transaction, whatever its value; ₹1 lakh penalty for not filing"],
+                ["Tax audit report in Form 26 (previously Forms 3CA/3CB and 3CD)", "30 September after the tax year (31 October where Form 48 is required)", "If turnover exceeds ₹1 crore (₹10 crore where cash receipts and payments are each within 5%)"],
                 ["Foreign liabilities and assets return", "15 July", "Filed on the RBI portal"],
                 ["Director KYC", "Annually", "For each director"],
-                ["Declarations by directors and auditors", "Annually", "Under company law"],
+                ["Declarations by directors and Auditors", "Annually", "Under company law"],
               ].map((row, i) => (
                 <tr key={row[0]} className={i % 2 === 1 ? "bg-gray-50" : undefined}>
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">{row[0]}</th>
@@ -172,12 +180,12 @@ export default function ComplianceCalendarPage() {
                 <td className="border border-gray-300 p-3">Director change form with the Registrar</td>
               </tr>
               <tr>
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Change of registered office or auditor</th>
+                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Change of registered office or Auditor</th>
                 <td className="border border-gray-300 p-3">Relevant Registrar form</td>
               </tr>
               <tr className="bg-gray-50">
                 <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Commencement of business</th>
-                <td className="border border-gray-300 p-3">Declaration form INC-20A, within 180 days of incorporation</td>
+                <td className="border border-gray-300 p-3">Declaration Form INC-20A, within 180 days of incorporation</td>
               </tr>
               <tr>
                 <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Share transfer to or from a non-resident</th>
@@ -211,7 +219,7 @@ export default function ComplianceCalendarPage() {
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
-          <li>Missing INC-20A, the first auditor appointment or the FC-GPR deadline in the first months.</li>
+          <li>Missing INC-20A, the first Auditor appointment or the FC-GPR deadline in the first months.</li>
           <li>Treating GST and Withholding Tax as year-end tasks.</li>
           <li>Forgetting director KYC and the FLA return.</li>
           <li>Using the US year-end for Indian filing dates.</li>
@@ -226,6 +234,15 @@ export default function ComplianceCalendarPage() {
           <Link href="/services/accounting-assurance" className="text-blue-800 font-semibold hover:underline">Accounting and compliance</Link>
           {" "}&middot;{" "}
           <Link href="/services/taxation-regulatory" className="text-blue-800 font-semibold hover:underline">Taxation and regulatory services</Link>
+        </p>
+
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -259,7 +276,7 @@ export default function ComplianceCalendarPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

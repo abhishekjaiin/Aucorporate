@@ -82,7 +82,7 @@ export const pageMeta: Record<string, PageMeta> = {
   "/blog/usa-to-india/incorporation-process": { title: "Incorporation Process for an Indian Subsidiary", description: "The eight steps to incorporate a wholly owned subsidiary in India from the USA, forms and typical 4 to 6 week timeline" },
   "/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp": { title: "Subsidiary vs Branch vs Liaison Office vs LLP", description: "Compare the four ways a US company can enter India: activities, approvals, tax and control" },
   "/blog/usa-to-india/documents-and-apostille": { title: "Documents and Apostille for an India Subsidiary", description: "Which documents a US parent must prepare, and how notarization and apostille work for US state and federal documents" },
-  "/blog/usa-to-india/resident-director": { title: "Resident Director Requirement for an Indian Company", description: "Who qualifies as a resident director, options for US parents, and duties" },
+  "/blog/usa-to-india/resident-director": { title: "Resident Director Requirement for an Indian Company", description: "Who qualifies as a Resident Director, options for US parents, and duties" },
   "/blog/usa-to-india/funding-fema-fc-gpr": { title: "Funding an Indian Subsidiary: FEMA and Form FC-GPR", description: "Equity, CCPS, ECB, the 60-day allotment rule, pricing, and RBI reporting through Form FC-GPR" },
   "/blog/usa-to-india/share-valuation": { title: "Share Valuation for Foreign Investment in India", description: "Why shares issued to a US parent need a valuation, who can certify it, and the FEMA pricing floor" },
   "/blog/usa-to-india/repatriating-profits": { title: "Repatriating Profits from India to the US", description: "Dividends, service fees, royalties, loans, Forms 145 and 146, Withholding Tax and DTAA relief" },
@@ -92,7 +92,7 @@ export const pageMeta: Record<string, PageMeta> = {
   "/blog/usa-to-india/us-parent-obligations": { title: "US Parent Reporting for an Indian Subsidiary", description: "Form 5471, FBAR, Form 8938 and other US-side reporting for a US parent" },
   "/blog/usa-to-india/compliance-calendar": { title: "India Subsidiary Compliance Calendar for US Companies", description: "Monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law" },
   "/blog/usa-to-india/audit-icofr": { title: "Audit and ICOFR for Indian Subsidiaries of US Companies", description: "Statutory audit, tax audit, GST audit and internal controls over financial reporting" },
-  "/blog/usa-to-india/tax-notices-and-litigation": { title: "Handling Indian Tax Notices and Disputes", description: "First steps, appeal routes, DRP, ITAT, MAP and advance pricing agreements" },
+  "/blog/usa-to-india/tax-notices-and-litigation": { title: "Handling Indian Tax Notices and Disputes", description: "First steps, appeal routes, DRP, ITAT, MAP and Advance Pricing Agreements" },
   "/blog/usa-to-india/contracts-and-arbitration": { title: "Contracts and Arbitration in India for US Companies", description: "Intercompany and customer contracts, governing law, arbitration clauses and enforcing awards in India" },
   "/blog/usa-to-india/esop": { title: "ESOPs for Indian Employees of a US Parent Company", description: "FEMA reporting, employee tax, valuation, cost recharge and transfer pricing for ESOPs" },
   "/blog/usa-to-india/restructuring-and-exit": { title: "Restructuring, Mergers and Exit for an Indian Subsidiary", description: "Share sale, slump sale, merger, buyback, strike-off and liquidation, with tax and RBI steps" },
@@ -100,7 +100,7 @@ export const pageMeta: Record<string, PageMeta> = {
   "/blog/usa-to-india/global-vat": { title: "Global VAT for US Companies Selling Abroad", description: "VAT registration, B2B and B2C rules and compliance for US companies selling into Europe, the UK and beyond" },
   "/blog/usa-to-india/hiring-and-payroll": { title: "Hiring in India: Contracts, Payroll and Compliance", description: "Employment contracts, provident fund, ESI, gratuity, professional tax and India's labour codes" },
   "/blog/usa-to-india/common-mistakes": { title: "10 Common Mistakes US Companies Make Setting Up in India", description: "The most common and costly mistakes, and how to avoid each, with a pre-filing checklist" },
-  "/blog/usa-to-india/faq": { title: "100 FAQs: Setting Up an India Subsidiary from the USA", description: "Plain answers on incorporation, FEMA, tax, hiring, compliance, repatriation, ESOPs, M&A and closing an Indian subsidiary" },
+  "/blog/usa-to-india/faq": { title: "216 FAQs: Setting Up an India Subsidiary from the USA", description: "Plain answers on incorporation, FEMA, tax, hiring, compliance, repatriation, ESOPs, M&A and closing an Indian subsidiary" },
 
 
   "/services/risk-management": { title: "Risk Management & Advisory", description: "Risk advisory, management assurance, and fraud risk management" },

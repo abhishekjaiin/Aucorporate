@@ -25,10 +25,16 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "Can a foreign national be the resident director?", a: "Yes, if they have stayed in India for at least 182 days in the financial year. Citizenship is not the test." },
+  { q: "Can a foreign national be the Resident Director?", a: "A foreign national can be the Resident Director if they have stayed in India for at least 182 days in the financial year (Section 149(3) of the Companies Act, 2013). Citizenship is not the test." },
   { q: "How many directors does a private company need?", a: "At least two, and at least one must be resident in India." },
-  { q: "Can the US parent's CEO be a director?", a: "Yes. Foreign nationals can be directors. They need a digital signature certificate and a director identification number." },
+  { q: "Can the US parent's CEO be a director?", a: "The US parent's CEO can be a director of the Indian subsidiary, because foreign nationals can be directors. They need a Digital Signature Certificate and a Director Identification Number." },
   { q: "What if no director meets the residency requirement during the year?", a: "The company is not compliant with the Companies Act and can face penalties, so the board should be reconstituted before the year ends." },
+  { q: "How many directors and shareholders does an Indian subsidiary need?", a: "A private limited company in India needs at least two directors (Section 149(1) of the Companies Act, 2013) and two shareholders (Section 3(1)(b)), and at least one director must be resident in India, meaning a stay of 182 days or more in the year (Section 149(3)). In a wholly owned subsidiary, the US parent holds nearly all the shares and a nominee holds the balance." },
+  { q: "Can US executives be directors of the Indian subsidiary?", a: "US executives can be directors of the Indian subsidiary. Foreign nationals can be directors once they obtain a digital signature and a Director Identification Number, but at least one director must be a resident of India. Directors carry statutory duties and liabilities, so they should be chosen with that in mind." },
+  { q: "What is a Digital Signature Certificate and how does a foreign director get one?", a: "A Digital Signature Certificate (DSC) lets a director sign MCA filings electronically. A foreign director obtains one using a passport and address proof, usually with attestation or apostille and a verification step, and the process can be completed remotely." },
+  { q: "Does the Indian subsidiary need a director who lives in India?", a: "An Indian subsidiary needs at least one director who has stayed in India for 182 days or more in the financial year (Section 149(3) of the Companies Act, 2013). A private limited company also needs at least two directors in total (Section 149(1)). Directors can be foreign nationals, but at least one must meet the residency test." },
+  { q: "Who controls the Indian subsidiary: the board or the US parent?", a: "The Board of Directors manages the company, and the parent controls the board by appointing and removing directors as its shareholder. Matters that need parent approval can be written into the Articles or an intercompany agreement. Directors still owe legal duties to the Indian company." },
+  { q: "Does the US parent need its board's approval first?", a: "A US parent usually needs its board's approval before setting up an Indian subsidiary. The board passes a resolution approving the investment, naming the authorized signatory and directors, and authorizing documents to be signed for India. The charter, shareholder agreements and any investor consent rights should be checked before the resolution is drafted." },
 ]
 
 const relatedCards = [
@@ -44,9 +50,9 @@ export default function ResidentDirectorPage() {
       <GuideArticleSchema
         url={PAGE_URL}
         headline="Resident Director Rules for an Indian Subsidiary: Who Can Be One and How to Plan"
-        description="Every Indian company needs a resident director who has stayed in India 182 days in the financial year. Who qualifies, options for US parents, and duties."
+        description="Every Indian company needs a Resident Director who has stayed in India 182 days in the financial year. Who qualifies, options for US parents, and duties."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -61,7 +67,7 @@ export default function ResidentDirectorPage() {
       <GuideHero
         eyebrow="Enter: directors"
         title="Resident Director Rules for an Indian Subsidiary: Who Can Be One and How to Plan"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
@@ -85,10 +91,11 @@ export default function ResidentDirectorPage() {
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <tbody>
               {[
-                ["Minimum directors (private company)", "Two"],
-                ["Resident director", "At least one who has stayed in India 182 days or more in the financial year"],
-                ["Foreign nationals as directors", "Allowed, with a digital signature certificate"],
-                ["Who can be the resident director", "An Indian resident executive, a hired local executive or a professional resident director"],
+                ["Minimum directors (private company)", "Two (Section 149(1) of the Companies Act, 2013)"],
+                ["Resident Director", "At least one who has stayed in India 182 days or more in the financial year"],
+                ["Foreign nationals as directors", "Allowed, with a Digital Signature Certificate and a Director Identification Number; at least one director must be resident in India, meaning a stay of 182 days or more in the financial year"],
+                ["Annual KYC", "Each director files Form DIR-3 KYC by 30 September every year"],
+                ["Who can be the Resident Director", "An Indian resident executive, a hired local executive or a professional Resident Director"],
                 ["Duties", "Statutory duties and liabilities apply to all directors"],
                 ["Basis", "Companies Act, 2013, Section 149"],
               ].map(([k, v]) => (
@@ -115,9 +122,9 @@ export default function ResidentDirectorPage() {
             station a country head in India.
           </li>
           <li><strong>A senior local hire.</strong> Many US companies hire a country manager who becomes the
-            resident director.
+            Resident Director.
           </li>
-          <li><strong>A professional resident director.</strong> An independent person who serves as director for
+          <li><strong>A professional Resident Director.</strong> An independent person who serves as director for
             a fee, used where no executive will be resident yet. Understand that this person carries statutory
             duties and liabilities and will want protections such as indemnity and clear reserved matters.
           </li>
@@ -126,28 +133,28 @@ export default function ResidentDirectorPage() {
         <h2 id="control" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Keeping control as the parent</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
           The parent appoints and removes directors as shareholder. Reserved matters that need parent approval can
-          be written into the Articles or an intercompany agreement. The resident director still owes duties to
+          be written into the Articles or an intercompany agreement. The Resident Director still owes duties to
           the Indian company and must act in its interest, so decisions and approvals should be documented
           properly.
         </p>
 
         <h2 id="compliance" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Ongoing compliance for directors</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          Directors need a director identification number, keep their KYC up to date, and sign annual filings.
+          Directors need a Director Identification Number, keep their KYC up to date, and sign annual filings.
           Directors of companies that stop filing for continuous periods can be disqualified, so ongoing
           compliance matters for everyone on the board.
         </p>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
         <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
-          <li>Decide who will be the resident director before the incorporation filing. If it is a professional
+          <li>Decide who will be the Resident Director before the incorporation filing. If it is a professional
             director, agree the scope of authority, indemnity and the reporting line to your US team in writing.
           </li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
-          <li>Treating the resident director as a formality and not documenting authority and indemnity.</li>
+          <li>Treating the Resident Director as a formality and not documenting authority and indemnity.</li>
           <li>Leaving the choice until after name and document preparation, which delays the filing.</li>
           <li>Assuming a foreign executive who visits India occasionally will meet the 182-day test.</li>
           <li>Appointing a person who is also a director in many unrelated companies without understanding their
@@ -157,11 +164,20 @@ export default function ResidentDirectorPage() {
 
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
         <p className="text-gray-600 leading-relaxed mb-2">
-          We can advise on the choice and, where needed, arrange a professional resident director.
+          We can advise on the choice and, where needed, arrange a professional Resident Director.
         </p>
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/india-business-setup/company-formation" className="text-blue-800 font-semibold hover:underline">India business setup</Link>
+        </p>
+
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -192,7 +208,7 @@ export default function ResidentDirectorPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

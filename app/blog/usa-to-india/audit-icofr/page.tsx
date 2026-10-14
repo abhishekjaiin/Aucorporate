@@ -25,11 +25,17 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "Is audit mandatory for a small Indian subsidiary?", a: "Yes. Every company must have its financial statements audited each year, whatever its size." },
-  { q: "When must the first auditor be appointed?", a: "Within 30 days of incorporation." },
-  { q: "Does India require internal controls reporting?", a: "Yes. The auditor of the company reports on internal financial controls for most companies. A US parent's ICOFR requirement is separate." },
-  { q: "Can the same firm do the books and the audit?", a: "No. The auditor must be independent of the accounting work." },
-  { q: "Can you prepare a US GAAP package?", a: "Yes. We prepare reporting packages from the Indian books in the format your group needs." },
+  { q: "Is audit mandatory for a small Indian subsidiary?", a: "Audit is mandatory for a small Indian subsidiary, because every company must have its financial statements audited each year, whatever its size (Section 139 of the Companies Act, 2013)." },
+  { q: "When must the first Auditor be appointed?", a: "Within 30 days of incorporation." },
+  { q: "Does India require internal controls reporting?", a: "India requires internal controls reporting: the Auditor of the company reports on internal financial controls for most companies (Section 143(3)(i) of the Companies Act, 2013). A US parent's ICOFR requirement under the Sarbanes-Oxley Act is separate." },
+  { q: "Can the same firm do the books and the audit?", a: "The same firm cannot do the books and the audit of a company, because the Auditor must be independent of the accounting work." },
+  { q: "Can a US GAAP reporting package be prepared from the Indian books?", a: "A US GAAP reporting package can be prepared from the Indian books in the format the group needs." },
+  { q: "Does the subsidiary need a statutory audit?", a: "An Indian subsidiary needs a statutory audit, because every company must have its accounts audited by a Chartered Accountant appointed as Statutory Auditor, regardless of turnover (Section 139 of the Companies Act, 2013). The audited financial statements are approved at the AGM and filed with the Registrar." },
+  { q: "Is a statutory audit mandatory for an Indian subsidiary?", a: "A statutory audit is mandatory for every company in India under Section 139 of the Companies Act, 2013, irrespective of turnover. The first Auditor is appointed by the board within 30 days of incorporation (Section 139(6)), and later Auditors are appointed by shareholders." },
+  { q: "What is ICOFR and does the India subsidiary need it?", a: "ICOFR is internal control over financial reporting, which a US-listed parent must assess under the Sarbanes-Oxley Act. Material subsidiaries are often brought into scope, so the Indian entity may need documented controls and testing. Indian company law also has its own internal financial controls reporting by the Auditor." },
+  { q: "What annual compliance does the subsidiary have?", a: "Statutory audit, an AGM, filing financial statements and the annual return with the Registrar, income tax return and advance tax, GST and Withholding Tax filings, payroll returns, the FLA return to the RBI, and transfer pricing reporting where applicable." },
+  { q: "Is an internal audit mandatory for an Indian subsidiary?", a: "An internal audit is mandatory under Section 138 of the Companies Act, 2013 for a private company with turnover of ₹200 crore or more or outstanding borrowings above ₹100 crore from banks or financial institutions. The internal Auditor can be an employee but cannot be the Statutory Auditor." },
+  { q: "Does the Auditor have to report on internal financial controls for a small private company?", a: "A private company is exempt from the Auditor's internal financial controls report under Section 143(3)(i) of the Companies Act, 2013 if its turnover is below ₹50 crore and its borrowings are below ₹25 crore, with no default in filing. The Board must still maintain internal financial controls." },
 ]
 
 const relatedCards = [
@@ -47,7 +53,7 @@ export default function AuditIcofrPage() {
         headline="Audit and Internal Controls for an Indian Subsidiary of a US Group"
         description="Statutory audit, tax audit, GST audit and internal controls over financial reporting for an Indian subsidiary of a US group. What to expect and how to prepare."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -62,13 +68,13 @@ export default function AuditIcofrPage() {
       <GuideHero
         eyebrow="Assure: audit and controls"
         title="Audit and Internal Controls for an Indian Subsidiary of a US Group"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
-          An Indian subsidiary must have its financial statements audited each year by an independent chartered
-          accountant. Depending on size and activity, it may also need a tax audit, GST audit and internal audit. If
+          An Indian subsidiary must have its financial statements audited each year by an independent Chartered
+          Accountant. Depending on size and activity, it may also need a tax audit, GST audit and internal audit. If
           your US group is listed or follows SOX, the subsidiary is usually part of your internal controls over
           financial reporting (ICOFR) scope as well.
         </GuideAnswerBox>
@@ -86,12 +92,14 @@ export default function AuditIcofrPage() {
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <tbody>
               {[
-                ["Statutory audit", "Required for every company; the first auditor is appointed within 30 days of incorporation"],
-                ["Auditor", "An independent chartered accountant or firm; rotation and independence rules apply"],
-                ["Tax audit", "Where turnover or other thresholds are met, reported in Form 26 (previously Forms 3CA/3CB and 3CD)"],
+                ["Statutory audit", "Required for every company; the first Auditor is appointed within 30 days of incorporation"],
+                ["Auditor", "An independent Chartered Accountant or firm appointed under Section 139 of the Companies Act, 2013; the first Auditor is appointed within 30 days of incorporation"],
+                ["Tax audit", "Where turnover exceeds ₹1 crore (₹10 crore where cash receipts and payments are each within 5%), reported in Form 26 (previously Forms 3CA/3CB and 3CD)"],
+                ["Internal financial controls report", "The Auditor reports on internal financial controls (Section 143(3)(i) of the Companies Act, 2013) unless the private company has turnover below ₹50 crore and borrowings below ₹25 crore with no default in filing; the Board must maintain the controls regardless"],
+                ["CARO 2020", "Applies to all companies; the exemption is limited to small private companies (revenue up to ₹10 crore and borrowings up to ₹1 crore, among other conditions) that are not a holding or subsidiary of a public company"],
                 ["GST audit and reconciliation", "As required by current GST law"],
-                ["Internal audit", "Mandatory for certain classes of company; recommended for US group subsidiaries"],
-                ["Group audit support", "Information for the US auditors of the consolidated financials"],
+                ["Internal audit", "Mandatory under Section 138 of the Companies Act, 2013 for a private company with turnover of ₹200 crore or more or borrowings above ₹100 crore; recommended for US group subsidiaries below that"],
+                ["Group audit support", "Information for the US Auditors of the consolidated financials"],
               ].map(([k, v]) => (
                 <tr key={k} className="odd:bg-secondary/30">
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>
@@ -114,12 +122,12 @@ export default function AuditIcofrPage() {
             </thead>
             <tbody>
               {[
-                ["Statutory audit", "Opinion on the annual financial statements under the Companies Act", "Independent chartered accountant"],
-                ["Tax audit", "Report to the tax authority on books and tax positions where thresholds apply", "Chartered accountant"],
+                ["Statutory audit", "Opinion on the annual financial statements under the Companies Act", "Independent Chartered Accountant"],
+                ["Tax audit", "Report to the tax authority on books and tax positions where thresholds apply", "Chartered Accountant"],
                 ["GST audit and reconciliation", "Checks GST returns against books where required", "As the GST law prescribes"],
-                ["Transfer pricing certificate", "Accountant's report in Form 48 (previously Form 3CEB)", "Chartered accountant"],
+                ["Transfer pricing certificate", "Accountant's report in Form 48 (previously Form 3CEB)", "Chartered Accountant"],
                 ["Internal audit", "Independent review of processes and controls", "Internal or outsourced"],
-                ["Group reporting audit", "Reporting package or review for the US parent's auditors", "Local or group auditor"],
+                ["Group reporting audit", "Reporting package or review for the US parent's Auditors", "Local or group Auditor"],
               ].map((row, i) => (
                 <tr key={row[0]} className={i % 2 === 1 ? "bg-gray-50" : undefined}>
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">{row[0]}</th>
@@ -133,7 +141,7 @@ export default function AuditIcofrPage() {
 
         <h2 id="statutory" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The statutory audit step by step</h2>
         <ol className="list-decimal pl-6 space-y-3 text-gray-700 mb-4">
-          <li>Appoint the auditor and file the appointment with the Registrar.</li>
+          <li>Appoint the Auditor and file the appointment with the Registrar.</li>
           <li>Close the books and prepare the financial statements under Indian accounting standards.</li>
           <li>Auditor reviews, raises queries and finalizes the report.</li>
           <li>Board approves the accounts and the AGM adopts them.</li>
@@ -149,7 +157,7 @@ export default function AuditIcofrPage() {
           A US-listed parent must assess controls over financial reporting for material subsidiaries. For an Indian
           subsidiary this usually means documenting key processes (payroll, procure-to-pay, revenue, close), testing
           the controls and fixing gaps. India has its own requirement for internal financial controls to be reported
-          by the auditor of the company.
+          by the Auditor of the company.
         </p>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Define the processes and risks in scope with your US controllers.</li>
@@ -162,21 +170,21 @@ export default function AuditIcofrPage() {
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Maintain monthly closes with reconciled bank, payroll, tax and intercompany balances.</li>
           <li>Keep invoices, contracts and approvals in an organized file.</li>
-          <li>Share the audit calendar with your US team and auditors.</li>
+          <li>Share the audit calendar with your US team and Auditors.</li>
           <li>Resolve prior-year points before the next cycle starts.</li>
         </ul>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Tell us early if your group needs a reporting package or SOX testing in India, so the process is built in rather than added in the last month.</li>
-          <li>Choose an auditor for the Indian company that is independent of the team doing the bookkeeping.</li>
+          <li>Choose an Auditor for the Indian company that is independent of the team doing the bookkeeping.</li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
-          <li>Appointing the first auditor late.</li>
+          <li>Appointing the first Auditor late.</li>
           <li>Using the same team for bookkeeping and audit.</li>
-          <li>Leaving internal controls undocumented until the US auditors ask.</li>
+          <li>Leaving internal controls undocumented until the US Auditors ask.</li>
           <li>Not agreeing the timeline between the Indian and group audits.</li>
         </ul>
 
@@ -188,6 +196,15 @@ export default function AuditIcofrPage() {
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/services/accounting-assurance" className="text-blue-800 font-semibold hover:underline">Accounting and assurance</Link>
+        </p>
+
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -220,7 +237,7 @@ export default function AuditIcofrPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

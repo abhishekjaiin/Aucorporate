@@ -34,7 +34,7 @@ const seriesCards = [
   { title: "Subsidiary vs. branch vs. liaison office vs. LLP", desc: "Compare the four structures and choose.", href: "/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp" },
   { title: "Incorporation process, step by step", desc: "Forms, sequence and realistic timelines.", href: "/blog/usa-to-india/incorporation-process" },
   { title: "Documents and apostille by US state", desc: "What the US parent must prepare first.", href: "/blog/usa-to-india/documents-and-apostille" },
-  { title: "Resident director rules", desc: "Who can act and how to plan for it.", href: "/blog/usa-to-india/resident-director" },
+  { title: "Resident Director rules", desc: "Who can act and how to plan for it.", href: "/blog/usa-to-india/resident-director" },
   { title: "Funding the subsidiary: FEMA and FC-GPR", desc: "Capital infusion and RBI reporting.", href: "/blog/usa-to-india/funding-fema-fc-gpr" },
   { title: "Share valuation for foreign investment", desc: "Pricing rules and valuation certificates.", href: "/blog/usa-to-india/share-valuation" },
   { title: "Repatriating profits to the US", desc: "Dividends, royalties, fees, Forms 145 and 146, treaty relief.", href: "/blog/usa-to-india/repatriating-profits" },
@@ -43,7 +43,7 @@ const seriesCards = [
   { title: "Tax treaty and PE risk", desc: "DTAA, withholding and permanent establishment.", href: "/blog/usa-to-india/dtaa-pe-risk" },
   { title: "US parent obligations", desc: "Form 5471, FBAR and other US-side reporting.", href: "/blog/usa-to-india/us-parent-obligations" },
   { title: "Annual compliance calendar", desc: "Every filing, owner and deadline.", href: "/blog/usa-to-india/compliance-calendar" },
-  { title: "Statutory, internal and ICOFR audit", desc: "For US-listed parents and their auditors.", href: "/blog/usa-to-india/audit-icofr" },
+  { title: "Statutory, internal and ICOFR audit", desc: "For US-listed parents and their Auditors.", href: "/blog/usa-to-india/audit-icofr" },
   { title: "Tax notices and disputes", desc: "Before the TPO, DRP and ITAT.", href: "/blog/usa-to-india/tax-notices-and-litigation" },
   { title: "Intercompany agreements, arbitration and litigation", desc: "Protecting your contracts in India.", href: "/blog/usa-to-india/contracts-and-arbitration" },
   { title: "ESOPs for Indian employees of a US parent", desc: "Granting, taxing and reporting ESOPs.", href: "/blog/usa-to-india/esop" },
@@ -55,16 +55,20 @@ const seriesCards = [
 ]
 
 const faqs = [
-  { q: "Can a US company own 100% of an Indian subsidiary?", a: "Yes, in most sectors. India permits 100% foreign ownership under the automatic route, which needs no prior government approval. A few sectors have ownership caps, conditions or an approval requirement, so the answer depends on your business activity. We check the sector position before you commit to a structure." },
+  { q: "Can a US company own 100% of an Indian subsidiary?", a: "A US company can own 100% of an Indian subsidiary in most sectors. India permits 100% foreign ownership under the Automatic Route, which needs no prior government approval. A few sectors have ownership caps, conditions or an approval requirement, so the sector position should be checked against the business activity before choosing a structure." },
   { q: "What is the best way for a US company to enter India?", a: "For most operating businesses, a wholly owned subsidiary incorporated as a private limited company is the standard route. It is a separate legal entity with limited liability and can carry on full business. Branch and liaison offices have restricted activities, and an Employer of Record works well as a first step before you incorporate." },
-  { q: "Does the Indian subsidiary need a director who lives in India?", a: "Yes. Every company in India must have at least one director who has stayed in India for 182 days or more in the financial year. A private limited company also needs at least two directors in total. Directors can be foreign nationals, but at least one must meet the residency test." },
+  { q: "Does the Indian subsidiary need a director who lives in India?", a: "An Indian subsidiary needs at least one director who has stayed in India for 182 days or more in the financial year (Section 149(3) of the Companies Act, 2013). A private limited company also needs at least two directors in total (Section 149(1)). Directors can be foreign nationals, but at least one must meet the residency test." },
   { q: "How long does it take to set up a subsidiary in India?", a: "Typically 4 to 6 weeks from receipt of complete documents. The MCA incorporation is usually the shortest step, and the main variable is how quickly the apostilled US documents are ready. No travel to India is required." },
-  { q: "How much does it cost to set up an Indian subsidiary?", a: "AU Corporate's indicative setup fee is USD 750 to USD 1,000 for share capital up to ₹10 lakh (about USD 10,300). Annual running costs for accounting, audit, tax, payroll and filings are additional and depend on your scope. Contact us for a costing tailored to your plan." },
-  { q: "What is Form FC-GPR and when is it due?", a: "Form FC-GPR is the report an Indian company files with the RBI after issuing shares to a foreign investor. It must be filed within 30 days of the share allotment through the RBI's FIRMS portal, with supporting valuation and company secretary certificates. Late filing attracts a late submission fee or compounding." },
-  { q: "How can profits be repatriated from India to the US?", a: "Common routes are dividends, service fees, royalties and loan repayments. Each involves Indian Withholding Tax, which the India-US tax treaty can reduce, and fees and royalties must meet transfer pricing rules. Remittances abroad usually need Form 145 and, where required, Form 146 (previously Forms 15CA and 15CB)." },
+  { q: "How much does it cost to set up an Indian subsidiary?", a: "The cost of incorporating a subsidiary in India has three parts: government fees (MCA filing fees and state stamp duty, which depend on the authorized capital and the state), the cost of notarizing and apostilling US documents, and professional fees. AU Corporate's indicative setup fee is USD 750 to USD 1,000 for share capital up to ₹10 lakh (about USD 10,300). Annual running costs are additional." },
+  { q: "What is Form FC-GPR and when is it due?", a: "Form FC-GPR is the report an Indian company files with the RBI after issuing shares to a foreign investor. It must be filed within 30 days of the share allotment through the RBI's FIRMS portal, with supporting valuation and Company Secretary certificates. Late filing attracts a Late Submission Fee or compounding." },
+  { q: "How can profits be repatriated from India to the US?", a: "Profits can be repatriated from India to the US through dividends, service fees, royalties and loan repayments. Each involves Indian Withholding Tax (Section 393 of the Income-tax Act, 2025, previously Section 195 of the Income-tax Act, 1961), which the India-US tax treaty can reduce, and fees and royalties must meet transfer pricing rules. Remittances abroad usually need Form 145 and, where required, Form 146 (previously Forms 15CA and 15CB)." },
   { q: "Should we use an Employer of Record or our own subsidiary?", a: "Use an Employer of Record (EOR) if you want to hire quickly or test the market without an entity. Set up a subsidiary if you plan a larger team, need to contract directly in India, or want long-term control. Many companies begin with an EOR and move the team into a subsidiary later." },
-  { q: "Does an Indian subsidiary create US tax obligations for the parent?", a: "It can. A US company that owns a foreign subsidiary may have US reporting such as Form 5471, and its income may be affected by US international tax rules. These depend on your structure, so confirm the position with your US tax adviser. Our India team coordinates with them." },
-  { q: "Can we sell or close the Indian subsidiary later?", a: "Yes. Options include selling the shares or the business, merging the subsidiary into another group company, or closing it through strike-off or voluntary liquidation. Each route has its own tax and RBI reporting steps, so plan the exit before you invest." },
+  { q: "Does an Indian subsidiary create US tax obligations for the parent?", a: "An Indian subsidiary can create US tax obligations for the parent. A US company that owns a foreign subsidiary may have US reporting such as Form 5471, and its income may be affected by US international tax rules. These depend on the structure, so the position should be confirmed with a US tax adviser." },
+  { q: "Can we sell or close the Indian subsidiary later?", a: "A US parent can sell or close the Indian subsidiary later by selling the shares or the business, merging the subsidiary into another group company, or closing it through strike-off or voluntary liquidation. Each route has its own tax and RBI reporting steps, so the exit should be planned before investing." },
+  { q: "What is the annual compliance cost of an Indian subsidiary?", a: "The annual compliance cost of an Indian subsidiary depends on its size and scope. It covers bookkeeping, statutory audit, income tax and ROC filings, GST returns, payroll compliance, RBI reporting and, where there are transactions with the US parent, a transfer pricing report. Pricing a fixed annual scope up front is practical, because missed filings cost more than staying current." },
+  { q: "Can US executives be directors of the Indian subsidiary?", a: "US executives can be directors of the Indian subsidiary. Foreign nationals can be directors once they obtain a digital signature and a Director Identification Number, but at least one director must be a resident of India. Directors carry statutory duties and liabilities, so they should be chosen with that in mind." },
+  { q: "What is the cost of incorporating a subsidiary company in India?", a: "The cost of incorporating a subsidiary in India has three parts: government fees (MCA filing fees and state stamp duty, which depend on the authorized capital and the state), the cost of notarizing and apostilling US documents, and professional fees. AU Corporate's indicative setup fee is USD 750 to USD 1,000 for share capital up to ₹10 lakh (about USD 10,300). Annual running costs are additional." },
+  { q: "Is a statutory audit mandatory for an Indian subsidiary?", a: "A statutory audit is mandatory for every company in India under Section 139 of the Companies Act, 2013, irrespective of turnover. The first Auditor is appointed by the board within 30 days of incorporation (Section 139(6)), and later Auditors are appointed by shareholders." },
 ]
 
 export default function UsaToIndiaHubPage() {
@@ -75,7 +79,7 @@ export default function UsaToIndiaHubPage() {
         headline="How to Set Up a Subsidiary in India from the USA: The 2026 Guide"
         description="How US companies set up a subsidiary in India: structure, FDI rules, incorporation steps, RBI/FEMA filings, tax and compliance. By a Chartered Accountant."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
       />
 
       <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "How to Set Up a Subsidiary in India from the USA" }]} />
@@ -84,13 +88,13 @@ export default function UsaToIndiaHubPage() {
         eyebrow="Guide for US companies"
         title="How to Set Up a Subsidiary in India from the USA: The 2026 Guide"
         dek="Structure, incorporation, FEMA/RBI filings, tax and compliance for US companies entering India — in plain terms, with the form names your advisers will use."
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="The short answer">
           A US company can own up to 100% of an Indian subsidiary in most sectors without prior government approval
-          (the automatic route). The usual vehicle is a private limited company, incorporated through the MCA&apos;s
+          (the Automatic Route). The usual vehicle is a private limited company, incorporated through the MCA&apos;s
           SPICe+ form, funded by share capital, and reported to the RBI within 30 days of share allotment. At least
           one director must be a resident of India.
         </GuideAnswerBox>
@@ -109,9 +113,9 @@ export default function UsaToIndiaHubPage() {
             <tbody>
               {[
                 ["Typical structure", "Wholly owned subsidiary incorporated as a private limited company under the Companies Act, 2013"],
-                ["Foreign ownership", "Up to 100% in most sectors under the automatic route. A few sectors have caps, conditions or approval requirements."],
+                ["Foreign ownership", "Up to 100% in most sectors under the Automatic Route. A few sectors have caps, conditions or approval requirements."],
                 ["Directors and shareholders", "At least two directors and two shareholders. In a wholly owned subsidiary the second shareholder is usually a nominee or group entity holding one share."],
-                ["Resident director", "At least one director who has stayed in India for 182 days or more in the financial year"],
+                ["Resident Director", "At least one director who has stayed in India for 182 days or more in the financial year"],
                 ["Minimum capital", "No statutory minimum. The practical amount depends on your activity, funding needs and the bank."],
                 ["Registered office", "A physical address in India is mandatory"],
                 ["Incorporation route", "MCA's SPICe+ integrated form, which can also apply for PAN, TAN, GST, EPFO, ESIC and a bank account"],
@@ -176,14 +180,14 @@ export default function UsaToIndiaHubPage() {
           apostille.
         </GuideAnswerBox>
         <ol className="list-decimal pl-6 space-y-3 text-gray-700 mb-4">
-          <li><strong>Confirm FDI eligibility.</strong> Check your business activity against the FDI Policy. Most services and technology activities are on the automatic route; some sectors have caps or conditions.</li>
-          <li><strong>Prepare the US parent&apos;s documents.</strong> Typically the certificate of incorporation and good standing, a board resolution authorizing the investment and signatories, and identity and address proofs of the directors and authorized signatory. US documents are usually notarized and apostilled before use in India.</li>
+          <li><strong>Confirm FDI eligibility.</strong> Check your business activity against the FDI Policy. Most services and technology activities are on the Automatic Route; some sectors have caps or conditions.</li>
+          <li><strong>Prepare the US parent&apos;s documents.</strong> Typically the Certificate of Incorporation and good standing, a board resolution authorizing the investment and signatories, and identity and address proofs of the directors and authorized signatory. US documents are usually notarized and apostilled before use in India.</li>
           <li><strong>Get digital signatures.</strong> Each proposed director needs a Digital Signature Certificate (DSC) to sign the incorporation forms electronically.</li>
           <li><strong>Reserve the name and file SPICe+.</strong> The name is approved on the MCA portal, and SPICe+ is filed with the Memorandum and Articles of Association. A registered office address in India, with proof, is required.</li>
           <li><strong>Receive the Certificate of Incorporation.</strong> The MCA issues it with the Corporate Identification Number (CIN), along with the company&apos;s PAN and TAN.</li>
           <li><strong>Open the bank account and transfer the funds for share capital.</strong> The US parent transfers the subscription money to the company&apos;s Indian bank account by inward remittance through an authorized dealer bank, which issues the foreign inward remittance certificate.</li>
-          <li><strong>Allot shares and report to the RBI.</strong> Shares must be allotted within 60 days of receiving the funds, otherwise the money must be refunded. Form FC-GPR is filed within 30 days of allotment, with a valuation certificate and a company secretary&apos;s certificate.</li>
-          <li><strong>Commence business.</strong> File Form INC-20A (declaration of commencement) within 180 days of incorporation, appoint the first statutory auditor, and complete the GST, payroll and other registrations that apply to you.</li>
+          <li><strong>Allot shares and report to the RBI.</strong> Shares must be allotted within 60 days of receiving the funds, otherwise the money must be refunded. Form FC-GPR is filed within 30 days of allotment, with a valuation certificate and a Company Secretary&apos;s certificate.</li>
+          <li><strong>Commence business.</strong> File Form INC-20A (declaration of commencement) within 180 days of incorporation, appoint the first Statutory Auditor, and complete the GST, payroll and other registrations that apply to you.</li>
         </ol>
         <p className="text-gray-600 leading-relaxed mb-10">
           <strong>Typical end-to-end timeline: 4 to 6 weeks</strong> from receipt of complete documents. Deeper
@@ -203,7 +207,7 @@ export default function UsaToIndiaHubPage() {
         <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
           <li><strong>Going in:</strong> equity shares are the most common route. Convertible preference shares, convertible debentures and external commercial borrowings have their own rules. Shares issued to a non-resident cannot be priced below fair value, certified by an eligible professional.</li>
           <li><strong>Reporting:</strong> Form FC-GPR for share issues, within 30 days of allotment, and the annual FLA return (due by 15 July) for foreign assets and liabilities.</li>
-          <li><strong>Coming out:</strong> dividends, which attract withholding tax; service fees and royalties, which are subject to transfer pricing and withholding tax; and loan repayments under ECB rules. Remittances abroad typically need Form 145 (previously Form 15CA) and, where required, a chartered accountant&apos;s Form 146 (previously Form 15CB).</li>
+          <li><strong>Coming out:</strong> dividends, which attract Withholding Tax; service fees and royalties, which are subject to transfer pricing and Withholding Tax; and loan repayments under ECB rules. Remittances abroad typically need Form 145 (previously Form 15CA) and, where required, a Chartered Accountant&apos;s Form 146 (previously Form 15CB).</li>
           <li><strong>Treaty relief:</strong> the India-US tax treaty (DTAA) can reduce withholding rates, subject to conditions such as a US tax residency certificate.</li>
         </ul>
         <p className="text-gray-600 leading-relaxed mb-10">
@@ -314,7 +318,7 @@ export default function UsaToIndiaHubPage() {
         </GuideAnswerBox>
         <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
           <li><strong>One-time:</strong> MCA and stamp duty (varies by state and authorized capital), professional fees, digital signatures, registered office set-up and bank charges.</li>
-          <li><strong>Recurring:</strong> accounting and bookkeeping, statutory audit, GST, Withholding Tax and income tax filings, payroll, RBI filings, and any resident director or virtual office service.</li>
+          <li><strong>Recurring:</strong> accounting and bookkeeping, statutory audit, GST, Withholding Tax and income tax filings, payroll, RBI filings, and any Resident Director or virtual office service.</li>
           <li><strong>Variable:</strong> transfer pricing documentation, tax notices, ESOPs, valuation and legal work as the entity grows.</li>
         </ul>
         <p className="text-gray-600 leading-relaxed mb-6">
@@ -338,7 +342,7 @@ export default function UsaToIndiaHubPage() {
           <li><strong>Missing RBI timelines.</strong> Allotting shares late, or filing FC-GPR late, leads to fees or compounding.</li>
           <li><strong>Skipping the pricing check.</strong> Shares issued to non-residents need a compliant valuation. Getting it wrong creates a FEMA issue.</li>
           <li><strong>No intercompany agreement or transfer pricing file.</strong> Fees and royalties without agreements and benchmarking are what tax officers review first.</li>
-          <li><strong>Overlooking the resident director rule.</strong> Plan it before filing, not after.</li>
+          <li><strong>Overlooking the Resident Director rule.</strong> Plan it before filing, not after.</li>
           <li><strong>Posting staff or negotiating contracts from the US without a PE review.</strong> Check the permanent establishment position before seconding executives.</li>
         </ol>
         <p className="text-gray-600 leading-relaxed mb-10">
@@ -352,7 +356,7 @@ export default function UsaToIndiaHubPage() {
           ask about next.
         </p>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
-          <li><Link href="/blog/usa-to-india/audit-icofr" className="text-blue-800 font-semibold hover:underline">Statutory, internal and ICOFR audit</Link> for US-listed parents and their auditors</li>
+          <li><Link href="/blog/usa-to-india/audit-icofr" className="text-blue-800 font-semibold hover:underline">Statutory, internal and ICOFR audit</Link> for US-listed parents and their Auditors</li>
           <li><Link href="/blog/usa-to-india/tax-notices-and-litigation" className="text-blue-800 font-semibold hover:underline">Tax notices and disputes</Link> before the TPO, DRP and ITAT</li>
           <li><Link href="/blog/usa-to-india/contracts-and-arbitration" className="text-blue-800 font-semibold hover:underline">Intercompany agreements, arbitration and court litigation</Link></li>
           <li><Link href="/blog/usa-to-india/esop" className="text-blue-800 font-semibold hover:underline">ESOPs for Indian employees of a US parent</Link></li>
@@ -380,7 +384,7 @@ export default function UsaToIndiaHubPage() {
             { n: "4", title: "People and expats", desc: "Hire, pay and relocate your team.", chips: ["Employer of Record (EOR)", "HR services", "Payroll compliance", "Expat visa", "Expat tax filings"], href: "/hr-services" },
             { n: "5", title: "Repatriate funds", desc: "Move money back to the US parent, with the paperwork and tax position in order.", chips: ["Forms 145 and 146", "DTAA treaty relief", "Withholding Tax", "Dividends and royalties"], highlight: true },
             { n: "6", title: "Tax and transfer pricing", desc: "Keep the group's India tax position defensible.", chips: ["Direct and indirect tax", "Transfer pricing", "Form 48", "International taxation"], href: "/services/taxation-regulatory" },
-            { n: "7", title: "Audit and assurance", desc: "Satisfy Indian law and your US auditors.", chips: ["Statutory audit", "Internal audit", "ICOFR audit", "GST and income tax audit"], href: "/services/accounting-assurance" },
+            { n: "7", title: "Audit and assurance", desc: "Satisfy Indian law and your US Auditors.", chips: ["Statutory audit", "Internal audit", "ICOFR audit", "GST and income tax audit"], href: "/services/accounting-assurance" },
             { n: "8", title: "Legal, disputes and arbitration", desc: "Defend your position and protect your contracts.", chips: ["Tax litigation (TPO, DRP, ITAT)", "Arbitration", "Court litigation", "Agreement drafting"], href: "/arbitration-services" },
             { n: "9", title: "Restructure and grow", desc: "Scale, reorganize or exit.", chips: ["Business restructuring", "M&A", "Due diligence", "Exit and winding up"], href: "/services/transaction-advisory" },
             { n: "10", title: "Beyond India", desc: "Indirect tax for digital businesses worldwide.", chips: ["Global VAT", "SaaS and AI companies", "100+ jurisdictions"], href: "/blog/usa-to-india/global-vat" },
@@ -405,6 +409,15 @@ export default function UsaToIndiaHubPage() {
           been prepared by the parent group. We do not prepare the global CbCR report itself.
         </p>
 
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+        </p>
+
         <GuideCTA
           title="Talk to us about your India plan"
           description="A 30-minute call to cover structure, timeline and compliance for your case."
@@ -427,19 +440,10 @@ export default function UsaToIndiaHubPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>
     </main>
-  )
-}
-
-function GuideCTAInline() {
-  const { InquiryTrigger } = require("@/components/InquiryTrigger")
-  return (
-    <InquiryTrigger className="inline-block rounded-lg bg-gold px-5 py-2.5 text-sm font-bold text-[#081a42] hover:bg-gold-dark transition-colors whitespace-nowrap">
-      Discuss your costing
-    </InquiryTrigger>
   )
 }

@@ -25,10 +25,17 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "Does a US company have to report its Indian subsidiary to the IRS?", a: "Generally yes, commonly on Form 5471 with the US tax return. Confirm with your US CPA." },
-  { q: "Is Form 5471 prepared by AU Corporate?", a: "No. US filings are prepared by your US CPA. We supply the Indian financial information they need." },
-  { q: "Do we need to file an FBAR for the Indian bank account?", a: "A US person with a financial interest in or signature authority over foreign accounts above the threshold must file. Your US adviser will confirm." },
-  { q: "Will the Indian financial year cause problems?", a: "It needs planning, because the Indian year ends 31 March. A reporting bridge solves this." },
+  { q: "Does a US company have to report its Indian subsidiary to the IRS?", a: "A US company generally has to report its Indian subsidiary to the IRS, commonly on Form 5471 under Section 6038 of the Internal Revenue Code, filed with the US tax return. This should be confirmed with a US CPA." },
+  { q: "Who prepares Form 5471?", a: "Form 5471 is prepared by the US parent's CPA, because US filings are outside the scope of the Indian adviser. The Indian financial information the CPA needs is supplied by the subsidiary's accountants." },
+  { q: "Is an FBAR required for the Indian bank account?", a: "A US person with a financial interest in or signature authority over foreign accounts must file an FBAR if the combined value exceeds $10,000 at any time in the year. It is due on 15 April with an automatic extension to 15 October, and a non-willful failure can attract a penalty of up to $10,000." },
+  { q: "Will the Indian financial year cause problems?", a: "The Indian financial year needs planning, because the Indian year ends 31 March and a US parent often reports on a different year-end. A reporting bridge solves this." },
+  { q: "Does an Indian subsidiary create US tax obligations for the parent?", a: "An Indian subsidiary can create US tax obligations for the parent. A US company that owns a foreign subsidiary may have US reporting such as Form 5471, and its income may be affected by US international tax rules. These depend on the structure, so the position should be confirmed with a US tax adviser." },
+  { q: "Does the US parent need its board's approval first?", a: "A US parent usually needs its board's approval before setting up an Indian subsidiary. The board passes a resolution approving the investment, naming the authorized signatory and directors, and authorizing documents to be signed for India. The charter, shareholder agreements and any investor consent rights should be checked before the resolution is drafted." },
+  { q: "Who controls the Indian subsidiary: the board or the US parent?", a: "The Board of Directors manages the company, and the parent controls the board by appointing and removing directors as its shareholder. Matters that need parent approval can be written into the Articles or an intercompany agreement. Directors still owe legal duties to the Indian company." },
+  { q: "Can a US LLC set up a subsidiary in India?", a: "A US LLC can set up a subsidiary in India as the shareholder of an Indian company, with its formation documents and authorizations apostilled. The LLC's US tax classification (disregarded entity, partnership or corporation) affects US reporting and treaty access, so it should be confirmed with a US tax adviser before choosing the holding entity." },
+  { q: "What is ICOFR and does the India subsidiary need it?", a: "ICOFR is internal control over financial reporting, which a US-listed parent must assess under the Sarbanes-Oxley Act. Material subsidiaries are often brought into scope, so the Indian entity may need documented controls and testing. Indian company law also has its own internal financial controls reporting by the Auditor." },
+  { q: "What is the India-US tax treaty (DTAA)?", a: "The India-US tax treaty (DTAA) is an agreement that avoids double taxation between the two countries. It reduces withholding rates on dividends, interest, royalties and fees for included services (Articles 10 to 12) and defines when a permanent establishment exists (Article 5). Claiming its benefits needs a Tax Residency Certificate and treaty details in Form 41 (previously Form 10F)." },
+  { q: "What is the penalty for not filing Form 5471?", a: "The penalty for not filing Form 5471 is $10,000 per foreign corporation for each year, plus $10,000 for each 30 days the failure continues beyond 90 days after IRS notice, up to $50,000 more." },
 ]
 
 const relatedCards = [
@@ -46,7 +53,7 @@ export default function UsParentObligationsPage() {
         headline="US Parent Obligations When You Own an Indian Subsidiary"
         description="US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -61,7 +68,7 @@ export default function UsParentObligationsPage() {
       <GuideHero
         eyebrow="US side: reporting"
         title="US Parent Obligations When You Own an Indian Subsidiary"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
@@ -86,7 +93,8 @@ export default function UsParentObligationsPage() {
             <tbody>
               {[
                 ["Form 5471", "Information return for US persons with an interest in a foreign corporation, filed with the US income tax return"],
-                ["FBAR (FinCEN Form 114)", "Report of foreign financial accounts above the threshold"],
+                ["FBAR (FinCEN Form 114)", "Report of foreign financial accounts whose combined value exceeds $10,000 at any time in the year; due 15 April with an automatic extension to 15 October; up to $10,000 penalty for a non-willful failure"],
+                ["Form 5471 penalty", "$10,000 per foreign corporation per year, plus $10,000 for each 30 days of continued failure beyond 90 days after IRS notice, up to $50,000 more"],
                 ["Form 8938", "Statement of specified foreign financial assets, where thresholds are met"],
                 ["International tax regimes", "Rules that can tax a foreign subsidiary's income in the US currently; review with a US adviser"],
                 ["Who advises", "Your US CPA or tax counsel; AU Corporate provides the Indian financial data in the required form"],
@@ -179,6 +187,15 @@ export default function UsParentObligationsPage() {
           <Link href="/services" className="text-blue-800 font-semibold hover:underline">USA accounting and tax</Link>
         </p>
 
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+        </p>
+
         <GuideCTA
           title="You focus on your business. We handle India."
           description="Tell us your plan and we will map the next steps on a call."
@@ -209,7 +226,7 @@ export default function UsParentObligationsPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

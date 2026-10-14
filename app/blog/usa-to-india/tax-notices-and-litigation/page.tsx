@@ -25,11 +25,15 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "What should we do first on getting a tax notice?", a: "Note the deadline, send the notice to your adviser the same day and collect the supporting records." },
-  { q: "Can we appeal a transfer pricing order?", a: "Yes, through the dispute resolution panel route or the first appeal, followed by the tribunal." },
-  { q: "What is the mutual agreement procedure?", a: "A treaty process in which the Indian and US tax authorities resolve a double taxation case." },
-  { q: "Is a GST notice handled differently?", a: "Yes. GST has its own portal, forms and appeal path. We handle both income tax and GST." },
-  { q: "Do notices come to the US parent?", a: "They are issued to the Indian company. We keep the parent informed of anything significant." },
+  { q: "What should be done first on getting a tax notice?", a: "On getting a tax notice, the deadline should be noted, the notice sent to the tax adviser the same day and the supporting records collected." },
+  { q: "Can a transfer pricing order be appealed?", a: "A transfer pricing order can be appealed through the Dispute Resolution Panel route or the first appeal, followed by the tribunal." },
+  { q: "What is the Mutual Agreement Procedure?", a: "A treaty process in which the Indian and US tax authorities resolve a double taxation case." },
+  { q: "Is a GST notice handled differently?", a: "A GST notice is handled differently from an income tax notice, because GST has its own portal, forms and appeal path." },
+  { q: "Do notices come to the US parent?", a: "Tax notices are issued to the Indian company, not to the US parent. The parent should be kept informed of anything significant." },
+  { q: "What are the DRP and the ITAT?", a: "The Dispute Resolution Panel (DRP) hears objections to a draft assessment order and is available to foreign companies and transfer pricing cases. The Income Tax Appellate Tribunal (ITAT) is the main appellate forum on facts and law, with further appeals to the High Court." },
+  { q: "What is the notice period in India?", a: "The notice period in India is set by the employment contract, commonly one to three months for professional roles. State and statutory rules also apply, so it should be written clearly into each contract." },
+  { q: "Can EOR employees move into the subsidiary later?", a: "EOR employees can move into the subsidiary later with planning. Employees must agree to the transfer, their service history and benefits such as gratuity and provident fund should carry over, and contracts and notice periods need to be handled, with timing planned so that there is no gap in employment." },
+  { q: "What is the deadline to appeal an income tax order in India?", a: "An appeal to the Commissioner (Appeals) is generally due within 30 days of the order, objections to the Dispute Resolution Panel against a transfer pricing draft assessment order are due within 30 days of receiving it, and an appeal to the Income Tax Appellate Tribunal is generally due within 60 days." },
 ]
 
 const relatedCards = [
@@ -45,9 +49,9 @@ export default function TaxNoticesAndLitigationPage() {
       <GuideArticleSchema
         url={PAGE_URL}
         headline="Tax Notices and Disputes in India: What US Companies Should Do"
-        description="What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and advance pricing agreements."
+        description="What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and Advance Pricing Agreements."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -62,14 +66,14 @@ export default function TaxNoticesAndLitigationPage() {
       <GuideHero
         eyebrow="Defend: notices and litigation"
         title="Tax Notices and Disputes in India: What US Companies Should Do"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
           If your Indian subsidiary receives a tax notice, do not ignore it and do not reply without reviewing it.
           Note the deadline, send it to your adviser the same day, collect the supporting records and respond on
-          the portal on time. Appeals go through the first appellate authority, the dispute resolution panel for
+          the portal on time. Appeals go through the first appellate authority, the Dispute Resolution Panel for
           transfer pricing and the tribunal, with treaty routes available for double taxation.
         </GuideAnswerBox>
 
@@ -88,10 +92,10 @@ export default function TaxNoticesAndLitigationPage() {
               {[
                 ["First step", "Read the notice, note the section, the tax year and the response date"],
                 ["Where notices arrive", "Income tax e-filing portal, GST portal, email and registered post"],
-                ["First appeal", "Commissioner (Appeals) for most income tax orders"],
-                ["Transfer pricing", "Dispute resolution panel route, then the Income Tax Appellate Tribunal"],
-                ["Double tax", "Mutual agreement procedure under the India-US treaty"],
-                ["Advance certainty", "Advance pricing agreement for future years"],
+                ["First appeal", "Commissioner (Appeals) for most income tax orders, generally within 30 days of the order"],
+                ["Transfer pricing", "Objections to the Dispute Resolution Panel within 30 days of receiving the draft assessment order, then the Income Tax Appellate Tribunal (appeal generally within 60 days)"],
+                ["Double tax", "Mutual Agreement Procedure under the India-US treaty"],
+                ["Advance certainty", "Advance Pricing Agreement for future years"],
               ].map(([k, v]) => (
                 <tr key={k} className="odd:bg-secondary/30">
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>
@@ -142,11 +146,11 @@ export default function TaxNoticesAndLitigationPage() {
         <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
           <li><strong>Response and assessment</strong>: the first answer is the written reply and supporting records.</li>
           <li><strong>Commissioner (Appeals)</strong>: the first appeal against most assessment orders, within the time stated in the law.</li>
-          <li><strong>Dispute resolution panel</strong>: for eligible foreign companies and for transfer pricing adjustments, an alternative to the first appeal.</li>
+          <li><strong>Dispute Resolution Panel</strong>: for eligible foreign companies and for transfer pricing adjustments, an alternative to the first appeal.</li>
           <li><strong>Income Tax Appellate Tribunal</strong>: the main fact-finding appeal body.</li>
           <li><strong>High Court and Supreme Court</strong>: appeals on questions of law.</li>
-          <li><strong>Mutual agreement procedure</strong>: government-to-government route for treaty double taxation.</li>
-          <li><strong>Advance pricing agreement</strong>: avoids future transfer pricing disputes for covered transactions.</li>
+          <li><strong>Mutual Agreement Procedure</strong>: government-to-government route for treaty double taxation.</li>
+          <li><strong>Advance Pricing Agreement</strong>: avoids future transfer pricing disputes for covered transactions.</li>
         </ul>
         <p className="text-gray-600 leading-relaxed mb-10">
           Time limits and the exact route depend on the order, the Act that applies to the tax year and the amounts
@@ -189,6 +193,15 @@ export default function TaxNoticesAndLitigationPage() {
           <Link href="/services/taxation-regulatory" className="text-blue-800 font-semibold hover:underline">Taxation and regulatory services</Link>
         </p>
 
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+        </p>
+
         <GuideCTA
           title="You focus on your business. We handle India."
           description="Tell us your plan and we will map the next steps on a call."
@@ -219,7 +232,7 @@ export default function TaxNoticesAndLitigationPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

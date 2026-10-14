@@ -26,16 +26,21 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "What is transfer pricing in simple terms?", a: "It is the price charged between related companies. For a US parent and its Indian subsidiary, that price must be one that independent parties would have agreed." },
-  { q: "Does a small subsidiary need transfer pricing documentation?", a: "Any international transaction with an associated enterprise must be at arm's length. Documentation and the accountant's report depend on prescribed thresholds. We confirm which apply to you." },
-  { q: "Which form reports transfer pricing transactions?", a: "Form 48 (previously Form 3CEB under the 1961 Act), certified by a chartered accountant." },
-  { q: "Can we agree the price with the tax authority in advance?", a: "Yes, through an advance pricing agreement. It gives certainty for several years but takes time to negotiate." },
-  { q: "Can a transfer pricing adjustment cause double taxation?", a: "It can. The mutual agreement procedure under the India-US treaty exists to resolve it." },
+  { q: "What is transfer pricing in simple terms?", a: "Transfer pricing is the price charged between related companies. For a US parent and its Indian subsidiary, that price must be one that independent parties would have agreed." },
+  { q: "Does a small subsidiary need transfer pricing documentation?", a: "A small subsidiary needs transfer pricing compliance for any international transaction with an associated enterprise, which must be at arm's length. Documentation and the accountant's report depend on prescribed thresholds, which should be confirmed for the transaction values." },
+  { q: "Which form reports transfer pricing transactions?", a: "Form 48 (previously Form 3CEB under the 1961 Act), certified by a Chartered Accountant." },
+  { q: "Can the price be agreed with the tax authority in advance?", a: "The price can be agreed in advance through an Advance Pricing Agreement, which gives certainty for several years but takes time to negotiate." },
+  { q: "Can a transfer pricing adjustment cause double taxation?", a: "A transfer pricing adjustment can cause double taxation. The Mutual Agreement Procedure under the India-US treaty exists to resolve it." },
+  { q: "What is transfer pricing and why does it matter?", a: "Transfer pricing requires transactions between related parties, such as the Indian subsidiary and the US parent, to be priced as if between independent parties (the arm's length principle, Section 161 of the Income-tax Act, 2025, previously Section 92). Tax officers review it closely, so agreements and benchmarking should exist from day one." },
+  { q: "What are MAP and APA?", a: "The Mutual Agreement Procedure lets the Indian and US tax authorities resolve double taxation under the treaty. An Advance Pricing Agreement fixes your transfer pricing method with the authority in advance for several years, giving certainty on large or recurring intercompany transactions." },
+  { q: "What is a Global Capability Center (GCC)?", a: "A GCC is a captive center that a foreign parent owns in India to deliver engineering, analytics, finance, HR or support work for the group. It is usually a wholly owned subsidiary that charges the parent for its services at arm's-length prices." },
+  { q: "Which intercompany transactions must be at arm's length?", a: "Service fees, royalties, cost sharing, loans and interest, guarantees, reimbursements, and the purchase or sale of goods or assets between the subsidiary and any group company abroad. Each needs a written agreement and a pricing method you can defend." },
+  { q: "What are the transfer pricing documentation thresholds in India?", a: "Transfer pricing documentation must be maintained in India where international transactions together exceed ₹1 crore, and the accountant's report in Form 48 (previously Form 3CEB) is filed for any international transaction. A master file is needed where group revenue exceeds ₹500 crore and international transactions exceed ₹50 crore, and country-by-country reporting applies at consolidated group revenue of ₹6,400 crore or more." },
 ]
 
 const relatedCards = [
   { title: "The India-US Tax Treaty and Permanent Establishment Risk for US Companies", desc: "How the India-US tax treaty applies to payments to your US parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk.", href: "/blog/usa-to-india/dtaa-pe-risk" },
-  { title: "Tax Notices and Disputes in India: What US Companies Should Do", desc: "What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and advance pricing agreements.", href: "/blog/usa-to-india/tax-notices-and-litigation" },
+  { title: "Tax Notices and Disputes in India: What US Companies Should Do", desc: "What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and Advance Pricing Agreements.", href: "/blog/usa-to-india/tax-notices-and-litigation" },
   { title: "Contracts and Arbitration in India: A Guide for US Companies", desc: "Intercompany and customer contracts for an Indian subsidiary, governing law, arbitration clauses, the New York Convention and enforcing awards in India.", href: "/blog/usa-to-india/contracts-and-arbitration" },
   { title: "US Parent Obligations When You Own an Indian Subsidiary", desc: "US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams.", href: "/blog/usa-to-india/us-parent-obligations" },
 ]
@@ -48,7 +53,7 @@ export default function TransferPricingPage() {
         headline="Transfer Pricing in India: A Guide for US Parents and Their Indian Subsidiaries"
         description="How transfer pricing works for an Indian subsidiary of a US company: arm's length pricing, documentation, Form 48, methods, safe harbour and audits."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -63,7 +68,7 @@ export default function TransferPricingPage() {
       <GuideHero
         eyebrow="Tax: transfer pricing"
         title="Transfer Pricing in India: A Guide for US Parents and Their Indian Subsidiaries"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
@@ -88,9 +93,10 @@ export default function TransferPricingPage() {
             <tbody>
               {[
                 ["Principle", "Arm's length pricing for international transactions with associated enterprises"],
-                ["Accountant's report", "Form 48 (previously Form 3CEB), certified by a chartered accountant"],
+                ["Accountant's report", "Form 48 (previously Form 3CEB), certified by a Chartered Accountant"],
+                ["Penalties", "2% of the value of each international transaction for failing to maintain documentation, ₹1 lakh for not filing the accountant's report in Form 48, and ₹5 lakh for not filing the master file"],
                 ["Provisions", "Sections 161 to 172 of the Income-tax Act, 2025 (previously Chapter X, Sections 92 to 92F of the 1961 Act)"],
-                ["Documentation", "Maintained annually where the prescribed thresholds are crossed; the master file and country-by-country reporting apply only to larger groups"],
+                ["Documentation", "Maintained annually where international transactions together exceed ₹1 crore; the master file applies where group revenue exceeds ₹500 crore and international transactions exceed ₹50 crore (₹10 crore for intangibles); country-by-country reporting applies at consolidated group revenue of ₹6,400 crore or more"],
                 ["Common transactions", "Software development and support services, management fees, royalties, loans, cost allocations"],
                 ["Typical safeguard", "Intercompany agreement plus a benchmarking study each year"],
               ].map(([k, v]) => (
@@ -153,7 +159,7 @@ export default function TransferPricingPage() {
           <li>Sign an intercompany agreement before services begin, describing the services, pricing basis and payment terms.</li>
           <li>Keep contemporaneous records: functional analysis, invoices, evidence of services actually provided.</li>
           <li>Prepare an annual benchmarking study using comparable companies.</li>
-          <li>Have a chartered accountant certify Form 48 (previously Form 3CEB) where international transactions exist.</li>
+          <li>Have a Chartered Accountant certify Form 48 (previously Form 3CEB) where international transactions exist.</li>
           <li>File the report on time and keep the documentation ready for a transfer pricing audit.</li>
         </ol>
         <div className="bg-secondary/40 border-l-4 border-blue-800 rounded-lg p-4 mb-10 text-sm text-gray-700">
@@ -164,9 +170,9 @@ export default function TransferPricingPage() {
         <h2 id="safe" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Safe harbour, advance pricing and dispute routes</h2>
         <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
           <li><strong>Safe harbour</strong> (Section 167 of the 2025 Act): prescribed margins for certain transactions, which tax authorities accept if the conditions are met. Eligibility is narrow and the margins are fixed by rules.</li>
-          <li><strong>Advance pricing agreement</strong> (Sections 168 and 169): an agreement with the tax authority on the method and price for several years. It gives certainty but takes time.</li>
-          <li><strong>Mutual agreement procedure</strong>: for double taxation that results from an adjustment, the two tax authorities can resolve it under the treaty.</li>
-          <li><strong>Dispute resolution panel and tribunal</strong>: routes to challenge a transfer pricing order. See{" "}
+          <li><strong>Advance Pricing Agreement</strong> (Sections 168 and 169): an agreement with the tax authority on the method and price for several years. It gives certainty but takes time.</li>
+          <li><strong>Mutual Agreement Procedure</strong>: for double taxation that results from an adjustment, the two tax authorities can resolve it under the treaty.</li>
+          <li><strong>Dispute Resolution Panel and tribunal</strong>: routes to challenge a transfer pricing order. See{" "}
             <Link href="/blog/usa-to-india/tax-notices-and-litigation" className="text-blue-800 font-semibold hover:underline">tax notices and litigation</Link>.
           </li>
         </ul>
@@ -204,6 +210,15 @@ export default function TransferPricingPage() {
           <Link href="/services/taxation-regulatory" className="text-blue-800 font-semibold hover:underline">Taxation and regulatory services</Link>
         </p>
 
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+        </p>
+
         <GuideCTA
           title="You focus on your business. We handle India."
           description="Tell us your plan and we will map the next steps on a call."
@@ -234,7 +249,7 @@ export default function TransferPricingPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>
