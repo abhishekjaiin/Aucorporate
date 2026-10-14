@@ -55,6 +55,12 @@ export const pageMeta: Record<string, PageMeta> = {
   "/project-office-tax-gst-transfer-pricing": { title: "Tax, GST & Transfer Pricing for Project Offices", description: "Foreign company tax rate, permanent establishment, lower deduction certificate, presumptive tax, GST and treaty relief" },
   "/project-office-accounting-audit": { title: "Accounting & Audit Support for Project Offices", description: "Project-wise accounting, head office reconciliation, retention and WIP, TDS/GST workings and audit support" },
   "/project-office-payroll-compliance": { title: "Payroll & FRRO for Project Offices", description: "Payroll, social security, professional tax, Labour Codes, contract labour and FRRO support for expats" },
+  "/liaison-office-registration": { title: "Liaison Office Registration", description: "Eligibility, Form FNC, UIN, ROC Form FC-1, PAN, TAN and permitted tasks for a foreign company's India liaison office" },
+  "/liaison-office-fema-rbi-compliance": { title: "FEMA & RBI Compliance for Liaison Offices", description: "Form FNC, UIN, Annual Activity Certificate, approval renewal, additional offices, compounding and closure" },
+  "/liaison-office-roc-compliance": { title: "ROC Compliance for Liaison Offices", description: "Forms FC-1, FC-2, FC-3 and FC-4 for a liaison office's registration, changes, accounts and annual return" },
+  "/liaison-office-tax-compliance": { title: "Tax Compliance for Liaison Offices", description: "TDS, annual statement of activities, permanent establishment risk, GST position and expat tax" },
+  "/liaison-office-accounting-audit": { title: "Accounting & Audit Support for Liaison Offices", description: "Head office remittance and expense accounting, Annual Activity Certificate and audit support" },
+  "/liaison-office-payroll-compliance": { title: "Payroll & FRRO for Liaison Offices", description: "Payroll, social security, Labour Codes compliance and FRRO support for liaison office staff and expats" },
   "/llp-in-india": { title: "LLP Registration in India", description: "The 120-day resident-partner rule, FDI automatic-route gate, registration and compliance" },
 
   "/oidar-gst-registration-india": { title: "OIDAR & GST Registration for Foreign SaaS Companies", description: "When OIDAR/GST registration is mandatory, and the GSTR-5A filing calendar" },

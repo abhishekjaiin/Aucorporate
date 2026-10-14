@@ -31,9 +31,7 @@ const dbiColumns: { heading: string; items: DbiItem[] }[] = [
     items: [
       { label: "Subsidiary", href: "/india-subsidiary-registration" },
       { label: "Branch Office", href: "/branch-office-registration" },
-      // Same deliberate 404 placeholder as Subsidiary was, above — no
-      // Liaison Office page exists yet.
-      { label: "Liaison Office", href: "/liaison-office-in-india" },
+      { label: "Liaison Office", href: "/liaison-office-registration" },
       { label: "Project Office", href: "/project-office-registration" },
     ],
   },
