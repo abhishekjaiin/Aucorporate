@@ -26,10 +26,14 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "How quickly can we hire through an EOR?", a: "Usually within weeks, because no company needs to be incorporated first. The timing depends on the EOR's onboarding and the candidate's notice period with their current employer." },
-  { q: "Can we convert our EOR team into a subsidiary?", a: "Yes. Employees agree to move to the new company, service history is carried over and payroll is switched on an agreed date. Planning the transfer avoids gaps in employment and benefits." },
-  { q: "Does an EOR remove tax risk for the US company?", a: "No. An EOR handles employment compliance, but a permanent establishment can still arise if staff in India conclude contracts or act as the company's fixed place of business." },
-  { q: "Is an EOR cheaper than a subsidiary?", a: "For a small team and a short period, usually yes. As headcount grows, your own subsidiary can be cheaper. We compare both for your plan." },
+  { q: "How quickly can a US company hire through an EOR?", a: "Usually within weeks, because no company needs to be incorporated first. The timing depends on the EOR's onboarding and the candidate's notice period with their current employer." },
+  { q: "Can an EOR team be converted into a subsidiary?", a: "Yes. Employees agree to move to the new company, service history is carried over and payroll is switched on an agreed date. Planning the transfer avoids gaps in employment and benefits." },
+  { q: "Does an EOR remove tax risk for the US company?", a: "An Employer of Record does not remove tax risk for the US company. An EOR handles employment compliance, but a permanent establishment can still arise if staff in India conclude contracts or act as the company's fixed place of business." },
+  { q: "Is an EOR cheaper than a subsidiary?", a: "An EOR is usually cheaper than a subsidiary for a small team and a short period. As headcount grows, an own subsidiary can be cheaper, so both should be compared against the hiring plan." },
+  { q: "What is an Employer of Record and how does it work?", a: "An EOR is the legal employer of your India team. It issues the employment contracts, runs payroll, pays statutory dues and handles compliance, while you direct the day-to-day work. You pay a service fee on top of the employee cost." },
+  { q: "Can EOR employees move into the subsidiary later?", a: "EOR employees can move into the subsidiary later with planning. Employees must agree to the transfer, their service history and benefits such as gratuity and provident fund should carry over, and contracts and notice periods need to be handled, with timing planned so that there is no gap in employment." },
+  { q: "Can a liaison office earn revenue?", a: "A liaison office cannot earn revenue. It can only represent the parent and coordinate with Indian parties, cannot undertake commercial activity or earn income, and its costs are met by remittances from abroad." },
+  { q: "Can a branch office be converted into a subsidiary later?", a: "A business can be moved into a new Indian subsidiary, usually by transferring the activity and assets to the new company. The tax, FEMA and contract consequences should be planned in advance." },
 ]
 
 const relatedCards = [
@@ -47,7 +51,7 @@ export default function EorVsSubsidiaryPage() {
         headline="Employer of Record vs. Subsidiary in India: When to Use Each"
         description="Compare an Employer of Record with your own Indian subsidiary: speed, control, compliance, tax presence and when to convert. A guide for US companies."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -62,7 +66,7 @@ export default function EorVsSubsidiaryPage() {
       <GuideHero
         eyebrow="Launch: EOR or entity"
         title="Employer of Record vs. Subsidiary in India: When to Use Each"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
@@ -114,7 +118,7 @@ export default function EorVsSubsidiaryPage() {
             </thead>
             <tbody>
               {[
-                ["Time to first hire", "Weeks", "After incorporation, bank account and payroll registrations"],
+                ["Time to first hire", "Weeks", "After incorporation (4 to 6 weeks from complete documents), the bank account and payroll registrations"],
                 ["Legal employer", "The EOR", "Your Indian company"],
                 ["Payroll and statutory filings", "Handled by the EOR", "Handled by the company, usually with an adviser"],
                 ["Customer contracts, assets and IP in India", "Not held by the EOR for you", "Held by the subsidiary"],
@@ -200,6 +204,15 @@ export default function EorVsSubsidiaryPage() {
           <Link href="/india-business-setup/company-formation" className="text-blue-800 font-semibold hover:underline">India business setup</Link>
         </p>
 
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+        </p>
+
         <GuideCTA
           title="You focus on your business. We handle India."
           description="Tell us your plan and we will map the next steps on a call."
@@ -230,7 +243,7 @@ export default function EorVsSubsidiaryPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>

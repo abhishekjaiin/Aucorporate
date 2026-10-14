@@ -27,16 +27,24 @@ const toc = [
 const faqs = [
   { q: "What is a DTAA?", a: "A double taxation avoidance agreement. It allocates taxing rights between two countries and can reduce Withholding Tax on cross-border payments." },
   { q: "What does the parent need to claim treaty rates?", a: "A US Tax Residency Certificate, Form 41 (previously Form 10F) and, where asked, a declaration of no permanent establishment in India." },
-  { q: "Is an Indian subsidiary a permanent establishment of the US parent?", a: "Not by itself. The risk arises if the subsidiary acts as the parent's dependent agent, or if the parent's own staff operate from India." },
+  { q: "Is an Indian subsidiary a permanent establishment of the US parent?", a: "An Indian subsidiary is not a permanent establishment of the US parent by itself. The risk arises if the subsidiary acts as the parent's dependent agent, or if the parent's own staff operate from India." },
   { q: "Which section governs Withholding Tax on payments to a non-resident?", a: "Section 393 of the Income-tax Act, 2025 (previously Section 195 of the 1961 Act)." },
-  { q: "Can the Indian tax be credited in the US?", a: "Usually yes, as a foreign tax credit under US rules. Confirm with your US tax adviser." },
+  { q: "Can the Indian tax be credited in the US?", a: "Indian tax can usually be credited in the US as a foreign tax credit under US rules. This should be confirmed with a US tax adviser." },
+  { q: "What is the India-US tax treaty (DTAA)?", a: "The India-US tax treaty (DTAA) is an agreement that avoids double taxation between the two countries. It reduces withholding rates on dividends, interest, royalties and fees for included services (Articles 10 to 12) and defines when a permanent establishment exists (Article 5). Claiming its benefits needs a Tax Residency Certificate and treaty details in Form 41 (previously Form 10F)." },
+  { q: "What is a Tax Residency Certificate and Form 41?", a: "A Tax Residency Certificate shows that the US parent is a US tax resident, and the IRS issues it. Form 41 (previously Form 10F) is the electronic statement of details that the foreign payee gives to claim treaty benefits. Both should be ready before the first payment." },
+  { q: "Does the treaty reduce Withholding Tax?", a: "The India-US tax treaty can reduce Withholding Tax if the parent is a US tax resident and satisfies the conditions, which requires a Tax Residency Certificate and treaty details in Form 41 (previously Form 10F)." },
+  { q: "What is permanent establishment risk?", a: "A permanent establishment (PE) is a taxable presence of a foreign company in India. It can arise from a fixed place of business, dependent agents who conclude contracts, or staff providing services in India for long enough. A PE exposes the US parent's profits to Indian tax." },
+  { q: "What Withholding Tax rate applies to payments to the US parent?", a: "Withholding Tax on payments from an Indian subsidiary to its US parent is 15% on dividends under the India-US treaty where the parent holds at least 10% of the voting power (25% otherwise), 10% on interest paid to banks and 15% on other interest, and 15% on royalties and fees for included services (10% for equipment royalties). The domestic rate for non-residents is 20% plus surcharge and cess, and the lower rate applies where the treaty conditions are met (Section 393 of the Income-tax Act, 2025, previously Section 195 of the Income-tax Act, 1961)." },
+  { q: "What are Withholding Tax returns and when are they due?", a: "Withholding Tax deducted on salaries and payments is deposited by the 7th of the following month. Quarterly statements are filed in Form 138 for salaries, Form 140 for resident payments and Form 144 for non-resident payments (previously Forms 24Q, 26Q and 27Q)." },
+  { q: "How many days of work in India create a permanent establishment under the India-US treaty?", a: "Under Article 5 of the India-US treaty, services furnished in India through employees or other personnel create a permanent establishment if the activities continue for more than 90 days within any 12-month period. A building, construction, installation or assembly project creates one after more than 120 days within any 12-month period." },
+  { q: "What are the India-US treaty withholding rates?", a: "The India-US treaty caps Indian withholding at 15% on dividends where the US company holds at least 10% of the voting power (25% otherwise), 10% on interest paid to banks and 15% on other interest, and 15% on royalties and fees for included services (10% for equipment royalties). The treaty rate applies only with a US Tax Residency Certificate and Form 41 (previously Form 10F)." },
 ]
 
 const relatedCards = [
   { title: "Repatriating Profits to the US: Dividends, Fees, Royalties, Loans and the Paperwork", desc: "How a US parent receives money from its Indian subsidiary: dividends, service fees, royalties, loans. Forms 145 and 146, Withholding Tax and DTAA relief.", href: "/blog/usa-to-india/repatriating-profits" },
   { title: "Transfer Pricing in India: A Guide for US Parents and Their Indian Subsidiaries", desc: "How transfer pricing works for an Indian subsidiary of a US company: arm's length pricing, documentation, Form 48, methods, safe harbour and audits.", href: "/blog/usa-to-india/transfer-pricing" },
   { title: "US Parent Obligations When You Own an Indian Subsidiary", desc: "US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams.", href: "/blog/usa-to-india/us-parent-obligations" },
-  { title: "Tax Notices and Disputes in India: What US Companies Should Do", desc: "What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and advance pricing agreements.", href: "/blog/usa-to-india/tax-notices-and-litigation" },
+  { title: "Tax Notices and Disputes in India: What US Companies Should Do", desc: "What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and Advance Pricing Agreements.", href: "/blog/usa-to-india/tax-notices-and-litigation" },
 ]
 
 export default function DtaaPeRiskPage() {
@@ -47,7 +55,7 @@ export default function DtaaPeRiskPage() {
         headline="The India-US Tax Treaty and Permanent Establishment Risk for US Companies"
         description="How the India-US tax treaty applies to payments to your US parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk."
         datePublished="2026-10-07"
-        dateModified="2026-10-07"
+        dateModified="2026-10-14"
         isPartOfUrl={HUB_URL}
       />
 
@@ -62,7 +70,7 @@ export default function DtaaPeRiskPage() {
       <GuideHero
         eyebrow="Tax: treaty and PE"
         title="The India-US Tax Treaty and Permanent Establishment Risk for US Companies"
-        updated="7 October 2026"
+        updated="14 October 2026"
       />
 
       <article className="max-w-4xl mx-auto px-4 py-14">
@@ -90,6 +98,7 @@ export default function DtaaPeRiskPage() {
                 ["Benefit claimed with", "US Tax Residency Certificate (Form 6166 from the IRS), Form 41 (previously Form 10F), and a no-PE declaration where asked"],
                 ["Withholding Tax on non-resident payments", "Section 393 of the Income-tax Act, 2025 (previously Section 195)"],
                 ["Rate applied", "The lower of the domestic rate and the treaty rate, where the conditions are met"],
+                ["Treaty rates", "Dividends 15% (25% where the holding is under 10%); interest 10% (bank) or 15%; royalties and fees for included services 15% (10% for equipment)"],
                 ["PE risk arises from", "Fixed place, dependent agents, service presence and certain project work"],
                 ["Who bears the risk", "The US parent, not the Indian subsidiary"],
               ].map(([k, v]) => (
@@ -140,8 +149,8 @@ export default function DtaaPeRiskPage() {
               {[
                 ["Fixed place PE", "An office, branch, factory or other fixed place of business in India through which the parent carries on business"],
                 ["Dependent agent PE", "A person in India who habitually concludes contracts or plays the main role in concluding them for the parent"],
-                ["Service PE", "Services performed in India by the parent's own personnel beyond the periods stated in the treaty"],
-                ["Project PE", "Installation or construction activity lasting longer than the treaty allows"],
+                ["Service PE", "Services performed in India by the parent's own personnel for more than 90 days within any 12-month period (Article 5)"],
+                ["Project PE", "A building, construction, installation or assembly project continuing for more than 120 days within any 12-month period (Article 5)"],
               ].map((row, i) => (
                 <tr key={row[0]} className={i % 2 === 1 ? "bg-gray-50" : undefined}>
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">{row[0]}</th>
@@ -192,6 +201,15 @@ export default function DtaaPeRiskPage() {
           <Link href="/services/taxation-regulatory" className="text-blue-800 font-semibold hover:underline">Taxation and regulatory services</Link>
         </p>
 
+        <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Rules on this page can be verified at the primary sources:{" "}
+          <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
+          <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
+          <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
+          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+        </p>
+
         <GuideCTA
           title="You focus on your business. We handle India."
           description="Tell us your plan and we will map the next steps on a call."
@@ -222,7 +240,7 @@ export default function DtaaPeRiskPage() {
 
         <GuideAuthorBio />
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
           confirm current requirements before acting.
         </p>
       </article>
