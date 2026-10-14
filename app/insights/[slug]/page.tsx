@@ -44,12 +44,6 @@ const SERVICE_LINKS: Record<string, { label: string; href: string }> = {
 const JURISDICTION_LINKS: Record<string, { label: string; href: string }> = {
   usa: { label: "India Entry for US Companies", href: "/blog/usa-to-india" },
   us: { label: "India Entry for US Companies", href: "/blog/usa-to-india" },
-  uk: { label: "India Entry for UK Companies", href: "/india-entry-for-uk-companies" },
-  singapore: { label: "India Entry for Singapore Companies", href: "/india-entry-for-singapore-companies" },
-  australia: { label: "India Entry for Australian Companies", href: "/india-entry-for-australian-companies" },
-  germany: { label: "India Entry for German Companies", href: "/india-entry-for-german-companies" },
-  japan: { label: "India Entry for Japanese Companies", href: "/india-entry-for-japan-companies" },
-  china: { label: "India Entry for Chinese Companies", href: "/india-entry-for-china-companies" },
 }
 
 type Props = {

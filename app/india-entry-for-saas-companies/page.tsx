@@ -9,12 +9,6 @@ import { ArrowRight } from "lucide-react"
 
 const countryLinks = [
   { label: "US", href: "/blog/usa-to-india" },
-  { label: "UK", href: "/india-entry-for-uk-companies" },
-  { label: "Singapore", href: "/india-entry-for-singapore-companies" },
-  { label: "Germany", href: "/india-entry-for-german-companies" },
-  { label: "Japan", href: "/india-entry-for-japan-companies" },
-  { label: "China", href: "/india-entry-for-china-companies" },
-  { label: "Australia", href: "/india-entry-for-australian-companies" },
 ]
 
 const faqs = [

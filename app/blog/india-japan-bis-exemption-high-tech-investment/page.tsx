@@ -450,7 +450,7 @@ export default function BlogPost() {
             <li>How should the Indian finance and compliance function be established, and what ongoing obligations will arise?</li>
           </ul>
           <p className="mb-6">
-            These questions can materially affect the cost, efficiency, and risk profile of an India investment — which is why <Link href="/india-entry-for-japan-companies" className="font-semibold hover:underline" style={{ color: JAPAN_RED }}>getting the entry strategy right for Japanese companies</Link> matters as much as the opportunity itself.
+            These questions can materially affect the cost, efficiency, and risk profile of an India investment — which is why getting the entry strategy right for Japanese companies matters as much as the opportunity itself.
           </p>
 
           <SectionDivider />
@@ -511,7 +511,6 @@ export default function BlogPost() {
 
           <RelatedResources
             links={[
-              { label: "India Entry for Japanese Companies", href: "/india-entry-for-japan-companies", description: "Entity structure, DTAA, and the full incorporation process for Japanese parents." },
               { label: "GCC Setup in India", href: "/gcc-setup-india", description: "Building an R&D or engineering capability centre as a flexible first step." },
               { label: "Complete Company Registration Guide", href: "/india-business-setup/company-formation", description: "Entity types, FDI eligibility, and the SPICe+ incorporation process." },
               { label: "Taxation & Regulatory Services", href: "/services/taxation-regulatory", description: "Transfer pricing, GST, and international tax structuring." },

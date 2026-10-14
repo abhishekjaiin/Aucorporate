@@ -102,19 +102,6 @@ export const pageMeta: Record<string, PageMeta> = {
   "/blog/usa-to-india/common-mistakes": { title: "10 Common Mistakes US Companies Make Setting Up in India", description: "The most common and costly mistakes, and how to avoid each, with a pre-filing checklist" },
   "/blog/usa-to-india/faq": { title: "100 FAQs: Setting Up an India Subsidiary from the USA", description: "Plain answers on incorporation, FEMA, tax, hiring, compliance, repatriation, ESOPs, M&A and closing an Indian subsidiary" },
 
-  "/india-entry-for-uk-companies": { title: "India Entry for UK Companies", description: "Subsidiary vs branch structuring, DTAA benefits, and FEMA compliance for UK-owned Indian subsidiaries" },
-  "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india": { title: "UK Subsidiary vs Branch Office", description: "Entity choice comparison for a UK parent entering India" },
-  "/india-entry-for-uk-companies/how-to-incorporate-subsidiary-india-from-uk": { title: "How to Incorporate a Subsidiary from the UK", description: "Step-by-step incorporation walkthrough for a UK-owned Indian subsidiary" },
-  "/india-entry-for-uk-companies/fema-compliance-uk-company-india-subsidiary": { title: "FEMA Compliance for UK Companies", description: "FEMA/RBI reporting obligations for a UK-owned Indian subsidiary" },
-  "/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax": { title: "India-UK DTAA & Withholding Tax Rates", description: "" },
-  "/india-entry-for-uk-companies/cost-timeline-incorporate-company-india-from-uk": { title: "Cost & Timeline from the UK", description: "Realistic cost and timeline for incorporating from the UK" },
-
-  "/india-entry-for-singapore-companies": { title: "India Entry for Singapore Companies", description: "DTAA benefits, substance tests, and FEMA compliance" },
-  "/india-entry-for-australian-companies": { title: "India Entry for Australian Companies", description: "ECTA, entity structuring, and DTAA royalty rates" },
-  "/india-entry-for-australian-companies/australia-subsidiary-vs-branch-office-india": { title: "Australia Subsidiary vs Branch Office", description: "Entity choice comparison for an Australian parent entering India" },
-  "/india-entry-for-german-companies": { title: "India Entry for German Companies", description: "DTAA flat 10% rate, entity structuring, and FEMA compliance" },
-  "/india-entry-for-japan-companies": { title: "India Entry for Japanese Companies", description: "Japan Plus desk, JV vs wholly-owned subsidiary, and DTAA planning" },
-  "/india-entry-for-china-companies": { title: "India Entry for Chinese Companies", description: "Press Note 3 approval framework and beneficial ownership rules" },
 
   "/services/risk-management": { title: "Risk Management & Advisory", description: "Risk advisory, management assurance, and fraud risk management" },
   "/services/transaction-advisory": { title: "Transaction & Business Advisory", description: "Business valuation, M&A support, and transaction advisory" },

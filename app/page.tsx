@@ -66,12 +66,12 @@ const services = [
    the rest are shown as plain badges rather than linked to a page that doesn't exist. */
 const parentCountries = [
   { label: "USA", href: "/blog/usa-to-india" },
-  { label: "UK", href: "/india-entry-for-uk-companies" },
-  { label: "Singapore", href: "/india-entry-for-singapore-companies" },
-  { label: "Australia", href: "/india-entry-for-australian-companies" },
-  { label: "Germany", href: "/india-entry-for-german-companies" },
-  { label: "Japan", href: "/india-entry-for-japan-companies" },
-  { label: "China", href: "/india-entry-for-china-companies" },
+  { label: "UK" },
+  { label: "Singapore" },
+  { label: "Australia" },
+  { label: "Germany" },
+  { label: "Japan" },
+  { label: "China" },
   { label: "Hong Kong" },
   { label: "Spain" },
   { label: "France" },

@@ -287,13 +287,7 @@ export default function DoingBusinessInIndiaPage() {
             <Link href="/blog/usa-to-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
               US companies entering India
             </Link>{" "}
-            — covering entity choice, FEMA/RBI compliance, transfer pricing, and ongoing operations in one connected guide. We also maintain dedicated guides for companies entering from{" "}
-            <Link href="/india-entry-for-uk-companies" className="text-gray-700 hover:text-yellow-600 underline">the UK</Link>,{" "}
-            <Link href="/india-entry-for-singapore-companies" className="text-gray-700 hover:text-yellow-600 underline">Singapore</Link>,{" "}
-            <Link href="/india-entry-for-australian-companies" className="text-gray-700 hover:text-yellow-600 underline">Australia</Link>,{" "}
-            <Link href="/india-entry-for-german-companies" className="text-gray-700 hover:text-yellow-600 underline">Germany</Link>,{" "}
-            <Link href="/india-entry-for-japan-companies" className="text-gray-700 hover:text-yellow-600 underline">Japan</Link>, and{" "}
-            <Link href="/india-entry-for-china-companies" className="text-gray-700 hover:text-yellow-600 underline">China</Link>.
+            — covering entity choice, FEMA/RBI compliance, transfer pricing, and ongoing operations in one connected guide. We also work with companies entering from the UK, Singapore, Australia, Germany, Japan and China, with dedicated country guides for each coming soon.
           </p>
         </div>
       </section>
