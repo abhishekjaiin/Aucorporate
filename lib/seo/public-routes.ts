@@ -78,6 +78,12 @@ export const publicPages: PublicPage[] = [
   { path: "/project-office-tax-gst-transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-13" },
   { path: "/project-office-accounting-audit", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-13" },
   { path: "/project-office-payroll-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-13" },
+  { path: "/liaison-office-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/liaison-office-fema-rbi-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/liaison-office-roc-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/liaison-office-tax-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/liaison-office-accounting-audit", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/liaison-office-payroll-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
   { path: "/llp-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-28" },
 
   // AI/SaaS Tax Compliance & India Entry Pair
