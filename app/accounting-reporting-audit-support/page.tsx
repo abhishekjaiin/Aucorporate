@@ -91,7 +91,7 @@ const reportingFrameworks = [
 ]
 
 const countryGuides = [
-  { label: "USA", href: "/india-entry-for-us-companies" },
+  { label: "USA", href: "/blog/usa-to-india" },
   { label: "UK", href: "/india-entry-for-uk-companies" },
   { label: "Singapore", href: "/india-entry-for-singapore-companies" },
   { label: "Australia", href: "/india-entry-for-australian-companies" },

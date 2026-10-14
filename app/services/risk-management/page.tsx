@@ -277,7 +277,7 @@ export default function RiskManagementPage() {
           company is ready for a lender- or regulator-directed review. That is where enterprise
           risk management, forensic services, and special audits come in — and where we typically
           get called in. For a US parent, this risk oversight sits alongside the Operate stage of
-          our <Link href="/india-entry-for-us-companies" className="text-yellow-600 hover:text-yellow-700 font-semibold">India entry guide for US companies</Link>:
+          our <Link href="/blog/usa-to-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">India entry guide for US companies</Link>:
         </p>
 
         <ul className="list-disc pl-6 mb-10 max-w-3xl text-gray-600 space-y-1.5 leading-relaxed">

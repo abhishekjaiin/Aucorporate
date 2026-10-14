@@ -1,0 +1,188 @@
+import Link from "next/link"
+import { Breadcrumb } from "@/components/Breadcrumb"
+import { GuideHero } from "@/components/guide/GuideHero"
+import { GuideAnswerBox } from "@/components/guide/GuideAnswerBox"
+import { GuideTOC } from "@/components/guide/GuideTOC"
+import { GuideFaqList } from "@/components/guide/GuideFaqList"
+import { GuideRelatedCards } from "@/components/guide/GuideRelatedCards"
+import { GuideCTA } from "@/components/guide/GuideCTA"
+import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
+import { GuideSources } from "@/components/guide/GuideSources"
+import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+
+const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/share-valuation"
+const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+
+const toc = [
+  { id: "why", label: "Why valuation matters" },
+  { id: "methods", label: "Common methods" },
+  { id: "when", label: "When you need a fresh valuation" },
+  { id: "us-parent", label: "What this means for a US parent" },
+  { id: "mistakes", label: "Mistakes to avoid" },
+  { id: "how-we-help", label: "How AU Corporate handles this" },
+  { id: "faqs", label: "Frequently asked questions" },
+]
+
+const faqs = [
+  { q: "Who can issue the valuation certificate?", a: "An eligible professional as defined in the FEMA rules, such as a chartered accountant or a merchant banker, depending on the transaction." },
+  { q: "Is a valuation needed for a wholly owned subsidiary at incorporation?", a: "Yes, for shares issued to the foreign parent, the pricing must comply, and the filing is supported by a certificate." },
+  { q: "Can shares be issued at a premium?", a: "Yes. The price cannot be below fair value, but it can be higher." },
+  { q: "How long is a valuation valid?", a: "There is no single validity that fits every case, so obtain one close to the transaction date." },
+]
+
+const relatedCards = [
+  { title: "Funding the Indian Subsidiary: FEMA Rules, Share Allotment and Form FC-GPR", desc: "How a US parent invests in an Indian subsidiary: equity, CCPS, ECB, the 60-day allotment rule, pricing, and RBI reporting through Form FC-GPR on FIRMS.", href: "/blog/usa-to-india/funding-fema-fc-gpr" },
+  { title: "ESOPs for Indian Employees of a US Parent: FEMA, Tax and Cost Recharge", desc: "How ESOPs and RSUs work for employees of an Indian subsidiary: FEMA reporting, employee tax, valuation, cost recharge and transfer pricing for a US parent.", href: "/blog/usa-to-india/esop" },
+  { title: "Restructuring, Mergers and Exit: Your Options for an Indian Subsidiary", desc: "Options to restructure, sell, merge or close an Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation, with tax and RBI steps.", href: "/blog/usa-to-india/restructuring-and-exit" },
+  { title: "Repatriating Profits to the US: Dividends, Fees, Royalties, Loans and the Paperwork", desc: "How a US parent receives money from its Indian subsidiary: dividends, service fees, royalties, loans. Forms 145 and 146, Withholding Tax and DTAA relief.", href: "/blog/usa-to-india/repatriating-profits" },
+]
+
+export default function ShareValuationPage() {
+  return (
+    <main className="min-h-screen bg-white">
+      <GuideArticleSchema
+        url={PAGE_URL}
+        headline="Share Valuation for Foreign Investment: Pricing Rules and Certificates"
+        description="Why shares issued to a US parent need a valuation, who can certify it, the pricing floor under FEMA, and when you need a fresh valuation."
+        datePublished="2026-10-07"
+        dateModified="2026-10-07"
+        isPartOfUrl={HUB_URL}
+      />
+
+      <Breadcrumb
+        items={[
+          { label: "Blog", href: "/blog" },
+          { label: "How to Set Up a Subsidiary in India from the USA", href: "/blog/usa-to-india" },
+          { label: "Share Valuation for Foreign Investment in India" },
+        ]}
+      />
+
+      <GuideHero
+        eyebrow="Fund: valuation"
+        title="Share Valuation for Foreign Investment: Pricing Rules and Certificates"
+        updated="7 October 2026"
+      />
+
+      <article className="max-w-4xl mx-auto px-4 py-14">
+        <GuideAnswerBox title="Short answer">
+          Shares issued to a non-resident cannot be priced below fair value. A chartered accountant or other
+          eligible professional certifies the value using an internationally accepted pricing method, and the
+          certificate supports the FC-GPR filing. Valuation is also needed for later issues, share transfers,
+          conversions and ESOPs.
+        </GuideAnswerBox>
+
+        <GuideTOC items={toc} />
+
+        <p className="mb-8">
+          <Link href="/blog/usa-to-india" className="text-blue-800 font-semibold hover:underline">
+            &larr; Back to the complete guide: How to Set Up a Subsidiary in India from the USA
+          </Link>
+        </p>
+
+        <h2 id="key-facts" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Key facts</h2>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full border-collapse border border-gray-300 text-sm">
+            <tbody>
+              {[
+                ["Pricing rule", "Shares issued to a non-resident: not below fair value"],
+                ["Who certifies", "Eligible professional such as a chartered accountant or merchant banker, as the rules prescribe"],
+                ["Methods", "Internationally accepted methods such as discounted cash flow, net asset value and comparables"],
+                ["When needed", "Share issue, capital increase, share transfer, loan conversion, ESOP"],
+                ["Linked filings", "Form FC-GPR for issues; Form FC-TRS for certain transfers"],
+                ["Freshness", "Obtain a valuation close to the transaction date"],
+              ].map(([k, v]) => (
+                <tr key={k} className="odd:bg-secondary/30">
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>
+                  <td className="border border-gray-300 p-3 align-top">{v}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="why" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Why valuation matters</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          FEMA prevents foreign investors from buying shares at a price below fair value, and from receiving more
+          than fair value on certain exits. The valuation is evidence that the price complies, and it is checked in
+          the RBI filing. The company may also need a registered valuer&apos;s report under company law for some
+          private placements.
+        </p>
+
+        <h2 id="methods" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Common methods</h2>
+        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+          <li><strong>Net asset value:</strong> for early-stage or asset-heavy entities.</li>
+          <li><strong>Discounted cash flow:</strong> for businesses with forecastable cash flows.</li>
+          <li><strong>Market comparables:</strong> for companies where comparable data exists.</li>
+          <li><strong>Recent transaction price:</strong> can be a reference point, but does not replace a certificate.</li>
+        </ul>
+
+        <h2 id="when" className="text-2xl font-bold text-gray-900 mt-12 mb-4">When you need a fresh valuation</h2>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Each time the company issues shares to a foreign investor.</li>
+          <li>When shares are transferred between a resident and a non-resident.</li>
+          <li>When an external commercial borrowing is converted into equity.</li>
+          <li>When the Indian company grants ESOPs, or for the tax value of exercised ESOPs.</li>
+          <li>For a merger, demerger or buyback.</li>
+        </ul>
+
+        <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
+        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+          <li>For a newly formed wholly owned subsidiary, the valuation is usually straightforward, but it still has
+            to be documented. The US parent should expect to sign a representation and keep the valuation with the
+            investment records for the US group&apos;s audit.
+          </li>
+        </ul>
+
+        <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Issuing shares at face value without checking the pricing floor.</li>
+          <li>Using an old valuation for a new issue.</li>
+          <li>Treating the valuation as a formality and not keeping the workings.</li>
+          <li>Using the wrong certifier for the particular transaction.</li>
+        </ul>
+
+        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
+        <p className="text-gray-600 leading-relaxed mb-2">
+          Our valuation team prepares share capital and ESOP valuations that support your RBI filings.
+        </p>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Related services:{" "}
+          <Link href="/services/transaction-advisory" className="text-blue-800 font-semibold hover:underline">Transaction advisory</Link>
+        </p>
+
+        <GuideCTA
+          title="You focus on your business. We handle India."
+          description="Tell us your plan and we will map the next steps on a call."
+        />
+
+        <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
+        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+
+        <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
+        <div className="mb-10">
+          <GuideRelatedCards cards={relatedCards} />
+        </div>
+
+        <h2 id="sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Sources</h2>
+        <GuideSources
+          sources={[
+            { label: "Reserve Bank of India (FEMA and FIRMS)", href: "https://www.rbi.org.in" },
+            { label: "Ministry of Corporate Affairs", href: "https://www.mca.gov.in" },
+          ]}
+        />
+
+        <p className="mt-6">
+          <Link href="/blog/usa-to-india" className="text-blue-800 font-semibold hover:underline">
+            &larr; Back to the complete guide
+          </Link>
+        </p>
+
+        <GuideAuthorBio />
+        <p className="text-sm text-gray-500 mt-6">
+          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          confirm current requirements before acting.
+        </p>
+      </article>
+    </main>
+  )
+}

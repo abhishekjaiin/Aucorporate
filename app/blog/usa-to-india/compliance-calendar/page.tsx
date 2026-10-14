@@ -1,0 +1,268 @@
+import Link from "next/link"
+import { Breadcrumb } from "@/components/Breadcrumb"
+import { GuideHero } from "@/components/guide/GuideHero"
+import { GuideAnswerBox } from "@/components/guide/GuideAnswerBox"
+import { GuideTOC } from "@/components/guide/GuideTOC"
+import { GuideFaqList } from "@/components/guide/GuideFaqList"
+import { GuideRelatedCards } from "@/components/guide/GuideRelatedCards"
+import { GuideCTA } from "@/components/guide/GuideCTA"
+import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
+import { GuideSources } from "@/components/guide/GuideSources"
+import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+
+const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/compliance-calendar"
+const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+
+const toc = [
+  { id: "monthly", label: "Every month" },
+  { id: "quarterly", label: "Every quarter" },
+  { id: "annual", label: "Every year" },
+  { id: "event", label: "When something happens" },
+  { id: "new", label: "What the new Income-tax Act changes" },
+  { id: "us-parent", label: "What this means for a US parent" },
+  { id: "mistakes", label: "Mistakes to avoid" },
+  { id: "how-we-help", label: "How AU Corporate handles this" },
+  { id: "faqs", label: "Frequently asked questions" },
+]
+
+const faqs = [
+  { q: "What is the first compliance after incorporation?", a: "Appointing the first auditor within 30 days, filing the commencement declaration (INC-20A) within 180 days, and reporting the received funds (FC-GPR) within 30 days of allotment." },
+  { q: "When is the annual return due?", a: "Form MGT-7 is due within 60 days of the AGM. Form AOC-4 for financial statements is due within 30 days of the AGM." },
+  { q: "When must the FLA return be filed?", a: "By 15 July each year, on the RBI portal." },
+  { q: "What happens if we miss a deadline?", a: "Late fees, penalties and, for some company filings, director disqualification can follow. Regular compliance avoids all of these." },
+  { q: "Do the new tax forms change due dates?", a: "The names and numbers change. We confirm the notified due dates for each tax year." },
+]
+
+const relatedCards = [
+  { title: "Audit and Internal Controls for an Indian Subsidiary of a US Group", desc: "Statutory audit, tax audit, GST audit and internal controls over financial reporting for an Indian subsidiary of a US group. What to expect and how to prepare.", href: "/blog/usa-to-india/audit-icofr" },
+  { title: "Hiring and Payroll in India for US Companies: Contracts, PF, ESI and Gratuity", desc: "How US companies hire in India: employment contracts, provident fund, ESI, gratuity, professional tax, payroll steps and India's labour codes.", href: "/blog/usa-to-india/hiring-and-payroll" },
+  { title: "Ten Mistakes US Companies Make When Setting Up in India, and How to Avoid Them", desc: "The ten most common and costly mistakes US companies make when setting up an Indian subsidiary, and how to avoid each. Includes a pre-filing checklist.", href: "/blog/usa-to-india/common-mistakes" },
+  { title: "Funding the Indian Subsidiary: FEMA Rules, Share Allotment and Form FC-GPR", desc: "How a US parent invests in an Indian subsidiary: equity, CCPS, ECB, the 60-day allotment rule, pricing, and RBI reporting through Form FC-GPR on FIRMS.", href: "/blog/usa-to-india/funding-fema-fc-gpr" },
+]
+
+export default function ComplianceCalendarPage() {
+  return (
+    <main className="min-h-screen bg-white">
+      <GuideArticleSchema
+        url={PAGE_URL}
+        headline="Compliance Calendar for an Indian Subsidiary: What Is Due and When"
+        description="The recurring compliance of an Indian subsidiary: monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law."
+        datePublished="2026-10-07"
+        dateModified="2026-10-07"
+        isPartOfUrl={HUB_URL}
+      />
+
+      <Breadcrumb
+        items={[
+          { label: "Blog", href: "/blog" },
+          { label: "How to Set Up a Subsidiary in India from the USA", href: "/blog/usa-to-india" },
+          { label: "India Subsidiary Compliance Calendar for US Companies" },
+        ]}
+      />
+
+      <GuideHero
+        eyebrow="Operate: compliance"
+        title="Compliance Calendar for an Indian Subsidiary: What Is Due and When"
+        updated="7 October 2026"
+      />
+
+      <article className="max-w-4xl mx-auto px-4 py-14">
+        <GuideAnswerBox title="Short answer">
+          An Indian subsidiary has recurring compliance every month (GST, Withholding Tax, payroll dues), every
+          quarter (Withholding Tax statements) and every year (financial statements, annual returns to the
+          Registrar, income tax return, audit and the foreign liabilities and assets return), plus event-based
+          filings. Dates are fixed by law and change; use this page as a map and confirm each date with your
+          adviser.
+        </GuideAnswerBox>
+
+        <GuideTOC items={toc} />
+
+        <p className="mb-8">
+          <Link href="/blog/usa-to-india" className="text-blue-800 font-semibold hover:underline">
+            &larr; Back to the complete guide: How to Set Up a Subsidiary in India from the USA
+          </Link>
+        </p>
+
+        <h2 id="key-facts" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Key facts</h2>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full border-collapse border border-gray-300 text-sm">
+            <tbody>
+              {[
+                ["Financial year", "1 April to 31 March"],
+                ["Annual general meeting", "Within six months of the financial year end for most companies"],
+                ["Financial statements to Registrar", "Form AOC-4, within 30 days of the AGM"],
+                ["Annual return to Registrar", "Form MGT-7, within 60 days of the AGM"],
+                ["Foreign liabilities and assets return", "Annually by 15 July"],
+                ["Withholding Tax and payroll", "Deposits monthly, statements quarterly"],
+              ].map(([k, v]) => (
+                <tr key={k} className="odd:bg-secondary/30">
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>
+                  <td className="border border-gray-300 p-3 align-top">{v}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="monthly" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Every month</h2>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Deposit Withholding Tax on salaries and payments by the 7th of the following month.</li>
+          <li>File GST returns for the month or quarter as applicable.</li>
+          <li>Pay provident fund and ESI contributions and file returns.</li>
+          <li>Pay professional tax where the state levies it.</li>
+          <li>Close the books and reconcile the bank account and intercompany balances.</li>
+        </ul>
+
+        <h2 id="quarterly" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Every quarter</h2>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>File Withholding Tax statements: Form 138 for salaries (previously Form 24Q), Form 140 for resident payments (previously Form 26Q) and Form 144 for non-resident payments (previously Form 27Q).</li>
+          <li>Pay advance tax in instalments as required.</li>
+          <li>Hold board meetings as required by company law, with at least the minimum number each year and gaps within the permitted limit.</li>
+        </ul>
+
+        <h2 id="annual" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Every year</h2>
+        <div className="overflow-x-auto mb-10">
+          <table className="w-full border-collapse border border-gray-300 text-sm">
+            <thead className="bg-[#081a42] text-white">
+              <tr>
+                <th scope="col" className="border border-gray-300 p-3 text-left">Compliance</th>
+                <th scope="col" className="border border-gray-300 p-3 text-left">Timing</th>
+                <th scope="col" className="border border-gray-300 p-3 text-left">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Statutory audit", "Before the AGM", "Appoint the first auditor within 30 days of incorporation"],
+                ["Annual general meeting", "Within 6 months of year end", "Adopt financial statements"],
+                ["Form AOC-4", "30 days after the AGM", "Financial statements to the Registrar"],
+                ["Form MGT-7", "60 days after the AGM", "Annual return"],
+                ["Income tax return", "As notified for the tax year", "The new Act changes names and some timelines; we confirm"],
+                ["Form 48 (previously Form 3CEB)", "As notified", "If there are international transactions"],
+                ["Tax audit report in Form 26 (previously Forms 3CA/3CB and 3CD)", "As notified", "If the tax audit thresholds apply"],
+                ["Foreign liabilities and assets return", "15 July", "Filed on the RBI portal"],
+                ["Director KYC", "Annually", "For each director"],
+                ["Declarations by directors and auditors", "Annually", "Under company law"],
+              ].map((row, i) => (
+                <tr key={row[0]} className={i % 2 === 1 ? "bg-gray-50" : undefined}>
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">{row[0]}</th>
+                  <td className="border border-gray-300 p-3">{row[1]}</td>
+                  <td className="border border-gray-300 p-3">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="event" className="text-2xl font-bold text-gray-900 mt-12 mb-4">When something happens</h2>
+        <div className="overflow-x-auto mb-10">
+          <table className="w-full border-collapse border border-gray-300 text-sm">
+            <thead className="bg-[#081a42] text-white">
+              <tr>
+                <th scope="col" className="border border-gray-300 p-3 text-left">Event</th>
+                <th scope="col" className="border border-gray-300 p-3 text-left">Filing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Foreign funds received for shares</th>
+                <td className="border border-gray-300 p-3">Form FC-GPR through the RBI FIRMS portal, within 30 days of allotment</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Change in directors</th>
+                <td className="border border-gray-300 p-3">Director change form with the Registrar</td>
+              </tr>
+              <tr>
+                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Change of registered office or auditor</th>
+                <td className="border border-gray-300 p-3">Relevant Registrar form</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Commencement of business</th>
+                <td className="border border-gray-300 p-3">Declaration form INC-20A, within 180 days of incorporation</td>
+              </tr>
+              <tr>
+                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Share transfer to or from a non-resident</th>
+                <td className="border border-gray-300 p-3">Form FC-TRS where applicable</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Sale of the subsidiary or an exit</th>
+                <td className="border border-gray-300 p-3">
+                  See{" "}
+                  <Link href="/blog/usa-to-india/restructuring-and-exit" className="text-blue-800 font-semibold hover:underline">
+                    restructuring and exit
+                  </Link>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="new" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What the new Income-tax Act changes</h2>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          The Income-tax Act, 2025 applies from tax year 2026-27 (previously assessment years under the 1961 Act).
+          Many forms have new numbers and sections have been renumbered, but the underlying compliance is largely
+          the same. We map your calendar to the new names and confirm due dates each year.
+        </p>
+
+        <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Missing a Registrar filing leads to a daily additional fee and can disqualify directors, so build the calendar into your group close.</li>
+          <li>Share the calendar with your US finance team so Indian deadlines appear in the global compliance plan.</li>
+        </ul>
+
+        <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Missing INC-20A, the first auditor appointment or the FC-GPR deadline in the first months.</li>
+          <li>Treating GST and Withholding Tax as year-end tasks.</li>
+          <li>Forgetting director KYC and the FLA return.</li>
+          <li>Using the US year-end for Indian filing dates.</li>
+        </ul>
+
+        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
+        <p className="text-gray-600 leading-relaxed mb-2">
+          We run the compliance calendar for you: reminders, preparation, filing and records, so nothing is missed.
+        </p>
+        <p className="text-gray-600 leading-relaxed mb-10">
+          Related services:{" "}
+          <Link href="/services/accounting-assurance" className="text-blue-800 font-semibold hover:underline">Accounting and compliance</Link>
+          {" "}&middot;{" "}
+          <Link href="/services/taxation-regulatory" className="text-blue-800 font-semibold hover:underline">Taxation and regulatory services</Link>
+        </p>
+
+        <GuideCTA
+          title="You focus on your business. We handle India."
+          description="Tell us your plan and we will map the next steps on a call."
+        />
+
+        <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
+        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+
+        <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
+        <div className="mb-10">
+          <GuideRelatedCards cards={relatedCards} />
+        </div>
+
+        <h2 id="sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Sources</h2>
+        <GuideSources
+          sources={[
+            { label: "Ministry of Corporate Affairs", href: "https://www.mca.gov.in" },
+            { label: "Reserve Bank of India (FEMA and FIRMS)", href: "https://www.rbi.org.in" },
+            { label: "Income Tax Department", href: "https://www.incometax.gov.in" },
+            { label: "GST portal", href: "https://www.gst.gov.in" },
+          ]}
+        />
+
+        <p className="mt-6">
+          <Link href="/blog/usa-to-india" className="text-blue-800 font-semibold hover:underline">
+            &larr; Back to the complete guide
+          </Link>
+        </p>
+
+        <GuideAuthorBio />
+        <p className="text-sm text-gray-500 mt-6">
+          Last updated 7 October 2026. General information only, not legal or tax advice. Indian rules change often;
+          confirm current requirements before acting.
+        </p>
+      </article>
+    </main>
+  )
+}

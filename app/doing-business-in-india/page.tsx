@@ -284,7 +284,7 @@ export default function DoingBusinessInIndiaPage() {
           </h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             Everything above applies regardless of where you&apos;re coming from. Our most developed country-specific guide is for{" "}
-            <Link href="/india-entry-for-us-companies" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+            <Link href="/blog/usa-to-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
               US companies entering India
             </Link>{" "}
             — covering entity choice, FEMA/RBI compliance, transfer pricing, and ongoing operations in one connected guide. We also maintain dedicated guides for companies entering from{" "}

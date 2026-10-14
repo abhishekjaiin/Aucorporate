@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const helpfulLinks = [
   { href: "/services", label: "Our Services" },
   { href: "/doing-business-in-india", label: "Doing Business in India" },
-  { href: "/india-entry-for-us-companies", label: "India Entry for US Companies" },
+  { href: "/blog/usa-to-india", label: "India Entry for US Companies" },
   { href: "/india-entry-for-uk-companies", label: "India Entry for UK Companies" },
   { href: "/contact", label: "Contact Us" },
 ]

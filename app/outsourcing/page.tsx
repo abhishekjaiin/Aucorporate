@@ -373,7 +373,7 @@ export default function OutsourcingPage() {
               { label: 'Accounting & Assurance', href: '/services/accounting-assurance', description: 'Statutory audit, bookkeeping, and financial statement preparation.' },
               { label: 'HR & Payroll Services', href: '/hr-services', description: 'Payroll processing and HR statutory compliance in depth.' },
               { label: 'Taxation & Regulatory Services', href: '/services/taxation-regulatory', description: 'GST, TDS, FEMA and direct tax compliance in full.' },
-              { label: 'India Entry for US Companies', href: '/india-entry-for-us-companies', description: 'Entity choice, FEMA and transfer pricing for a US-owned subsidiary.' },
+              { label: 'India Entry for US Companies', href: '/blog/usa-to-india', description: 'Entity choice, FEMA and transfer pricing for a US-owned subsidiary.' },
               { label: 'Life After Incorporation', href: '/doing-business-in-india/post-incorporation', description: 'The build-vs-outsource decision as your India finance function scales.' },
               { label: 'GCC Setup in India', href: '/gcc-setup-india', description: 'Outsourcing vs. building a captive Global Capability Center.' },
             ]}

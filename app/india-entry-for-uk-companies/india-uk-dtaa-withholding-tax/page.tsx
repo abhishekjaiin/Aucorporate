@@ -178,7 +178,7 @@ export default function IndiaUKDTAAPage() {
           <Link href="/india-entry-for-uk-companies/fema-compliance-uk-company-india-subsidiary" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             FEMA Compliance for UK Companies →
           </Link>
-          <Link href="/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
+          <Link href="/blog/usa-to-india/repatriating-profits" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">
             India-US DTAA & Withholding Tax Rates →
           </Link>
           <Link href="/india-entry-for-uk-companies" className="text-yellow-600 hover:text-yellow-700 font-semibold text-sm">

@@ -104,18 +104,6 @@ export const publicPages: PublicPage[] = [
   { path: "/india-business-setup/timeline-resources", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
 
   // Regional India Entry Clusters
-  { path: "/india-entry-for-us-companies", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-07" },
-  { path: "/india-entry-for-us-companies/register-company-in-india-from-usa", priority: 0.95, changeFrequency: "monthly", lastModified: "2026-09-29" },
-  { path: "/india-entry-for-us-companies/permanent-establishment-risk-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-29" },
-  { path: "/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-30" },
-  { path: "/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
-  { path: "/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
-  { path: "/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-14" },
-  { path: "/india-entry-for-us-companies/how-to-incorporate-subsidiary-india-from-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
-  { path: "/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-11" },
-  { path: "/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-30" },
-  { path: "/india-entry-for-us-companies/annual-compliance-calendar", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-30" },
-
   { path: "/india-entry-for-uk-companies", priority: 0.9, changeFrequency: "weekly", lastModified: "2026-08-31" },
   { path: "/india-entry-for-uk-companies/uk-subsidiary-vs-branch-office-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/india-entry-for-uk-companies/india-uk-dtaa-withholding-tax", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-09-23" },
@@ -150,6 +138,31 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/wholly-owned-subsidiary", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/blog/india-safe-harbour-rules-2026", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-15" },
   { path: "/blog/best-state-to-register-company-in-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-09-30" },
+
+  // USA to India guide cluster
+  { path: "/blog/usa-to-india", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/incorporation-process", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/documents-and-apostille", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/resident-director", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/funding-fema-fc-gpr", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/share-valuation", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/repatriating-profits", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/eor-vs-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/dtaa-pe-risk", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/us-parent-obligations", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/compliance-calendar", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/audit-icofr", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/tax-notices-and-litigation", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/contracts-and-arbitration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/esop", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/restructuring-and-exit", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/expat-visa", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/global-vat", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/hiring-and-payroll", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/common-mistakes", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-07" },
+  { path: "/blog/usa-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-07" },
 
   // Insights Hub (Postgres-backed) — individual published Insight URLs are
   // fetched live by each consumer (see getPublishedInsights()). The index
