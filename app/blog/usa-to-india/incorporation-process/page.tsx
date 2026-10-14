@@ -20,7 +20,6 @@ const toc = [
   { id: "us-parent", label: "What this means for a US parent" },
   { id: "mistakes", label: "Mistakes to avoid" },
   { id: "how-we-help", label: "How AU Corporate handles this" },
-  { id: "official-sources", label: "Official sources" },
   { id: "faqs", label: "Frequently asked questions" },
 ]
 
