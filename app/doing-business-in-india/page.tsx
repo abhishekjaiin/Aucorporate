@@ -142,7 +142,7 @@ export default function DoingBusinessInIndiaPage() {
               complete company registration guide
             </Link>{" "}
             instead. If you already know a foreign-owned subsidiary is the likely route, see our{" "}
-            <Link href="/india-business-setup/foreign-subsidiary-india" className="underline hover:text-white">
+            <Link href="/india-subsidiary-registration" className="underline hover:text-white">
               foreign subsidiary and WOS guide
             </Link>.
 
@@ -189,7 +189,7 @@ export default function DoingBusinessInIndiaPage() {
               <Link href="/india-business-setup/company-formation" className="text-yellow-600 hover:text-yellow-700 font-semibold">
                 complete company registration guide
               </Link>, and if you&apos;ve already settled on a Wholly Owned Subsidiary specifically, our{" "}
-              <Link href="/india-business-setup/foreign-subsidiary-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+              <Link href="/india-subsidiary-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold">
                 Foreign Subsidiary / WOS guide
               </Link>{" "}
               covers that structure&apos;s setup and ongoing operations in one place. What follows here is the strategic layer: the questions worth

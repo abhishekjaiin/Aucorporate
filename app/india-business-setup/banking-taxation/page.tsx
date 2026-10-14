@@ -69,7 +69,7 @@ const bankingTaxationFaqs = [
 export default function BankingTaxationPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "India Business Setup", href: "/india-business-setup" }, { label: "Banking & Taxation" }]} />
+      <Breadcrumb items={[{ label: "Banking & Taxation" }]} />
 
       <section className="py-20 bg-linear-to-r from-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4">

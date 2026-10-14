@@ -39,7 +39,6 @@ export const publicPages: PublicPage[] = [
   { path: "/services", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-11" },
 
   // 10 Service Pillars
-  { path: "/india-business-setup", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-25" },
   { path: "/services/accounting-assurance", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-09-11" },
   { path: "/hr-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-09-11" },
   { path: "/services/taxation-regulatory", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-09-14" },
@@ -94,7 +93,6 @@ export const publicPages: PublicPage[] = [
   // India Business Setup Cluster
   { path: "/india-business-setup/fdi-channels", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-11" },
   { path: "/india-business-setup/company-formation", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-08-31" },
-  { path: "/india-business-setup/foreign-subsidiary-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/india-subsidiary-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/accounting-reporting-audit-support", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },
   { path: "/fema-rbi-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-12" },

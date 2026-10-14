@@ -21,7 +21,6 @@ export type PageMeta = { title: string; description: string }
 export const pageMeta: Record<string, PageMeta> = {
   "/": { title: "AU Corporate", description: "India business setup, tax & compliance firm — overview of services and market-entry proposition" },
   "/services": { title: "Our Services", description: "Full service catalog — taxation, accounting, HR, risk, transaction advisory" },
-  "/india-business-setup": { title: "India Business Setup Guide", description: "Company formation, FDI routes, regulatory compliance, and banking/taxation for new entities" },
   "/services/accounting-assurance": { title: "Accounting & Assurance", description: "Financial statement preparation, Ind AS/IFRS compliance, internal controls, statutory audit" },
   "/hr-services": { title: "HR Outsourcing & Payroll", description: "Payroll processing, HR compliance, and recruitment support" },
   "/services/taxation-regulatory": { title: "Taxation & Regulatory Services", description: "Corporate tax, GST, tax audit, transfer pricing, and regulatory advisory" },
@@ -69,7 +68,6 @@ export const pageMeta: Record<string, PageMeta> = {
 
   "/india-business-setup/fdi-channels": { title: "FDI Channels & Investment Routes", description: "Automatic vs. Government approval route by sector" },
   "/india-business-setup/company-formation": { title: "Company Registration in India", description: "SPICe+ incorporation process, entity types, FDI routes, documents, cost and timelines" },
-  "/india-business-setup/foreign-subsidiary-india": { title: "Foreign Subsidiary in India (WOS)", description: "Choosing a structure, FDI/FEMA/RBI, incorporation, post-incorporation filings, ongoing operations, and repatriation or exit" },
   "/india-subsidiary-registration": { title: "India Subsidiary Registration", description: "Incorporation, PAN, TAN, bank account, share issue and FC-GPR for a foreign company's India subsidiary" },
   "/accounting-reporting-audit-support": { title: "Accounting & Audit Support for Subsidiaries", description: "Monthly accounting, reconciliations, fixed assets, TDS/GST workings, US GAAP/IFRS reporting and audit support" },
   "/fema-rbi-compliance": { title: "FEMA & RBI Compliance for Subsidiaries", description: "FC-GPR, FC-TRS, FLA return, ECB and RBI approvals for an Indian subsidiary" },

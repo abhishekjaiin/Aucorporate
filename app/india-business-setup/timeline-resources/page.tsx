@@ -111,7 +111,7 @@ const faqs = [
 export default function TimelineResourcesPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "India Business Setup", href: "/india-business-setup" }, { label: "Timeline & Resources" }]} />
+      <Breadcrumb items={[{ label: "Timeline & Resources" }]} />
 
       {/* HERO */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">

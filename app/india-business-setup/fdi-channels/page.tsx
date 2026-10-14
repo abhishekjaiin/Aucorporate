@@ -77,7 +77,7 @@ export default function FDIChannelsPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* BREADCRUMB */}
-      <Breadcrumb items={[{ label: "India Business Setup", href: "/india-business-setup" }, { label: "FDI Channels" }]} />
+      <Breadcrumb items={[{ label: "FDI Channels" }]} />
 
       {/* HERO */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">

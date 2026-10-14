@@ -35,7 +35,7 @@ const journeyStages = [
       {
         title: 'Foreign Subsidiary / WOS in India',
         description: 'Start with the broader subsidiary lifecycle before moving into the US-specific incorporation and compliance guides',
-        href: '/india-business-setup/foreign-subsidiary-india',
+        href: '/india-subsidiary-registration',
       },
       {
         title: 'US Subsidiary vs Branch Office',
@@ -220,7 +220,7 @@ export default function IndiaEntryForUSCompanies() {
             company registration guide
           </Link>{' '}
           for the general (non-US-specific) mechanics. For the structure and ongoing-operations picture once incorporated, see our{' '}
-          <Link href="/india-business-setup/foreign-subsidiary-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+          <Link href="/india-subsidiary-registration" className="text-yellow-600 hover:text-yellow-700 font-semibold">
             Foreign Subsidiary / WOS guide
           </Link>.
         </p>

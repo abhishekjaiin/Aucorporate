@@ -257,7 +257,7 @@ export default function Page() {
         </p>
 
         <p className="mb-8 text-sm text-gray-600">
-          For the full entity lifecycle, see our <Link href="/india-business-setup/foreign-subsidiary-india" className="font-semibold text-yellow-700 hover:underline">foreign subsidiary and WOS guide</Link>, then follow the relevant FDI, transfer-pricing, DTAA and ongoing compliance resources.
+          For the full entity lifecycle, see our <Link href="/india-subsidiary-registration" className="font-semibold text-yellow-700 hover:underline">foreign subsidiary and WOS guide</Link>, then follow the relevant FDI, transfer-pricing, DTAA and ongoing compliance resources.
         </p>
 
         {/* QUICK FACTS */}
@@ -420,7 +420,7 @@ export default function Page() {
             <h3 className="mb-2 font-semibold text-[#081a42]">Accounting &amp; Assurance</h3>
             <p className="text-sm text-gray-600">The books and statutory audit behind every filing on this page</p>
           </Link>
-          <Link href="/india-business-setup/foreign-subsidiary-india" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+          <Link href="/india-subsidiary-registration" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
             <h3 className="mb-2 font-semibold text-[#081a42]">Foreign Subsidiary / WOS</h3>
             <p className="text-sm text-gray-600">Structure, FDI/FEMA, and ongoing operations in one guide</p>
           </Link>

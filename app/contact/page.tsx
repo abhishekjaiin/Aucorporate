@@ -211,7 +211,7 @@ export default function ContactPage() {
             full range of services
           </Link>{" "}
           or the{" "}
-          <Link href="/india-business-setup" className="text-gold-dark font-semibold hover:underline">
+          <Link href="/india-business-setup/company-formation" className="text-gold-dark font-semibold hover:underline">
             India business setup guide
           </Link>.
         </p>

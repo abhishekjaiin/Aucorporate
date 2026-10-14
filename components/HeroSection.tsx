@@ -40,7 +40,7 @@ export default function HeroSection() {
               </Link>
             </Button>
             <Button asChild variant="outline" className="border-white/40 bg-transparent text-white hover:bg-white/10">
-              <Link href="/india-business-setup">
+              <Link href="/india-business-setup/company-formation">
                 See entity options
               </Link>
             </Button>

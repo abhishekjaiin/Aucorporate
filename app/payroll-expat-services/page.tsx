@@ -88,7 +88,6 @@ const afterLinks = [
   { label: "Secretarial and ROC Compliance", href: "/secretarial-roc-compliance" },
   { label: "FEMA and RBI Compliance", href: "/fema-rbi-compliance" },
   { label: "India Subsidiary Registration", href: "/india-subsidiary-registration" },
-  { label: "Foreign Subsidiary in India — Full Guide", href: "/india-business-setup/foreign-subsidiary-india" },
 ]
 
 const faqs = [
@@ -133,7 +132,7 @@ const faqsRight = faqs.slice(Math.ceil(faqs.length / 2))
 export default function PayrollExpatServicesPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: "Foreign Subsidiary in India", href: "/india-business-setup/foreign-subsidiary-india" }, { label: "Payroll and Expat Services" }]} />
+      <Breadcrumb items={[{ label: "India Subsidiary Registration", href: "/india-subsidiary-registration" }, { label: "Payroll and Expat Services" }]} />
 
       {/* HERO */}
       <section className="bg-gradient-to-r from-[#081a42] to-[#0d2a5c] text-white py-14 md:py-16">
@@ -374,11 +373,6 @@ export default function PayrollExpatServicesPage() {
         <div className="max-w-7xl mx-auto px-4">
           <RelatedResources
             links={[
-              {
-                label: "Foreign Subsidiary in India — Full Guide",
-                href: "/india-business-setup/foreign-subsidiary-india",
-                description: "The complete lifecycle hub this payroll service sits under: structure, FDI/FEMA, incorporation, operation and exit.",
-              },
               {
                 label: "India Subsidiary Registration",
                 href: "/india-subsidiary-registration",
