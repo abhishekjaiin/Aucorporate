@@ -6,6 +6,7 @@ import { GuideTOC } from "@/components/guide/GuideTOC"
 import { GuideFaqList } from "@/components/guide/GuideFaqList"
 import { GuideRelatedCards } from "@/components/guide/GuideRelatedCards"
 import { GuideCTA } from "@/components/guide/GuideCTA"
+import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
@@ -444,6 +445,11 @@ export default function UsaToIndiaHubPage() {
           confirm current requirements before acting.
         </p>
       </article>
+
+      <GuideLeadForm
+        title="Ready to Set Up Your Subsidiary in India?"
+        description="Tell us about your parent company, timeline and sector — we'll reply with an entry structure recommendation and compliance overview for your case."
+      />
     </main>
   )
 }

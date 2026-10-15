@@ -6,6 +6,7 @@ import { GuideTOC } from "@/components/guide/GuideTOC"
 import { GuideFaqList } from "@/components/guide/GuideFaqList"
 import { GuideRelatedCards } from "@/components/guide/GuideRelatedCards"
 import { GuideCTA } from "@/components/guide/GuideCTA"
+import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
@@ -271,6 +272,11 @@ export default function SubsidiaryVsBranchVsLiaisonOfficeVsLlpPage() {
           confirm current requirements before acting.
         </p>
       </article>
+
+      <GuideLeadForm
+        title="Not Sure Which Entity Type Fits?"
+        description="Tell us your planned activities in India — sales, liaison or back-office — and we'll recommend the right structure for your case."
+      />
     </main>
   )
 }

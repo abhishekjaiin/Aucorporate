@@ -6,6 +6,7 @@ import { GuideTOC } from "@/components/guide/GuideTOC"
 import { GuideFaqList } from "@/components/guide/GuideFaqList"
 import { GuideRelatedCards } from "@/components/guide/GuideRelatedCards"
 import { GuideCTA } from "@/components/guide/GuideCTA"
+import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
@@ -241,6 +242,11 @@ export default function AuditIcofrPage() {
           confirm current requirements before acting.
         </p>
       </article>
+
+      <GuideLeadForm
+        title="Need Help With Your Statutory Audit or ICFR?"
+        description="Tell us your financial year-end and group reporting standard — we'll map the audit, ICFR documentation and filing timeline for your subsidiary."
+      />
     </main>
   )
 }

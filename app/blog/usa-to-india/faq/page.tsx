@@ -4,6 +4,7 @@ import { GuideHero } from "@/components/guide/GuideHero"
 import { GuideAnswerBox } from "@/components/guide/GuideAnswerBox"
 import { GuideTOC } from "@/components/guide/GuideTOC"
 import { GuideCTA } from "@/components/guide/GuideCTA"
+import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 
@@ -594,6 +595,11 @@ export default function UsaToIndiaFaqPage() {
           confirm current requirements before acting.
         </p>
       </article>
+
+      <GuideLeadForm
+        title="Still Have Questions About India Entry?"
+        description="Tell us what's specific to your case — we'll answer directly instead of pointing you back to a FAQ."
+      />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
     </main>

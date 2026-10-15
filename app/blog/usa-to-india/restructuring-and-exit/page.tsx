@@ -6,6 +6,7 @@ import { GuideTOC } from "@/components/guide/GuideTOC"
 import { GuideFaqList } from "@/components/guide/GuideFaqList"
 import { GuideRelatedCards } from "@/components/guide/GuideRelatedCards"
 import { GuideCTA } from "@/components/guide/GuideCTA"
+import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
@@ -244,6 +245,11 @@ export default function RestructuringAndExitPage() {
           confirm current requirements before acting.
         </p>
       </article>
+
+      <GuideLeadForm
+        title="Planning to Restructure or Exit Your India Entity?"
+        description="Tell us your current structure and goal — we'll map the ROC, tax and FEMA steps for a clean restructuring or exit."
+      />
     </main>
   )
 }

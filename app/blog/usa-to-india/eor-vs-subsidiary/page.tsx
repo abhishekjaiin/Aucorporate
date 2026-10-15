@@ -6,6 +6,7 @@ import { GuideTOC } from "@/components/guide/GuideTOC"
 import { GuideFaqList } from "@/components/guide/GuideFaqList"
 import { GuideRelatedCards } from "@/components/guide/GuideRelatedCards"
 import { GuideCTA } from "@/components/guide/GuideCTA"
+import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
@@ -247,6 +248,11 @@ export default function EorVsSubsidiaryPage() {
           confirm current requirements before acting.
         </p>
       </article>
+
+      <GuideLeadForm
+        title="EOR or Subsidiary — Which Fits Your Plan?"
+        description="Tell us your headcount and timeline in India — we'll compare the cost, control and compliance trade-offs for your case."
+      />
     </main>
   )
 }
