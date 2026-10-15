@@ -77,68 +77,6 @@ const nextConfig = {
         destination: "/services/accounting-assurance",
         permanent: true,
       },
-
-      // OLD /india-entry-for-us-companies CLUSTER → /blog/usa-to-india
-      // That cluster was hard-deleted (no redirects) when it was rebuilt as the
-      // current /blog/usa-to-india guide cluster. Added back 2026-10-15 after a
-      // real visitor from a chatgpt.com citation hit one of these as a 404 —
-      // the old URLs still get inbound links/citations, so send them to the
-      // closest live equivalent instead of a dead end.
-      {
-        source: "/india-entry-for-us-companies",
-        destination: "/blog/usa-to-india",
-        permanent: true,
-      },
-      {
-        source: "/india-entry-for-us-companies/annual-compliance-calendar",
-        destination: "/blog/usa-to-india/compliance-calendar",
-        permanent: true,
-      },
-      {
-        source: "/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation",
-        destination: "/blog/usa-to-india/restructuring-and-exit",
-        permanent: true,
-      },
-      {
-        source: "/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us",
-        destination: "/blog/usa-to-india/incorporation-process",
-        permanent: true,
-      },
-      {
-        source: "/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary",
-        destination: "/blog/usa-to-india/funding-fema-fc-gpr",
-        permanent: true,
-      },
-      {
-        source: "/india-entry-for-us-companies/how-to-incorporate-subsidiary-india-from-us",
-        destination: "/blog/usa-to-india/incorporation-process",
-        permanent: true,
-      },
-      {
-        source: "/india-entry-for-us-companies/permanent-establishment-risk-india",
-        destination: "/blog/usa-to-india/dtaa-pe-risk",
-        permanent: true,
-      },
-      {
-        source: "/india-entry-for-us-companies/register-company-in-india-from-usa",
-        destination: "/blog/usa-to-india/incorporation-process",
-        permanent: true,
-      },
-      {
-        source: "/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax",
-        destination: "/blog/usa-to-india/repatriating-profits",
-        permanent: true,
-      },
-      {
-        source: "/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary",
-        destination: "/blog/usa-to-india/transfer-pricing",
-        permanent: true,
-      },
-      {
-        source: "/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india",
-        destination: "/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp",
-        permanent: true,
-      },
     ]
   },
 
