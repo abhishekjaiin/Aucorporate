@@ -164,19 +164,21 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* GA4 is intentionally NOT loaded here as a separate direct gtag.js script.
-            It was previously duplicated alongside GTM below — GTM is already designed
-            to load and configure GA4 itself via a GA4 Configuration tag inside the GTM
-            container, so hardcoding a direct gtag.js here is redundant script weight on
-            every page (flagged by PageSpeed Insights' "reduce unused JavaScript" audit).
-
-            2026-09-30: GA4 property switched from G-V2EZ4HBLZS to G-H2TGFPQVVY per
-            explicit instruction. This swap must be made inside the GTM Configuration
-            tag itself (tagmanager.google.com, container GTM-N23Z4X6Z) — update the
-            GA4 Configuration tag's Measurement ID field to G-H2TGFPQVVY, then publish
-            the container version. No code change accomplishes this; nothing in this
-            repo holds the live measurement ID. Verify data is flowing to the new
-            property in its GA4 Realtime report after publishing. */}
+        {/* GOOGLE TAG (gtag.js) — direct GA4 tag, separate from the GTM container above.
+            2026-10-15: added back as a direct gtag.js per explicit instruction
+            (measurement ID G-BCLWTC7VFH), alongside GTM-N23Z4X6Z. */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-BCLWTC7VFH"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BCLWTC7VFH');
+          `}
+        </Script>
 
         {/* BING CLARITY TRACKING — lazyOnload for the same reason */}
         <Script
