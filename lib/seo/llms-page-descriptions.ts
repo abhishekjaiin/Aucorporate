@@ -30,6 +30,7 @@ export const pageMeta: Record<string, PageMeta> = {
   "/contact": { title: "Contact", description: "Contact details, office locations, and inquiry form" },
   "/career": { title: "Careers", description: "Open roles at AU Corporate" },
   "/compliance-calendar": { title: "India Subsidiary Compliance Calendar", description: "The monthly, quarterly, annual and event-based filing calendar for a foreign-owned Indian subsidiary" },
+  "/case-studies": { title: "Case Studies", description: "How foreign companies have set up and run their Indian subsidiaries with AU Corporate" },
   "/privacy": { title: "Privacy Policy", description: "" },
   "/terms": { title: "Terms of Service", description: "" },
 

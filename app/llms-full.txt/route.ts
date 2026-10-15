@@ -31,7 +31,7 @@ type SectionRule = { test: (path: string) => boolean; section: string }
 // which is the failure mode this route exists to prevent.
 const sectionRules: SectionRule[] = [
   { test: (p) => p === "/", section: "Homepage" },
-  { test: (p) => ["/about", "/contact", "/career", "/privacy", "/terms"].includes(p), section: "Company" },
+  { test: (p) => ["/about", "/contact", "/career", "/case-studies", "/privacy", "/terms"].includes(p), section: "Company" },
   { test: (p) => p === "/compliance-calendar", section: "Compliance Resources" },
   { test: (p) => p.startsWith("/doing-business-in-india"), section: "Doing Business in India (market-entry decision guide)" },
   { test: (p) => p.startsWith("/india-business-setup"), section: "India Business Setup (formation mechanics)" },

@@ -12,7 +12,7 @@ Full page index (every page on the site, not just the curated list below): https
 
 - [Homepage](https://www.theaucorp.com/): Overview of AU Corporate's services and India market entry proposition
 - [Doing Business in India](https://www.theaucorp.com/doing-business-in-india): Guide to entering and operating in India, from market entry through post-incorporation compliance
-- [India Business Setup](https://www.theaucorp.com/india-business-setup): Company formation, FDI routes, regulatory compliance, and banking/taxation for new entities
+- [Set Up a Subsidiary in India from the USA](https://www.theaucorp.com/blog/usa-to-india): AU Corporate's most developed country-entry guide — structure, FDI rules, incorporation, FEMA/RBI filings, tax and compliance
 - [Services](https://www.theaucorp.com/services): Full service catalog — taxation, accounting, HR, risk, transaction advisory
 - [Taxation & Regulatory](https://www.theaucorp.com/services/taxation-regulatory): Tax planning, GST compliance, tax audit, transfer pricing
 - [Accounting & Assurance](https://www.theaucorp.com/services/accounting-assurance): Financial statement preparation, IFRS/Ind AS compliance, internal controls
@@ -37,53 +37,79 @@ Full page index (every page on the site, not just the curated list below): https
 - [Should You Incorporate in India Now?](https://www.theaucorp.com/doing-business-in-india/incorporation): Strategic timing decision guide
 - [Life After Incorporation](https://www.theaucorp.com/doing-business-in-india/post-incorporation): Priorities and common mistakes as you scale
 
-## Country-Specific India Entry Guides
+## USA → India — Complete Guide
 
-- [For US Companies](https://www.theaucorp.com/india-entry-for-us-companies)
-- [For UK Companies](https://www.theaucorp.com/india-entry-for-uk-companies)
-- [For Singapore Companies](https://www.theaucorp.com/india-entry-for-singapore-companies)
-- [For Australian Companies](https://www.theaucorp.com/india-entry-for-australian-companies)
-- [For German Companies](https://www.theaucorp.com/india-entry-for-german-companies)
-- [For Japanese Companies](https://www.theaucorp.com/india-entry-for-japan-companies)
-- [For Chinese Companies](https://www.theaucorp.com/india-entry-for-china-companies)
+AU Corporate's most developed country-entry guide, with a dedicated sub-page for most steps of the subsidiary lifecycle, and a 216-question FAQ:
 
-## USA → India — Full Resource List
+- [Set Up a Subsidiary in India from the USA](https://www.theaucorp.com/blog/usa-to-india): Overview — structure, FDI rules, incorporation steps, RBI/FEMA filings, tax and compliance
+- [Incorporation Process](https://www.theaucorp.com/blog/usa-to-india/incorporation-process): The eight steps to incorporate a wholly owned subsidiary, forms and typical 4-6 week timeline
+- [Subsidiary vs Branch vs Liaison Office vs LLP](https://www.theaucorp.com/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp): Compare the four ways a US company can enter India
+- [Documents and Apostille](https://www.theaucorp.com/blog/usa-to-india/documents-and-apostille): Which documents a US parent must prepare, notarization and apostille for US state/federal documents
+- [Resident Director Requirement](https://www.theaucorp.com/blog/usa-to-india/resident-director): Who qualifies, options for US parents, and duties
+- [Funding and Form FC-GPR](https://www.theaucorp.com/blog/usa-to-india/funding-fema-fc-gpr): Equity, CCPS, ECB, the 60-day allotment rule, pricing, and RBI reporting
+- [Share Valuation](https://www.theaucorp.com/blog/usa-to-india/share-valuation): Why shares issued to a US parent need a valuation, who can certify it, FEMA pricing floor
+- [Repatriating Profits](https://www.theaucorp.com/blog/usa-to-india/repatriating-profits): Dividends, service fees, royalties, loans, withholding tax and DTAA relief
+- [EOR vs Subsidiary](https://www.theaucorp.com/blog/usa-to-india/eor-vs-subsidiary): Speed, control, compliance, tax presence and when to convert
+- [Transfer Pricing](https://www.theaucorp.com/blog/usa-to-india/transfer-pricing): Arm's length pricing, documentation, methods, safe harbour and audits
+- [India-US Tax Treaty and PE Risk](https://www.theaucorp.com/blog/usa-to-india/dtaa-pe-risk): Withholding tax rates, Tax Residency Certificate, permanent establishment risk
+- [US Parent Reporting Obligations](https://www.theaucorp.com/blog/usa-to-india/us-parent-obligations): Form 5471, FBAR, Form 8938 and other US-side reporting
+- [Compliance Calendar for US Companies](https://www.theaucorp.com/blog/usa-to-india/compliance-calendar): Monthly, quarterly, annual and event-based filings
+- [Audit and ICOFR](https://www.theaucorp.com/blog/usa-to-india/audit-icofr): Statutory audit, tax audit, GST audit and internal controls
+- [Tax Notices and Litigation](https://www.theaucorp.com/blog/usa-to-india/tax-notices-and-litigation): First steps, appeal routes, DRP, ITAT, MAP and Advance Pricing Agreements
+- [Contracts and Arbitration](https://www.theaucorp.com/blog/usa-to-india/contracts-and-arbitration): Intercompany and customer contracts, governing law, arbitration clauses
+- [ESOPs for Indian Employees](https://www.theaucorp.com/blog/usa-to-india/esop): FEMA reporting, employee tax, valuation, cost recharge and transfer pricing
+- [Restructuring, Mergers and Exit](https://www.theaucorp.com/blog/usa-to-india/restructuring-and-exit): Share sale, slump sale, merger, buyback, strike-off and liquidation
+- [Sending a US Executive to India](https://www.theaucorp.com/blog/usa-to-india/expat-visa): Employment visa, FRRO registration, housing, banking, tax residency
+- [Global VAT for US Companies Selling Abroad](https://www.theaucorp.com/blog/usa-to-india/global-vat): VAT registration, B2B/B2C rules across the US, EU, UK, Japan and more
+- [Hiring in India](https://www.theaucorp.com/blog/usa-to-india/hiring-and-payroll): Employment contracts, provident fund, ESI, gratuity, labour codes
+- [10 Common Mistakes](https://www.theaucorp.com/blog/usa-to-india/common-mistakes): The most common and costly mistakes, with a pre-filing checklist
+- [216 FAQs on India Entry from the USA](https://www.theaucorp.com/blog/usa-to-india/faq): Plain answers on incorporation, FEMA, tax, hiring, compliance, repatriation, ESOPs, M&A and closing an Indian subsidiary
 
-The US is AU Corporate's most developed country-entry guide, with a dedicated sub-page for most steps of the subsidiary lifecycle:
+Note: dedicated guides for other countries (UK, Singapore, Australia, Germany, Japan, China) are in development and not yet published.
 
-- [India Entry for US Companies](https://www.theaucorp.com/india-entry-for-us-companies): Overview — subsidiary vs branch structuring, FEMA compliance, and transfer pricing
-- [Register a Company in India from the USA](https://www.theaucorp.com/india-entry-for-us-companies/register-company-in-india-from-usa): Entity comparison, resident-director rule, process, cost and timeline
-- [How to Incorporate a Subsidiary from the US](https://www.theaucorp.com/india-entry-for-us-companies/how-to-incorporate-subsidiary-india-from-us): Step-by-step incorporation walkthrough
-- [Cost & Timeline from the US](https://www.theaucorp.com/india-entry-for-us-companies/cost-timeline-incorporate-company-india-from-us): Realistic cost and timeline for incorporating from the US
-- [US Subsidiary vs Branch Office](https://www.theaucorp.com/india-entry-for-us-companies/us-subsidiary-vs-branch-office-india): Entity choice comparison
-- [FEMA Compliance for US Companies](https://www.theaucorp.com/india-entry-for-us-companies/fema-compliance-us-company-india-subsidiary): FEMA/RBI reporting obligations
-- [Transfer Pricing & Section 482](https://www.theaucorp.com/india-entry-for-us-companies/transfer-pricing-us-india-subsidiary): Form 5471 and transfer pricing
-- [Permanent Establishment Risk in India](https://www.theaucorp.com/india-entry-for-us-companies/permanent-establishment-risk-india): PE risk for a US parent operating in India
-- [Repatriating Profits — DTAA & Withholding Tax](https://www.theaucorp.com/india-entry-for-us-companies/repatriating-profits-indian-subsidiary-dtaa-withholding-tax): India-US DTAA rates and withholding tax
-- [Annual Compliance Calendar (US-Owned Subsidiary)](https://www.theaucorp.com/india-entry-for-us-companies/annual-compliance-calendar): The dated AOC-4, MGT-7, ADT-1 and DIR-3 KYC calendar
-- [Closing an Indian Subsidiary](https://www.theaucorp.com/india-entry-for-us-companies/close-indian-subsidiary-strike-off-voluntary-liquidation): Strike-off vs. voluntary liquidation
+## Foreign Company Entity Types in India
 
-## India Business Setup — Entity Types & Process
+- [India Subsidiary Registration](https://www.theaucorp.com/india-subsidiary-registration): Incorporation, PAN, TAN, bank account, share issue and FC-GPR
+  - [Accounting & Audit Support](https://www.theaucorp.com/accounting-reporting-audit-support), [FEMA & RBI Compliance](https://www.theaucorp.com/fema-rbi-compliance), [Corporate Tax, GST & Transfer Pricing](https://www.theaucorp.com/corporate-tax-gst-transfer-pricing), [Secretarial & ROC Compliance](https://www.theaucorp.com/secretarial-roc-compliance), [Payroll & Expat Services](https://www.theaucorp.com/payroll-expat-services)
+- [Branch Office Registration](https://www.theaucorp.com/branch-office-registration): Form FNC, RBI/AD bank approval, UIN, ROC Form FC-1, PAN and TAN
+  - [FEMA & RBI Compliance](https://www.theaucorp.com/branch-office-fema-rbi-compliance), [ROC Compliance](https://www.theaucorp.com/foreign-company-roc-compliance), [Tax, GST & Transfer Pricing](https://www.theaucorp.com/branch-office-tax-gst-transfer-pricing), [Accounting & Audit Support](https://www.theaucorp.com/branch-office-accounting-audit), [Payroll & FRRO](https://www.theaucorp.com/branch-office-payroll-compliance)
+- [Liaison Office Registration](https://www.theaucorp.com/liaison-office-registration): Eligibility, Form FNC, UIN, ROC Form FC-1, PAN, TAN and permitted tasks
+  - [FEMA & RBI Compliance](https://www.theaucorp.com/liaison-office-fema-rbi-compliance), [ROC Compliance](https://www.theaucorp.com/liaison-office-roc-compliance), [Tax Compliance](https://www.theaucorp.com/liaison-office-tax-compliance), [Accounting & Audit Support](https://www.theaucorp.com/liaison-office-accounting-audit), [Payroll & FRRO](https://www.theaucorp.com/liaison-office-payroll-compliance)
+- [Project Office Registration](https://www.theaucorp.com/project-office-registration): General permission under Regulation 5, Form FNC-1, ROC Form FC-1, PAN and TAN
+  - [FEMA & RBI Compliance](https://www.theaucorp.com/project-office-fema-rbi-compliance), [ROC Compliance](https://www.theaucorp.com/project-office-roc-compliance), [Tax, GST & Transfer Pricing](https://www.theaucorp.com/project-office-tax-gst-transfer-pricing), [Accounting & Audit Support](https://www.theaucorp.com/project-office-accounting-audit), [Payroll & FRRO](https://www.theaucorp.com/project-office-payroll-compliance)
+- [LLP in India](https://www.theaucorp.com/llp-in-india): FDI-eligible Limited Liability Partnership registration
+
+## India Business Setup — Formation Mechanics
 
 - [Company Formation](https://www.theaucorp.com/india-business-setup/company-formation): SPICe+ incorporation process, FDI routes, documents, cost and timelines
 - [FDI Channels](https://www.theaucorp.com/india-business-setup/fdi-channels): Automatic vs. Government approval route
-- [Regulatory Compliance](https://www.theaucorp.com/india-business-setup/regulatory-compliance)
-- [Banking & Taxation](https://www.theaucorp.com/india-business-setup/banking-taxation)
-- [Branch Office in India](https://www.theaucorp.com/branch-office-in-india): RBI/FEMA approval, permitted activities
-- [Liaison Office in India](https://www.theaucorp.com/liaison-office-in-india)
-- [Project Office in India](https://www.theaucorp.com/project-office-in-india)
-- [LLP in India](https://www.theaucorp.com/llp-in-india): FDI-eligible Limited Liability Partnership registration
-- [GCC Setup in India](https://www.theaucorp.com/gcc-setup-india): Global Capability Center advisory
+- [Regulatory Compliance](https://www.theaucorp.com/india-business-setup/regulatory-compliance): FEMA, RBI, and sector-specific rules
+- [Banking & Taxation](https://www.theaucorp.com/india-business-setup/banking-taxation): Bank account opening, capital inflow, and initial tax registrations
+- [Timeline & Resources](https://www.theaucorp.com/india-business-setup/timeline-resources): Realistic setup timelines and resource planning
 
-## Specialist / Industry-Specific
+## GCC & Industry-Specific
 
-- [India Entry for AI & SaaS Companies](https://www.theaucorp.com/india-entry-for-saas-companies)
-- [OIDAR & GST Registration for Foreign SaaS Companies](https://www.theaucorp.com/oidar-gst-registration-india)
-- [Global VAT & Sales Tax Compliance for AI/SaaS](https://www.theaucorp.com/global-vat-compliance-ai-saas-companies)
+- [GCC Setup in India](https://www.theaucorp.com/gcc-setup-india): Global Capability Center entity choice, FEMA/RBI filings, and safe harbour rules
+- [India Entry for AI, SaaS & Tech Companies](https://www.theaucorp.com/india-entry-for-saas-companies): Entity structure, FEMA/RBI basics, and tax/GST treatment
+- [OIDAR & GST Registration for Foreign SaaS Companies](https://www.theaucorp.com/oidar-gst-registration-india): When OIDAR/GST registration is mandatory, and the GSTR-5A filing calendar
+- [Global VAT & Sales Tax Compliance for AI/SaaS](https://www.theaucorp.com/global-vat-compliance-ai-saas-companies): VAT/GST/sales-tax registration and filing across the US, EU, UK, Japan and more
 
 ## Partners
 
 - [UniproAsia Partnership](https://www.theaucorp.com/partners/uniproasia): Expansion support into Hong Kong, Singapore and Mainland China alongside AU Corporate's India services
+
+## Blog & Regulatory Explainers
+
+- [Arbitration Enforcement in India](https://www.theaucorp.com/blog/arbitration-enforcement-india)
+- [Best State to Register a Company in India](https://www.theaucorp.com/blog/best-state-to-register-company-in-india)
+- [Construction Arbitration in India](https://www.theaucorp.com/blog/construction-arbitration-india): Claims to enforcing awards
+- [Doing Business in India in 2026: What's Actually Changed](https://www.theaucorp.com/blog/doing-business-india): GST 2.0, new Labour Codes, FDI trends
+- [FDI in India: Green Channel vs Brown Channel](https://www.theaucorp.com/blog/fdi-green-vs-brown-channel)
+- [India's Proposed BIS Exemption for Japanese High-Tech Investment](https://www.theaucorp.com/blog/india-japan-bis-exemption-high-tech-investment)
+- [India's 2026 Safe Harbour Rules](https://www.theaucorp.com/blog/india-safe-harbour-rules-2026): 15.5% IT margin explained
+- [Tiger Global Ruling: DTAA & Mailbox Companies](https://www.theaucorp.com/blog/mail-box-dtaa-benefits): Supreme Court ruling on treaty substance requirements
+- [Tax Treatment of Loan Waiver in India](https://www.theaucorp.com/blog/tax-loan-waiver-india): Supreme Court ruling on Sections 28(iv) and 41(1)
+- [Wholly Owned Subsidiary in India](https://www.theaucorp.com/blog/wholly-owned-subsidiary): Setup and compliance guide
 
 ## Guidelines for AI Interactions
 
