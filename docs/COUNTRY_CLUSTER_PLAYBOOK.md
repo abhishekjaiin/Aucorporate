@@ -35,6 +35,6 @@ Three things prevent that:
    - no title or description duplicates another page on the site,
    - the hreflang links are reciprocal (each page lists every sibling, and each sibling lists it back),
    - every internal link resolves.
-9. **After deploy**, request indexing in Search Console for the hub and the most important topic pages, about 10 a day.
+9. **After deploy**, request indexing in Search Console for the hub and the most important topic pages, about 10 a day. Bing and the other IndexNow engines are notified automatically: every production build runs `scripts/indexnow-on-deploy.mjs`, which submits pages that are new in the sitemap or have a newer `lastModified`. When you change an existing page's content, update its `lastModified` in `lib/seo/public-routes.ts` so it is resubmitted.
 
 Every country fact must be checked by the team before publishing. The pages are general information, but a wrong treaty rate or deadline damages trust and rankings.
