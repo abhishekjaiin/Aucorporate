@@ -8,6 +8,7 @@ const indiaEntryLinks = [
   { label: "FDI, FEMA & RBI", href: "/india-business-setup/fdi-channels" },
   { label: "Branch Office", href: "/branch-office-registration" },
   { label: "US Companies", href: "/blog/usa-to-india" },
+  { label: "Australian Companies", href: "/blog/australia-to-india" },
 ]
 
 const serviceLinks = [

@@ -10,6 +10,7 @@ export function GuideArticleSchema({
   datePublished,
   dateModified,
   isPartOfUrl,
+  inLanguage = "en-US",
 }: {
   url: string
   headline: string
@@ -18,6 +19,8 @@ export function GuideArticleSchema({
   dateModified: string
   /** The hub page's #webpage @id, when this is a spoke article. Omit on the hub itself. */
   isPartOfUrl?: string
+  /** BCP 47 tag for the page's English variant, e.g. "en-AU" for the Australia cluster. */
+  inLanguage?: string
 }) {
   const schema = {
     "@context": "https://schema.org",
@@ -60,7 +63,7 @@ export function GuideArticleSchema({
         url,
         name: headline,
         description,
-        inLanguage: "en-US",
+        inLanguage,
         dateModified,
         ...(isPartOfUrl ? { isPartOf: { "@id": `${isPartOfUrl}#webpage` } } : {}),
       },
@@ -74,7 +77,7 @@ export function GuideArticleSchema({
         datePublished,
         dateModified,
         mainEntityOfPage: { "@id": `${url}#webpage` },
-        inLanguage: "en-US",
+        inLanguage,
       },
     ],
   }
