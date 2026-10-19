@@ -150,6 +150,33 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/usa-to-india/common-mistakes", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
   { path: "/blog/usa-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-14" },
 
+  // Australia to India guide cluster
+  { path: "/blog/australia-to-india", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/incorporation-process", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/documents-and-apostille", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/resident-director", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/funding-fema-fc-gpr", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/share-valuation", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/repatriating-profits", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/eor-vs-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/india-australia-dtaa", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/dtaa-pe-risk", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/foreign-employee-treaty-ssa", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/australian-parent-obligations", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/compliance-calendar", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/audit-icofr", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/tax-notices-and-litigation", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/contracts-and-arbitration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/esop", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/restructuring-and-exit", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/expat-visa", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/global-vat", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/hiring-and-payroll", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/common-mistakes", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-15" },
+  { path: "/blog/australia-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-15" },
+
   // Insights Hub (Postgres-backed) — individual published Insight URLs are
   // fetched live by each consumer (see getPublishedInsights()). The index
   // page itself is static here since it exists regardless of how many
