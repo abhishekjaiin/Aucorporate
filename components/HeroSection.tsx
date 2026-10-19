@@ -35,7 +35,7 @@ export default function HeroSection() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild style={{ backgroundColor: GOLD }} className="font-bold text-[#0E1B4D] hover:bg-[#F2B705]">
-              <Link href="https://cal.com/abhishekjaiin-ybbklq/30min" target="_blank" rel="noreferrer">
+              <Link href="https://cal.com/abhishek-jaiin-ybbklq/30min" target="_blank" rel="noreferrer">
                 Book consultation with an expert
               </Link>
             </Button>
