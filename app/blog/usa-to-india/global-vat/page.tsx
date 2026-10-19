@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/global-vat"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -56,7 +56,7 @@ export default function GlobalVatPage() {
         description="How VAT works for US companies selling digital services and goods into Europe, the UK and beyond: registration, B2B and B2C rules and compliance."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -76,9 +76,10 @@ export default function GlobalVatPage() {
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
           VAT is charged in the country where the customer is, not where you are. US companies that sell to
-          customers in the EU, the UK or other VAT countries may have to register, charge local VAT, file returns
-          and keep records. The rules differ for business and consumer customers, and for digital services and
-          physical goods. Registration thresholds vary by country and change, so confirm them for each market.
+          customers in the EU, the UK or other VAT countries may have to register, charge local VAT, file
+          returns and keep records. The rules differ for business and consumer customers, and for digital
+          services and physical goods. Registration thresholds vary by country and change, so confirm them for
+          each market.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -120,7 +121,7 @@ export default function GlobalVatPage() {
         </p>
 
         <h2 id="b2b" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Selling to businesses and to consumers</h2>
-        <div className="overflow-x-auto mb-4">
+        <div className="overflow-x-auto mb-6">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -142,6 +143,7 @@ export default function GlobalVatPage() {
             </tbody>
           </table>
         </div>
+
         <div className="bg-secondary/40 border-l-4 border-blue-800 rounded-lg p-4 mb-10 text-sm text-gray-700">
           Rates and thresholds differ by country and change over time. We confirm the current position for each
           market you sell into.
@@ -164,7 +166,7 @@ export default function GlobalVatPage() {
         </p>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Check VAT before launching in a new country. Late registration can lead to back taxes and penalties.</li>
           <li>Make sure your billing system can capture the customer&apos;s country, VAT number and the tax charged.</li>
         </ul>
@@ -178,10 +180,11 @@ export default function GlobalVatPage() {
         </ul>
 
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
+        <p className="text-gray-600 leading-relaxed mb-4">
           We support VAT registration, filing and advice for businesses selling abroad, alongside your India
           accounting and tax.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/blog/usa-to-india/global-vat" className="text-blue-800 font-semibold hover:underline">Global VAT services</Link>
@@ -193,7 +196,8 @@ export default function GlobalVatPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -202,7 +206,12 @@ export default function GlobalVatPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -225,9 +234,10 @@ export default function GlobalVatPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/tax-notices-and-litigation"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -44,6 +44,7 @@ const relatedCards = [
   { title: "The India-US Tax Treaty and Permanent Establishment Risk for US Companies", desc: "How the India-US tax treaty applies to payments to your US parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk.", href: "/blog/usa-to-india/dtaa-pe-risk" },
   { title: "Ten Mistakes US Companies Make When Setting Up in India, and How to Avoid Them", desc: "The ten most common and costly mistakes US companies make when setting up an Indian subsidiary, and how to avoid each. Includes a pre-filing checklist.", href: "/blog/usa-to-india/common-mistakes" },
   { title: "Contracts and Arbitration in India: A Guide for US Companies", desc: "Intercompany and customer contracts for an Indian subsidiary, governing law, arbitration clauses, the New York Convention and enforcing awards in India.", href: "/blog/usa-to-india/contracts-and-arbitration" },
+  { title: "The India-US Tax Treaty (DTAA) Explained: Scope, Residency and Relief from Double Tax", desc: "How the India-US tax treaty works: who qualifies, which taxes it covers, how treaty and domestic law interact, residency, relief from double tax and disputes.", href: "/blog/usa-to-india/tax-and-social-security-treaties/india-us-dtaa-guide" },
 ]
 
 export default function TaxNoticesAndLitigationPage() {
@@ -55,14 +56,14 @@ export default function TaxNoticesAndLitigationPage() {
         description="What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and Advance Pricing Agreements."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
         items={[
           { label: "Blog", href: "/blog" },
           { label: "How to Set Up a Subsidiary in India from the USA", href: "/blog/usa-to-india" },
-          { label: "Handling Indian Tax Notices and Disputes for a US-Owned Subsidiary" },
+          { label: "Handling Indian Tax Notices for a US-Owned Subsidiary" },
         ]}
       />
 
@@ -74,10 +75,11 @@ export default function TaxNoticesAndLitigationPage() {
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
-          If your Indian subsidiary receives a tax notice, do not ignore it and do not reply without reviewing it.
-          Note the deadline, send it to your adviser the same day, collect the supporting records and respond on
-          the portal on time. Appeals go through the first appellate authority, the Dispute Resolution Panel for
-          transfer pricing and the tribunal, with treaty routes available for double taxation.
+          If your Indian subsidiary receives a tax notice, do not ignore it and do not reply without reviewing
+          it. Note the deadline, send it to your adviser the same day, collect the supporting records and
+          respond on the portal on time. Appeals go through the first appellate authority, the Dispute
+          Resolution Panel for transfer pricing and the tribunal, with treaty routes available for double
+          taxation.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -121,7 +123,7 @@ export default function TaxNoticesAndLitigationPage() {
         </ol>
 
         <h2 id="types" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Common notices</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -148,7 +150,7 @@ export default function TaxNoticesAndLitigationPage() {
         </div>
 
         <h2 id="routes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Appeal and dispute routes</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
           <li><strong>Response and assessment</strong>: the first answer is the written reply and supporting records.</li>
           <li><strong>Commissioner (Appeals)</strong>: the first appeal against most assessment orders, within the time stated in the law.</li>
           <li><strong>Dispute Resolution Panel</strong>: for eligible foreign companies and for transfer pricing adjustments, an alternative to the first appeal.</li>
@@ -157,42 +159,46 @@ export default function TaxNoticesAndLitigationPage() {
           <li><strong>Mutual Agreement Procedure</strong>: government-to-government route for treaty double taxation.</li>
           <li><strong>Advance Pricing Agreement</strong>: avoids future transfer pricing disputes for covered transactions.</li>
         </ul>
+
         <p className="text-gray-600 leading-relaxed mb-10">
-          Time limits and the exact route depend on the order, the Act that applies to the tax year and the amounts
-          involved. Always have the order reviewed before choosing a route.
+          Time limits and the exact route depend on the order, the Act that applies to the tax year and the
+          amounts involved. Always have the order reviewed before choosing a route.
         </p>
 
         <h2 id="prevent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Reducing the chance of a notice</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Match books to the tax portal each quarter, especially Withholding Tax credits and GST.</li>
-          <li>Keep transfer pricing documentation current. See{" "}
-            <Link href="/blog/usa-to-india/transfer-pricing" className="text-blue-800 font-semibold hover:underline">transfer pricing</Link>.
-          </li>
-          <li>Keep treaty documents on file. See{" "}
-            <Link href="/blog/usa-to-india/dtaa-pe-risk" className="text-blue-800 font-semibold hover:underline">treaty and PE risk</Link>.
-          </li>
+          <li>Keep transfer pricing documentation current. See <Link href="/blog/usa-to-india/transfer-pricing" className="text-blue-800 font-semibold hover:underline">transfer pricing</Link>.</li>
+          <li>Keep treaty documents on file. See <Link href="/blog/usa-to-india/dtaa-pe-risk" className="text-blue-800 font-semibold hover:underline">treaty and PE risk</Link>.</li>
           <li>File on time and keep a clean record of responses.</li>
         </ul>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Your US management does not need to act on every notice, but they should be told about any transfer pricing adjustment, a permanent establishment question or a demand above an agreed amount.</li>
           <li>Set a reporting line so that notices reach the right person within a day.</li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
-        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
           <li>Ignoring a notice because the amount looks small.</li>
           <li>Replying without checking the books.</li>
           <li>Missing the appeal time limit.</li>
           <li>Not updating the registered email and mobile number on the portals.</li>
         </ul>
 
-        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
-          We handle notices, assessments and appeals, from first reply to the tribunal, and coordinate with counsel
-          where needed.
+        <p className="text-gray-600 leading-relaxed mb-10">
+          See also: Treaty disputes:{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/india-us-dtaa-guide" className="text-blue-800 font-semibold hover:underline">India-US tax treaty (DTAA) explained</Link>,
+          including the mutual agreement procedure.
         </p>
+
+        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
+        <p className="text-gray-600 leading-relaxed mb-4">
+          We handle notices, assessments and appeals, from first reply to the tribunal, and coordinate with
+          counsel where needed.
+        </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/services/taxation-regulatory" className="text-blue-800 font-semibold hover:underline">Taxation and regulatory services</Link>
@@ -204,7 +210,8 @@ export default function TaxNoticesAndLitigationPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -213,7 +220,12 @@ export default function TaxNoticesAndLitigationPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -236,9 +248,10 @@ export default function TaxNoticesAndLitigationPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

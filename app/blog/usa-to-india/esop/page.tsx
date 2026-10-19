@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/esop"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -56,7 +56,7 @@ export default function EsopPage() {
         description="How ESOPs and RSUs work for employees of an Indian subsidiary: FEMA reporting, employee tax, valuation, cost recharge and transfer pricing for a US parent."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -75,11 +75,11 @@ export default function EsopPage() {
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
-          A US parent can grant options or restricted stock units to employees of its Indian subsidiary under its
-          own plan. FEMA overseas investment rules and reporting apply, tax arises as salary on exercise or vesting
-          with Withholding Tax, and again as capital gains on sale. Any recharge of the cost to the Indian company
-          needs an agreement and transfer pricing support. The Indian company can also issue its own ESOPs under
-          the Companies Act.
+          A US parent can grant options or restricted stock units to employees of its Indian subsidiary under
+          its own plan. FEMA overseas investment rules and reporting apply, tax arises as salary on exercise or
+          vesting with Withholding Tax, and again as capital gains on sale. Any recharge of the cost to the
+          Indian company needs an agreement and transfer pricing support. The Indian company can also issue its
+          own ESOPs under the Companies Act.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -115,7 +115,7 @@ export default function EsopPage() {
         </div>
 
         <h2 id="routes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Two ways to give equity to Indian employees</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -152,21 +152,22 @@ export default function EsopPage() {
 
         <h2 id="withholding" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Withholding Tax on exercise</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          Because tax arises before the employee has cash from a sale, the employer must collect the tax at exercise
-          or vesting. Plans usually solve this with a sell-to-cover arrangement, a payment by the employee or a
-          payroll deduction. Agree the mechanism in advance.
+          Because tax arises before the employee has cash from a sale, the employer must collect the tax at
+          exercise or vesting. Plans usually solve this with a sell-to-cover arrangement, a payment by the
+          employee or a payroll deduction. Agree the mechanism in advance.
         </p>
 
         <h2 id="recharge" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Cost recharge and transfer pricing</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          Where the Indian company bears the cost of the parent&apos;s equity awards, the recharge should be covered
-          by a written agreement. Whether the cost is deductible, whether Withholding Tax applies and whether it is
-          at arm&apos;s length are frequently disputed, so document the arrangement and benchmark it. See{" "}
+          Where the Indian company bears the cost of the parent&apos;s equity awards, the recharge should be
+          covered by a written agreement. Whether the cost is deductible, whether Withholding Tax applies and
+          whether it is at arm&apos;s length are frequently disputed, so document the arrangement and benchmark
+          it. See{" "}
           <Link href="/blog/usa-to-india/transfer-pricing" className="text-blue-800 font-semibold hover:underline">transfer pricing</Link>.
         </p>
 
         <h2 id="own" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The Indian company&apos;s own ESOP</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>The company adopts a scheme by special resolution that sets out eligibility, vesting and exercise.</li>
           <li>A valuation supports the exercise price and the tax computation.</li>
           <li>FEMA conditions apply if employees or shareholders are non-residents.</li>
@@ -174,12 +175,10 @@ export default function EsopPage() {
         </ul>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Your US counsel should confirm the securities-law exemptions for offering equity to employees in India and any plan amendments.</li>
           <li>Add an India addendum to the plan that covers tax withholding, FEMA reporting and local law.</li>
-          <li>Coordinate the share valuation with your US 409A or equivalent valuation. See{" "}
-            <Link href="/blog/usa-to-india/share-valuation" className="text-blue-800 font-semibold hover:underline">share valuation</Link>.
-          </li>
+          <li>Coordinate the share valuation with your US 409A or equivalent valuation. See <Link href="/blog/usa-to-india/share-valuation" className="text-blue-800 font-semibold hover:underline">share valuation</Link>.</li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
@@ -192,13 +191,14 @@ export default function EsopPage() {
         </ul>
 
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
+        <p className="text-gray-600 leading-relaxed mb-4">
           We cover the valuation, FEMA, tax and legal work for ESOPs in India.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
-          <Link href="/services/transaction-advisory" className="text-blue-800 font-semibold hover:underline">Transaction advisory and valuation</Link>
-          {" "}&middot;{" "}
+          <Link href="/services/transaction-advisory" className="text-blue-800 font-semibold hover:underline">Transaction advisory and valuation</Link>{" "}
+          ·{" "}
           <Link href="/services/taxation-regulatory" className="text-blue-800 font-semibold hover:underline">Taxation and regulatory</Link>
         </p>
 
@@ -208,7 +208,8 @@ export default function EsopPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -217,7 +218,12 @@ export default function EsopPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -240,9 +246,10 @@ export default function EsopPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

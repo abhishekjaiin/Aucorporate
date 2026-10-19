@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/compliance-calendar"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -48,6 +48,7 @@ const relatedCards = [
   { title: "Hiring and Payroll in India for US Companies: Contracts, PF, ESI and Gratuity", desc: "How US companies hire in India: employment contracts, provident fund, ESI, gratuity, professional tax, payroll steps and India's labour codes.", href: "/blog/usa-to-india/hiring-and-payroll" },
   { title: "Ten Mistakes US Companies Make When Setting Up in India, and How to Avoid Them", desc: "The ten most common and costly mistakes US companies make when setting up an Indian subsidiary, and how to avoid each. Includes a pre-filing checklist.", href: "/blog/usa-to-india/common-mistakes" },
   { title: "Funding the Indian Subsidiary: FEMA Rules, Share Allotment and Form FC-GPR", desc: "How a US parent invests in an Indian subsidiary: equity, CCPS, ECB, the 60-day allotment rule, pricing, and RBI reporting through Form FC-GPR on FIRMS.", href: "/blog/usa-to-india/funding-fema-fc-gpr" },
+  { title: "EPF for International Workers in India: What US Expats and Their Employers Must Know", desc: "How Indian provident fund applies to foreign nationals: international worker rules, no wage ceiling, withdrawal, court rulings and the 2026 EPF Scheme.", href: "/blog/usa-to-india/tax-and-social-security-treaties/epf-international-workers" },
 ]
 
 export default function ComplianceCalendarPage() {
@@ -59,7 +60,7 @@ export default function ComplianceCalendarPage() {
         description="The recurring compliance of an Indian subsidiary: monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -133,7 +134,7 @@ export default function ComplianceCalendarPage() {
         </ul>
 
         <h2 id="annual" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Every year</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -167,7 +168,7 @@ export default function ComplianceCalendarPage() {
         </div>
 
         <h2 id="event" className="text-2xl font-bold text-gray-900 mt-12 mb-4">When something happens</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -176,44 +177,39 @@ export default function ComplianceCalendarPage() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Foreign funds received for shares</th>
-                <td className="border border-gray-300 p-3">Form FC-GPR through the RBI FIRMS portal, within 30 days of allotment</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Change in directors</th>
-                <td className="border border-gray-300 p-3">Director change form with the Registrar</td>
-              </tr>
-              <tr>
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Change of registered office or Auditor</th>
-                <td className="border border-gray-300 p-3">Relevant Registrar form</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Commencement of business</th>
-                <td className="border border-gray-300 p-3">Declaration Form INC-20A, within 180 days of incorporation</td>
-              </tr>
-              <tr>
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Share transfer to or from a non-resident</th>
-                <td className="border border-gray-300 p-3">Form FC-TRS where applicable</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Sale of the subsidiary or an exit</th>
-                <td className="border border-gray-300 p-3">
-                  See{" "}
-                  <Link href="/blog/usa-to-india/restructuring-and-exit" className="text-blue-800 font-semibold hover:underline">
-                    restructuring and exit
-                  </Link>
-                </td>
-              </tr>
+                <tr>
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Foreign funds received for shares</th>
+                  <td className="border border-gray-300 p-3">Form FC-GPR through the RBI FIRMS portal, within 30 days of allotment</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Change in directors</th>
+                  <td className="border border-gray-300 p-3">Director change form with the Registrar</td>
+                </tr>
+                <tr>
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Change of registered office or Auditor</th>
+                  <td className="border border-gray-300 p-3">Relevant Registrar form</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Commencement of business</th>
+                  <td className="border border-gray-300 p-3">Declaration Form INC-20A, within 180 days of incorporation</td>
+                </tr>
+                <tr>
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Share transfer to or from a non-resident</th>
+                  <td className="border border-gray-300 p-3">Form FC-TRS where applicable</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Sale of the subsidiary or an exit</th>
+                  <td className="border border-gray-300 p-3">See <Link href="/blog/usa-to-india/restructuring-and-exit" className="text-blue-800 font-semibold hover:underline">restructuring and exit</Link></td>
+                </tr>
             </tbody>
           </table>
         </div>
 
         <h2 id="new" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What the new Income-tax Act changes</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          The Income-tax Act, 2025 applies from tax year 2026-27 (previously assessment years under the 1961 Act).
-          Many forms have new numbers and sections have been renumbered, but the underlying compliance is largely
-          the same. We map your calendar to the new names and confirm due dates each year.
+          The Income-tax Act, 2025 applies from tax year 2026-27 (previously assessment years under the 1961
+          Act). Many forms have new numbers and sections have been renumbered, but the underlying compliance is
+          largely the same. We map your calendar to the new names and confirm due dates each year.
         </p>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
@@ -223,21 +219,28 @@ export default function ComplianceCalendarPage() {
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
-        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
           <li>Missing INC-20A, the first Auditor appointment or the FC-GPR deadline in the first months.</li>
           <li>Treating GST and Withholding Tax as year-end tasks.</li>
           <li>Forgetting director KYC and the FLA return.</li>
           <li>Using the US year-end for Indian filing dates.</li>
         </ul>
 
-        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
-          We run the compliance calendar for you: reminders, preparation, filing and records, so nothing is missed.
+        <p className="text-gray-600 leading-relaxed mb-10">
+          See also: Foreign nationals on payroll:{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/epf-international-workers" className="text-blue-800 font-semibold hover:underline">EPF for international workers</Link>.
         </p>
+
+        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
+        <p className="text-gray-600 leading-relaxed mb-4">
+          We run the compliance calendar for you: reminders, preparation, filing and records, so nothing is
+          missed.
+        </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
-          <Link href="/services/accounting-assurance" className="text-blue-800 font-semibold hover:underline">Accounting and compliance</Link>
-          {" "}&middot;{" "}
+          <Link href="/services/accounting-assurance" className="text-blue-800 font-semibold hover:underline">Accounting and compliance</Link>{" "}
+          ·{" "}
           <Link href="/services/taxation-regulatory" className="text-blue-800 font-semibold hover:underline">Taxation and regulatory services</Link>
         </p>
 
@@ -247,7 +250,8 @@ export default function ComplianceCalendarPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -256,7 +260,12 @@ export default function ComplianceCalendarPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -280,9 +289,10 @@ export default function ComplianceCalendarPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/dtaa-pe-risk"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -48,6 +48,9 @@ const relatedCards = [
   { title: "Transfer Pricing in India: A Guide for US Parents and Their Indian Subsidiaries", desc: "How transfer pricing works for an Indian subsidiary of a US company: arm's length pricing, documentation, Form 48, methods, safe harbour and audits.", href: "/blog/usa-to-india/transfer-pricing" },
   { title: "US Parent Obligations When You Own an Indian Subsidiary", desc: "US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams.", href: "/blog/usa-to-india/us-parent-obligations" },
   { title: "Tax Notices and Disputes in India: What US Companies Should Do", desc: "What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and Advance Pricing Agreements.", href: "/blog/usa-to-india/tax-notices-and-litigation" },
+  { title: "India-US DTAA Withholding Tax Rates: Dividends, Interest, Royalties and Fees for Included Services", desc: "Treaty rates for payments from India to the US: dividends 15% or 25%, interest 10% or 15%, royalties and fees 10% or 15%. Conditions and how to apply them.", href: "/blog/usa-to-india/tax-and-social-security-treaties/dtaa-withholding-rates" },
+  { title: "How to Claim India-US Treaty Benefits: Form 6166, Form 41 and Beneficial Ownership", desc: "Documents needed to claim India-US treaty rates: IRS Form 6166, Form 41 (previously Form 10F), no-PE declaration and beneficial ownership.", href: "/blog/usa-to-india/tax-and-social-security-treaties/treaty-benefits-documents" },
+  { title: "India-US Tax Treaty and Social Security: The Complete Guide for US Companies and Expats", desc: "The India-US tax treaty (DTAA) and social security for US expats: treaty rates, residency, EPF, FICA and the missing totalization agreement.", href: "/blog/usa-to-india/tax-and-social-security-treaties" },
 ]
 
 export default function DtaaPeRiskPage() {
@@ -59,7 +62,7 @@ export default function DtaaPeRiskPage() {
         description="How the India-US tax treaty applies to payments to your US parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -120,9 +123,10 @@ export default function DtaaPeRiskPage() {
         <p className="text-gray-600 leading-relaxed mb-4">
           Without a treaty, India taxes certain payments to non-residents at domestic rates. The treaty may cap
           those rates for payments such as dividends, interest and royalties or fees for technical services. The
-          rate that applies depends on the type of payment and the conditions in the treaty and the current law, so
-          we confirm it before each payment.
+          rate that applies depends on the type of payment and the conditions in the treaty and the current law,
+          so we confirm it before each payment.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           The Indian payer deducts Withholding Tax under Section 393 (previously Section 195) at the applicable
           rate and deposits it with the government. The US parent can then claim a foreign tax credit in the US,
@@ -136,13 +140,14 @@ export default function DtaaPeRiskPage() {
           <li><strong>Declaration of no permanent establishment in India</strong>, where the payer or the tax officer asks for it.</li>
           <li><strong>Beneficial ownership evidence</strong>: the recipient should be the real owner of the income and not a conduit.</li>
         </ul>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Keep these ready before the first payment. Missing documents are the usual reason the higher domestic
           rate is applied.
         </p>
 
         <h2 id="pe" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Permanent establishment: when a US company becomes taxable in India</h2>
-        <div className="overflow-x-auto mb-4">
+        <div className="overflow-x-auto mb-6">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -165,10 +170,11 @@ export default function DtaaPeRiskPage() {
             </tbody>
           </table>
         </div>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           A subsidiary is not by itself a permanent establishment of its parent. The risk arises when the
-          subsidiary or its staff act in a way that makes them the parent&apos;s agent, or when the parent&apos;s
-          own employees work from India.
+          subsidiary or its staff act in a way that makes them the parent&apos;s agent, or when the
+          parent&apos;s own employees work from India.
         </p>
 
         <h2 id="reduce" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How to reduce PE risk</h2>
@@ -176,9 +182,7 @@ export default function DtaaPeRiskPage() {
           <li>Keep the subsidiary&apos;s role clear in the intercompany agreement. Decisions to conclude customer contracts should sit with the parent&apos;s authorized officers.</li>
           <li>Track the days that US employees spend in India and what they do there.</li>
           <li>Avoid giving Indian staff authority to negotiate and sign contracts for the parent.</li>
-          <li>Review any arrangement with an Employer of Record. See{" "}
-            <Link href="/blog/usa-to-india/eor-vs-subsidiary" className="text-blue-800 font-semibold hover:underline">EOR vs subsidiary</Link>.
-          </li>
+          <li>Review any arrangement with an Employer of Record. See <Link href="/blog/usa-to-india/eor-vs-subsidiary" className="text-blue-800 font-semibold hover:underline">EOR vs subsidiary</Link>.</li>
           <li>Document the real economic substance of the subsidiary.</li>
         </ul>
 
@@ -189,18 +193,29 @@ export default function DtaaPeRiskPage() {
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
-        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
           <li>Paying the parent before the Tax Residency Certificate and Form 41 are on file.</li>
           <li>Assuming the treaty rate applies automatically.</li>
           <li>Letting US executives work from India for long periods without a PE review.</li>
           <li>Giving Indian managers signing authority for the parent&apos;s customer contracts.</li>
         </ul>
 
+        <p className="text-gray-600 leading-relaxed mb-10">
+          See also: For the treaty itself, see{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/india-us-dtaa-guide" className="text-blue-800 font-semibold hover:underline">India-US tax treaty explained</Link>,{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/dtaa-withholding-rates" className="text-blue-800 font-semibold hover:underline">treaty withholding rates</Link>{" "}
+          and{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/treaty-benefits-documents" className="text-blue-800 font-semibold hover:underline">claiming treaty benefits</Link>.
+          For social security of US expats, see{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/social-security-us-expats-india" className="text-blue-800 font-semibold hover:underline">social security for US expats in India</Link>.
+        </p>
+
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
+        <p className="text-gray-600 leading-relaxed mb-4">
           We confirm the right Withholding Tax rate before each payment, collect treaty documents and review
           permanent establishment exposure.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/services/taxation-regulatory" className="text-blue-800 font-semibold hover:underline">Taxation and regulatory services</Link>
@@ -212,7 +227,8 @@ export default function DtaaPeRiskPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -221,7 +237,12 @@ export default function DtaaPeRiskPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -244,9 +265,10 @@ export default function DtaaPeRiskPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

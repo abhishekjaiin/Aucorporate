@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/eor-vs-subsidiary"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -44,6 +44,7 @@ const relatedCards = [
   { title: "Incorporation Process for a US-Owned Indian Subsidiary, Step by Step", desc: "The eight steps to incorporate a wholly owned subsidiary in India from the USA: forms, order of steps, typical 4 to 6 week timeline and first 90 days.", href: "/blog/usa-to-india/incorporation-process" },
   { title: "Subsidiary vs. Branch vs. Liaison Office vs. LLP: Which Is Right for a US Company in India?", desc: "Compare the four ways a US company can enter India: wholly owned subsidiary, branch office, liaison office and LLP. Activities, approvals, tax and control.", href: "/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp" },
   { title: "The India-US Tax Treaty and Permanent Establishment Risk for US Companies", desc: "How the India-US tax treaty applies to payments to your US parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk.", href: "/blog/usa-to-india/dtaa-pe-risk" },
+  { title: "Social Security for US Expats in India: Is There a US-India Totalization Agreement?", desc: "Is there a US-India social security agreement? What applies to a US expat in India: provident fund, US FICA, double coverage and planning.", href: "/blog/usa-to-india/tax-and-social-security-treaties/social-security-us-expats-india" },
 ]
 
 export default function EorVsSubsidiaryPage() {
@@ -55,7 +56,7 @@ export default function EorVsSubsidiaryPage() {
         description="Compare an Employer of Record with your own Indian subsidiary: speed, control, compliance, tax presence and when to convert. A guide for US companies."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -75,9 +76,9 @@ export default function EorVsSubsidiaryPage() {
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
           An Employer of Record (EOR) legally employs your team in India on your behalf, so you can hire within
-          weeks without an entity. A subsidiary gives you direct control, a local contracting and banking vehicle
-          and a base for long-term growth. Many US companies start with an EOR to test the market and convert to a
-          subsidiary once the team or investment grows.
+          weeks without an entity. A subsidiary gives you direct control, a local contracting and banking
+          vehicle and a base for long-term growth. Many US companies start with an EOR to test the market and
+          convert to a subsidiary once the team or investment grows.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -112,7 +113,7 @@ export default function EorVsSubsidiaryPage() {
         </div>
 
         <h2 id="compare" className="text-2xl font-bold text-gray-900 mt-12 mb-4">EOR and subsidiary side by side</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -164,9 +165,10 @@ export default function EorVsSubsidiaryPage() {
           <li>You want direct control over employment terms, benefits and culture.</li>
           <li>The service fee on a growing headcount makes your own entity cheaper to run.</li>
         </ul>
+
         <p className="text-gray-600 leading-relaxed mb-10">
-          There is no fixed headcount at which a subsidiary wins. It depends on salaries, growth plans and how much
-          compliance you want to carry. We can compare the two options for your plan.
+          There is no fixed headcount at which a subsidiary wins. It depends on salaries, growth plans and how
+          much compliance you want to carry. We can compare the two options for your plan.
         </p>
 
         <h2 id="convert" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Moving from an EOR to your own subsidiary</h2>
@@ -177,35 +179,40 @@ export default function EorVsSubsidiaryPage() {
           <li>Handle notice periods, provident fund transfers and final settlements with the EOR.</li>
           <li>Switch payroll to the subsidiary on a clean month-start date.</li>
         </ol>
+
         <p className="text-gray-600 leading-relaxed mb-10">
-          Plan the timing so there is no gap in employment. A good EOR contract states the conversion terms and any
-          fee at the start.
+          Plan the timing so there is no gap in employment. A good EOR contract states the conversion terms and
+          any fee at the start.
         </p>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
-          <li>An EOR is a way to employ people, not a way to avoid a taxable presence. If staff in India negotiate or conclude contracts for the US company, or work from a fixed place for it, the US company can be treated as having a permanent establishment. See{" "}
-            <Link href="/blog/usa-to-india/dtaa-pe-risk" className="text-blue-800 font-semibold hover:underline">tax treaty and PE risk</Link>.
-          </li>
+          <li>An EOR is a way to employ people, not a way to avoid a taxable presence. If staff in India negotiate or conclude contracts for the US company, or work from a fixed place for it, the US company can be treated as having a permanent establishment. See <Link href="/blog/usa-to-india/dtaa-pe-risk" className="text-blue-800 font-semibold hover:underline">tax treaty and PE risk</Link>.</li>
           <li>Make sure your EOR agreement covers IP assignment to your company, confidentiality, data protection and what happens on conversion.</li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
-        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
           <li>Staying on an EOR long after the team has grown, paying fees that exceed the cost of your own entity.</li>
           <li>Treating EOR staff as contractors of the US company, which blurs who the employer is.</li>
           <li>Letting EOR staff sign customer contracts without a permanent establishment review.</li>
           <li>Not agreeing IP assignment and conversion terms in the EOR contract.</li>
         </ul>
 
+        <p className="text-gray-600 leading-relaxed mb-10">
+          See also: Expats on an EOR:{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/social-security-us-expats-india" className="text-blue-800 font-semibold hover:underline">social security for US expats in India</Link>.
+        </p>
+
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
+        <p className="text-gray-600 leading-relaxed mb-4">
           We provide Employer of Record and HR services and can convert your EOR team into your own subsidiary.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
-          <Link href="/hr-services" className="text-blue-800 font-semibold hover:underline">HR and payroll</Link>
-          {" "}&middot;{" "}
+          <Link href="/hr-services" className="text-blue-800 font-semibold hover:underline">HR and payroll</Link>{" "}
+          ·{" "}
           <Link href="/india-business-setup/company-formation" className="text-blue-800 font-semibold hover:underline">India business setup</Link>
         </p>
 
@@ -215,7 +222,8 @@ export default function EorVsSubsidiaryPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -224,7 +232,12 @@ export default function EorVsSubsidiaryPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -247,9 +260,10 @@ export default function EorVsSubsidiaryPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

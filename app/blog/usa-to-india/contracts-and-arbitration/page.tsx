@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/contracts-and-arbitration"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -58,7 +58,7 @@ export default function ContractsAndArbitrationPage() {
         description="Intercompany and customer contracts for an Indian subsidiary, governing law, arbitration clauses, the New York Convention and enforcing awards in India."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -77,10 +77,10 @@ export default function ContractsAndArbitrationPage() {
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
-          Put the key terms in writing before work starts: an intercompany agreement with the parent, customer and
-          vendor contracts, and employment and IP terms. Use an arbitration clause that names the seat, the rules
-          and the language. India is a party to the New York Convention, which helps foreign awards be enforced
-          here, subject to the conditions of Indian law.
+          Put the key terms in writing before work starts: an intercompany agreement with the parent, customer
+          and vendor contracts, and employment and IP terms. Use an arbitration clause that names the seat, the
+          rules and the language. India is a party to the New York Convention, which helps foreign awards be
+          enforced here, subject to the conditions of Indian law.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -116,7 +116,7 @@ export default function ContractsAndArbitrationPage() {
         </div>
 
         <h2 id="which" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Which contracts an Indian subsidiary needs</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -125,31 +125,26 @@ export default function ContractsAndArbitrationPage() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Intercompany services agreement</th>
-                <td className="border border-gray-300 p-3">Supports transfer pricing, Withholding Tax positions and the permanent establishment analysis</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Customer agreements</th>
-                <td className="border border-gray-300 p-3">Scope, payment, liability, data protection and governing law</td>
-              </tr>
-              <tr>
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Vendor and landlord agreements</th>
-                <td className="border border-gray-300 p-3">Lease terms, stamp duty and local compliance</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Employment and IP agreements</th>
-                <td className="border border-gray-300 p-3">
-                  Confidentiality, IP assignment and notice terms. See{" "}
-                  <Link href="/blog/usa-to-india/hiring-and-payroll" className="text-blue-800 font-semibold hover:underline">
-                    hiring and payroll
-                  </Link>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Shareholder or investment terms</th>
-                <td className="border border-gray-300 p-3">Governance, funding, transfer and exit</td>
-              </tr>
+                <tr>
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Intercompany services agreement</th>
+                  <td className="border border-gray-300 p-3">Supports transfer pricing, Withholding Tax positions and the permanent establishment analysis</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Customer agreements</th>
+                  <td className="border border-gray-300 p-3">Scope, payment, liability, data protection and governing law</td>
+                </tr>
+                <tr>
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Vendor and landlord agreements</th>
+                  <td className="border border-gray-300 p-3">Lease terms, stamp duty and local compliance</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Employment and IP agreements</th>
+                  <td className="border border-gray-300 p-3">Confidentiality, IP assignment and notice terms. See <Link href="/blog/usa-to-india/hiring-and-payroll" className="text-blue-800 font-semibold hover:underline">hiring and payroll</Link></td>
+                </tr>
+                <tr>
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">Shareholder or investment terms</th>
+                  <td className="border border-gray-300 p-3">Governance, funding, transfer and exit</td>
+                </tr>
             </tbody>
           </table>
         </div>
@@ -174,10 +169,10 @@ export default function ContractsAndArbitrationPage() {
 
         <h2 id="seat" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Seat in India or abroad</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          Many US parents prefer a neutral or foreign seat for disputes with the subsidiary&apos;s customers, while
-          others choose an Indian seat for speed of enforcement against local assets. Both are possible. The right
-          choice depends on where the counterparty&apos;s assets are and on the cost and speed of each route. We
-          help you decide with counsel.
+          Many US parents prefer a neutral or foreign seat for disputes with the subsidiary&apos;s customers,
+          while others choose an Indian seat for speed of enforcement against local assets. Both are possible.
+          The right choice depends on where the counterparty&apos;s assets are and on the cost and speed of each
+          route. We help you decide with counsel.
         </p>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
@@ -195,9 +190,10 @@ export default function ContractsAndArbitrationPage() {
         </ul>
 
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
+        <p className="text-gray-600 leading-relaxed mb-4">
           We support contracts, arbitration and dispute resolution, and work with Indian and US counsel.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/arbitration-services" className="text-blue-800 font-semibold hover:underline">Arbitration services</Link>
@@ -209,7 +205,8 @@ export default function ContractsAndArbitrationPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -218,7 +215,12 @@ export default function ContractsAndArbitrationPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -241,9 +243,10 @@ export default function ContractsAndArbitrationPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

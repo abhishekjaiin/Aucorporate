@@ -12,7 +12,7 @@ import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/us-parent-obligations"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "why", label: "Why the US side matters" },
@@ -44,6 +44,8 @@ const relatedCards = [
   { title: "The India-US Tax Treaty and Permanent Establishment Risk for US Companies", desc: "How the India-US tax treaty applies to payments to your US parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk.", href: "/blog/usa-to-india/dtaa-pe-risk" },
   { title: "Audit and Internal Controls for an Indian Subsidiary of a US Group", desc: "Statutory audit, tax audit, GST audit and internal controls over financial reporting for an Indian subsidiary of a US group. What to expect and how to prepare.", href: "/blog/usa-to-india/audit-icofr" },
   { title: "Compliance Calendar for an Indian Subsidiary: What Is Due and When", desc: "The recurring compliance of an Indian subsidiary: monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law.", href: "/blog/usa-to-india/compliance-calendar" },
+  { title: "US Social Security and FICA for Americans Working in India: Who Pays and When", desc: "When Social Security and Medicare tax apply to Americans working in India: US employer, Indian subsidiary, Section 3121(l) agreements and self-employment.", href: "/blog/usa-to-india/tax-and-social-security-treaties/us-social-security-for-americans-in-india" },
+  { title: "The India-US Tax Treaty (DTAA) Explained: Scope, Residency and Relief from Double Tax", desc: "How the India-US tax treaty works: who qualifies, which taxes it covers, how treaty and domestic law interact, residency, relief from double tax and disputes.", href: "/blog/usa-to-india/tax-and-social-security-treaties/india-us-dtaa-guide" },
 ]
 
 export default function UsParentObligationsPage() {
@@ -55,14 +57,14 @@ export default function UsParentObligationsPage() {
         description="US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
         items={[
           { label: "Blog", href: "/blog" },
           { label: "How to Set Up a Subsidiary in India from the USA", href: "/blog/usa-to-india" },
-          { label: "US Parent Reporting for an Indian Subsidiary: 5471, FBAR and More" },
+          { label: "US Reporting for an Indian Subsidiary: Form 5471, FBAR" },
         ]}
       />
 
@@ -112,17 +114,18 @@ export default function UsParentObligationsPage() {
 
         <h2 id="why" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Why the US side matters</h2>
         <p className="text-gray-600 leading-relaxed mb-4">
-          India and the US each tax and report separately. A subsidiary that is fully compliant in India can still
-          create US filing duties for its parent. Penalties for missing US information returns can be significant,
-          so it is worth setting the process up at the start.
+          India and the US each tax and report separately. A subsidiary that is fully compliant in India can
+          still create US filing duties for its parent. Penalties for missing US information returns can be
+          significant, so it is worth setting the process up at the start.
         </p>
+
         <div className="bg-secondary/40 border-l-4 border-blue-800 rounded-lg p-4 mb-10 text-sm text-gray-700">
           This page is a general orientation to the Indian-subsidiary side of a US filing. US tax law is outside
           our practice; confirm every point with a US CPA or tax counsel.
         </div>
 
         <h2 id="forms" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The main US filings to discuss with your CPA</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -150,10 +153,10 @@ export default function UsParentObligationsPage() {
 
         <h2 id="regimes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">International tax regimes that can apply</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          The US taxes some foreign subsidiary income on a current basis through regimes such as Subpart F and the
-          global intangible low-taxed income rules (recently renamed and amended). Whether and how they apply to a
-          service-based Indian subsidiary depends on the structure and the year. Your US adviser should model this
-          before the subsidiary starts earning.
+          The US taxes some foreign subsidiary income on a current basis through regimes such as Subpart F and
+          the global intangible low-taxed income rules (recently renamed and amended). Whether and how they
+          apply to a service-based Indian subsidiary depends on the structure and the year. Your US adviser
+          should model this before the subsidiary starts earning.
         </p>
 
         <h2 id="align" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Keeping the two sides aligned</h2>
@@ -165,24 +168,32 @@ export default function UsParentObligationsPage() {
         </ul>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>The Indian financial year runs from 1 April to 31 March, while many US groups report on a calendar year. Plan the reporting bridge early.</li>
           <li>Ask your US CPA to review the structure before you invest, not after the first return is due.</li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
-        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
           <li>Assuming Indian compliance covers US reporting.</li>
           <li>Learning about Form 5471 only after the first US return is due.</li>
           <li>Mismatched intercompany balances between the Indian and US books.</li>
           <li>Not planning for the different financial years.</li>
         </ul>
 
-        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
-          We provide Indian financial statements, tax computations and reconciliations in a format your US CPA can
-          use, and we work with your US advisers.
+        <p className="text-gray-600 leading-relaxed mb-10">
+          See also: US-side social security:{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/us-social-security-for-americans-in-india" className="text-blue-800 font-semibold hover:underline">FICA for Americans working in India</Link>.
+          Treaty background:{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/india-us-dtaa-guide" className="text-blue-800 font-semibold hover:underline">India-US tax treaty explained</Link>.
         </p>
+
+        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
+        <p className="text-gray-600 leading-relaxed mb-4">
+          We provide Indian financial statements, tax computations and reconciliations in a format your US CPA
+          can use, and we work with your US advisers.
+        </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/services" className="text-blue-800 font-semibold hover:underline">USA accounting and tax</Link>
@@ -194,7 +205,8 @@ export default function UsParentObligationsPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -203,7 +215,12 @@ export default function UsParentObligationsPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -226,9 +243,10 @@ export default function UsParentObligationsPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

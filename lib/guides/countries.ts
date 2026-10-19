@@ -38,6 +38,14 @@ export type GuideTopic =
   | "common-mistakes"
   | "india-dtaa"
   | "foreign-employee-treaty-ssa"
+  | "treaties-hub"
+  | "treaties-faq"
+  | "dtaa-withholding-rates"
+  | "epf-international-workers"
+  | "expat-tax-residency"
+  | "social-security-agreement"
+  | "treaty-benefits-documents"
+  | "home-social-security"
 
 export type GuideCountryKey = "usa" | "australia"
 
@@ -87,7 +95,20 @@ export const GUIDE_COUNTRIES: Record<GuideCountryKey, GuideCountry> = {
     adjective: "US",
     locale: "en-US",
     basePath: "/blog/usa-to-india",
-    slugs: { hub: "", ...sameSlugs(SHARED_TOPICS), "parent-obligations": "us-parent-obligations" },
+    slugs: {
+      hub: "",
+      ...sameSlugs(SHARED_TOPICS),
+      "parent-obligations": "us-parent-obligations",
+      "treaties-hub": "tax-and-social-security-treaties",
+      "treaties-faq": "tax-and-social-security-treaties/faq",
+      "india-dtaa": "tax-and-social-security-treaties/india-us-dtaa-guide",
+      "dtaa-withholding-rates": "tax-and-social-security-treaties/dtaa-withholding-rates",
+      "epf-international-workers": "tax-and-social-security-treaties/epf-international-workers",
+      "expat-tax-residency": "tax-and-social-security-treaties/expat-tax-residency-india-us",
+      "social-security-agreement": "tax-and-social-security-treaties/social-security-us-expats-india",
+      "treaty-benefits-documents": "tax-and-social-security-treaties/treaty-benefits-documents",
+      "home-social-security": "tax-and-social-security-treaties/us-social-security-for-americans-in-india",
+    },
   },
   australia: {
     name: "Australia",
