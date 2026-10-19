@@ -9,6 +9,7 @@ const indiaEntryLinks = [
   { label: "Branch Office", href: "/branch-office-registration" },
   { label: "US Companies", href: "/blog/usa-to-india" },
   { label: "Australian Companies", href: "/blog/australia-to-india" },
+  { label: "UK Companies", href: "/blog/uk-to-india" },
 ]
 
 const serviceLinks = [

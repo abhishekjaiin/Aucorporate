@@ -213,6 +213,67 @@ export const COUNTRY_CONTEXT: Record<GuideCountryKey, Partial<Record<GuideTopic,
       "Assuming the India-Australia trade agreement relaxes FDI or company law rules: it mainly cuts tariffs on goods.",
     ],
   },
+  uk: {
+    "incorporation-process": [
+      "The UK parent's papers come from Companies House: a certified certificate of incorporation, the articles and a current company profile or certificate of good standing.",
+      "UK documents are notarised where needed and then apostilled by the FCDO Legalisation Office, one process for the whole UK, with e-apostilles available.",
+      "India is 4.5 hours ahead of the UK in summer and 5.5 hours in winter, so most filings and bank calls fit inside a UK morning.",
+    ],
+    "subsidiary-vs-branch-vs-liaison-office-vs-llp": [
+      "Dividends from an Indian subsidiary usually fall within the UK distribution exemption (Part 9A, Corporation Tax Act 2009), which is one reason most UK groups choose a subsidiary.",
+      "A branch is part of the UK company itself, so its Indian profits sit in the UK company's corporation tax return unless the company elects for the foreign branch exemption.",
+      "The UK does not share a land border with India, so Press Note 3's prior-approval rule does not apply to a UK investor, unless a beneficial owner is from a land-border country.",
+    ],
+    "documents-and-apostille": [
+      "Companies House documents and notarised papers are apostilled by the FCDO Legalisation Office, online for e-apostilles or by post for paper ones.",
+      "Use the exact name and company number from the Companies House register on every Indian form.",
+      "Allow for the notary appointment, Companies House copy times and the FCDO turnaround when you set the incorporation timetable.",
+    ],
+    "funding-fema-fc-gpr": [
+      "The parent remits sterling (or another currency), and the Indian bank converts it and issues the foreign inward remittance certificate. Shares are priced in rupees, so allow an exchange-rate buffer.",
+      "Press Note 3 does not apply to UK investors, so most sectors stay on the Automatic Route, unless a beneficial owner is from a country sharing a land border with India.",
+    ],
+    "repatriating-profits": [
+      "The India-UK treaty caps Indian tax at 10% on dividends (15% only for certain property investment vehicles), 15% on interest (10% for banks), and 15% on royalties and technical fees (10% for equipment).",
+      "Most dividends are exempt in the UK under the distribution exemption, so the Indian tax on them is generally a final cost rather than a credit.",
+      "Claim treaty rates with an HMRC certificate of residence that covers the payment date, plus Form 41 (previously Form 10F).",
+    ],
+    "transfer-pricing": [
+      "The same transaction is tested on both sides: by India under its arm's length rules and by HMRC under Part 4 of the Taxation (International and Other Provisions) Act 2010, so align the method and margin in both files.",
+      "Most UK groups close their year on 31 March, like India, so the Indian and UK transfer pricing years usually line up.",
+    ],
+    "compliance-calendar": [
+      "Most UK groups also close on 31 March, so the Indian audit, the UK consolidation and the Companies House and corporation tax dates can run as one timetable.",
+      "A private UK company files its accounts at Companies House within 9 months of the year end, so a 31 March group needs the audited Indian accounts well before 31 December.",
+    ],
+    "contracts-and-arbitration": [
+      "The UK is a reciprocating territory under Section 44A of the Code of Civil Procedure, so a money judgment of a UK superior court can be filed for execution in India, subject to the statutory exceptions.",
+      "A London-seated arbitration, such as under the LCIA rules, produces an award that can be enforced in India under the New York Convention.",
+    ],
+    "restructuring-and-exit": [
+      "On a sale of the Indian subsidiary, the UK substantial shareholding exemption may exempt the UK parent's gain, while India can still tax it under its own law.",
+      "A transfer of shares between the UK parent and an Indian resident is reported in Form FC-TRS within 60 days and must meet FEMA pricing rules.",
+    ],
+    "expat-visa": [
+      "Since the India-UK trade agreement came into force on 15 July 2026, an intra-corporate transferee can be posted to India for up to three years, with limited renewal.",
+      "The India-UK Double Contributions Convention lets a temporary assignee stay in UK National Insurance, with a certificate of coverage, instead of paying Indian provident fund as well.",
+      "A stay longer than 180 days on an Employment Visa requires FRRO registration within 14 days of arrival.",
+    ],
+    "hiring-and-payroll": [
+      "There is no UK-style statutory redundancy or TUPE in India: termination follows the contract, notice and the labour codes, and gratuity becomes payable after five years of service.",
+      "A UK handbook is a useful base, but notice, benefits, IP, restrictive covenants and termination terms must be rebuilt under Indian law.",
+      "India's working afternoon overlaps with the UK morning, so most roles can work standard Indian hours.",
+    ],
+    "common-mistakes": [
+      "Assuming India has UK GDPR adequacy: transfers to an Indian subsidiary need the International Data Transfer Agreement or the UK Addendum.",
+      "Using an HMRC certificate of residence that does not cover the payment date when claiming treaty rates.",
+      "Copying English employment terms into Indian contracts without rebuilding notice, termination and restrictive covenants.",
+    ],
+    "foreign-employee-treaty-ssa": [
+      "Under Article 16 of the India-UK treaty, a UK employee is exempt from Indian tax for up to 183 days in the Indian tax year if a UK employer pays and no Indian entity bears the cost.",
+      "The India-UK Double Contributions Convention has been in force since 15 July 2026: with a certificate of coverage, a temporary assignee pays UK National Insurance instead of Indian provident fund.",
+    ],
+  },
 }
 
 /** Country facts shown as a profile table on each country's hub page. */
@@ -237,6 +298,19 @@ export const COUNTRY_PROFILE: Record<GuideCountryKey, [string, string][]> = {
     ["Parent's financial year", "30 June, against India's 31 March"],
     ["Time difference", "India is 4.5 to 5.5 hours behind Australian east coast time"],
     ["Trade agreement", "India-Australia ECTA, in force since 29 December 2022 (goods tariffs; FDI rules unchanged)"],
+    ["FDI route", "Automatic Route in most sectors; Press Note 3 does not apply"],
+  ],
+  uk: [
+    ["Tax treaty", "India-UK DTAA (1993): 10% on dividends (15% for certain property vehicles), 15% on interest (10% for banks), 15% on royalties and technical fees (10% for equipment)"],
+    ["Service permanent establishment", "A 90-day services test, much shorter than in many treaties"],
+    ["Tax residency certificate", "HMRC certificate of residence, with Form 41 (previously Form 10F)"],
+    ["Social security agreement", "India-UK Double Contributions Convention, in force since 15 July 2026: a certificate of coverage keeps temporary assignees in their home scheme"],
+    ["Apostille", "FCDO Legalisation Office, one UK process, with e-apostilles available"],
+    ["Parent's financial year", "Usually 31 March, the same as India"],
+    ["Time difference", "India is 4.5 hours ahead of the UK in summer and 5.5 hours in winter"],
+    ["Court judgments", "The UK is a reciprocating territory under Section 44A CPC: UK superior court money judgments can be executed in India"],
+    ["Trade agreement", "India-UK CETA, in force since 15 July 2026"],
+    ["Data transfers", "No UK adequacy for India: use the International Data Transfer Agreement or the UK Addendum"],
     ["FDI route", "Automatic Route in most sectors; Press Note 3 does not apply"],
   ],
 }
