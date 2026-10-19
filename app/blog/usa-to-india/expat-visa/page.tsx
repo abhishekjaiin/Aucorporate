@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/expat-visa"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -46,6 +46,9 @@ const relatedCards = [
   { title: "The India-US Tax Treaty and Permanent Establishment Risk for US Companies", desc: "How the India-US tax treaty applies to payments to your US parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk.", href: "/blog/usa-to-india/dtaa-pe-risk" },
   { title: "US Parent Obligations When You Own an Indian Subsidiary", desc: "US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams.", href: "/blog/usa-to-india/us-parent-obligations" },
   { title: "Employer of Record vs. Subsidiary in India: When to Use Each", desc: "Compare an Employer of Record with your own Indian subsidiary: speed, control, compliance, tax presence and when to convert. A guide for US companies.", href: "/blog/usa-to-india/eor-vs-subsidiary" },
+  { title: "Tax Residency for US Expats in India: Residency Tests, Treaty Tie-Breaker and Double Tax Relief", desc: "Which country taxes a US expat in India: Indian residency tests, US worldwide tax, the treaty tie-breaker, foreign tax credit and exclusion.", href: "/blog/usa-to-india/tax-and-social-security-treaties/expat-tax-residency-india-us" },
+  { title: "Social Security for US Expats in India: Is There a US-India Totalization Agreement?", desc: "Is there a US-India social security agreement? What applies to a US expat in India: provident fund, US FICA, double coverage and planning.", href: "/blog/usa-to-india/tax-and-social-security-treaties/social-security-us-expats-india" },
+  { title: "EPF for International Workers in India: What US Expats and Their Employers Must Know", desc: "How Indian provident fund applies to foreign nationals: international worker rules, no wage ceiling, withdrawal, court rulings and the 2026 EPF Scheme.", href: "/blog/usa-to-india/tax-and-social-security-treaties/epf-international-workers" },
 ]
 
 export default function ExpatVisaPage() {
@@ -57,7 +60,7 @@ export default function ExpatVisaPage() {
         description="How to relocate a US executive to India: employment visa, FRRO registration, housing, banking, tax residency and permanent establishment risk for the parent."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -113,7 +116,7 @@ export default function ExpatVisaPage() {
         </div>
 
         <h2 id="structure" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Decide the assignment structure</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -157,6 +160,7 @@ export default function ExpatVisaPage() {
           worldwide income, with credits for tax paid in India. The India-US tax treaty can help, and your US
           adviser should model the position for each person.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           India and the US do not have a social security agreement. A foreign worker in India can therefore be
           required to contribute to provident fund, in addition to US social security obligations that your US
@@ -164,26 +168,20 @@ export default function ExpatVisaPage() {
         </p>
 
         <h2 id="housing" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Housing, banking and local registrations</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Short-term serviced accommodation or a leased home, with a proper rental agreement.</li>
           <li>A resident bank account once the visa and registrations are in place.</li>
           <li>Mobile, utilities and address proof, which are needed for most local registrations.</li>
         </ul>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
-          <li>Before sending anyone, review whether the assignment creates a permanent establishment, for example
-            if the executive negotiates or concludes contracts for the US company. See{" "}
-            <Link href="/blog/usa-to-india/dtaa-pe-risk" className="text-blue-800 font-semibold hover:underline">tax treaty and PE risk</Link>.
-          </li>
-          <li>If the parent recharges salary to the subsidiary, document it in an agreement and include it in
-            transfer pricing. See{" "}
-            <Link href="/blog/usa-to-india/transfer-pricing" className="text-blue-800 font-semibold hover:underline">transfer pricing</Link>.
-          </li>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Before sending anyone, review whether the assignment creates a permanent establishment, for example if the executive negotiates or concludes contracts for the US company. See <Link href="/blog/usa-to-india/dtaa-pe-risk" className="text-blue-800 font-semibold hover:underline">tax treaty and PE risk</Link>.</li>
+          <li>If the parent recharges salary to the subsidiary, document it in an agreement and include it in transfer pricing. See <Link href="/blog/usa-to-india/transfer-pricing" className="text-blue-800 font-semibold hover:underline">transfer pricing</Link>.</li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
-        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
           <li>Sending an executive on a business visa to work.</li>
           <li>Missing the FRRO registration for a long stay.</li>
           <li>Not tracking days in India, which decides tax residency.</li>
@@ -191,10 +189,20 @@ export default function ExpatVisaPage() {
           <li>Skipping the permanent establishment review.</li>
         </ul>
 
-        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
-          We handle visas, accommodation, bank account operations and tax filings for expats of foreign companies.
+        <p className="text-gray-600 leading-relaxed mb-10">
+          See also: Tax and social security for expats:{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/expat-tax-residency-india-us" className="text-blue-800 font-semibold hover:underline">tax residency for US expats</Link>,{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/social-security-us-expats-india" className="text-blue-800 font-semibold hover:underline">social security for US expats in India</Link>{" "}
+          and{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/epf-international-workers" className="text-blue-800 font-semibold hover:underline">EPF for international workers</Link>.
         </p>
+
+        <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
+        <p className="text-gray-600 leading-relaxed mb-4">
+          We handle visas, accommodation, bank account operations and tax filings for expats of foreign
+          companies.
+        </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/hr-services" className="text-blue-800 font-semibold hover:underline">HR and payroll</Link>
@@ -206,7 +214,8 @@ export default function ExpatVisaPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -215,7 +224,12 @@ export default function ExpatVisaPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -238,9 +252,10 @@ export default function ExpatVisaPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

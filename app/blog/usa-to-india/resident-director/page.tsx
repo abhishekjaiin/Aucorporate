@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/resident-director"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -56,7 +56,7 @@ export default function ResidentDirectorPage() {
         description="Every Indian company needs a Resident Director who has stayed in India 182 days in the financial year. Who qualifies, options for US parents, and duties."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -76,9 +76,9 @@ export default function ResidentDirectorPage() {
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
           Every company in India must have at least one director who has stayed in India for 182 days or more in
-          the financial year. A private limited company also needs at least two directors in total. Directors can
-          be foreign nationals, but at least one must meet the residency test, so plan this before filing the
-          incorporation.
+          the financial year. A private limited company also needs at least two directors in total. Directors
+          can be foreign nationals, but at least one must meet the residency test, so plan this before filing
+          the incorporation.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -115,31 +115,24 @@ export default function ResidentDirectorPage() {
 
         <h2 id="rule" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The rule</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          The Companies Act, 2013 requires every company to have at least one director who has stayed in India for
-          a total of at least 182 days in the financial year (1 April to 31 March). For a newly incorporated
-          company, the requirement applies proportionately for the year in which it is incorporated. The director
-          does not have to be an Indian citizen, but must satisfy the stay requirement.
+          The Companies Act, 2013 requires every company to have at least one director who has stayed in India
+          for a total of at least 182 days in the financial year (1 April to 31 March). For a newly incorporated
+          company, the requirement applies proportionately for the year in which it is incorporated. The
+          director does not have to be an Indian citizen, but must satisfy the stay requirement.
         </p>
 
         <h2 id="options" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Options for a US parent</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
-          <li><strong>An existing executive who is based in India or will relocate.</strong> Best where you plan to
-            station a country head in India.
-          </li>
-          <li><strong>A senior local hire.</strong> Many US companies hire a country manager who becomes the
-            Resident Director.
-          </li>
-          <li><strong>A professional Resident Director.</strong> An independent person who serves as director for
-            a fee, used where no executive will be resident yet. Understand that this person carries statutory
-            duties and liabilities and will want protections such as indemnity and clear reserved matters.
-          </li>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li><strong>An existing executive who is based in India or will relocate.</strong> Best where you plan to station a country head in India.</li>
+          <li><strong>A senior local hire.</strong> Many US companies hire a country manager who becomes the Resident Director.</li>
+          <li><strong>A professional Resident Director.</strong> An independent person who serves as director for a fee, used where no executive will be resident yet. Understand that this person carries statutory duties and liabilities and will want protections such as indemnity and clear reserved matters.</li>
         </ul>
 
         <h2 id="control" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Keeping control as the parent</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          The parent appoints and removes directors as shareholder. Reserved matters that need parent approval can
-          be written into the Articles or an intercompany agreement. The Resident Director still owes duties to
-          the Indian company and must act in its interest, so decisions and approvals should be documented
+          The parent appoints and removes directors as shareholder. Reserved matters that need parent approval
+          can be written into the Articles or an intercompany agreement. The Resident Director still owes duties
+          to the Indian company and must act in its interest, so decisions and approvals should be documented
           properly.
         </p>
 
@@ -151,10 +144,8 @@ export default function ResidentDirectorPage() {
         </p>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
-          <li>Decide who will be the Resident Director before the incorporation filing. If it is a professional
-            director, agree the scope of authority, indemnity and the reporting line to your US team in writing.
-          </li>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Decide who will be the Resident Director before the incorporation filing. If it is a professional director, agree the scope of authority, indemnity and the reporting line to your US team in writing.</li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
@@ -162,15 +153,14 @@ export default function ResidentDirectorPage() {
           <li>Treating the Resident Director as a formality and not documenting authority and indemnity.</li>
           <li>Leaving the choice until after name and document preparation, which delays the filing.</li>
           <li>Assuming a foreign executive who visits India occasionally will meet the 182-day test.</li>
-          <li>Appointing a person who is also a director in many unrelated companies without understanding their
-            liability exposure.
-          </li>
+          <li>Appointing a person who is also a director in many unrelated companies without understanding their liability exposure.</li>
         </ul>
 
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
+        <p className="text-gray-600 leading-relaxed mb-4">
           We can advise on the choice and, where needed, arrange a professional Resident Director.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/india-business-setup/company-formation" className="text-blue-800 font-semibold hover:underline">India business setup</Link>
@@ -182,7 +172,8 @@ export default function ResidentDirectorPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -191,7 +182,12 @@ export default function ResidentDirectorPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -212,9 +208,10 @@ export default function ResidentDirectorPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

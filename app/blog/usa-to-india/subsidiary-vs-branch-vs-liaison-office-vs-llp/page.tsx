@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -46,7 +46,7 @@ const faqs = [
 
 const relatedCards = [
   { title: "Incorporation Process for a US-Owned Indian Subsidiary, Step by Step", desc: "The eight steps to incorporate a wholly owned subsidiary in India from the USA: forms, order of steps, typical 4 to 6 week timeline and first 90 days.", href: "/blog/usa-to-india/incorporation-process" },
-  { title: "Resident Director Rules for an Indian Subsidiary: Who Can Be One and How to Plan", desc: "Every Indian company needs a resident director who has stayed in India 182 days in the financial year. Who qualifies, options for US parents, and duties.", href: "/blog/usa-to-india/resident-director" },
+  { title: "Resident Director Rules for an Indian Subsidiary: Who Can Be One and How to Plan", desc: "Every Indian company needs a Resident Director who has stayed in India 182 days in the financial year. Who qualifies, options for US parents, and duties.", href: "/blog/usa-to-india/resident-director" },
   { title: "Employer of Record vs. Subsidiary in India: When to Use Each", desc: "Compare an Employer of Record with your own Indian subsidiary: speed, control, compliance, tax presence and when to convert. A guide for US companies.", href: "/blog/usa-to-india/eor-vs-subsidiary" },
   { title: "US Parent Obligations When You Own an Indian Subsidiary", desc: "US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams.", href: "/blog/usa-to-india/us-parent-obligations" },
 ]
@@ -60,7 +60,7 @@ export default function SubsidiaryVsBranchVsLiaisonOfficeVsLlpPage() {
         description="Compare the four ways a US company can enter India: wholly owned subsidiary, branch office, liaison office and LLP. Activities, approvals, tax and control."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -79,10 +79,10 @@ export default function SubsidiaryVsBranchVsLiaisonOfficeVsLlpPage() {
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
-          Most US companies choose a wholly owned subsidiary, a private limited company, because it is a separate
-          legal entity that can carry on full business, limits the parent&apos;s liability and is taxed as an
-          Indian company. A branch office is an extension of the US company with restricted activities, a liaison
-          office cannot earn revenue, and an LLP suits narrower cases.
+          Most US companies choose a wholly owned subsidiary, a private limited company, because it is a
+          separate legal entity that can carry on full business, limits the parent&apos;s liability and is taxed
+          as an Indian company. A branch office is an extension of the US company with restricted activities, a
+          liaison office cannot earn revenue, and an LLP suits narrower cases.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -116,7 +116,7 @@ export default function SubsidiaryVsBranchVsLiaisonOfficeVsLlpPage() {
         </div>
 
         <h2 id="compare" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The four structures compared</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -158,6 +158,7 @@ export default function SubsidiaryVsBranchVsLiaisonOfficeVsLlpPage() {
           shareholders, which in a wholly owned subsidiary are usually the US parent and a nominee holding one
           share. It must keep statutory books, have its accounts audited every year and file annual returns.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Foreign ownership of up to 100% is allowed in most sectors under the Automatic Route. See the{" "}
           <Link href="/blog/usa-to-india/incorporation-process" className="text-blue-800 font-semibold hover:underline">step-by-step incorporation process</Link>{" "}
@@ -169,51 +170,45 @@ export default function SubsidiaryVsBranchVsLiaisonOfficeVsLlpPage() {
         <p className="text-gray-600 leading-relaxed mb-4">
           A branch office carries on specified activities of the parent in India, such as export and import,
           professional or consultancy services, research work in which the parent is engaged, IT and software
-          services, and technical support for products the parent supplies. It needs RBI approval, usually applied
-          for through an authorized dealer bank, and its activities are limited to those approved.
+          services, and technical support for products the parent supplies. It needs RBI approval, usually
+          applied for through an authorized dealer bank, and its activities are limited to those approved.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Because a branch is not a separate entity, the US company is directly liable for it, and its India
-          profits are taxed at the rate for foreign companies. Branches are usually chosen where the parent wants
-          to perform a defined activity without a separate company.
+          profits are taxed at the rate for foreign companies. Branches are usually chosen where the parent
+          wants to perform a defined activity without a separate company.
         </p>
 
         <h2 id="liaison" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Liaison office</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
           A liaison office represents the parent in India and passes information between the parent and Indian
-          parties. It cannot undertake commercial activity or earn income, and its expenses are met by remittances
-          from the parent. It also needs RBI approval. If your plan includes invoicing customers, hiring a sales
-          team to close deals, or delivering services, a liaison office will not be enough.
+          parties. It cannot undertake commercial activity or earn income, and its expenses are met by
+          remittances from the parent. It also needs RBI approval. If your plan includes invoicing customers,
+          hiring a sales team to close deals, or delivering services, a liaison office will not be enough.
         </p>
 
-        <h2 id="llp" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Limited Liability Partnership (LLP)</h2>
+        <h2 id="LLP" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Limited Liability Partnership (LLP)</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
           An LLP is a separate legal entity with partners&apos; liability limited to their contribution. Foreign
           investment in LLPs is permitted only in sectors where 100% foreign ownership is allowed under the
-          Automatic Route and there are no performance conditions linked to the investment. For US parents, an LLP
-          is less common because the US tax treatment of the interest and the lack of share-based instruments can
-          complicate funding and exit. Confirm the US classification with your US tax adviser before choosing it.
+          Automatic Route and there are no performance conditions linked to the investment. For US parents, an
+          LLP is less common because the US tax treatment of the interest and the lack of share-based
+          instruments can complicate funding and exit. Confirm the US classification with your US tax adviser
+          before choosing it.
         </p>
 
         <h2 id="choose" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How to choose</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li><strong>Choose a subsidiary</strong> if you will hire a team, sign contracts, invoice customers, hold assets or plan to grow in India. This covers most US companies.</li>
           <li><strong>Choose a branch office</strong> if the US company itself wants to perform a defined, permitted activity and you accept direct liability and foreign-company taxation.</li>
           <li><strong>Choose a liaison office</strong> only for representation, market research or relationship building with no revenue.</li>
-          <li><strong>Start with an Employer of Record</strong> if you want to hire quickly, test the market and decide later. See{" "}
-            <Link href="/blog/usa-to-india/eor-vs-subsidiary" className="text-blue-800 font-semibold hover:underline">EOR vs. subsidiary</Link>.
-          </li>
+          <li><strong>Start with an Employer of Record</strong> if you want to hire quickly, test the market and decide later. See <Link href="/blog/usa-to-india/eor-vs-subsidiary" className="text-blue-800 font-semibold hover:underline">EOR vs. subsidiary</Link>.</li>
         </ul>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
-          <li>Your US tax adviser should confirm how each Indian structure is classified for US tax and what
-            reporting it creates, for example Form 5471 for an Indian company. See{" "}
-            <Link href="/blog/usa-to-india/us-parent-obligations" className="text-blue-800 font-semibold hover:underline">US parent obligations</Link>.
-            A branch or an unplanned presence of US staff can also create a taxable presence in India for the
-            parent. See{" "}
-            <Link href="/blog/usa-to-india/dtaa-pe-risk" className="text-blue-800 font-semibold hover:underline">tax treaty and PE risk</Link>.
-          </li>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Your US tax adviser should confirm how each Indian structure is classified for US tax and what reporting it creates, for example Form 5471 for an Indian company. See <Link href="/blog/usa-to-india/us-parent-obligations" className="text-blue-800 font-semibold hover:underline">US parent obligations</Link>. A branch or an unplanned presence of US staff can also create a taxable presence in India for the parent. See <Link href="/blog/usa-to-india/dtaa-pe-risk" className="text-blue-800 font-semibold hover:underline">tax treaty and PE risk</Link>.</li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
@@ -225,9 +220,10 @@ export default function SubsidiaryVsBranchVsLiaisonOfficeVsLlpPage() {
         </ul>
 
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
+        <p className="text-gray-600 leading-relaxed mb-4">
           We advise on structure, incorporate the Indian entity and handle the RBI and MCA filings.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/india-business-setup/company-formation" className="text-blue-800 font-semibold hover:underline">India business setup</Link>
@@ -239,7 +235,8 @@ export default function SubsidiaryVsBranchVsLiaisonOfficeVsLlpPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -248,7 +245,12 @@ export default function SubsidiaryVsBranchVsLiaisonOfficeVsLlpPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -271,9 +273,10 @@ export default function SubsidiaryVsBranchVsLiaisonOfficeVsLlpPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

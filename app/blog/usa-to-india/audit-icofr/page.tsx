@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/audit-icofr"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -57,7 +57,7 @@ export default function AuditIcofrPage() {
         description="Statutory audit, tax audit, GST audit and internal controls over financial reporting for an Indian subsidiary of a US group. What to expect and how to prepare."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -77,9 +77,9 @@ export default function AuditIcofrPage() {
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
           An Indian subsidiary must have its financial statements audited each year by an independent Chartered
-          Accountant. Depending on size and activity, it may also need a tax audit, GST audit and internal audit. If
-          your US group is listed or follows SOX, the subsidiary is usually part of your internal controls over
-          financial reporting (ICOFR) scope as well.
+          Accountant. Depending on size and activity, it may also need a tax audit, GST audit and internal
+          audit. If your US group is listed or follows SOX, the subsidiary is usually part of your internal
+          controls over financial reporting (ICOFR) scope as well.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -116,7 +116,7 @@ export default function AuditIcofrPage() {
         </div>
 
         <h2 id="types" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The audits an Indian subsidiary may face</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -152,18 +152,20 @@ export default function AuditIcofrPage() {
           <li>Board approves the accounts and the AGM adopts them.</li>
           <li>File Form AOC-4 and Form MGT-7 with the Registrar.</li>
         </ol>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Indian subsidiaries report under Indian accounting standards. Your US group may also need a US GAAP or
           IFRS reporting package, which we prepare from the Indian books.
         </p>
 
-        <h2 id="icofr" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Internal controls over financial reporting</h2>
+        <h2 id="ICOFR" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Internal controls over financial reporting</h2>
         <p className="text-gray-600 leading-relaxed mb-4">
-          A US-listed parent must assess controls over financial reporting for material subsidiaries. For an Indian
-          subsidiary this usually means documenting key processes (payroll, procure-to-pay, revenue, close), testing
-          the controls and fixing gaps. India has its own requirement for internal financial controls to be reported
-          by the Auditor of the company.
+          A US-listed parent must assess controls over financial reporting for material subsidiaries. For an
+          Indian subsidiary this usually means documenting key processes (payroll, procure-to-pay, revenue,
+          close), testing the controls and fixing gaps. India has its own requirement for internal financial
+          controls to be reported by the Auditor of the company.
         </p>
+
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Define the processes and risks in scope with your US controllers.</li>
           <li>Segregate duties among preparation, approval and payment.</li>
@@ -194,10 +196,11 @@ export default function AuditIcofrPage() {
         </ul>
 
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
-          We support audits and assurance: statutory and tax audit coordination, internal audit, ICOFR and reporting
-          packages for US groups.
+        <p className="text-gray-600 leading-relaxed mb-4">
+          We support audits and assurance: statutory and tax audit coordination, internal audit, ICOFR and
+          reporting packages for US groups.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/services/accounting-assurance" className="text-blue-800 font-semibold hover:underline">Accounting and assurance</Link>
@@ -209,7 +212,8 @@ export default function AuditIcofrPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -218,7 +222,12 @@ export default function AuditIcofrPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -241,9 +250,10 @@ export default function AuditIcofrPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

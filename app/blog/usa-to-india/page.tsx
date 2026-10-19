@@ -27,6 +27,7 @@ const toc = [
   { id: "cost", label: "What it costs and how long it takes" },
   { id: "mistakes", label: "Six mistakes US companies make when setting up in India" },
   { id: "beyond", label: "Beyond setup: audit, disputes, contracts and restructuring" },
+  { id: "treaties", label: "India-US tax treaty and social security for US expats" },
   { id: "series", label: "The full guide series" },
   { id: "help", label: "How AU Corporate can help" },
   { id: "faq", label: "Frequently asked questions" },
@@ -44,17 +45,11 @@ const seriesCards = [
   { title: "EOR vs. subsidiary in India", desc: "When to use each, and how to convert.", href: "/blog/usa-to-india/eor-vs-subsidiary" },
   { title: "Transfer pricing for US parents", desc: "Form 48, benchmarking and audits.", href: "/blog/usa-to-india/transfer-pricing" },
   { title: "Tax treaty and PE risk", desc: "DTAA, withholding and permanent establishment.", href: "/blog/usa-to-india/dtaa-pe-risk" },
+  { title: "India-US tax treaty and social security", desc: "Treaty rates, expat tax, EPF and FICA.", href: "/blog/usa-to-india/tax-and-social-security-treaties" },
   { title: "US parent obligations", desc: "Form 5471, FBAR and other US-side reporting.", href: "/blog/usa-to-india/us-parent-obligations" },
   { title: "Annual compliance calendar", desc: "Every filing, owner and deadline.", href: "/blog/usa-to-india/compliance-calendar" },
-  { title: "Statutory, internal and ICOFR audit", desc: "For US-listed parents and their Auditors.", href: "/blog/usa-to-india/audit-icofr" },
-  { title: "Tax notices and disputes", desc: "Before the TPO, DRP and ITAT.", href: "/blog/usa-to-india/tax-notices-and-litigation" },
-  { title: "Intercompany agreements, arbitration and litigation", desc: "Protecting your contracts in India.", href: "/blog/usa-to-india/contracts-and-arbitration" },
-  { title: "ESOPs for Indian employees of a US parent", desc: "Granting, taxing and reporting ESOPs.", href: "/blog/usa-to-india/esop" },
-  { title: "Restructuring, mergers and exit", desc: "Scale, reorganize or close the entity.", href: "/blog/usa-to-india/restructuring-and-exit" },
-  { title: "Sending US executives to India", desc: "Visa, housing and tax for expats.", href: "/blog/usa-to-india/expat-visa" },
-  { title: "Common mistakes US companies make", desc: "Avoidable errors, and how to avoid them.", href: "/blog/usa-to-india/common-mistakes" },
-  { title: "Hiring and payroll in India", desc: "Employment contracts, PF, ESI and payroll compliance.", href: "/blog/usa-to-india/hiring-and-payroll" },
-  { title: "100 FAQs on setting up an India subsidiary", desc: "From pre-incorporation to closure.", href: "/blog/usa-to-india/faq" },
+  { title: "216 FAQs on setting up an India subsidiary", desc: "From pre-incorporation to closure.", href: "/blog/usa-to-india/faq" },
+  { title: "Treaty and social security FAQs", desc: "50 answers on the DTAA, expat tax, EPF and FICA.", href: "/blog/usa-to-india/tax-and-social-security-treaties/faq" },
 ]
 
 const faqs = [
@@ -72,6 +67,7 @@ const faqs = [
   { q: "Can US executives be directors of the Indian subsidiary?", a: "US executives can be directors of the Indian subsidiary. Foreign nationals can be directors once they obtain a digital signature and a Director Identification Number, but at least one director must be a resident of India. Directors carry statutory duties and liabilities, so they should be chosen with that in mind." },
   { q: "What is the cost of incorporating a subsidiary company in India?", a: "The cost of incorporating a subsidiary in India has three parts: government fees (MCA filing fees and state stamp duty, which depend on the authorized capital and the state), the cost of notarizing and apostilling US documents, and professional fees. AU Corporate's indicative setup fee is USD 750 to USD 1,000 for share capital up to ₹10 lakh (about USD 10,300). Annual running costs are additional." },
   { q: "Is a statutory audit mandatory for an Indian subsidiary?", a: "A statutory audit is mandatory for every company in India under Section 139 of the Companies Act, 2013, irrespective of turnover. The first Auditor is appointed by the board within 30 days of incorporation (Section 139(6)), and later Auditors are appointed by shareholders." },
+  { q: "Is there a US-India social security (totalization) agreement?", a: "We are not aware of a US-India totalization agreement in force as of October 2026, so a US expat in India can owe both Indian provident fund and US Social Security tax. The India-US tax treaty does not cover social security taxes. See the treaty and social security guide for how to plan." },
 ]
 
 export default function UsaToIndiaHubPage() {
@@ -85,7 +81,12 @@ export default function UsaToIndiaHubPage() {
         dateModified="2026-10-14"
       />
 
-      <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "How to Set Up a Subsidiary in India from the USA" }]} />
+      <Breadcrumb
+        items={[
+          { label: "Blog", href: "/blog" },
+          { label: "How to Set Up a Subsidiary in India from the USA" },
+        ]}
+      />
 
       <GuideHero
         eyebrow="Guide for US companies"
@@ -96,23 +97,29 @@ export default function UsaToIndiaHubPage() {
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="The short answer">
-          A US company can own up to 100% of an Indian subsidiary in most sectors without prior government approval
-          (the Automatic Route). The usual vehicle is a private limited company, incorporated through the MCA&apos;s
-          SPICe+ form, funded by share capital, and reported to the RBI within 30 days of share allotment. At least
-          one director must be a resident of India.
+          A US company can own up to 100% of an Indian subsidiary in most sectors without prior government
+          approval (the Automatic Route). The usual vehicle is a private limited company, incorporated through
+          the MCA&apos;s SPICe+ form, funded by share capital, and reported to the RBI within 30 days of share
+          allotment. At least one director must be a resident of India.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
 
         <p className="text-gray-600 leading-relaxed mb-10">
-          This guide is for US founders, CFOs and COOs deciding how to enter India. It explains the structure, the
-          process, the flow of money, tax, and the compliance an Indian subsidiary carries every year, in plain
-          terms and with the form names your advisers will use. Each section links to a deeper guide.
+          This guide is for US founders, CFOs and COOs deciding how to enter India. It explains the structure,
+          the process, the flow of money, tax, and the compliance an Indian subsidiary carries every year, in
+          plain terms and with the form names your advisers will use. Each section links to a deeper guide.
         </p>
 
         <h2 id="at-a-glance" className="text-2xl font-bold text-gray-900 mt-12 mb-4">India subsidiary at a glance</h2>
         <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
+            <thead className="bg-[#081a42] text-white">
+              <tr>
+                <th scope="col" className="border border-gray-300 p-3 text-left">Item</th>
+                <th scope="col" className="border border-gray-300 p-3 text-left">What to know</th>
+              </tr>
+            </thead>
             <tbody>
               {[
                 ["Typical structure", "Wholly owned subsidiary incorporated as a private limited company under the Companies Act, 2013"],
@@ -126,10 +133,10 @@ export default function UsaToIndiaHubPage() {
                 ["RBI reporting", "Form FC-GPR within 30 days of allotting shares to the US parent, filed on the RBI's FIRMS portal"],
                 ["Annual obligations", "Statutory audit, ROC filings, income tax return, GST and Withholding Tax where applicable, payroll compliance, the FLA return to the RBI, and transfer pricing reporting where applicable"],
                 ["Governing laws", "Companies Act, 2013; FEMA, 1999 and the Non-Debt Instruments Rules, 2019; Consolidated FDI Policy; Income-tax Act, 2025 (replacing the Income-tax Act, 1961 from 1 April 2026) and GST law"],
-              ].map(([k, v]) => (
-                <tr key={k} className="odd:bg-secondary/30">
-                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold text-[#081a42] w-1/3 align-top">{k}</th>
-                  <td className="border border-gray-300 p-3 align-top">{v}</td>
+              ].map((row, i) => (
+                <tr key={row[0]} className={i % 2 === 1 ? "bg-gray-50" : undefined}>
+                  <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">{row[0]}</th>
+                  <td className="border border-gray-300 p-3">{row[1]}</td>
                 </tr>
               ))}
             </tbody>
@@ -144,6 +151,7 @@ export default function UsaToIndiaHubPage() {
           entity, can carry on full business operations, limits the parent&apos;s liability and is taxed as a
           domestic company. Branch offices, liaison offices and LLPs exist but suit narrower situations.
         </GuideAnswerBox>
+
         <div className="overflow-x-auto mb-6">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
@@ -155,7 +163,7 @@ export default function UsaToIndiaHubPage() {
             </thead>
             <tbody>
               {[
-                ["Wholly owned subsidiary (private limited)", "Operations, sales, development centers, global capability centers", "Two directors (one resident), annual audit and ROC compliance"],
+                ["Wholly owned subsidiary (private limited)", "Operations, sales, development centers, Global Capability Centers", "Two directors (one resident), annual audit and ROC compliance"],
                 ["Branch office", "Specific activities of the parent, such as export and import, consultancy, R&D or IT services", "Needs RBI approval; acts as an extension of the US company and is taxed as a foreign company"],
                 ["Liaison office", "Market research and liaison with no revenue", "Cannot earn income or invoice; costs are funded from abroad; needs RBI approval"],
                 ["LLP", "Certain partnership-style set-ups", "FDI allowed only in eligible sectors; US tax treatment can be complex, so check with your US adviser"],
@@ -170,20 +178,20 @@ export default function UsaToIndiaHubPage() {
             </tbody>
           </table>
         </div>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Not sure which fits? Read the full comparison:{" "}
-          <Link href="/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp" className="text-blue-800 font-semibold hover:underline">
-            Subsidiary vs. branch vs. liaison office vs. LLP
-          </Link>.
+          <Link href="/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp" className="text-blue-800 font-semibold hover:underline">Subsidiary vs. branch vs. liaison office vs. LLP</Link>.
         </p>
 
         <h2 id="steps" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How to incorporate an Indian subsidiary, step by step</h2>
         <GuideAnswerBox>
-          Incorporation takes eight steps: confirm FDI eligibility, prepare apostilled US documents, obtain digital
-          signatures, file SPICe+, open a bank account, transfer the funds for share capital, allot shares and
-          report to the RBI, then begin formal operations. The longest delays usually come from US document
-          apostille.
+          Incorporation takes eight steps: confirm FDI eligibility, prepare apostilled US documents, obtain
+          digital signatures, file SPICe+, open a bank account, transfer the funds for share capital, allot
+          shares and report to the RBI, then begin formal operations. The longest delays usually come from US
+          document apostille.
         </GuideAnswerBox>
+
         <ol className="list-decimal pl-6 space-y-3 text-gray-700 mb-4">
           <li><strong>Confirm FDI eligibility.</strong> Check your business activity against the FDI Policy. Most services and technology activities are on the Automatic Route; some sectors have caps or conditions.</li>
           <li><strong>Prepare the US parent&apos;s documents.</strong> Typically the Certificate of Incorporation and good standing, a board resolution authorizing the investment and signatories, and identity and address proofs of the directors and authorized signatory. US documents are usually notarized and apostilled before use in India.</li>
@@ -194,6 +202,7 @@ export default function UsaToIndiaHubPage() {
           <li><strong>Allot shares and report to the RBI.</strong> Shares must be allotted within 60 days of receiving the funds, otherwise the money must be refunded. Form FC-GPR is filed within 30 days of allotment, with a valuation certificate and a Company Secretary&apos;s certificate.</li>
           <li><strong>Commence business.</strong> File Form INC-20A (declaration of commencement) within 180 days of incorporation, appoint the first Statutory Auditor, and complete the GST, payroll and other registrations that apply to you.</li>
         </ol>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           <strong>Typical end-to-end timeline: 4 to 6 weeks</strong> from receipt of complete documents. Deeper
           guides:{" "}
@@ -204,17 +213,19 @@ export default function UsaToIndiaHubPage() {
 
         <h2 id="money" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How money moves between the US parent and the Indian subsidiary</h2>
         <GuideAnswerBox>
-          The US parent invests by subscribing to shares, or convertible instruments, in the Indian company through
-          banking channels. Each investment is reported to the RBI under FEMA, with the share price supported by a
-          valuation. Money returns to the US as dividends, service fees, royalties or loan repayments, each with its
-          own tax and compliance steps.
+          The US parent invests by subscribing to shares, or convertible instruments, in the Indian company
+          through banking channels. Each investment is reported to the RBI under FEMA, with the share price
+          supported by a valuation. Money returns to the US as dividends, service fees, royalties or loan
+          repayments, each with its own tax and compliance steps.
         </GuideAnswerBox>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
+
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
           <li><strong>Going in:</strong> equity shares are the most common route. Convertible preference shares, convertible debentures and external commercial borrowings have their own rules. Shares issued to a non-resident cannot be priced below fair value, certified by an eligible professional.</li>
           <li><strong>Reporting:</strong> Form FC-GPR for share issues, within 30 days of allotment, and the annual FLA return (due by 15 July) for foreign assets and liabilities.</li>
           <li><strong>Coming out:</strong> dividends, which attract Withholding Tax; service fees and royalties, which are subject to transfer pricing and Withholding Tax; and loan repayments under ECB rules. Remittances abroad typically need Form 145 (previously Form 15CA) and, where required, a Chartered Accountant&apos;s Form 146 (previously Form 15CB).</li>
-          <li><strong>Treaty relief:</strong> the India-US tax treaty (DTAA) can reduce withholding rates, subject to conditions such as a US tax residency certificate.</li>
+          <li><strong>Treaty relief:</strong> the <Link href="/blog/usa-to-india/tax-and-social-security-treaties" className="text-blue-800 font-semibold hover:underline">India-US tax treaty (DTAA)</Link> can reduce withholding rates, subject to conditions such as a US Tax Residency Certificate.</li>
         </ul>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related guides:{" "}
           <Link href="/blog/usa-to-india/funding-fema-fc-gpr" className="text-blue-800 font-semibold hover:underline">Funding and FC-GPR</Link>,{" "}
@@ -224,18 +235,20 @@ export default function UsaToIndiaHubPage() {
 
         <h2 id="tax" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Tax and transfer pricing: what the US parent should know</h2>
         <GuideAnswerBox>
-          An Indian subsidiary pays Indian tax on its Indian profits. Any transaction between it and the US parent,
-          such as service fees, royalties, cost sharing or loans, must be priced at arm&apos;s length and
-          documented. This is called transfer pricing, and it is one of the most reviewed areas in Indian tax
-          audits.
+          An Indian subsidiary pays Indian tax on its Indian profits. Any transaction between it and the US
+          parent, such as service fees, royalties, cost sharing or loans, must be priced at arm&apos;s length
+          and documented. This is called transfer pricing, and it is one of the most reviewed areas in Indian
+          tax audits.
         </GuideAnswerBox>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
-          <li><strong>Transfer pricing documentation:</strong> where international transactions with associated enterprises exist, the company needs a transfer pricing study and a chartered accountant&apos;s report in Form 48 (previously Form 3CEB) under Section 172 of the Income-tax Act, 2025 (previously Section 92E of the Income-tax Act, 1961). Arm&apos;s length pricing itself is governed by Section 161 (previously Section 92).</li>
+
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
+          <li><strong>Transfer pricing documentation:</strong> where international transactions with associated enterprises exist, the company needs a transfer pricing study and a Chartered Accountant&apos;s report in Form 48 (previously Form 3CEB) under Section 172 of the Income-tax Act, 2025 (previously Section 92E of the Income-tax Act, 1961). Arm&apos;s length pricing itself is governed by Section 161 (previously Section 92).</li>
           <li><strong>Withholding Tax:</strong> payments to the US parent may attract Withholding Tax under Section 393 of the Income-tax Act, 2025 (previously Section 195 of the Income-tax Act, 1961), which the treaty can reduce.</li>
           <li><strong>Permanent establishment (PE) risk:</strong> US employees working in India, or contracts negotiated by the parent&apos;s staff, can create a taxable presence for the US company. Structure and agreements matter.</li>
           <li><strong>GST:</strong> services provided to the US parent can qualify as zero-rated exports if the conditions are met, but registration, invoicing and refund rules must be followed.</li>
           <li><strong>US-side reporting:</strong> a US company that owns a foreign subsidiary may have US filings such as Form 5471. Our India team coordinates with your US CPA, who confirms the US position.</li>
         </ul>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related guides:{" "}
           <Link href="/blog/usa-to-india/transfer-pricing" className="text-blue-800 font-semibold hover:underline">Transfer pricing</Link>,{" "}
@@ -245,11 +258,12 @@ export default function UsaToIndiaHubPage() {
 
         <h2 id="compliance" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Annual compliance: what an Indian subsidiary files</h2>
         <GuideAnswerBox>
-          An Indian subsidiary has monthly, quarterly and annual filings across the Ministry of Corporate Affairs,
-          the income tax and GST authorities, the RBI and labour law agencies. Missing a deadline usually triggers
-          late fees or penalties, and some defaults also affect the directors.
+          An Indian subsidiary has monthly, quarterly and annual filings across the Ministry of Corporate
+          Affairs, the income tax and GST authorities, the RBI and labour law agencies. Missing a deadline
+          usually triggers late fees or penalties, and some defaults also affect the directors.
         </GuideAnswerBox>
-        <div className="overflow-x-auto mb-4">
+
+        <div className="overflow-x-auto mb-6">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -285,12 +299,15 @@ export default function UsaToIndiaHubPage() {
             </tbody>
           </table>
         </div>
+
         <div className="bg-secondary/40 border-l-4 border-blue-800 rounded-lg p-4 mb-4 text-sm text-gray-700">
-          <strong>Note on the new tax law.</strong> The Income-tax Act, 2025 and the Income-tax Rules, 2026 apply
-          from 1 April 2026 (tax year 2026-27 onward). This guide gives the new form and section names, with the
-          earlier names under the Income-tax Act, 1961 in brackets. Returns and reports for earlier years still
-          follow the 1961 Act and its old forms. Dates and form applicability should be confirmed each year.
+          <strong>Note on the new tax law.</strong> The Income-tax Act, 2025 and the Income-tax Rules, 2026
+          apply from 1 April 2026 (tax year 2026-27 onward). This guide gives the new form and section names,
+          with the earlier names under the Income-tax Act, 1961 in brackets. Returns and reports for earlier
+          years still follow the 1961 Act and its old forms. Dates and form applicability should be confirmed
+          each year.
         </div>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           The complete, maintained version of this table is in our{" "}
           <Link href="/blog/usa-to-india/compliance-calendar" className="text-blue-800 font-semibold hover:underline">Annual compliance calendar</Link>.
@@ -298,15 +315,18 @@ export default function UsaToIndiaHubPage() {
 
         <h2 id="hiring" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Hiring in India: your own subsidiary or an Employer of Record?</h2>
         <GuideAnswerBox>
-          An Employer of Record (EOR) legally employs your team in India on your behalf, so you can hire without an
-          entity. A subsidiary gives you full control, a local contracting vehicle and a base for long-term growth.
-          Many US companies start with an EOR and convert to a subsidiary once the team or investment grows.
+          An Employer of Record (EOR) legally employs your team in India on your behalf, so you can hire without
+          an entity. A subsidiary gives you full control, a local contracting vehicle and a base for long-term
+          growth. Many US companies start with an EOR and convert to a subsidiary once the team or investment
+          grows.
         </GuideAnswerBox>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
+
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
           <li><strong>Choose an EOR when</strong> you want to start within weeks, are testing the market, or need a handful of hires.</li>
           <li><strong>Choose a subsidiary when</strong> you plan a larger team, need to sign contracts or hold assets in India, or want direct control over employment terms and IP.</li>
           <li><strong>Either way,</strong> employment brings statutory obligations: provident fund, ESI, gratuity, professional tax, state establishment rules and India&apos;s labour codes.</li>
         </ul>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related guides:{" "}
           <Link href="/blog/usa-to-india/eor-vs-subsidiary" className="text-blue-800 font-semibold hover:underline">EOR vs. subsidiary</Link>{" "}
@@ -317,27 +337,30 @@ export default function UsaToIndiaHubPage() {
         <h2 id="cost" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What it costs and how long it takes</h2>
         <GuideAnswerBox>
           Total cost has two parts: one-time setup (government fees, stamp duty, professional fees, registered
-          office) and recurring running cost (accounting, audit, tax and payroll compliance, plus any resident
-          director or office arrangement). The timeline depends mainly on how quickly the US documents are
+          office) and recurring running cost (accounting, audit, tax and payroll compliance, plus any Resident
+          Director or office arrangement). The timeline depends mainly on how quickly the US documents are
           apostilled.
         </GuideAnswerBox>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-4">
+
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
           <li><strong>One-time:</strong> MCA and stamp duty (varies by state and authorized capital), professional fees, digital signatures, registered office set-up and bank charges.</li>
           <li><strong>Recurring:</strong> accounting and bookkeeping, statutory audit, GST, Withholding Tax and income tax filings, payroll, RBI filings, and any Resident Director or virtual office service.</li>
           <li><strong>Variable:</strong> transfer pricing documentation, tax notices, ESOPs, valuation and legal work as the entity grows.</li>
         </ul>
-        <p className="text-gray-600 leading-relaxed mb-6">
-          <strong>Indicative setup fee:</strong> AU Corporate&apos;s fee for setting up the subsidiary is USD 750 to
-          USD 1,000 for share capital up to ₹10 lakh (about USD 10,300 at ₹96.77 per US dollar on 7 October
-          2026). The final quote depends on your structure, state and scope of services.
+
+        <p className="text-gray-600 leading-relaxed mb-4">
+          <strong>Indicative setup fee:</strong> AU Corporate&apos;s fee for setting up the subsidiary is USD
+          750 to USD 1,000 for share capital up to ₹10 lakh (about USD 10,300 at ₹96.77 per US dollar on 7
+          October 2026). The final quote depends on your structure, state and scope of services.
         </p>
+
         <div className="flex flex-wrap gap-4 items-center justify-between bg-[#fffbe6] border border-gold-dark rounded-xl p-5 mb-10">
           <div>
             <strong className="block text-gray-900">Get a costing for your plan</strong>
             <p className="text-sm text-gray-600 mt-0.5">Tell us what you plan to set up and we will prepare a costing and book a call to walk you through it.</p>
           </div>
           <InquiryTrigger className="inline-block rounded-lg bg-gold px-5 py-2.5 text-sm font-bold text-[#081a42] hover:bg-gold-dark transition-colors whitespace-nowrap">
-            Discuss your costing
+            Discuss your costing with our team
           </InquiryTrigger>
         </div>
 
@@ -350,6 +373,7 @@ export default function UsaToIndiaHubPage() {
           <li><strong>Overlooking the Resident Director rule.</strong> Plan it before filing, not after.</li>
           <li><strong>Posting staff or negotiating contracts from the US without a PE review.</strong> Check the permanent establishment position before seconding executives.</li>
         </ol>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           More detail:{" "}
           <Link href="/blog/usa-to-india/common-mistakes" className="text-blue-800 font-semibold hover:underline">Common mistakes</Link>.
@@ -357,9 +381,10 @@ export default function UsaToIndiaHubPage() {
 
         <h2 id="beyond" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Beyond setup: audit, disputes, contracts and restructuring</h2>
         <p className="text-gray-600 leading-relaxed mb-4">
-          An Indian subsidiary needs support well after incorporation. These guides cover what US parents usually
-          ask about next.
+          An Indian subsidiary needs support well after incorporation. These guides cover what US parents
+          usually ask about next.
         </p>
+
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li><Link href="/blog/usa-to-india/audit-icofr" className="text-blue-800 font-semibold hover:underline">Statutory, internal and ICOFR audit</Link> for US-listed parents and their Auditors</li>
           <li><Link href="/blog/usa-to-india/tax-notices-and-litigation" className="text-blue-800 font-semibold hover:underline">Tax notices and disputes</Link> before the TPO, DRP and ITAT</li>
@@ -370,29 +395,50 @@ export default function UsaToIndiaHubPage() {
           <li><Link href="/blog/usa-to-india/global-vat" className="text-blue-800 font-semibold hover:underline">Global VAT for SaaS and AI companies</Link></li>
         </ul>
 
+        <h2 id="treaties" className="text-2xl font-bold text-gray-900 mt-12 mb-4">India-US tax treaty and social security for US expats</h2>
+        <p className="text-gray-600 leading-relaxed mb-4">
+          Two separate systems decide what a US company and its people pay in India. The India-US tax treaty
+          (DTAA) can reduce Withholding Tax on dividends, interest, royalties and fees paid to the US parent.
+          Social security works differently: we are not aware of a US-India totalization agreement in force, so
+          a US expat can owe both Indian provident fund and US Social Security tax.
+        </p>
+
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li><Link href="/blog/usa-to-india/tax-and-social-security-treaties" className="text-blue-800 font-semibold hover:underline">India-US tax treaty and social security: the complete guide</Link></li>
+          <li><Link href="/blog/usa-to-india/tax-and-social-security-treaties/india-us-dtaa-guide" className="text-blue-800 font-semibold hover:underline">The India-US Tax Treaty (DTAA) Explained</Link></li>
+          <li><Link href="/blog/usa-to-india/tax-and-social-security-treaties/dtaa-withholding-rates" className="text-blue-800 font-semibold hover:underline">India-US DTAA Withholding Tax Rates</Link></li>
+          <li><Link href="/blog/usa-to-india/tax-and-social-security-treaties/treaty-benefits-documents" className="text-blue-800 font-semibold hover:underline">How to Claim India-US Treaty Benefits</Link></li>
+          <li><Link href="/blog/usa-to-india/tax-and-social-security-treaties/expat-tax-residency-india-us" className="text-blue-800 font-semibold hover:underline">Tax Residency for US Expats in India</Link></li>
+          <li><Link href="/blog/usa-to-india/tax-and-social-security-treaties/social-security-us-expats-india" className="text-blue-800 font-semibold hover:underline">Social Security for US Expats in India</Link></li>
+          <li><Link href="/blog/usa-to-india/tax-and-social-security-treaties/epf-international-workers" className="text-blue-800 font-semibold hover:underline">EPF for International Workers in India</Link></li>
+          <li><Link href="/blog/usa-to-india/tax-and-social-security-treaties/us-social-security-for-americans-in-india" className="text-blue-800 font-semibold hover:underline">US Social Security and FICA for Americans Working in India</Link></li>
+          <li><Link href="/blog/usa-to-india/tax-and-social-security-treaties/faq" className="text-blue-800 font-semibold hover:underline">Treaty and social security FAQs</Link></li>
+        </ul>
+
         <h2 id="series" className="text-2xl font-bold text-gray-900 mt-12 mb-6">The full guide series</h2>
         <div className="mb-10">
           <GuideRelatedCards cards={seriesCards} />
         </div>
 
         <h2 id="help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate can help</h2>
-        <p className="text-gray-600 leading-relaxed mb-6">
+        <p className="text-gray-600 leading-relaxed mb-4">
           AU Corporate is a New Delhi-based advisory firm, established in 2016, that supports foreign companies
           across the India lifecycle. One team covers every stage below, so your US team deals with one point of
           contact.
         </p>
+
         <div className="grid sm:grid-cols-2 gap-4 mb-6">
           {[
-            { n: "1", title: "Set up", desc: "Choose the right structure and incorporate your Indian entity.", chips: ["Entity structuring", "Wholly owned subsidiary", "Branch and liaison office", "SPICe+ incorporation", "MCA compliance"], href: "/india-business-setup/company-formation" },
-            { n: "2", title: "Fund and FEMA", desc: "Bring capital in legally and report it to the RBI.", chips: ["FEMA", "RBI reporting", "FC-GPR", "Share valuation", "ESOP valuation"] },
-            { n: "3", title: "Operate", desc: "Keep books, payroll and indirect taxes in order every month, for India and for the US parent.", chips: ["Accounting", "GST", "Withholding Tax", "Payroll", "Monthly MIS"], href: "/services/accounting-assurance" },
-            { n: "4", title: "People and expats", desc: "Hire, pay and relocate your team.", chips: ["Employer of Record (EOR)", "HR services", "Payroll compliance", "Expat visa", "Expat tax filings"], href: "/hr-services" },
-            { n: "5", title: "Repatriate funds", desc: "Move money back to the US parent, with the paperwork and tax position in order.", chips: ["Forms 145 and 146", "DTAA treaty relief", "Withholding Tax", "Dividends and royalties"], highlight: true },
-            { n: "6", title: "Tax and transfer pricing", desc: "Keep the group's India tax position defensible.", chips: ["Direct and indirect tax", "Transfer pricing", "Form 48", "International taxation"], href: "/services/taxation-regulatory" },
-            { n: "7", title: "Audit and assurance", desc: "Satisfy Indian law and your US Auditors.", chips: ["Statutory audit", "Internal audit", "ICOFR audit", "GST and income tax audit"], href: "/services/accounting-assurance" },
-            { n: "8", title: "Legal, disputes and arbitration", desc: "Defend your position and protect your contracts.", chips: ["Tax litigation (TPO, DRP, ITAT)", "Arbitration", "Court litigation", "Agreement drafting"], href: "/arbitration-services" },
-            { n: "9", title: "Restructure and grow", desc: "Scale, reorganize or exit.", chips: ["Business restructuring", "M&A", "Due diligence", "Exit and winding up"], href: "/services/transaction-advisory" },
-            { n: "10", title: "Beyond India", desc: "Indirect tax for digital businesses worldwide.", chips: ["Global VAT", "SaaS and AI companies", "100+ jurisdictions"], href: "/blog/usa-to-india/global-vat" },
+            { n: "1", title: "Set up", desc: "Choose the right structure and incorporate your Indian entity.", chips: ["Entity structuring", "Wholly owned subsidiary", "Branch and liaison office", "SPICe+ incorporation", "MCA compliance", "Business strategy", "Bank account support"], href: "/india-business-setup/company-formation" },
+            { n: "2", title: "Fund and FEMA", desc: "Bring capital in legally and report it to the RBI.", chips: ["FEMA", "RBI reporting", "FC-GPR", "Share capital", "Share valuation", "Capital increase", "ESOP valuation"] },
+            { n: "3", title: "Operate", desc: "Keep books, payroll and indirect taxes in order every month, for India and for the US parent.", chips: ["Accounting and bookkeeping", "Tally", "Busy", "QuickBooks", "Xero", "GST", "Withholding Tax", "Payroll", "Monthly MIS", "US-parent reporting"], href: "/services/accounting-assurance" },
+            { n: "4", title: "People and expats", desc: "Hire, pay and relocate your team.", chips: ["Employer of Record (EOR)", "HR services", "Payroll compliance", "Expat visa", "Accommodation", "Expat tax filings", "Expat social security", "Bank account operations"], href: "/hr-services" },
+            { n: "5", title: "Repatriate funds", desc: "Move money back to the US parent, with the paperwork and tax position in order.", chips: ["Form 145 and Form 146 (previously Form 15CA and 15CB)", "DTAA treaty relief", "Withholding Tax", "Dividends", "Royalties and service fees", "Contract with the US parent", "Transfer pricing alignment"], highlight: true },
+            { n: "6", title: "Tax and transfer pricing", desc: "Keep the group's India tax position defensible.", chips: ["Direct tax", "Indirect tax", "Transfer pricing", "International taxation", "Tax treaty (DTAA) relief", "Form 48 (previously Form 3CEB)", "Tax advisory", "CbCR filing (parent-prepared report)"], href: "/services/taxation-regulatory" },
+            { n: "7", title: "Audit and assurance", desc: "Satisfy Indian law and your US Auditors.", chips: ["Statutory audit", "Internal audit", "ICOFR audit", "Companies Act audit", "GST audit", "Income tax audit", "Certifications"], href: "/services/accounting-assurance" },
+            { n: "8", title: "Legal, disputes and arbitration", desc: "Defend your position and protect your contracts.", chips: ["Tax litigation (TPO, DRP, ITAT)", "Arbitration, from claims to expert witness", "Court litigation", "Agreement drafting and vetting", "In-house legal team"], href: "/arbitration-services" },
+            { n: "9", title: "Restructure and grow", desc: "Scale, reorganize or exit.", chips: ["Business restructuring", "Mergers and acquisitions", "Due diligence", "Business valuation", "Strategy advisory", "Exit and winding up"], href: "/services/transaction-advisory" },
+            { n: "10", title: "Beyond India", desc: "Indirect tax for digital businesses worldwide.", chips: ["Global VAT", "SaaS and AI companies", "100+ jurisdictions"] },
           ].map((stage) => (
             <div key={stage.n} className={`relative rounded-xl border p-5 bg-white ${stage.highlight ? "border-2 border-gold bg-[#fffbe6]" : ""}`}>
               <span className="absolute top-4 right-4 flex h-7 w-7 items-center justify-center rounded-full bg-[#081a42] text-gold text-xs font-bold">{stage.n}</span>
@@ -409,9 +455,10 @@ export default function UsaToIndiaHubPage() {
             </div>
           ))}
         </div>
-        <p className="text-sm text-gray-500 mb-10">
-          <strong>Scope note:</strong> we file Country-by-Country Reports (CbCR) in India when the global report has
-          been prepared by the parent group. We do not prepare the global CbCR report itself.
+
+        <p className="text-gray-600 leading-relaxed mb-10">
+          <strong>Scope note:</strong> we file Country-by-Country Reports (CbCR) in India when the global report
+          has been prepared by the parent group. We do not prepare the global CbCR report itself.
         </p>
 
         <h2 id="official-sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Official sources</h2>
@@ -420,7 +467,8 @@ export default function UsaToIndiaHubPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -429,7 +477,12 @@ export default function UsaToIndiaHubPage() {
         />
 
         <h2 id="faq" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 questions"
+          seeAllDescription="Plain-English answers from pre-incorporation to closure, repatriation, ESOPs, capital increases, sale of business and mergers."
+        />
 
         <h2 id="sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Sources and how this page is maintained</h2>
         <GuideSources
@@ -444,9 +497,10 @@ export default function UsaToIndiaHubPage() {
         />
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

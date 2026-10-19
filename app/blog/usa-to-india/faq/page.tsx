@@ -9,7 +9,7 @@ import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/faq"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "cost-time-and-tax", label: "Cost, time and tax: the questions every CFO asks first" },
@@ -41,10 +41,10 @@ const toc = [
   { id: "restructuring-and-exit", label: "Restructuring, Mergers and Exit for an Indian Subsidiary" },
   { id: "share-valuation", label: "Share Valuation for Foreign Investment in India" },
   { id: "subsidiary-vs-branch-vs-liaison-office-vs-llp", label: "Subsidiary vs Branch vs Liaison Office vs LLP in India" },
-  { id: "tax-notices-and-litigation", label: "Handling Indian Tax Notices and Disputes for a US-Owned Subsidiary" },
+  { id: "tax-notices-and-litigation", label: "Handling Indian Tax Notices for a US-Owned Subsidiary" },
   { id: "transfer-pricing", label: "Transfer Pricing in India for US-Owned Subsidiaries" },
-  { id: "us-parent-obligations", label: "US Parent Reporting for an Indian Subsidiary: 5471, FBAR and More" },
-  { id: "esop", label: "ESOPs for Indian Employees of a US Parent Company" },
+  { id: "us-parent-obligations", label: "US Reporting for an Indian Subsidiary: Form 5471, FBAR" },
+  { id: "esop", label: "More on ESOPs for Indian Employees of a US Parent Company" },
 ]
 
 type FaqItem = { n: number; id: string; q: string; a: string }
@@ -442,8 +442,8 @@ const faqGroups: FaqGroup[] = [
   },
   {
     id: "tax-notices-and-litigation",
-    label: "Handling Indian Tax Notices and Disputes for a US-Owned Subsidiary",
-    readMore: { href: "/blog/usa-to-india/tax-notices-and-litigation", label: "Read the full guide: Handling Indian Tax Notices and Disputes for a US-Owned Subsidiary" },
+    label: "Handling Indian Tax Notices for a US-Owned Subsidiary",
+    readMore: { href: "/blog/usa-to-india/tax-notices-and-litigation", label: "Read the full guide: Handling Indian Tax Notices for a US-Owned Subsidiary" },
     items: [
       { n: 198, id: "what-is-the-mutual-agreement-procedure", q: "What is the Mutual Agreement Procedure?", a: "A treaty process in which the Indian and US tax authorities resolve a double taxation case." },
       { n: 199, id: "what-should-be-done-first-on-getting-a-tax-notice", q: "What should be done first on getting a tax notice?", a: "On getting a tax notice, the deadline should be noted, the notice sent to the tax adviser the same day and the supporting records collected." },
@@ -468,8 +468,8 @@ const faqGroups: FaqGroup[] = [
   },
   {
     id: "us-parent-obligations",
-    label: "US Parent Reporting for an Indian Subsidiary: 5471, FBAR and More",
-    readMore: { href: "/blog/usa-to-india/us-parent-obligations", label: "Read the full guide: US Parent Reporting for an Indian Subsidiary: 5471, FBAR and More" },
+    label: "US Reporting for an Indian Subsidiary: Form 5471, FBAR",
+    readMore: { href: "/blog/usa-to-india/us-parent-obligations", label: "Read the full guide: US Reporting for an Indian Subsidiary: Form 5471, FBAR" },
     items: [
       { n: 210, id: "does-a-us-company-have-to-report-its-indian-subsidiary-to-th", q: "Does a US company have to report its Indian subsidiary to the IRS?", a: "A US company generally has to report its Indian subsidiary to the IRS, commonly on Form 5471 under Section 6038 of the Internal Revenue Code, filed with the US tax return. This should be confirmed with a US CPA." },
       { n: 211, id: "will-the-indian-financial-year-cause-problems", q: "Will the Indian financial year cause problems?", a: "The Indian financial year needs planning, because the Indian year ends 31 March and a US parent often reports on a different year-end. A reporting bridge solves this." },
@@ -480,7 +480,7 @@ const faqGroups: FaqGroup[] = [
   },
   {
     id: "esop",
-    label: "ESOPs for Indian Employees of a US Parent Company",
+    label: "More on ESOPs for Indian Employees of a US Parent Company",
     readMore: { href: "/blog/usa-to-india/esop", label: "Read the full guide: ESOPs for Indian Employees of a US Parent Company" },
     items: [
       { n: 215, id: "how-is-an-esop-taxed-for-employees-in-india", q: "How is an ESOP taxed for employees in India?", a: "An Indian employee is taxed on ESOP shares twice: as salary on the fair market value at exercise less the exercise price (for RSUs, at vesting), with tax withheld by the employer, and as capital gains on sale, where the long-term rate is 12.5% for shares held more than 24 months. Employees must disclose foreign shares in Schedule FA and can claim foreign tax credit using Form 67." },
@@ -510,7 +510,7 @@ export default function UsaToIndiaFaqPage() {
         description="216 plain answers for US companies: incorporation, FEMA, tax, hiring, compliance, repatriation, ESOPs, M&A and closing an Indian subsidiary."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -535,19 +535,24 @@ export default function UsaToIndiaFaqPage() {
         </p>
 
         <GuideAnswerBox title="How to use this page">
-          These are the questions US companies ask, in the order they usually arise: from deciding on India, through
-          incorporation, funding, hiring, tax and compliance, to repatriating funds, growing, selling, and closing
-          the subsidiary. Each answer is short; the{" "}
-          <Link href="/blog/usa-to-india" className="font-semibold underline">
-            complete guide
-          </Link>{" "}
+          These are the questions US companies ask, in the order they usually arise: from deciding on India,
+          through incorporation, funding, hiring, tax and compliance, to repatriating funds, growing, selling,
+          and closing the subsidiary. Each answer is short; the{" "}
+          <Link href="/blog/usa-to-india" className="text-blue-800 font-semibold hover:underline">complete guide</Link>{" "}
           explains the process in depth.
         </GuideAnswerBox>
 
         <p className="text-gray-600 leading-relaxed mb-8">
-          Indian tax law changed on 1 April 2026: the Income-tax Act, 2025 and Income-tax Rules, 2026 replace the
-          1961 Act. Where a form or section has a new name, we give the new name with the earlier one in brackets.
-          General information only; confirm current requirements before acting.
+          Indian tax law changed on 1 April 2026: the Income-tax Act, 2025 and Income-tax Rules, 2026 replace
+          the 1961 Act. Where a form or section has a new name, we give the new name with the earlier one in
+          brackets. General information only; confirm current requirements before acting.
+        </p>
+
+        <p className="text-gray-600 leading-relaxed mb-8">
+          Looking for the tax treaty or social security for US expats? See the dedicated{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/faq" className="text-blue-800 font-semibold hover:underline">treaty and social security FAQs</Link>{" "}
+          and the{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties" className="text-blue-800 font-semibold hover:underline">complete treaty guide</Link>.
         </p>
 
         <GuideTOC items={toc} />
@@ -590,9 +595,10 @@ export default function UsaToIndiaFaqPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

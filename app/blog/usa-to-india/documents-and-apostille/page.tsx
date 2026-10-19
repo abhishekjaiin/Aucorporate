@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/documents-and-apostille"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -57,7 +57,7 @@ export default function DocumentsAndApostillePage() {
         description="Which documents a US parent must prepare to incorporate an Indian subsidiary, and how notarization and apostille work for US state and federal documents."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -77,9 +77,9 @@ export default function DocumentsAndApostillePage() {
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
           A US parent typically provides its Certificate of Incorporation and good standing, a board resolution,
-          charter documents and identity and address proofs of its signatory and directors. These foreign documents
-          are notarized and apostilled before use in India. Apostille preparation is usually the longest part of
-          the timeline, so start it first.
+          charter documents and identity and address proofs of its signatory and directors. These foreign
+          documents are notarized and apostilled before use in India. Apostille preparation is usually the
+          longest part of the timeline, so start it first.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -115,7 +115,7 @@ export default function DocumentsAndApostillePage() {
         </div>
 
         <h2 id="list" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Document checklist</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -145,19 +145,19 @@ export default function DocumentsAndApostillePage() {
 
         <h2 id="sequence" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Notarize first, then apostille</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          An apostille is a certificate under the Hague Convention that confirms the authenticity of the signature,
-          seal or stamp on a public document, so that it is valid in another member country. For a private
-          document, such as a board resolution, the sequence is: sign before a notary, then have the notary&apos;s
-          authority apostilled by the Secretary of State of the state where the notary is commissioned. For a
-          certificate issued by the state, the Secretary of State issues the apostille directly. Federal documents
-          are apostilled by the US Department of State.
+          An apostille is a certificate under the Hague Convention that confirms the authenticity of the
+          signature, seal or stamp on a public document, so that it is valid in another member country. For a
+          private document, such as a board resolution, the sequence is: sign before a notary, then have the
+          notary&apos;s authority apostilled by the Secretary of State of the state where the notary is
+          commissioned. For a certificate issued by the state, the Secretary of State issues the apostille
+          directly. Federal documents are apostilled by the US Department of State.
         </p>
 
         <h2 id="states" className="text-2xl font-bold text-gray-900 mt-12 mb-4">State differences</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
           Processing times, fees, mail-in or online options and expedited services differ by state. Some states
-          issue electronic apostilles, and acceptance of electronic versions varies. We confirm the format Indian
-          authorities will accept before you order, so you do not repeat the process.
+          issue electronic apostilles, and acceptance of electronic versions varies. We confirm the format
+          Indian authorities will accept before you order, so you do not repeat the process.
         </p>
 
         <h2 id="tips" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Practical tips</h2>
@@ -183,10 +183,11 @@ export default function DocumentsAndApostillePage() {
         </ul>
 
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
-          We give you a checklist and drafts for your entity type, and advise on the format Indian authorities will
-          accept.
+        <p className="text-gray-600 leading-relaxed mb-4">
+          We give you a checklist and drafts for your entity type, and advise on the format Indian authorities
+          will accept.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/india-business-setup/company-formation" className="text-blue-800 font-semibold hover:underline">India business setup</Link>
@@ -198,7 +199,8 @@ export default function DocumentsAndApostillePage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -207,7 +209,12 @@ export default function DocumentsAndApostillePage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -230,9 +237,10 @@ export default function DocumentsAndApostillePage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

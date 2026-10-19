@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/incorporation-process"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -57,7 +57,7 @@ export default function IncorporationProcessPage() {
         description="The eight steps to incorporate a wholly owned subsidiary in India from the USA: forms, order of steps, typical 4 to 6 week timeline and first 90 days."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -77,9 +77,9 @@ export default function IncorporationProcessPage() {
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
           Incorporating an Indian subsidiary takes eight steps: confirm FDI eligibility, prepare apostilled US
-          documents, obtain digital signatures, file SPICe+ with the MCA, open the bank account, transfer the funds
-          for share capital, allot shares and report to the RBI, then begin operations. The typical timeline is 4 to
-          6 weeks from receipt of complete documents.
+          documents, obtain digital signatures, file SPICe+ with the MCA, open the bank account, transfer the
+          funds for share capital, allot shares and report to the RBI, then begin operations. The typical
+          timeline is 4 to 6 weeks from receipt of complete documents.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -99,10 +99,10 @@ export default function IncorporationProcessPage() {
               {[
                 ["Typical timeline", "4 to 6 weeks from receipt of complete documents"],
                 ["Main incorporation form", "SPICe+ (with the Memorandum and Articles of Association)"],
-                ["Registrations through SPICe+", "PAN, TAN, and, where applied for, GST, EPFO, ESIC and a bank account"],
                 ["MCA fee and name reservation", "Nil for authorized capital up to ₹15 lakh, with slab fees above that; name reservation costs ₹1,000 for up to two names; PAN and TAN are issued through SPICe+"],
                 ["Stamp duty", "A state levy on the Memorandum and Articles; for example ₹1,010 in Rajasthan and ₹620 in Gujarat at ₹1 lakh of authorized capital"],
                 ["MCA processing time", "Typically 7 to 15 working days from digital signatures to the Certificate of Incorporation; the overall 4 to 6 weeks includes apostilled documents, the bank account and FEMA steps"],
+                ["Registrations through SPICe+", "PAN, TAN, and, where applied for, GST, EPFO, ESIC and a bank account"],
                 ["RBI report", "Form FC-GPR within 30 days of share allotment"],
                 ["Commencement", "Form INC-20A within 180 days of incorporation"],
                 ["First Auditor", "Appointed by the board within 30 days of incorporation"],
@@ -120,27 +120,21 @@ export default function IncorporationProcessPage() {
         <h2 id="steps" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The eight steps in detail</h2>
         <ol className="list-decimal pl-6 space-y-3 text-gray-700 mb-10">
           <li><strong>Confirm FDI eligibility.</strong> Check your activity against the FDI Policy. Most services and technology activities are on the Automatic Route, which needs no prior approval. Some sectors have caps or conditions.</li>
-          <li><strong>Prepare the US parent&apos;s documents.</strong> Certificate of Incorporation and good standing, board resolution, identity and address proofs, and charter documents, notarized and apostilled. See{" "}
-            <Link href="/blog/usa-to-india/documents-and-apostille" className="text-blue-800 font-semibold hover:underline">documents and apostille</Link>.
-          </li>
+          <li><strong>Prepare the US parent&apos;s documents.</strong> Certificate of Incorporation and good standing, board resolution, identity and address proofs, and charter documents, notarized and apostilled. See <Link href="/blog/usa-to-india/documents-and-apostille" className="text-blue-800 font-semibold hover:underline">documents and apostille</Link>.</li>
           <li><strong>Get digital signatures.</strong> Each proposed director needs a Digital Signature Certificate (DSC) to sign the filings electronically.</li>
-          <li><strong>Reserve the name and file SPICe+.</strong> The name is approved on the MCA portal, and the SPICe+ form is filed with the Memorandum and Articles. A registered office address in India with proof is required. At least one director must be resident in India. See{" "}
-            <Link href="/blog/usa-to-india/resident-director" className="text-blue-800 font-semibold hover:underline">Resident Director rules</Link>.
-          </li>
+          <li><strong>Reserve the name and file SPICe+.</strong> The name is approved on the MCA portal, and the SPICe+ form is filed with the Memorandum and Articles. A registered office address in India with proof is required. At least one director must be resident in India. See <Link href="/blog/usa-to-india/resident-director" className="text-blue-800 font-semibold hover:underline">Resident Director rules</Link>.</li>
           <li><strong>Receive the Certificate of Incorporation.</strong> The MCA issues it with the Corporate Identification Number (CIN), and the company receives its PAN and TAN.</li>
           <li><strong>Open the bank account and transfer the funds for share capital.</strong> The US parent transfers the subscription money by inward remittance through an authorized dealer bank, which issues the foreign inward remittance certificate.</li>
-          <li><strong>Allot shares and report to the RBI.</strong> Allot shares within 60 days of receiving the funds. File Form FC-GPR within 30 days of allotment with a valuation certificate and a Company Secretary&apos;s certificate. See{" "}
-            <Link href="/blog/usa-to-india/funding-fema-fc-gpr" className="text-blue-800 font-semibold hover:underline">funding and FC-GPR</Link>.
-          </li>
+          <li><strong>Allot shares and report to the RBI.</strong> Allot shares within 60 days of receiving the funds. File Form FC-GPR within 30 days of allotment with a valuation certificate and a Company Secretary&apos;s certificate. See <Link href="/blog/usa-to-india/funding-fema-fc-gpr" className="text-blue-800 font-semibold hover:underline">funding and FC-GPR</Link>.</li>
           <li><strong>Commence business.</strong> File Form INC-20A within 180 days, appoint the first Auditor, hold the first board meeting and complete GST, payroll and other registrations that apply.</li>
         </ol>
 
         <h2 id="timeline" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What drives the 4 to 6 weeks</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          The MCA incorporation itself is usually the shortest step once documents are ready. The main variable is
-          how quickly the apostilled US documents are prepared. Name approval and digital signatures run alongside
-          document preparation, so starting them early keeps the timeline within range. Delays most often come from
-          incomplete or incorrectly notarized documents, so a checklist on day one saves time.
+          The MCA incorporation itself is usually the shortest step once documents are ready. The main variable
+          is how quickly the apostilled US documents are prepared. Name approval and digital signatures run
+          alongside document preparation, so starting them early keeps the timeline within range. Delays most
+          often come from incomplete or incorrectly notarized documents, so a checklist on day one saves time.
         </p>
 
         <h2 id="first90" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Your first 90 days after incorporation</h2>
@@ -149,18 +143,14 @@ export default function IncorporationProcessPage() {
           <li>Open the bank account, transfer the share capital, allot the shares and file Form FC-GPR.</li>
           <li>File Form INC-20A once the subscription money is paid.</li>
           <li>Complete GST, provident fund, ESI, professional tax and other registrations that apply to your business.</li>
-          <li>Set up accounting, payroll and a compliance calendar so that every filing has an owner and a date. See the{" "}
-            <Link href="/blog/usa-to-india/compliance-calendar" className="text-blue-800 font-semibold hover:underline">compliance calendar</Link>.
-          </li>
+          <li>Set up accounting, payroll and a compliance calendar so that every filing has an owner and a date. See the <Link href="/blog/usa-to-india/compliance-calendar" className="text-blue-800 font-semibold hover:underline">compliance calendar</Link>.</li>
           <li>Sign the intercompany agreement with the US parent before the first service is delivered.</li>
         </ul>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
-        <p className="text-gray-600 leading-relaxed mb-10">
-          Your US team needs to provide the parent-side documents, a board resolution and one authorized signatory.
-          Everything else can be completed remotely by your India adviser. Plan the intercompany agreement and
-          funding amount in parallel so that no step waits on a decision.
-        </p>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Your US team needs to provide the parent-side documents, a board resolution and one authorized signatory. Everything else can be completed remotely by your India adviser. Plan the intercompany agreement and funding amount in parallel so that no step waits on a decision.</li>
+        </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
@@ -171,10 +161,11 @@ export default function IncorporationProcessPage() {
         </ul>
 
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
-          We prepare and file the incorporation, handle the bank and RBI steps, and set up your compliance calendar
-          from day one.
+        <p className="text-gray-600 leading-relaxed mb-4">
+          We prepare and file the incorporation, handle the bank and RBI steps, and set up your compliance
+          calendar from day one.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/india-business-setup/company-formation" className="text-blue-800 font-semibold hover:underline">India business setup</Link>
@@ -186,7 +177,8 @@ export default function IncorporationProcessPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -195,7 +187,12 @@ export default function IncorporationProcessPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -218,9 +215,10 @@ export default function IncorporationProcessPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

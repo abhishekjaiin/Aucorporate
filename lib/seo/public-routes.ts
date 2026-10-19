@@ -147,6 +147,15 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/usa-to-india/hiring-and-payroll", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
   { path: "/blog/usa-to-india/common-mistakes", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
   { path: "/blog/usa-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/blog/usa-to-india/tax-and-social-security-treaties", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/blog/usa-to-india/tax-and-social-security-treaties/india-us-dtaa-guide", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/blog/usa-to-india/tax-and-social-security-treaties/dtaa-withholding-rates", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/blog/usa-to-india/tax-and-social-security-treaties/treaty-benefits-documents", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/blog/usa-to-india/tax-and-social-security-treaties/expat-tax-residency-india-us", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/blog/usa-to-india/tax-and-social-security-treaties/social-security-us-expats-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/blog/usa-to-india/tax-and-social-security-treaties/epf-international-workers", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/blog/usa-to-india/tax-and-social-security-treaties/us-social-security-for-americans-in-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
+  { path: "/blog/usa-to-india/tax-and-social-security-treaties/faq", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-14" },
 
   // Australia to India guide cluster
   { path: "/blog/australia-to-india", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-15" },

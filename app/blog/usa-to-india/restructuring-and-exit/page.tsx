@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/restructuring-and-exit"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -57,7 +57,7 @@ export default function RestructuringAndExitPage() {
         description="Options to restructure, sell, merge or close an Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation, with tax and RBI steps."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -76,10 +76,10 @@ export default function RestructuringAndExitPage() {
 
       <article className="max-w-4xl mx-auto px-4 py-14">
         <GuideAnswerBox title="Short answer">
-          An Indian subsidiary can be restructured, sold or closed in several ways: a sale of shares, a sale of the
-          business as a going concern (a slump sale), a merger or demerger through a scheme, a buyback or capital
-          reduction, or closure through strike-off or voluntary liquidation. Each route has its own tax, FEMA and
-          Companies Act steps, so choose the route before you invest, not at exit.
+          An Indian subsidiary can be restructured, sold or closed in several ways: a sale of shares, a sale of
+          the business as a going concern (a slump sale), a merger or demerger through a scheme, a buyback or
+          capital reduction, or closure through strike-off or voluntary liquidation. Each route has its own tax,
+          FEMA and Companies Act steps, so choose the route before you invest, not at exit.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -114,7 +114,7 @@ export default function RestructuringAndExitPage() {
         </div>
 
         <h2 id="routes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">The main routes compared</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -145,25 +145,25 @@ export default function RestructuringAndExitPage() {
 
         <h2 id="sale" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Selling the shares</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          A sale of shares by the US parent to an Indian resident or to another non-resident follows FEMA pricing
-          rules, which differ by the direction of the sale, and is reported to the RBI within the prescribed time
-          through the authorized dealer bank. The seller pays capital gains tax in India, subject to the India-US
-          tax treaty. Selling the US parent itself can also create Indian tax under the indirect transfer rules when
-          the parent derives substantial value from India.
+          A sale of shares by the US parent to an Indian resident or to another non-resident follows FEMA
+          pricing rules, which differ by the direction of the sale, and is reported to the RBI within the
+          prescribed time through the authorized dealer bank. The seller pays capital gains tax in India,
+          subject to the India-US tax treaty. Selling the US parent itself can also create Indian tax under the
+          indirect transfer rules when the parent derives substantial value from India.
         </p>
 
         <h2 id="slump" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Selling the business as a going concern</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          In a slump sale the buyer acquires the undertaking, with its assets, liabilities and contracts, for a lump
-          sum. The gain is taxed as capital gains on the net worth transferred. Employees, licences and contracts
-          need to be transferred by agreement, so the deal documents matter.
+          In a slump sale the buyer acquires the undertaking, with its assets, liabilities and contracts, for a
+          lump sum. The gain is taxed as capital gains on the net worth transferred. Employees, licences and
+          contracts need to be transferred by agreement, so the deal documents matter.
         </p>
 
         <h2 id="merger" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mergers and demergers</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          A merger or demerger is carried out through a scheme approved by the tribunal. A simpler fast-track route
-          is available for a merger between a holding company and its wholly owned subsidiary. Cross-border mergers
-          are permitted under FEMA and company-law rules and follow specific conditions.
+          A merger or demerger is carried out through a scheme approved by the tribunal. A simpler fast-track
+          route is available for a merger between a holding company and its wholly owned subsidiary.
+          Cross-border mergers are permitted under FEMA and company-law rules and follow specific conditions.
         </p>
 
         <h2 id="close" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Closing the subsidiary</h2>
@@ -176,13 +176,9 @@ export default function RestructuringAndExitPage() {
         </ol>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
-          <li>The US tax result of a sale, merger or liquidation, including final reporting of the foreign corporation, depends on your structure. Confirm it with your US tax adviser before choosing the route. See{" "}
-            <Link href="/blog/usa-to-india/us-parent-obligations" className="text-blue-800 font-semibold hover:underline">US parent obligations</Link>.
-          </li>
-          <li>For funds returned to the parent, see{" "}
-            <Link href="/blog/usa-to-india/repatriating-profits" className="text-blue-800 font-semibold hover:underline">repatriating profits</Link>.
-          </li>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>The US tax result of a sale, merger or liquidation, including final reporting of the foreign corporation, depends on your structure. Confirm it with your US tax adviser before choosing the route. See <Link href="/blog/usa-to-india/us-parent-obligations" className="text-blue-800 font-semibold hover:underline">US parent obligations</Link>.</li>
+          <li>For funds returned to the parent, see <Link href="/blog/usa-to-india/repatriating-profits" className="text-blue-800 font-semibold hover:underline">repatriating profits</Link>.</li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
@@ -195,13 +191,14 @@ export default function RestructuringAndExitPage() {
         </ul>
 
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
+        <p className="text-gray-600 leading-relaxed mb-4">
           We advise on restructuring and exit planning, valuation, tax, FEMA filings and the legal documents.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/services/transaction-advisory" className="text-blue-800 font-semibold hover:underline">Transaction advisory</Link>{" "}
-          &middot;{" "}
+          ·{" "}
           <Link href="/india-business-setup/company-formation" className="text-blue-800 font-semibold hover:underline">India business setup</Link>
         </p>
 
@@ -211,7 +208,8 @@ export default function RestructuringAndExitPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -220,7 +218,12 @@ export default function RestructuringAndExitPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -244,9 +247,10 @@ export default function RestructuringAndExitPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 

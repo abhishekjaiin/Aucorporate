@@ -13,7 +13,7 @@ import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
 import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/hiring-and-payroll"
-const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
+const PARENT_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "country-specific", label: "What's different for US companies" },
@@ -47,6 +47,8 @@ const relatedCards = [
   { title: "Sending a US Executive to India: Visa, Housing, Banking and Tax", desc: "How to relocate a US executive to India: employment visa, FRRO registration, housing, banking, tax residency and permanent establishment risk for the parent.", href: "/blog/usa-to-india/expat-visa" },
   { title: "Compliance Calendar for an Indian Subsidiary: What Is Due and When", desc: "The recurring compliance of an Indian subsidiary: monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law.", href: "/blog/usa-to-india/compliance-calendar" },
   { title: "ESOPs for Indian Employees of a US Parent: FEMA, Tax and Cost Recharge", desc: "How ESOPs and RSUs work for employees of an Indian subsidiary: FEMA reporting, employee tax, valuation, cost recharge and transfer pricing for a US parent.", href: "/blog/usa-to-india/esop" },
+  { title: "EPF for International Workers in India: What US Expats and Their Employers Must Know", desc: "How Indian provident fund applies to foreign nationals: international worker rules, no wage ceiling, withdrawal, court rulings and the 2026 EPF Scheme.", href: "/blog/usa-to-india/tax-and-social-security-treaties/epf-international-workers" },
+  { title: "Social Security for US Expats in India: Is There a US-India Totalization Agreement?", desc: "Is there a US-India social security agreement? What applies to a US expat in India: provident fund, US FICA, double coverage and planning.", href: "/blog/usa-to-india/tax-and-social-security-treaties/social-security-us-expats-india" },
 ]
 
 export default function HiringAndPayrollPage() {
@@ -58,7 +60,7 @@ export default function HiringAndPayrollPage() {
         description="How US companies hire in India: employment contracts, provident fund, ESI, gratuity, professional tax, payroll steps and India's labour codes."
         datePublished="2026-10-07"
         dateModified="2026-10-14"
-        isPartOfUrl={HUB_URL}
+        isPartOfUrl={PARENT_URL}
       />
 
       <Breadcrumb
@@ -119,30 +121,23 @@ export default function HiringAndPayrollPage() {
         <h2 id="before" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Before the first hire</h2>
         <ol className="list-decimal pl-6 space-y-3 text-gray-700 mb-10">
           <li>Decide the employer: your subsidiary or an Employer of Record.</li>
-          <li>Register the company for provident fund, ESI (where applicable), professional tax and the state
-            establishment registration.
-          </li>
+          <li>Register the company for provident fund, ESI (where applicable), professional tax and the state establishment registration.</li>
           <li>Prepare an employment contract and a policy handbook that fit Indian law.</li>
           <li>Set up payroll, the salary structure and the company&apos;s bank arrangements.</li>
           <li>Agree IP assignment and confidentiality terms in every contract.</li>
         </ol>
 
         <h2 id="contract" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What an Indian employment contract should cover</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li>Designation, place of work, probation and confirmation.</li>
           <li>Compensation structure and benefits, stated as cost to company with its components.</li>
-          <li>Notice period and termination terms. Termination follows the contract and the law; the US at-will
-            model does not apply.
-          </li>
+          <li>Notice period and termination terms. Termination follows the contract and the law; the US at-will model does not apply.</li>
           <li>Confidentiality, IP assignment and data protection duties.</li>
-          <li>Restrictions after employment. Non-compete clauses that apply after employment are generally
-            unenforceable in India, so protect the business through confidentiality, IP and non-solicitation
-            drafting.
-          </li>
+          <li>Restrictions after employment. Non-compete clauses that apply after employment are generally unenforceable in India, so protect the business through confidentiality, IP and non-solicitation drafting.</li>
         </ul>
 
         <h2 id="benefits" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Statutory benefits and deductions</h2>
-        <div className="overflow-x-auto mb-10">
+        <div className="overflow-x-auto mb-8">
           <table className="w-full border-collapse border border-gray-300 text-sm">
             <thead className="bg-[#081a42] text-white">
               <tr>
@@ -181,26 +176,20 @@ export default function HiringAndPayrollPage() {
         <h2 id="codes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">India&apos;s labour codes</h2>
         <div className="bg-secondary/40 border-l-4 border-blue-800 rounded-lg p-4 mb-10 text-sm text-gray-700">
           India has consolidated many central labour laws into four labour codes covering wages, industrial
-          relations, social security and occupational safety. The codes have been brought into force in phases and
-          state rules vary, so we confirm the current position for each state and headcount before drafting
+          relations, social security and occupational safety. The codes have been brought into force in phases
+          and state rules vary, so we confirm the current position for each state and headcount before drafting
           contracts.
         </div>
 
         <h2 id="us-parent" className="text-2xl font-bold text-gray-900 mt-12 mb-4">What this means for a US parent</h2>
-        <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-10">
-          <li>Do not copy a US offer letter. Indian contracts need notice periods, statutory benefits and IP
-            clauses written for Indian law.
-          </li>
-          <li>If you offer equity to Indian employees, see{" "}
-            <Link href="/blog/usa-to-india/esop" className="text-blue-800 font-semibold hover:underline">ESOPs for Indian employees of a US parent</Link>.
-          </li>
-          <li>Personal data of Indian employees is subject to India&apos;s data protection law, so agree how HR
-            data is shared with the US team.
-          </li>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+          <li>Do not copy a US offer letter. Indian contracts need notice periods, statutory benefits and IP clauses written for Indian law.</li>
+          <li>If you offer equity to Indian employees, see <Link href="/blog/usa-to-india/esop" className="text-blue-800 font-semibold hover:underline">ESOPs for Indian employees of a US parent</Link>.</li>
+          <li>Personal data of Indian employees is subject to India&apos;s data protection law, so agree how HR data is shared with the US team.</li>
         </ul>
 
         <h2 id="mistakes" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Mistakes to avoid</h2>
-        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
           <li>Hiring people as consultants when they are in substance employees, which creates statutory exposure.</li>
           <li>Starting work before provident fund, ESI and professional tax registrations are in place.</li>
           <li>Copying a US at-will contract that does not work under Indian law.</li>
@@ -208,10 +197,18 @@ export default function HiringAndPayrollPage() {
           <li>Ignoring state-level registrations and professional tax.</li>
         </ul>
 
+        <p className="text-gray-600 leading-relaxed mb-10">
+          See also: Hiring foreign nationals:{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/epf-international-workers" className="text-blue-800 font-semibold hover:underline">EPF for international workers</Link>{" "}
+          and{" "}
+          <Link href="/blog/usa-to-india/tax-and-social-security-treaties/social-security-us-expats-india" className="text-blue-800 font-semibold hover:underline">social security for US expats in India</Link>.
+        </p>
+
         <h2 id="how-we-help" className="text-2xl font-bold text-gray-900 mt-12 mb-4">How AU Corporate handles this</h2>
-        <p className="text-gray-600 leading-relaxed mb-2">
+        <p className="text-gray-600 leading-relaxed mb-4">
           We run HR services, payroll and Employer of Record arrangements for foreign companies in India.
         </p>
+
         <p className="text-gray-600 leading-relaxed mb-10">
           Related services:{" "}
           <Link href="/hr-services" className="text-blue-800 font-semibold hover:underline">HR and payroll</Link>
@@ -223,7 +220,8 @@ export default function HiringAndPayrollPage() {
           <a href="https://www.mca.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Ministry of Corporate Affairs</a>,{" "}
           <a href="https://www.rbi.org.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Reserve Bank of India</a>,{" "}
           <a href="https://www.incometax.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">Income Tax Department</a>{" "}
-          and the <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
+          and the{" "}
+          <a href="https://www.gst.gov.in/" rel="noopener" target="_blank" className="text-blue-800 font-semibold hover:underline">GST portal</a>.
         </p>
 
         <GuideCTA
@@ -232,7 +230,12 @@ export default function HiringAndPayrollPage() {
         />
 
         <h2 id="faqs" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Frequently asked questions</h2>
-        <GuideFaqList faqs={faqs} seeAllHref="/blog/usa-to-india/faq" />
+        <GuideFaqList
+          faqs={faqs}
+          seeAllHref="/blog/usa-to-india/faq"
+          seeAllLabel="See all 216 FAQs"
+          seeAllDescription="Plain answers on incorporation, FEMA, tax, hiring and exit."
+        />
 
         <h2 id="related" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Related guides</h2>
         <div className="mb-10">
@@ -256,9 +259,10 @@ export default function HiringAndPayrollPage() {
         </p>
 
         <GuideAuthorBio />
+
         <p className="text-sm text-gray-500 mt-6">
-          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change often;
-          confirm current requirements before acting.
+          Last updated 14 October 2026. General information only, not legal or tax advice. Indian rules change
+          often; confirm current requirements before acting.
         </p>
       </article>
 
