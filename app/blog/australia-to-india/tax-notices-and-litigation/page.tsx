@@ -10,11 +10,13 @@ import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/australia-to-india/tax-notices-and-litigation"
 const HUB_URL = "https://www.theaucorp.com/blog/australia-to-india"
 
 const toc = [
+  { id: "country-specific", label: "What's different for Australian companies" },
   { id: "first", label: "The first 72 hours" },
   { id: "types", label: "Common notices" },
   { id: "routes", label: "Appeal and dispute routes" },
@@ -50,7 +52,7 @@ export default function TaxNoticesAndLitigationPage() {
       <GuideArticleSchema
         url={PAGE_URL}
         headline="Tax Notices and Disputes in India: What Australian Companies Should Do"
-        description="What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and Advance Pricing Agreements."
+        description="What an Australian-owned Indian subsidiary should do on receiving an income tax, GST or transfer pricing notice: first steps, DRP, ITAT, treaty MAP and APAs."
         datePublished="2026-10-15"
         dateModified="2026-10-15"
         isPartOfUrl={HUB_URL}
@@ -87,6 +89,8 @@ export default function TaxNoticesAndLitigationPage() {
             &larr; Back to the complete guide: How to Set Up a Subsidiary in India from Australia
           </Link>
         </p>
+
+        <GuideCountryContext country="australia" topic="tax-notices-and-litigation" />
 
         <h2 id="key-facts" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Key facts</h2>
         <div className="overflow-x-auto mb-8">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "How to relocate a US executive to India: employment visa, FRRO registration, housing, banking, tax residency and permanent establishment risk for the parent.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india/expat-visa",
-  },
+  alternates: guideAlternates("usa", "expat-visa"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Sending a US Executive to India: Visa, Housing and Tax",

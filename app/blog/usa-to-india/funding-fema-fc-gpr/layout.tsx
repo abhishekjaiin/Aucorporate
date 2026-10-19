@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "How a US parent invests in an Indian subsidiary: equity, CCPS, ECB, the 60-day allotment rule, pricing, and RBI reporting through Form FC-GPR on FIRMS.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india/funding-fema-fc-gpr",
-  },
+  alternates: guideAlternates("usa", "funding-fema-fc-gpr"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Funding an Indian Subsidiary: FEMA and Form FC-GPR",

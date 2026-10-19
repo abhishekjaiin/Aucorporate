@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "How the India-US tax treaty applies to payments to your US parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india/dtaa-pe-risk",
-  },
+  alternates: guideAlternates("usa", "dtaa-pe-risk"),
   openGraph: {
     siteName: "AU Corporate",
     title: "India-US Tax Treaty and Permanent Establishment Risk",

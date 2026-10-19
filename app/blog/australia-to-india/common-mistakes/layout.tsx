@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "The 13 most common and costly mistakes Australian companies make when setting up an Indian subsidiary, and how to avoid each. Includes a pre-filing checklist.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/australia-to-india/common-mistakes",
-  },
+  alternates: guideAlternates("australia", "common-mistakes"),
   openGraph: {
     siteName: "AU Corporate",
     title: "13 Common Mistakes Australian Companies Make Setting Up in India",

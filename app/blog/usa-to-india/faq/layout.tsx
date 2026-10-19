@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "216 plain answers for US companies: incorporation, FEMA, tax, hiring, compliance, repatriation, ESOPs, M&A and closing an Indian subsidiary.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india/faq",
-  },
+  alternates: guideAlternates("usa", "faq"),
   openGraph: {
     siteName: "AU Corporate",
     title: "216 FAQs: Setting Up an India Subsidiary from the USA",

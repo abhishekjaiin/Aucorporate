@@ -1,26 +1,25 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
     absolute: "Contracts and Arbitration in India for Australian Companies",
   },
   description:
-    "Intercompany and customer contracts for an Indian subsidiary, governing law, arbitration clauses, the New York Convention and enforcing awards in India.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/australia-to-india/contracts-and-arbitration",
-  },
+    "Contracts between an Australian parent and its Indian subsidiary: governing law, arbitration clauses, the New York Convention and enforcing awards in India.",
+  alternates: guideAlternates("australia", "contracts-and-arbitration"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Contracts and Arbitration in India for Australian Companies",
     description:
-      "Intercompany and customer contracts for an Indian subsidiary, governing law, arbitration clauses, the New York Convention and enforcing awards in India.",
+      "Contracts between an Australian parent and its Indian subsidiary: governing law, arbitration clauses, the New York Convention and enforcing awards in India.",
     url: "https://www.theaucorp.com/blog/australia-to-india/contracts-and-arbitration",
     locale: "en_AU",
   },
   twitter: {
     title: "Contracts and Arbitration in India for Australian Companies",
     description:
-      "Intercompany and customer contracts for an Indian subsidiary, governing law, arbitration clauses, the New York Convention and enforcing awards in India.",
+      "Contracts between an Australian parent and its Indian subsidiary: governing law, arbitration clauses, the New York Convention and enforcing awards in India.",
   },
 }
 

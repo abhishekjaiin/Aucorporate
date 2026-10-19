@@ -10,12 +10,14 @@ import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+import { GuideCountryProfile } from "@/components/guide/GuideCountryContext"
 import { InquiryTrigger } from "@/components/InquiryTrigger"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
   { id: "at-a-glance", label: "India subsidiary at a glance" },
+  { id: "country-profile", label: "What is specific to US companies" },
   { id: "structure", label: "Which structure should a US company choose in India?" },
   { id: "steps", label: "How to incorporate an Indian subsidiary, step by step" },
   { id: "money", label: "How money moves between the US parent and the Indian subsidiary" },
@@ -133,6 +135,8 @@ export default function UsaToIndiaHubPage() {
             </tbody>
           </table>
         </div>
+
+        <GuideCountryProfile country="usa" />
 
         <h2 id="structure" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Which structure should a US company choose in India?</h2>
         <GuideAnswerBox>

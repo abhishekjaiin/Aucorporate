@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "The recurring compliance of an Indian subsidiary: monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india/compliance-calendar",
-  },
+  alternates: guideAlternates("usa", "compliance-calendar"),
   openGraph: {
     siteName: "AU Corporate",
     title: "India Subsidiary Compliance Calendar for US Companies",

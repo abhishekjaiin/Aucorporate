@@ -10,11 +10,13 @@ import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/australia-to-india/audit-icofr"
 const HUB_URL = "https://www.theaucorp.com/blog/australia-to-india"
 
 const toc = [
+  { id: "country-specific", label: "What's different for Australian companies" },
   { id: "types", label: "The audits an Indian subsidiary may face" },
   { id: "statutory", label: "The statutory audit step by step" },
   { id: "ICOFR", label: "Internal controls over financial reporting" },
@@ -88,6 +90,8 @@ export default function AuditIcofrPage() {
             &larr; Back to the complete guide: How to Set Up a Subsidiary in India from Australia
           </Link>
         </p>
+
+        <GuideCountryContext country="australia" topic="audit-icofr" />
 
         <h2 id="key-facts" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Key facts</h2>
         <div className="overflow-x-auto mb-8">

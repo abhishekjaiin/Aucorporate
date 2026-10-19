@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "Compare an Employer of Record with your own Indian subsidiary: speed, control, compliance, tax presence and when to convert. A guide for Australian companies.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/australia-to-india/eor-vs-subsidiary",
-  },
+  alternates: guideAlternates("australia", "eor-vs-subsidiary"),
   openGraph: {
     siteName: "AU Corporate",
     title: "EOR vs Subsidiary in India: Which Is Right for an Australian Company?",

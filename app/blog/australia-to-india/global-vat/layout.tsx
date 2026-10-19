@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "How VAT and GST work for Australian companies selling digital services and goods into Europe, the UK, New Zealand, India and beyond: registration, B2B and B2C rules and compliance.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/australia-to-india/global-vat",
-  },
+  alternates: guideAlternates("australia", "global-vat"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Global VAT and GST for Australian Companies Selling Abroad",

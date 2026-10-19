@@ -10,11 +10,13 @@ import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/australia-to-india/contracts-and-arbitration"
 const HUB_URL = "https://www.theaucorp.com/blog/australia-to-india"
 
 const toc = [
+  { id: "country-specific", label: "What's different for Australian companies" },
   { id: "which", label: "Which contracts an Indian subsidiary needs" },
   { id: "clause", label: "Writing a good arbitration clause" },
   { id: "enforce", label: "Enforcing an award" },
@@ -53,7 +55,7 @@ export default function ContractsAndArbitrationPage() {
       <GuideArticleSchema
         url={PAGE_URL}
         headline="Contracts and Arbitration in India: A Guide for Australian Companies"
-        description="Intercompany and customer contracts for an Indian subsidiary, governing law, arbitration clauses, the New York Convention and enforcing awards in India."
+        description="Contracts between an Australian parent and its Indian subsidiary: governing law, arbitration clauses, the New York Convention and enforcing awards in India."
         datePublished="2026-10-15"
         dateModified="2026-10-15"
         isPartOfUrl={HUB_URL}
@@ -89,6 +91,8 @@ export default function ContractsAndArbitrationPage() {
             &larr; Back to the complete guide: How to Set Up a Subsidiary in India from Australia
           </Link>
         </p>
+
+        <GuideCountryContext country="australia" topic="contracts-and-arbitration" />
 
         <h2 id="key-facts" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Key facts</h2>
         <div className="overflow-x-auto mb-8">

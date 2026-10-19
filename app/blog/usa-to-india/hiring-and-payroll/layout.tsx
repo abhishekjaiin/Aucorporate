@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "How US companies hire in India: employment contracts, provident fund, ESI, gratuity, professional tax, payroll steps and India's labour codes.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india/hiring-and-payroll",
-  },
+  alternates: guideAlternates("usa", "hiring-and-payroll"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Hiring in India: Contracts, Payroll and Statutory Compliance",

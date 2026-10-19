@@ -1,0 +1,129 @@
+import type { Metadata } from "next"
+
+/**
+ * Registry of the country-entry guide clusters under /blog/<country>-to-india.
+ *
+ * Every cluster covers the same topics for a different home country, so to
+ * Google they are regional variants of each other. Registering a cluster here
+ * makes `guideAlternates` emit reciprocal hreflang links between every
+ * country's version of a topic, which is what stops the clusters being read
+ * as duplicates. Adding a new country (UK, Singapore, ...) means: add it to
+ * GUIDE_COUNTRIES, list the topics it covers, and call guideAlternates() in
+ * each of its layouts. See docs/COUNTRY_CLUSTER_PLAYBOOK.md.
+ */
+
+export type GuideTopic =
+  | "hub"
+  | "faq"
+  | "incorporation-process"
+  | "subsidiary-vs-branch-vs-liaison-office-vs-llp"
+  | "documents-and-apostille"
+  | "resident-director"
+  | "funding-fema-fc-gpr"
+  | "share-valuation"
+  | "repatriating-profits"
+  | "eor-vs-subsidiary"
+  | "transfer-pricing"
+  | "dtaa-pe-risk"
+  | "parent-obligations"
+  | "compliance-calendar"
+  | "audit-icofr"
+  | "tax-notices-and-litigation"
+  | "contracts-and-arbitration"
+  | "esop"
+  | "restructuring-and-exit"
+  | "expat-visa"
+  | "global-vat"
+  | "hiring-and-payroll"
+  | "common-mistakes"
+  | "india-dtaa"
+  | "foreign-employee-treaty-ssa"
+
+export type GuideCountryKey = "usa" | "australia"
+
+export type GuideCountry = {
+  /** "the USA" / "Australia", as used in "from {name}". */
+  name: string
+  /** "US" / "Australian", as used in "{adjective} companies". */
+  adjective: string
+  /** BCP 47 tag used for hreflang and inLanguage. */
+  locale: string
+  basePath: string
+  /** Topic -> URL slug under basePath. Topics a country doesn't cover are omitted. */
+  slugs: Partial<Record<GuideTopic, string>>
+}
+
+const SITE = "https://www.theaucorp.com"
+
+const SHARED_TOPICS: GuideTopic[] = [
+  "incorporation-process",
+  "subsidiary-vs-branch-vs-liaison-office-vs-llp",
+  "documents-and-apostille",
+  "resident-director",
+  "funding-fema-fc-gpr",
+  "share-valuation",
+  "repatriating-profits",
+  "eor-vs-subsidiary",
+  "transfer-pricing",
+  "dtaa-pe-risk",
+  "compliance-calendar",
+  "audit-icofr",
+  "tax-notices-and-litigation",
+  "contracts-and-arbitration",
+  "esop",
+  "restructuring-and-exit",
+  "expat-visa",
+  "global-vat",
+  "hiring-and-payroll",
+  "common-mistakes",
+  "faq",
+]
+
+const sameSlugs = (topics: GuideTopic[]) => Object.fromEntries(topics.map((t) => [t, t]))
+
+export const GUIDE_COUNTRIES: Record<GuideCountryKey, GuideCountry> = {
+  usa: {
+    name: "the USA",
+    adjective: "US",
+    locale: "en-US",
+    basePath: "/blog/usa-to-india",
+    slugs: { hub: "", ...sameSlugs(SHARED_TOPICS), "parent-obligations": "us-parent-obligations" },
+  },
+  australia: {
+    name: "Australia",
+    adjective: "Australian",
+    locale: "en-AU",
+    basePath: "/blog/australia-to-india",
+    slugs: {
+      hub: "",
+      ...sameSlugs(SHARED_TOPICS),
+      "parent-obligations": "australian-parent-obligations",
+      "india-dtaa": "india-australia-dtaa",
+      "foreign-employee-treaty-ssa": "foreign-employee-treaty-ssa",
+    },
+  },
+}
+
+export function guideUrl(country: GuideCountryKey, topic: GuideTopic): string | undefined {
+  const c = GUIDE_COUNTRIES[country]
+  const slug = c.slugs[topic]
+  if (slug === undefined) return undefined
+  return `${SITE}${c.basePath}${slug ? `/${slug}` : ""}`
+}
+
+/**
+ * `alternates` metadata for a guide page: its canonical URL plus hreflang
+ * links to every registered country's version of the same topic (including
+ * itself, as Google requires). A topic only one country covers gets just the
+ * canonical.
+ */
+export function guideAlternates(country: GuideCountryKey, topic: GuideTopic): Metadata["alternates"] {
+  const canonical = guideUrl(country, topic)
+  if (!canonical) throw new Error(`Guide topic "${topic}" is not registered for ${country}`)
+  const languages: Record<string, string> = {}
+  for (const key of Object.keys(GUIDE_COUNTRIES) as GuideCountryKey[]) {
+    const url = guideUrl(key, topic)
+    if (url) languages[GUIDE_COUNTRIES[key].locale] = url
+  }
+  return Object.keys(languages).length > 1 ? { canonical, languages } : { canonical }
+}

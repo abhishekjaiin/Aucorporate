@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "Intercompany and customer contracts for an Indian subsidiary, governing law, arbitration clauses, the New York Convention and enforcing awards in India.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india/contracts-and-arbitration",
-  },
+  alternates: guideAlternates("usa", "contracts-and-arbitration"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Contracts and Arbitration in India for US Companies",

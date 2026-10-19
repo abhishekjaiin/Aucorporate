@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "Why shares issued to a US parent need a valuation, who can certify it, the pricing floor under FEMA, and when you need a fresh valuation.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india/share-valuation",
-  },
+  alternates: guideAlternates("usa", "share-valuation"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Share Valuation for Foreign Investment in India",

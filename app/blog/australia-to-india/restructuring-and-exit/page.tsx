@@ -10,11 +10,13 @@ import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/australia-to-india/restructuring-and-exit"
 const HUB_URL = "https://www.theaucorp.com/blog/australia-to-india"
 
 const toc = [
+  { id: "country-specific", label: "What's different for Australian companies" },
   { id: "routes", label: "The main routes compared" },
   { id: "sale", label: "Selling the shares" },
   { id: "slump", label: "Selling the business as a going concern" },
@@ -52,7 +54,7 @@ export default function RestructuringAndExitPage() {
       <GuideArticleSchema
         url={PAGE_URL}
         headline="Restructuring, Mergers and Exit: Your Options for an Indian Subsidiary"
-        description="Options to restructure, sell, merge or close an Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation, with tax and RBI steps."
+        description="Options for an Australian parent to restructure, sell, merge or close its Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation."
         datePublished="2026-10-15"
         dateModified="2026-10-15"
         isPartOfUrl={HUB_URL}
@@ -88,6 +90,8 @@ export default function RestructuringAndExitPage() {
             &larr; Back to the complete guide: How to Set Up a Subsidiary in India from Australia
           </Link>
         </p>
+
+        <GuideCountryContext country="australia" topic="restructuring-and-exit" />
 
         <h2 id="key-facts" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Key facts</h2>
         <div className="overflow-x-auto mb-8">
