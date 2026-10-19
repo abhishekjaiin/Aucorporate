@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,13 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india/us-parent-obligations",
-    languages: {
-      "en-US": "https://www.theaucorp.com/blog/usa-to-india/us-parent-obligations",
-      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/australian-parent-obligations",
-    },
-  },
+  alternates: guideAlternates("usa", "parent-obligations"),
   openGraph: {
     siteName: "AU Corporate",
     title: "US Parent Reporting for an Indian Subsidiary: 5471, FBAR and More",

@@ -10,11 +10,13 @@ import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/eor-vs-subsidiary"
 const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
+  { id: "country-specific", label: "What's different for US companies" },
   { id: "compare", label: "EOR and subsidiary side by side" },
   { id: "how", label: "How an EOR works" },
   { id: "eor-when", label: "When an EOR is the right choice" },
@@ -85,6 +87,8 @@ export default function EorVsSubsidiaryPage() {
             &larr; Back to the complete guide: How to Set Up a Subsidiary in India from the USA
           </Link>
         </p>
+
+        <GuideCountryContext country="usa" topic="eor-vs-subsidiary" />
 
         <h2 id="key-facts" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Key facts</h2>
         <div className="overflow-x-auto mb-8">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,13 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "How ESOPs and RSUs work for employees of an Indian subsidiary: FEMA reporting, employee tax, valuation, cost recharge and transfer pricing for an Australian parent.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/australia-to-india/esop",
-    languages: {
-      "en-US": "https://www.theaucorp.com/blog/usa-to-india/esop",
-      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/esop",
-    },
-  },
+  alternates: guideAlternates("australia", "esop"),
   openGraph: {
     siteName: "AU Corporate",
     title: "ESOPs for Indian Employees of an Australian Parent Company",

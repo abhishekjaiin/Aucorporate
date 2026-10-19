@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,13 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "Options for an Australian parent to restructure, sell, merge or close its Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/australia-to-india/restructuring-and-exit",
-    languages: {
-      "en-US": "https://www.theaucorp.com/blog/usa-to-india/restructuring-and-exit",
-      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/restructuring-and-exit",
-    },
-  },
+  alternates: guideAlternates("australia", "restructuring-and-exit"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Restructuring or Exiting an Australian-Owned Indian Subsidiary",

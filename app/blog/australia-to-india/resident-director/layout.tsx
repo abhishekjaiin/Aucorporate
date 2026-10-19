@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,13 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "Every Indian company needs a Resident Director who has stayed in India 182 days in the financial year. Who qualifies, options for Australian parents, and duties.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/australia-to-india/resident-director",
-    languages: {
-      "en-US": "https://www.theaucorp.com/blog/usa-to-india/resident-director",
-      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/resident-director",
-    },
-  },
+  alternates: guideAlternates("australia", "resident-director"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Resident Director Rules for an Australian-Owned Indian Company",

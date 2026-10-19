@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "The India-Australia double taxation avoidance agreement (DTAA) explained article by article, with India as the source state and Australia as the residence state: tax rates table, permanent establishment, business profits, dividends, interest, royalties, capital gains, employees, relief, MAP and how to claim treaty benefits.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/australia-to-india/india-australia-dtaa",
-  },
+  alternates: guideAlternates("australia", "india-dtaa"),
   openGraph: {
     siteName: "AU Corporate",
     title: "India-Australia DTAA: A Guide to the Tax Treaty for Australian Companies",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,13 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "The eight steps to incorporate a wholly owned subsidiary in India from the USA: forms, order of steps, typical 4 to 6 week timeline and first 90 days.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india/incorporation-process",
-    languages: {
-      "en-US": "https://www.theaucorp.com/blog/usa-to-india/incorporation-process",
-      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/incorporation-process",
-    },
-  },
+  alternates: guideAlternates("usa", "incorporation-process"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Incorporation Process for an Indian Subsidiary, Step by Step",

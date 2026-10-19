@@ -10,12 +10,14 @@ import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+import { GuideCountryProfile } from "@/components/guide/GuideCountryContext"
 import { InquiryTrigger } from "@/components/InquiryTrigger"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/australia-to-india"
 
 const toc = [
   { id: "at-a-glance", label: "India subsidiary at a glance" },
+  { id: "country-profile", label: "What is specific to Australian companies" },
   { id: "structure", label: "Which structure should an Australian company choose in India?" },
   { id: "steps", label: "How to incorporate an Indian subsidiary, step by step" },
   { id: "money", label: "How money moves between the Australian parent and the Indian subsidiary" },
@@ -144,6 +146,8 @@ export default function AustraliaToIndiaHubPage() {
             </tbody>
           </table>
         </div>
+
+        <GuideCountryProfile country="australia" />
 
         <h2 id="structure" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Which structure should an Australian company choose in India?</h2>
         <GuideAnswerBox>

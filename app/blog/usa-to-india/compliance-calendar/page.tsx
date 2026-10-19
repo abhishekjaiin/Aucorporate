@@ -10,11 +10,13 @@ import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/usa-to-india/compliance-calendar"
 const HUB_URL = "https://www.theaucorp.com/blog/usa-to-india"
 
 const toc = [
+  { id: "country-specific", label: "What's different for US companies" },
   { id: "monthly", label: "Every month" },
   { id: "quarterly", label: "Every quarter" },
   { id: "annual", label: "Every year" },
@@ -90,6 +92,8 @@ export default function ComplianceCalendarPage() {
             &larr; Back to the complete guide: How to Set Up a Subsidiary in India from the USA
           </Link>
         </p>
+
+        <GuideCountryContext country="usa" topic="compliance-calendar" />
 
         <h2 id="key-facts" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Key facts</h2>
         <div className="overflow-x-auto mb-8">

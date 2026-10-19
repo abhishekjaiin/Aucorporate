@@ -83,7 +83,7 @@ const faqs = [
 export default function CompanyFormationPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: 'India Business Setup', href: '/india-business-setup' }, { label: 'Company Registration' }]} />
+      <Breadcrumb items={[{ label: 'Company Registration' }]} />
 
       {/* HERO */}
       <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20">

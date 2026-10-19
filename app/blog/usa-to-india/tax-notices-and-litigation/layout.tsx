@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,13 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and Advance Pricing Agreements.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india/tax-notices-and-litigation",
-    languages: {
-      "en-US": "https://www.theaucorp.com/blog/usa-to-india/tax-notices-and-litigation",
-      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/tax-notices-and-litigation",
-    },
-  },
+  alternates: guideAlternates("usa", "tax-notices-and-litigation"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Handling Indian Tax Notices and Disputes for a US-Owned Subsidiary",

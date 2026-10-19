@@ -97,7 +97,7 @@ const industries = [
 ]
 
 const needMap = [
-  { need: 'Set up a company, subsidiary, or branch office in India', href: '/india-business-setup', label: 'India Business Setup' },
+  { need: 'Set up a company, subsidiary, or branch office in India', href: '/india-business-setup/company-formation', label: 'India Business Setup' },
   { need: 'Keep your books, prepare financial statements, or manage a statutory audit', href: '/services/accounting-assurance', label: 'Accounting & Assurance' },
   { need: 'File direct tax or GST returns, or handle FEMA/RBI regulatory compliance', href: '/services/taxation-regulatory', label: 'Taxation & Regulatory Services' },
   { need: 'Investigate a suspected fraud, run an internal audit, or strengthen controls', href: '/services/risk-management', label: 'Risk Management' },

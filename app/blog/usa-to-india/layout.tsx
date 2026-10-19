@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,13 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "How US companies set up a subsidiary in India: structure, FDI rules, incorporation steps, RBI/FEMA filings, tax and compliance. By a Chartered Accountant.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/usa-to-india",
-    languages: {
-      "en-US": "https://www.theaucorp.com/blog/usa-to-india",
-      "en-AU": "https://www.theaucorp.com/blog/australia-to-india",
-    },
-  },
+  alternates: guideAlternates("usa", "hub"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Set Up a Subsidiary in India from the USA: 2026 Guide",

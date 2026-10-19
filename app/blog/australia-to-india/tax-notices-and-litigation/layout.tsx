@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,13 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "What an Australian-owned Indian subsidiary should do on receiving an income tax, GST or transfer pricing notice: first steps, DRP, ITAT, treaty MAP and APAs.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/australia-to-india/tax-notices-and-litigation",
-    languages: {
-      "en-US": "https://www.theaucorp.com/blog/usa-to-india/tax-notices-and-litigation",
-      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/tax-notices-and-litigation",
-    },
-  },
+  alternates: guideAlternates("australia", "tax-notices-and-litigation"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Handling Indian Tax Notices and Disputes for an Australian-Owned Subsidiary",

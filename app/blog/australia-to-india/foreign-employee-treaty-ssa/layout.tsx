@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,9 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "How the India-Australia DTAA (Article 15) and the India-Australia Social Security Agreement apply to Australian employees working in India: the 183-day rule, Indian tax residency, certificates of coverage, provident fund and superannuation.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/australia-to-india/foreign-employee-treaty-ssa",
-  },
+  alternates: guideAlternates("australia", "foreign-employee-treaty-ssa"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Treaty and Social Security for Foreign Employees in India: DTAA Article 15 and the India-Australia SSA",

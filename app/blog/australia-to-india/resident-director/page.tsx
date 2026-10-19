@@ -10,11 +10,13 @@ import { GuideLeadForm } from "@/components/guide/GuideLeadForm"
 import { GuideAuthorBio } from "@/components/guide/GuideAuthorBio"
 import { GuideSources } from "@/components/guide/GuideSources"
 import { GuideArticleSchema } from "@/components/guide/GuideArticleSchema"
+import { GuideCountryContext } from "@/components/guide/GuideCountryContext"
 
 const PAGE_URL = "https://www.theaucorp.com/blog/australia-to-india/resident-director"
 const HUB_URL = "https://www.theaucorp.com/blog/australia-to-india"
 
 const toc = [
+  { id: "country-specific", label: "What's different for Australian companies" },
   { id: "rule", label: "The rule" },
   { id: "options", label: "Options for an Australian parent" },
   { id: "control", label: "Keeping control as the parent" },
@@ -87,6 +89,8 @@ export default function ResidentDirectorPage() {
             &larr; Back to the complete guide: How to Set Up a Subsidiary in India from Australia
           </Link>
         </p>
+
+        <GuideCountryContext country="australia" topic="resident-director" />
 
         <h2 id="key-facts" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Key facts</h2>
         <div className="overflow-x-auto mb-8">

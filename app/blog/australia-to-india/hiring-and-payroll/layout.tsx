@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { guideAlternates } from "@/lib/guides/countries"
 
 export const metadata: Metadata = {
   title: {
@@ -6,13 +7,7 @@ export const metadata: Metadata = {
   },
   description:
     "How Australian companies hire in India: employment contracts, provident fund, ESI, gratuity, professional tax, payroll steps and India's labour codes.",
-  alternates: {
-    canonical: "https://www.theaucorp.com/blog/australia-to-india/hiring-and-payroll",
-    languages: {
-      "en-US": "https://www.theaucorp.com/blog/usa-to-india/hiring-and-payroll",
-      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/hiring-and-payroll",
-    },
-  },
+  alternates: guideAlternates("australia", "hiring-and-payroll"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Hiring in India for Australian Companies: Payroll and Compliance",
