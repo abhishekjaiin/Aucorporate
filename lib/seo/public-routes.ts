@@ -184,6 +184,28 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/australia-to-india/common-mistakes", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/australia-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
 
+  // UK to India guide cluster
+  { path: "/blog/uk-to-india", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/common-mistakes", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/compliance-calendar", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/contracts-courts-arbitration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/data-protection-uk-gdpr-dpdp", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/documents-companies-house-apostille", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/exit-and-restructuring", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/funding-and-fema", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/gcc-for-uk-companies", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/hiring-in-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/incorporation-steps", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/india-uk-ceta", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/india-uk-dtaa", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/relocate-uk-staff", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/repatriating-profits", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/structure-options", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/uk-employees-in-india-dcc", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/uk-parent-reporting", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
+
   // Insights Hub (Postgres-backed) — individual published Insight URLs are
   // fetched live by each consumer (see getPublishedInsights()). The index
   // page itself is static here since it exists regardless of how many

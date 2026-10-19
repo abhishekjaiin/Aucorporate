@@ -50,10 +50,10 @@ const dbiColumns: { heading: string; items: DbiItem[] }[] = [
     items: [
       { label: "USA", href: "/blog/usa-to-india" },
       { label: "Australia", href: "/blog/australia-to-india" },
+      { label: "UK", href: "/blog/uk-to-india" },
       // Unlinked until each country's own guide cluster is rebuilt in the
-      // new /blog format (same treatment as USA and Australia) — no dead
-      // links to the deleted pages in the meantime.
-      { label: "UK" },
+      // new /blog format (same treatment as USA, Australia and UK) — no
+      // dead links to the deleted pages in the meantime.
       { label: "Singapore" },
       { label: "Germany" },
       { label: "Japan" },

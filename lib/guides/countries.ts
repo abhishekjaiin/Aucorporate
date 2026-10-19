@@ -46,8 +46,11 @@ export type GuideTopic =
   | "social-security-agreement"
   | "treaty-benefits-documents"
   | "home-social-security"
+  | "trade-agreement"
+  | "data-protection"
+  | "gcc"
 
-export type GuideCountryKey = "usa" | "australia"
+export type GuideCountryKey = "usa" | "australia" | "uk"
 
 export type GuideCountry = {
   /** "the USA" / "Australia", as used in "from {name}". */
@@ -121,6 +124,36 @@ export const GUIDE_COUNTRIES: Record<GuideCountryKey, GuideCountry> = {
       "parent-obligations": "australian-parent-obligations",
       "india-dtaa": "india-australia-dtaa",
       "foreign-employee-treaty-ssa": "foreign-employee-treaty-ssa",
+    },
+  },
+  uk: {
+    name: "the UK",
+    adjective: "UK",
+    locale: "en-GB",
+    basePath: "/blog/uk-to-india",
+    // The UK cluster was written with its own slugs and angles, so topics
+    // map to differently named pages rather than reusing the shared slugs.
+    slugs: {
+      hub: "",
+      faq: "faq",
+      "incorporation-process": "incorporation-steps",
+      "subsidiary-vs-branch-vs-liaison-office-vs-llp": "structure-options",
+      "documents-and-apostille": "documents-companies-house-apostille",
+      "funding-fema-fc-gpr": "funding-and-fema",
+      "repatriating-profits": "repatriating-profits",
+      "transfer-pricing": "transfer-pricing",
+      "india-dtaa": "india-uk-dtaa",
+      "parent-obligations": "uk-parent-reporting",
+      "compliance-calendar": "compliance-calendar",
+      "contracts-and-arbitration": "contracts-courts-arbitration",
+      "restructuring-and-exit": "exit-and-restructuring",
+      "expat-visa": "relocate-uk-staff",
+      "hiring-and-payroll": "hiring-in-india",
+      "common-mistakes": "common-mistakes",
+      "foreign-employee-treaty-ssa": "uk-employees-in-india-dcc",
+      "trade-agreement": "india-uk-ceta",
+      "data-protection": "data-protection-uk-gdpr-dpdp",
+      gcc: "gcc-for-uk-companies",
     },
   },
 }
