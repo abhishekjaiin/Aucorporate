@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "Every Indian company needs a Resident Director who has stayed in India 182 days in the financial year. Who qualifies, options for US parents, and duties.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/usa-to-india/resident-director",
+    languages: {
+      "en-US": "https://www.theaucorp.com/blog/usa-to-india/resident-director",
+      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/resident-director",
+    },
   },
   openGraph: {
     siteName: "AU Corporate",

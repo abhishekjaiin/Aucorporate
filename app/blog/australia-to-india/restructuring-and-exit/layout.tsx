@@ -2,25 +2,29 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Restructuring, Mergers and Exit for an Indian Subsidiary",
+    absolute: "Restructuring or Exiting an Australian-Owned Indian Subsidiary",
   },
   description:
-    "Options to restructure, sell, merge or close an Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation, with tax and RBI steps.",
+    "Options for an Australian parent to restructure, sell, merge or close its Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/australia-to-india/restructuring-and-exit",
+    languages: {
+      "en-US": "https://www.theaucorp.com/blog/usa-to-india/restructuring-and-exit",
+      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/restructuring-and-exit",
+    },
   },
   openGraph: {
     siteName: "AU Corporate",
-    title: "Restructuring, Mergers and Exit for an Indian Subsidiary",
+    title: "Restructuring or Exiting an Australian-Owned Indian Subsidiary",
     description:
-      "Options to restructure, sell, merge or close an Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation, with tax and RBI steps.",
+      "Options for an Australian parent to restructure, sell, merge or close its Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation.",
     url: "https://www.theaucorp.com/blog/australia-to-india/restructuring-and-exit",
     locale: "en_AU",
   },
   twitter: {
-    title: "Restructuring, Mergers and Exit for an Indian Subsidiary",
+    title: "Restructuring or Exiting an Australian-Owned Indian Subsidiary",
     description:
-      "Options to restructure, sell, merge or close an Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation, with tax and RBI steps.",
+      "Options for an Australian parent to restructure, sell, merge or close its Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation.",
   },
 }
 

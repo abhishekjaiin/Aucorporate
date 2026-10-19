@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "How ESOPs and RSUs work for employees of an Indian subsidiary: FEMA reporting, employee tax, valuation, cost recharge and transfer pricing for a US parent.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/usa-to-india/esop",
+    languages: {
+      "en-US": "https://www.theaucorp.com/blog/usa-to-india/esop",
+      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/esop",
+    },
   },
   openGraph: {
     siteName: "AU Corporate",

@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "The 13 most common and costly mistakes Australian companies make when setting up an Indian subsidiary, and how to avoid each. Includes a pre-filing checklist.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/australia-to-india/common-mistakes",
+    languages: {
+      "en-US": "https://www.theaucorp.com/blog/usa-to-india/common-mistakes",
+      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/common-mistakes",
+    },
   },
   openGraph: {
     siteName: "AU Corporate",

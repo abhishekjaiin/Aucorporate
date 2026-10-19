@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "216 plain answers for US companies: incorporation, FEMA, tax, hiring, compliance, repatriation, ESOPs, M&A and closing an Indian subsidiary.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/usa-to-india/faq",
+    languages: {
+      "en-US": "https://www.theaucorp.com/blog/usa-to-india/faq",
+      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/faq",
+    },
   },
   openGraph: {
     siteName: "AU Corporate",

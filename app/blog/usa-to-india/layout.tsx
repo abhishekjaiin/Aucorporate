@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "How US companies set up a subsidiary in India: structure, FDI rules, incorporation steps, RBI/FEMA filings, tax and compliance. By a Chartered Accountant.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/usa-to-india",
+    languages: {
+      "en-US": "https://www.theaucorp.com/blog/usa-to-india",
+      "en-AU": "https://www.theaucorp.com/blog/australia-to-india",
+    },
   },
   openGraph: {
     siteName: "AU Corporate",

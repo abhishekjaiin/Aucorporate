@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "Statutory audit, tax audit, GST audit and internal controls over financial reporting for an Indian subsidiary of an Australian group. What to expect and how to prepare.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/australia-to-india/audit-icofr",
+    languages: {
+      "en-US": "https://www.theaucorp.com/blog/usa-to-india/audit-icofr",
+      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/audit-icofr",
+    },
   },
   openGraph: {
     siteName: "AU Corporate",

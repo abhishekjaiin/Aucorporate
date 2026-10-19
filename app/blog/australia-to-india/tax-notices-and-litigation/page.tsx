@@ -50,7 +50,7 @@ export default function TaxNoticesAndLitigationPage() {
       <GuideArticleSchema
         url={PAGE_URL}
         headline="Tax Notices and Disputes in India: What Australian Companies Should Do"
-        description="What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and Advance Pricing Agreements."
+        description="What an Australian-owned Indian subsidiary should do on receiving an income tax, GST or transfer pricing notice: first steps, DRP, ITAT, treaty MAP and APAs."
         datePublished="2026-10-15"
         dateModified="2026-10-15"
         isPartOfUrl={HUB_URL}

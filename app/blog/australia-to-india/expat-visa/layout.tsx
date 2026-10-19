@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "How to relocate an Australian executive to India: employment visa, FRRO registration, housing, banking, tax residency and permanent establishment risk for the parent.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/australia-to-india/expat-visa",
+    languages: {
+      "en-US": "https://www.theaucorp.com/blog/usa-to-india/expat-visa",
+      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/expat-visa",
+    },
   },
   openGraph: {
     siteName: "AU Corporate",

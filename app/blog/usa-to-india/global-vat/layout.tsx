@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "How VAT works for US companies selling digital services and goods into Europe, the UK and beyond: registration, B2B and B2C rules and compliance.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/usa-to-india/global-vat",
+    languages: {
+      "en-US": "https://www.theaucorp.com/blog/usa-to-india/global-vat",
+      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/global-vat",
+    },
   },
   openGraph: {
     siteName: "AU Corporate",

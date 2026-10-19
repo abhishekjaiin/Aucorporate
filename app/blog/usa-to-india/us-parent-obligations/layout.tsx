@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/usa-to-india/us-parent-obligations",
+    languages: {
+      "en-US": "https://www.theaucorp.com/blog/usa-to-india/us-parent-obligations",
+      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/australian-parent-obligations",
+    },
   },
   openGraph: {
     siteName: "AU Corporate",

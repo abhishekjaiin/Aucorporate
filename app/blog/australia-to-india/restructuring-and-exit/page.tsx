@@ -52,7 +52,7 @@ export default function RestructuringAndExitPage() {
       <GuideArticleSchema
         url={PAGE_URL}
         headline="Restructuring, Mergers and Exit: Your Options for an Indian Subsidiary"
-        description="Options to restructure, sell, merge or close an Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation, with tax and RBI steps."
+        description="Options for an Australian parent to restructure, sell, merge or close its Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation."
         datePublished="2026-10-15"
         dateModified="2026-10-15"
         isPartOfUrl={HUB_URL}

@@ -54,7 +54,7 @@ export default function ComplianceCalendarPage() {
       <GuideArticleSchema
         url={PAGE_URL}
         headline="Compliance Calendar for an Indian Subsidiary: What Is Due and When"
-        description="The recurring compliance of an Indian subsidiary: monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law."
+        description="The recurring compliance of an Australian-owned Indian subsidiary: monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law."
         datePublished="2026-10-15"
         dateModified="2026-10-15"
         isPartOfUrl={HUB_URL}

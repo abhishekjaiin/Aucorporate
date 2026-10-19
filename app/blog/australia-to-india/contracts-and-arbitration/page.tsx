@@ -53,7 +53,7 @@ export default function ContractsAndArbitrationPage() {
       <GuideArticleSchema
         url={PAGE_URL}
         headline="Contracts and Arbitration in India: A Guide for Australian Companies"
-        description="Intercompany and customer contracts for an Indian subsidiary, governing law, arbitration clauses, the New York Convention and enforcing awards in India."
+        description="Contracts between an Australian parent and its Indian subsidiary: governing law, arbitration clauses, the New York Convention and enforcing awards in India."
         datePublished="2026-10-15"
         dateModified="2026-10-15"
         isPartOfUrl={HUB_URL}

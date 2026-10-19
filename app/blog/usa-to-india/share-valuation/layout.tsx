@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     "Why shares issued to a US parent need a valuation, who can certify it, the pricing floor under FEMA, and when you need a fresh valuation.",
   alternates: {
     canonical: "https://www.theaucorp.com/blog/usa-to-india/share-valuation",
+    languages: {
+      "en-US": "https://www.theaucorp.com/blog/usa-to-india/share-valuation",
+      "en-AU": "https://www.theaucorp.com/blog/australia-to-india/share-valuation",
+    },
   },
   openGraph: {
     siteName: "AU Corporate",
