@@ -27,13 +27,15 @@ export function PageTransition({ children }: { children: React.ReactNode }) {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
 
     ref.current?.animate(
+      // A gentle fade with only a hint of upward drift, eased out so it
+      // settles rather than snaps.
       [
-        { opacity: 0, transform: "translateY(16px)" },
+        { opacity: 0, transform: "translateY(6px)" },
         { opacity: 1, transform: "translateY(0)" },
       ],
       // No fill: once finished, the transform is gone, so it never creates a
       // containing block for fixed-position elements (modals) inside the page.
-      { duration: 400, easing: "cubic-bezier(0.22, 1, 0.36, 1)" },
+      { duration: 550, easing: "cubic-bezier(0.25, 0.1, 0.25, 1)" },
     )
   }, [pathname])
 
