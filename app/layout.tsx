@@ -4,6 +4,7 @@ import Script from "next/script"
 
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { PageTransition } from "@/components/PageTransition"
 import { FloatingInquiryCTA } from "@/components/FloatingInquiryCTA"
 import { StickyInquirySidebar } from "@/components/StickyInquirySidebar"
 
@@ -263,7 +264,7 @@ export default function RootLayout({
       {/* MAIN CONTENT */}
       <div className="flex flex-col min-h-screen">
         <main className="flex-1 pt-16 sm:pt-20">
-          {children}
+          <PageTransition>{children}</PageTransition>
         </main>
 
         <Footer />
