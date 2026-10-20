@@ -111,7 +111,7 @@ export const publicPages: PublicPage[] = [
   { path: "/partners/uniproasia", priority: 0.7, changeFrequency: "monthly", lastModified: "2026-09-10" },
 
   // Blog Hub + Articles
-  { path: "/blog", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-08-26" },
+  { path: "/blog", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-10-20" },
   { path: "/blog/india-japan-bis-exemption-high-tech-investment", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-31" },
   { path: "/blog/arbitration-enforcement-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/construction-arbitration-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-10-19" },
