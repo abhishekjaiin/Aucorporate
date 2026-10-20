@@ -292,6 +292,9 @@ export default function FemaRbiCompliancePage() {
         </div>
       </section>
 
+      {/* CASE STUDY */}
+      <RelatedCaseStudies serviceSlug="fema-rbi-compliance" />
+
       {/* AFTER SETUP */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
@@ -310,8 +313,6 @@ export default function FemaRbiCompliancePage() {
           </div>
         </div>
       </section>
-
-      <RelatedCaseStudies serviceSlug="fema-rbi-compliance" />
 
       {/* FAQ */}
       <section className="py-20 bg-secondary/30" id="faq">
