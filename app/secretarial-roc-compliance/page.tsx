@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
+import { RelatedCaseStudies } from "@/components/case-study/RelatedCaseStudies"
 
 const heroFacts = [
   { title: "Reasonable Fees", body: "A clear written quote before we start" },
@@ -330,6 +331,8 @@ export default function SecretarialRocCompliancePage() {
           </div>
         </div>
       </section>
+
+      <RelatedCaseStudies serviceSlug="secretarial-roc-compliance" />
 
       {/* FAQ */}
       <section className="py-20 bg-secondary/30" id="faq">

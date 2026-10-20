@@ -274,6 +274,98 @@ export const COUNTRY_CONTEXT: Record<GuideCountryKey, Partial<Record<GuideTopic,
       "The India-UK Double Contributions Convention has been in force since 15 July 2026: with a certificate of coverage, a temporary assignee pays UK National Insurance instead of Indian provident fund.",
     ],
   },
+  japan: {
+    "incorporation-process": [
+      "A Japanese parent is usually a kabushiki kaisha (KK) or a godo kaisha (GK). Its core document is the certificate of registered matters from the Legal Affairs Bureau, with the articles of incorporation and a board or member resolution.",
+      "Japanese documents need certified English translations, and private documents go through a notary and Legal Affairs Bureau certification before the MOFA apostille, so start the document set first.",
+      "India is 3.5 hours behind Japan all year (neither country uses daylight saving), so digital signature and bank KYC calls fit a Japanese afternoon.",
+    ],
+    "subsidiary-vs-branch-vs-liaison-office-vs-llp": [
+      "Most Japanese groups use a subsidiary so that dividends can qualify for Japan's foreign dividend exemption (95% exempt for a holding of 25% or more for six months); a branch's profits are taxed in the Japanese company's own return instead.",
+      "Japan does not share a land border with India, so Press Note 3's prior-approval rule does not apply to a Japanese investor, unless a beneficial owner is from a land-border country.",
+      "A liaison office suits a representative presence before a decision, but it cannot earn income, so most Japanese companies move to a subsidiary once India sales or delivery begins.",
+    ],
+    "documents-and-apostille": [
+      "The certificate of registered matters and other official records are apostilled by the Ministry of Foreign Affairs of Japan (MOFA). Private documents, such as board resolutions, are notarized, certified by the Legal Affairs Bureau and then apostilled.",
+      "Japanese documents need an English translation, and MOFA expects official documents to be issued within three months of the apostille application.",
+      "MOFA's Tokyo desk works by appointment from 5 October 2026, and documents come back by post, so build both into the timetable.",
+    ],
+    "resident-director": [
+      "Chuzaiin (seconded managers) posted to India for a full year usually meet the 182-day test and can act as the resident director, which many Japanese groups prefer to a third-party nominee.",
+      "A Japanese director needs a Director Identification Number and a Digital Signature Certificate, obtained with an apostilled passport and an address proof with an English translation.",
+    ],
+    "funding-fema-fc-gpr": [
+      "The parent can remit yen or US dollars, and the Indian bank converts them to rupees and issues the foreign inward remittance certificate. Shares are priced in rupees, so allow an exchange-rate buffer.",
+      "Press Note 3 does not apply to Japanese investors, so most sectors stay on the Automatic Route.",
+      "Japan's Foreign Exchange and Foreign Trade Act can require a report on the outward investment on the Japanese side; your Japanese adviser confirms the filing.",
+    ],
+    "repatriating-profits": [
+      "The India-Japan tax treaty caps Indian tax at 10% on dividends, interest, royalties and fees for technical services, against a domestic rate of generally 20% plus surcharge and cess.",
+      "Claim the treaty rate with a Certificate of Residence from the Japanese tax office that covers the payment date, plus Form 41 (previously Form 10F).",
+      "Dividends that qualify for Japan's foreign dividend exemption are 95% exempt in Japan, so the Indian Withholding Tax on them is largely a final cost.",
+    ],
+    "transfer-pricing": [
+      "The same transaction is tested by India and by the Japanese National Tax Agency, so align the method and margin in the Indian report and the parent's Japanese local file.",
+      "Most Japanese groups close their year on 31 March, like India, so the Indian and Japanese transfer pricing years usually line up.",
+    ],
+    "dtaa-pe-risk": [
+      "Under the India-Japan treaty, PE risk comes mainly from a fixed place, dependent agents and construction or installation projects beyond the treaty period, so watch chuzaiin who negotiate or sign contracts in India.",
+      "Fees for technical services to a Japanese company are taxed in India at up to 10% under the treaty even without a PE, so price and document intra-group services carefully.",
+    ],
+    "compliance-calendar": [
+      "Most Japanese groups also close on 31 March, so the Indian audit and the Japanese consolidation can run on one timetable, with the Indian numbers needed early for the parent's May results.",
+      "A parent with a 31 December year-end needs a bridge between India's April-to-March year and its own.",
+    ],
+    "audit-icofr": [
+      "A listed Japanese parent reports on internal control under J-SOX, and a material Indian subsidiary can fall within its scope, so document the Indian controls the parent's auditor will test.",
+      "Group packs usually follow J-GAAP or IFRS, while the Indian statutory accounts follow Ind AS or Indian GAAP, so plan the conversion schedule with the parent's accounting team.",
+    ],
+    "contracts-and-arbitration": [
+      "Japan is not a reciprocating territory under Section 44A of the Code of Civil Procedure, so a Japanese court judgment cannot simply be executed in India; it needs a fresh suit.",
+      "India and Japan are both parties to the New York Convention, so an arbitration seated in Japan, for example under the JCAA rules, produces an award that can be enforced in India.",
+    ],
+    "expat-visa": [
+      "Chuzaiin usually come on an Employment Visa; a stay longer than 180 days requires FRRO registration within 14 days of arrival.",
+      "With a Certificate of Coverage under the Japan-India Social Security Agreement, a seconded employee stays in Japanese pension insurance for up to five years and is exempt from Indian provident fund.",
+    ],
+    "hiring-and-payroll": [
+      "Japanese lifetime-employment practice does not carry over: Indian termination follows the contract, notice and the labour codes, and gratuity becomes payable after five years of service.",
+      "Japanese work rules (shugyo kisoku) are a useful base, but leave, notice, benefits and termination terms must be rebuilt under Indian law.",
+    ],
+    "esop": [
+      "Shares of a Japanese parent granted to Indian employees are taxed in India as a perquisite at vesting or exercise, and the Indian company withholds tax through payroll.",
+      "Any recharge of the plan cost from the Japanese parent to the Indian subsidiary needs an agreement and transfer pricing support.",
+    ],
+    "common-mistakes": [
+      "Using a Japanese Certificate of Residence that does not cover the payment date when claiming the 10% treaty rate.",
+      "Sending Japanese-language documents without certified English translations, or letting the certificate of registered matters go stale before the apostille.",
+      "Not applying for the Certificate of Coverage before a chuzaiin starts in India, so Indian provident fund applies from day one.",
+    ],
+    "parent-obligations": [
+      "A Japanese company holding 10% or more of the Indian subsidiary must check the CFC rules each year; the Indian effective tax rate is a key test.",
+      "Japanese local file requirements apply to transactions with the Indian subsidiary above specified yen thresholds.",
+    ],
+    "share-valuation": [
+      "Shares issued to the Japanese parent must be priced at or above fair value under FEMA, certified by a Chartered Accountant or SEBI-registered merchant banker; the parent's own valuation for its Japanese books is a separate exercise.",
+      "A later transfer between the Japanese parent and an Indian resident needs a fresh FEMA valuation and Form FC-TRS within 60 days.",
+    ],
+    "tax-notices-and-litigation": [
+      "Notices often question payments to the Japanese parent, such as service fees and royalties, so keep the intercompany agreement and the 10% treaty rate support ready.",
+      "Where an Indian transfer pricing adjustment causes double taxation, the mutual agreement procedure under the India-Japan treaty is available alongside the Indian appeal route.",
+    ],
+    "global-vat": [
+      "Sales of digital services to Japanese customers fall under Japan's own consumption tax rules for cross-border electronic services, separate from Indian GST.",
+      "An Indian subsidiary supplying services to its Japanese parent usually treats them as zero-rated exports under GST, subject to the export conditions.",
+    ],
+    "eor-vs-subsidiary": [
+      "Japanese groups often test India with an Employer of Record before posting chuzaiin, then move to a subsidiary once headcount or customer contracts grow.",
+      "Staff hired through an EOR who negotiate contracts for the Japanese parent can still create PE risk under the India-Japan treaty.",
+    ],
+    "restructuring-and-exit": [
+      "A transfer of shares between the Japanese parent and an Indian resident is reported in Form FC-TRS within 60 days and must meet FEMA pricing rules.",
+      "On a sale of the Indian subsidiary, India can tax the gain under its own law, and the Japanese parent claims a foreign tax credit under Japanese rules.",
+    ],
+  },
 }
 
 /** Country facts shown as a profile table on each country's hub page. */
@@ -311,6 +403,18 @@ export const COUNTRY_PROFILE: Record<GuideCountryKey, [string, string][]> = {
     ["Court judgments", "The UK is a reciprocating territory under Section 44A CPC: UK superior court money judgments can be executed in India"],
     ["Trade agreement", "India-UK CETA, in force since 15 July 2026"],
     ["Data transfers", "No UK adequacy for India: use the International Data Transfer Agreement or the UK Addendum"],
+    ["FDI route", "Automatic Route in most sectors; Press Note 3 does not apply"],
+  ],
+  japan: [
+    ["Tax treaty", "India-Japan DTAA (1989, amended by the 2006 protocol): 10% on dividends, interest, royalties and fees for technical services"],
+    ["Permanent establishment", "Fixed place, dependent agents, and construction or installation projects beyond the treaty period"],
+    ["Tax residency certificate", "Certificate of Residence from the Japanese tax office, with Form 41 (previously Form 10F)"],
+    ["Social security agreement", "In force since 1 October 2016: a Certificate of Coverage keeps seconded staff in Japanese pension insurance for up to five years"],
+    ["Apostille", "Ministry of Foreign Affairs of Japan; private documents are notarized and certified by the Legal Affairs Bureau first"],
+    ["Parent's financial year", "Usually 31 March, the same as India; some groups close on 31 December"],
+    ["Time difference", "India is 3.5 hours behind Japan all year"],
+    ["Court judgments", "Japan is not a reciprocating territory under Section 44A CPC; arbitration awards are enforceable under the New York Convention"],
+    ["Trade agreement", "India-Japan CEPA, in force since 1 August 2011"],
     ["FDI route", "Automatic Route in most sectors; Press Note 3 does not apply"],
   ],
 }

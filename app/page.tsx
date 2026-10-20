@@ -7,6 +7,7 @@ import { InquiryForm } from "@/components/InquiryForm"
 import { ClickableReveal } from "@/components/ClickableReveal"
 import { InquiryCard } from "@/components/InquiryCard"
 import { ComplianceCalendarCTA } from "@/components/ComplianceCalendarCTA"
+import { CaseStudyCard } from "@/components/case-study/CaseStudyCard"
 import { caseStudies } from "@/lib/case-studies"
 
 import {
@@ -331,26 +332,7 @@ export default function HomePage() {
             <>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
                 {caseStudies.slice(0, 3).map((c) => (
-                  <Link
-                    key={c.slug}
-                    href={`/case-studies/${c.slug}`}
-                    className="border rounded-xl p-6 flex flex-col gap-3 hover:shadow-lg transition"
-                  >
-                    <span className="self-start rounded px-2 py-0.5 text-xs font-semibold text-[#713f12]" style={{ backgroundColor: "#fef9c3" }}>
-                      {c.country} · {c.industry}
-                    </span>
-                    <h3 className="font-semibold font-heading text-blue">{c.clientDescription}</h3>
-                    <p className="text-sm text-gray-500">{c.challenge}</p>
-                    <div className="border-t pt-3 mt-auto flex gap-6">
-                      {c.stats.map((s) => (
-                        <div key={s.label}>
-                          <p className="font-heading font-bold text-lg text-blue">{s.value}</p>
-                          <p className="text-xs text-gray-500">{s.label}</p>
-                        </div>
-                      ))}
-                    </div>
-                    <span className="text-sm font-semibold text-blue">Read the case study →</span>
-                  </Link>
+                  <CaseStudyCard key={c.slug} study={c} />
                 ))}
               </div>
               <div className="text-center mb-10">

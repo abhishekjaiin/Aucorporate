@@ -29,6 +29,7 @@ const toc = [
 
 const faqs = [
   { q: "What is an apostille?", a: "A certificate that makes a public document from one Hague Convention country valid in another. It replaces consular legalization." },
+  { q: "Which US documents need an apostille for an Indian subsidiary, and who issues it?", a: "The US parent's Certificate of Incorporation, Certificate of Good Standing, board resolution and charter documents, and the notarized passports and address proofs of its directors and authorized signatory, all need an apostille before they are used in India. The Secretary of State of the state that issued the document, or of the state where the notary is commissioned, issues the apostille, and the US Department of State apostilles federal documents. India and the US are both Hague Convention members, so no Indian embassy legalization is needed." },
   { q: "Are India and the US both members of the Hague Apostille Convention?", a: "India and the US are both members of the Hague Apostille Convention. Documents apostilled in the US are accepted in India without further consular legalization." },
   { q: "Can documents be signed and apostilled electronically?", a: "Some states offer remote notarization and electronic apostilles, but acceptance of electronic versions varies, so confirm with your adviser first." },
   { q: "How long does an apostille take?", a: "An apostille takes from a few days to a few weeks, depending on the state and the service level chosen. This is usually the main variable in the overall incorporation timeline." },

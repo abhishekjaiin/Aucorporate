@@ -51,12 +51,12 @@ const dbiColumns: { heading: string; items: DbiItem[] }[] = [
       { label: "USA", href: "/blog/usa-to-india" },
       { label: "Australia", href: "/blog/australia-to-india" },
       { label: "UK", href: "/blog/uk-to-india" },
+      { label: "Japan", href: "/blog/japan-to-india" },
       // Unlinked until each country's own guide cluster is rebuilt in the
-      // new /blog format (same treatment as USA, Australia and UK) — no
-      // dead links to the deleted pages in the meantime.
+      // new /blog format (same treatment as USA, Australia, UK and Japan) —
+      // no dead links to the deleted pages in the meantime.
       { label: "Singapore" },
       { label: "Germany" },
-      { label: "Japan" },
       { label: "China" },
     ],
   },
@@ -80,6 +80,11 @@ const specialistServiceLinks = [
 ]
 
 // ── About ────────────────────────────────────────────────────────────────
+const insightsLinks = [
+  { label: "Blogs", href: "/blog" },
+  { label: "Case Studies", href: "/case-studies" },
+]
+
 const aboutLinks = [
   { label: "About AU Corporate", href: "/about" },
   { label: "Partners", href: "/partners/uniproasia" },
@@ -275,7 +280,38 @@ export function Navbar() {
               )}
             </div>
 
-            <Link href="/blog" className="px-3 py-2 text-sm text-gray-700 hover:text-black">Insights</Link>
+            {/* INSIGHTS */}
+            <div
+              className="relative"
+              onMouseEnter={() => openMenu("insights")}
+              onMouseLeave={scheduleClose}
+            >
+              <button
+                type="button"
+                onClick={() => setActiveMenu(activeMenu === "insights" ? null : "insights")}
+                className="flex items-center gap-1 px-3 py-2 text-sm text-gray-700 hover:text-black"
+                aria-haspopup="true"
+                aria-expanded={activeMenu === "insights"}
+              >
+                Insights <ChevronDown className="h-4 w-4" aria-hidden="true" />
+              </button>
+
+              {activeMenu === "insights" && (
+                <div
+                  className="absolute left-0 top-full z-50 w-[220px]"
+                  onMouseEnter={cancelClose}
+                  onMouseLeave={scheduleClose}
+                >
+                  <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl py-2">
+                    {insightsLinks.map((item) => (
+                      <Link key={item.label} href={item.href} className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#081a42]">
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
 
             {/* ABOUT */}
             <div
@@ -372,7 +408,9 @@ export function Navbar() {
               </Link>
             </MobileGroup>
 
-            <Link href="/blog" onClick={closeMobile} className="block border-b py-4 text-base font-semibold">Insights</Link>
+            <MobileGroup label="Insights" open={mobileMenu === "insights"} onToggle={() => setMobileMenu(mobileMenu === "insights" ? null : "insights")}>
+              {insightsLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}
+            </MobileGroup>
 
             <MobileGroup label="About" open={mobileMenu === "about"} onToggle={() => setMobileMenu(mobileMenu === "about" ? null : "about")}>
               {aboutLinks.map((item) => <Link key={item.label} href={item.href} onClick={closeMobile} className="block py-2 text-sm">{item.label}</Link>)}

@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
+import { RelatedCaseStudies } from "@/components/case-study/RelatedCaseStudies"
 
 const heroFacts = [
   { title: "Fixed Fee", body: "USD 750–1,000 all-inclusive" },
@@ -260,6 +261,8 @@ export default function IndiaSubsidiaryRegistrationPage() {
           </div>
         </div>
       </section>
+
+      <RelatedCaseStudies serviceSlug="india-subsidiary-registration" />
 
       {/* FAQ */}
       <section className="py-20 bg-white" id="faq">

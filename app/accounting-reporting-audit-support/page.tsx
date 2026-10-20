@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
+import { RelatedCaseStudies } from "@/components/case-study/RelatedCaseStudies"
 
 const heroFacts = [
   { title: "From USD 240 per Month", body: "Monthly accounting and bookkeeping, fixed fee" },
@@ -377,6 +378,8 @@ export default function AccountingReportingAuditSupportPage() {
           </div>
         </div>
       </section>
+
+      <RelatedCaseStudies serviceSlug="accounting-reporting-audit-support" />
 
       {/* FAQ */}
       <section className="py-20 bg-secondary/30" id="faq">
