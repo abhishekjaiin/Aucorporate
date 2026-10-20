@@ -93,6 +93,9 @@ const reportingFrameworks = [
 
 const countryGuides = [
   { label: "USA", href: "/blog/usa-to-india" },
+  { label: "UK", href: "/blog/uk-to-india" },
+  { label: "Australia", href: "/blog/australia-to-india" },
+  { label: "Japan", href: "/blog/japan-to-india" },
 ]
 
 const afterLinks = [
@@ -358,6 +361,9 @@ export default function AccountingReportingAuditSupportPage() {
         </div>
       </section>
 
+      {/* CASE STUDY */}
+      <RelatedCaseStudies serviceSlug="accounting-reporting-audit-support" />
+
       {/* AFTER SETUP */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
@@ -378,8 +384,6 @@ export default function AccountingReportingAuditSupportPage() {
           </div>
         </div>
       </section>
-
-      <RelatedCaseStudies serviceSlug="accounting-reporting-audit-support" />
 
       {/* FAQ */}
       <section className="py-20 bg-secondary/30" id="faq">

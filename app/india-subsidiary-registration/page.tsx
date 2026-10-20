@@ -52,6 +52,9 @@ const included = [
 
 const countryGuides = [
   { label: "USA", href: "/blog/usa-to-india" },
+  { label: "UK", href: "/blog/uk-to-india" },
+  { label: "Australia", href: "/blog/australia-to-india" },
+  { label: "Japan", href: "/blog/japan-to-india" },
 ]
 
 const afterLinks = [
@@ -241,6 +244,9 @@ export default function IndiaSubsidiaryRegistrationPage() {
         </div>
       </section>
 
+      {/* CASE STUDY */}
+      <RelatedCaseStudies serviceSlug="india-subsidiary-registration" />
+
       {/* AFTER SETUP */}
       <section className="py-20 bg-secondary/30">
         <div className="max-w-5xl mx-auto px-4">
@@ -261,8 +267,6 @@ export default function IndiaSubsidiaryRegistrationPage() {
           </div>
         </div>
       </section>
-
-      <RelatedCaseStudies serviceSlug="india-subsidiary-registration" />
 
       {/* FAQ */}
       <section className="py-20 bg-white" id="faq">

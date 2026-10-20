@@ -1,32 +1,38 @@
 import Link from "next/link"
 import { caseStudiesForService } from "@/lib/case-studies"
-import { CaseStudyCard } from "./CaseStudyCard"
 
-/** "Case study" band for a service page, showing the case studies whose `featuredOn` lists the page. */
+/** Navy case study band for a service page, using the copy in the case study's `featuredOn` entry for that page. */
 export function RelatedCaseStudies({ serviceSlug }: { serviceSlug: string }) {
-  const studies = caseStudiesForService(serviceSlug)
-  if (studies.length === 0) return null
+  const bands = caseStudiesForService(serviceSlug)
+  if (bands.length === 0) return null
   return (
     <section className="py-16 bg-white" id="case-study">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-3 font-heading text-blue sm:text-3xl">
-          {studies.length === 1 ? "Case Study" : "Case Studies"}
-        </h2>
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-          How a foreign parent used this service for its Indian subsidiary.
-        </p>
-        <div
-          className={`grid gap-6 mx-auto ${studies.length === 1 ? "max-w-xl" : "sm:grid-cols-2 lg:grid-cols-3"}`}
-        >
-          {studies.map((c) => (
-            <CaseStudyCard key={c.slug} study={c} />
-          ))}
-        </div>
-        <p className="text-center mt-8">
-          <Link href="/case-studies" className="text-sm font-semibold text-blue hover:underline">
-            View all case studies →
-          </Link>
-        </p>
+      <div className="max-w-5xl mx-auto px-4 space-y-6">
+        {bands.map(({ study, band }) => (
+          <div
+            key={study.slug}
+            className="flex flex-wrap items-center gap-8 rounded-2xl bg-[#081a42] p-8 text-white sm:p-9"
+          >
+            <div className="min-w-0 flex-[1_1_420px]">
+              <span className="mb-3 inline-block rounded bg-yellow-400 px-2.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#081a42]">
+                Case Study · {study.country} · {study.industry}
+              </span>
+              <h2 className="mb-3 text-2xl font-bold sm:text-3xl">{band.heading}</h2>
+              <p className="mb-4 leading-relaxed text-[#d6e1f7]">{band.text}</p>
+              <Link href={`/case-studies/${study.slug}`} className="font-bold text-yellow-400 hover:underline">
+                Read the case study &rarr;
+              </Link>
+            </div>
+            <div className="flex flex-wrap gap-7">
+              {band.stats.map((s) => (
+                <div key={s.label} className="max-w-[11rem]">
+                  <b className="block text-3xl leading-tight text-yellow-400">{s.value}</b>
+                  <span className="text-sm text-[#d6e1f7]">{s.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   )

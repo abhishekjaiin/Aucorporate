@@ -308,6 +308,9 @@ export default function PayrollExpatServicesPage() {
         </div>
       </section>
 
+      {/* CASE STUDY */}
+      <RelatedCaseStudies serviceSlug="payroll-expat-services" />
+
       {/* AFTER SETUP */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
@@ -326,8 +329,6 @@ export default function PayrollExpatServicesPage() {
           </div>
         </div>
       </section>
-
-      <RelatedCaseStudies serviceSlug="payroll-expat-services" />
 
       {/* FAQ */}
       <section className="py-20 bg-secondary/30" id="faq">

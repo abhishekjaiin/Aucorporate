@@ -13,7 +13,7 @@ export function CaseStudyCard({ study, headingLevel = "h3" }: { study: CaseStudy
         className="self-start rounded px-2 py-0.5 text-xs font-semibold text-[#713f12]"
         style={{ backgroundColor: "#fef9c3" }}
       >
-        Case Study · {study.country} · {study.industry}
+        {study.country} · {study.industry}
       </span>
       <Heading className="font-semibold font-heading text-blue">{study.clientDescription}</Heading>
       <p className="text-sm text-gray-500">{study.challenge}</p>

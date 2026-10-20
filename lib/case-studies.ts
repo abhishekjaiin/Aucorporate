@@ -1,6 +1,6 @@
 // Client case studies. Each entry renders a full page at
-// /case-studies/<slug>, a card on /case-studies and the homepage, and a card
-// on the service pages listed in `featuredOn`. Publish only engagements the
+// /case-studies/<slug>, a card on /case-studies and the homepage, and a
+// band on the service pages listed in `featuredOn`. Publish only engagements the
 // client has agreed to, with no client names or figures that are not
 // verified and approved.
 
@@ -14,6 +14,8 @@ export type CaseStudyBlock =
   | { type: "columns"; columns: CaseStudyBlock[][] }
   | { type: "steps" | "timeline" | "numbered" | "terms"; items: CaseStudyCard[] }
   | { type: "result"; paragraphs: string[]; stats: CaseStudyStat[] }
+
+export type CaseStudyServiceBand = { heading: string; text: string; stats: CaseStudyStat[] }
 
 export type CaseStudySection = {
   heading: string
@@ -35,8 +37,8 @@ export type CaseStudy = {
   challenge: string
   /** The two figures shown on the card. */
   stats: CaseStudyStat[]
-  /** Service page slugs that show this case study's card. */
-  featuredOn: string[]
+  /** Service page slug -> the case study band shown on that page, in the page's own words. */
+  featuredOn: Record<string, CaseStudyServiceBand>
   datePublished: string
   dateModified: string
   metaTitle: string
@@ -69,7 +71,24 @@ export const caseStudies: CaseStudy[] = [
         label: "AU Client Since",
       },
     ],
-    featuredOn: ["accounting-reporting-audit-support", "payroll-expat-services", "corporate-tax-gst-transfer-pricing"],
+    featuredOn: {
+    "accounting-reporting-audit-support": {
+      heading: "A 40+ Person Team in India, with No In-House Finance",
+      text: "A Virginia-based SaaS company set up its Indian subsidiary with AU in 2018 as a captive centre billing the parent on a cost-plus basis. Today AU runs the subsidiary's finance and HR function, so the US team has no finance staff to manage in India.",
+      stats: [
+        { value: "40+", label: "Staff in India" },
+        { value: "2018", label: "AU Client Since" },
+      ],
+    },
+    "payroll-expat-services": {
+      heading: "A 40+ Person Team in India, with No In-House Finance or HR",
+      text: "A Virginia-based SaaS company set up its Indian subsidiary with AU in 2018 as a captive centre billing the parent on a cost-plus basis. Today all its staff except US sales work in India, and AU runs the subsidiary's finance and HR function.",
+      stats: [
+        { value: "40+", label: "Staff in India" },
+        { value: "2018", label: "AU Client Since" },
+      ],
+    },
+    },
     datePublished: "2026-10-20",
     dateModified: "2026-10-20",
     metaTitle: "Case Study: Finance and HR for a US SaaS Captive in India | AU Corporate",
@@ -504,7 +523,16 @@ export const caseStudies: CaseStudy[] = [
         label: "Days for Apostilled Documents",
       },
     ],
-    featuredOn: ["india-subsidiary-registration"],
+    featuredOn: {
+    "india-subsidiary-registration": {
+      heading: "India Subsidiary Incorporated in 14 Days for a US Longevity Company",
+      text: "A Phoenix-based US longevity company needed its Indian subsidiary incorporated within 15 days. After the ROC approved the proposed name, AU Corporate drafted the incorporation documents the very next day and explained signing and apostille over a video call. The client returned the apostilled documents within 10 days. AU applied for the digital signature certificates (DSC) in parallel, collected the resident director's signatures, filed the SPICe+ form on day 13 and received the incorporation approval email on day 14.",
+      stats: [
+        { value: "14", label: "Days to Incorporation Approval" },
+        { value: "10", label: "Days for Apostilled Documents" },
+      ],
+    },
+    },
     datePublished: "2026-10-20",
     dateModified: "2026-10-20",
     metaTitle: "Case Study: India Subsidiary Incorporated in 14 Days for a US Company | AU Corporate",
@@ -916,7 +944,16 @@ export const caseStudies: CaseStudy[] = [
         label: "Retainership Secured",
       },
     ],
-    featuredOn: ["fema-rbi-compliance", "secretarial-roc-compliance"],
+    featuredOn: {
+    "fema-rbi-compliance": {
+      heading: "14 FEMA Contraventions Compounded for a Chinese-Owned Subsidiary",
+      text: "The parent of a China-owned subsidiary appointed AU to review its compliance, which another consultant had handled. We found no FC-GPR for the initial subscription and no FLA return since incorporation. AU prepared the compounding application, the RBI compounded all 14 contraventions, and the client then appointed AU on a monthly retainership for tax and FEMA compliance.",
+      stats: [
+        { value: "14", label: "Contraventions Compounded" },
+        { value: "Monthly", label: "Retainership Secured for Tax and FEMA" },
+      ],
+    },
+    },
     datePublished: "2026-10-20",
     dateModified: "2026-10-20",
     metaTitle: "Case Study: FEMA Compounding for a China-Owned Subsidiary in India | AU Corporate",
@@ -1317,7 +1354,7 @@ export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {
   return caseStudies.find((c) => c.slug === slug)
 }
 
-/** Case studies to show on a service page, by the page's slug. */
-export function caseStudiesForService(serviceSlug: string): CaseStudy[] {
-  return caseStudies.filter((c) => c.featuredOn.includes(serviceSlug))
+/** Case study bands to show on a service page, by the page's slug. */
+export function caseStudiesForService(serviceSlug: string): { study: CaseStudy; band: CaseStudyServiceBand }[] {
+  return caseStudies.flatMap((study) => (study.featuredOn[serviceSlug] ? [{ study, band: study.featuredOn[serviceSlug] }] : []))
 }

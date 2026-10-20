@@ -356,7 +356,8 @@ export default function HomePage() {
           )}
           <p className="mt-10 text-center text-sm text-gray-600">
             Not ready for a subsidiary? We also support{" "}
-            <Link href="/branch-office-registration" className="font-semibold text-blue underline underline-offset-4">Branch Offices</Link> and{" "}
+            <Link href="/branch-office-registration" className="font-semibold text-blue underline underline-offset-4">Branch Offices</Link>,{" "}
+            <Link href="/liaison-office-registration" className="font-semibold text-blue underline underline-offset-4">Liaison Offices</Link> and{" "}
             <Link href="/project-office-registration" className="font-semibold text-blue underline underline-offset-4">Project Offices</Link>.
           </p>
         </div>
