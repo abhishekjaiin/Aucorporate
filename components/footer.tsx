@@ -10,6 +10,7 @@ const indiaEntryLinks = [
   { label: "US Companies", href: "/blog/usa-to-india" },
   { label: "Australian Companies", href: "/blog/australia-to-india" },
   { label: "UK Companies", href: "/blog/uk-to-india" },
+  { label: "Japanese Companies", href: "/blog/japan-to-india" },
 ]
 
 const serviceLinks = [

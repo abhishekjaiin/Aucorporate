@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
+import { RelatedCaseStudies } from "@/components/case-study/RelatedCaseStudies"
 
 const heroFacts = [
   { title: "Reasonable Fees", body: "A clear written quote before we start" },
@@ -382,6 +383,8 @@ export default function CorporateTaxGstTransferPricingPage() {
           </div>
         </div>
       </section>
+
+      <RelatedCaseStudies serviceSlug="corporate-tax-gst-transfer-pricing" />
 
       {/* FAQ */}
       <section className="py-20 bg-white" id="faq">

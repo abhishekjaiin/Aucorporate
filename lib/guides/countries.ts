@@ -50,7 +50,7 @@ export type GuideTopic =
   | "data-protection"
   | "gcc"
 
-export type GuideCountryKey = "usa" | "australia" | "uk"
+export type GuideCountryKey = "usa" | "australia" | "uk" | "japan"
 
 export type GuideCountry = {
   /** "the USA" / "Australia", as used in "from {name}". */
@@ -154,6 +154,28 @@ export const GUIDE_COUNTRIES: Record<GuideCountryKey, GuideCountry> = {
       "trade-agreement": "india-uk-ceta",
       "data-protection": "data-protection-uk-gdpr-dpdp",
       gcc: "gcc-for-uk-companies",
+    },
+  },
+  japan: {
+    name: "Japan",
+    adjective: "Japanese",
+    locale: "en-JP",
+    basePath: "/blog/japan-to-india",
+    // Same topic set and treaty sub-hub as the USA cluster, with Japan's own
+    // slugs for the treaty and parent pages.
+    slugs: {
+      hub: "",
+      ...sameSlugs(SHARED_TOPICS),
+      "parent-obligations": "japan-parent-obligations",
+      "treaties-hub": "tax-and-social-security-treaties",
+      "treaties-faq": "tax-and-social-security-treaties/faq",
+      "india-dtaa": "tax-and-social-security-treaties/india-japan-dtaa-guide",
+      "dtaa-withholding-rates": "tax-and-social-security-treaties/dtaa-withholding-rates",
+      "epf-international-workers": "tax-and-social-security-treaties/epf-international-workers",
+      "expat-tax-residency": "tax-and-social-security-treaties/expat-tax-residency-india-japan",
+      "social-security-agreement": "tax-and-social-security-treaties/india-japan-social-security-agreement",
+      "treaty-benefits-documents": "tax-and-social-security-treaties/treaty-benefits-documents",
+      "home-social-security": "tax-and-social-security-treaties/japan-social-insurance-for-expats-in-india",
     },
   },
 }

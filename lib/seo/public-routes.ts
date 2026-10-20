@@ -33,7 +33,7 @@ export type PublicPage = {
 
 export const publicPages: PublicPage[] = [
   // Homepage - Highest Priority
-  { path: "/", priority: 1.0, changeFrequency: "daily", lastModified: "2026-10-19" },
+  { path: "/", priority: 1.0, changeFrequency: "daily", lastModified: "2026-10-20" },
 
   // Core Service Hub
   { path: "/services", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-10-19" },
@@ -91,12 +91,12 @@ export const publicPages: PublicPage[] = [
   // India Business Setup Cluster
   { path: "/india-business-setup/fdi-channels", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/india-business-setup/company-formation", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-10-19" },
-  { path: "/india-subsidiary-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/accounting-reporting-audit-support", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/fema-rbi-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/corporate-tax-gst-transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/secretarial-roc-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/payroll-expat-services", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/india-subsidiary-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/accounting-reporting-audit-support", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/fema-rbi-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/corporate-tax-gst-transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/secretarial-roc-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/payroll-expat-services", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
   { path: "/india-business-setup/regulatory-compliance", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-08-20" },
   { path: "/india-business-setup/banking-taxation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/india-business-setup/timeline-resources", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
@@ -127,7 +127,7 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/usa-to-india", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-19" },
   { path: "/blog/usa-to-india/incorporation-process", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/usa-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/blog/usa-to-india/documents-and-apostille", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/usa-to-india/documents-and-apostille", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
   { path: "/blog/usa-to-india/resident-director", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/usa-to-india/funding-fema-fc-gpr", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/usa-to-india/share-valuation", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
@@ -146,7 +146,7 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/usa-to-india/global-vat", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/usa-to-india/hiring-and-payroll", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/usa-to-india/common-mistakes", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/blog/usa-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/usa-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
   { path: "/blog/usa-to-india/tax-and-social-security-treaties", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/usa-to-india/tax-and-social-security-treaties/india-us-dtaa-guide", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/usa-to-india/tax-and-social-security-treaties/dtaa-withholding-rates", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
@@ -161,7 +161,7 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/australia-to-india", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-19" },
   { path: "/blog/australia-to-india/incorporation-process", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/australia-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/blog/australia-to-india/documents-and-apostille", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/australia-to-india/documents-and-apostille", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
   { path: "/blog/australia-to-india/resident-director", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/australia-to-india/funding-fema-fc-gpr", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/australia-to-india/share-valuation", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
@@ -182,7 +182,7 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/australia-to-india/global-vat", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/australia-to-india/hiring-and-payroll", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/australia-to-india/common-mistakes", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/blog/australia-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/australia-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
 
   // UK to India guide cluster
   { path: "/blog/uk-to-india", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-19" },
@@ -190,7 +190,7 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/uk-to-india/compliance-calendar", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/uk-to-india/contracts-courts-arbitration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/uk-to-india/data-protection-uk-gdpr-dpdp", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/blog/uk-to-india/documents-companies-house-apostille", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/documents-companies-house-apostille", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
   { path: "/blog/uk-to-india/exit-and-restructuring", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/uk-to-india/funding-and-fema", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/uk-to-india/gcc-for-uk-companies", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
@@ -204,7 +204,41 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/uk-to-india/transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/uk-to-india/uk-employees-in-india-dcc", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/uk-to-india/uk-parent-reporting", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/blog/uk-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/blog/uk-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
+
+  // Japan to India guide cluster
+  { path: "/blog/japan-to-india", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/audit-icofr", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/common-mistakes", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/compliance-calendar", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/contracts-and-arbitration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/documents-and-apostille", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/dtaa-pe-risk", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/eor-vs-subsidiary", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/esop", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/expat-visa", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/funding-fema-fc-gpr", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/global-vat", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/hiring-and-payroll", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/incorporation-process", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/japan-parent-obligations", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/repatriating-profits", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/resident-director", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/restructuring-and-exit", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/share-valuation", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/subsidiary-vs-branch-vs-liaison-office-vs-llp", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/tax-and-social-security-treaties", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/tax-and-social-security-treaties/dtaa-withholding-rates", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/tax-and-social-security-treaties/epf-international-workers", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/tax-and-social-security-treaties/expat-tax-residency-india-japan", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/tax-and-social-security-treaties/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/tax-and-social-security-treaties/india-japan-dtaa-guide", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/tax-and-social-security-treaties/india-japan-social-security-agreement", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/tax-and-social-security-treaties/japan-social-insurance-for-expats-in-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/tax-and-social-security-treaties/treaty-benefits-documents", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/tax-notices-and-litigation", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/blog/japan-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
 
   // Insights Hub (Postgres-backed) — individual published Insight URLs are
   // fetched live by each consumer (see getPublishedInsights()). The index
@@ -217,12 +251,12 @@ export const publicPages: PublicPage[] = [
   // page isn't worth indexing, and there is nothing to list yet.
   ...(caseStudies.length > 0
     ? [
-        { path: "/case-studies", priority: 0.8, changeFrequency: "monthly" as const, lastModified: "2026-10-08" },
+        { path: "/case-studies", priority: 0.8, changeFrequency: "monthly" as const, lastModified: "2026-10-20" },
         ...caseStudies.map((c) => ({
           path: `/case-studies/${c.slug}`,
           priority: 0.75,
           changeFrequency: "yearly" as const,
-          lastModified: "2026-10-08",
+          lastModified: c.dateModified,
         })),
       ]
     : []),

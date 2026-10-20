@@ -26,7 +26,7 @@ const toc = [
 ]
 
 const faqs = [
-  { q: "What is an apostille and who issues it in the UK?", a: "An apostille is a certificate under the Hague Convention that makes a UK public document valid in India. The FCDO Legalisation Office issues it. A private document is first signed before a notary public, and the FCDO then apostilles the notary's signature and seal." },
+  { q: "Which UK documents need an apostille for an Indian subsidiary, and who issues it?", a: "An apostille is a Hague Convention certificate that makes a UK public document valid in India. The UK parent's certificate of incorporation, articles of association, board resolution, Companies House profile or good standing certificate, and the notarised passports and address proofs of its directors and authorised signatory all need one. The FCDO Legalisation Office issues apostilles, on paper or as an e-apostille, after a UK notary public has signed the private documents. No Indian High Commission legalisation is needed." },
   { q: "Do UK documents need Indian embassy legalisation as well?", a: "No. India and the UK are both parties to the Hague Apostille Convention, so an apostille replaces embassy legalisation." },
   { q: "Does a UK solicitor or commissioner for oaths count as a notary?", a: "Usually not. For documents going to India, a notary public is the safe choice. Check with your adviser before notarising each document type." },
   { q: "What documents does a UK parent need to provide?", a: "Typically the certificate of incorporation, articles of association, a board resolution authorising the investment and the signatory, a Companies House profile or certificate of good standing, and notarised identity and address proof for directors and signatories." },
