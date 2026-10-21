@@ -1,6 +1,7 @@
 "use client"
 
 import { openInquiryModal } from '@/lib/inquiry-modal'
+import { OFFICES } from "@/lib/site"
 
 export function InquiryForm({
   title = "Tell us your plan. We'll map your India path.",
@@ -68,9 +69,9 @@ export function InquiryForm({
           </div>
 
           <p className="mt-4 text-xs leading-relaxed text-[#6b7280]">
-            New Delhi: 408 Surya Kiran Building, 19 KG Marg, New Delhi 110001
+            New Delhi: {OFFICES.newDelhi.lines}
             <span className="mx-1.5">·</span>
-            Gurugram (by appointment)
+            Gurugram: {OFFICES.gurugram.lines}
             <span className="mx-1.5">·</span>
             <a href="tel:+919999010513" className="font-medium text-[#0E1B4D] hover:underline">
               +91-9999010513

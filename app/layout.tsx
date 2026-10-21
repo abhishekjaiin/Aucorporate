@@ -8,6 +8,7 @@ import { PageTransition } from "@/components/PageTransition"
 import { FloatingInquiryCTA } from "@/components/FloatingInquiryCTA"
 import { StickyInquirySidebar } from "@/components/StickyInquirySidebar"
 
+import { OFFICE_ADDRESSES_SCHEMA } from "@/lib/site"
 import "./globals.css"
 
 const inter = Inter({
@@ -213,6 +214,7 @@ export default function RootLayout({
                   url: "https://www.theaucorp.com",
                   logo: "https://www.theaucorp.com/logo.png",
                   foundingDate: "2016",
+                  address: OFFICE_ADDRESSES_SCHEMA,
                   sameAs: [
                     "https://www.linkedin.com/company/a-u-corporate/",
                     "https://www.instagram.com/aucorporate/",

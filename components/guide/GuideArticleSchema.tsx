@@ -1,3 +1,5 @@
+import { AUTHOR_LINKEDIN, OFFICE_ADDRESSES_SCHEMA } from "@/lib/site"
+
 /**
  * Organization + Person + WebPage + Article JSON-LD for a guide page.
  * BreadcrumbList comes from the existing Breadcrumb component and FAQPage
@@ -33,14 +35,7 @@ export function GuideArticleSchema({
         slogan: "Growing Together",
         foundingDate: "2016",
         telephone: "+91-9999010513",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "408 Surya Kiran Building, 19 KG Marg",
-          addressLocality: "New Delhi",
-          addressRegion: "Delhi",
-          postalCode: "110001",
-          addressCountry: "IN",
-        },
+        address: OFFICE_ADDRESSES_SCHEMA,
         sameAs: ["https://www.linkedin.com/company/a-u-corporate/", "https://www.instagram.com/aucorporate/"],
       },
       {
@@ -50,6 +45,7 @@ export function GuideArticleSchema({
         jobTitle: "Chartered Accountant",
         worksFor: { "@id": "https://www.theaucorp.com/#organization" },
         url: "https://www.theaucorp.com/about",
+        sameAs: [AUTHOR_LINKEDIN],
         hasCredential: {
           "@type": "EducationalOccupationalCredential",
           name: "Chartered Accountant, ICAI membership no. 544646",

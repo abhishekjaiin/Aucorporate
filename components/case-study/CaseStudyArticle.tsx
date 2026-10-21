@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { AuthorLink } from "@/components/AuthorLink"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { FaqAccordion } from "@/components/FaqAccordion"
 import { GuideAnswerBox } from "@/components/guide/GuideAnswerBox"
@@ -239,9 +240,7 @@ export function CaseStudyArticle({ study }: { study: CaseStudy }) {
           <p className="text-gray-500 mb-3">{study.faq.sub}</p>
           <p className="text-sm text-gray-600 mb-1">
             Written and reviewed by{" "}
-            <Link href="/about" className="font-semibold text-blue hover:underline">
-              Abhishek Jaiin
-            </Link>
+            <AuthorLink className="font-semibold text-blue hover:underline" />
             , Chartered Accountant (ICAI Membership No. 544646) · Last reviewed:{" "}
             <time dateTime={study.faq.reviewed}>{reviewed}</time>
           </p>

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { OFFICES } from "@/lib/site"
 import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import HeroSection from "@/components/HeroSection"
@@ -627,9 +628,9 @@ export default function HomePage() {
             <div className="text-white/80 text-sm leading-7">
               +91-9999010513
               <br />
-              408 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001
+              {OFFICES.newDelhi.lines}
               <br />
-              &amp; Gurugram, India
+              {OFFICES.gurugram.lines}
             </div>
           </div>
           <InquiryForm

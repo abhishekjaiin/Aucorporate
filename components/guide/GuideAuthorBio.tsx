@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { AUTHOR_LINKEDIN } from "@/lib/site"
 
 /** Author bio aside — identical content on every guide page, so it takes no props. */
 export function GuideAuthorBio() {
@@ -19,9 +20,14 @@ export function GuideAuthorBio() {
           advisory firm that helps foreign companies set up, run and scale operations in India. He advises on entity
           structuring, FEMA and RBI compliance, transfer pricing and cross-border tax.
         </p>
-        <Link href="/about" className="text-sm font-semibold text-blue-800 hover:underline mt-1 inline-block">
-          More about the author
-        </Link>
+        <p className="mt-1 flex flex-wrap gap-x-4 text-sm font-semibold">
+          <a href={AUTHOR_LINKEDIN} target="_blank" rel="noopener noreferrer" className="text-blue-800 hover:underline">
+            Abhishek Jaiin on LinkedIn
+          </a>
+          <Link href="/about" className="text-blue-800 hover:underline">
+            More about the author
+          </Link>
+        </p>
       </div>
     </aside>
   )

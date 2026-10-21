@@ -3,6 +3,7 @@ import { InquiryTrigger } from "@/components/InquiryTrigger"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { LeadForm } from "@/components/LeadForm"
 import { FaqAccordion } from "@/components/FaqAccordion"
+import { AuthorLink } from "@/components/AuthorLink"
 
 const heroChecklist = [
   { title: "Foreign Company Rate", body: "About 36.4% to 38.22% effective" },
@@ -138,7 +139,7 @@ export default function BranchOfficeTaxGstTransferPricingPage() {
               A branch office in India is taxed as a foreign company, at 35 percent plus surcharge and cess, on profits attributable to its Indian business. It must deduct TDS, pay advance tax, file a return, register for GST, and treat its head office as a distinct person under GST. AU Corporate, a New Delhi firm of Chartered Accountants, prepares and files each of these and represents the branch office in disputes.
             </p>
             <p className="mt-3 text-sm text-gray-500">
-              Written and reviewed by <strong className="text-gray-700">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) · Last reviewed: 9 October 2026
+              Written and reviewed by <AuthorLink className="font-semibold text-gray-700 hover:underline" />, Chartered Accountant (ICAI Membership No. 544646) · Last reviewed: 9 October 2026
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-10">
@@ -280,7 +281,7 @@ export default function BranchOfficeTaxGstTransferPricingPage() {
           <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">Questions Before You Start</h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-2">Straight answers to the questions foreign finance teams ask most about a branch office in India.</p>
           <p className="text-sm text-gray-500 text-center">
-            Written and reviewed by <strong className="text-gray-700">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) · Last reviewed: 9 October 2026
+            Written and reviewed by <AuthorLink className="font-semibold text-gray-700 hover:underline" />, Chartered Accountant (ICAI Membership No. 544646) · Last reviewed: 9 October 2026
           </p>
           <p className="text-sm text-gray-500 text-center mb-10">This is general guidance based on Indian law and practice as at the date above. It is not advice for your specific case, and rules can change.</p>
           <div className="grid sm:grid-cols-2 gap-x-10">

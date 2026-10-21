@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { OFFICES } from "@/lib/site"
 import Image from "next/image"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { Reveal } from "@/components/Reveal"
@@ -388,7 +389,7 @@ export default function UniproAsiaPartnerPage() {
               <p className="text-sm text-gray-600 mb-1">AU Corporate</p>
               <p className="text-sm text-gray-600 flex items-start gap-2">
                 <MapPin className="shrink-0 mt-0.5 text-yellow-600" size={16} />
-                408 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001
+                {OFFICES.newDelhi.lines}
               </p>
             </Reveal>
             <Reveal delay={0.1} className="p-6 border rounded-xl">

@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { AuthorLink } from "@/components/AuthorLink"
 
 /**
  * Hero for the long-form "guide" content format (country-entry hubs and
@@ -25,7 +25,7 @@ export function GuideHero({
         <h1 className="mb-4 mt-3 text-4xl font-bold md:text-5xl leading-tight">{title}</h1>
         {dek && <p className="mb-6 text-xl leading-relaxed text-white/85">{dek}</p>}
         <p className="text-sm text-white/70">
-          By <Link href="/about" className="font-semibold text-white hover:underline">Abhishek Jaiin</Link>, Chartered Accountant (ICAI membership no. 544646), AU Corporate &middot; Last updated {updated}
+          By <AuthorLink className="font-semibold text-white hover:underline" />, Chartered Accountant (ICAI membership no. 544646), AU Corporate &middot; Last updated {updated}
         </p>
       </div>
     </section>
