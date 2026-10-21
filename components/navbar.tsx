@@ -119,11 +119,11 @@ export function Navbar() {
   }
   const scheduleClose = () => {
     if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current)
-    // 400ms, not the usual ~200ms hover-intent default: since the DBI/Services
-    // panels render centered in the viewport (to stay fully on-screen on
-    // narrower widths), the trigger-to-panel gap can be 300px+ on a wide
-    // desktop — a shorter delay reliably closed the menu mid-transit.
-    closeTimeoutRef.current = setTimeout(() => setActiveMenu(null), 400)
+    // Each trigger fills the full navbar height and every panel starts at the
+    // navbar's bottom edge, so the cursor moves straight from trigger to panel
+    // with no gap. The delay only has to forgive a slightly diagonal path,
+    // and anything longer feels like the menu is lagging.
+    closeTimeoutRef.current = setTimeout(() => setActiveMenu(null), 150)
   }
   const cancelClose = () => {
     if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current)
@@ -147,10 +147,10 @@ export function Navbar() {
             </div>
           </Link>
 
-          <div className="hidden items-center gap-1 lg:flex">
+          <div className="hidden self-stretch items-stretch gap-1 lg:flex">
             {/* DOING BUSINESS IN INDIA — mega menu */}
             <div
-              className="relative"
+              className="relative flex items-center"
               onMouseEnter={() => openMenu("dbi")}
               onMouseLeave={scheduleClose}
             >
@@ -211,7 +211,7 @@ export function Navbar() {
 
             {/* SERVICES */}
             <div
-              className="relative"
+              className="relative flex items-center"
               onMouseEnter={() => openMenu("services")}
               onMouseLeave={scheduleClose}
             >
@@ -282,7 +282,7 @@ export function Navbar() {
 
             {/* INSIGHTS */}
             <div
-              className="relative"
+              className="relative flex items-center"
               onMouseEnter={() => openMenu("insights")}
               onMouseLeave={scheduleClose}
             >
@@ -315,7 +315,7 @@ export function Navbar() {
 
             {/* ABOUT */}
             <div
-              className="relative"
+              className="relative flex items-center"
               onMouseEnter={() => openMenu("about")}
               onMouseLeave={scheduleClose}
             >
