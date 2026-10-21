@@ -3,7 +3,7 @@ import { GUIDE_COUNTRIES, type GuideCountryKey } from "@/lib/guides/countries"
 import { pageMeta } from "@/lib/seo/llms-page-descriptions"
 import { publicPages } from "@/lib/seo/public-routes"
 
-const TAB_LABELS: Record<GuideCountryKey, string> = { usa: "USA", australia: "Australia", uk: "UK", japan: "Japan" }
+const TAB_LABELS: Record<GuideCountryKey, string> = { usa: "USA", australia: "Australia", uk: "UK", singapore: "Singapore", japan: "Japan" }
 
 /** Every page of each country guide cluster, in sitemap order, hub first. */
 function countryGuides(): CountryGuideGroup[] {

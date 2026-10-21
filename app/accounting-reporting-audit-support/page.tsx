@@ -97,6 +97,7 @@ const countryGuides = [
   { label: "UK", href: "/blog/uk-to-india" },
   { label: "Australia", href: "/blog/australia-to-india" },
   { label: "Japan", href: "/blog/japan-to-india" },
+  { label: "Singapore", href: "/blog/singapore-to-india" },
 ]
 
 const afterLinks = [

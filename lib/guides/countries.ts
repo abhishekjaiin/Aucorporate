@@ -49,8 +49,9 @@ export type GuideTopic =
   | "trade-agreement"
   | "data-protection"
   | "gcc"
+  | "holdco"
 
-export type GuideCountryKey = "usa" | "australia" | "uk" | "japan"
+export type GuideCountryKey = "usa" | "australia" | "uk" | "japan" | "singapore"
 
 export type GuideCountry = {
   /** "the USA" / "Australia", as used in "from {name}". */
@@ -154,6 +155,36 @@ export const GUIDE_COUNTRIES: Record<GuideCountryKey, GuideCountry> = {
       "trade-agreement": "india-uk-ceta",
       "data-protection": "data-protection-uk-gdpr-dpdp",
       gcc: "gcc-for-uk-companies",
+    },
+  },
+  singapore: {
+    name: "Singapore",
+    adjective: "Singapore",
+    locale: "en-SG",
+    basePath: "/blog/singapore-to-india",
+    // Written with its own slugs, like the UK cluster.
+    slugs: {
+      hub: "",
+      faq: "faq",
+      "incorporation-process": "incorporation-steps",
+      "subsidiary-vs-branch-vs-liaison-office-vs-llp": "structure-options",
+      "documents-and-apostille": "documents-acra-apostille",
+      "funding-fema-fc-gpr": "funding-and-fema",
+      "repatriating-profits": "repatriating-profits",
+      "transfer-pricing": "transfer-pricing",
+      "india-dtaa": "india-singapore-dtaa",
+      "parent-obligations": "singapore-parent-obligations",
+      "compliance-calendar": "compliance-calendar",
+      "contracts-and-arbitration": "contracts-courts-siac",
+      "restructuring-and-exit": "exit-and-restructuring",
+      "expat-visa": "relocate-singapore-staff",
+      "hiring-and-payroll": "hiring-in-india",
+      "common-mistakes": "common-mistakes",
+      "foreign-employee-treaty-ssa": "singapore-employees-in-india-epf-cpf",
+      "trade-agreement": "india-singapore-ceca",
+      "data-protection": "data-protection-pdpa-dpdp",
+      gcc: "gcc-for-singapore-companies",
+      holdco: "singapore-holdco-for-india",
     },
   },
   japan: {

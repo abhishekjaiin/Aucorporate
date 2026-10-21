@@ -88,7 +88,7 @@ const countries: { label: string; href?: string }[] = [
   { label: "UK", href: "/blog/uk-to-india" },
   { label: "Australia", href: "/blog/australia-to-india" },
   { label: "Japan", href: "/blog/japan-to-india" },
-  { label: "Singapore" },
+  { label: "Singapore", href: "/blog/singapore-to-india" },
   { label: "Germany" },
   { label: "China" },
   { label: "Hong Kong" },
@@ -131,7 +131,7 @@ const faqs = [
   },
   {
     q: "Which countries does AU Corporate work with?",
-    a: "AU Corporate has served parent companies from more than 10 countries, including the USA, UK, Singapore, Australia, Germany, Japan, China, Hong Kong, Spain, France and the UAE. It publishes detailed India entry guides for US, UK, Australian and Japanese companies.",
+    a: "AU Corporate has served parent companies from more than 10 countries, including the USA, UK, Singapore, Australia, Germany, Japan, China, Hong Kong, Spain, France and the UAE. It publishes detailed India entry guides for US, UK, Australian, Japanese and Singapore companies.",
   },
   {
     q: "How much does AU Corporate charge to set up an Indian subsidiary?",
@@ -344,8 +344,8 @@ export default function AboutPage() {
           <h2 className="mb-2 text-2xl font-bold text-[#081a42] sm:text-3xl">Who We Work With</h2>
           <p className="mb-8 max-w-3xl text-gray-600">
             Parent companies from more than 10 countries, from start-ups opening a first Indian subsidiary to groups
-            running captive centres. We publish full India entry guides for companies from the USA, UK, Australia and
-            Japan.
+            running captive centres. We publish full India entry guides for companies from the USA, UK, Australia, Japan
+            and Singapore.
           </p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
             {countries.map((c) =>
