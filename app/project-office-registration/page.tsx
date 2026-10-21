@@ -72,7 +72,7 @@ const countryGuides = [
 const afterLinks = [
   { label: "Project Office Payroll and Labour Law Compliance", href: "/project-office-payroll-compliance" },
   { label: "Project Office FEMA and RBI Compliance", href: "/project-office-fema-rbi-compliance" },
-  { label: "ROC Compliance for a Project Office (FC Forms)", href: "/project-office-roc-compliance" },
+  { label: "ROC Compliance for Foreign Company Offices (FC Forms)", href: "/foreign-company-roc-compliance" },
   { label: "Project Office Accounting, Reporting and Audit", href: "/project-office-accounting-audit" },
   { label: "Project Office Tax, GST and Transfer Pricing", href: "/project-office-tax-gst-transfer-pricing" },
 ]

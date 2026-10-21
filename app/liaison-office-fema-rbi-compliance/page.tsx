@@ -60,7 +60,7 @@ const included = [
 const afterLinks = [
   { label: "Liaison Office Registration", href: "/liaison-office-registration" },
   { label: "Liaison Office Payroll and Labour Law Compliance", href: "/liaison-office-payroll-compliance" },
-  { label: "ROC Compliance for a Liaison Office (FC Forms)", href: "/liaison-office-roc-compliance" },
+  { label: "ROC Compliance for Foreign Company Offices (FC Forms)", href: "/foreign-company-roc-compliance" },
   { label: "Liaison Office Accounting, Reporting and Audit", href: "/liaison-office-accounting-audit" },
   { label: "Liaison Office Tax Compliance", href: "/liaison-office-tax-compliance" },
 ]
@@ -247,7 +247,7 @@ export default function LiaisonOfficeFemaRbiCompliancePage() {
             <strong>Not included:</strong> compounding fees payable to the RBI, bank charges, and tax and ROC filings, which are separate services from the same team — see{" "}
             <Link href="/liaison-office-tax-compliance" className="text-gold-dark font-semibold hover:underline">Liaison Office Tax Compliance</Link>{" "}
             and{" "}
-            <Link href="/liaison-office-roc-compliance" className="text-gold-dark font-semibold hover:underline">ROC Compliance for a Liaison Office</Link>.
+            <Link href="/foreign-company-roc-compliance" className="text-gold-dark font-semibold hover:underline">ROC Compliance for a Liaison Office</Link>.
           </p>
         </div>
       </section>

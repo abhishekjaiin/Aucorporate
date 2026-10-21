@@ -61,7 +61,7 @@ const afterLinks = [
   { label: "Project Office Registration", href: "/project-office-registration" },
   { label: "Project Office Accounting, Reporting and Audit", href: "/project-office-accounting-audit" },
   { label: "Project Office Tax, GST and Transfer Pricing", href: "/project-office-tax-gst-transfer-pricing" },
-  { label: "ROC Compliance for a Project Office (FC Forms)", href: "/project-office-roc-compliance" },
+  { label: "ROC Compliance for Foreign Company Offices (FC Forms)", href: "/foreign-company-roc-compliance" },
   { label: "Project Office Payroll and Labour Law Compliance", href: "/project-office-payroll-compliance" },
 ]
 
@@ -246,7 +246,7 @@ export default function ProjectOfficeFemaRbiCompliancePage() {
             <strong>Not included:</strong> compounding fees payable to the RBI, bank charges, and tax and ROC filings, which are separate services from the same team — see{" "}
             <Link href="/project-office-tax-gst-transfer-pricing" className="text-gold-dark font-semibold hover:underline">Project Office Tax, GST and Transfer Pricing</Link>{" "}
             and{" "}
-            <Link href="/project-office-roc-compliance" className="text-gold-dark font-semibold hover:underline">ROC Compliance for a Project Office</Link>.
+            <Link href="/foreign-company-roc-compliance" className="text-gold-dark font-semibold hover:underline">ROC Compliance for a Project Office</Link>.
           </p>
         </div>
       </section>
