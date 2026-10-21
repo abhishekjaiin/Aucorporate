@@ -153,7 +153,7 @@ export function BlogIndex({ guides }: { guides: CountryGuideGroup[] }) {
               className="mt-5 inline-flex items-center gap-2 text-sm font-semibold"
               style={{ color: GOLD }}
             >
-              India entry guides for US, Australian, UK and Japanese companies <ArrowRight className="h-4 w-4" />
+              India entry guides for US, Australian, UK, Singapore and Japanese companies <ArrowRight className="h-4 w-4" />
             </a>
           </Reveal>
         </div>

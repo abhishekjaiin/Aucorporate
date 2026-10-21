@@ -366,6 +366,89 @@ export const COUNTRY_CONTEXT: Record<GuideCountryKey, Partial<Record<GuideTopic,
       "On a sale of the Indian subsidiary, India can tax the gain under its own law, and the Japanese parent claims a foreign tax credit under Japanese rules.",
     ],
   },
+  singapore: {
+    "incorporation-process": [
+      "A Singapore parent's core papers come from ACRA through BizFile+: the business profile, certificate of incorporation and constitution, with a board resolution approving the Indian investment.",
+      "Private documents are notarised and then apostilled by the Singapore Academy of Law; Singapore joined the Apostille Convention on 16 September 2021, so no Indian High Commission legalisation is needed.",
+      "India is 2.5 hours behind Singapore, so digital signature, bank KYC and filing calls fit easily into a Singapore working day.",
+    ],
+    "subsidiary-vs-branch-vs-liaison-office-vs-llp": [
+      "Singapore groups also weigh a GIFT City unit for fund management, fintech or treasury, which runs under IFSCA licensing with its own FEMA and tax rules.",
+      "Singapore does not share a land border with India, so Press Note 3's prior-approval rule does not apply, unless a beneficial owner further up the chain is from a land-border country.",
+      "Whether to hold India directly or through a Singapore holding company is a separate decision, driven by treaty access and substance rather than by the Indian entity type.",
+    ],
+    "documents-and-apostille": [
+      "The Singapore Academy of Law issues the apostille under the Apostille Act 2020; the notary signs first, then the Academy apostilles the notary's signature.",
+      "Use the latest ACRA business profile from BizFile+, and keep the register of registrable controllers extract ready to show the Indian bank who owns the parent.",
+      "Singapore documents are in English, so no translation is needed, unlike parents from many other Asian countries.",
+    ],
+    "funding-fema-fc-gpr": [
+      "The parent usually remits SGD or USD from its own account; the Indian bank converts it and issues the foreign inward remittance certificate, and shares must be allotted within 60 days.",
+      "Press Note 3 does not apply to Singapore investors, but Indian banks check the full ownership chain, so be ready to show ultimate owners behind a Singapore holding company.",
+    ],
+    "repatriating-profits": [
+      "The India-Singapore treaty caps Indian tax at 10% on dividends for a 25% or larger holding (15% otherwise), 10% on bank interest (15% otherwise) and 10% on royalties and technical fees.",
+      "Singapore taxes companies on a territorial basis and has no capital gains tax, so dividends received from India can often be exempt in Singapore, which makes the Indian withholding the main cost.",
+      "Claim treaty rates with an IRAS certificate of residence covering the payment date, plus Form 41 (previously Form 10F).",
+    ],
+    "transfer-pricing": [
+      "IRAS accepts a fixed cost mark-up on routine support services, but India has no small-company exemption and tests the same transaction under its own rules, so set one margin both sides can defend.",
+      "Most Singapore parents close on 31 December while India closes on 31 March, so the two transfer pricing years need a bridge.",
+    ],
+    "india-dtaa": [
+      "Since the Third Protocol, India can tax gains on Indian shares acquired on or after 1 April 2017; shares acquired before that date stay taxable only in Singapore, unless the holder is a shell.",
+      "Services through employees create a permanent establishment after 90 days in a fiscal year, and after only 30 days for services to an associated enterprise.",
+    ],
+    "parent-obligations": [
+      "The Singapore parent files its own Form C with IRAS and its annual return with ACRA; the Indian subsidiary's audited numbers feed the group accounts.",
+      "Foreign-sourced dividends can be exempt in Singapore when the headline tax rate and subject-to-tax conditions are met, so keep the Indian tax evidence on file.",
+    ],
+    "compliance-calendar": [
+      "Most Singapore parents close on 31 December, so the Indian audit (for the year to 31 March) and the Singapore consolidation run on different timetables that need a bridge.",
+      "The Indian FLA return to the RBI is due by 15 July every year, which falls in the middle of a Singapore group's half-year close.",
+    ],
+    "contracts-and-arbitration": [
+      "Singapore is a reciprocating territory under Section 44A of the Code of Civil Procedure, so a money judgment of a Singapore superior court can be filed for execution in India.",
+      "An SIAC award is a foreign award enforceable in India under the New York Convention, which makes Singapore one of the most common seats for India-related contracts.",
+    ],
+    "restructuring-and-exit": [
+      "A sale of Indian shares acquired on or after 1 April 2017 is taxable in India under the treaty, while Singapore has no capital gains tax on it.",
+      "A transfer between the Singapore parent and an Indian resident is reported in Form FC-TRS within 60 days and must meet FEMA pricing rules.",
+    ],
+    "expat-visa": [
+      "Singapore staff on the Indian payroll need an Employment Visa (salary floor generally USD 25,000), and FRRO registration within 14 days for stays over 180 days.",
+      "Staff of Indian origin may be able to use an OCI card instead of a visa, but it does not change tax residence or provident fund rules.",
+    ],
+    "hiring-and-payroll": [
+      "Singapore citizens employed in India are exempt from Indian provident fund under the CECA; Singapore permanent residents and other nationals are not, and there is no social security agreement.",
+      "Singapore employment terms and CPF-based benefits do not carry over: Indian contracts need their own notice terms, gratuity after five years and compliance with the labour codes.",
+    ],
+    "common-mistakes": [
+      "Assuming a Singapore holding company automatically gets treaty benefits: without real substance, the limitation of benefits and anti-avoidance rules can deny them.",
+      "Treating Singapore permanent residents like citizens for EPF: only citizens are exempt under the CECA.",
+      "Using an IRAS certificate of residence that does not cover the payment date when claiming treaty rates.",
+    ],
+    "foreign-employee-treaty-ssa": [
+      "India has no social security agreement with Singapore; the CECA exempts Singapore citizens from EPF by nationality, with no certificate of coverage.",
+      "CPF continues only where a Singapore employer keeps employing a Singapore citizen or PR; confirm overseas postings with the CPF Board.",
+    ],
+    "trade-agreement": [
+      "The India-Singapore CECA (2005) covers goods, services, investment and movement of people; its third review has been open since 2018.",
+      "CECA does not change FDI rules for an Indian subsidiary: sector caps, FEMA pricing and RBI reporting still apply.",
+    ],
+    "data-protection": [
+      "Singapore's PDPA requires comparable protection for personal data sent to India, usually through contract clauses with the Indian subsidiary.",
+      "India's DPDP Rules were notified in November 2025, with the main duties from 13 May 2027, so build consent and breach processes in India now.",
+    ],
+    gcc: [
+      "Singapore headquarters often run regional finance, technology or operations teams in India as a captive centre billing the parent at cost plus a mark-up.",
+      "The 30-day service PE test for associated enterprises makes travel by Singapore managers to the Indian centre worth tracking.",
+    ],
+    holdco: [
+      "Treaty access for a Singapore holding company depends on substance: Article 24A of the treaty denies the share-gains benefit to shell or conduit companies.",
+      "India's GAAR and the MLI's principal purpose test can also deny treaty benefits where obtaining them was a main purpose of the structure.",
+    ],
+  },
 }
 
 /** Country facts shown as a profile table on each country's hub page. */
@@ -415,6 +498,19 @@ export const COUNTRY_PROFILE: Record<GuideCountryKey, [string, string][]> = {
     ["Time difference", "India is 3.5 hours behind Japan all year"],
     ["Court judgments", "Japan is not a reciprocating territory under Section 44A CPC; arbitration awards are enforceable under the New York Convention"],
     ["Trade agreement", "India-Japan CEPA, in force since 1 August 2011"],
+    ["FDI route", "Automatic Route in most sectors; Press Note 3 does not apply"],
+  ],
+  singapore: [
+    ["Tax treaty", "India-Singapore DTAA (1994, with protocols and the MLI): 10% on dividends for a 25% holding (15% otherwise), 10% or 15% on interest, 10% on royalties and technical fees"],
+    ["Service permanent establishment", "More than 90 days of services in a fiscal year, or 30 days for services to an associated enterprise"],
+    ["Share gains", "India can tax gains on shares acquired on or after 1 April 2017; Singapore has no capital gains tax"],
+    ["Tax residency certificate", "IRAS certificate of residence, with Form 41 (previously Form 10F)"],
+    ["Social security", "No agreement; Singapore citizens are exempt from Indian EPF under the CECA"],
+    ["Apostille", "Singapore Academy of Law, since 16 September 2021"],
+    ["Parent's financial year", "Usually 31 December, against India's 31 March"],
+    ["Time difference", "India is 2.5 hours behind Singapore"],
+    ["Court judgments", "Singapore is a reciprocating territory under Section 44A CPC; SIAC awards are enforceable under the New York Convention"],
+    ["Trade agreement", "India-Singapore CECA, in force since 2005"],
     ["FDI route", "Automatic Route in most sectors; Press Note 3 does not apply"],
   ],
 }

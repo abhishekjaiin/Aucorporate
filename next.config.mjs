@@ -236,8 +236,13 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/india-entry-for-singapore-companies",
+        destination: "/blog/singapore-to-india",
+        permanent: true,
+      },
+      {
         source: "/india-entry-for-singapore-companies/:path*",
-        destination: "/india-subsidiary-registration",
+        destination: "/blog/singapore-to-india/:path*",
         permanent: true,
       },
       {

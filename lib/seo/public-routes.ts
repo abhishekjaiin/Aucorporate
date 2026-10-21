@@ -91,8 +91,8 @@ export const publicPages: PublicPage[] = [
   // India Business Setup Cluster
   { path: "/india-business-setup/fdi-channels", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/india-business-setup/company-formation", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-10-19" },
-  { path: "/india-subsidiary-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
-  { path: "/accounting-reporting-audit-support", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
+  { path: "/india-subsidiary-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/accounting-reporting-audit-support", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
   { path: "/fema-rbi-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
   { path: "/corporate-tax-gst-transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
   { path: "/secretarial-roc-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
@@ -111,7 +111,7 @@ export const publicPages: PublicPage[] = [
   { path: "/partners/uniproasia", priority: 0.7, changeFrequency: "monthly", lastModified: "2026-09-10" },
 
   // Blog Hub + Articles
-  { path: "/blog", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-10-20" },
+  { path: "/blog", priority: 0.85, changeFrequency: "weekly", lastModified: "2026-10-21" },
   { path: "/blog/india-japan-bis-exemption-high-tech-investment", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-31" },
   { path: "/blog/arbitration-enforcement-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/blog/construction-arbitration-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-10-19" },
@@ -239,6 +239,29 @@ export const publicPages: PublicPage[] = [
   { path: "/blog/japan-to-india/tax-notices-and-litigation", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
   { path: "/blog/japan-to-india/transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },
   { path: "/blog/japan-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-20" },
+
+  // Singapore to India guide cluster
+  { path: "/blog/singapore-to-india", priority: 0.97, changeFrequency: "weekly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/common-mistakes", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/compliance-calendar", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/contracts-courts-siac", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/data-protection-pdpa-dpdp", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/documents-acra-apostille", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/exit-and-restructuring", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/funding-and-fema", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/gcc-for-singapore-companies", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/hiring-in-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/incorporation-steps", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/india-singapore-ceca", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/india-singapore-dtaa", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/relocate-singapore-staff", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/repatriating-profits", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/singapore-employees-in-india-epf-cpf", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/singapore-holdco-for-india", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/singapore-parent-obligations", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/structure-options", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/transfer-pricing", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
+  { path: "/blog/singapore-to-india/faq", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-21" },
 
   // Insights Hub (Postgres-backed) — individual published Insight URLs are
   // fetched live by each consumer (see getPublishedInsights()). The index

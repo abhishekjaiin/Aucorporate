@@ -69,7 +69,7 @@ const services = [
 const parentCountries = [
   { label: "USA", href: "/blog/usa-to-india" },
   { label: "UK", href: "/blog/uk-to-india" },
-  { label: "Singapore" },
+  { label: "Singapore", href: "/blog/singapore-to-india" },
   { label: "Australia", href: "/blog/australia-to-india" },
   { label: "Germany" },
   { label: "Japan", href: "/blog/japan-to-india" },
