@@ -33,7 +33,7 @@ export type PublicPage = {
 
 export const publicPages: PublicPage[] = [
   // Homepage - Highest Priority
-  { path: "/", priority: 1.0, changeFrequency: "daily", lastModified: "2026-10-20" },
+  { path: "/", priority: 1.0, changeFrequency: "daily", lastModified: "2026-10-21" },
 
   // Core Service Hub
   { path: "/services", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-10-19" },
@@ -46,7 +46,7 @@ export const publicPages: PublicPage[] = [
   { path: "/arbitration-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-10-19" },
 
   // Main Pages
-  { path: "/about", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-08-26" },
+  { path: "/about", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
   { path: "/contact", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
   { path: "/career", priority: 0.75, changeFrequency: "monthly", lastModified: "2026-08-26" },
   { path: "/compliance-calendar", priority: 0.8, changeFrequency: "yearly", lastModified: "2026-10-07" },

@@ -26,7 +26,7 @@ export const pageMeta: Record<string, PageMeta> = {
   "/services/taxation-regulatory": { title: "Taxation & Regulatory Services", description: "Corporate tax, GST, tax audit, transfer pricing, and regulatory advisory" },
   "/outsourcing": { title: "Accounting & Finance Outsourcing", description: "Bookkeeping, monthly accounting, GST/TDS accounting support, MIS and parent-company reporting, and audit support for foreign companies and their Indian subsidiaries" },
   "/arbitration-services": { title: "Arbitration Services", description: "Arbitration, enforcement, and dispute resolution advisory" },
-  "/about": { title: "About AU Corporate", description: "Team, credentials, and firm background" },
+  "/about": { title: "About AU Corporate", description: "Firm profile: CA-led, founded 2016, New Delhi and Gurugram offices, led by Abhishek Jaiin (ICAI 544646), services, countries served, fees and FAQs" },
   "/contact": { title: "Contact", description: "Contact details, office locations, and inquiry form" },
   "/career": { title: "Careers", description: "Open roles at AU Corporate" },
   "/compliance-calendar": { title: "India Subsidiary Compliance Calendar", description: "The monthly, quarterly, annual and event-based filing calendar for a foreign-owned Indian subsidiary" },
