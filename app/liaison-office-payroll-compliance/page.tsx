@@ -63,7 +63,7 @@ const included = [
 const afterLinks = [
   { label: "Liaison Office Registration", href: "/liaison-office-registration" },
   { label: "Liaison Office FEMA and RBI Compliance", href: "/liaison-office-fema-rbi-compliance" },
-  { label: "ROC Compliance for a Liaison Office (FC Forms)", href: "/liaison-office-roc-compliance" },
+  { label: "ROC Compliance for Foreign Company Offices (FC Forms)", href: "/foreign-company-roc-compliance" },
   { label: "Liaison Office Accounting, Reporting and Audit", href: "/liaison-office-accounting-audit" },
   { label: "Liaison Office Tax Compliance", href: "/liaison-office-tax-compliance" },
 ]

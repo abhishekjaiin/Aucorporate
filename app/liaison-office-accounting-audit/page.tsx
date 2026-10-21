@@ -60,7 +60,7 @@ const afterLinks = [
   { label: "Liaison Office Registration", href: "/liaison-office-registration" },
   { label: "Liaison Office Tax Compliance", href: "/liaison-office-tax-compliance" },
   { label: "Liaison Office FEMA and RBI Compliance", href: "/liaison-office-fema-rbi-compliance" },
-  { label: "ROC Compliance for a Liaison Office (FC Forms)", href: "/liaison-office-roc-compliance" },
+  { label: "ROC Compliance for Foreign Company Offices (FC Forms)", href: "/foreign-company-roc-compliance" },
   { label: "Liaison Office Payroll and Labour Law Compliance", href: "/liaison-office-payroll-compliance" },
 ]
 
