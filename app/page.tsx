@@ -68,11 +68,11 @@ const services = [
    the rest are shown as plain badges rather than linked to a page that doesn't exist. */
 const parentCountries = [
   { label: "USA", href: "/blog/usa-to-india" },
-  { label: "UK" },
+  { label: "UK", href: "/blog/uk-to-india" },
   { label: "Singapore" },
-  { label: "Australia" },
+  { label: "Australia", href: "/blog/australia-to-india" },
   { label: "Germany" },
-  { label: "Japan" },
+  { label: "Japan", href: "/blog/japan-to-india" },
   { label: "China" },
   { label: "Hong Kong" },
   { label: "Spain" },
