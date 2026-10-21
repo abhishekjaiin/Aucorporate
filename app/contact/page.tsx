@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { OFFICES } from "@/lib/site"
 import { Breadcrumb } from "@/components/Breadcrumb"
 import { InquiryForm } from "@/components/InquiryForm"
 import { FaqAccordion } from "@/components/FaqAccordion"
@@ -47,12 +48,12 @@ const offices = [
   {
     region: "India (HQ)",
     city: "New Delhi",
-    address: "408 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001",
+    address: OFFICES.newDelhi.lines,
   },
   {
-    region: "India (Satellite)",
+    region: "India",
     city: "Gurugram",
-    address: "Gurugram, Haryana — by appointment",
+    address: OFFICES.gurugram.lines,
   },
 ]
 

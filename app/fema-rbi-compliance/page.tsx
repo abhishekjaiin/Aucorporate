@@ -6,6 +6,7 @@ import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
 import { RelatedCaseStudies } from "@/components/case-study/RelatedCaseStudies"
+import { AuthorLink } from "@/components/AuthorLink"
 
 const heroFacts = [
   { title: "Reasonable Fees", body: "A clear written quote before we start" },
@@ -162,7 +163,7 @@ export default function FemaRbiCompliancePage() {
             <h2 className="text-xl font-bold text-gray-900 mb-3">{quickAnswer.heading}</h2>
             <p className="text-gray-700 leading-relaxed mb-3">{quickAnswer.text}</p>
             <p className="text-sm text-gray-600">
-              Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+              Written and reviewed by <AuthorLink className="font-semibold text-[#081a42] hover:underline" />, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-10">
@@ -320,7 +321,7 @@ export default function FemaRbiCompliancePage() {
           <h2 className="text-3xl font-bold mb-2 text-gray-900">Questions Before You Start</h2>
           <p className="text-gray-600 mb-6">Straight answers to the questions foreign finance teams ask most. Can&apos;t find yours? Ask us in the form below.</p>
           <p className="text-sm text-gray-600 mb-1">
-            Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+            Written and reviewed by <AuthorLink className="font-semibold text-[#081a42] hover:underline" />, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
           </p>
           <p className="text-sm text-gray-500 mb-10">
             This is general guidance based on Indian law and practice as at the date above. It is not advice for your specific case, and rules can change.

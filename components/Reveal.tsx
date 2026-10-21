@@ -1,7 +1,10 @@
-"use client"
-
-import { useEffect, useRef, useState } from "react"
-
+/**
+ * Fades and lifts its children in as they scroll into view, using a
+ * CSS scroll-driven animation (see `.reveal` in globals.css) instead of
+ * JavaScript. The content is always in the server-rendered HTML and fully
+ * visible without JavaScript; browsers without scroll-driven animations,
+ * and users who prefer reduced motion, simply see it with no animation.
+ */
 export function Reveal({
   children,
   className,
@@ -11,38 +14,15 @@ export function Reveal({
 }: {
   children: React.ReactNode
   className?: string
+  /** Seconds; staggers items that enter the viewport together. */
   delay?: number
   y?: number
   onClick?: () => void
 }) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [visible, setVisible] = useState(false)
-
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true)
-          observer.disconnect()
-        }
-      },
-      { threshold: 0.1 },
-    )
-    observer.observe(el)
-    return () => observer.disconnect()
-  }, [])
-
   return (
     <div
-      ref={ref}
-      className={className}
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : `translateY(${y}px)`,
-        transition: `opacity 0.6s ease-out ${delay}s, transform 0.6s ease-out ${delay}s`,
-      }}
+      className={className ? `reveal ${className}` : "reveal"}
+      style={{ "--reveal-y": `${y}px`, "--reveal-delay": `${delay * 40}%` } as React.CSSProperties}
       onClick={onClick}
       role={onClick ? "button" : undefined}
       tabIndex={onClick ? 0 : undefined}

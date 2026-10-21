@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { OFFICES } from "@/lib/site"
 import { Facebook, Linkedin, Mail, MapPin, Phone } from "lucide-react"
 
 const indiaEntryLinks = [
@@ -172,9 +173,10 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-yellow-400 shrink-0 mt-0.5" />
 
                 <span className="text-gray-600 text-sm">
-                  408 Surya Kiran Building, 19 KG Marg, New Delhi, Delhi 110001
+                  {OFFICES.newDelhi.lines}
                   <br />
-                  &amp; Gurugram, India
+                  <br />
+                  {OFFICES.gurugram.lines}
                 </span>
               </div>
 

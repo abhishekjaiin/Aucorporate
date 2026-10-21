@@ -1,39 +1,32 @@
-"use client"
-
-import { useState } from "react"
-
 type Tab = { title: string; body: string }
 
-/** Turns a stack of long comparison write-ups into a clickable tabbed panel. */
+/**
+ * A stack of long comparison write-ups as a one-open-at-a-time accordion.
+ * Built on native <details name="..."> so every write-up is in the
+ * server-rendered HTML and it works without JavaScript.
+ */
 export function TabbedComparison({ tabs }: { tabs: Tab[] }) {
-  const [active, setActive] = useState(0)
-
+  const group = `comparison-${tabs[0]?.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`
   return (
-    <div className="rounded-xl border bg-white overflow-hidden">
-      <div className="flex flex-wrap border-b bg-gray-100" role="tablist">
-        {tabs.map((tab, i) => (
-          <button
-            key={tab.title}
-            role="tab"
-            aria-selected={active === i}
-            onClick={() => setActive(i)}
-            className={`flex-1 min-w-[140px] px-4 py-4 text-sm font-semibold text-center transition border-b-2 ${
-              active === i
-                ? "border-yellow-400 bg-white text-[#081a42]"
-                : "border-transparent text-gray-500 hover:text-gray-700 hover:bg-gray-100"
-            }`}
-          >
+    <div className="rounded-xl border bg-white divide-y overflow-hidden">
+      {tabs.map((tab, i) => (
+        <details key={tab.title} name={group} open={i === 0} className="group">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-4 font-semibold text-[#081a42] group-open:bg-gray-50 [&::-webkit-details-marker]:hidden">
             {tab.title}
-          </button>
-        ))}
-      </div>
-      <div className="p-6 md:p-8">
-        {tabs[active].body.split("\n\n").map((para, i) => (
-          <p key={i} className="text-gray-600 leading-relaxed mb-3 last:mb-0">
-            {para}
-          </p>
-        ))}
-      </div>
+            <span className="text-xl leading-none text-yellow-500" aria-hidden="true">
+              <span className="group-open:hidden">+</span>
+              <span className="hidden group-open:inline">−</span>
+            </span>
+          </summary>
+          <div className="px-6 pb-6 pt-2 md:px-8">
+            {tab.body.split("\n\n").map((para, j) => (
+              <p key={j} className="text-gray-600 leading-relaxed mb-3 last:mb-0">
+                {para}
+              </p>
+            ))}
+          </div>
+        </details>
+      ))}
     </div>
   )
 }

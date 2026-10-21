@@ -6,6 +6,7 @@ import { LeadForm } from "@/components/LeadForm"
 import { RelatedResources } from "@/components/RelatedResources"
 import { FaqAccordion } from "@/components/FaqAccordion"
 import { RelatedCaseStudies } from "@/components/case-study/RelatedCaseStudies"
+import { AuthorLink } from "@/components/AuthorLink"
 
 const heroFacts = [
   { title: "Fixed Fee", body: "USD 750–1,000 all-inclusive" },
@@ -274,7 +275,7 @@ export default function IndiaSubsidiaryRegistrationPage() {
           <h2 className="text-3xl font-bold mb-2 text-gray-900">Questions Before You Start</h2>
           <p className="text-gray-600 mb-6">For detailed rules, see the guide for your country above.</p>
           <p className="text-sm text-gray-600 mb-1">
-            Written and reviewed by <strong className="text-[#081a42]">Abhishek Jaiin</strong>, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
+            Written and reviewed by <AuthorLink className="font-semibold text-[#081a42] hover:underline" />, Chartered Accountant (ICAI Membership No. 544646) &middot; Last reviewed: <time dateTime="2026-10-09">9 October 2026</time>
           </p>
           <p className="text-sm text-gray-500 mb-10">
             This is general guidance based on Indian law and practice as at the date above. It is not advice for your specific case, and rules can change.

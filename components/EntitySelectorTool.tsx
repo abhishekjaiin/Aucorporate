@@ -1,8 +1,5 @@
-"use client"
-
-import { useState } from "react"
 import Link from "next/link"
-import { ArrowRight, CheckCircle2, RotateCcw } from "lucide-react"
+import { ArrowRight, CheckCircle2 } from "lucide-react"
 
 type Option = {
   id: string
@@ -51,9 +48,10 @@ const options: Option[] = [
   },
 ]
 
+/** "Which entity type is right for you?" picker. Each option is a native
+ *  <details> element, so every recommendation is in the server-rendered HTML
+ *  and the tool works without JavaScript. */
 export function EntitySelectorTool() {
-  const [selected, setSelected] = useState<Option | null>(null)
-
   return (
     <div className="rounded-2xl border-2 border-yellow-400 bg-white p-6 md:p-8 shadow-sm">
       <div className="mb-6">
@@ -62,46 +60,35 @@ export function EntitySelectorTool() {
         <p className="mt-2 text-sm text-gray-600">Select what your India operation is primarily there to do, and we&apos;ll point you to the right structure.</p>
       </div>
 
-      {!selected ? (
-        <div className="grid gap-3 sm:grid-cols-2">
-          {options.map((opt) => (
-            <button
-              key={opt.id}
-              onClick={() => setSelected(opt)}
-              className="text-left rounded-xl border border-gray-200 p-4 text-sm font-medium text-gray-700 transition hover:border-yellow-400 hover:bg-yellow-50 hover:shadow-md"
-            >
+      <div className="space-y-3">
+        {options.map((opt) => (
+          <details key={opt.id} name="entity-selector" className="group rounded-xl border border-gray-200 transition open:border-yellow-400 open:bg-gray-50">
+            <summary className="cursor-pointer list-none rounded-xl p-4 text-sm font-medium text-gray-700 hover:bg-yellow-50 [&::-webkit-details-marker]:hidden">
               {opt.question}
-            </button>
-          ))}
-        </div>
-      ) : (
-        <div className="rounded-xl bg-gray-100 p-6">
-          <div className="mb-3 flex items-start gap-3">
-            <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-yellow-600" />
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-gray-500">Recommended structure</p>
-              <h4 className="text-lg font-bold text-[#081a42]">{selected.entity}</h4>
+            </summary>
+            <div className="px-4 pb-5">
+              <div className="mb-3 flex items-start gap-3">
+                <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-yellow-600" />
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-500">Recommended structure</p>
+                  <h4 className="text-lg font-bold text-[#081a42]">{opt.entity}</h4>
+                </div>
+              </div>
+              <p className="text-sm leading-relaxed text-gray-600 mb-4">{opt.reasoning}</p>
+              <div className="flex flex-wrap items-center gap-4">
+                {opt.link && (
+                  <Link href={opt.link.href} className="inline-flex items-center gap-1.5 text-sm font-semibold text-yellow-700 hover:underline">
+                    {opt.link.label} <ArrowRight className="h-4 w-4" />
+                  </Link>
+                )}
+                <Link href="/contact#inquiry-form" className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#081a42] hover:underline">
+                  Confirm this with our team <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
             </div>
-          </div>
-          <p className="text-sm leading-relaxed text-gray-600 mb-4">{selected.reasoning}</p>
-          <div className="flex flex-wrap items-center gap-4">
-            {selected.link && (
-              <Link href={selected.link.href} className="inline-flex items-center gap-1.5 text-sm font-semibold text-yellow-700 hover:underline">
-                {selected.link.label} <ArrowRight className="h-4 w-4" />
-              </Link>
-            )}
-            <Link href="/contact#inquiry-form" className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#081a42] hover:underline">
-              Confirm this with our team <ArrowRight className="h-4 w-4" />
-            </Link>
-            <button
-              onClick={() => setSelected(null)}
-              className="ml-auto inline-flex items-center gap-1.5 text-xs font-medium text-gray-400 hover:text-gray-600"
-            >
-              <RotateCcw className="h-3.5 w-3.5" /> Start over
-            </button>
-          </div>
-        </div>
-      )}
+          </details>
+        ))}
+      </div>
     </div>
   )
 }
