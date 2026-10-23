@@ -62,7 +62,7 @@ export default function IndiaUsDtaaGuidePage() {
           { label: "Blog", href: "/blog" },
           { label: "How to Set Up a Subsidiary in India from the USA", href: "/blog/usa-to-india" },
           { label: "Tax and Social Security Treaties", href: "/blog/usa-to-india/tax-and-social-security-treaties" },
-          { label: "India-US Tax Treaty (DTAA) Explained for US Companies" },
+          { label: "India-US DTAA: Tax Treaty Between the US and India Explained" },
         ]}
       />
 
