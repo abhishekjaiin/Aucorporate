@@ -42,7 +42,7 @@ const sectionRules: SectionRule[] = [
   // though its path also starts with "/india-entry-for-".
   { test: (p) => ["/gcc-setup-india", "/india-entry-for-saas-companies", "/oidar-gst-registration-india", "/global-vat-compliance-ai-saas-companies", "/accounting-outsourcing-firm-for-united-states-cpas-firm"].includes(p), section: "GCC & Industry-Specific" },
   { test: (p) => p.startsWith("/india-entry-for-"), section: "Country-Specific India Entry Guides" },
-  { test: (p) => p.startsWith("/services") || ["/hr-services", "/outsourcing", "/arbitration-services"].includes(p), section: "Services" },
+  { test: (p) => p.startsWith("/services") || ["/hr-services", "/arbitration-services"].includes(p), section: "Services" },
   { test: (p) => p.startsWith("/partners"), section: "Partners" },
   { test: (p) => p.startsWith("/blog"), section: "Blog & Regulatory Explainers" },
   { test: (p) => p.startsWith("/insights"), section: "Insights" },

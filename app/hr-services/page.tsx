@@ -72,12 +72,12 @@ const hrProcessSteps = [
 
 const hrFaqs = [
   {
-    q: "What does HR and payroll outsourcing in India actually include?",
+    q: "What do HR and payroll services in India actually include?",
     a: "Beyond running the monthly salary calculation, it covers statutory registration (PF, ESI, professional tax, Shops & Establishment), monthly payroll processing and payslip generation, TDS deduction and filing, PF/ESI/PT compliance filings to deadline, and employee lifecycle administration — onboarding, exits, full-and-final settlement and gratuity calculation. The compliance layer around payroll is usually the part a newly set-up foreign-owned entity lacks in-house, not the salary math itself.",
   },
   {
-    q: "What's the difference between an Employer of Record (EOR) and payroll outsourcing?",
-    a: "Under an EOR arrangement, the third-party provider is the legal employer of record for statutory purposes — used when a foreign company wants to hire in India before it has its own entity. Under payroll outsourcing, your own Indian entity remains the legal employer, and the provider only handles payroll processing and compliance administration on your behalf. Most foreign companies use an EOR-style arrangement briefly during market entry, then move to direct hiring under their own subsidiary with payroll outsourcing once the entity is incorporated.",
+    q: "What's the difference between an Employer of Record (EOR) and a payroll service provider?",
+    a: "Under an EOR arrangement, the third-party provider is the legal employer of record for statutory purposes — used when a foreign company wants to hire in India before it has its own entity. With a payroll service provider, your own Indian entity remains the legal employer, and the provider only handles payroll processing and compliance administration on your behalf. Most foreign companies use an EOR-style arrangement briefly during market entry, then move to direct hiring under their own subsidiary, with a payroll provider running payroll, once the entity is incorporated.",
   },
   {
     q: "Does a foreign company need an Indian entity to hire employees in India?",
@@ -89,10 +89,10 @@ const hrFaqs = [
   },
   {
     q: "How has the Labour Codes reform affected payroll compliance?",
-    a: "The four consolidated Labour Codes — the Code on Wages, the Industrial Relations Code, the Code on Social Security, and the Occupational Safety, Health and Working Conditions Code — took effect on 21 November 2025, replacing 29 separate central labour statutes. Central rules have been notified, but state-level rules are still being finalised at different paces across states, so the practical wage-definition and procedural requirements applicable to a given payroll should be checked against that state's current rules rather than assumed fixed. This is exactly the kind of ongoing monitoring an outsourced payroll provider is built to track on your behalf.",
+    a: "The four consolidated Labour Codes — the Code on Wages, the Industrial Relations Code, the Code on Social Security, and the Occupational Safety, Health and Working Conditions Code — took effect on 21 November 2025, replacing 29 separate central labour statutes. Central rules have been notified, but state-level rules are still being finalised at different paces across states, so the practical wage-definition and procedural requirements applicable to a given payroll should be checked against that state's current rules rather than assumed fixed. This is exactly the kind of ongoing monitoring a payroll provider is built to track on your behalf.",
   },
   {
-    q: "How much does payroll outsourcing cost in India?",
+    q: "How much do payroll services cost in India?",
     a: "It depends on headcount, entity complexity and how many states you're operating in — operating across multiple states adds professional tax and Shops & Establishment complexity that affects the scope of work. Most providers, including AU Corporate, price per employee per month rather than a flat fee, so an accurate quote needs your actual team size and locations — talk to us and we'll size it against your specific setup.",
   },
   {
@@ -128,7 +128,7 @@ export default function HRServicesPage() {
 
           <Reveal delay={0.1}>
             <p className="mb-6 text-white/80">
-              End-to-end HR outsourcing, payroll processing, and compliance solutions.
+              End-to-end HR, payroll processing, and compliance services.
             </p>
           </Reveal>
 
@@ -220,7 +220,7 @@ export default function HRServicesPage() {
             <Reveal className="hover:scale-105 transition-transform duration-300">
               <Image
                 src="/images/pexels-pierre-blache-651604-9280877.jpg"
-                alt="Payroll and HR outsourcing services documentation and processing"
+                alt="Payroll and HR services documentation and processing"
                 width={1200}
                 height={800}
                 loading="lazy"
@@ -229,7 +229,7 @@ export default function HRServicesPage() {
             </Reveal>
 
             <Reveal delay={0.15}>
-              <h2 className="text-3xl font-bold mb-4">Payroll & HR Outsourcing</h2>
+              <h2 className="text-3xl font-bold mb-4">Payroll & HR Services</h2>
               <p className="text-yellow-500 font-semibold mb-4">Streamlining HR Operations</p>
               <p className="text-gray-600 mb-4">Accurate payroll, compliance, and HR lifecycle management solutions tailored for business growth. This is the core of what we do for an already-incorporated subsidiary: your entity stays the legal employer, and we run the monthly payroll cycle, statutory filings and employee lifecycle administration behind it — see the compliance breakdown and process below for exactly what that covers. If you&apos;re a US company operating an Indian subsidiary, this is part of the Operate stage of our <Link href="/blog/usa-to-india" className="text-yellow-600 hover:text-yellow-700 font-semibold">India entry guide for US companies</Link>.</p>
               <ul className="space-y-2 text-sm text-gray-600">
@@ -290,7 +290,7 @@ export default function HRServicesPage() {
               </p>
             </div>
             <div className="rounded-xl border bg-white p-6">
-              <h3 className="text-lg font-bold mb-2 text-[#081a42]">Own Entity + Payroll Outsourcing</h3>
+              <h3 className="text-lg font-bold mb-2 text-[#081a42]">Own Entity + Payroll Provider</h3>
               <p className="text-sm leading-relaxed text-gray-600 mb-4">
                 Your India subsidiary (see our <Link href="/india-business-setup/company-formation" className="text-yellow-700 font-semibold hover:underline">company registration guide</Link>) is the legal employer, and a provider like AU Corporate handles payroll processing, statutory filings and employee lifecycle administration on your behalf — you keep full control over employment contracts, IP assignment and the brand your employees work under.
               </p>
@@ -375,8 +375,8 @@ export default function HRServicesPage() {
               <h3 className="mb-2 font-semibold">GCC Setup in India</h3>
               <p className="text-sm text-gray-600">Building a captive delivery or R&amp;D team? Start here</p>
             </Link>
-            <Link href="/outsourcing" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
-              <h3 className="mb-2 font-semibold">Accounting &amp; Finance Outsourcing</h3>
+            <Link href="/accounting-reporting-audit-support" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+              <h3 className="mb-2 font-semibold">Accounting, Reporting &amp; Audit Support</h3>
               <p className="text-sm text-gray-600">Bookkeeping, reporting and compliance support alongside payroll</p>
             </Link>
             <Link href="/contact" className="rounded-lg border p-6 transition hover:shadow-md bg-white">

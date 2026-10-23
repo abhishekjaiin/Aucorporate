@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     absolute: "Our Services | India Entry, Tax & Advisory | AU Corporate",
   },
   description:
-    "Explore AU Corporate's full service range: India entry, GCC advisory, taxation, accounting, HR outsourcing, risk management, and Virtual CFO services.",
+    "Explore AU Corporate's full service range: India entry, GCC advisory, taxation, accounting, HR and payroll, risk management, and Virtual CFO services.",
   alternates: {
     canonical: "https://www.theaucorp.com/services",
   },
@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     siteName: "AU Corporate",
     title: "Our Services | India Entry, Tax & Advisory | AU Corporate",
     description:
-      "Explore AU Corporate's full service range: India entry, GCC advisory, taxation, accounting, HR outsourcing, risk management, and Virtual CFO services.",
+      "Explore AU Corporate's full service range: India entry, GCC advisory, taxation, accounting, HR and payroll, risk management, and Virtual CFO services.",
     url: "https://www.theaucorp.com/services",
   },
   twitter: {
     title: "Our Services | India Entry, Tax & Advisory | AU Corporate",
     description:
-      "Explore AU Corporate's full service range: India entry, GCC advisory, taxation, accounting, HR outsourcing, risk management, and Virtual CFO services.",
+      "Explore AU Corporate's full service range: India entry, GCC advisory, taxation, accounting, HR and payroll, risk management, and Virtual CFO services.",
   },
 }
 

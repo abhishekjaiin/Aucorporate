@@ -170,7 +170,7 @@ const faqGroups: FaqGroup[] = [
       { n: 70, id: "how-is-a-gcc-priced-for-tax", q: "How is a GCC priced for tax?", a: "Normally cost plus a mark-up from a benchmarking study, under a services agreement with the Singapore entity, and reviewed each year." },
       { n: 71, id: "are-gcc-services-to-singapore-exempt-from-gst-in-india", q: "Are GCC services to Singapore exempt from GST in India?", a: "They can be zero-rated as exports of services if the recipient is outside India, payment is in convertible foreign exchange and the other conditions are met." },
       { n: 72, id: "does-a-gcc-create-a-permanent-establishment-for-the-singapor", q: "Does a GCC create a permanent establishment for the Singapore parent?", a: "Not by itself if the Indian entity is a separate low-risk provider, but Singapore staff directing the work or concluding contracts in India can create one." },
-      { n: 73, id: "does-mas-regulate-a-captive-centre-in-india", q: "Does MAS regulate a captive centre in India?", a: "MAS regulates the Singapore financial institution, and expects outsourcing controls over work done by a group company in India." },
+      { n: 73, id: "does-mas-regulate-a-captive-centre-in-india", q: "Does MAS regulate a captive centre in India?", a: "MAS regulates the Singapore financial institution, and expects controls over work done by a group company in India, as for any third-party arrangement." },
       { n: 74, id: "should-we-use-build-operate-transfer", q: "Should we use build-operate-transfer?", a: "It reduces early risk and time, but check the transfer terms, tax on the transfer and who owns the know-how." },
     ],
   },

@@ -132,7 +132,7 @@ export default function AuditIcofrPage() {
                 ["Tax audit", "Report to the tax authority on books and tax positions where thresholds apply", "Chartered Accountant"],
                 ["GST audit and reconciliation", "Checks GST returns against books where required", "As the GST law prescribes"],
                 ["Transfer pricing certificate", "Accountant's report in Form 48 (previously Form 3CEB)", "Chartered Accountant"],
-                ["Internal audit", "Independent review of processes and controls", "Internal or outsourced"],
+                ["Internal audit", "Independent review of processes and controls", "Internal or external"],
                 ["Group reporting audit", "Reporting package or review for the Australian parent's Auditors", "Local or group Auditor"],
               ].map((row, i) => (
                 <tr key={row[0]} className={i % 2 === 1 ? "bg-gray-50" : undefined}>

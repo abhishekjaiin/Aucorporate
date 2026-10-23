@@ -10,7 +10,6 @@ import {
   ChevronDown,
   ChevronRight,
   ArrowRight,
-  Building2,
   FileCheck,
   Calculator,
   Shield,
@@ -71,7 +70,6 @@ const coreServiceLinks = [
   { label: "HR & Payroll Solutions", desc: "Workforce, payroll & compliance", href: "/hr-services", icon: Users },
   { label: "Arbitration & Dispute Resolution", desc: "Commercial arbitration & disputes", href: "/arbitration-services", icon: Scale },
   { label: "Training & Workshops", desc: "Compliance & audit training programs", href: "/services/training-workshops", icon: GraduationCap },
-  { label: "Global Support Services (Outsourcing)", desc: "Outsourcing & back-office support", href: "/outsourcing", icon: Building2 },
 ]
 
 const specialistServiceLinks = [

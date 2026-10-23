@@ -7,8 +7,8 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
 const gccVsComparisons = [
   {
-    title: 'GCC vs BPO/Outsourcing — What’s the Real Difference',
-    body: "A BPO (or an outsourcing/accounting-BPO arrangement of the kind AU Corporate itself provides to many clients) is a vendor relationship: a third-party service provider delivers a defined scope of work — bookkeeping, payroll processing, transaction support — under a service agreement, typically serving multiple clients at once. A GCC is the opposite structural choice: the foreign company builds and owns the India team itself, as an internal function, serving nobody but itself.\n\nThe two aren’t mutually exclusive. A GCC still needs a finance and HR back office to run — payroll compliance, statutory bookkeeping, MIS reporting to the parent — and many GCCs use an outsourced accounting or Virtual CFO provider for exactly that function rather than building an in-house finance team from day one. That’s a legitimate, common pairing, but using an outsourcing provider for the back office doesn’t make the entity itself a BPO — it remains a captive GCC that has chosen to outsource one non-core function.",
+    title: 'GCC vs a BPO Vendor — What’s the Real Difference',
+    body: "A BPO (or a managed accounting arrangement of the kind AU Corporate itself provides to many clients) is a vendor relationship: a third-party service provider delivers a defined scope of work — bookkeeping, payroll processing, transaction support — under a service agreement, typically serving multiple clients at once. A GCC is the opposite structural choice: the foreign company builds and owns the India team itself, as an internal function, serving nobody but itself.\n\nThe two aren’t mutually exclusive. A GCC still needs a finance and HR back office to run — payroll compliance, statutory bookkeeping, MIS reporting to the parent — and many GCCs use an external accounting or Virtual CFO provider for exactly that function rather than building an in-house finance team from day one. That’s a legitimate, common pairing, but using an external provider for the back office doesn’t make the entity itself a BPO — it remains a captive GCC that has chosen to hand one non-core function to a specialist.",
   },
   {
     title: 'GCC vs a Traditional Subsidiary',
@@ -157,7 +157,7 @@ export default function GCCSetupIndiaPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Is a GCC the Right Model for Your Company?</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
-            Not every company that could benefit from an India presence needs a GCC specifically. A GCC makes the most sense when the work being moved to India is core enough to the business that you want direct control over quality, IP, and talent — not simply the cheapest available delivery. If the work is genuinely commoditized and vendor-interchangeable, a BPO or outsourcing relationship is usually faster to stand up and easier to unwind.
+            Not every company that could benefit from an India presence needs a GCC specifically. A GCC makes the most sense when the work being moved to India is core enough to the business that you want direct control over quality, IP, and talent — not simply the cheapest available delivery. If the work is genuinely commoditized and vendor-interchangeable, a BPO or vendor relationship is usually faster to stand up and easier to unwind.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-900 mb-3">Building the Internal Business Case</h3>
@@ -414,7 +414,7 @@ export default function GCCSetupIndiaPage() {
             Getting the legal entity and compliance mechanics right is necessary but not sufficient — the GCCs that succeed operationally, per NASSCOM&apos;s own research on the topic, tend to share a few characteristics beyond compliance: clear governance linking the India team to the parent&apos;s global functions, KPIs that reflect genuine ownership rather than vendor-style output metrics, and a deliberate talent strategy rather than opportunistic hiring.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            Once the entity is operational, the recurring operational needs are largely finance and HR: bookkeeping, MIS reporting to the parent, payroll processing, and statutory HR compliance as headcount grows. This is the &ldquo;Operate&rdquo; phase our <Link href="/outsourcing" className="text-gold-dark font-semibold hover:underline">accounting outsourcing and Virtual CFO support</Link> and <Link href="/hr-services" className="text-gold-dark font-semibold hover:underline">payroll and HR compliance</Link> practices are built around — keeping the finance and compliance backbone reliable as the India team scales, so your local leadership can focus on the actual capability the center exists to deliver.
+            Once the entity is operational, the recurring operational needs are largely finance and HR: bookkeeping, MIS reporting to the parent, payroll processing, and statutory HR compliance as headcount grows. This is the &ldquo;Operate&rdquo; phase our <Link href="/accounting-reporting-audit-support" className="text-gold-dark font-semibold hover:underline">accounting, reporting and Virtual CFO support</Link> and <Link href="/hr-services" className="text-gold-dark font-semibold hover:underline">payroll and HR compliance</Link> practices are built around — keeping the finance and compliance backbone reliable as the India team scales, so your local leadership can focus on the actual capability the center exists to deliver.
           </p>
         </div>
       </section>
@@ -461,7 +461,7 @@ export default function GCCSetupIndiaPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-bold mb-4 text-gray-900">Talk to AU Corporate&apos;s Regulatory Compliance Practice</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
-            If you&apos;re planning a GCC in India — whether you&apos;re still building the internal business case or already have a launch date in mind — AU Corporate&apos;s regulatory compliance, transfer pricing, and outsourcing/Virtual CFO practices can walk through entity structure, FEMA/RBI filing obligations, and the compliance calendar specific to your headcount and sector.
+            If you&apos;re planning a GCC in India — whether you&apos;re still building the internal business case or already have a launch date in mind — AU Corporate&apos;s regulatory compliance, transfer pricing, and accounting/Virtual CFO practices can walk through entity structure, FEMA/RBI filing obligations, and the compliance calendar specific to your headcount and sector.
           </p>
           <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500 mb-12">
             <Link href="/contact">Get in Touch <ArrowRight className="ml-2 w-4 h-4" /></Link>
@@ -471,7 +471,7 @@ export default function GCCSetupIndiaPage() {
             {[
               { label: 'Transfer pricing and tax advisory', href: '/services/taxation-regulatory' },
               { label: 'Statutory audit and assurance', href: '/services/accounting-assurance' },
-              { label: 'Accounting outsourcing and Virtual CFO support', href: '/outsourcing' },
+              { label: 'Accounting, reporting and Virtual CFO support', href: '/accounting-reporting-audit-support' },
               { label: 'Payroll and HR compliance', href: '/hr-services' },
               { label: 'Regulatory compliance requirements', href: '/india-business-setup/regulatory-compliance' },
             ].map((item) => (

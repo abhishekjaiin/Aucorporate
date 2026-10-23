@@ -204,7 +204,7 @@ export default function OidarGstRegistrationIndiaPage() {
           <p className="text-gray-600 leading-relaxed mb-2">
             On the invoicing side, the applicable GST rate on OIDAR supplies is <strong>18%</strong>, which needs to show correctly on customer-facing invoices, not just on the internal filing. The exact SAC code your invoices should carry is worth confirming with your advisor rather than assumed — sources aren&apos;t fully consistent on whether the broad services heading or a more specific online-content sub-code is the precise fit for a given OIDAR offering, and getting it right matters more for invoicing than for the underlying tax treatment, which is settled at 18% either way.
           </p>
-          <InlineInquiryCTA label="Prefer not to build an internal process around one Indian monthly return? Our accounting & outsourcing team runs GSTR-5A filing for clients" />
+          <InlineInquiryCTA label="Prefer not to build an internal process around one Indian monthly return? Our accounting and compliance team runs GSTR-5A filing for clients" />
         </div>
       </section>
 
@@ -346,8 +346,8 @@ export default function OidarGstRegistrationIndiaPage() {
                 description: "The broader ready/wait decision, including Significant Economic Presence risk.",
               },
               {
-                label: "Accounting & Outsourcing",
-                href: "/outsourcing",
+                label: "Accounting, Reporting & Audit Support",
+                href: "/accounting-reporting-audit-support",
                 description: "Monthly filing and books support, including GSTR-5A.",
               },
             ]}

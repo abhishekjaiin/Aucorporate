@@ -51,7 +51,7 @@ export default function BlogPage() {
       </h2>
 
       <p className="mb-6">
-        The Finance Act 2026 consolidated four previously separate categories — software development services, IT-enabled services (ITeS), knowledge process outsourcing (KPO), and contract R&D relating to software development — into a single unified "Information Technology Services" category, with one uniform margin: <strong>15.5% of operating expenses</strong>.
+        The Finance Act 2026 consolidated four previously separate categories — software development services, IT-enabled services (ITeS), knowledge process services (KPO), and contract R&D relating to software development — into a single unified "Information Technology Services" category, with one uniform margin: <strong>15.5% of operating expenses</strong>.
       </p>
 
       <p className="mb-6">
@@ -79,7 +79,7 @@ export default function BlogPage() {
               <td className="p-3">17-18% of operating expenses</td>
             </tr>
             <tr className="border-t border-gray-200">
-              <td className="p-3">Knowledge process outsourcing (KPO)</td>
+              <td className="p-3">Knowledge process services (KPO)</td>
               <td className="p-3">18% of operating expenses</td>
             </tr>
             <tr className="border-t border-gray-200">

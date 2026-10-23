@@ -31,7 +31,7 @@ const faqs = [
   { q: "How is a GCC priced for tax?", a: "Normally cost plus a mark-up from a benchmarking study, under a services agreement with the Singapore entity, and reviewed each year." },
   { q: "Are GCC services to Singapore exempt from GST in India?", a: "They can be zero-rated as exports of services if the recipient is outside India, payment is in convertible foreign exchange and the other conditions are met." },
   { q: "Does a GCC create a permanent establishment for the Singapore parent?", a: "Not by itself if the Indian entity is a separate low-risk provider, but Singapore staff directing the work or concluding contracts in India can create one." },
-  { q: "Does MAS regulate a captive centre in India?", a: "MAS regulates the Singapore financial institution, and expects outsourcing controls over work done by a group company in India." },
+  { q: "Does MAS regulate a captive centre in India?", a: "MAS regulates the Singapore financial institution, and expects controls over work done by a group company in India, as for any third-party arrangement." },
   { q: "Should we use build-operate-transfer?", a: "It reduces early risk and time, but check the transfer terms, tax on the transfer and who owns the know-how." },
 ]
 
@@ -48,7 +48,7 @@ export default function GccForSingaporeCompaniesPage() {
       <GuideArticleSchema
         url={PAGE_URL}
         headline="Setting Up a Global Capability Centre in India for a Singapore Group: Models, Pricing, Tax and Risk"
-        description="How Singapore headquartered groups build captive centres in India: build-operate-transfer, captive subsidiary and hybrid models, cost-plus pricing, GST on exports, PE risk, MAS outsourcing and talent."
+        description="How Singapore headquartered groups build captive centres in India: build-operate-transfer, captive subsidiary and hybrid models, cost-plus pricing, GST on exports, PE risk, MAS third-party rules and talent."
         datePublished="2026-10-21"
         dateModified="2026-10-21"
         isPartOfUrl={PARENT_URL}
@@ -76,7 +76,7 @@ export default function GccForSingaporeCompaniesPage() {
           a mark-up. The legal work is the same as for any subsidiary, but three issues decide success: pricing
           that survives Indian and Singapore transfer pricing review, export-of-services treatment for GST, and
           keeping Singapore managers from creating a permanent establishment. Regulated Singapore financial
-          groups also need MAS outsourcing controls.
+          groups also need MAS controls on third-party arrangements.
         </GuideAnswerBox>
 
         <GuideTOC items={toc} />
@@ -98,7 +98,7 @@ export default function GccForSingaporeCompaniesPage() {
                 ["Pricing", "Cost plus a mark-up from benchmarking, usually under a services agreement with the Singapore entity"],
                 ["GST", "Services supplied to a recipient outside India, paid in convertible foreign exchange, can be zero-rated as exports if the conditions are met"],
                 ["PE risk", "Singapore staff who direct or conclude contracts in India can create a taxable presence"],
-                ["Regulation", "MAS outsourcing expectations for financial institutions; Indian sector rules if the work touches Indian customers"],
+                ["Regulation", "MAS expectations on third-party arrangements for financial institutions; Indian sector rules if the work touches Indian customers"],
                 ["Talent", "Large technical hiring pools in several Indian cities; wage inflation and attrition need budgeting"],
               ].map(([k, v]) => (
                 <tr key={k} className="odd:bg-secondary/30">
@@ -165,7 +165,7 @@ export default function GccForSingaporeCompaniesPage() {
 
         <h2 id="controls" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Controls for regulated groups</h2>
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
-          <li>Document the outsourcing arrangement, the risk assessment and the exit plan for MAS-regulated entities.</li>
+          <li>Document the arrangement with the Indian group company, the risk assessment and the exit plan for MAS-regulated entities.</li>
           <li>Make sure the Indian entity can give your auditors and regulators access to records and premises.</li>
           <li>Test business continuity from the Indian site.</li>
           <li>Align data security with the data protection programme. See <Link href="/blog/singapore-to-india/data-protection-pdpa-dpdp" className="text-blue-800 font-semibold hover:underline">PDPA and DPDP</Link>.</li>
@@ -213,7 +213,7 @@ export default function GccForSingaporeCompaniesPage() {
         <h2 id="sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Sources</h2>
         <GuideSources
           sources={[
-            { label: "Monetary Authority of Singapore: outsourcing", href: "https://www.mas.gov.sg/" },
+            { label: "Monetary Authority of Singapore: third-party risk guidelines", href: "https://www.mas.gov.sg/" },
             { label: "CBIC: GST", href: "https://www.cbic.gov.in/" },
             { label: "IRAS: transfer pricing", href: "https://www.iras.gov.sg/" },
           ]}

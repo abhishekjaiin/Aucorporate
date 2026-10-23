@@ -257,7 +257,7 @@ export default function Page() {
             How the Engagement Actually Works
           </h2>
           <p className="text-gray-600 max-w-4xl leading-relaxed mb-8">
-            &ldquo;Outsourced accounting&rdquo; can mean anything from a freelancer entering transactions to a full finance function running on a fixed cadence. For a foreign-owned subsidiary that has to close a statutory audit, a tax return and RoC filings off the same set of books, the cadence matters as much as the task list. Here&apos;s how a typical engagement runs:
+            &ldquo;Accounting support&rdquo; can mean anything from a freelancer entering transactions to a full finance function running on a fixed cadence. For a foreign-owned subsidiary that has to close a statutory audit, a tax return and RoC filings off the same set of books, the cadence matters as much as the task list. Here&apos;s how a typical engagement runs:
           </p>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {engagementSteps.map((step, index) => (
@@ -284,7 +284,7 @@ export default function Page() {
             In practice that means books built from month one to support the audit, the tax return, and the RBI/RoC filings that draw on them, rather than three separate vendors reconciling after the fact; Ind AS/IFRS-literate reporting where your Indian entity needs to feed into a parent-company consolidation on a different GAAP; and a compliance calendar tracked against your actual incorporation date and AGM date, not a generic reminder list.
           </p>
           <p className="text-gray-600 max-w-4xl leading-relaxed mt-4">
-            If you&apos;d rather have this run as an ongoing outsourced function — monthly bookkeeping, payroll support, and compliance handled on a fixed cadence rather than as a one-time audit engagement — see <Link href="/outsourcing" className="text-yellow-700 font-semibold hover:underline">Finance &amp; Accounting Outsourcing for Foreign Companies</Link>.
+            If you&apos;d rather have this run as an ongoing managed function — monthly bookkeeping, payroll support, and compliance handled on a fixed cadence rather than as a one-time audit engagement — see <Link href="/accounting-reporting-audit-support" className="text-yellow-700 font-semibold hover:underline">Accounting, Reporting and Audit Support</Link>.
           </p>
         </Reveal>
         </section>
@@ -337,8 +337,8 @@ export default function Page() {
             <h3 className="mb-2 font-semibold text-[#081a42]">Taxation &amp; Regulatory</h3>
             <p className="text-sm text-gray-600">Direct tax, GST, transfer pricing and FEMA compliance</p>
           </Link>
-          <Link href="/outsourcing" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
-            <h3 className="mb-2 font-semibold text-[#081a42]">Outsourced Finance &amp; Accounting</h3>
+          <Link href="/accounting-reporting-audit-support" className="rounded-lg border p-6 transition hover:shadow-md bg-white">
+            <h3 className="mb-2 font-semibold text-[#081a42]">Accounting, Reporting &amp; Audit Support</h3>
             <p className="text-sm text-gray-600">Ongoing bookkeeping, payroll support and compliance for foreign companies</p>
           </Link>
           <Link href="/blog/usa-to-india" className="rounded-lg border p-6 transition hover:shadow-md bg-white">

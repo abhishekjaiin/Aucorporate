@@ -65,6 +65,12 @@ const nextConfig = {
       // Retired pages: each old URL points to the page that replaced it, so
       // links and search rankings carry over instead of hitting a 404. Keep
       // specific paths above the ":path*" fallback for the same prefix.
+      // Retired: one positioning, so no separate outsourcing page.
+      {
+        source: "/outsourcing",
+        destination: "/accounting-reporting-audit-support",
+        permanent: true,
+      },
       {
         source: "/liaison-office-roc-compliance",
         destination: "/foreign-company-roc-compliance",

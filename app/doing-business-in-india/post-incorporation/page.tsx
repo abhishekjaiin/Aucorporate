@@ -4,12 +4,12 @@ import { ClickableInfoCard } from "@/components/ClickableInfoCard"
 
 const financeFunction = [
   {
-    title: "Outsource everything (typical for year one)",
-    desc: "Most newly-incorporated subsidiaries outsource accounting, payroll, and compliance filings to a local firm rather than hiring an in-house finance team for a headcount of a handful of people — the fixed cost of an internal function isn't justified yet, and outsourced providers already know the filing calendar.",
+    title: "Use an external provider for everything (typical for year one)",
+    desc: "Most newly-incorporated subsidiaries hand accounting, payroll, and compliance filings to a local firm rather than hiring an in-house finance team for a headcount of a handful of people — the fixed cost of an internal function isn't justified yet, and an external provider already knows the filing calendar.",
   },
   {
-    title: "Hybrid — a local finance lead plus outsourced execution",
-    desc: "As headcount and transaction volume grow, many subsidiaries hire one local finance/ops lead who owns the relationship with an outsourced accounting and compliance provider, rather than building a full internal team — this is usually the right stage to add a Virtual CFO function rather than a full-time hire.",
+    title: "Hybrid — a local finance lead plus an external provider",
+    desc: "As headcount and transaction volume grow, many subsidiaries hire one local finance/ops lead who owns the relationship with an external accounting and compliance provider, rather than building a full internal team — this is usually the right stage to add a Virtual CFO function rather than a full-time hire.",
   },
   {
     title: "Full in-house finance team",
@@ -84,8 +84,8 @@ const postIncorporationFaqs = [
     a: "There's no single best route — dividends, royalties/management fees, and buybacks each suit a different purpose (ongoing profit, IP/service payments, or returning capital) and carry different tax and transfer-pricing treatment. It's worth planning the route with your parent's tax advisor before cash builds up, not after.",
   },
   {
-    q: "When should we move from outsourced accounting to an in-house finance team?",
-    a: "When transaction volume, headcount, or regulatory complexity — multiple states, frequent RBI reporting, complex transfer pricing — justifies dedicated internal capacity. Most subsidiaries pass through an intermediate stage first: a local finance lead paired with an outsourced provider or a Virtual CFO, rather than jumping straight from fully outsourced to a full internal team.",
+    q: "When should we move from an external accounting provider to an in-house finance team?",
+    a: "When transaction volume, headcount, or regulatory complexity — multiple states, frequent RBI reporting, complex transfer pricing — justifies dedicated internal capacity. Most subsidiaries pass through an intermediate stage first: a local finance lead paired with an external provider or a Virtual CFO, rather than jumping straight from a fully external setup to a full internal team.",
   },
   {
     q: "Does a private company in India ever need a secretarial audit?",
@@ -133,14 +133,14 @@ export default function PostIncorporationPage() {
       {/* FINANCE FUNCTION */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl font-semibold text-[#081a42] mb-2">Building vs. Outsourcing Your Finance Function</h2>
+          <h2 className="text-2xl font-semibold text-[#081a42] mb-2">Building an In-House Finance Team vs. Using a Provider</h2>
           <p className="text-gray-600 mb-8">
             There&apos;s no fixed rule here — it&apos;s a scale decision that should track headcount, transaction volume, and regulatory complexity, not a default made at incorporation and never revisited. Whichever stage you&apos;re at, the recurring bookkeeping, tax and statutory audit work is covered under{' '}
             <Link href="/services/accounting-assurance" className="text-yellow-600 hover:text-yellow-700 font-semibold">
               Accounting &amp; Assurance
-            </Link>, and the outsourced delivery model itself is covered under{' '}
-            <Link href="/outsourcing" className="text-yellow-600 hover:text-yellow-700 font-semibold">
-              Finance &amp; Accounting Outsourcing
+            </Link>, and the monthly accounting service itself is covered under{' '}
+            <Link href="/accounting-reporting-audit-support" className="text-yellow-600 hover:text-yellow-700 font-semibold">
+              Accounting, Reporting and Audit Support
             </Link>.
           </p>
           <div className="grid gap-6">

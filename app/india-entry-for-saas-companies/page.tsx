@@ -240,9 +240,9 @@ export default function IndiaEntryForSaasCompaniesPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Post-Incorporation: What Changes Operationally</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Incorporation is the start of an ongoing compliance relationship, not a one-time filing you complete and move past. Someone has to run the monthly (or quarterly) GST filings, keep the books in a form that satisfies both Indian statutory requirements and whatever reporting your parent needs for consolidation, and manage the RoC annual filings and audit. For most foreign-owned entities in their first couple of years, that&apos;s a Virtual CFO / outsourced accounting arrangement rather than a full in-house finance function — our{" "}
-            <Link href="/outsourcing" className="text-gold-dark font-semibold hover:underline">
-              outsourcing
+            Incorporation is the start of an ongoing compliance relationship, not a one-time filing you complete and move past. Someone has to run the monthly (or quarterly) GST filings, keep the books in a form that satisfies both Indian statutory requirements and whatever reporting your parent needs for consolidation, and manage the RoC annual filings and audit. For most foreign-owned entities in their first couple of years, that&apos;s a Virtual CFO or external accounting arrangement rather than a full in-house finance function — our{" "}
+            <Link href="/accounting-reporting-audit-support" className="text-gold-dark font-semibold hover:underline">
+              accounting and reporting
             </Link>{" "}
             and{" "}
             <Link href="/services/accounting-assurance" className="text-gold-dark font-semibold hover:underline">

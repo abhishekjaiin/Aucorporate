@@ -35,7 +35,7 @@ const SERVICE_LINKS: Record<string, { label: string; href: string }> = {
   "transaction-advisory": { label: "Transaction Advisory", href: "/services/transaction-advisory" },
   "training-workshops": { label: "Training & Workshops", href: "/services/training-workshops" },
   "hr-services": { label: "HR & Payroll", href: "/hr-services" },
-  outsourcing: { label: "Outsourced Finance & Virtual CFO", href: "/outsourcing" },
+  outsourcing: { label: "Accounting & Virtual CFO", href: "/accounting-reporting-audit-support" },
   "arbitration-services": { label: "Arbitration & Dispute Resolution", href: "/arbitration-services" },
   "india-business-setup": { label: "India Business Setup", href: "/india-business-setup/company-formation" },
   "gcc-setup-india": { label: "GCC Setup in India", href: "/gcc-setup-india" },

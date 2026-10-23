@@ -254,7 +254,7 @@ export default function WhyIndiaPage() {
               {
                 title: "IT Services & SaaS",
                 image: "/images/pexels-pixabay-164606.jpg",
-                desc: "India dominates global IT outsourcing and digital services delivery.",
+                desc: "India leads global IT and digital services delivery.",
                 stat: "$350B+ industry",
               },
               {

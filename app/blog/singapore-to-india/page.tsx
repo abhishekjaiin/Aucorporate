@@ -323,7 +323,7 @@ export default function SingaporeToIndiaHubPage() {
           <li><strong>Company law:</strong> ACRA filings, registers of controllers and director duties.</li>
           <li><strong>Criminal law:</strong> the Prevention of Corruption Act reaches acts of Singapore citizens abroad.</li>
           <li><strong>Data:</strong> the PDPA limits transfers of personal data to India without comparable protection.</li>
-          <li><strong>Regulated firms:</strong> MAS outsourcing expectations apply when work moves to a group company in India.</li>
+          <li><strong>Regulated firms:</strong> MAS expectations on third-party arrangements apply when work moves to a group company in India.</li>
         </ul>
 
         <p className="text-gray-600 leading-relaxed mb-10">

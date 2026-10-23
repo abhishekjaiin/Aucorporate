@@ -37,7 +37,7 @@ const faqs = [
 
 const relatedCards = [
   { title: "Hiring in India as a Singapore Employer: What Changes from Singapore Practice", desc: "A comparison for Singapore HR teams hiring in India: employment contracts, provident fund, ESI, gratuity, labour codes, notice and termination, payroll tax and share plans, set against Singapore practice.", href: "/blog/singapore-to-india/hiring-in-india" },
-  { title: "Setting Up a Global Capability Centre in India for a Singapore Group: Models, Pricing, Tax and Risk", desc: "How Singapore headquartered groups build captive centres in India: build-operate-transfer, captive subsidiary and hybrid models, cost-plus pricing, GST on exports, PE risk, MAS outsourcing and talent.", href: "/blog/singapore-to-india/gcc-for-singapore-companies" },
+  { title: "Setting Up a Global Capability Centre in India for a Singapore Group: Models, Pricing, Tax and Risk", desc: "How Singapore headquartered groups build captive centres in India: build-operate-transfer, captive subsidiary and hybrid models, cost-plus pricing, GST on exports, PE risk, MAS third-party rules and talent.", href: "/blog/singapore-to-india/gcc-for-singapore-companies" },
   { title: "Contracts, Courts and Arbitration: Using Singapore as the Seat and Enforcing in India", desc: "How a Singapore parent protects its Indian subsidiary contracts: choice of law, SIAC arbitration, enforcing Singapore awards and judgments in India, stamping, interim relief and drafting points.", href: "/blog/singapore-to-india/contracts-courts-siac" },
   { title: "12 Common Mistakes Singapore Companies Make When Entering India, and How to Avoid Each", desc: "The twelve mistakes we see most often when a Singapore company sets up an Indian subsidiary: treaty assumptions, holdco substance, EPF for PRs, services PE, FEMA clocks, stamping, data transfers and year-end gaps.", href: "/blog/singapore-to-india/common-mistakes" },
 ]
@@ -178,7 +178,7 @@ export default function DataProtectionPdpaDpdpPage() {
         <h2 id="sectors" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Sector rules on top</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
           Banks, insurers and other financial institutions regulated by the MAS must also satisfy MAS
-          outsourcing and technology risk expectations when an Indian group company processes their data, and
+          third-party and technology risk expectations when an Indian group company processes their data, and
           Indian regulators have their own data-localisation rules for payments data. Check your sector rules
           before moving workloads.
         </p>
