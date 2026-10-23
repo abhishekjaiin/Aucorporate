@@ -168,9 +168,9 @@ export default function IndiaSubsidiaryRegistrationPage() {
       {/* WHAT WE NEED FROM YOU */}
       <section className="py-20 bg-secondary/30">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Need from You</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Documents Required to Register an Indian Subsidiary</h2>
           <p className="text-gray-600 leading-relaxed mb-8">
-            Six things from the parent company. We send a checklist for your country, so documents are authenticated correctly the first time.
+            The six documents and details we need from the parent company. We send a checklist for your country, so documents are authenticated correctly the first time.
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
             {needFromYou.map((item) => (

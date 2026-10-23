@@ -6,20 +6,20 @@ export const metadata: Metadata = {
     absolute: "India-Australia Tax Treaty (DTAA) and Permanent Establishment Risk",
   },
   description:
-    "How the India-Australia tax treaty (DTAA) applies to payments to your Australian parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk.",
+    "How the India-Australia DTAA applies to payments to your Australian parent: withholding rates, the ATO residency certificate (NAT 75442), Form 41 and PE risk.",
   alternates: guideAlternates("australia", "dtaa-pe-risk"),
   openGraph: {
     siteName: "AU Corporate",
     title: "India-Australia Tax Treaty (DTAA) and Permanent Establishment Risk",
     description:
-      "How the India-Australia tax treaty (DTAA) applies to payments to your Australian parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk.",
+      "How the India-Australia DTAA applies to payments to your Australian parent: withholding rates, the ATO residency certificate (NAT 75442), Form 41 and PE risk.",
     url: "https://www.theaucorp.com/blog/australia-to-india/dtaa-pe-risk",
     locale: "en_AU",
   },
   twitter: {
     title: "India-Australia Tax Treaty (DTAA) and Permanent Establishment Risk",
     description:
-      "How the India-Australia tax treaty (DTAA) applies to payments to your Australian parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk.",
+      "How the India-Australia DTAA applies to payments to your Australian parent: withholding rates, the ATO residency certificate (NAT 75442), Form 41 and PE risk.",
   },
 }
 
