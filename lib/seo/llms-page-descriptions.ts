@@ -24,7 +24,7 @@ export const pageMeta: Record<string, PageMeta> = {
   "/services/accounting-assurance": { title: "Accounting & Assurance", description: "Financial statement preparation, Ind AS/IFRS compliance, internal controls, statutory audit" },
   "/hr-services": { title: "HR Outsourcing & Payroll", description: "Payroll processing, HR compliance, and recruitment support" },
   "/services/taxation-regulatory": { title: "Taxation & Regulatory Services", description: "Corporate tax, GST, tax audit, transfer pricing, and regulatory advisory" },
-  "/outsourcing": { title: "Accounting & Finance Outsourcing", description: "Bookkeeping, monthly accounting, GST/TDS accounting support, MIS and parent-company reporting, and audit support for foreign companies and their Indian subsidiaries" },
+  "/outsourcing": { title: "Finance and Accounting Outsourcing Services in India", description: "Bookkeeping, monthly accounting, GST/TDS accounting support, MIS and parent-company reporting, and audit support for foreign companies and their Indian subsidiaries" },
   "/arbitration-services": { title: "Arbitration Services", description: "Arbitration, enforcement, and dispute resolution advisory" },
   "/about": { title: "About AU Corporate", description: "Firm profile: CA-led, founded 2016, New Delhi and Gurugram offices, led by Abhishek Jaiin (ICAI 544646), services, countries served, fees and FAQs" },
   "/contact": { title: "Contact", description: "Contact details, office locations, and inquiry form" },
@@ -40,7 +40,7 @@ export const pageMeta: Record<string, PageMeta> = {
   "/doing-business-in-india/incorporation": { title: "Should You Incorporate in India Now?", description: "Strategic timing decision guide" },
   "/doing-business-in-india/post-incorporation": { title: "Life After Incorporation", description: "Priorities and common second-year mistakes as you scale" },
 
-  "/gcc-setup-india": { title: "GCC Setup in India", description: "Global Capability Center entity choice, FEMA/RBI filings, and safe harbour rules" },
+  "/gcc-setup-india": { title: "GCC Setup in India: Cost, Timeline and Steps", description: "How to set up a GCC in India: subsidiary, branch, JV or BOT structure, setup cost and timeline, FEMA/RBI filings, safe harbour tax and compliance" },
 
   "/branch-office-registration": { title: "Branch Office Registration", description: "Form FNC, RBI/AD bank approval, UIN, ROC Form FC-1, PAN and TAN for a foreign company's India branch office" },
   "/branch-office-fema-rbi-compliance": { title: "FEMA & RBI Compliance for Branch Offices", description: "Form FNC, UIN, Annual Activity Certificate, profit remittance, additional offices, compounding and closure" },
@@ -65,7 +65,7 @@ export const pageMeta: Record<string, PageMeta> = {
   "/global-vat-compliance-ai-saas-companies": { title: "Global VAT & Sales Tax Compliance for AI/SaaS", description: "VAT/GST/sales-tax registration and filing across the US, EU, UK, Japan and more" },
 
   "/india-business-setup/fdi-channels": { title: "FDI Channels & Investment Routes", description: "Automatic vs. Government approval route by sector" },
-  "/india-business-setup/company-formation": { title: "Company Registration in India", description: "SPICe+ incorporation process, entity types, FDI routes, documents, cost and timelines" },
+  "/india-business-setup/company-formation": { title: "Company Formation in India: Registration and Setup Guide", description: "How to form, set up and register a company in India: entity types, SPICe+ incorporation, documents, cost and timeline" },
   "/india-subsidiary-registration": { title: "Indian Subsidiary Registration", description: "Incorporation, PAN, TAN, bank account, share issue and FC-GPR for a foreign company's India subsidiary" },
   "/accounting-reporting-audit-support": { title: "Accounting & Audit Support for Subsidiaries", description: "Monthly accounting, reconciliations, fixed assets, TDS/GST workings, US GAAP/IFRS reporting and audit support" },
   "/fema-rbi-compliance": { title: "FEMA & RBI Compliance for Subsidiaries", description: "FC-GPR, FC-TRS, FLA return, ECB and RBI approvals for an Indian subsidiary" },

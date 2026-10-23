@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
-const title = "Finance & Accounting Outsourcing in India | AU Corporate"
+const title = "Finance and Accounting Outsourcing Services in India"
 const description =
-  "Outsourced bookkeeping, monthly accounting, GST and TDS support, MIS and parent reporting, and audit support for Indian subsidiaries of foreign companies."
+  "Finance and accounting outsourcing services in India: bookkeeping, monthly accounts, GST and TDS, MIS and parent reporting, and audit support."
 
 export const metadata: Metadata = {
   title: {

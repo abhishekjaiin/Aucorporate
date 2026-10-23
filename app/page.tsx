@@ -221,7 +221,7 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "Company Registration in India & Compliance | AU Corporate",
+  title: "AU Corporate: Company Registration in India & Compliance",
   description:
     "CA-led firm for company incorporation and registration in India, serving clients across India and worldwide, with accounting, tax and FEMA compliance.",
   alternates: { canonical: "https://www.theaucorp.com/" },
