@@ -14,7 +14,7 @@ Full page index (every page on the site, not just the curated list below): https
 
 - [Homepage](https://www.theaucorp.com/): Overview of AU Corporate's services and India market entry proposition
 - [Doing Business in India](https://www.theaucorp.com/doing-business-in-india): Guide to entering and operating in India, from market entry through post-incorporation compliance
-- [Company Registration in India](https://www.theaucorp.com/india-business-setup/company-formation): How to register a company in India: entity types, SPICe+ process, documents, cost and timeline
+- [Company Formation and Registration in India](https://www.theaucorp.com/india-business-setup/company-formation): How to form, set up and register a company in India: entity types, SPICe+ process, documents, cost and timeline
 - [India Subsidiary Registration](https://www.theaucorp.com/india-subsidiary-registration): AU Corporate's incorporation service for foreign companies, with fees and process
 - [Services](https://www.theaucorp.com/services): Full service catalog — taxation, accounting, HR, risk, transaction advisory
 - [Taxation & Regulatory](https://www.theaucorp.com/services/taxation-regulatory): Tax planning, GST compliance, tax audit, transfer pricing

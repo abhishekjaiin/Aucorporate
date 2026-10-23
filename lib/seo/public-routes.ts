@@ -42,7 +42,7 @@ export const publicPages: PublicPage[] = [
   { path: "/services/accounting-assurance", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-10-19" },
   { path: "/hr-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-10-19" },
   { path: "/services/taxation-regulatory", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-10-19" },
-  { path: "/outsourcing", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-09-11" },
+  { path: "/outsourcing", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-10-23" },
   { path: "/arbitration-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-10-19" },
 
   // Main Pages
@@ -62,7 +62,7 @@ export const publicPages: PublicPage[] = [
   { path: "/doing-business-in-india/post-incorporation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-14" },
 
   // GCC Setup
-  { path: "/gcc-setup-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-09-23" },
+  { path: "/gcc-setup-india", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-23" },
 
   // Entity-Type Pages
   { path: "/branch-office-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },

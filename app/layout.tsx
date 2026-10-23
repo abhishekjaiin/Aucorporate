@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "Company Registration in India & Compliance | AU Corporate",
+      "AU Corporate: Company Registration in India & Compliance",
     template: "%s | AU Corporate",
   },
 
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
 
     siteName: "AU Corporate",
 
-    title: "Company Registration in India & Compliance | AU Corporate",
+    title: "AU Corporate: Company Registration in India & Compliance",
 
     description:
       "CA-led firm for company incorporation and registration in India, serving clients across India and worldwide, with accounting, tax and FEMA compliance.",

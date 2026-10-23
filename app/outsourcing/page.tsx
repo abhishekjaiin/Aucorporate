@@ -153,7 +153,7 @@ export default function OutsourcingPage() {
             </span>
 
             <h1 className="text-4xl sm:text-5xl font-bold mt-4 mb-6 max-w-3xl">
-              Finance & Accounting Outsourcing for Foreign Companies in India
+              Finance and Accounting Outsourcing Services for Companies in India
             </h1>
 
             <p className="text-white/80 mb-4 max-w-2xl">

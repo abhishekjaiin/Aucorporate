@@ -43,6 +43,14 @@ const countryPages = [
 
 const faqs = [
   {
+    q: 'What is the difference between company formation, company setup and company incorporation in India?',
+    a: 'In practice they mean the same thing: creating a new company under the Companies Act, 2013. Incorporation is the legal step, when the Registrar of Companies issues the Certificate of Incorporation after the SPICe+ filing. Company formation, company setup and business setup are the wider process around it, from choosing the entity and the FDI route to opening the bank account and completing the first registrations.',
+  },
+  {
+    q: 'How does a foreign company establish an entity in India?',
+    a: 'Most foreign companies establish an entity in India as a wholly owned private limited company. The steps are to confirm the FDI route for the sector, prepare and apostille the parent documents, obtain Digital Signature Certificates for the directors, file SPICe+ with the Ministry of Corporate Affairs, open the bank account, receive the share capital and report it to the RBI in Form FC-GPR. A branch, liaison or project office is the alternative where the activity suits it.',
+  },
+  {
     q: 'Can AU Corporate register a company in any state in India?',
     a: 'Yes. Company incorporation is filed online with the Ministry of Corporate Affairs, and the company is registered with the Registrar of Companies for the state of its registered office. AU Corporate incorporates companies with a registered office in any Indian state or union territory, for Indian founders and foreign parent companies, from its offices in New Delhi and Gurugram. Our guide to the best state to register a company in India compares stamp duty, professional tax and incentives by state.',
   },
@@ -87,16 +95,16 @@ const faqs = [
 export default function CompanyFormationPage() {
   return (
     <main className="min-h-screen bg-white">
-      <Breadcrumb items={[{ label: 'Company Registration' }]} />
+      <Breadcrumb items={[{ label: 'Company Formation in India' }]} />
 
       {/* HERO */}
       <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-20">
         <div className="mx-auto max-w-7xl px-4">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold-dark">Company Registration in India</span>
-          <h1 className="mb-3 mt-3 max-w-4xl text-4xl font-bold text-gray-900 md:text-5xl">Company Registration in India: A Complete Guide for Foreign Companies</h1>
+          <span className="text-sm font-semibold uppercase tracking-wider text-gold-dark">Company Formation in India</span>
+          <h1 className="mb-3 mt-3 max-w-4xl text-4xl font-bold text-gray-900 md:text-5xl">Company Formation and Registration in India: How to Set Up a Company (2026)</h1>
           <p className="mb-6 text-sm text-gray-500">Last updated: 25 August 2026 — prepared by AU Corporate&apos;s taxation and regulatory compliance practice.</p>
           <p className="mb-8 max-w-3xl text-lg leading-relaxed text-gray-600">
-            Company registration in India for a foreign parent generally means incorporating a Private Limited Company (a wholly owned subsidiary) through the Ministry of Corporate Affairs&apos; SPICe+ filing: obtain a Digital Signature Certificate and Director Identification Number for the proposed directors, reserve a name, file the SPICe+ incorporation form along with the constitutional documents, and receive the Certificate of Incorporation, PAN, TAN and GST registration (where applicable) as part of the same filing. Most foreign-owned entities entering under the Automatic Route can expect incorporation itself to move within roughly <strong>4-6 weeks</strong>, rising to <strong>8-12 weeks</strong> where the investment falls under the Government Approval Route; the full path from entity selection through a working bank account and initial compliance setup typically takes around <strong>8-12 weeks</strong> end to end. The sections below walk through each stage in order, including the FDI eligibility question, the exact document set a foreign director needs, and what has to happen after incorporation to stay compliant.
+            For a foreign parent, company formation in India (also called company registration, incorporation or company setup) generally means incorporating a Private Limited Company (a wholly owned subsidiary) through the Ministry of Corporate Affairs&apos; SPICe+ filing: obtain a Digital Signature Certificate and Director Identification Number for the proposed directors, reserve a name, file the SPICe+ incorporation form along with the constitutional documents, and receive the Certificate of Incorporation, PAN, TAN and GST registration (where applicable) as part of the same filing. Most foreign-owned entities entering under the Automatic Route can expect incorporation itself to move within roughly <strong>4-6 weeks</strong>, rising to <strong>8-12 weeks</strong> where the investment falls under the Government Approval Route; the full path from entity selection through a working bank account and initial compliance setup typically takes around <strong>8-12 weeks</strong> end to end. The sections below walk through each stage in order, including the FDI eligibility question, the exact document set a foreign director needs, and what has to happen after incorporation to stay compliant.
           </p>
           <Button asChild className="bg-yellow-400 text-black hover:bg-yellow-500">
             <Link href="/india-business-setup/regulatory-compliance">Next: Regulatory Compliance <ArrowRight className="ml-2 h-4 w-4" /></Link>
@@ -144,7 +152,7 @@ export default function CompanyFormationPage() {
       {/* ENTITY TYPES */}
       <section className="bg-gray-100 py-20">
         <div className="mx-auto max-w-7xl px-4">
-          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">Choosing the Right Entity Type in India</h2>
+          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">Choosing the Right Entity to Establish in India</h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {entityTypes.map((entity) => (
               <div key={entity.name} className="rounded-xl border bg-white p-6">
@@ -183,7 +191,7 @@ export default function CompanyFormationPage() {
       {/* SPICE+ STEPS */}
       <section className="bg-gray-100 py-20">
         <div className="mx-auto max-w-7xl px-4">
-          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">How to Register a Company in India: Step-by-Step (SPICe+ Process)</h2>
+          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mb-4">How to Set Up and Register a Company in India: Step by Step (SPICe+)</h2>
           <p className="max-w-4xl leading-relaxed text-gray-600 mb-10">
             Company incorporation in India is filed almost entirely online through the MCA&apos;s SPICe+ (Simplified Proforma for Incorporating a Company Electronically Plus) form — filed as Form INC-32 — on the MCA21 V3 portal (the legacy MCA21 V2 portal was decommissioned on 30 June 2026, so V3 is now the only version in use for fresh filings). The sequence is:
           </p>
@@ -226,7 +234,7 @@ export default function CompanyFormationPage() {
       {/* COST AND TIMELINE */}
       <section className="bg-gray-100 py-16">
         <div className="mx-auto max-w-5xl px-4">
-          <h2 className="text-2xl font-bold text-gray-900 md:text-3xl mb-4">Company Registration Cost and Timeline in India</h2>
+          <h2 className="text-2xl font-bold text-gray-900 md:text-3xl mb-4">Company Formation Cost and Timeline in India</h2>
           <p className="leading-relaxed text-gray-600 mb-4">
             The honest answer sits across two different figures, and conflating them is where a lot of the confusion in this space comes from. The government filing fees for the incorporation steps themselves — name reservation, the SPICe+ filing, PAN/TAN, and initial statutory setup — are relatively modest and are broken down in full in our <Link href="/india-business-setup/timeline-resources" className="text-yellow-700 font-semibold hover:underline">detailed setup timeline and budget breakdown</Link>. Professional and advisory fees (drafting, apostille coordination, resident-director arrangement, and managing the filing itself) sit on top of that and vary by entity complexity.
           </p>
