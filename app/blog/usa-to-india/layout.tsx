@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How US companies set up a subsidiary in India: structure, FDI rules, incorporation steps, RBI/FEMA filings, tax and compliance. By a Chartered Accountant.",
   alternates: guideAlternates("usa", "hub"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Set Up a Subsidiary in India from the USA: 2026 Guide",
     description:

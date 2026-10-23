@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "50 plain answers on the India-Japan tax treaty, 10% withholding rates, certificate of residence, Form 41, expat tax and the Japan-India social security agreement.",
   alternates: guideAlternates("japan", "treaties-faq"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Treaty and Social Security FAQs for India-Japan Expats",
     description:

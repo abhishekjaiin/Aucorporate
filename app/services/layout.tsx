@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/services",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "Our Services | India Entry, Tax & Advisory | AU Corporate",
     description:

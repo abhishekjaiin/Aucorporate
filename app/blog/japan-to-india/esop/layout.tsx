@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How ESOPs and RSUs work for employees of an Indian subsidiary: FEMA reporting, employee tax, valuation, cost recharge and transfer pricing for a Japanese parent.",
   alternates: guideAlternates("japan", "esop"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "ESOPs for Indian Employees of a Japanese Parent Company",
     description:

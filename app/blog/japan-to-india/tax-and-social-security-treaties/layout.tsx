@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "The India-Japan tax treaty (DTAA) and Social Security Agreement for Japanese companies and expats: 10% treaty rates, residency, EPF and pensions.",
   alternates: guideAlternates("japan", "treaties-hub"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "India-Japan Tax Treaty and Social Security for Expats",
     description:

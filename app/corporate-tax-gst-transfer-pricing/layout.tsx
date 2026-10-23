@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/corporate-tax-gst-transfer-pricing",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "Corporate Tax, GST and Transfer Pricing in India for Subsidiaries",
     description:

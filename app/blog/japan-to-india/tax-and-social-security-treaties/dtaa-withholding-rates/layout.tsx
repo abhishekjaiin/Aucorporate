@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Treaty rates for payments from India to Japan: 10% on dividends, interest, royalties and fees for technical services, against 20% domestic rates.",
   alternates: guideAlternates("japan", "dtaa-withholding-rates"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "India-Japan DTAA Withholding Tax Rates: Payments to Japan",
     description:

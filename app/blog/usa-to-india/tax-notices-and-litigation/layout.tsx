@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "What to do on receiving an Indian income tax, GST or transfer pricing notice: first steps, appeal routes, DRP, ITAT, MAP and Advance Pricing Agreements.",
   alternates: guideAlternates("usa", "tax-notices-and-litigation"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Handling Indian Tax Notices for a US-Owned Subsidiary",
     description:

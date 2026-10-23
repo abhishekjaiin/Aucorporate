@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Intercompany and customer contracts for an Indian subsidiary, governing law, arbitration clauses, the New York Convention and enforcing awards in India.",
   alternates: guideAlternates("usa", "contracts-and-arbitration"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Contracts and Arbitration in India for US Companies",
     description:

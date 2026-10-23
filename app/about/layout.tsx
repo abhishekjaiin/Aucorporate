@@ -2,24 +2,25 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "About AU Corporate | CA-Led Company Incorporation and Compliance Firm in India",
+    absolute: "About AU Corporate | CA-Led Incorporation Firm in India",
   },
   description:
-    "AU Corporate is a CA-led firm, founded in 2016 and led by Abhishek Jaiin, that incorporates and runs companies across India for Indian and foreign clients, from offices in New Delhi and Gurugram.",
+    "CA-led firm founded in 2016 and led by Abhishek Jaiin, incorporating and running companies across India for Indian and foreign clients, from New Delhi.",
   alternates: {
     canonical: "https://www.theaucorp.com/about",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
-    title: "About AU Corporate | CA-Led Company Incorporation and Compliance Firm in India",
+    title: "About AU Corporate | CA-Led Incorporation Firm in India",
     description:
-      "AU Corporate is a CA-led firm, founded in 2016 and led by Abhishek Jaiin, that incorporates and runs companies across India for Indian and foreign clients, from offices in New Delhi and Gurugram.",
+      "CA-led firm founded in 2016 and led by Abhishek Jaiin, incorporating and running companies across India for Indian and foreign clients, from New Delhi.",
     url: "https://www.theaucorp.com/about",
   },
   twitter: {
-    title: "About AU Corporate | CA-Led Company Incorporation and Compliance Firm in India",
+    title: "About AU Corporate | CA-Led Incorporation Firm in India",
     description:
-      "AU Corporate is a CA-led firm, founded in 2016 and led by Abhishek Jaiin, that incorporates and runs companies across India for Indian and foreign clients, from offices in New Delhi and Gurugram.",
+      "CA-led firm founded in 2016 and led by Abhishek Jaiin, incorporating and running companies across India for Indian and foreign clients, from New Delhi.",
   },
 }
 

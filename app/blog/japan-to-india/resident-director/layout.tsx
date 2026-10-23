@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Every Indian company needs a Resident Director who has stayed in India 182 days in the financial year. Who qualifies, options for Japanese parents, and duties.",
   alternates: guideAlternates("japan", "resident-director"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Resident Director Rules for a Japanese-Owned Indian Company",
     description:

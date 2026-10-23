@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "The eight steps to incorporate a wholly owned subsidiary in India from the USA: forms, order of steps, typical 4 to 6 week timeline and first 90 days.",
   alternates: guideAlternates("usa", "incorporation-process"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Incorporation Process for an Indian Subsidiary, Step by Step",
     description:

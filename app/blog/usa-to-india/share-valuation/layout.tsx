@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Why shares issued to a US parent need a valuation, who can certify it, the pricing floor under FEMA, and when you need a fresh valuation.",
   alternates: guideAlternates("usa", "share-valuation"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Share Valuation for Foreign Investment in India",
     description:

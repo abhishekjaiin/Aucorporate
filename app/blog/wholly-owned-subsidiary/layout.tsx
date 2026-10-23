@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/wholly-owned-subsidiary",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "Wholly Owned Subsidiary in India | Setup & Compliance Guide",
     description:

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/hr-services",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "HR Outsourcing & Payroll Services in India | AU Corporate",
     description:

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How a US parent receives money from its Indian subsidiary: dividends, service fees, royalties, loans. Forms 145 and 146, Withholding Tax and DTAA relief.",
   alternates: guideAlternates("usa", "repatriating-profits"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Repatriating Profits from India to the US: Forms and Tax",
     description:

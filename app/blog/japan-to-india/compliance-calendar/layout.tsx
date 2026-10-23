@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "The yearly compliance calendar of an Indian subsidiary owned by a Japanese company: monthly, quarterly and annual filings, mapped to a 31 March parent year-end.",
   alternates: guideAlternates("japan", "compliance-calendar"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "India Subsidiary Compliance Calendar for Japanese Companies",
     description:

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/doing-business-in-india/entry-process",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "India Market Entry Process | Step-by-Step Guide",
     description:

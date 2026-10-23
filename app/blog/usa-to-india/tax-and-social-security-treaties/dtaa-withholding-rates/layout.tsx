@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Treaty rates for payments from India to the US: dividends 15% or 25%, interest 10% or 15%, royalties and fees 10% or 15%. Conditions and how to apply them.",
   alternates: guideAlternates("usa", "dtaa-withholding-rates"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "India-US DTAA Withholding Tax Rates for Payments to the US",
     description:

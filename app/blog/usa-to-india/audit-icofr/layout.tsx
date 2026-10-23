@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Statutory audit, tax audit, GST audit and internal controls over financial reporting for an Indian subsidiary of a US group. What to expect and how to prepare.",
   alternates: guideAlternates("usa", "audit-icofr"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Audit and ICOFR for Indian Subsidiaries of US Companies",
     description:

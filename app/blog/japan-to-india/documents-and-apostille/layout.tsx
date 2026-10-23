@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Which documents a Japanese parent must prepare to incorporate an Indian subsidiary, and how notarization, translation and apostille work in Japan.",
   alternates: guideAlternates("japan", "documents-and-apostille"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Documents and Apostille for a Japanese Parent Company",
     description:

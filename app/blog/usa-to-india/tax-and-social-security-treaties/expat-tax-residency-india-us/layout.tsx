@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Which country taxes a US expat in India: Indian residency tests, US worldwide tax, the treaty tie-breaker, foreign tax credit and exclusion.",
   alternates: guideAlternates("usa", "expat-tax-residency"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Tax Residency for US Expats in India: Treaty and Credits",
     description:

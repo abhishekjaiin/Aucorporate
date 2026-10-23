@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/tax-loan-waiver-india",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "Tax Treatment of Loan Waiver in India | Supreme Court Ruling",
     description:

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/mail-box-dtaa-benefits",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "Tiger Global Ruling: DTAA & Mailbox Companies in India",
     description:

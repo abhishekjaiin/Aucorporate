@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How the India-US tax treaty applies to payments to your US parent: Withholding Tax rates, Tax Residency Certificate, Form 41 and permanent establishment risk.",
   alternates: guideAlternates("usa", "dtaa-pe-risk"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "India-US Tax Treaty and Permanent Establishment Risk",
     description:

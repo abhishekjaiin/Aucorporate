@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/arbitration-services",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "Arbitration & Dispute Resolution in India | AU Corporate",
     description:

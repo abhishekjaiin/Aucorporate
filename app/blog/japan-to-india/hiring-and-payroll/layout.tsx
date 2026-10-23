@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How Japanese companies hire in India: employment contracts, provident fund, ESI, gratuity, professional tax, payroll steps and India's labour codes.",
   alternates: guideAlternates("japan", "hiring-and-payroll"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Hiring in India for a Japanese Company: Contracts and Payroll",
     description:

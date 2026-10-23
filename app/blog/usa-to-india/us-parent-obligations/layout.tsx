@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "US reporting that follows when you own an Indian subsidiary: Form 5471, FBAR, Form 8938 and international tax regimes. A guide for US finance teams.",
   alternates: guideAlternates("usa", "parent-obligations"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "US Reporting for an Indian Subsidiary: Form 5471, FBAR",
     description:

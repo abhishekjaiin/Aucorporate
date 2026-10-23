@@ -325,7 +325,7 @@ export default function ProjectOfficeTaxGstTransferPricingPage() {
             "@type": "Service",
             name: "Project Office Tax, GST and Transfer Pricing",
             description:
-              "Foreign company tax rate, permanent establishment, lower deduction certificate, presumptive tax, GST, transfer pricing and treaty relief for the India project office of a foreign company.",
+              "Tax rate, PE, lower deduction certificate, presumptive tax, GST, transfer pricing and treaty relief for the India project office of a foreign company.",
             provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
             url: "https://www.theaucorp.com/project-office-tax-gst-transfer-pricing",
             areaServed: "India",

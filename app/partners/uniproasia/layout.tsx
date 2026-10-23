@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/partners/uniproasia",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "UniproAsia Partnership: Expand into Hong Kong, Singapore & China",
     description:

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Japanese reporting that follows when you own an Indian subsidiary: CFC rules, dividend exemption, transfer pricing documentation, J-SOX and overseas reporting.",
   alternates: guideAlternates("japan", "parent-obligations"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Japanese Parent Reporting for an Indian Subsidiary",
     description:

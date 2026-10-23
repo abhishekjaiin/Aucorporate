@@ -324,7 +324,7 @@ export default function BranchOfficeTaxGstTransferPricingPage() {
             "@type": "Service",
             name: "Branch Office Tax, GST and Transfer Pricing",
             description:
-              "Foreign company tax rate, advance tax, TDS, GST, transfer pricing, permanent establishment, treaty relief and litigation for the India branch office of a foreign company.",
+              "Tax rate, advance tax, TDS, GST, transfer pricing, permanent establishment, treaty relief and litigation for the India branch office of a foreign company.",
             provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
             url: "https://www.theaucorp.com/branch-office-tax-gst-transfer-pricing",
             areaServed: "India",

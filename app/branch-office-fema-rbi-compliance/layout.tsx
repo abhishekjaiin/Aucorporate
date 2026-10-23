@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/branch-office-fema-rbi-compliance",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "FEMA and RBI Compliance for Branch Offices in India",
     description:

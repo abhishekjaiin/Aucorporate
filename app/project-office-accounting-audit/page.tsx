@@ -307,7 +307,7 @@ export default function ProjectOfficeAccountingAuditPage() {
             "@type": "Service",
             name: "Project Office Accounting, Reporting and Audit",
             description:
-              "Project-wise accounting, head office reconciliation, retention and work in progress, TDS and GST workings, reporting in US GAAP or IFRS and audit support for the India project office.",
+              "Project-wise accounting, head office reconciliation, retention and WIP, TDS and GST workings, US GAAP or IFRS reporting and audit for India project offices.",
             provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
             url: "https://www.theaucorp.com/project-office-accounting-audit",
             areaServed: "India",

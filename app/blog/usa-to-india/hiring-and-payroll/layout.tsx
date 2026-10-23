@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How US companies hire in India: employment contracts, provident fund, ESI, gratuity, professional tax, payroll steps and India's labour codes.",
   alternates: guideAlternates("usa", "hiring-and-payroll"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Hiring in India: Contracts, Payroll and Statutory Compliance",
     description:

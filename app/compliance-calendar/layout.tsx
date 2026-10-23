@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 const title = "India Subsidiary Compliance Calendar | AU Corporate"
 const description =
-  "The monthly, quarterly, annual and event-based filings an Indian subsidiary of a foreign parent has to track — TDS, GST, ROC, RBI/FEMA and income tax, mapped by due date for a 31 March financial year."
+  "Monthly, quarterly, annual and event-based filings for an Indian subsidiary: TDS, GST, ROC, RBI/FEMA and income tax, by due date for a 31 March year."
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/compliance-calendar",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title,
     description,

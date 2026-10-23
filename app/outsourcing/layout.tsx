@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
-const title = "Finance & Accounting Outsourcing for Foreign Companies in India | AU Corporate"
+const title = "Finance & Accounting Outsourcing in India | AU Corporate"
 const description =
-  "Outsourced bookkeeping, monthly accounting, GST/TDS accounting support, MIS and parent-company reporting, and audit support for foreign companies and their Indian subsidiaries."
+  "Outsourced bookkeeping, monthly accounting, GST and TDS support, MIS and parent reporting, and audit support for Indian subsidiaries of foreign companies."
 
 export const metadata: Metadata = {
   title: {
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/outsourcing",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title,
     description,

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/fdi-green-vs-brown-channel",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "FDI in India: Green Channel vs Brown Channel | AU Corporate",
     description:

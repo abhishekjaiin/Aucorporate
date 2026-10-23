@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Compare an Employer of Record with your own Indian subsidiary: speed, control, compliance, tax presence and when to convert. A guide for Japanese companies.",
   alternates: guideAlternates("japan", "eor-vs-subsidiary"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "EOR vs Subsidiary in India: Right for a Japanese Company?",
     description:

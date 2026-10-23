@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How Indian provident fund applies to foreign nationals: international worker rules, no wage ceiling, the Japan agreement exclusion and the 2026 EPF Scheme.",
   alternates: guideAlternates("japan", "epf-international-workers"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "EPF for International Workers: Rules for Japanese Expats",
     description:

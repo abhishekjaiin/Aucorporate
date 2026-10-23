@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How the India-Japan tax treaty applies to payments to your Japanese parent: 10% Withholding Tax rates, residence certificate, Form 41 and permanent establishment risk.",
   alternates: guideAlternates("japan", "dtaa-pe-risk"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "India-Japan Tax Treaty and Permanent Establishment Risk",
     description:
