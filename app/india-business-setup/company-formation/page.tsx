@@ -43,6 +43,10 @@ const countryPages = [
 
 const faqs = [
   {
+    q: 'Can AU Corporate register a company in any state in India?',
+    a: 'Yes. Company incorporation is filed online with the Ministry of Corporate Affairs, and the company is registered with the Registrar of Companies for the state of its registered office. AU Corporate incorporates companies with a registered office in any Indian state or union territory, for Indian founders and foreign parent companies, from its offices in New Delhi and Gurugram. Our guide to the best state to register a company in India compares stamp duty, professional tax and incentives by state.',
+  },
+  {
     q: 'Is company registration in India fully online?',
     a: 'Yes — the SPICe+ filing, DSC application, DIN application and name reservation are all completed through the MCA21 V3 portal. The parts that can’t be done remotely are physical steps outside the portal itself, such as obtaining apostilles on foreign documents and, in some cases, biometric verification for certain filings.',
   },
@@ -99,7 +103,12 @@ export default function CompanyFormationPage() {
           </Button>
 
           <div className="mt-8 rounded-xl border border-yellow-200 bg-yellow-50 p-5">
-            <p className="font-semibold text-[#081a42]">Planning a foreign-owned subsidiary?</p>
+            <p className="font-semibold text-[#081a42]">Register your company in India with AU Corporate</p>
+            <p className="mt-1 text-sm leading-6 text-gray-600">
+              We incorporate private limited companies, subsidiaries and LLPs with a registered office in any Indian state, for
+              Indian founders and foreign parent companies, and then handle the accounting, tax and compliance that follows.
+            </p>
+            <p className="mt-3 font-semibold text-[#081a42]">Planning a foreign-owned subsidiary?</p>
             <p className="mt-1 text-sm leading-6 text-gray-600">
               Our dedicated <Link href="/india-subsidiary-registration" className="font-semibold text-yellow-700 hover:underline">foreign subsidiary and WOS guide</Link> connects incorporation with FDI, banking, tax, accounting, ongoing compliance and eventual exit.
             </p>
@@ -370,12 +379,12 @@ export default function CompanyFormationPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Company Registration in India: A Complete Guide',
+            name: 'Company Registration in India',
             description:
-              'Complete guide to company registration in India for foreign investors — entity types, the SPICe+ process, FDI routes, costs and timelines.',
-            provider: { '@type': 'Organization', name: 'AU Corporate', url: 'https://www.theaucorp.com' },
+              'Company incorporation and registration in India by AU Corporate: private limited companies, wholly owned subsidiaries and LLPs in any Indian state, with the SPICe+ filing, PAN, TAN and bank account.',
+            provider: { '@id': 'https://www.theaucorp.com/#organization' },
             url: 'https://www.theaucorp.com/india-business-setup/company-formation',
-            areaServed: 'India',
+            areaServed: { '@type': 'Country', name: 'India' },
             serviceType: 'Company Registration & Incorporation',
           }),
         }}

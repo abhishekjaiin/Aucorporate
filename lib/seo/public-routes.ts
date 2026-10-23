@@ -33,7 +33,7 @@ export type PublicPage = {
 
 export const publicPages: PublicPage[] = [
   // Homepage - Highest Priority
-  { path: "/", priority: 1.0, changeFrequency: "daily", lastModified: "2026-10-21" },
+  { path: "/", priority: 1.0, changeFrequency: "daily", lastModified: "2026-10-23" },
 
   // Core Service Hub
   { path: "/services", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-10-19" },
@@ -46,8 +46,8 @@ export const publicPages: PublicPage[] = [
   { path: "/arbitration-services", priority: 0.92, changeFrequency: "weekly", lastModified: "2026-10-19" },
 
   // Main Pages
-  { path: "/about", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
-  { path: "/contact", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-19" },
+  { path: "/about", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-23" },
+  { path: "/contact", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-23" },
   { path: "/career", priority: 0.75, changeFrequency: "monthly", lastModified: "2026-08-26" },
   { path: "/compliance-calendar", priority: 0.8, changeFrequency: "yearly", lastModified: "2026-10-07" },
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly", lastModified: "2026-07-30" },
@@ -90,7 +90,7 @@ export const publicPages: PublicPage[] = [
 
   // India Business Setup Cluster
   { path: "/india-business-setup/fdi-channels", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-10-19" },
-  { path: "/india-business-setup/company-formation", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-10-19" },
+  { path: "/india-business-setup/company-formation", priority: 0.95, changeFrequency: "weekly", lastModified: "2026-10-23" },
   { path: "/india-subsidiary-registration", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
   { path: "/accounting-reporting-audit-support", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-21" },
   { path: "/fema-rbi-compliance", priority: 0.85, changeFrequency: "monthly", lastModified: "2026-10-20" },

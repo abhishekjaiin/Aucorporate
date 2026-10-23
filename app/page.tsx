@@ -132,7 +132,7 @@ const pillars = [
   },
   {
     title: "Since 2016",
-    description: "Offices in New Delhi and Gurugram, serving foreign parent companies across multiple countries.",
+    description: "Offices in New Delhi and Gurugram, incorporating and running companies across India for clients in India and more than 10 countries.",
   },
 ]
 
@@ -221,9 +221,9 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "CA-Led India Entry, Tax & Compliance | AU Corporate",
+  title: "Company Registration in India & Compliance | AU Corporate",
   description:
-    "AU Corporate is an India-based, CA-led professional services firm supporting foreign companies with India entry, subsidiary setup, tax and ongoing compliance.",
+    "AU Corporate is a CA-led firm for company incorporation and registration in India, serving clients across India and foreign companies worldwide, with accounting, tax, FEMA and compliance after setup.",
 }
 
 export default function HomePage() {
@@ -237,7 +237,7 @@ export default function HomePage() {
       <section className="border-b bg-white py-8 sm:py-10">
         <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-gray-200 sm:grid-cols-4">
           {[
-            ["Since 2016", "New Delhi & Gurugram"],
+            ["Since 2016", "Offices in New Delhi & Gurugram, serving all of India"],
             ["CA-Led Team", "Chartered Accountants & multidisciplinary specialists"],
             ["Full Lifecycle", "Incorporation through ongoing compliance"],
             ["FEMA · RBI · GST · ROC", "Regulatory filings we manage"],

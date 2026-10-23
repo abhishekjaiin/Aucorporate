@@ -17,6 +17,7 @@ const facts: [string, React.ReactNode][] = [
   ["Led by", <>Abhishek Jaiin, Chartered Accountant (ICAI membership no. 544646)</>],
   ["Head office", OFFICES.newDelhi.lines],
   ["Second office", OFFICES.gurugram.lines],
+  ["Service area", "All of India, every state and union territory, with clients worldwide"],
   [
     "Team",
     "Chartered Accountants, CPAs, Company Secretaries, Cost Accountants, lawyers, industry specialists, ex-bankers and MBAs",
@@ -130,6 +131,10 @@ const faqs = [
     a: `AU Corporate's head office is at ${OFFICES.newDelhi.lines}. It also has an office at ${OFFICES.gurugram.lines}. Clients outside India work with the firm remotely.`,
   },
   {
+    q: "Does AU Corporate only work in New Delhi?",
+    a: "No. AU Corporate's offices are in New Delhi and Gurugram, but company incorporation and compliance in India are filed online with the Ministry of Corporate Affairs, the RBI and the tax authorities, so the firm registers and supports companies in every Indian state and union territory, for clients in India and abroad.",
+  },
+  {
     q: "Which countries does AU Corporate work with?",
     a: "AU Corporate has served parent companies from more than 10 countries, including the USA, UK, Singapore, Australia, Germany, Japan, China, Hong Kong, Spain, France and the UAE. It publishes detailed India entry guides for US, UK, Australian, Japanese and Singapore companies.",
   },
@@ -171,7 +176,7 @@ const pageSchema = {
       email: "partner@theaucorp.com",
       address: OFFICE_ADDRESSES_SCHEMA,
       founder: { "@id": "https://www.theaucorp.com/#abhishek-jaiin" },
-      areaServed: "IN",
+      areaServed: { "@type": "Country", name: "India" },
       knowsAbout: [
         "India subsidiary registration",
         "FEMA and RBI compliance",
