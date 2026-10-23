@@ -1,10 +1,12 @@
 # AU Corporate
 
-> AU Corporate is a business advisory and accounting firm based in New Delhi, India, founded in 2016. It helps foreign companies enter, incorporate, and operate in India — company formation, FEMA/RBI and tax compliance, accounting and payroll outsourcing, Virtual CFO services, and related regulatory advisory.
+> AU Corporate is a CA-led firm that handles company incorporation and registration in India, serving clients across all Indian states and union territories, and foreign parent companies from more than 10 countries. Founded in 2016 and led by Chartered Accountant Abhishek Jaiin (ICAI 544646), it registers private limited companies, wholly owned subsidiaries, LLPs and branch, liaison and project offices, then runs their accounting, FEMA/RBI filings, tax, transfer pricing, company secretarial compliance and payroll. Offices: New Delhi (head office) and Gurugram.
 
 Primary services: India market entry and Global Capability Center (GCC) advisory, assurance and accounting (IFRS/Ind AS), taxation and transfer pricing, FEMA and RBI regulatory compliance, accounting and payroll outsourcing, Virtual CFO services, HR outsourcing, risk and transaction advisory, business valuation, and arbitration/dispute resolution.
 
-Contact: partner@theaucorp.com | +91-9999010513 | New Delhi, India
+Service area: all of India, with clients worldwide. Subsidiary registration: USD 750 to 1,000 all-inclusive; incorporation typically takes 4 to 6 weeks.
+
+Contact: partner@theaucorp.com | +91-9999010513 | Offices in New Delhi and Gurugram, India
 
 Full page index (every page on the site, not just the curated list below): https://www.theaucorp.com/llms-full.txt
 
@@ -12,7 +14,8 @@ Full page index (every page on the site, not just the curated list below): https
 
 - [Homepage](https://www.theaucorp.com/): Overview of AU Corporate's services and India market entry proposition
 - [Doing Business in India](https://www.theaucorp.com/doing-business-in-india): Guide to entering and operating in India, from market entry through post-incorporation compliance
-- [India Business Setup](https://www.theaucorp.com/india-business-setup): Company formation, FDI routes, regulatory compliance, and banking/taxation for new entities
+- [Company Registration in India](https://www.theaucorp.com/india-business-setup/company-formation): How to register a company in India: entity types, SPICe+ process, documents, cost and timeline
+- [India Subsidiary Registration](https://www.theaucorp.com/india-subsidiary-registration): AU Corporate's incorporation service for foreign companies, with fees and process
 - [Services](https://www.theaucorp.com/services): Full service catalog — taxation, accounting, HR, risk, transaction advisory
 - [Taxation & Regulatory](https://www.theaucorp.com/services/taxation-regulatory): Tax planning, GST compliance, tax audit, transfer pricing
 - [Accounting & Assurance](https://www.theaucorp.com/services/accounting-assurance): Financial statement preparation, IFRS/Ind AS compliance, internal controls

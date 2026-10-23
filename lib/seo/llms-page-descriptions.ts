@@ -19,7 +19,7 @@
 export type PageMeta = { title: string; description: string }
 
 export const pageMeta: Record<string, PageMeta> = {
-  "/": { title: "AU Corporate", description: "India business setup, tax & compliance firm — overview of services and market-entry proposition" },
+  "/": { title: "AU Corporate", description: "CA-led firm for company incorporation and registration in India, serving clients across all Indian states and foreign companies worldwide, with accounting, tax, FEMA/RBI and secretarial compliance after setup" },
   "/services": { title: "Our Services", description: "Full service catalog — taxation, accounting, HR, risk, transaction advisory" },
   "/services/accounting-assurance": { title: "Accounting & Assurance", description: "Financial statement preparation, Ind AS/IFRS compliance, internal controls, statutory audit" },
   "/hr-services": { title: "HR Outsourcing & Payroll", description: "Payroll processing, HR compliance, and recruitment support" },

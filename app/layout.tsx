@@ -214,7 +214,18 @@ export default function RootLayout({
                   url: "https://www.theaucorp.com",
                   logo: "https://www.theaucorp.com/logo.png",
                   foundingDate: "2016",
+                  description:
+                    "CA-led firm for company incorporation and registration in India, and the accounting, FEMA/RBI, tax, secretarial and payroll compliance that follows. Serves clients across India and foreign parent companies worldwide.",
                   address: OFFICE_ADDRESSES_SCHEMA,
+                  areaServed: { "@type": "Country", name: "India" },
+                  knowsAbout: [
+                    "Company incorporation in India",
+                    "Company registration in India",
+                    "Private limited company registration",
+                    "Foreign subsidiary registration in India",
+                    "FEMA and RBI compliance",
+                    "Indian tax, GST and transfer pricing",
+                  ],
                   sameAs: [
                     "https://www.linkedin.com/company/a-u-corporate/",
                     "https://www.instagram.com/aucorporate/",
