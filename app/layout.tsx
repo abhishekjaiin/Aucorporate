@@ -30,19 +30,17 @@ export const metadata: Metadata = {
 
   title: {
     default:
-      "AU Corporate | CA-Led India Entry, Tax & Compliance",
-    template: "AU Corporate | %s",
+      "Company Registration in India & Compliance | AU Corporate",
+    template: "%s | AU Corporate",
   },
 
   description:
     "AU Corporate is an India-based, CA-led professional services firm supporting foreign companies with India entry, subsidiary setup, tax and ongoing compliance.",
 
-  // AU Corporate currently publishes one English-language site, not separate
-  // regional/language variants. Do not emit hreflang alternates that all point
-  // to the homepage; that creates false regional signals for search engines.
-  alternates: {
-    canonical: "https://www.theaucorp.com",
-  },
+  // No site-wide canonical: an inherited one would declare every page that
+  // forgets its own canonical a copy of the homepage. Each page sets its own;
+  // the homepage's is in app/page.tsx. No site-wide hreflang either: the
+  // country guides set theirs through guideAlternates().
 
   authors: [
     {
@@ -82,15 +80,14 @@ export const metadata: Metadata = {
 
     locale: "en_IN",
 
-    url: "https://www.theaucorp.com",
+    url: "https://www.theaucorp.com/",
 
     siteName: "AU Corporate",
 
-    title:
-      "AU Corporate | CA-Led India Entry, Tax & Compliance",
+    title: "Company Registration in India & Compliance | AU Corporate",
 
     description:
-      "AU Corporate is an India-based, CA-led professional services firm supporting foreign companies with India entry, subsidiary setup, tax and ongoing compliance.",
+      "CA-led firm for company incorporation and registration in India, serving clients across India and worldwide, with accounting, tax and FEMA compliance.",
 
     images: [
       {
@@ -130,12 +127,7 @@ export default function RootLayout({
     <html lang="en" className="bg-white scroll-smooth">
       <head>
 
-        {/* BRAND META */}
-        <meta
-          name="application-name"
-          content="AU Corporate"
-        />
-
+        {/* BRAND META (application-name comes from metadata.applicationName) */}
         <meta
           name="apple-mobile-web-app-title"
           content="AU Corporate"
@@ -211,7 +203,8 @@ export default function RootLayout({
                   "@type": "Organization",
                   "@id": "https://www.theaucorp.com/#organization",
                   name: "AU Corporate",
-                  url: "https://www.theaucorp.com",
+                  alternateName: ["AU Corp", "A U Corporate"],
+                  url: "https://www.theaucorp.com/",
                   logo: "https://www.theaucorp.com/logo.png",
                   foundingDate: "2016",
                   description:
@@ -241,8 +234,11 @@ export default function RootLayout({
                 {
                   "@type": "WebSite",
                   "@id": "https://www.theaucorp.com/#website",
+                  // Google's site name for search results: name, alternateName
+                  // and url must match the homepage exactly (with the slash).
                   name: "AU Corporate",
-                  url: "https://www.theaucorp.com",
+                  alternateName: ["AU Corp", "A U Corporate"],
+                  url: "https://www.theaucorp.com/",
                   inLanguage: "en-IN",
                   publisher: {
                     "@id": "https://www.theaucorp.com/#organization",
