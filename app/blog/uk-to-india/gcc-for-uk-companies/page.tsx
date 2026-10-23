@@ -17,7 +17,7 @@ const PARENT_URL = "https://www.theaucorp.com/blog/uk-to-india"
 const toc = [
   { id: "why", label: "Why UK groups build in India" },
   { id: "models", label: "The four operating models" },
-  { id: "regulated", label: "Regulated UK firms: outsourcing to a group company" },
+  { id: "regulated", label: "Regulated UK firms: moving work to a group company" },
   { id: "economics", label: "Tax and pricing: keeping it defensible" },
   { id: "stages", label: "A staged build" },
   { id: "people", label: "Leadership, culture and governance" },
@@ -27,7 +27,7 @@ const toc = [
 const faqs = [
   { q: "What is a Global Capability Centre?", a: "A captive centre, usually an Indian subsidiary, that carries out engineering, finance, analytics, operations or support work for its parent group." },
   { q: "How big should a UK company's first India team be?", a: "Many groups start with a pilot of 10 to 20 people, often through an Employer of Record, then form a subsidiary once the model is proven." },
-  { q: "Does the PRA or FCA allow outsourcing to an Indian group company?", a: "Outsourcing to a group company is still outsourcing and remains the regulated firm's responsibility. The firm must assess materiality, perform due diligence, put an agreement in place with audit and access rights, and plan for exit." },
+  { q: "Can a PRA- or FCA-regulated firm move work to an Indian group company?", a: "Yes, but the rules for third-party arrangements still apply to a group company, and the activity remains the regulated firm's responsibility. The firm must assess materiality, perform due diligence, put an agreement in place with audit and access rights, and plan for exit." },
   { q: "How is a captive centre priced?", a: "Usually at cost plus a mark-up benchmarked against comparable independent companies, documented in an annual transfer pricing report." },
   { q: "Are services to the UK parent zero-rated for GST?", a: "They can be, as exports of services, if the conditions on place of supply, payment in convertible foreign exchange and the relationship between the parties are met. Confirm the position before invoicing." },
 ]
@@ -45,7 +45,7 @@ export default function GccForUkCompaniesPage() {
       <GuideArticleSchema
         url={PAGE_URL}
         headline="Building a Global Capability Centre in India as a UK Company: Models, Staging, Regulation and Pricing"
-        description="How a UK company can build a captive Global Capability Centre (GCC) in India: models, stages, regulated-firm outsourcing rules, transfer pricing, PE risk, talent and governance."
+        description="How a UK company can build a captive Global Capability Centre (GCC) in India: models, stages, regulated-firm third-party rules, transfer pricing, PE risk, talent and governance."
         datePublished="2026-10-19"
         dateModified="2026-10-19"
         isPartOfUrl={PARENT_URL}
@@ -71,7 +71,7 @@ export default function GccForUkCompaniesPage() {
           A Global Capability Centre (GCC) is an Indian subsidiary that performs engineering, finance, data,
           operations or support work for the UK group. The usual path is a pilot team through an Employer of
           Record, a subsidiary at 20 to 50 people, and scaled operations on a cost-plus pricing model. UK
-          regulated firms must also meet the PRA and FCA outsourcing rules when work moves to a group company in
+          regulated firms must also meet the PRA and FCA third-party rules when work moves to a group company in
           India.
         </GuideAnswerBox>
 
@@ -92,7 +92,7 @@ export default function GccForUkCompaniesPage() {
                 ["Typical pricing", "Cost plus a benchmarked mark-up, documented with a transfer pricing study"],
                 ["Revenue and GST", "Services to the UK parent can qualify as zero-rated exports of services where conditions are met"],
                 ["PE risk", "Managed by keeping the Indian company independent in operations, contracts and day-to-day decisions, and tracking UK staff days"],
-                ["Regulated UK firms", "PRA SS2/21 (outsourcing and third-party risk) and FCA SYSC 8 apply to outsourcing, including to group companies"],
+                ["Regulated UK firms", "PRA SS2/21 (third-party risk) and FCA SYSC 8 apply to work moved to service providers, including group companies"],
                 ["Data", "UK GDPR transfer mechanism and India's DPDP Act both apply"],
                 ["Scale path", "Pilot, subsidiary, build, scale, with optional build-operate-transfer"],
               ].map(([k, v]) => (
@@ -129,7 +129,7 @@ export default function GccForUkCompaniesPage() {
                 ["Employer of Record pilot", "EOR employs the first team under your direction", "Proof of concept in the first 3 to 9 months", "PE risk if UK managers direct the work; costs per head"],
                 ["Captive subsidiary", "Your own Indian company employs the team", "Long-term capability", "Full compliance, transfer pricing and governance"],
                 ["Build-operate-transfer", "A partner builds and runs the centre, then transfers it to you", "Groups that want speed without a heavy first-year management load", "Transfer terms, key staff retention, tax on transfer"],
-                ["Shared or hybrid", "Part captive, part outsourced", "Variable demand", "Governance across vendors"],
+                ["Shared or hybrid", "Part captive, part vendor-run", "Variable demand", "Governance across vendors"],
               ].map((row, i) => (
                 <tr key={row[0]} className={i % 2 === 1 ? "bg-gray-50" : undefined}>
                   <th scope="row" className="border border-gray-300 p-3 text-left font-semibold">{row[0]}</th>
@@ -142,11 +142,11 @@ export default function GccForUkCompaniesPage() {
           </table>
         </div>
 
-        <h2 id="regulated" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Regulated UK firms: outsourcing to a group company</h2>
+        <h2 id="regulated" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Regulated UK firms: moving work to a group company</h2>
         <p className="text-gray-600 leading-relaxed mb-10">
-          A UK bank, insurer or investment firm moving work to its Indian group company is still outsourcing,
-          even though the counterparty is a subsidiary. The firm remains responsible for the activity. Expect to
-          cover the PRA&apos;s outsourcing and third-party risk expectations and the FCA&apos;s outsourcing
+          A UK bank, insurer or investment firm moving work to its Indian group company is treated as using a
+          service provider, even though the counterparty is a subsidiary. The firm remains responsible for the
+          activity. Expect to cover the PRA&apos;s third-party risk expectations and the FCA&apos;s SYSC 8
           rules: a materiality assessment, due diligence, a written agreement with audit and access rights for
           the firm and its regulators, exit and stressed-exit plans, business continuity, data and security
           controls, and ongoing monitoring. The Indian entity&apos;s own regulators, such as RBI or SEBI for
@@ -213,8 +213,8 @@ export default function GccForUkCompaniesPage() {
         <h2 id="sources" className="text-2xl font-bold text-gray-900 mt-12 mb-4">Sources</h2>
         <GuideSources
           sources={[
-            { label: "Bank of England PRA: SS2/21 outsourcing and third party risk management", href: "https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/outsourcing-and-third-party-risk-management-ss" },
-            { label: "FCA Handbook: SYSC 8 outsourcing", href: "https://www.handbook.fca.org.uk/handbook/SYSC/8/" },
+            { label: "Bank of England PRA: SS2/21 on third-party risk management", href: "https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/outsourcing-and-third-party-risk-management-ss" },
+            { label: "FCA Handbook: SYSC 8", href: "https://www.handbook.fca.org.uk/handbook/SYSC/8/" },
             { label: "Income Tax Department (India)", href: "https://www.incometax.gov.in" },
           ]}
         />

@@ -32,7 +32,7 @@ const services = [
   { title: "Tax Advisory", desc: "Corporate tax requirements, advisory and compliance across Hong Kong and Singapore." },
   { title: "Audit Services", desc: "Audit support and financial review through UniproAsia's online service platform." },
   { title: "Corporate Compliance", desc: "Ongoing corporate maintenance and statutory compliance requirements." },
-  { title: "Payroll Outsourcing", desc: "Payroll administration, HR support and compliance reporting for your regional team." },
+  { title: "Payroll Services", desc: "Payroll administration, HR support and compliance reporting for your regional team." },
   { title: "Business Support", desc: "General business and administrative support for companies operating across Asia." },
   { title: "Going Global", desc: "End-to-end support taking a business from market selection through company setup and growth." },
   { title: "Partnership Services", desc: "Opportunities for consultants, service providers and entrepreneurs expanding across Asia's markets." },
@@ -130,7 +130,7 @@ export default function UniproAsiaPartnerPage() {
       />
 
       <div className="max-w-7xl mx-auto px-4">
-        <Breadcrumb items={[{ label: "Global Support", href: "/outsourcing" }, { label: "UniproAsia Partnership" }]} />
+        <Breadcrumb items={[{ label: "Partners" }, { label: "UniproAsia Partnership" }]} />
       </div>
 
       {/* HERO */}
@@ -452,7 +452,7 @@ export default function UniproAsiaPartnerPage() {
       <div className="max-w-6xl mx-auto px-6">
         <RelatedResources
           links={[
-            { label: "Global Support & Outsourcing", href: "/outsourcing", description: "AU Corporate's own accounting, payroll and BPO services in India." },
+            { label: "Accounting, Reporting & Audit Support", href: "/accounting-reporting-audit-support", description: "AU Corporate's own monthly accounting, reporting and audit support in India." },
             { label: "Why India", href: "/doing-business-in-india/why-india", description: "The case for India as part of a wider Asia expansion." },
             { label: "GCC Setup in India", href: "/gcc-setup-india", description: "Building a Global Capability Center alongside a regional footprint." },
           ]}

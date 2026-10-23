@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "HR Outsourcing & Payroll Services in India | AU Corporate",
+    absolute: "HR and Payroll Services in India | AU Corporate",
   },
   description:
     "Payroll processing, HR compliance, and recruitment support for foreign companies setting up and running operations in India.",
@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "en_IN",
     siteName: "AU Corporate",
-    title: "HR Outsourcing & Payroll Services in India | AU Corporate",
+    title: "HR and Payroll Services in India | AU Corporate",
     description:
       "Payroll processing, HR compliance, and recruitment support for foreign companies setting up and running operations in India.",
     url: "https://www.theaucorp.com/hr-services",
   },
   twitter: {
-    title: "HR Outsourcing & Payroll Services in India | AU Corporate",
+    title: "HR and Payroll Services in India | AU Corporate",
     description:
       "Payroll processing, HR compliance, and recruitment support for foreign companies setting up and running operations in India.",
   },

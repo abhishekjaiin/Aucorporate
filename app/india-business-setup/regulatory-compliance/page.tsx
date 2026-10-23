@@ -74,8 +74,8 @@ export default function RegulatoryCompliancePage() {
               Accounting &amp; Assurance
             </Link>{' '}
             page, with{' '}
-            <Link href="/outsourcing" className="text-yellow-700 font-semibold hover:underline">
-              outsourced finance and accounting support
+            <Link href="/accounting-reporting-audit-support" className="text-yellow-700 font-semibold hover:underline">
+              monthly accounting, reporting and audit support
             </Link>{' '}
             as one option for running it.
           </p>

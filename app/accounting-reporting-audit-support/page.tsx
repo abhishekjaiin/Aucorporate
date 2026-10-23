@@ -481,7 +481,7 @@ export default function AccountingReportingAuditSupportPage() {
             provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
             url: "https://www.theaucorp.com/accounting-reporting-audit-support",
             areaServed: "India",
-            serviceType: "Outsourced Accounting, Reporting and Audit Coordination for Indian Subsidiaries",
+            serviceType: "Accounting, Reporting and Audit Coordination for Indian Subsidiaries",
           }),
         }}
       />

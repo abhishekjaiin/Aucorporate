@@ -6,20 +6,20 @@ export const metadata: Metadata = {
     absolute: "Global Capability Centres in India for Singapore Companies: Models, Pricing and Tax",
   },
   description:
-    "How Singapore headquartered groups build captive centres in India: build-operate-transfer, captive subsidiary and hybrid models, cost-plus pricing, GST on exports, PE risk, MAS outsourcing and talent.",
+    "How Singapore headquartered groups build captive centres in India: build-operate-transfer, captive subsidiary and hybrid models, cost-plus pricing, GST on exports, PE risk, MAS third-party rules and talent.",
   alternates: guideAlternates("singapore", "gcc"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Global Capability Centres in India for Singapore Companies: Models, Pricing and Tax",
     description:
-      "How Singapore headquartered groups build captive centres in India: build-operate-transfer, captive subsidiary and hybrid models, cost-plus pricing, GST on exports, PE risk, MAS outsourcing and talent.",
+      "How Singapore headquartered groups build captive centres in India: build-operate-transfer, captive subsidiary and hybrid models, cost-plus pricing, GST on exports, PE risk, MAS third-party rules and talent.",
     url: "https://www.theaucorp.com/blog/singapore-to-india/gcc-for-singapore-companies",
     locale: "en_GB",
   },
   twitter: {
     title: "Global Capability Centres in India for Singapore Companies: Models, Pricing and Tax",
     description:
-      "How Singapore headquartered groups build captive centres in India: build-operate-transfer, captive subsidiary and hybrid models, cost-plus pricing, GST on exports, PE risk, MAS outsourcing and talent.",
+      "How Singapore headquartered groups build captive centres in India: build-operate-transfer, captive subsidiary and hybrid models, cost-plus pricing, GST on exports, PE risk, MAS third-party rules and talent.",
   },
 }
 

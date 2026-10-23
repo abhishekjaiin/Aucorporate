@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     absolute: "Life After Incorporation: Priorities as You Scale in India",
   },
   description:
-    "The strategic decisions that follow incorporating in India — build vs. outsource finance, governance as you scale, and common second-year mistakes.",
+    "The strategic decisions that follow incorporating in India — building an in-house finance team or using a provider, governance as you scale, and common second-year mistakes.",
   alternates: {
     canonical: "https://www.theaucorp.com/doing-business-in-india/post-incorporation",
   },
@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     siteName: "AU Corporate",
     title: "Life After Incorporation: Priorities as You Scale in India",
     description:
-      "The strategic decisions that follow incorporating in India — build vs. outsource finance, governance as you scale, and common second-year mistakes.",
+      "The strategic decisions that follow incorporating in India — building an in-house finance team or using a provider, governance as you scale, and common second-year mistakes.",
     url: "https://www.theaucorp.com/doing-business-in-india/post-incorporation",
   },
   twitter: {
     title: "Life After Incorporation: Priorities as You Scale in India",
     description:
-      "The strategic decisions that follow incorporating in India — build vs. outsource finance, governance as you scale, and common second-year mistakes.",
+      "The strategic decisions that follow incorporating in India — building an in-house finance team or using a provider, governance as you scale, and common second-year mistakes.",
   },
 }
 

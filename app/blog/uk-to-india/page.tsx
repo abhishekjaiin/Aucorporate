@@ -50,7 +50,7 @@ const seriesCards = [
   { title: "Data protection: UK GDPR and DPDP", desc: "Transfers to India and India's new law.", href: "/blog/uk-to-india/data-protection-uk-gdpr-dpdp" },
   { title: "Contracts, courts and arbitration", desc: "Enforcing English judgments and London awards in India.", href: "/blog/uk-to-india/contracts-courts-arbitration" },
   { title: "Compliance calendar", desc: "Indian dates beside the UK parent's dates.", href: "/blog/uk-to-india/compliance-calendar" },
-  { title: "Global Capability Centres", desc: "Models, outsourcing rules and pricing.", href: "/blog/uk-to-india/gcc-for-uk-companies" },
+  { title: "Global Capability Centres", desc: "Models, regulated-firm rules and pricing.", href: "/blog/uk-to-india/gcc-for-uk-companies" },
   { title: "Relocating UK staff", desc: "Visas, FRRO, housing and day-count controls.", href: "/blog/uk-to-india/relocate-uk-staff" },
   { title: "Selling, restructuring or closing", desc: "Options, tax and the UK exemption.", href: "/blog/uk-to-india/exit-and-restructuring" },
   { title: "13 common mistakes", desc: "And the fix for each.", href: "/blog/uk-to-india/common-mistakes" },
@@ -318,7 +318,7 @@ export default function UkToIndiaHubPage() {
           <li><strong>Tax:</strong> dividend exemption, CFC rules and foreign tax credit relief on the UK side.</li>
           <li><strong>Criminal law:</strong> the Bribery Act 2010 and the failure to prevent fraud offence can reach the subsidiary&apos;s conduct.</li>
           <li><strong>Data:</strong> UK GDPR treats a transfer to India as a restricted transfer.</li>
-          <li><strong>Regulated firms:</strong> PRA and FCA outsourcing rules apply when work moves to a group company in India.</li>
+          <li><strong>Regulated firms:</strong> PRA and FCA third-party rules apply when work moves to a group company in India.</li>
         </ul>
 
         <p className="text-gray-600 leading-relaxed mb-10">

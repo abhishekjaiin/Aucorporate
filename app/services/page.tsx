@@ -27,10 +27,10 @@ import {
 const services = [
   {
     icon: Building2,
-    title: 'Accounting & Finance Outsourcing',
-    description: 'Outsourced bookkeeping, monthly accounting, GST/TDS accounting support, and MIS/parent-company reporting for foreign companies and their Indian subsidiaries.',
+    title: 'Accounting, Reporting & Audit Support',
+    description: 'Bookkeeping, monthly accounting, GST/TDS accounting support, and MIS/parent-company reporting for foreign companies and their Indian subsidiaries.',
     features: ['Bookkeeping & Monthly Accounting', 'GST & TDS Accounting Support', 'MIS & Foreign Parent Reporting', 'Payroll Support', 'Audit Support'],
-    href: '/outsourcing',
+    href: '/accounting-reporting-audit-support',
   },
   {
     icon: FileCheck,
@@ -105,7 +105,7 @@ const needMap = [
   { need: 'Resolve a commercial dispute without going to court', href: '/arbitration-services', label: 'Arbitration & Dispute Resolution' },
   { need: 'Run payroll or manage HR and labour law compliance', href: '/hr-services', label: 'HR & Payroll Solutions' },
   { need: 'Train your in-house finance, audit, or compliance team', href: '/services/training-workshops', label: 'Training & Workshops' },
-  { need: 'Outsource your India bookkeeping, monthly accounting, or finance function', href: '/outsourcing', label: 'Accounting & Finance Outsourcing' },
+  { need: 'Hand over your India bookkeeping, monthly accounting, or finance function', href: '/accounting-reporting-audit-support', label: 'Accounting, Reporting & Audit Support' },
 ]
 
 const engagementSteps = [
@@ -118,7 +118,7 @@ const engagementSteps = [
 const faqs = [
   {
     q: 'What services does AU Corporate offer?',
-    a: 'AU Corporate provides accounting & assurance, taxation & regulatory compliance, risk management, transaction advisory, training & workshops, HR & payroll, global support/outsourcing, and arbitration & dispute resolution — covering a business from India entry through ongoing operations and growth.',
+    a: 'AU Corporate provides accounting & assurance, taxation & regulatory compliance, risk management, transaction advisory, training & workshops, HR & payroll, monthly accounting and reporting, and arbitration & dispute resolution — covering a business from India entry through ongoing operations and growth.',
   },
   {
     q: "I'm a foreign company setting up in India — where should I start?",

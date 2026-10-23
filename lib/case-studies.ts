@@ -112,7 +112,7 @@ export const caseStudies: CaseStudy[] = [
         label: "The subsidiary bills its US parent",
       },
       {
-        value: "Finance and HR Outsourced",
+        value: "Finance and HR Run by AU",
         label: "No in-house finance or HR team",
       },
     ],
@@ -424,16 +424,16 @@ export const caseStudies: CaseStudy[] = [
           a: "A foreign company can run software development, IT support, engineering and research, finance and accounting, HR and payroll, customer support, analytics and other shared services through a captive subsidiary in India. The subsidiary works for the parent and its group companies. AU Corporate sets up the compliance for the functions you choose.",
         },
         {
-          q: "What is the difference between a captive subsidiary and outsourcing to an Indian vendor?",
-          a: "With a captive subsidiary, the foreign parent owns the Indian company and employs the team directly, so it controls hiring, processes, data and intellectual property. With outsourcing, a vendor employs the team and serves several clients. A captive needs more set-up and compliance, and outsourcing needs less commitment and less control.",
+          q: "What is the difference between a captive subsidiary and using an Indian vendor?",
+          a: "With a captive subsidiary, the foreign parent owns the Indian company and employs the team directly, so it controls hiring, processes, data and intellectual property. With a vendor, the vendor employs the team and serves several clients. A captive needs more set-up and compliance, and a vendor needs less commitment and gives less control.",
         },
         {
-          q: "Is a captive subsidiary in India cheaper than outsourcing?",
+          q: "Is a captive subsidiary in India cheaper than using a vendor?",
           a: "A captive can be cheaper over the long term for a stable, larger team, because the parent pays costs plus a markup instead of a vendor's margin, but a small or short-term team may cost less through a vendor. The captive also carries set-up and compliance costs. AU Corporate helps you compare both options on your own numbers.",
         },
         {
           q: "How large should a team be before a captive subsidiary makes sense in India?",
-          a: "There is no fixed team size at which a captive makes sense, because the answer depends on how long you plan to stay, how much control you need and what compliance costs. Some companies start with outsourcing or an employer-of-record arrangement and set up a captive subsidiary as the team grows. AU Corporate can help you plan the move.",
+          a: "There is no fixed team size at which a captive makes sense, because the answer depends on how long you plan to stay, how much control you need and what compliance costs. Some companies start with a vendor or an employer-of-record arrangement and set up a captive subsidiary as the team grows. AU Corporate can help you plan the move.",
         },
         {
           q: "Who owns the intellectual property created by a captive subsidiary in India?",
@@ -476,11 +476,11 @@ export const caseStudies: CaseStudy[] = [
           a: "India revised its transfer pricing safe harbour rules with effect from 1 April 2026, and an eligible captive may elect the safe harbour margin instead of a full benchmarking study. The election is optional, has eligibility conditions, and does not bind the US tax authorities. AU Corporate compares the safe harbour with a full study for your subsidiary.",
         },
         {
-          q: "Can a US company outsource the finance and HR function of its Indian subsidiary?",
-          a: "A US company can outsource accounting, tax, payroll and HR compliance for its Indian subsidiary to a provider in India, as in this case study. The subsidiary and its directors stay legally responsible, so the provider should work to a clear scope, with a named manager and regular reporting to the parent.",
+          q: "Can a US company hand over the finance and HR function of its Indian subsidiary?",
+          a: "A US company can hand accounting, tax, payroll and HR compliance for its Indian subsidiary to a provider in India, as in this case study. The subsidiary and its directors stay legally responsible, so the provider should work to a clear scope, with a named manager and regular reporting to the parent.",
         },
         {
-          q: "How much does it cost to outsource accounting for an Indian captive subsidiary?",
+          q: "How much does it cost to have AU Corporate run accounting for an Indian captive subsidiary?",
           a: "Monthly accounting and bookkeeping with AU Corporate starts at USD 240 per month. The final fee depends on the number of transactions, bank accounts and employees and the reporting your parent needs. AU Corporate charges reasonable fees for its HR and compliance services and confirms a written quote before work begins.",
         },
         {

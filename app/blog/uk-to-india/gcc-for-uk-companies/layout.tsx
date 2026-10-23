@@ -6,20 +6,20 @@ export const metadata: Metadata = {
     absolute: "Global Capability Centres in India for UK Companies: Models, Regulation and Transfer Pricing",
   },
   description:
-    "How a UK company can build a captive Global Capability Centre (GCC) in India: models, stages, regulated-firm outsourcing rules, transfer pricing, PE risk, talent and governance.",
+    "How a UK company can build a captive Global Capability Centre (GCC) in India: models, stages, regulated-firm third-party rules, transfer pricing, PE risk, talent and governance.",
   alternates: guideAlternates("uk", "gcc"),
   openGraph: {
     siteName: "AU Corporate",
     title: "Global Capability Centres in India for UK Companies: Models, Regulation and Transfer Pricing",
     description:
-      "How a UK company can build a captive Global Capability Centre (GCC) in India: models, stages, regulated-firm outsourcing rules, transfer pricing, PE risk, talent and governance.",
+      "How a UK company can build a captive Global Capability Centre (GCC) in India: models, stages, regulated-firm third-party rules, transfer pricing, PE risk, talent and governance.",
     url: "https://www.theaucorp.com/blog/uk-to-india/gcc-for-uk-companies",
     locale: "en_GB",
   },
   twitter: {
     title: "Global Capability Centres in India for UK Companies: Models, Regulation and Transfer Pricing",
     description:
-      "How a UK company can build a captive Global Capability Centre (GCC) in India: models, stages, regulated-firm outsourcing rules, transfer pricing, PE risk, talent and governance.",
+      "How a UK company can build a captive Global Capability Centre (GCC) in India: models, stages, regulated-firm third-party rules, transfer pricing, PE risk, talent and governance.",
   },
 }
 

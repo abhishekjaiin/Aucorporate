@@ -166,7 +166,7 @@ export default function SingaporeParentObligationsPage() {
         <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-10">
           <li><strong>Prevention of Corruption Act:</strong> a Singapore citizen who corruptly deals abroad can be treated as if the act took place in Singapore. Train the Indian team and keep gifts and agents under control.</li>
           <li><strong>Sanctions and export controls:</strong> Singapore and Indian rules both apply to goods and technology moved between group companies.</li>
-          <li><strong>MAS-regulated parents:</strong> banks, insurers and other regulated entities must follow MAS outsourcing rules if work moves to the Indian subsidiary.</li>
+          <li><strong>MAS-regulated parents:</strong> banks, insurers and other regulated entities must follow MAS rules on third-party arrangements if work moves to the Indian subsidiary.</li>
           <li><strong>Listed parents:</strong> SGX listing rules may require disclosure of material subsidiaries and acquisitions.</li>
         </ul>
 

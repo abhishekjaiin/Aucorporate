@@ -46,7 +46,7 @@ const cluster = [
     title: "Life After Incorporation",
     href: "/doing-business-in-india/post-incorporation",
     icon: ShieldCheck,
-    desc: "The strategic decisions that follow incorporation — building vs. outsourcing your finance function, governance as you scale, and common second-year mistakes.",
+    desc: "The strategic decisions that follow incorporation — building an in-house finance team or using a provider, governance as you scale, and common second-year mistakes.",
   },
 ]
 
@@ -104,7 +104,7 @@ const hubFaqs = [
   },
   {
     q: "We already have an India subsidiary — is any of this still relevant to us?",
-    a: "Yes — the Life After Incorporation stage is written specifically for that point in the journey: building or outsourcing your finance function, governance as you scale, and the mistakes that tend to surface in year two rather than year one.",
+    a: "Yes — the Life After Incorporation stage is written specifically for that point in the journey: building an in-house finance team or using a provider, governance as you scale, and the mistakes that tend to surface in year two rather than year one.",
   },
 ]
 

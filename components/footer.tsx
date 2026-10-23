@@ -54,7 +54,7 @@ export function Footer() {
             </Link>
 
             <p className="text-gray-600 text-sm leading-relaxed mb-5">
-              Supporting global businesses in establishing and operating in India through expert compliance, taxation, accounting, payroll, and outsourcing solutions.
+              Supporting global businesses in establishing and operating in India through expert compliance, taxation, accounting and payroll services.
             </p>
 
             <div className="flex flex-wrap gap-6 mt-4">

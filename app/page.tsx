@@ -156,7 +156,7 @@ const faqs = [
   },
   {
     q: "Can AU Corporate help with bank account opening and ongoing accounting?",
-    a: "Yes — we support corporate bank account setup after incorporation, and provide ongoing accounting, bookkeeping, and financial reporting as part of our outsourcing services.",
+    a: "Yes — we support corporate bank account setup after incorporation, and provide ongoing accounting, bookkeeping, and financial reporting as part of our ongoing compliance services.",
   },
   {
     q: "What tax registrations are required after incorporation?",
