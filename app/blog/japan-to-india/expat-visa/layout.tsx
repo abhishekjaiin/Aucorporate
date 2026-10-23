@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How to relocate a Japanese executive to India: employment visa, FRRO registration, housing, banking, tax residency and permanent establishment risk for the parent.",
   alternates: guideAlternates("japan", "expat-visa"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Sending a Japanese Executive to India: Visa, Housing and Tax",
     description:

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Is there a US-India social security agreement? What applies to a US expat in India: provident fund, US FICA, double coverage and planning.",
   alternates: guideAlternates("usa", "social-security-agreement"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "US-India Totalization Agreement: Social Security for Expats",
     description:

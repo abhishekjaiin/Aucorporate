@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Why shares issued to a Japanese parent need a valuation, who can certify it, the pricing floor under FEMA, and when you need a fresh valuation.",
   alternates: guideAlternates("japan", "share-valuation"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Share Valuation for Japanese Investment in an Indian Subsidiary",
     description:

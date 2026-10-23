@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "50 plain answers on the India-US tax treaty, DTAA withholding rates, Form 6166 and 41, expat tax, EPF, FICA and the missing totalization agreement.",
   alternates: guideAlternates("usa", "treaties-faq"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Treaty and Social Security FAQs for India-US Expats",
     description:

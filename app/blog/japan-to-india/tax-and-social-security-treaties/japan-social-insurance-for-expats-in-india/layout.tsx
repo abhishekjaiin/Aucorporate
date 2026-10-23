@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "What happens to Japanese pension, health and employment insurance when an employee is sent to India: the Certificate of Coverage and who pays what.",
   alternates: guideAlternates("japan", "home-social-security"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Japanese Social Insurance for Employees Sent to India",
     description:

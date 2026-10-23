@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Which documents a US parent must prepare to incorporate an Indian subsidiary, and how notarization and apostille work for US state and federal documents.",
   alternates: guideAlternates("usa", "documents-and-apostille"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Documents and Apostille for an India Subsidiary (US Parent)",
     description:

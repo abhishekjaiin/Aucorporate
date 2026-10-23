@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/services/risk-management",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "Risk Management & Advisory Services | AU Corporate",
     description:

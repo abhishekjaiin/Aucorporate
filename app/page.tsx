@@ -223,7 +223,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "Company Registration in India & Compliance | AU Corporate",
   description:
-    "AU Corporate is a CA-led firm for company incorporation and registration in India, serving clients across India and foreign companies worldwide, with accounting, tax, FEMA and compliance after setup.",
+    "CA-led firm for company incorporation and registration in India, serving clients across India and worldwide, with accounting, tax and FEMA compliance.",
 }
 
 export default function HomePage() {

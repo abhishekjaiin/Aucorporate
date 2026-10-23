@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "The recurring compliance of an Indian subsidiary: monthly, quarterly, annual and event-based filings under company, tax, GST, FEMA and labour law.",
   alternates: guideAlternates("usa", "compliance-calendar"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "India Subsidiary Compliance Calendar for US Companies",
     description:

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "The India-US tax treaty (DTAA) and social security for US expats: treaty rates, residency, EPF, FICA and the missing totalization agreement.",
   alternates: guideAlternates("usa", "treaties-hub"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "India-US Tax Treaty and Social Security for US Expats",
     description:

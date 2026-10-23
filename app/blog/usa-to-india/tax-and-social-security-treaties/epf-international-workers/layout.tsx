@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How Indian provident fund applies to foreign nationals: international worker rules, no wage ceiling, withdrawal, court rulings and the 2026 EPF Scheme.",
   alternates: guideAlternates("usa", "epf-international-workers"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "EPF for International Workers in India: Rules for US Expats",
     description:

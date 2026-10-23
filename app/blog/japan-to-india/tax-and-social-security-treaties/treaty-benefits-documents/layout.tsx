@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Documents a Japanese company needs to claim India-Japan treaty rates: certificate of residence, Form 41 (previously Form 10F) and no-PE declaration.",
   alternates: guideAlternates("japan", "treaty-benefits-documents"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Claiming India-Japan Treaty Benefits: Forms and Documents",
     description:

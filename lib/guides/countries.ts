@@ -221,8 +221,8 @@ export function guideUrl(country: GuideCountryKey, topic: GuideTopic): string | 
 /**
  * `alternates` metadata for a guide page: its canonical URL plus hreflang
  * links to every registered country's version of the same topic (including
- * itself, as Google requires). A topic only one country covers gets just the
- * canonical.
+ * itself, as Google requires), plus an x-default fallback. A topic only one
+ * country covers gets just the canonical.
  */
 export function guideAlternates(country: GuideCountryKey, topic: GuideTopic): Metadata["alternates"] {
   const canonical = guideUrl(country, topic)
@@ -232,5 +232,9 @@ export function guideAlternates(country: GuideCountryKey, topic: GuideTopic): Me
     const url = guideUrl(key, topic)
     if (url) languages[GUIDE_COUNTRIES[key].locale] = url
   }
-  return Object.keys(languages).length > 1 ? { canonical, languages } : { canonical }
+  if (Object.keys(languages).length < 2) return { canonical }
+  // Searchers outside every registered country (India included) get the
+  // USA version, the most complete cluster, or this page if the USA has none.
+  languages["x-default"] = guideUrl("usa", topic) ?? canonical
+  return { canonical, languages }
 }

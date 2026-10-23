@@ -307,7 +307,7 @@ export default function BranchOfficeAccountingAuditPage() {
             "@type": "Service",
             name: "Branch Office Accounting, Reporting and Audit",
             description:
-              "Monthly accounting, head office reconciliation, TDS and GST workings, reporting in US GAAP or IFRS and audit support for the India branch office of a foreign company.",
+              "Monthly accounting, head office reconciliation, TDS and GST workings, US GAAP or IFRS reporting and audit support for the India branch of a foreign company.",
             provider: { "@type": "Organization", name: "AU Corporate", url: "https://www.theaucorp.com" },
             url: "https://www.theaucorp.com/branch-office-accounting-audit",
             areaServed: "India",

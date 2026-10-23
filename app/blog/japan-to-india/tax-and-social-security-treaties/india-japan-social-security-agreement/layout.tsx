@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How the Japan-India Social Security Agreement works: detached workers, five-year coverage, Certificate of Coverage, pension systems covered and totalization.",
   alternates: guideAlternates("japan", "social-security-agreement"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Japan-India Social Security Agreement: Rules for Expats",
     description:

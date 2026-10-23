@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How a Japanese parent invests in an Indian subsidiary: equity, CCPS, ECB, the 60-day allotment rule, pricing, and RBI reporting through Form FC-GPR on FIRMS.",
   alternates: guideAlternates("japan", "funding-fema-fc-gpr"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Funding an Indian Subsidiary from Japan: FEMA and FC-GPR",
     description:

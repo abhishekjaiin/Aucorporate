@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/doing-business-in-india/incorporation",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "Should You Incorporate in India Now? A Strategic Decision Guide",
     description:

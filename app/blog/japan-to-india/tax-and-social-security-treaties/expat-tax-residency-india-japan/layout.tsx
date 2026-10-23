@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Which country taxes a Japanese expat in India: Indian residency tests, Japanese residency, treaty tie-breaker, the 183-day rule and foreign tax credit.",
   alternates: guideAlternates("japan", "expat-tax-residency"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Tax Residency for Japanese Expats in India: Treaty Rules",
     description:

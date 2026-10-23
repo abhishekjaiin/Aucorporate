@@ -2,24 +2,25 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Accounting, Reporting and Audit Support for Branch Offices in India",
+    absolute: "Accounting and Audit Support for Branch Offices in India",
   },
   description:
-    "Monthly accounting, head office reconciliation, TDS and GST workings, reporting in US GAAP or IFRS and audit support for the India branch office of a foreign company.",
+    "Monthly accounting, head office reconciliation, TDS and GST workings, US GAAP or IFRS reporting and audit support for the India branch of a foreign company.",
   alternates: {
     canonical: "https://www.theaucorp.com/branch-office-accounting-audit",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
-    title: "Accounting, Reporting and Audit Support for Branch Offices in India",
+    title: "Accounting and Audit Support for Branch Offices in India",
     description:
-      "Monthly accounting, head office reconciliation, TDS and GST workings, reporting in US GAAP or IFRS and audit support for the India branch office of a foreign company.",
+      "Monthly accounting, head office reconciliation, TDS and GST workings, US GAAP or IFRS reporting and audit support for the India branch of a foreign company.",
     url: "https://www.theaucorp.com/branch-office-accounting-audit",
   },
   twitter: {
-    title: "Accounting, Reporting and Audit Support for Branch Offices in India",
+    title: "Accounting and Audit Support for Branch Offices in India",
     description:
-      "Monthly accounting, head office reconciliation, TDS and GST workings, reporting in US GAAP or IFRS and audit support for the India branch office of a foreign company.",
+      "Monthly accounting, head office reconciliation, TDS and GST workings, US GAAP or IFRS reporting and audit support for the India branch of a foreign company.",
   },
 }
 

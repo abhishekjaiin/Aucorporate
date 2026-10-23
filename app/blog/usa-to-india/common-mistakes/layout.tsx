@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "The ten most common and costly mistakes US companies make when setting up an Indian subsidiary, and how to avoid each. Includes a pre-filing checklist.",
   alternates: guideAlternates("usa", "common-mistakes"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "10 Common Mistakes US Companies Make Setting Up in India",
     description:

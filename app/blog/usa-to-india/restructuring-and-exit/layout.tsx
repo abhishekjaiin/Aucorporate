@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Options to restructure, sell, merge or close an Indian subsidiary: share sale, slump sale, merger, buyback, strike-off and liquidation, with tax and RBI steps.",
   alternates: guideAlternates("usa", "restructuring-and-exit"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Restructuring, Mergers and Exit for an Indian Subsidiary",
     description:

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Documents needed to claim India-US treaty rates: IRS Form 6166, Form 41 (previously Form 10F), no-PE declaration and beneficial ownership.",
   alternates: guideAlternates("usa", "treaty-benefits-documents"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Claiming India-US Treaty Benefits: Form 6166 and Form 41",
     description:

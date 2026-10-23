@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "When Social Security and Medicare tax apply to Americans working in India: US employer, Indian subsidiary, Section 3121(l) agreements and self-employment.",
   alternates: guideAlternates("usa", "home-social-security"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "US Social Security (FICA) for Americans Working in India",
     description:

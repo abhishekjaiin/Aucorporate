@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How a Japanese parent can restructure, sell, merge or close its Indian subsidiary: share sale, slump sale, merger, buyback and winding up, with FEMA and tax steps.",
   alternates: guideAlternates("japan", "restructuring-and-exit"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Restructuring or Exiting an Indian Subsidiary of a Japanese Group",
     description:

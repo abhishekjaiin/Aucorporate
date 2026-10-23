@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How to relocate a US executive to India: employment visa, FRRO registration, housing, banking, tax residency and permanent establishment risk for the parent.",
   alternates: guideAlternates("usa", "expat-visa"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Sending a US Executive to India: Visa, Housing and Tax",
     description:

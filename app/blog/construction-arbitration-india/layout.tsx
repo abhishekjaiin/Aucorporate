@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/blog/construction-arbitration-india",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "Construction Arbitration in India: Claims to Enforcing Awards",
     description:

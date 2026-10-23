@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Contracts for a Japanese-owned Indian subsidiary: intercompany and customer agreements, governing law, arbitration seat and enforcing awards from Japan in India.",
   alternates: guideAlternates("japan", "contracts-and-arbitration"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Contracts and Arbitration in India for Japanese Companies",
     description:

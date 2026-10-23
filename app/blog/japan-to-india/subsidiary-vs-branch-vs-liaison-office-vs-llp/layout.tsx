@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Compare the four ways a Japanese company can enter India: wholly owned subsidiary, branch office, liaison office and LLP. Activities, approvals, tax and control.",
   alternates: guideAlternates("japan", "subsidiary-vs-branch-vs-liaison-office-vs-llp"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Subsidiary, Branch, Liaison Office or LLP: India Options for Japanese Companies",
     description:

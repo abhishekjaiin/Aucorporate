@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How Japanese companies set up a subsidiary in India: structure, FDI rules, incorporation steps, RBI/FEMA filings, tax and compliance. By a Chartered Accountant.",
   alternates: guideAlternates("japan", "hub"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "Set Up a Subsidiary in India from Japan: 2026 Guide",
     description:

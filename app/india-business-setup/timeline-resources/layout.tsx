@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.theaucorp.com/india-business-setup/timeline-resources",
   },
   openGraph: {
+    locale: "en_IN",
     siteName: "AU Corporate",
     title: "Timeline & Resources | India Business Setup Guide",
     description:

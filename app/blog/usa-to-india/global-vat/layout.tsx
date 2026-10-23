@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How VAT works for US companies selling digital services and goods into Europe, the UK and beyond: registration, B2B and B2C rules and compliance.",
   alternates: guideAlternates("usa", "global-vat"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Global VAT for US Companies Selling Abroad",
     description:

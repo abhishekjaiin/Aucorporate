@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "216 plain answers for US companies: incorporation, FEMA, tax, hiring, compliance, repatriation, ESOPs, M&A and closing an Indian subsidiary.",
   alternates: guideAlternates("usa", "faq"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "216 FAQs: Setting Up an India Subsidiary from the USA",
     description:

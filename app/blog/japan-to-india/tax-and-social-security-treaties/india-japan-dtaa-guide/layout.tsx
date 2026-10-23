@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How the India-Japan tax treaty works: who qualifies, taxes covered, treaty versus domestic law, residency, relief from double tax and disputes.",
   alternates: guideAlternates("japan", "india-dtaa"),
   openGraph: {
+    locale: "en_JP",
     siteName: "AU Corporate",
     title: "India-Japan Tax Treaty (DTAA) Explained",
     description:

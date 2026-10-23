@@ -91,9 +91,9 @@ export const caseStudies: CaseStudy[] = [
     },
     datePublished: "2026-10-20",
     dateModified: "2026-10-20",
-    metaTitle: "Case Study: Finance and HR for a US SaaS Captive in India | AU Corporate",
+    metaTitle: "Case Study: Finance and HR for a US SaaS Captive in India",
     metaDescription:
-      "How AU Corporate set up and runs the finance and HR function of a US SaaS company's Indian captive subsidiary: 40+ staff in India, cost-plus billing, client since 2018.",
+      "How AU Corporate set up and runs finance and HR for a US SaaS company's Indian captive subsidiary: 40+ staff, cost-plus billing, client since 2018.",
     breadcrumb: "US SaaS Captive Subsidiary in India",
     tag: "Case Study · USA · SaaS",
     h1: "Case Study: Running the Finance and HR Function of a US SaaS Company's Captive Subsidiary in India",
@@ -535,7 +535,7 @@ export const caseStudies: CaseStudy[] = [
     },
     datePublished: "2026-10-20",
     dateModified: "2026-10-20",
-    metaTitle: "Case Study: India Subsidiary Incorporated in 14 Days for a US Company | AU Corporate",
+    metaTitle: "Case Study: India Subsidiary Incorporated in 14 Days",
     metaDescription:
       "How AU Corporate incorporated the Indian subsidiary of a US longevity company in 14 days: apostilled documents, DSC, resident director signatures and SPICe+ filing.",
     breadcrumb: "US Longevity Company: India Subsidiary in 14 Days",
@@ -956,7 +956,7 @@ export const caseStudies: CaseStudy[] = [
     },
     datePublished: "2026-10-20",
     dateModified: "2026-10-20",
-    metaTitle: "Case Study: FEMA Compounding for a China-Owned Subsidiary in India | AU Corporate",
+    metaTitle: "Case Study: FEMA Compounding for a China-Owned Subsidiary",
     metaDescription:
       "How AU Corporate reviewed a Chinese-owned Indian subsidiary's FEMA compliance, compounded 14 contraventions with the RBI and became its retained adviser.",
     breadcrumb: "China-Owned Subsidiary: FEMA Compounding",

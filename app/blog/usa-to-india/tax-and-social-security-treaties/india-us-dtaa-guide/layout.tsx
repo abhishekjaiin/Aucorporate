@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How the India-US tax treaty works: who qualifies, which taxes it covers, how treaty and domestic law interact, residency, relief from double tax and disputes.",
   alternates: guideAlternates("usa", "india-dtaa"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "India-US Tax Treaty (DTAA) Explained for US Companies",
     description:

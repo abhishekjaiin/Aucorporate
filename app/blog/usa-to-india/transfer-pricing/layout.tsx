@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "How transfer pricing works for an Indian subsidiary of a US company: arm's length pricing, documentation, Form 48, methods, safe harbour and audits.",
   alternates: guideAlternates("usa", "transfer-pricing"),
   openGraph: {
+    locale: "en_US",
     siteName: "AU Corporate",
     title: "Transfer Pricing in India for US-Owned Subsidiaries",
     description:
